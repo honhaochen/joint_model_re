@@ -1,0 +1,1026 @@
+This paper presents methods and techniques for teaching Virtual Reality (VR) and Augmented Reality
+(AR) that were conceived and refined during more than 20 years of our teaching experience on these
+subjects in higher education. We cover a broad spectrum from acquainting learners with VR and AR as
+only one aspect of a more general course to an in-depth course on VR and AR during a whole semester.
+The focus of the paper is methods and techniques that allow learners to not only learn about VR and
+AR on a theoretical level but that facilitate their own VR and AR experiences with all senses and
+foster hands-on learning. We show why this is challenging (e.g., the high workload involved with the
+preparation of hands-on experiences, the large amount of course time that needs to be devoted), and
+how these challenges can be met (e.g., using our Circuit Parcours Technique). Moreover, we discuss
+learning goals that can be addressed in VR and AR courses besides hands-on experiences when using
+our methods and techniques. Finally, we provide best practice examples that can be used as blueprints
+for parts of a VR and AR course.
+Based on ultrasound technology, novel devices have been de-
+eloped that facilitate contactless haptic feedback [1]. Users can
+eel forces mid-air which can be employed to render Virtual
+eality (VR) or Augmented Reality (AR) into more multisensory
+xperiences. Virtual objects can actually be touched. But just
+eading about these devices is not sufficient to be able to really
+nderstand them or to assess their potential for VR and AR
+pplications. How do invisible force fields in the air feel like? How
+onvincing is the illusion of touchable virtual objects? Hence,
+eading texts, looking at images, watching videos, or listening to
+ther people’s reports may be not sufficient to educate people
+roperly about VR and AR. This is especially true when learning
+bjectives need to be met that exceed the basic levels of Bloom’s
+axonomy [2], i.e., when the learning goals are not just remem-
+ering terminology or facts but applying acquired knowledge,
+onducting analysis and synthesis, or making judgments. From
+ur experience, teaching VR and AR without providing hands-
+n experiences for every learner is a bit like teaching swimming
+ithout using water. While the support of learning-by-doing
+pproaches in education is one key application of VR and AR
+ethods and systems [3] and their use for laboratory teaching
+ethods has been explored [4], we focus on VR and AR itself as
+∗ Corresponding author.
+E-mail address: ralf.doerner@hs-rm.de (R. Doerner).ttps://doi.org/10.1016/j.gvc.2021.200037
+666-6294/© 2021 The Author(s). Published by Elsevier Ltd. This is an open access a
+nc-nd/4.0/).the teaching subject in higher education in this paper. We iden-
+tify challenges such as the high effort associated with preparing
+hands-on sessions that deter educators from providing these VR
+and AR experiences to learners. The problems are exacerbated by
+the growing popularity of VR and AR as these subjects are not
+only taught in in-depth courses devoted to VR and AR but are
+becoming topics in courses on broader subjects such as civil en-
+gineering, telemedicine, or human–computer interaction where
+the time slot for VR and AR is limited and courses are not only
+taught in dedicated VR or AR labs with specific equipment readily
+available. The group of interested learners is not only getting
+bigger but also more varied. In addition to computer science
+students, students from other subjects ranging from chemistry
+to the social sciences are part of the target group for VR and
+AR courses. This trend can be attributed to several factors. Spe-
+cific VR and AR hardware is available as consumer products
+and reasonably priced. Specifically, mainstream smart devices
+such as smartphones or tablets equipped with cameras or even
+depth sensors are a suitable platform for VR and AR. Commercial
+software products for different application domains ranging from
+medicine to civil engineering are readily available. Thus, VR and
+AR are becoming basic technologies in a variety of applications,
+for example, in industry, medicine, civil engineering, marketing,
+entertainment, and education. As a consequence, interest in VR
+and AR is growing and so is the demand for learning opportunities
+about these topics. Not only students are interested in VR and
+AR, but specialists and decision makers also want to learn about
+VR and AR in order to assess the potential of these technologies
+or their purposes, improve their work processes, or create new
+usiness opportunities. Last but not least, educators are becoming
+nterested as VR and AR have the potential to provide innovative
+nd valuable means for teaching and training.
+In this paper, we present methods to meet these challenges
+hat were developed during our more than 20 years of teaching
+xperience in VR and AR in computer science faculties in several
+niversities. This includes a technique we started formulating and
+efining 10 years ago and that we call the ‘‘circuit parcours tech-
+ique’’ as it is inspired from circuit training in sports and centers
+round the idea to build a parcours or "‘obstacle course"’ of VR/AR
+emonstrations. We introduced this technique in a presentation
+t the education track of the Eurographics 2021 conference [5].
+his journal paper provides a more in-depth description of the
+ircuit parcours technique, a more elaborated phase model, and
+dditional best practice examples for its use. We expand the re-
+ated work section as well as the discussion of challenges and the
+iscussion of a phase model for teaching VR and AR. Moreover,
+e present and discuss unpublished results from a recent survey
+mong our course participants from the last 5 years. We also
+iscuss COVID-19 related issues for hands-on teaching of VR and
+R that show perspectives on how our methods can be applied
+n distance learning.
+The contribution of this paper is
+• insights about peculiarities and challenges when teaching
+VR and AR at universities,
+• dedicated methods and techniques for teaching VR and AR
+including the circuit parcours technique and phase-based
+teaching methods,
+• description of different innovative teaching examples that
+can serve as best practice or template together with a dis-
+cussion of the rationale for the organizational and didactical
+decisions made with a view to different learning objectives,
+• reflection on our practical experience as well as evaluation
+results that identify strengths, weaknesses, and limitations
+of the methods and techniques presented in the paper.
+The paper is organized as follows. We review related work
+n the next section. Then, we identify challenges associated with
+roviding first-hand experience in university courses on VR and
+R. Next, we present our teaching techniques in detail before we
+ntroduce our phase-based teaching method. Based on this con-
+eptual groundwork, we provide example scenarios. Finally, we
+hare experiences and discuss lessons learned from our practice
+nd our evaluation before we conclude and give an outlook on
+uture work.
+. State of the art
+Work in literature over the last decades, e.g., [6,7], highlights
+he importance of hands-on experience in learning in general.
+n a fundamental level, several learning theories see experi-
+nce made by students as an indispensable element. Prominent
+xamples are theories based on constructivism which also influ-
+nces instruction techniques [8]. Specific theoretical approaches
+uch as motivational active learning [9] focus on positive as-
+ects of constructivism such as increased learner motivation or
+reativity [10].
+In this literature, the term ‘‘hands-on’’ is used figuratively and
+ot linked to the actual use of hands, e.g., for improving motor
+kills in the education of surgeons [11]. For instance, motiva-
+ional active learning has been used in teaching computer science
+here the learning subject is abstract and does not involve really
+ouchable objects. The 6E model (that distinguishes six phases2
+called Engage, Explore, Explain, Engineer, Enrich, Evaluate) fea-
+tures hands-on activity as a key part and has been used with the
+goal to better the learners’ understanding of abstract scientific
+concepts and building of mental models [3]. In our work, we also
+use a phase model and literature emphasizes the value of cyclical
+learning patterns and repetition (e.g., to not only move through
+the phases once) [12].
+Object-based learning [13] is another example of a specific
+theoretical constructivist approach that is used in higher edu-
+cation. Here, the hands-on experience is tightly coupled with
+engaging sensations of many senses simultaneously for a better
+learning outcome. The role of senses in education is the topic of
+many publications that emphasize their significance [14]. Espe-
+cially the value of first-hand experiences, i.e., direct sensations
+made by the learner, is not to be underestimated.
+In VR and AR, we have the particular case that senses play
+a central role. Constructs of perception such as presence [15] is
+at the core of the overall VR and AR methodology. Hence, much
+effort is invested in employing immersive technologies in VR and
+AR applications. The experience and the perception associated
+with using these immersive technologies cannot be conveyed
+appropriately with just textual or oral descriptions as we cannot
+put ourselves in the minds of other persons [16]. Overall, we see
+this bulk of work in the literature about the hands-on experience
+and learning as supporting our hypothesis that a technique for
+instruction and organization of courses that enables and ensures
+the inclusion of immersive experiences for all students can make
+a valuable contribution.
+This dovetails with the observation made in the literature that
+one significant benefit of using VR and AR is in teaching. Over
+two decades ago, experts wondered whether VR is the teaching
+tool of the twenty-first century [17]. One of the major reasons for
+employing these technologies is the opportunity that students are
+able to have hands-on experiences [18]. Many case studies and
+literature reviews such as [19–21] are described in the literature.
+There is evidence that the usage of VR technology not only led to
+better learning performance but also better hands-on capabilities.
+Some authors even see the potential to revolutionize teaching in
+VR and AR because of this [22]. VR and AR can even enable hands-
+on experience in distance learning [23]. Thus, when hands-on
+experiences are essential for teaching any subject, these experi-
+ences should be especially crucial when the subject is teaching
+VR and AR itself.
+There is way more literature available on using VR and AR
+as technologies in education than on teaching the subject of
+VR and AR. Häfner et al. share their approach with a practical
+course for teaching VR that involves four overlapping phases.
+In the first short phase, learners are introduced to VR in the
+form of lectures (e.g., brief presentations such as ‘‘Definitions
+and Applications of VR’’ or ‘‘Software techniques and solutions
+for VR’’ that are combined with lab demonstrations in order
+to lay a theoretical foundation. These demonstrations allow for
+hands-on experiences in order to improve understanding and
+help the students to stay focused during the lectures. The second
+phase contains exercises intending to acquaint students with VR-
+specific software. In the third and longest phase, small groups
+of learners are formed and assigned a task for a project. Spe-
+cial effort is spent to find tasks interesting for students and
+in line with the goals of the course as well as to simulate an
+industrial work environment. The fourth phase comprises a soft
+skills evaluation and a final evaluation. This method is, however,
+not flexible in the sense that it always requires a full semester.
+Moreover, it is not specific to VR and AR but could be used
+for any other software tool that can be used in a project. We
+shared a technique for teaching VR and AR that we named the
+circuit parcours technique. Section 4 contains a more in-depth
+Description of this technique (the same as this journal paper can
+be considered an extended and elaborated follow-up publication,
+see also Section 1). With only a few publications on teaching the
+subject of VR and AR, there is still a need for more techniques
+that lower the organizational barriers for including VR and AR in
+reaching, especially if hands-on experiences with VR and AR are
+art of the instruction.
+The lack of dedicated techniques and methods for teaching VR
+and AR can be considered unexpected as the number of curricular
+that contain VR and AR is growing. Although these curriculas
+have been characterized as fragmented and heterogeneous [24] a
+decade ago, courses about VR and AR development are becoming
+more popular and varied as it is feasible to use low-cost systems
+for several years now [25]. Now, a more serious obstacle than
+costs is the creation of content. Here, tools and matching author-
+ng approaches such as VR/AR Nuggets [26] have been identified
+us effective solutions. Nguyen et al. report that VR/AR applications
+can be developed successfully within courses and students were
+able to adopt necessary tools [27]. Therefore, we will assume in
+our work that the prerequisite of existing suitable authoring tools
+can be met.
+In the literature, a good overview of the discussion of VR/AR
+ourses and corresponding curricula can be found in [28]. Immer-
+ion and experiences are often part of VR and AR curricula [29].
+urdea et al. [30] point out the importance of imagination and ex-
+erience besides immersion. Moreover, VR and AR are often part
+f longer courses, in particular, capstone courses [31]. Not many
+pproaches in literature employ techniques that are suitable for
+uch in-depth courses as well as basic courses or even short
+ntroductions to VR and AR that can be taught within one day.
+he resulting reduced flexibility can pose challenges to integrate
+R/AR teaching in existing curricula structures. As a consequence,
+R and AR may still not be well reflected in the curriculum
+f many undergraduate institutions although ideas that do not
+isrupt curricular structures exist for some time [32].
+Even early work on teaching VR sought the close combina-
+ion with other skills such as software engineering and team-
+ork [33]. Meanwhile, experience with courses that teach VR and
+R demonstrate the positive effects of group work [34]. Moreover,
+any approaches to teach VR/AR are project-based [35,36] which
+rovides substantial opportunities for group work. Existing re-
+earch work also shows that VR/AR courses can address learning
+oals beyond VR and AR technologies and methodologies such
+s creativity, problem-solving skills, or presentation skills [37].
+ecent work [38] highlights that VR is especially valuable for
+1st-century learners who live in an era where the term ‘‘experi-
+nce age’’ has been coined. In this era, soft skills such as empathy,
+ystems thinking, abstract reasoning, and computational literacy
+re becoming more important. VR and AR play a crucial role as
+hey support the acquisition of these soft skills in contrast to
+ther learning techniques [39]. Thus, a good instruction technique
+or VR and AR learning should foster group work, project-based
+earning, and the acquisition of soft skills. Such suitable instruc-
+ion and organization techniques were and are still open areas of
+esearch [24,28].
+One aspect that influences the importance of hands-on ex-
+erience in teaching VR and AR is the question of what prior
+nowledge and experiences students already possess when they
+tart a VR/AR course. After all, 6.1 million VR headset units are ex-
+ected to be sold in 2021 bringing the total cumulative installed
+ase to 16.44 million units [40]. The global VR market size alone
+s estimated to increase from roughly five billion U.S. dollars in
+021 to more than 12 billion U.S. dollars by 2024 [40]. In 2020,
+he number of smartphone users worldwide was estimated to
+e 3.5 billion persons [41]. With the camera and computation
+apabilities of modern smartphones, billions of people own a s
+3
+technological platform suitable for AR. Therefore, it is good prac-
+tice to assess the prior experience in VR and AR at the beginning
+of a VR/AR course as access barriers to these technologies have
+been dramatically lowered. However, it cannot be expected that
+all learners had the opportunity to have the first-hand experience
+with AR and especially VR. Moreover, more sophisticated VR
+and AR technology such as a CAVE or a Microsoft Hololens is
+far from commonplace. Because of the dynamic improvements
+(e.g., increasing field-of-view, increasing display resolution) of
+VR and AR technology, prior experience from just a few years
+ago does not reflect the state-of-the-art properly. Thus, affording
+hands-on experience is crucial despite the higher availability of a
+subset of VR and AR technology.
+3. Challenges and requirements
+Although barriers such as high costs, low graphical quality or
+lack of robustness have been remedied with modern consumer
+platforms in many application scenarios such as VR exposure
+therapy [42], VR and AR as technologies are not commonplace
+today. Many general challenges have been identified in the scien-
+tific literature and in studies, e.g., AR industry experts named user
+experience and lack of content offerings as the leading barrier for
+mass adoption of AR in a recent survey [40]. All these problems
+also apply to teaching VR and AR. In the following, we identify
+additional obstacles that are more specific and are a hurdle for
+educators to include hands-on experience in their VR and AR
+courses.
+Procurement Challenge There exists a large variety of hardware
+used for realizing VR and AR, for example, head-mounted displays
+(HMDs), stereo projections, haptic feedback devices, controllers,
+tracking systems, and depth sensors, or motion platforms. More-
+over, there exists a wide range of setups such as a 3D power
+wall, a CAVE, a virtual workbench, AR with video-see-through on
+a handheld smart device, AR with direct-see-through employing
+AR HMDs, or walking in place setups such as the Virtuix Omni.
+Ideally, students are provided the opportunity to get firsthand
+experience across this whole variety. However, this is laborious
+and time-consuming.
+Bottleneck Challenge Some VR and AR devices are still expen-
+sive and not available in a large number. This results in lengthy
+sessions if only one student can have a VR/AR experience at one
+time and raises the questions of what the other students can do
+during that time.
+Supervision Challenge Especially in HMD-based VR where users
+might not be able to see their real surroundings, it can be nec-
+essary to supervise students during the experience, e.g., because
+of tripping hazards or because students may suffer from cyber-
+sickness. This can completely occupy the educator and result in a
+logjam.
+Access Challenge VR/AR hardware may not be available to
+students outside course hours. Therefore, it is not possible to plan
+the VR/AR experience as part of their homework. As a result, a
+significant amount of the course time needs to be invested.
+Time and Effort Challenge Preparing the demonstration of VR/AR
+ardware with according application examples can take a large
+mount of time. Moreover, there might be significant effort in-
+olved in setting up the VR/AR demonstration before the lesson
+nd putting it away after the lesson. This time burden associated
+ith VR/AR demonstrations could force educators to give up on
+he idea of integrating VR/AR demonstrations in their courses.
+Space Challenge VR and AR setups may need significant floor
+pace (e.g., the VR HMD HTC Vive has a tracking space of up to
+0 m2) and control of environmental conditions (e.g., window
+linds to limit direct sunlight). As a result, the lecture room might
+ot be able to accommodate several setups in parallel or some
+etups at all limiting the opportunity for hands-on experiences.
+Fig. 1. The circuit parcours technique. Two snapshots of a demo session are shown — in this example groups of two students are formed and each group member
+has either the role of a presenter or a participant at the various demo stations each with a different VR/AR demo.
+Table 1
+Overview of variables of the circuit parcours technique.
+Variable Description
+T Circuit parcours duration of one event
+e Number of events for one circuit parcours
+E Overall circuit parcours duration
+n Students
+k Groups/demo sessions in one time slot
+s Group size
+t Time limit per participant per station
+g Guests
+N Total number of demo sessions
+tsetup Setup time before an event
+b Number of breaks within one event
+tbreak Break time per break
+tend Disassembling time after the event
+Educator Proficiency Challenge As in other applications of VR
+nd AR [43], the lack of educators’ familiarity is a challenge even
+f they have a positive attitude towards it. This is not so much
+f a problem in in-depth courses that are taught by VR and AR
+rofessionals but in courses where VR and AR are just one among
+any other topics. Educators are not aware of best practice
+xamples or lack basic teaching material such as textbooks [24].
+his can result in low self-efficacy to use VR in teaching in
+eneral [44]. As providing opportunities for hands-on experience
+s more demanding than just lecturing facts about VR and AR,
+specially less proficient educators might refrain from including
+irst-hand experiences in their teaching if they are not adequately
+upported. Requirements for VR and AR teaching techniques and
+ethods can be directly derived from all the challenges identified.
+. Teaching technique
+In this section, we contribute a technique for teaching VR and
+R courses, the circuit parcours technique [5]. The basic idea
+s to organize and hold an event where multiple VR and AR
+emonstrations take place simultaneously. This provides ample
+pportunities for learners to have many experiences similar to
+ircuit training. Also, it is our goal that the format of a parcours
+s fundamentally different from other learning scenarios in that it
+s perceived as exciting change and that learners enjoy the event-
+ike character. Our technique is illustrated in the diagram in Fig. 1.
+he parameters we will use in the following are listed in Table 1.
+Let us assume that we have n students and one teacher inhe course. We divide the students in k groups of equal size s
+4
+with s = n/k). Moreover, we have k stations. At each station,
+everal identical VR/AR demonstrations will take place where one
+tudent will be able to experience this demonstration and gain
+irsthand experience at a time. Each station has an according set
+p of VR/AR hardware and software. The VR/AR demonstrations
+iffer from station to station. For each demonstration, a fixed
+mount of time is available. The teacher specifies this number of
+minutes and communicates this to all groups.
+In the event, four roles are distinguished: the presenter, the
+participant, the observer, and the guest. During each demo ses-
+sion, there is one participant present who is actively engaged
+in the VR/AR experience provided at the station. The role of
+the presenter is to prepare the next presentation (e.g., to wipe
+down devices in order to meet hygienic standards or to reset
+the software), to welcome the participant, to provide some back-
+ground explanations concerning the demonstration, to guide the
+participant through the demonstration, to ensure the safety of the
+participant during the demonstration, and to conduct a debriefing
+after the demonstration. The role of the observer is to monitor the
+demonstration (e.g., to check that the time limit is obeyed), to
+make notes about observations during the demonstration, and to
+assist the presenter when necessary. In each demo session, there
+is one person who takes the role of the presenter. The number
+of persons who take the role of an observer can vary between
+0 and s − 1. An additional number of g guests can be invited,
+e.g., students who are not in the course, friends, or family. The
+educator can be among these guests who also participate in a
+demo session at selected stations (e.g., to fill open slots).
+The educator prepares a timetable where all demo sessions
+are listed. For each demo session, the timetable provides the
+following information: the start time, the name of the participant
+at each station (either a guest or a member of a group that was
+not assigned to the station), and the names of the presenter and
+potential observers (who are all members of the group assigned
+to the station). There are N = n · (k − 1) + g · k demo sessions in
+otal. As there are k demo sessions in a single time slot, N/k time
+lots of length t minutes need to be planned. The event phase
+tarts with the setup where the demonstration at all stations is
+repared and set up. This takes tsetup minutes. The educator is in
+harge of ensuring that the timetable is kept. The educator signals
+e.g., using a gong) when a demo session is to start. Each student
+ill visit all stations (except the station the student is assigned
+o) and experience the corresponding demos in the role of a
+articipant. In the remaining time, the student is at the assigned
+tation and serves either as a presenter or observer.
+In order to mitigate the effect that unforeseen events mess up
+he schedule in the timetable, several b breaks of tbreak minutes
+an be planned. The purpose of these breaks is not only relax-
+tion and providing all persons the opportunity for a drink, food,
+r a bathroom break but also synchronization among the sta-
+ions. Moreover, the breaks provide time to replenish resources
+e.g., load batteries). If one demo session takes longer, further
+essions may be affected as the presenter or the participant may
+ot be available in time for their following demo sessions. That
+an cause a ripple effect that can be stopped with breaks that
+ork as a time buffer. We recommend that the educator stops
+he time for common actions (e.g., for walking from one station
+o another, for disinfecting an HMD with wipes, for putting on
+n HMD) and gathers other time-related information, e.g., battery
+ife or calibration times. This should ensure that enough time has
+o be planned for switching stations (e.g., to cater for cleaning
+imes between two demos in order to adhere to hygienic stan-
+ards) and breaks that serve as buffers are important in order to
+revent that everything is thrown out of sync. It is also valuable
+o have a big clock visible from every station and an audible signal
+such as a gong or a ring) that informs everybody that a new
+ession starts.
+After the last demo session, the stations are disassembled.
+his takes tend minutes. Overall, the event takes the time T =
+setup+(N/k)·t+b·tbreak+tend. If the duration of T is too long to fit
+n the teaching schedule, the event phase needs to be split. This
+dds an additional time tsetup + tend for each additional meeting. If
+is the number of all events to be held and E is the time needed
+or all event phases, than E = T ·e in case we split the event phase
+in a way that all e events have the same length. We can calculate
+E directly as E = e · tsetup + e · (b · tbreak) + (N/k) · t + e · tend.
+. Phase model
+We integrate the event from the circuit parcours technique in
+phase model in order to obtain a method for teaching courses
+n the subject of VR and AR. Here, we distinguish six phases.
+n phase 1, the outline phase, the educator outlines how the
+ircuit parcours technique is embedded in the course. One of the
+iggest challenges for the educator is to ensure that each group
+as roughly the same workload for preparing the demonstration
+t their station. As all stations are different, suitable tasks have to
+e identified by the educator that the group is able to accomplish
+n the time frame of the course. Moreover, these tasks should
+either underchallenge nor overwhelm the groups. For this, the
+ducator needs knowledge of the students’ competencies. There
+s a wide spectrum concerning difficulty in content creation for
+he demonstration. On the one hand, existing applications can
+e employed as is. However, they are often a black box for the
+tudents and the demo preparation is too effortless. On the other
+and, students can create the demonstration from scratch using
+ow-level APIs such as Vulkan and corresponding GPU shaders.
+ere, the VR nugget approach is particularly interesting as it is
+n the middle of the spectrum where not many solutions are
+resent. The preparation effort on the educator’s side should not
+e underestimated. Not only need suitable tasks and development
+nvironments to be identified but also additional material such
+s 3D geometry assets need to be provided if this cannot be
+ade part of the students’ tasks. Moreover, instruction has to be
+repared, e.g., in the form of a textbook, video tutorials, or lecture.
+his might differ from station to station. Part of the planning is
+lso the calculation of the times for the events that need to fit the
+ndividual time constraints of the course. Finally, the educator has
+o assess how the circuit parcours pattern can be tailored to fit the
+onstraints of the course or curriculum. It might be even neces-
+ary to change the curriculum or the organization of teaching in5
+order to fully exploit the advantages of the presented technique.
+One particular problem occurs if the number of students is not
+divisible by the number of stations. A good solution is to have
+some groups that are slightly bigger than the others and to invite
+guests during the event to make sure that all stations are fully
+occupied during each session and that all students can take the
+role of a participant and the role of a presenter.
+In phase 2, the assignment phase, each group is assigned to
+one station. The demonstration to be given at each of the k
+tations is specified and required VR/AR hardware and software
+s selected and made available to the groups. The educator either
+ands a complete specification to the group assigned to the
+tation or provides this group with just some constraints (e.g., the
+ardware to be used in the demonstration). In the latter case,
+he educator asks the group to complete the specification. This
+ime t has to be considered when specifying the demonstra-
+ion. Moreover, the groups are instructed as planned in phase
+. For instance, the groups may be assigned some learning tasks
+e.g., reading assignments for background information or manuals
+f VR hardware) and corresponding learning material (e.g., a
+extbook for VR and AR that is suitable for self-study such as [45]).
+In phase 3, the preparation phase, each group prepares the
+ardware and software infrastructure for the specified demon-
+tration (e.g., procuring the hardware, configuring the software).
+hey test the VR/AR setup at their station. Moreover, they work
+ut an action plan for conducting a demo session that also takes
+he timing and the different roles into account. In the preparation
+hase, demo sessions are rehearsed, and based on the outcome of
+he rehearsal the action plan is altered. The action plan needs to
+nsure that the time limit of t minutes is obeyed. In the rehearsal,
+he members of the group assigned to a station take on each role
+t least once.
+In phase 4, the event phase, the event takes place as described
+n the previous section. We found it to be beneficial that the
+ducator is not just an observer during the event but a guest at
+very station participating in each demo. This allows the educator
+o interact with each group and provide some feedback after the
+vent. Alternatively, the educator can serve as a pilot user for each
+tation during the preparation phase.
+Phase 5, the presentation phase, data gathered during the
+vent phase is analyzed and presented. For instance, students
+ould be asked to perform a qualitative or even quantitative eval-
+ation based on their observations at their station. These results
+ogether with the description and discussion of their demonstra-
+ion protocol, lessons learned when implementing the prototype
+oftware, lessons learned when conducting presentations and
+ser tests, and overall observations and conclusions could be
+ssembled in a report or presented to the other groups in a
+ession following the event.
+Phase 6, the reflection phase, is added to deepen the ex-
+erience and reinforce the learning results at the end of the
+ourse. Reflections could range from filling in a questionnaire
+ndividually to short informal discussions among students about
+heir own experiences and observations to more formal reports.
+he reflection phase is valuable for the educator to evaluate the
+rogress of the students or for grading purposes. Moreover, the
+ducator can gather pieces of information about the students’
+erformance by observing the presentations (especially if the
+ducator serves as a pilot participant or guest), by examining
+he software created, and by evaluating the overall presentation
+esign. As presenters can be observed individually and the group
+an be asked to detail and rate each team member’s contribution,
+t is feasible to assess each student’s individual performance
+espite relying heavily on group work. In the simplest case, the
+oal is to provide a firsthand experience of VR/AR and the mere
+articipation of a student trying out a VR/AR presentation is
+ufficient to ensure that this goal is met.
+The educator can tailor the phases to the requirements and
+onstraints of an individual course. For instance, phase 3 can take
+everal weeks when the learners develop their own demonstra-
+ors or just a couple of minutes when students learn how to start
+pre-installed software. The educator may also decide to omit
+hases, e.g., the reflection phase may be omitted if the educator
+as not sufficient time for it.
+Instead of a linear succession of phases, iterations can be
+ntroduced in the phase model. We distinguish inner iterations
+nd outer iterations. In an inner iteration, the phases 2 to 5 can
+e repeated multiple times. Thus, several events take place, the
+earners prepare multiple demonstrations, more opportunities for
+ands-on experience are provided, and the students can apply the
+essons learned in one iteration directly to the next iteration. In an
+uter iteration, the whole group of learners is split into subgroups
+or whom the phase model is applied separately. As a result,
+ultiple isolated events take place with the same stations. For the
+ducator, it is interesting to compare the results. If time permits,
+ll subgroups can share phase 5 and are also able to compare the
+esults made at the same station by different subgroups. In order
+o save time, a variation is to have parallel meetings of all student
+roups that were assigned to the same station. As they were given
+he same task, for these groups it is particularly interesting to
+ompare results and exchange experience.
+Finally, we introduce coupling points in the phase model
+here a connection to other courses can take place. Being con-
+ucted in a relatively short time frame and being self-contained,
+he event phase serves as an excellent coupling point. For in-
+tance, course A is an in-depth course where students prepare
+ven the demonstrations themselves while VR and AR are just
+ne of many subjects in course B. Both courses can be coupled
+y inviting learners in course B to take the role of guests in
+he circuit parcours. Learners from course A benefit as they can
+ather more data and more experience. Learners from course B
+enefit as they are provided with opportunities to get some first-
+and experience. Other coupling points can be placed in phase
+. For instance, course A again is an in-depth course on VR and
+R while course B is a course on human–computer interaction
+r usability engineering. The learners from course B can attend
+he presentations from course A which affords these learners
+o hear the first-hand experience from their fellow students
+ow they conducted demonstrations or even how they planned,
+xecuted, and analyzed usability tests. If learners in course B
+dentify interesting research questions, they can submit these
+uestions to course A. Here, the coupling point lies in phase 2.
+he complete phase model is depicted in Fig. 2.
+. Best practice
+A first example for employing our methods to an under-
+raduate course ‘‘‘Virtual and Augmented Reality’’’ for computer
+cience students in their 4th semester. The course has 15 partic-
+pants and a workload of 150 h. The course is taught in a VR/AR
+ab. Four hours per week consist of lecture-based instruction, stu-
+ent presentations, practical work, and tutoring. The proportion
+f these varies over time with an emphasis on instruction at
+he beginning of the course and a focus on students’ practical
+ork at the end. Overall, the ratio of instruction and practical
+ork is roughly 40:60. Moreover, students possess a chip card to
+reely enter the VR lab where each student has access to a locker
+hat stores their VR/AR equipment. In phase 2, the students are
+ivided into five teams of equal size. Each team receives some
+R/AR hardware and a research question where a user test needs
+o be conducted in order to evaluate two alternatives. For exam-
+le, one group receives a VR HMD and is tasked to compare two
+ifferent techniques for navigation in a VR environment. Another6
+Fig. 2. Phase model for teaching VR and AR.
+example would be a group that receives a tablet and an AR HMD
+and is asked to evaluate the advantages and disadvantages of
+direct-see-through and video-see-through. A third example is a
+task where different techniques to visualize teleportation in VR
+should be compared. The educator prepared these tasks in phase
+1. The time for each demo session was set to t = 20 minutes.
+In phase 3, each group needs to develop prototype software that
+serves as the basis for the user test. Various software such as
+game development platforms (e.g., Unity), dedicated VR software
+(e.g., Autodesk VRED), or toolkits (e.g., ARKit) is used so that
+students do not need to start from scratch. The educator supports
+the students concerning prototype development but also provides
+feedback to the planning of the user test, e.g., by reviewing the
+questionnaires to be used. The educator provided a schedule, so
+it was clear who had to be at which station in which role during
+the event. The main event (phase 4) had to be split into two
+dates. Two guests were also present. One of the guests was the
+educator who could also experience each station. Two breaks
+with tbreak = 5 min were planned, tsetup was set to 15 min, tend was
+set to 10 min. Two stations of the event are depicted in Fig. 3. In
+summary, each of the two events had seven demo sessions and
+took 175 min. The students organized the third event voluntarily
+where they invited friends, family, and fellow students. In phase
+5, each group gave three presentations. The first presentation
+was about educating the other students in the course about the
+software they have used for prototyping and the lessons learned
+using this software. In the second presentation, each group re-
+ported the results of the user tests (including statistical analysis)
+and discussed them. With the two regular events, each group had
+conducted 14 user tests (involving the twelve other students who
+were not in their group plus the two guests), with the additional
+third event this number was increased to 22 user tests which
+provide a good amount of data for meaningful statistical analysis
+and discussion. For phase 6, the third presentation was about
+the reflection of the experiences in the course where all groups
+focused on the experiences they made when trying out the VR
+and AR equipment at other stations. The 15 weeks of the semester
+were distributed among the phases as follows: phase 2 took one
+week, phase 3 took nine weeks, phase 4 took two weeks, phase
+5 took two weeks, phase 6 took one week. The outline phase
+(phase 1) took the educator ca. 40 h in total before the semester
+started (e.g., procuring the hardware, time planning, ideas for
+tasks, elaboration of the tasks).
+The second example for employing our methods is a two-
+ay course for the further education of university teaching staff
+ho have no background in VR or AR but want to assess how
+ar these technologies can benefit their teaching. The number of
+articipants is 12. In the second phase, groups of two are formed
+nd each group receives a device with VR or AR capabilities
+e.g., an iPad, an Oculus Go VR-HMD, a Microsoft Hololens). There
+s one pre-installed app on each device, for instance, Froggi-
+edia (an AR learning app about biology from the Apple App
+tore), Human Anatomy VR (a VR App available in the Oculus
+pp Store that supports the exploration of the human anatomy),
+amsung’s BeFearless VR app for training public speaking, or
+icrosoft’s Dynamics 365 AR-based collaboration app for the
+icrosoft Hololens. For the 60 min preparation phase, each group
+as given the task to become acquainted with the software,
+ead manuals or watch video tutorials, and plan a 10-minutes-
+ong demonstration. The groups are told that in this demo, a
+hort introduction should be provided, and the VR app or AR
+pp should be exhibited. Immediately afterwards, phase 4 started
+ith a total of 10 demo sessions at six stations. Overall, this
+vent phase took 120 min (tsetup = 0 minutes plus 10 · t = 10
+inutes plus two breaks with tbreak = 5 minutes plus tend = 10
+inutes). In total, three hours of the course time were devoted to
+he demonstration so that participants could get some firsthand
+xperience. Phase 5 was skipped. In the sixth phase, a group
+iscussion is started where experiences made are reflected and
+ach participant is asked to write down three (or more) ideas
+n light of the impressions of the demos on how VR and AR
+echnologies might improve their teaching.
+A third example is an undergraduate course in chemistry in
+he third semester where students have a laboratory course in7
+which they spend four hours per week in one of the university’s
+laboratories and four hours per week preparing the course at
+home. Digitalization also became an important topic in chemistry
+and the educators want that their students get some firsthand
+experience with virtual laboratories. They want that students are
+able to assess the value of VR as a tool for preparing laboratory
+experiments. The 120 students of the course are already divided
+into six groups of 20 students for the practical lab work and these
+groups are treated identically in the following. In phase 2, each
+of these groups is further divided into groups of 3 students each
+(and one group with only two students) who are assigned to
+seven stations. Each station has a different topic (e.g., the presen-
+tation of some lab equipment or a specific chemical experiment)
+and has some VR headset (reaching from simple headsets such
+as Google cardboard to more sophisticated VR HMDs). In the
+preparation phase, the students work through a video tutorial
+where they learn to use a dedicated editor for demonstrating
+laboratory experiments. This editor is based on the concept of
+VR Nuggets [26]. The basic idea of VR Nuggets is that they are
+standalone, always functioning VR software components to be
+used for education purposes. The VR Nuggets provide all the
+complex base functionality for a certain use pattern, e.g., the
+show and tell pattern where a virtual object can be interactively
+explored in 3D together with labels that provide additional infor-
+mation. If the student group aims to demonstrate a certain lab
+device, they need to select the matching VR Nugget and change
+its configuration, i.e., substitute the existing dummy virtual object
+with the specific object from an asset store and place the labels
+in 3D space accordingly. The VR Nugget software makes sure that
+the labels are always positioned in the virtual world that they
+are readable by the students and provides interaction techniques
+for exploration. VR Nuggets are not meant for creating a whole
+course in VR but to support the introduction of some VR content
+in a regular course where VR has a substantial added value. The
+student groups have two weeks to create the VR content and
+prepare the demo at their station. Hence, the software used must
+allow for a short familiarization period. In phase 4, the event is
+conducted. The event takes 120 min (tsetup = 10 minutes, 18
+demo sessions with t = 5 minutes, tend = 10 minutes, two breaks
+with tbreak = 5 minutes) and is short enough that there is no need
+for a split. In phase 5, the students are expected to write some
+text about the outcome as part of their usual lab report. Because
+of time constraints, no specific activities were conducted during
+course time for phase 6. Instead, students were just encouraged
+to discuss their experiences within the group and to take some
+time and reflect on them.
+The fourth example illustrates how our method can be mod-
+ified during the time of the COVID-19 pandemic and how it
+could translate to distance learning. If presence at the university
+is not feasible at all, of course, first-hand experiences cannot
+be made to the same extent as if the event in phase 4 can
+be held in a face-to-face setting in a VR-Lab. The major idea
+here is to use a web conferencing tool such as Zoom, Webex, or
+Microsoft Teams that all allows to divide the participants into
+smaller groups and hold sessions in parallel. In these sessions,
+either the demonstrator remotely instructs the participants and
+navigates them through the demo provided the VR/AR equipment
+is available at the participants’ site. Or the presenter gives a
+description of the experience in a one-to-one session where a
+higher degree of empathy can be feasible as a dialogue between
+presenter and participants arises. Here, the idea is to approximate
+a hands-on experience as well as possible. If the policy of the
+university allows it, the VR/AR equipment can be lent to the
+students who take it or even have it shipped to their homes.
+Alternatively, equipment that might be present in the students’
+homes (such as a Playstation VR or a sophisticated smart device
+Here, the educator needs to
+ave a high degree of flexibility as the planning of tasks cannot be
+ccomplished in phase 1 as the information on what equipment
+appens to be accessible is not available. In case presence at
+he university is feasible as the pandemic policy allows for the
+resence of small groups at the university or more generally, if a
+lended learning approach is pursued, the event in phase 4 can be
+onducted. However, additional time has to be taken into account
+uring planning (e.g., more time for disinfections, more time to
+witch rooms, more time for breaks due to airing). Moreover,
+ore rooms may be needed in parallel. All other phases except
+hase 4 can more easily be transferred to distance learning.
+The fifth example illustrates the usage of coupling points in
+ur method. As course A, we take our undergraduate course ‘‘Vir-
+ual and Augmented Reality Systems’’ already introduced in ex-
+mple 1. As course B, we take a 6th semester course in medicine
+here at the end of the semester students should become ac-
+uainted with modern methods of digitalization. Course B has
+oughly 70 students. The students in course A are tasked with
+reparing VR/AR demonstrations in medicine and interviewing
+he participants about the added value they see in using these
+echnologies and their attitude towards VR/AR. All five groups in
+ourse A are provided with dedicated software for medicine that
+ses VR/AR in order to visualize data from radiology in 3D. All
+roups had the same task. The time for a demo session is set to
+0 min. Each student from course B visits only one of the five
+tations. The event was split to three consecutive weeks. Thus,
+t the end of the lecture of course B, a third of the students,
+f course, B took part in the event. There were 14 sessions in
+otal, i.e., up to five sessions per week where a student had to
+ait up to 40 min until they had a spot at one of the five demo
+tations. In course A, a second event was performed where this
+ime, students visited the demos of the other four groups. This
+ay, students were able to see how the other groups responded
+o the same task and planned the demonstration during phase
+. Moreover, they were also able to compare their evaluation
+esults from interviewing the students from course B and see the
+ariations of the data among groups.
+. Evaluation
+In teaching a VR/AR course for computer scientists in a univer-
+ity (see example 1 in the previous section), we have employed
+he circuit parcours technique seven times (in the period from
+009 to 2020). We have never experienced any problem with
+pplying this technique that resulted in a failure. The technique
+roved itself to be robust and working well. Students particularly
+ppreciated the event-like character and the variation in teaching
+ethods. In five out of seven cases, the students voluntarily or-
+anized additional events and invited fellow students and friends
+r family. We take this as a strong indication that students felt
+otivated and were well engaged. In our universities’ quality
+ssurance where all courses are evaluated with a standard ques-
+ionnaire, our VR/AR course was rated well above average. While
+his is not necessarily due to the circuit parcours technique, writ-
+en comments in the evaluation questionnaire (that highlighted
+he practical and hands-on experiences as valuable or mentioned
+he event as fun) provide some anecdotal evidence that this
+pproach to organizing the course was perceived as positive.
+here was not a single negative comment referring explicitly to
+he circuit parcours technique in all seven questionnaires.
+We also surveyed the students where we used our methods
+n the last four years. We received 15 answers. We asked the
+ormer students to rate the importance of making a hands-on
+xperience in a course about VR and AR on a scale from 0
+not important) to 6 (highly important). The result is shown in8
+Fig. 4. Results of the survey ‘‘From your experience, how important is it to
+make hands-on experiences in courses about VR and AR?’’ on a scale from 0
+(not important) to 6 (highly important).
+Fig. 4 there is a clear trend in this group that rates hands-on
+experiences as important. Moreover, we got written statements
+from the comments field in our survey. Only a few addressed
+hands-on experiences directly, e.g., ‘‘Trying out a VR program
+with VR goggles is more authentic’’. Most statements addressed
+other aspects of our methods. Several of them state that the
+opportunity to experience more variety was appreciated: ‘‘[It is
+an advantage to] see different approaches to the implementation
+of the projects and user testing’’., ‘‘You can see how the others
+have implemented the user tests’’, ‘‘[It is an advantage to] to see
+more cool ideas (or their implementation)’’, ‘‘[It is an advantage
+to] try out other VR headsets’’.. Here, former students highlight
+the ability for comparison: ‘‘[It is an advantage] in order not only
+to be able to evaluate the work of fellow students but also to get
+a comparison to your own work’’., ‘‘You can see how much the
+others have done, and how much you could have done’’., ‘‘Others
+were a bit more creative and brave to try something different
+than required’’. Statements show that empathy is addressed by
+our methods: ‘‘You get a better understanding of the subject’s
+situation (e.g., what might stress a subject or make them uncom-
+fortable) when you do another user test yourself’’., ‘‘How different
+people’s views and approaches can be, even when studying the
+same thing’’., ‘‘Cool event, people perceive very different aspects
+of the demo’’.. Moreover, one statement shows that our methods
+can encourage reflection: ‘‘One reflects on the usability of one’s
+own application for future implementations’’.. The opportunity
+to receive feedback is mentioned in several statements, such as
+‘‘Feedback for one’s own work is extremely useful’’.. Here, the
+former students show that taking over teaching tasks can be
+considered positively: ‘‘[It is an advantage] To enable feedback
+to fellow students’’, ‘‘I have been helped, so I return that too’’.
+Former students offered the following advice: ‘‘It was good that
+we have scheduled substitutes to perform the tests’’., ‘‘That you
+should take enough time for the test person and that it is also
+okay if the user test does not run exactly as planned beforehand’’..
+While these statements are not representative, they show the
+potential of our methods to help in the acquisition of soft skills.
+8. Discussion
+8.1. Advantages and disadvantages
+Concerning the time and effort challenge, the circuit parcours
+technique is superior to a linear demonstration of VR/AR appli-
+cations by the educator alone. While the latter takes at least
+n · k · t minutes of time for demonstrations, our technique takes
+less than 1/kth of that time. For instance, in example 1 a linear
+Our technique is a solution for the
+ducator being a bottleneck in demonstrations (i.e. an aspect of
+he supervision challenge). On the other hand, additional time
+eeds to be invested by the students for the preparation. How-
+ver, here groups of students can work in parallel. Moreover,
+he students can reap benefits from the preparation in addition
+o the benefits of experiencing the demonstration. The circuit
+arcours technique also ensures that idle or waiting time for
+tudents is reduced. They are active and involved, either as partic-
+pants, presenters, or observers (which addresses the bottleneck
+hallenge).
+The presented technique does not only mitigate the prob-
+em that individual hands-on experiences take time and space
+i.e., mitigating the time and effort challenge as well as the space
+hallenge). Moreover, the educator is relieved of the tedious task
+o oversee every demonstration which might be even mandatory
+ecause of safety considerations (e.g., tripping hazards when
+tudents wear HMD that do not let them perceive the environ-
+ent). In addition, the educator is not required to fully plan and
+repare the demonstration (install software, create or customize
+he demonstration, set up the hardware equipment). In a sense,
+he students take over some work of the educator which provides
+earning opportunities to them. As a consequence, the significant
+verall reduction of the educator’s workload could mean that
+he inclusion of individual hands-on experiences in a course can
+ecome feasible in the first place. In this case, our technique
+as all the advantages that come with hands-on experience as
+pposed to just hearing or reading about VR/AR experiences. We
+ave not evaluated the extent and scope of these advantages
+urther as they are not specific to our technique but the provision
+f individual experiences in VR/AR education in general. Our tech-
+ique is rather an enabling factor in this situation. For instance,
+e did not evaluate the added value of first-hand experiences in
+R/AR education with an experiment that had a control group.
+owever, this is examined in the literature and our experiences
+onfirm findings that first-hand experiences are crucial for the
+nderstanding of VR/AR.
+Enlisting students to conduct VR/AR presentations might be
+een as inferior to the educator performing this task as the pre-
+entation abilities, didactical competencies, or verbal capabilities
+f the students might not be as well-developed compared to the
+ducator. However, the first-hand experiences each student is
+ble to make with VR/AR even with an inexperienced student
+resenter instead of an experienced educator are valuable. This
+s especially true if the choice is not between inexperienced
+tudent presenter vs. experienced educator but between first-
+and experience vs. no first-hand experience because limited
+esources and other constraints can force the educator to abandon
+he idea to provide first-hand experiences in VR/AR. Based on
+nlisting students, the circuit parcours technique can again be
+een as enabling factor for first-hand experiences and solution
+or the access challenge. Moreover, the student presenters con-
+eive and rehearse their presentation within their group during
+he preparation phase. Here, the group members can provide
+aluable feedback. The educator can also use the preparation
+hase to perform some quality assurance of the presentations
+nd demonstration protocols before the event phase, especially
+f the educator takes the role of a pilot user. The concrete task
+o act as presenter can be a good occasion to motivate students
+o work on their presentation skills and didactical competencies.
+ence, the educator should consider providing fitting learning
+pportunities (such as instructional videos or even a compact
+ourse about relevant soft skills also addressing the educator
+roficiency challenge).9
+An additional advantage of the circuit parcours technique lies
+in the fact that students do not just experience k demonstra-
+tions. They invest significantly more time and effort in the one
+demonstration that they are responsible for. As a result, a good
+balance can be struck between getting an overview and getting to
+know one example more in-depth (which is also a contribution
+to addressing the procurement challenge). Moreover, the tech-
+nique enlists the learners as tutors for their fellow students. This
+provides opportunities in learning soft skills and can also have
+motivational aspects that their work is rewarded with support-
+ing and educating others. There may be additional motivational
+aspects based on the high degree of active involvement, the work
+in groups, or the event character.
+A disadvantage of our methods is that they are still more
+demanding to the educator than just showing a video on a slide.
+Educators need to perform meticulous planning as especially
+the event is highly sensitive to delays or other disturbances.
+In principle, handing groups of students not the same task but
+different ones opens the door for unequal treatment (e.g., dif-
+ferences in workload requested as one group task may turn out
+to be considerably more challenging than the tasks of the other
+groups). Our methods provide only a framework that needs to
+be tailored to the individual learning goals of a course and the
+constraints (e.g., availability of equipment). The need for the first-
+hand experience wanes if the students have already extensive
+experience in VR and AR usage. Here, other advantageous aspects
+of our methods could still make their application sensible.
+8.2. Pedagogical considerations
+From our experience, the circuit parcours technique allows us
+to address more learning goals with the opportunity not only to
+hear about but to experience VR/AR hardware and software:
+• The students are trained to be attentive and observe VR/AR
+users actively.
+• The students switch the roles of presenter and participant
+and thus improve social skills such as empathy.
+• Students learn to self-assess their performance when com-
+paring their work to the work of other students.
+• Students learn about presentations and especially the
+demonstration of VR/AR applications to third parties.
+• Time management and discipline in carrying out a demo or
+test protocol can be trained.
+• The methods provide opportunities to be creative and learn
+how these creations are experienced by others.
+• With the peer teaching aspect included in our method, stu-
+dents learn how to facilitate the learning process of others.
+• Fundamentals of user tests can be also learning objectives,
+e.g., the circuit parcours technique facilitates the recording
+of test data in a short amount of time that can serve as a
+basis for further analysis. In particular, meaningful statisti-
+cal analysis requires a minimum amount of test data. This
+amount can be obtained in the event phase.
+9. Conclusion and future work
+The circuit parcours technique describes a basic pattern for
+best practice how hands-on VR and AR demonstrations can be
+integrated into a course about VR and AR. The major idea is to
+define several demonstration stations that are used in parallel
+during a carefully organized event. Moreover, students switch
+roles as participants and presenters. Thus, students are not only
+recipients of the demonstrations but are entrusted with preparing
+and actively presenting VR and AR applications. This relieves
+educators from time-consuming tasks that are associated with
+The central event is
+mbedded in a six-phase model: outline, assignment, preparation,
+vent, presentation, and reflection. Moreover, inner and outer
+terations, as well as coupling points, can serve as means to build
+robust framework for learning experiences that even transcend
+he boundaries of a single course. By comparing time efforts with
+raditional demonstration approaches, it can be shown that the
+resented technique is significantly more time-efficient. Besides
+ime efficiency and the reduction of the workload of the presen-
+er, the methods have additional potential advantages such as the
+bility to address several learning goals ranging from several soft
+kills (time management, presentation skills, etc.) to user test-
+ng or VR/AR programming, the increase in student motivation,
+nd the balance between in-depth learning and provision of an
+verview. As a result, obstacles are mitigated by this technique
+hat could prevent educators to include a hands-on demonstra-
+ion of VR/AR in their courses such as the bottleneck challenge
+r the supervision challenge. Thus, a major advantage is that the
+echnique contributes to providing students the opportunity to
+xperience VR and AR applications themselves instead of just
+eading, hearing, or seeing a video about them. These experiences
+re considered to be of key importance when learning about
+R and AR. Describing five different application examples of the
+ircuit parcours technique, we showed how flexible the technique
+an be used in different situations that range from semester-long
+ourses to one-day seminars, from specialist target groups such
+s computer science students to non-technical specialists, from
+ourses with few participants to courses with a large number of
+articipants. This leads to one direction for future work where
+urther techniques for teaching can be derived from the technique
+resented exploiting the potential of the coupling points within
+he phase model presented. Another direction for future work
+ould be to provide a dedicated authoring tool for preparing
+emonstrations for the circuit parcours technique and an envi-
+onment for content creation. Here, the VR nugget approach can
+erve as a promising starting point.
+eclaration of competing interest
+The authors declare that they have no known competing finan-
+ial interests or personal relationships that could have appeared
+o influence the work reported in this paper.

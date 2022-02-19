@@ -1,0 +1,178 @@
+Animate materials, man-made materials behaving like living systems, are attracting enormous interest across 
+a range of sectors, from construction and transport industry to medicine. In this leading opinion article, we 
+propose that embracing complexity in biomaterials design offers untapped opportunities to create biomaterials 
+with innovative life-like properties that extend their capabilities and unleash new paradigms in medical treatment. 
+Biology is full of beautiful examples of remarkable structures and
+omplex phenomena made and regulated by multiple molecular and cel-
+ular building blocks interacting cooperatively through controlled mech-
+nisms that give rise to sophisticated properties and materials [ 1 , 2 ].
+rom the toughness and resilience of silk or resilin to the effective cat-
+lytic functions of enzymes at the molecular scale; from the locomo-
+ive properties of kinesin and dynein to the dynamic disorder-to-order
+ransitions of membraneless organelles at the nanoscale scale; from the
+esponsive coordinated migration of and communication between cells
+uring development to the way organisms such as the salamander are
+ble to regrow lost limbs at the micro and macroscale. Independently of
+he size scale at which one looks, biological systems inspire us. In doing
+o, it is easy to mistake their remarkable reproducibility and efficiency
+or simplicity. In fact, biology is anything but simple, and it is its inher-
+nt complexity in the way biological systems grow, respond, diversify,
+nd optimize that give rise to their outstanding properties. 
+rogresses in biomaterials design 
+Biomaterials have improved healthcare in many ways and continu-
+us developments in the field are expected to lead to breakthrough solu-
+ions for many clinical problems. While initially designed to be passive
+ i.e. biologically inert to minimize immune responses) and restore the
+asic functions of the tissues being replaced by matching their mechan-
+cal properties [3] , increasing control over chemical functionality and∗ Corresponding authors. 
+E-mail addresses: h.azevedo@qmul.ac.uk (H.S. Azevedo), A.Mata@nottingham.ac.
+f  
+ttps://doi.org/10.1016/j.bbiosy.2022.100039 
+eceived 26 November 2021; Received in revised form 23 January 2022; Accepted 6
+666-5344/© 2022 The Author(s). Published by Elsevier Ltd. This is an open access 
+ http://creativecommons.org/licenses/by-nc-nd/4.0/ ) esulting properties have led to an explosion in diversity and potential
+pplications of biomaterials [ 3 , 4 ]. Furthermore, as our understanding
+f how biological systems function has increased, so has the pursuit for
+iomaterials that can mimic their properties. A common thread in this
+xtensive biomaterial landscape has been the search of reductionist ap-
+roaches, which have been largely imposed by practical, economic and
+egulatory constraints to afford reproducible manufacturing and facili-
+ate clinical translation. For example, testing biomaterials by undertak-
+ng cell culture in 2D, rather than 3D, benefits higher throughput but
+ails to recreate the in vivo environment, removes critical system interac-
+ions, and introduces dimensionality artefacts. However, simplicity has
+lso enabled the biomaterials community to dissect the inherent com-
+lexity of biological systems [5] and lay down underlying principles and
+esign rules [6] to attempt to recreate them. Pioneering studies have
+enerated examples of biomaterial systems capable of growing, divid-
+ng and multiplying, self-healing, and exhibiting hierarchical structures.
+onetheless, these approaches have mainly used single components or
+nabled the recreation of single properties ( e.g. composition, stiffness,
+hape, topography, degradability, ligand density) [4] . 
+In spite of remarkable advances, we are far from developing practical
+aterials that can emulate the vast majority of complex functions ex-
+ibited by living systems [6] . In fact, there is a growing frustration that
+aterials science has not delivered the kinds of practical breakthroughs
+hat have been expected [6] . There is a need for new paradigms that can
+ush the current boundaries that guide, yet also limit, materials design.
+n doing so, it is helpful to realize that we have evolved to pursue order
+nd symmetry and to avoid chaos and disorder. Our natural proclivity
+or simplification has enabled remarkable advances in materials scienceuk (A. Mata). 
+ February 2022 
+article under the CC BY-NC-ND license 
+H.S. Azevedo and A. Mata Biomaterials and Biosystems 6 (2022) 100039 
+Here, we argue that embrac-
+ng complexity, rather than avoiding it, can lead to new ways of think-
+ng about biomaterials design. This approach does not have to replace
+inimalistic strategies but rather offers opportunities to complement
+nd enhance them. The need for embracing and engineering complex-
+ty is increasingly being recognized in fields expanding from precision
+edicine [7] to biofabrication [8] . 
+pen challenges and opportunities in biomaterials design 
+In this perspective, we argue that new ways of thinking about ma-
+erials design could offer solutions to major unmet needs. For example,
+he fields of tissue engineering and regenerative medicine continue to
+ace gruelling challenges because of the difficulty of recreating the in-
+erent complexity of the regenerative milieu. Biology is complex and
+inimalistic approaches to recreate it can only go so far. However, given
+he increasing understanding of underlying biological principles and ca-
+acity to manipulate molecules, new opportunities are emerging. How
+ar these go may depend on our capacity to think outside conventional
+onceptual boundaries and operate at the interface of traditionally un-
+elated fields such as for example structural biology and biofabrication
+r supramolecular chemistry and mechanobiology. 
+aterials design through biological organization principles 
+Like biological systems, chemical systems can exhibit complex
+ehaviour that emerges from cooperative interactions and chemical
+etworks formed by multiple components, not observed in isolated
+olecules or reactions [9] . These interactions enable both functional-
+ty of individual components ( e.g. protein disorder-order transitions) as
+ell as the emergence of mechanisms of assembly that nature uses to
+iversify, respond, and ultimately optimize. Embracing complexity in
+iomaterials will require a similar holistic approach that considers a
+ystems-level design and integrates interdependent parts ( Fig. 1 ), briefly
+iscussed in the following sub-sections. 
+elf-assembly and multicomponent self-assembly 
+Biological systems rely on self-assembling processes that have high-
+evel of organization across scales, and which are specific, selective,
+nd adaptable. Reductionist approaches have enabled the generation
+f remarkable materials such as those based on self-assembling pep-
+ides. However, self-assembling systems that integrate multiple types of
+uilding-blocks can amplify interactions and facilitate the generation of
+mergent and innovative properties that go beyond those of individual
+omponents. In fact, biology builds by integrating and coordinating mul-
+iple molecular building-blocks. The use of multiple molecular compo-
+ents can significantly enhance the diversity of the resulting structures
+hus avoiding limits on the emergence of complexity that homogeneity
+mposes. 
+isorder-to-order transitions 
+We have evolved to pursuit order and avoid disorder. However, liv-
+ng systems operate within a balance of order and disorder that enables
+oth stability and growth. This is particularly clear when looking at
+roteins. It is becoming increasingly recognised that proteins function
+s a network and that their interactions with one another determine
+heir activity. There is growing consensus that the disordered regions
+f proteins play a key structural and signalling role in protein function,
+hrough interactions with other molecules, facilitated by their confor-
+ational flexibility [10] . 2 ompartmentalization and diffusion-reaction processes 
+As multiple components interact, supramolecular structures emerge.
+n biological systems, interactions between different molecules and
+isorder-to-order transitions can lead to the emergence of distinct com-
+artments that trigger downstream events such as diffusion or the gen-
+ration of gradients, which lead to dynamic behaviours such as growth
+nd healing. Complex patterns, such as animal skin patterns and skele-
+al shapes in vertebrate limbs, are widely observed in biology. Pattern
+ormation is driven by concentration gradients regulated by reaction-
+iffusion mechanisms. Morphogenesis and hierarchical organization
+ave been achieved in synthetic chemical systems through reaction-
+iffusion systems ( e.g. compartmentalization via a semi-permeable bar-
+ier/membrane) that produce concentration differences between differ-
+nt chemical environments which evolve into spatio-temporal patterns.
+ar-from equilibrium systems and emergence of properties 
+In living systems, molecular assemblies are regulated by compet-
+tive chemical (anabolic or catabolic) reaction networks that control
+he activation and deactivation of their precursors. For assemblies to
+merge and breakdown over time, the anabolic and catabolic reactions
+ust be regulated independently. Initially, the rate of the anabolic reac-
+ion needs to be higher than the catabolic reaction to favour temporary
+ccumulation of precursors to promote their assembly, but then self-
+ssembly can be maintained in a steady state when the rate constants of
+ssembly and disassembly are equal. The microenvironment affects the
+inetics of the reaction cycle, influencing the assembly propensity. Fur-
+hermore, the interplay between assembly and reaction cycles can gener-
+te oscillations in the assembling and disassembling processes, trigger-
+ng transient order and resulting in pattern formation and assemblies
+ith dynamic behaviour. Dynamic self-assembling systems require con-
+inuous energy supply to sustain their maintenance so assembly will
+top when the fuel is completely used or when the rate of the catabolic
+eaction takes control over the reaction cycle. 
+Living systems exhibit properties that go beyond those of the indi-
+idual building-blocks that compose them. Independently of size scale,
+iological structures display properties such as adaptation, replication,
+ugmentation, or the capacity to grow and heal that emerge upon in-
+eractions between the components that form them. By emulating or in-
+orporating biological organization principles within materials design,
+t is possible to move away from limits that homogeneity imposes and,
+nstead, trigger and control emergent properties. 
+eyond bioinspiration – biocooperative materials 
+Interest in bioinspired materials has grown for decades because of
+he remarkable advantages that structures and properties of biological
+aterials could offer. Advances in fields such as structural and synthetic
+iology, supramolecular chemistry, and biofabrication continue to grow
+ur toolkit to engineer synthetic materials that emulate features of bio-
+ogical ones. However, given the inherent complexity of biology, it is
+mportant to also explore other avenues that can facilitate access to
+he properties of natural materials. For example, the possibility to work
+ith endogenous molecules and assembling mechanisms of living sys-
+ems could offer an attractive alternative to reach this goal. 
+inal remarks 
+The realization of biomaterials that function as those in living sys-
+ems requires an inclusion of complexity that exploits heterogenous
+uilding blocks and emerging phenomena. This approach enables the in-
+orporation of collective interactions and assembly of cooperative struc-
+ures, as well as exogenous interventions for kinetic control and dynamic
+ehaviour. This new generation of biomaterials has the potential to push
+urrent boundaries in materials performance and drive major changes
+H.S. Azevedo and A. Mata Biomaterials and Biosystems 6 (2022) 100039 
+Fig. 1. Proposed holistic approach to integrate complexity in biomaterials design harnessing supramolecular biological organization principles that nature has 
+evolved as assembling rules for materials design. Adapted from [8] with permission.

@@ -1,0 +1,352 @@
+We have presented BVR surface photometry and geometric analyses for galaxy pair KPG 578 a, b (NGC 7537,
+NGC 7541). The contour maps, BVR surface brightness profiles (SB) and geometric profiles (xc, yc, PA and
+Ellip=1− b/a) have been used for each galaxy in the pair. The galaxy pair KPG 578 is an intermediate pair with
+projected separation = −r 35.4 h kpcp 70
+1 and relative velocity =vΔ 15 km/s. The total orbital mass of KPG 578 is
+determined to be = ⊙M x M6. 03 10t
+9 . While the total luminosity and the total orbital mass to the total lu-
+minosity of KPG 578 are found to be = ⊙L x L4. 49 10t
+10 and =M L 0.13t t M⊙/L⊙ respectively.
+While it has been believed that the galaxy pair KPG 578 is non-interacting system, in this work we have found
+that the galaxy pair KPG 578 has signs of interaction. The KPG 578a contains one short curved tidal tail in north-
+east. The KPG 578b has two curved tidal tails: the first is long in west and the second is short in east. The
+geometrical parameters of tidal tails (length (lt), thickness (ht) and area (At)) have been presented in this study.
+1. Introduction
+The galaxy pairs are considered as natural resources to study the
+gravitational interaction between galaxies. They play a strong role for
+increasing star formation (Bell et al., 2006, Lin et al., 2004, Bundy
+et al., 2004, Patton et al., 2002, Carlberg et al., 2000, Patton et al.,
+2000; Le F‘evre et al., 2000).
+The KPG 578 is a pair of the two spiral galaxies from Karachentsev
+catalog (1972). The galaxy KPG 578a (NGC 7537) is classified as
+normal spiral Sbc. The galaxy KPG 578b (NGC 7541) is classified as
+barred spiral SBc. The major diameter in the B-band at the isophotal
+level 25mag/arcsec2 equals to 1.82 and 3.02 arcmin of KPG 578a and
+KPG 578b respectively. The total magnitude in the B-band at the same
+isophotal level equals to 12.68 ± 0.06 and 11.39 ± 0.09 of KPG 578a
+and KPG 578b respectively, see Table 1.
+Karachentsev (1987) gives the radial velocity as 2834 km/s and
+2793 km/s of KPG 578a and KPG 578b respectively. The angular se-
+paration between the pair is equals to 3.05 arcmin. The projected linear
+separation equals to 33.3 kpc for Hubble con-
+stant = − −H 75 h km s Mpc0 75
+1 1. Karachentsev (1987) classified this
+pair as an isolated pair without details about whether this pair re-
+presents interacting galaxies or non-interacting galaxies. de
+Vaucouleurs and de Vaucouleurs (1964) found that the KPG 578 is a
+non-interacting pair with angular separation between galaxies 2.7
+arcmin.
+Heraudeau et al. (1996) found that KPG 578a has very faint bulge,
+while the galaxy KPG 578b is the brighter member of a physical pair
+with KPG 578a. The projected linear separation equals to 44 kpc at the
+distance of 56Mpc with the Hubble constant = − −H 50 h km s Mpc0 50
+1 1
+(Sandage and Bedke, 1994). The KPG 578b is a peculiar galaxy in pair
+with KPG 578a (Elfhag et al., 1996). It is nearly edge-on, with strong
+asymmetry along semi-major axis (Heraudeau et al., 1996). The KPG
+578b has no nucleus and a straight line of matter proceeds to west from
+the center along the major axis (Curtis, 1918).
+Our aim in this study is to investigate and determine the photo-
+metric parameters for galaxy pairs KPG 578 a,b. The geometric para-
+meters of interacting galaxies were determined in a previous study
+(Mohamed and Reshetnikov, 2011, Mohamed et al., 2011, and
+Reshetnikov and Mohamed, 2011).
+We have adopted a numerical values in this study using
+= − −H 70 h km s Mpc ,0 70
+1 1 Ωm=0.3 and ΩΛ=0.7. The paper is or-
+ganized as follows: observations, data reduction and photometric cali-
+bration have been presented in Section 2. The results and discussions
+have been described in Section 3. Finally, conclusions have been shown
+in Section 4.
+2. Observations, data reductions and photometric calibration
+We observed the galaxy pair KPG 578a,b in 2014 June 24 - 26 in
+three BVR bands. Using CCD camera EEV 42–40 (2 k× 2 k pixels) at
+Newtonian Focus of the Kottamia telescope 188 cm, Egypt, see Table 2.
+The overscan, bias and flat-field corrections of raw images are
+calibrated using a code of IRAF package that has been developed by us.
+We have used the algorithm of Pych (2004) to clean the Cosmic Rays
+from all images.
+The standard stars of Landolt (2009) have been used to calibrate the
+instrumental magnitude. We have used the transformation equations to
+convert the instrumental magnitudes (bvr) to standard magnitudes
+(BVR).
+= − + − +B b K X CT b v ZP( )b b b b (1)
+= − + − +V v K X CT b v ZP( )v v v v (2)
+= − + − +R r K X CT v r ZP( )r r r r (3)
+The zero-points magnitudes areZPb, ZPv and ZPr in BVR bands. The
+color terms are CTb, CTv and CTr in BVR bands. The extinction coeffi-
+cients for the atmosphere are Kb, Kv and Kr in BVR bands. The air
+masses are Xb, Xv and Xr in BVR bands.
+We have measured the instrumental magnitudes of the standard
+stars using the aperture photometry package of IRAF. We have de-
+termined the best aperture to obtain the magnitude in BVR bands by
+using curve-of-growth technique (Stetson, 1990).
+Using Eqs. (1)–(3) we have determined the transformation coeffi-
+cients. The zero-points magnitudes in BVR bands ZPb, ZPv and ZPr equal
+to 19.934 ± 0.224, 21.726 ± 0.081 and 22.063 ± 0.039 respec-
+tively. The color terms are CTb, CTv and CTr equal to 0.331 ± 0.027,
+−0.027 ± 0.013 and −0.097 ± 0.012 respectively. The extinction
+coefficients are Kb, Kv and Kr equal to 0.528 ± 0.153, 0.272 ± 0.053
+and 0.130 ± 0.027 respectively.
+3. Results and discussions
+3.1. Surface photometry and analysis
+We have used the surface photometry technique of IRAF to measure
+the photometric properties of each galaxy in the studied sample of
+galaxy pair. The ELLIPSE task used the isophotes around the galaxies
+from inner regions to outer regions. The ELLIPSE fitted the isophotes to
+obtain ellipses. The outputs of photometric parameters of each ellipse
+are the intensity, the total flux, the x and y center-shift, the ellipticity
+and position angle. Using these outputs, we have obtained the lumin-
+osity profiles, the x and y center-shift profiles, the ellipticity profiles
+and position angle profiles. These profiles helped us to investigate the
+galaxy pair KPG 578, i.e. this galaxy pair is interacting galaxy pair or
+non-interacting galaxy pair. The interacting galaxy pairs appear dis-
+torted and off-centering of the isophote in the outer regions (Ali, 1993;
+Ali et al., 2015).
+The photometric parameters have been measured within isophote at
+semi-major axis (a) of 0.30 arcmin and 1.50 arcmin of galaxy KPG 578a
+and galaxy KPG578b respectively, see Table 3. We have corrected the
+magnitudes for internal-extinction (Schlafly and Finkbeiner, 2011). We
+applied the k-correction using Chilingarian et al. (2010) and the cos-
+mological dimming by subtracting 10 log (1+ z).
+3.2. Morphologies and contour maps of galaxy pair KPG 578
+The galaxy pair KPG 578 has been investigated using the visual
+inspection in R-band of both the image and contour maps. This in-
+vestigation was for KPG 578 in R-band using Kottamia observatory
+(Fig. 1). Then we compared it with r-band of SDSS survey (Fig. 2) to
+confirm the interaction signs. This galaxy pair contains two galaxies
+KPG578a (NGC 5737) and KPG578b (NGC 7541). We have presented
+the surface brightness of the outer isophotes and the interval between
+them in Table 4. The major diameter of the main body of KPG 578a is
+equals to d∼ 7.5 kpc (0.64 arcmin) at level 21mag/arcsec2, while
+diameter of KPG 578b is equals to d∼ 7.3 kpc (0.62 arcmin) at level
+19.8 mag/arcsec2. The contour maps in Fig. 1 show the existence of
+asymmetric and non-concentric isophotes of galaxy KPG 578 indicating
+new interaction signs.
+3.3. geometrical parameters of tidal tails of galaxy pair KPG 578
+Using visual inspection of the studied sample in Figs. 1 and 2, the
+galaxy KPG 578a has one tidal tail in north-east from the center. The
+geometrical parameters of tidal tail of this galaxy are the length
+=l 6.9 kpct (0.59 arcmin), the thickness =h 1.5 kpct (0.12 arcmin) and
+area = × =A h l 10.4 kpct t t
+2of the tidal tail, see Table 5. This tidal tail
+is curved line not straight line at north-east.
+The KPG 578b has two tidal tails with curved lines. The first tail is at
+east and the second at west from the center. The length of the first tidal
+tail is =l 6.6 kpct (0.56 arcmin), its thickness is =h 1.0 kpct (0.09
+arcmin) and its area is =A 6.6 kpct
+2, while the second tidal tail has
+length =l 11.2 kpct (0.96 arcmin), thickness =h 1.2 kpct (0.1 arcmin)
+and area =A 13.4 kpct
+2. Bridge et al. (2010) classified tidal tails into
+long tidal tails ( >l dt ), medium tidal tails ( ≃l dt ) and short tidal tail
+( <l dt ). According to this classification, KPG 578a has short tidal tail in
+east from its center, while the first tidal tail of KPG578b is long tidal tail
+in west and the second one is short tidal tail in east.
+3.4. The projected separation, total orbital mass and total luminosity of
+galaxy pair KPG 578
+The projected separation between galaxies of the pair rp is calcu-
+lated using formula of Karachentsev (1987).
+=
++r x c z z
+H
+( )
+2p 12
+1 2
+0 (4)
+Where x12 represents the angular separation between the first and the
+second galaxy in the pair, c z1 and c z2 are the radial velocity of the first
+and second galaxy in the pair and H0 is Hubble con-
+stant = − −H 70 h km s Mpc0 70
+1 1. The relative velocity vΔ in km/s of the
+galaxies is calculated using this formula:
+= −v c z c zΔ ( ) .1 2
+2 (5)
+Table 1
+Basic data for galaxies in the studied sample.
+Pair ID za Typeb PAb (degree) BT
+b (mag) d25b (arcmin)
+KPG 578a 0.008920 Sbc 73.8 12.68 ± 0.06 1.82
+KPG 578b 0.008969 SBc 101.6 11.39 ± 0.09 3.02
+a NED.
+b HyperLeda.
+Table 2
+Journal of the observational data of the studied sample on 2014 June 24–26.
+Pair ID Filter Exposure time (s) Seeing (arcsec) Airmass
+KPG 578 B 6×300 2.41 1.172
+V 2×300 1.82 1.034
+R 2×300 1.90 1.222
+Table 3
+Measured photometric parameters for the studied sample.
+Parameters KPG 578a KPG 578b
+SMA (arcmin) 0.30 1.50
+Ellipticity 0.690 ± 0.008 0.656 ± 0.006
+PA (deg) 77.285 ± 0.574 99.717 ± 0.357
+B 14.564 ± 0.006 12.489 ± 0.012
+V 13.187 ± 0.006 11.608 ± 0.005
+R 12.708 ± 0.004 11.085 ± 0.003
+M(R) −20.31 −21.95
+Y.H.M. Hendy, G.B. Ali NRIAG Journal of Astronomy and Geophysics 7 (2018) 194–200
+195
+The mean distance D in Mpc of the galaxies in the pair is calculated
+using this formula:
+The total orbital mass of the pair Mt is calculated using formula of
+Fig. 1. The first panel: grey image in R-band of the system KPG 578. The second panel: contour maps overlaid on R-image of the KPG 578b. The third panel: contour
+maps overlaid on R-image of the KPG 578a.
+Y.H.M. Hendy, G.B. Ali NRIAG Journal of Astronomy and Geophysics 7 (2018) 194–200
+196
+Karachentsev (1987):
+=M
+π
+r v
+G
+32
+3
+Δ
+.t
+p
+2
+(7)
+Where total orbital mass Mt of the pair is in units of solar mass M⊙, G is
+the universal constant of gravity and the coefficient π(32/3 ) represents
+projection factors depending on the assumption of a random distribu-
+tion of the orientation of the pairs and circular motion of the galaxies in
+the pairs.
+The total orbital luminosity of the pair Lt is in units of solar
+luminously L⊙.
+∑= = +L L L Lt 1 2 (8)
+Where L1 and L2 are the total luminosity of first and second galaxy in
+the pair with units of solar luminously L⊙.
+Fig. 2. The first panel: color image in r-band of the KPG 578b and the second panel: color image in r-band of the KPG 578a of SDSS survey respectively.
+Table 4
+The surface brightness of the outer isophotes and the interval between suc-
+cessive isophotal contours.
+Table 5
+The geometric properties of the interaction signs for the galaxy pair KPG 578.
+Pair ID Tidal Tail
+Y.H.M. Hendy, G.B. Ali NRIAG Journal of Astronomy and Geophysics 7 (2018) 194–200
+Using Eqs. (4) and (5) we have obtained the projected separation of
+the galaxy pair KPG 578 to be = −r 35.4 h kpcp 70
+1 and relative
+velocity =vΔ 15 km/s. Patton et al. (2011) classified galaxy pairs into
+close pairs ( < −r 30 h kpcp 70
+1 ), intermediate pairs ( < < −r30 55 h kpcp 70
+1 )
+and wide pairs ( < < −r55 80 h kpcp 70
+1 ) with its relative
+velocity < <v300 Δ 1200 km/s. According to this classification KPG 578
+pair is intermediate pairs.
+The calculated mean distance of the galaxy pair KPG 578 is
+D=38.3Mpc (see Eq. (6)). Using Eq. (7) we have determined the total
+orbital mass of the galaxy pair KPG 578 to be = ⊙M x M6. 03 10t
+9 .
+Using the absolute magnitude in R-band of the Sun M(R)=4.43 mag in
+the Vega-mag system (Willmer, 2018), we have estimated the total lu-
+minosity of the pair as = ⊙L x L4. 49 10t
+10 (see Eq. (8)). The ratio of
+total orbital mass to total luminosity of the galaxy pair was estimated to
+be =M L 0.13t t M⊙/L⊙.
+3.5. The surface brightness profiles of galaxy pair KPG 578
+The surface brightness (SB) profile of the galaxy KPG 578a shows a
+normal profile in BVR bands (Fig. 3a). In B-band, SB started to de-
+creases from a=3″ to a= 18″, while in VR bands SB started to de-
+crease from a=3″ to a= 48″, the inner regions are found at semi-
+major a≤ 30″, while the outer regions are found within semi-major
+a > 30″. The SB of the galaxy KPG 578b shows a peculiar structure and
+peculiar feature profile (Fig. 3b). In B-band, SB started to increase
+a= 3″–10″ then decreases from a > 10″ to a= 90.3″. In VR bands, SB
+started to decrease a= 3″–10″. Then again decreases from a > 10″ to
+a= 90.3″. The inner regions are found within a≤ 40″, while the outer
+regions are found within a > 40″. One hump is found on the profile of
+the galaxy KPG 578a in BVR bands at semi-major from a=3″ to semi-
+major a= 8″, some humps in VR bands stared from a=25″ outward.
+Fig. 3. The surface brightness (SB) profiles of the galaxy pair KPG 578.
+Fig. 4. The first panel presents x center-shift profiles, while second panel presents the y center-shift profiles of the galaxy pair KPG 578.
+Y.H.M. Hendy, G.B. Ali NRIAG Journal of Astronomy and Geophysics 7 (2018) 194–200
+198
+Some humps are found on the profile of the galaxy KPG 578b in BVR
+bands from a=10″ to 60″.
+3.6. The x and y center-shift profiles of galaxy pair KPG 578
+The x and y center-shift (xc, yc) profiles of the galaxy KPG 578a in
+BVR bands are shown in Fig. 4(a) and (c). The x and y center of the
+outer isophotes of the galaxy KPG 578a are shifted toward the galaxy
+KPG 578b, started from 30″ and 35″ respectively to 47″. The x and y
+center-shift of the galaxy KPG 578b in BVR bands are shown in Fig. 4(b)
+and (d). The x center of the outer isophotes of the galaxy KPG578b is
+shifted away from galaxy KPG 578a, started from 40″ in B and 50″ in
+VR bands respectively outward. The y center of outer isophotes of ga-
+laxy KPG 578b is shifted toward galaxy KPG 578a in BVR bands, started
+from 50″ outward. This confirms that both galaxies KPG 578a and KPG
+578b have signs of interaction.
+3.7. The ellipticity profiles of galaxy pair KPG 578
+The ellipticity (Ellip) profile of the galaxy KPG 578a has been pre-
+sented in Fig. 5(a). The ellipticity increases in both inner and outer
+regions in BVR bands. The ellipticity profile of the galaxy KPG 578b has
+been presented in Fig. 5(b). The ellipticity in the inner regions in BVR
+bands increases. In the outer regions, the ellipticity decreases within
+a=40″–64″, then increases from a > 64″ outward. The outer iso-
+photes of galaxy KPG 578a and galaxy KPG 578b are more flat (i.e.
+ellipticity values increase). This is due to the gravitational interaction
+between the galaxies.
+3.8. The position angle profiles of galaxy pair KPG 578
+The position angle (PA) profiles of the galaxy KPG 578a in the BVR
+bands have been shown in Fig. 6(a). The outer isophotes of the galaxy
+KPG 578a in BVR bands (a > 30″) are fluctuated from a=30″ out-
+ward. The position angle profiles of the galaxy KPG 578b in the BVR
+bands are shown in Fig. 6(b). The outer isophotes of the galaxy KPG
+578b in BVR bands (a > 40″) are twisted to south toward the tidal tail
+of galaxy KPG 578a at north-east. This means that the KPG 578a at-
+tracted the galaxy KPG 578b from side of its tidal tail at the east. The
+twisted outer isophotes of KPG 578b confirm that the galaxy pair KPG
+578 is an interacting system.
+4. Conclusions
+The gravitational interactions between the galaxies of galaxy pair
+KPG 578 have been investigated using our method: contour maps,
+surface brightness (SB) profiles, x and y center shift (xc, yc) profiles,
+ellipticity (Ellip) profiles and position angle (PA) profiles. We have
+confirmed that the galaxy pair KPG 578 is an interacting system. We
+have found that galaxy KPG 578a has one tidal tail in the north-east
+from the center with its length is =l 6.9 kpct , its thickness
+=h 1.5 kpct and its area =A 10.4 kpct
+2. The KPG 578b has two tidal
+tails, one of them in east from the center with its length is =l 6.6 kpct ,
+its thickness is =h 1.0 kpct and its area is =A 6.6 kpct
+2, while second
+tidal tail is in the west with its length is =l 11.2 kpct , its thickness is
+=h 1.2 kpct and area is =A 13.4 kpct
+2. Only one author noticed that
+KPG 578b has a straight line of matter proceeds to west from the center
+along the major axis (Curtis, 1918). This straight line of matter pro-
+ceeds to west is tidal tail with curved line not a straight line. We
+Fig. 5. The ellipticity (Ellip) profile of the galaxy pair KPG 578.
+Fig. 6. The position angle (PA) profiles of the galaxy pair KPG 578.
+Y.H.M. Hendy, G.B. Ali NRIAG Journal of Astronomy and Geophysics 7 (2018) 194–200
+199
+confirmed that the galaxy pair is an interacting system which is oppo-
+site to what found by Karachentsev (1987) and de Vaucouleurs and de
+Vaucouleurs (1964).
+Using surface brightness profile, we have confirmed that the KPG
+578b is a peculiar galaxy with peculiar features in a good agreement
+with Elfhag et al. (1996). Also our results of contour maps show that
+KPG 578b has asymmetry along the semi-major which agrees with
+Heraudeau et al. (1996). Using PA profiles, we noticed that the KPG
+578b is twisted to south toward KPG 578a.
+Using classification of Patton et al. (2011) for galaxy pairs, the KPG
+578 is classified intermediate pair with projected separation
+= −r 35.4 h kpcp 70
+1 and relative velocity =vΔ 15 km/s. By assuming that
+galaxies in galaxy pairs are in a circular orbit relative to each other, the
+total orbital mass of KPG 578 is = ×M 6.03 10t
+9 Mʘ, while the total
+orbital mass to the total luminosity is =M L 0.13t t Mʘ/Lʘ.
+Karachentsev (1987) found that galaxy pairs are physical systems if
+<M L 100t t Mʘ/Lʘ. So the KPG 578 is considered as physical systems.
+Acknowledgements
+The authors would like gratefully to thank Dr. Diaa Fouda and Mrs.
+Nouran Ibrahim. We would like to acknowledge the usage of the
+HyperLeda database (http://leda.univ-lyon1.fr) and Sloan Digital Sky
+Survey IV. The NASA’s Astrophysics Data System Bibliographic Service
+had used in this research. The NASA/IPAC Extragalactic Database
+(NED) which is operated by the Jet Propulsion Laboratory, California
+Institute of Technology, under contract with the National Aeronautics
+and Space Administration had used in this research.

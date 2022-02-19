@@ -1,0 +1,646 @@
+Recent studies have shown that there exists a direct relationship between environmental pollutants
+(PM2.5, smog), the respiratory system, and the morbidity and mortality of cardiovascular diseases.
+However, the mechanism and principle of how these harmful substances are deposited in lung tissues
+and impair lung function remain unclear. It is important to gain improved understanding of the inter-
+action between environmental pollutants and human lungs. Owing to the complexity of air pollution and
+toxicological risks, it is difficult to predict and evaluate the response of human lungs toward the damage
+caused by air pollution. Although animal models can be used as a basis for toxicological classification, the
+toxic effect on the human body could be very different from that on animals owing to the distinctive
+features of different species. This article provides a comprehensive review of in vitro lung-on-a-chip
+technologies and their application in the toxicological assessment of environmental pollutants. A
+lung-on-a-chip uses a bionic structure mimicking the physiological characteristic of lungs, features of a
+real airway, and condition of the physiological airflow. Accordingly, it can be used to reveal the intrinsic
+interaction between lung tissues and particulate matter and provide new insights into the effect of the
+toxicology of environmental particles on lungs. In addition, the development of novel and optimized
+lung-on-a-chip devices and their application devices in the health assessment of air pollution are ex-
+pected to overcome the limitations of the current in vitro toxicological tests. They are also anticipated to
+provide effective and accurate methods for drug screening and toxicity testing. Finally, the application
+potential of in vitro lung-on-a-chip models is emphasized in this review.
+© 2022 Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license (http://
+creativecommons.org/licenses/by-nc-nd/4.0/).1. Introduction
+Common air pollutants from the environment such as SiO2
+nanoparticles, diesel exhaust particles (DEPs), and E-cigarette can
+cause pulmonary toxicity and chronic lung diseases such as chronic
+obstructive pulmonary disease (COPD), chronic bronchitis, and
+asthma [1e3]. Exposure to air pollutants has a profound adverse
+impact on human lung health [4]. Therefore, it is very important to
+understand (1) how pollutants are transferred from the respiratory
+tract to the alveolar tissues, impairing lung function and (2) howineering, College of Electrical
+ao Tung University, Hsinchu,
+.
+an open access article under the Cparticle deposition in lung tissues affects human health.
+Many environmental toxicants and their toxicological effects
+have been identified and tested in animals [5,6]. However, the re-
+sults obtained from animal testing in the past studies were
+frequently biased for use on human bodies owing to the differences
+in the structures and functions of the respiratory tracts of different
+species [7]. Furthermore, it is difficult to conclude the potential
+harm on the human body based on animal inhalation test results,
+because numerous animals are required for an inhalation toxicity
+test. Therefore, several regulations have been incorporated in the
+Registration, Evaluation, Authorisation and Restriction of Chemicals
+(REACH) plan based on the objectives defined by the 3R principle:
+reduction (promote the use of fewer laboratory animals), refine-
+ment (refine the experimental procedures to minimize animal
+suffering), and replacement (use test systems that do not involveC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216animals or only involve species with a low phylogenetic rate) [8].
+The general concept is to support the use of alternative non-animal
+testing to the maximum extent and avoid unnecessary animal
+testing. Therefore, many in vitro models have been developed to be
+used in air pollution toxicity tests to replace animal tests [9]. The
+corresponding test standards have been proposed to provide ex-
+perimenters with guidelines to follow in the in vitro model testing
+process [10,11].
+In recent years, the focus of research on environmental air
+pollution toxicity has shifted to the use of microfluidics and its
+integration with advanced three-dimensional (3D) tissue engi-
+neering structures, “organ on chip”methods was created in vitro to
+capturemore of the complexity of the cellularmicroenvironment of
+humane body [12]. Among them, lung-on-a-chip (LoC) system can
+not only have the biomimicry of the dynamic air-liquid interface,
+but can even create the important human lung function of pul-
+monary cilia and directional mucociliary clearance, which provides
+new opportunities for environmental toxicology research [13]. In
+this review, we introduced the effects of common environmental
+pollutants on human lungs and provided a complete explanation of
+the potential of lung-on-a-chip system in assessing environmental
+pollutants.
+2. Traditional method: animal models, advantages and
+disadvantages
+Most toxicological testing is conducted on animal models
+following the regulatory testing requirements. In acute toxicology
+testing, the entire body or the nasal inhaler of rodents is exposed to
+a high concentration of the target substance for 24 h or less. The
+research data can also be obtained in a short time. In subacute
+toxicology testing, a repeated dose 28-day toxicity study is
+frequently conducted, and the level of toxicity is determined based
+on the non-observed adverse effect level. The response dose is
+calculated based on the experimental data considering the differ-
+ences between animals and humans as well as between different
+individuals. Finally, the response dose is converted into the lowest
+reference dose of human exposure to the toxicant. Carcinogenic
+analysis of chronic toxicology requires a repeated doses study of
+more than 24 weeks [14]. It is possible to conduct histopathological
+analysis on tumor tissues to evaluate toxicant-induced tumori-
+genesis in organisms and the impact of toxicant accumulation in
+organs. The results obtained from chronic toxicity tests are used to
+evaluate the potential carcinogenicity of the tested substance,
+which can provide important data for analyzing the carcinogenic
+risk of human exposure to that substance [14] (see Fig. 1).
+Owing to the differences between different species, assessing
+the hazards and risks of chemicals on the human body by testing on
+rodents has been debated (Fig. 2A) [7]. The local toxicity of inhaled
+substances in the respiratory tract is known to be affected by two
+parameters: (1) the depositionmethod of the test substance and (2)
+the specific immune response of the lung environment when
+removing the harmful substance (Fig. 2B) [15]. However, the
+deposition of inhaled substances is dependent on the dynamics of
+the airflow. In particular, the difference in the deposition behavior
+of particulate matter in animal models and humans is affected by
+the different features of their lungs (Fig. 2C) [16]. Some examples
+are the anatomical structure and organ geometry of the upper and
+lower respiratory tracts, airway size, breathing pattern, and venti-
+lation volume. In addition, different species exhibit numerous
+distinct physiological characteristics, including the cell type and its
+growth location in the respiratory tract, composition and distri-
+bution of mucus in the airway, clearance function of macrophages,
+and physiological mechanism and metabolic process of the airway
+[17]. In many past studies, the toxicant detection and toxicological2
+evaluation results obtained from animal tests were directly used to
+calculate the minimum human exposure dose. This approach
+frequently yields erroneous results. How to provide an effective and
+accurate in vitro model of human tissues and re-explain the
+interaction between toxicological substances and a real human
+lung environment remain important problems to be solved ur-
+gently in future toxicology testing [18].
+3. Current in vitro environmental toxicity testing models
+3.1. 3D cell culture insert models
+Many environmental toxicity studies have already started to
+investigate in vitro test models (Fig. 3A) [22]. At present, a com-
+mercial in vitro organ model of the human mucociliary epithelium
+(EpiAirway™) is available in the market for toxicological and drug
+testing. In one past study, 59 chemical substances classified by the
+European Chemicals Agency were used in in vitro testing and
+evaluation. The tests were conducted using four test chemical
+concentrations and the MTT viability assay to obtain dose/response
+curves. The toxicity of each chemical on the in vitro model was
+further determined and compared with rat test data. As shown by
+the final results, the sensitivity and specificity ranges were 87.5%e
+100% and 56%e89%, respectively. This study suggested that toxicity
+research should focus on overcoming the drawbacks of animal
+models to enable in vitro models to provide improved prediction of
+acute inhalation toxicity. The study also emphasized the effective-
+ness and major potential of the use of in vitro models in toxico-
+logical tests [23].
+The U.S. Environmental Protection Agency (EPA) evaluated a
+novel in vitro model assay (MucilAir™), which can be used as an
+alternative to animal testing. This method provides improved
+inhalation risk assessment of chlorothalonil, a pesticide. To obtain
+the toxicity equivalency concentration for human health risk
+assessment, the above in vitro model was tested against chlor-
+othalonil particle deposition, with the surface concentration
+calculated from computation fluid dynamics simulation. The
+MucilAir™ assay method was proposed in 2014, which provides
+improved inhalation risk assessment of chlorothalonil. After un-
+derstanding the relevance of using in vitro models for the toxicity
+testing of pesticides or other contact irritants, the U.S. EPA started
+to support their use instead of traditional animal tests for toxi-
+cology testing. The corresponding test standards were further
+provided by the EPA as guidelines for conducting in vitro model
+tests [26].
+3.2. Organ-on-a-chip models
+Organ-on-a-chip (OoC) is a multichannel 3D microfluidic sys-
+tem used for culturing cells. By combining cell biology, engineering,
+and biomaterial technology, tissueeenvironment interfaces and
+mechanical stimulations can be provided to such a chip to simulate
+the micro-environment of organs [27]. OoC is a promising method
+for simulating human pathology and physiology in an in vitro
+environment, which overcomes the limitations of the current cell
+and animal models (Fig. 3B) [28,25].
+Although the animal models used in the past studies have
+provided considerable experimental results and insights on lung
+physiology and pathophysiology, they have significant limitations
+in reflecting the structure, disease symptoms, and responses of the
+human respiratory system. Therefore, it is important to develop
+in vitro models for analyzing the pathogenesis of lung diseases,
+drug efficacy, and inhalation toxicology. Lung-on-a-chip (LoC)
+provides a strong support to the use of in vitro human lung models
+for disease modeling, drug discovery, and drug testing [29].
+Fig. 1. Mechanism of nanoparticle-induced pulmonary dysfunction. A: Hypothetical mechanism for SiNP-induced tight junction dysfunction [19]. B: Graphical scheme of the co-
+culture model systems and the analysis of DEP-induced responses on epithelial and endothelial cells, and their interaction in the resulting inflammatory effects [20]. C: Overview of
+the mechanisms by which e-cigarette use might cause acute endothelial dysfunction [21].
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 1002164. Lung-on-a-chip (LoC)
+4.1. Dynamic air-liquid interface culture
+A multifunctional microfluidic device was designed in a re-
+ported study to simulate the human alveolaremicrovascular
+interface [30]. This microfluidic system consisted of two poly-
+dimethylsiloxane (PDMS) films separated by a thin polyester film
+containing 400-nm-holes. Human alveolar epithelial cells and hu-
+man lung microvascular endothelial cells were cultured on the
+opposite sides of the extracellular matrix (ECM) coating film in the
+microfluidic device, thereby creating two separate compartments.
+The cells were arranged in each compartment. After the arranged
+cells formed a double-layer tissue, the epithelial compartment was
+exposed to air to form a unique type of aireliquid interface (ALI)
+that mimicked the interface in lungs [24]. This interface allows
+exchange of gas with air in an external environment, which typi-
+cally occurs at the aireliquid barrier in the alveolar structure. By
+manipulating the fluid flow in the microfluidic device, nutrients
+can be delivered independently to the epithelium and the endo-
+thelium [31,32].
+As shown in the past studies, dynamic culture can provide cells
+with sufficient nutrients and satisfy the nutrient load at a high cell
+density in a metabolic environment. These features suggest that a
+flowing system presents excellent culture performance, which al-
+lows epithelial cells to grow rapidly. In addition, the shear stress
+generated by the flowing fluid allows the cells to adjust their
+morphology, proliferate, and differentiate [33]. It has been shown
+in studies that in a shear stress environment, endothelial cells
+demonstrate low pro-inflammatory response and high expression
+of carbonmonoxide compounds. A low-shear environment can also
+be used to simulate the microenvironment of vascular3
+atherosclerosis [34,35]. A flow system presents excellent blood
+delivery performance for the entire body; therefore, thrombosis
+induced by inflammation can be analyzed quantitatively [36].
+It is generally agreed in the studies on in vitro models of lungs
+that culturing cells at the ALI is more representative of the real
+physiological environment in lungs and more similar to the com-
+plex in vivo microenvironment [37,38]. The cells in lung tissues
+cultured in vitro under ALI and immersion conditions were found
+to have very different features. In particular, A549 epithelial cells
+cultured under the ALI condition presented a greater expression of
+surface-active proteins and a higher surface tension than those
+under the immersion condition. However, surface-active proteins
+are required in the physiological alveolar environment to resist the
+surface tension and support the establishment of the lung immune
+environment [39]. In addition, an ALI is a necessary differentiation
+condition required in the in vitro culturing of small human airways
+such that the cells can differentiate into functional airway cells
+(Fig. 4A) [40].
+4.2. Tissue barrier function
+Human lungs contain numerous epithelial tissues, which are in
+constant contact with the external environment (Fig. 4B) [41]. The
+barrier function of lung tissues serves as the first line of defense
+against harmful environmental factors and infectious substances in
+our daily life [44]. This barrier function is provided by the junctional
+complex formed between the adherens junction and tight junction
+proteins in closely arranged cells [45]. Past studies have shown that
+inhaled toxins such as cigarette smoke and air pollution particles
+can damage the connections between tissue cells, thereby leading
+to excessive cell proliferation and abnormal epithelial differentia-
+tion. The destruction of the barrier function may cause irreversible
+Fig. 2. Differences in important characteristics between humans and animals. A: Interspecies differences in the structure of the upper respiratory tract in humans and animals and
+the resulting differences in airflow mechanics [7]. B: Single-cell transcriptomic differences in conserved myeloid populations across individuals and species [16]. C: Comparison of
+predicted deposition between tracheobronchial and alveolar trachea in mice and humans [15].
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216lung damage accompanied by lung diseases such as COPD and acute
+lung injury.
+The establishment of the barrier function has been one of the
+main research topics on OoC systems. As shown by in vitro dynamic
+culture experiments on human bronchi, cells cultured over a long
+time under ALI and dynamic environments demonstrated a higher
+expression of the tight junctional proteins than those cultured
+under a static environment [46]. The shear stress generated by the
+fluid could provide a stronger barrier function to the epithelial and
+endothelial tissues. This phenomenon is related to the increase in
+the intracellular calcium ions when the membrane ion channel,
+TRPV4, is subject to the shear stress. These features further confirm
+that the permeability of lung tissues can be regulated by the shear
+stress in a dynamic culture environment [47]. In summary, a dy-
+namic culture environment and the regulation of lung tissue
+function are of major importance. These two factors provide new
+insights into the establishment of a stable in vitro model of lung
+tissues.4
+4.3. Cilia and mucus
+The lung trachea includes an airway, small airways, and alveolar
+tissues. The airway is composed of four main types of cells: basal,
+ciliated, goblet, and club cells. These cells form a physical barrier
+that ensures the continuity, secretion, and regulation of the
+epithelium. In addition, this physical barrier protects the airway
+and the lung from inhaled pathogens and environmental pollutants
+(Fig. 4C) [42]. Among all different types of cells, ciliated and goblet
+cells in the airways are the most important because they form the
+first line of defense in lungs. Goblet cells can produce mucin,
+forming a gel layer on the surfaces of the airways. Subsequently
+multiciliated cells drive the gel layer tomove by their power pulses,
+which results in directional mucociliary clearance. Acetylated a-
+tubulin (a-Ac-Tub) has been used as the main marker of ciliated
+cells, which can remove particles and pathogens in the mucus from
+the airways through the movement of the cilia on a coordinated
+plane. Accordingly, the inhaled pollutants that are captured by the
+Fig. 3. Current in vitro environmental toxicity models. A: Advancement of in cell culture and exposure technologies that result in physiologically more relevant in vitro models [24].
+B: Human-on-a-chip philosophy is by integrating different organ-on-a-chip devices in a single plate [25].
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216mucus layer on the surfaces of the airways can be discharged from
+the lungs [48,49].
+As shown in the past studies, exposure to environmental pol-
+lutants can lead to structural and functional abnormalities of the
+cilia in the airways along with abnormal mucus clearance and
+excessive mucus accumulation. These abnormalities cause various
+lung diseases [50]. Furthermore, in vitro toxicology studies showed
+that exposure to DEPs reduces the beat frequency of cilia cultured
+in both healthy and diseased test groups. A physiological micro-
+tissue of the lung epithelium was used as the basis of the toxicity
+analysis [51].5
+4.4. Polar proteins and directional mucociliary clearance
+The cilia of the bronchial epithelial cells in the human respira-
+tory tract pulsate toward the direction of the throat. Thus, air pol-
+lutants can be removed from lungs once they are captured by the
+mucus layer on the surface of the airways (Fig. 4D) [43]. Therefore,
+the directional pulsation of cilia is of major importance for the
+health of the respiratory system [52]. The cilia in the airway tissues
+exhibit a collective and directional beating behavior. The exchange
+of information between different cells is achieved mainly by the
+planar cell polarity (PCP). There are two primary core PCP pro-
+teinsdfrizzled 6 (FZD6) and Vang-like protein 1 (Vangl1)dwhich
+are at the front and back of the cell polarity, respectively. These
+Fig. 4. Characteristic of Lung-on-a-chip. A: Organ-on-a-chip systems of the human respiratory tract with dynamic air-liquid interface properties [40]. B: Schematic diagram of the
+human lung barrier function [41]. C: An illustration of human mucociliary clearance and ciliary beating movement [42]. D: Relationships between important structures (ranging
+from cell to tissue) and functions of airway cells [43].
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216proteins are located in the interstitial region between the cells,
+which is related to the barrier function. During the growth of cili-
+ated cells, the cilia undergo cytoskeletal remodeling and are
+directed to the front position [43,53].
+If the Vangl1 polar proteins become missing owing to mutation,
+then the communication channel between the cells will be blocked.
+In this case, the cilia will be unable to pulsate directionally, which
+will result in accumulation of mucus in the airways and potential
+risk of lung disease [54]. As shown by in vitro cell tests conducted
+on an airway epitheliumwith cystic fibrosis and a nasal epithelium
+with sinusitis, the absence of PCP signaling caused by the lack of
+Vangl1 expression in the cell tissues affects cilia polarization and
+generates evident mucociliary defects [55]. However, PCP has
+received significant attention in the field of tissue engineering. It
+was found that the orientation of tissue cilia and the flow direction
+of mucus clearance remained unchanged nine months after
+inverting the airway in a mouse. Past studies have also used a
+mixture of cavernous body and collagen to grow human epithelial
+tracheal tissues differentiated from human-induced pluripotent
+stem cells (iPSC). After transplanting these tissues into the trachea
+of mice, the original tissue was cut off at two, six, and nine months
+to examine the particle clearance rate and the pulsating direction.
+However, no significant difference was found between the post-
+operative and preoperative behavior. In addition, the PCP protein
+was found to remain unchanged using FZD6 and Vangl1 as its
+markers [56,57].
+Based on the past literature, the formation of PCP protein during
+epithelial differentiation is the key to the distinctive behavior of
+cilia after differentiation. Studies have shown that the growth and
+function of respiratory organs rely on an efficient and directional
+fluid flow such that the cilia can swing in a directional manner [58].
+To allow a differentiated airway to be used in tissue engineering, it
+is critical to understand the correlation between PCP and the6
+orientation of the cilia beating. In recent years, the development of
+iPSC airway-on-a-chip has allowed control of the PCP direction of
+multiciliated cells using the shear stress of the fluid [13]. This
+technology can achieve a unidirectional mucociliary flow and
+induce the differentiation of multiciliated cells, thereby providing
+new breakthroughs and insights in airway reconstruction.
+Furthermore, mechanical stress can be applied to adjust the PCP
+and establish a directional cilia swing, enabling an LoC to remove
+foreign bodies [59,60]. By introducing this capability, a more
+comprehensive bionic model of airwaymucus cilia with a clearance
+function can be developed for air pollution toxicology detection
+and screening.
+5. Application of lung-on-a-chip for air pollution toxicity
+assessment
+With the rapid industrial development and urbanization in
+recent years, human hazards caused by air pollution from factories
+and vehicles have become a major threat to the environment and
+health safety. According to the statistics collected by the World
+Health Organization, approximately 7million premature deaths are
+due to air pollution every year [61]. Therefore, there is an urgent
+need to evaluate the negative impact of air pollution on human
+health. To evaluate and detect pollutant particles in air, several
+in vitro LoC models have been developed and used in past studies.
+These models allow assessing the impact of air pollution on bionic
+lung tissues, which can provide new insights into the potential
+harm of air pollution on human health.
+With the rapid development of microfluidic processing and
+production technology and the availability of lung cells, new
+microfluidic systems that can evaluate the biological toxicity of
+environmental substances more accurately and reliably by
+combining substance concentration gradient generators and
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216bronchial epithelial culture have been proposed. A concentration
+gradient of benzopyrene (BaP), a polycyclic aromatic hydrocarbon,
+was generated stably in experiments. A high concentration of BaP
+was found to stimulate pronounced apoptosis. The type and
+structure of the cells during the stimulation process were observed
+via optical and fluorescent imaging. As shown by the results, a high
+concentration of pollutants leads to a small cell size [62]. The image
+analysis provided an in-depth understanding of the actin decom-
+position process, contributing to the application and development
+of microfluidic systems for dynamic monitoring of environmental
+pollutants.
+Microfluidic technology can strongly control substance con-
+centration and generate bionic shear stress when integrated into a
+comprehensive micro system. Accordingly, it can provide a dy-
+namic and mechanical microenvironment to lung tissues and
+reproduce complex lung physiology and pathological reactions. A
+stretchable micro diaphragm can be produced using PDMS. Sub-
+sequently, lung cells can form a tight lung barrier tissue on this
+porous membrane. Such a membrane will experience cyclic
+stretching generated by the micro system, simulating the respira-
+tory mechanical stress in a real lung. As shown by experimental
+results, the stretching behavior can affect the permeability of lung
+tissues significantly [31]. No significant up-regulation of the ROS
+occurred when SiO2 nanoparticles were added to upper lung tis-
+sues without cyclic stretching. However, when the cells were sub-
+jected to 10% tensile deformation and mechanical strain at a
+pseudo-respiration frequency of 0.2 Hz, the SiO2 nanoparticles
+were found to increase the ROS by four times within 2 h (Fig. 5A)
+[32]. By applying a bionic mechanical strain to in vitro lung tissues
+and analyzing the effect of the mechanical stress on the physio-
+logical and pathological lung function, we can develop new un-
+derstanding of the specific function of nanoparticle toxicology in
+lung tissues.
+Furthermore, an in vitro biomimetic alveolar system was
+established with three-dimensional multiple tissues, air-liquid
+interface, and dynamic circulation functions to analyze the harm-
+ful effects of SiO2 and diesel exhaust particles (DEP). It can not only
+explore the damage of harmful substances from fine PM to physi-
+ological tissues, but can also in-depth analysis of specific harmful
+substances that can penetrate through alveolar tissue and cause
+health effects. This system led to efficiently identify the main par-
+ticle size (size between 0 and 200 nm) and composition that are
+harmful to the alveoli, which are very close to the phenomenon in
+human alveoli (Fig. 5B) [63]. Another example is that 3D lung-on-a-
+chip model has been shown to examine the adverse effects of
+PM2.5 in the respiratory system. This model, lined by human
+alveolar epithelial cell lines and human umbilical vein endothelial
+cells, reproduced the organotypic structure and function of the
+alveolarecapillary barrier. Using this chip, it was discovered that
+the PM2.5 permeability alteration under various exposure levels in
+a dynamic way. In addition, immunocytes could be introduced to
+form a triple co-culture system to investigate the interaction of
+injured tissue and immunocytes. Thus, it was found that a low
+concentration of PM2.5 causes limited cytotoxicity to the epithelial
+and endothelial cells, but a higher concentration of PM2.5
+(>200 mg/mL) could significantly increase the ROS generation,
+apoptosis, inflammation responses of epithelial cells and endo-
+thelial cells and attachments of monocytes to the vessels (Fig. 5C)
+[64]. Taken together, these methods showed great potential in
+analyzing the extent of hazardous substances towards respiratory
+health to overcome the technical bottleneck of traditional in vitro
+assays and standard animal models.
+Moreover, exposure to air pollutants is related to the patho-
+genesis of pulmonary fibrosis, a human lung micro-tissue array
+device has been developed to evaluate the biological toxicity of7
+multi-walled carbon nanotubes (MWCNTs) and the corresponding
+potential of pulmonary fibrosis. In this micro-tissue array device,
+the heads of a pair of micro-pillars were arranged in a dog-bone
+pattern, and epithelial micro-tissues were formed between the
+micro-pillars. The contractile strength of a fibrotic tissue was
+measured in situ between the micro-pillars. Stimulating a lung
+epithelial tissue with a high concentration of MWCNTs led to a high
+level of cytotoxicity. However, stimulating the tissue with a low
+concentration ofMWCNTs producedmechanical forces found in the
+natural fibrosis process. Apart from demonstrating the potential of
+MWCNTs to induce pulmonary fibrosis, this study showed the
+capability of the lung micro-tissue array system for the detection
+and toxicant screening of air pollutants [67].
+The importance of an ALI exposure environment has already
+been demonstrated in past inhalation toxicology tests conducted
+on ALI cultures. An in vitro model was stimulated by real exposure
+technology (gas, vapor, aerosol), and the characteristics of the
+exposed particles were examined carefully, including the particle
+size distribution and the actual deposition concentration [17].
+However, the development of LoC technology in recent years has
+led to highly realistic inhalation detection that mimics the physi-
+ology andmechanism of aerosol deposition on lung tissues from air.
+These studies aim to reproduce the results of in vivo deposition
+(local concentration, area) and achieve highly realistic in situ
+detection, which have nowbecome important breakthroughs in the
+research field compared to traditional in vivo and in vitro exposure
+tests.
+A past study had also proposed an in vitro exposure platform of
+the human lung bronchial airway epithelium to simulate the
+deposition of exposed particles in the airway tree structure. The
+experiments revealed a characteristic local deposition of 2-mm
+particles, which was related to the geometric structure of the
+airway tree and the gravity-induced sedimentation of the particles
+when transported by air. Compared with the extensive in vitro
+models in the past, an LoC that uses the airflow to transport par-
+ticles can better reflect the gravity-induced sedimentation behavior
+of particles under different flow rates. Consequently, it can recon-
+struct the characteristic local toxicological reactions in the geo-
+metric structure of a lung (Fig. 5D) [65]. In addition, as shown by
+the computer simulation of fine particle deposition on an in vitro
+LoC, the deposition of fine particles is affected by numerous
+different factors including surface adsorption and desorption ki-
+netics, respirationmode, Brownian motion of the fine particles, and
+gravitational sedimentation of the large particles. It was found that
+the particle deposition rate during human movement is thrice
+faster than that when at rest. This drastic increase was attributed to
+the increase in the airflow and respiratory frequency during exer-
+cise. Therefore, different respiratory exercises will also cause
+different levels of particle toxicity [68].
+In the inhalation dose toxicology tests of pollutants, subacute
+exposure can result in highly clinically significant toxicity. A sub-
+acute or long-term drug exposure can simulate the chronic inha-
+lation toxicology of air pollution to lungsmore realistically. In a new
+cell model system, hAELVi and THP-1 were used to simulate alve-
+olar macrophages. Relevant cell organizations in the alveolar area
+were reconstructed, and an in-situ exposure was provided to the
+in vitro alveolar model. The lipopolysaccharide was aerosolized to
+stimulate the cells and induce IL-8 secretion, and the toxicology
+was monitored during the exposure period. This cell model system
+provides a highly realistic and in vitro in situ exposure detection
+platform for determining acute (48e72 h) and subacute (14e28
+days) toxicity in the alveolar area. This LoC can provide prolonged
+exposure and cell culture. The high stability of this new model and
+the dose exposure tests at different periods provided a new in vitro
+model concept for inhaled dose toxicology testing methods [69,70].
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216
+8
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216In addition to environmental pollutants, smoking can impair the
+physiological function of lungs and is the primary cause of COPD in
+humans. However, the distinct characteristics of different patients
+make it difficult to obtain bionic authenticity of the injury response
+caused by smoking under physiological respiratory conditions. A
+research team led by Harvard University developed an integrated
+microfluidic chip that simulates the small airways of a human lung
+using micro respirators and smoking machines. This device can
+simulate the exposure of lung cells in the human body to smoke
+and allows obtaining the breathing and smoking behavior param-
+eters [71]. As shown by this LoC model, Nrf2, which is induced and
+activated by the oxidative stress after smoke exposure, can regulate
+the expression of ARE gene products (the second type of metabolic
+detoxification enzyme, antioxidant protein, drug efflux protein
+gene). The above microfluidic chip can further characterize the
+abnormal ciliary swing and IL-8 as an indicator of the induced COPD
+exacerbation, thereby demonstrating the toxic effects of smoking
+on lungs (Fig. 5E) [66]. Furthermore, the use of e-cigarettes has kept
+increasing in recent years with the objective to reduce the side
+effects of traditional cigarettes. However, there is no substantive
+proof that the inhalation during the use of e-cigarettes is safe for
+human health. Therefore, the lung toxicology of e-cigarette expo-
+sure has been investigated in many studies in recent years. These
+studies have also examined the effect of e-cigarette exposure using
+microfluidic small airway-on-a-chip. Although no significant dif-
+ference in genomic expression was observed, the frequency dis-
+tribution of the cilia beating was changed after e-cigarette
+exposure. The same finding was obtained from other in vitro
+models, with which no significant difference was observed. In
+general, the environmental exposure at the ALI can better represent
+the complete behavior of the human lung barrier and provide a
+more comprehensive analysis and quantification of functional
+proteins than an immersion stimulation in an e-liquid extract.6. Opportunities and challenges
+Many past studies have developed functional LoC models to
+analyze the toxicity of air pollution in the environment as well as
+the pathophysiology of lung tissues at the molecular scale. The
+novel LoC technology has also provided important data on the
+function of a damaged human lung exposed to air pollution and
+toxic particles, which allows assessment of in vivo toxicology and
+human health [72]. However, to develop an LoC for studying an air-
+contaminated environment, one must emphasize the cultivation
+conditions in the bionic environment, which include the 3D tissue
+microenvironment, tissues constructed by the ECM, and biome-
+chanical environment of the tissues [73e76]. It is highly conducive
+for cells to differentiate into specific functions related to the bio-
+logical environment when human lung tissues are grown in a bi-
+onic environment. In addition, the toxicity of inhaled air pollutants
+in lungs is caused by a combined effect of the inhaled particles,
+exhaust gas, and biomechanical environment. It is important to
+keep a lung epithelial tissue in direct contact with air in an LoC
+model to study the correlation between the mucociliary clearance
+and the deposition of airborne particles in the dynamic airflow [77].
+Developing models for fibroblasts and macrophages is critical
+for the analysis of inflammation in lungs caused by air pollution.
+Immune recruitment and interstitial thickening caused by theFig. 5. Application of lung-on-a-chip in air pollution research. A: Reproducing physiology o
+permeability of SiO2 and DEP particles in chip devices. Reprinted with permission from th
+exposure of epithelial and endothelial cells on the chip. Reprinted with permission from the s
+patterns and quantification of particle deposition density in the airway-on-chip platform
+Copyright 2020, the Frontiers. E: Schematic describing the overall method for analyzing e
+smoke-induced ciliary dysfunction on-chip. Reprinted with permission from the study by B
+9
+inflammation of epithelial tissues can help rebuild the immune
+blood circulation for removing particulates and provide metabolic
+functions to an LoC. The features of a model can provide insights
+into the highly specific interactions between nanoparticles and
+cells as well as the related molecular mechanisms of inflammation.
+Such findings facilitate the development of in vitromodels and help
+understand the toxicity of air pollutants in lung tissues. In addition,
+the intrinsic properties of air pollutants are of high importance in
+the field of environmental toxicology. On-site exposure can provide
+an in-depth understanding of the interaction between air pollut-
+ants and the surface characteristics of the lung epithelium and
+show the damage and surface composition of particulates of spe-
+cific sizes in the lung environment. Moreover, it offers a novel
+method for screening the toxicity of environmentally hazardous
+substances and new materials.
+An LoC is a highly repeatable, reliable, and compatible micro-
+system. It has a high application potential in preclinical trials and
+can reduce the inspection process effectively. In addition, an LoC
+will significant implications in the field of air pollution monitoring
+and toxicity assessment owing to its capability of detecting pollu-
+tion sources and the toxicity of new materials in the early stage.
+Consequently, relevant regulations and standards can be formu-
+lated to restrict the pollutant exposure in human living environ-
+ments. An LoC can be further used to help provide personalized
+treatments for different types of diseases including COPD, pulmo-
+nary fibrosis, and asthma. The high cost of drugs and the difficulty
+in rapid detection of substance toxicity are the twomain drawbacks
+of the existing models (animal models, 2D cell models). In contrast,
+an in vitro LoC model can facilitate the pre-clinical development of
+different available drugs and new drugs. It can also provide
+personalized organ models to realize precision medicine. Finally,
+the application of an LoC in air pollution research aims to provide a
+standardized inhalation toxicity test that is reproducible and
+repeatable as well as provides highly relevant data on the func-
+tional structure of the lung microenvironment. However, the data
+should be collected based on a large range of cell exposure condi-
+tions and cell models. Using the specific behavior obtained from the
+model as the toxicity endpoint, an LoC is expected to be used as a
+substitute for animal-based inhalation toxicity tests to provide
+more dependent explanations on the interaction between cells and
+air pollution.7. Prospect
+Air pollution is a very urgent global health problem. However,
+the current in vitro cell assays and animal models still have a
+bottleneck to explore the effect of fine particulate matter (PM) on
+human health. In addition, most cell experiments are limited to the
+analysis of the cytotoxicity of air pollution particles or components
+on cells. Based on recent advances in human lung-on-a-chip tech-
+nologies, this review provides new forms of human experiments
+in vitro for evaluating harmful effects of air pollutants to more
+physiologically and clinically relevant preclinical models than
+traditional in vitro assays and standard animal models. Moreover,
+their greatest novelty lies in their ability to reconstruct dynamic
+vascular perfusion, tissue-tissue interface (aireliquid interface),
+and lung-specific mechanical cues (cilia and mucus, polar proteins
+and directional mucociliary clearance), which are the important in-f breathing in human body on lung-on-a-chip [32]. B: Size distribution and cumulative
+e study by Lin et al. [63] Copyright 2021, the Elsevier. C: ROS generation after PM2.5
+tudy by Xu et al. [64] Copyright 2020, ACS. D: Fluorescence image of particle deposition
+following exposure. Reprinted with permission from the study by Shani et al. [65]
+ffects of inhaled whole cigarette smoke and physiological recapitulation of cigarette
+enam et al. [66] Copyright 2016, the Cell systems.
+K.-C. Lin, C.-Z. Yen, J.-W. Yang et al. Materials Today Advances 14 (2022) 100216vivo physiological characteristics for the study of respiratory health
+assessment. Therefore, the lung-on-a-chip technologies allow to
+construct the artificial models with well-defined physiological
+characteristics under biomimetic microenvironments. It can better
+elucidate the relationship between the effects of air pollutants on
+important cellular and molecular factors for human physiology and
+pathophysiology compared to traditional experimental methods.
+Overall, the ability of lung-on-a-chip technologies can recapitulate
+human lung physiology, it makes possible to explore the in-
+teractions of air pollutants with lung organs to assess the acute and
+chronic adverse health effects of hazardous substances in the
+future. These innovative biomimetic chip devices will pave the way
+for reliable and more efficient testing of harmful substances
+without the need for animal experiments.
+Author statement
+Ko-chih Lin: Conceptualization, Investigation, Methodology,
+Project administration, Writing e original draft. Chun-Zai Yen:
+Conceptualization, Investigation, Methodology, Project adminis-
+tration, Writing e original draft. Jia-Wei Yang: Writing e review &
+editing. Johnson H.Y Chung: Writing e review & editing. Guan-Yu
+Chen: Project administration, Funding acquisition, Supervision,
+Writing e review & editing.
+Declaration of competing interest
+The authors declare that they have no known competing
+financial interests or personal relationships that could have
+appeared to influence the work reported in this paper.
+Acknowledgements
+G.Y.C. would like to acknowledge financial support from the
+Ministry of Science and Technology (MOST-110-2636-E-009-007-),
+Council of Agriculture, Executive Yuan (110AS-24.2.1-AD-U2) and
+the Higher Education Sprout Project of the National Yang Ming
+Chiao Tung University and the Ministry of Education, Taiwan.

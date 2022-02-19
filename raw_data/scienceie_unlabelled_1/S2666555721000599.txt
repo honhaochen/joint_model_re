@@ -1,0 +1,584 @@
+Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), the causative pathogen of the coronavirus disease
+2019 (COVID-19), has caused more than 179 million infections and 3.8 million deaths worldwide. Global health
+authorities working on the COVID-19 outbreak continue to explore methods to reduce the rate of its transmission
+to healthy individuals. Treatment protocols thus far have focused on social distancing and masking, treatment
+with antivirals early in infection, and steroids to reduce the inflammatory response. An alternative approach is
+therapy with low dose radiation (LDR), which has several advantages compared to the current drugs and med-
+icines. To date more than 10 case reports and pilot clinical trial preliminary outcome are available from different
+countries. These reports cover a wide range of patient conditions and LDR treatment strategies. Although one
+report showed the failure to observe the improvement of COVID-19 patients after LDR therapy, the majority
+showed some clinical improvement, and demonstrated the safety of LDR for COVID-19 patients, particularly with
+0.5 Gy. This review aims to summarize the potential rationales and mechanisms of LDR therapy for COVID-19
+patients, and its current clinical status and potential use.1. Introduction
+Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), the
+causative pathogen of the coronavirus disease 2019 (COVID-19), has
+caused more than 179 million infections and 3.8 million deaths world-
+wide.1 Global health authorities working on the COVID-19 outbreak
+continue to explore methods to reduce the rate of its transmission to
+healthy individuals. Viruses typically have different sensitivities to
+physical and chemical treatments, such antiviral drugs, UV, and heat,
+ranging from extremely sensitive to extremely resistant. Incomplete
+treatment of individuals provides evolutionary pressure on the viral
+genome, leading to the generation of more resistant organisms. An
+alternative approach is therapy with low dose radiation (LDR). As sug-
+gested in by Ghadimi-Moghadam et al.,2 COVID-19 patients may receive
+a single dose of 100, 180 or 250 mGy X-rays, less than the maximum
+annual radiation dose of the residents of high background radiation areas
+of Ramsar (<260 mSv). In contrast with antiviral drugs, a single dose of
+either 100, 180 or 250 mSv of low LET X-rays may not exert a significant
+selective pressure on the SARS-CoV-2 and hence does not lead to directed
+accelerated evolution of these viruses.
+The concept of LDRT for COVID has been evaluated by several groupsute, 570 South Preston Street, Rm
+.
+September 2021; Accepted 9 Se
+al Protection, Chinese Center for
+e (http://creativecommons.org/licenses/by-nc-nd/4.0/).- a PubMed search with key words “low dose radiation therapy” and
+“COVID-19” on August 16, 2021 resulted in 66 publications related to the
+potential therapy for the patients with COVID-19. As outlined in Fig. 1,
+56% of these publications proposed various rationales and potential
+mechanisms for LDRT impacting COVID-19 patients, 29% belong to de-
+bates and concerns for the potential application of LDR therapy (LDRT)
+for COVID-19 patients, and only 15% are clinical observations or trials.
+This review aims to summarize the potential rationales or mechanisms,
+currently status of clinical outcome, and future directions.
+2. LDR induced hormesis and adaptive response, and its
+application to treat phenomena historically
+In the context of radiation protection and many fields of radiobiology,
+‘low dose’ is understood to be 100 mGy or less. However, in the field of
+radiation oncology where the daily dose fraction is typically 2 Gy, and 6
+weeks of therapy amounts to a total dose of 60 Gy (2 Gy/d  5 d/
+week  6 weeks), a single 1.0 Gy is regarded as a low dose.3 LDR has
+distinct effects from high dose radiation (HDR): the latter causes massive
+DNA damage, cell death, organ damage, and can even cause acute radi-
+ation sickness. In contrast, LDR, particularly at the 100 mGy or less, does: 304F, Louisville, KY, 40202, USA.
+ptember 2021
+Disease Control and Prevention. Publishing services by Elsevier B.V. on behalf of
+Fig. 1. Analysis of PubMed publications related to LDRT for the patients with
+COVID-19, based on search results on August 16, 2021.
+N.E. Dunlap et al. Radiation Medicine and Protection 2 (2021) 139–145not cause the above effect. LDR does cause some DNA damage, as well as
+stimulate DNA repair enzyme activity, anti-stress proteins and apoptotic
+cell death pathways, in an effort to reduce genomic instability4,5 as
+observed non-ionizing radiation genotoxic agent.6 This has led to two
+described impacts of LDR: “hormesis”, which is stimulating cell function
+and cellular signaling pathways, and “adaptive response” which is the
+development of resistance to subsequent chemical or physical stress.3–5
+In the last seven decades, LDR hormetic and adaptive effects have
+been confirmed in a variety of animal (preclinical) models,7-9 and have
+also been gradually applied in clinics.10 For instance, a pilot trial of LDR
+via diagnostic Computed Tomography (CT, 40–60 mGy) to treat patient
+with Alzheimer's disease was been started in 2016,11–13 which has led to
+a NIH trial being approved for LDR therapy for patient with Alzheimer's
+disease (ClinicalTrials.gov Identifier: NCT03597360 for CT).
+Dr. Calabrese has offered a nice review regarding the historical
+application of X-ray therapy of pneumonia during the first half of the
+20th century. He has collected 15 studies with approximately 700 cases
+of bacterial (lobar and bronchopneumonia), sulfanilamide non-
+responsive, interstitial, and atypical pneumonia, showing the effective
+treatment by low dose (LD) X-rays, based on clinical symptoms, objective
+disease biomarkers, andmortality incidence. He found the capacity of the
+X-ray treatment to reduce mortality was similar to serum therapy and
+sulfonamide treatment during that time period. In his review, he also
+provided four experimental animal models (mice, guinea pig, cat, and
+dog) with bacterial and viral pneumonia to confirm the clinical obser-
+vation and outcomes. X-ray treatment of these pneumonia is hypothe-
+sized to induce an anti-inflammatory phenotype to rapidly reverse
+clinical symptoms and facilitate disease resolution. This experience with
+both bacterial and viral pneumonias in the past suggests the possibility
+that LDRT could have an impact on COVID-19 as well.14
+3. LDRT for the patients with COVID-19: its potential rationales
+and mechanisms
+SARS-CoV-2 infects the lower respiratory system resulting in the
+recruitment of macrophages and monocytes to the lung as inflammation
+that further causes widespread damage to the lung's airways.1,15 Similar
+to other beta-corona viruses, SARS-CoV-2 requires the
+angiotensin-converting enzyme 2 (ACE2) as a receptor for entering the
+cells. ACE2 receptor expresses most cells in our body, including
+vascular endothelial cells, the renal tubular epithelium, Leydig cells in
+the testes, gastrointestinal tract, lung, and heart. However, SARS-CoV-2
+most commonly affects the lungs of the patients with COVID-19, 20% of
+which becomes severe and results in ARDS or sepsis due to a cytokine
+storm. It is well-known that there remains insufficient therapy for the
+patients with COVID-19, making it highly lethal. Even though vacci-
+nations are available from several countries, this prevalence and140mortality remain high and new variants of SARS-CoV-2 are appearing
+rapidly, all these will continually spread it and threaten the world.1,15
+Thus, alternative efficient approaches to prevent and treat the patients
+with COVID-19 remain urgently needed, among which LDRT was one
+proposed with several reasons, as illustrated in Fig. 2.
+As early as March 20, 2020, a preprint from Mohan Doss suggested
+application of LDRT for the patients with COVID-19 (https://osf.
+io/6zy9u/),16 following which, other two hypotheses immediately
+appeared on April 1, 2020 from Ghadimi-Moghadam et al.,2 and on April
+6 as the early online version from Kirkby & Mackenzie.17 Doss remarked
+that the SARS-CoV-2 infection can lead to pneumonia and death, for
+which the weakness of the immune system would be the major contrib-
+uting factors; therefore, it is necessary for some pilot clinical trials to
+explore LDRT with dose of 300 mGy for the lungs to boot systemic im-
+mune function and anti-inflammation.16 Ghadimi-Moghadam et al.2 also
+introduced the similar propose for COVID-19 patients to receive a single
+dose of 100, 180 or 250 mSv X-ray radiation since that is less than the
+maximum annual radiation dose of the residents of high background
+radiation areas of Ramsar that is up to 260 mSv.
+Subsequently there were several publications suggesting the appli-
+cation of LDRT for the patients with COVID-19 with different reasons and
+historical evidence. Fig. 2 summarized the potential rationales or
+mechanisms responsible for the LDRT for these patients.
+3.1. LDR and its anti-inflammation and immuno-stimulation
+One goal of the therapy of COVID-19 patients is to stimulate the pa-
+tient's immune function to kill the virus, but suppress the cytokine storm
+that leads to severe pulmonary injury.18 Although multiple drugs are
+being tested to treat COVID-19 patients, there are no drugs that have
+been approved by FDA to successfully treat severe cases of COVID-19.
+LDR has historically demonstrated robust effectiveness on viral pneu-
+monia.14 Immunologically LDRT is able to induce IL-10 and TGF-β to
+enhance the immuno-suppressive effects and is also able to increase CD4
+and CD8 T-cell counts. Hypothetically LDRT appears to negate the effects
+of cytokine release syndrome through immunomodulation.
+The cytokine storm associated with severe COVID 19 patients has
+been considered as the cause of death in these sick patients.18,19 Based on
+Kumar et al.,18 Table 1 lists the typical changes of cytokines in the pa-
+tients with COVID-19, including decreases in CD3, CD4, CD8, NK cells
+and B-cells, decrease in IL-10 and IFN-γ, but increases in IL-4, IL-6 and
+TNF-α. In contrast, LDR-induced responses include an increase in CD3,
+CD4, and CD8 T cells, increases in IL-10 and TGF-β, decreases in IL-6 and
+TNF-α, and M2 macrophage phenotype activation.18 Genard et al.20 also
+summarized literature to point out that LDR at<1.0 Gy maintaining high
+level of M2microphage compared to radiation at medium dose (2–10 Gy)
+showing predominant M1 macrophage.
+Consistent with the report of Kumar et al.,18 the stimulating effect of
+LDR in animal models has been reported before,21,22 which demonstrated
+that LDR can stimulate proliferation of normal cells and activate their
+defense systems. The preclinical and clinical studies of the specific effects
+of LDR on the immune system indicate potential efficacy in the treatment
+of some immune-related diseases, especially autoimmune diseases and
+malignant tumors.22 Most recently, Meziani et al.23 also conducted a
+comprehensive study in mouse model and human tissue samples. In this
+study, the authors used airways-instilled lipopolysaccharide (LPS) and
+influenza virus (H1N1) as murine models of pneumonia, and Toll-like
+receptor (TLR)-3 stimulation in human lung macrophages. LDRT (0.5
+or 1 Gy) decreased LPS induced pneumonia, and increased the percent-
+age of nerve- and airway-associated Macrophages producing IL-10. LDR
+treatment decreased H1N1 viral infection-induced lung tissue damage
+and immune cell infiltration in animals and LDRT also increased IL-10
+production by infiltrating immune cells into the lung. Exposure of
+TLR-3 ligand-stimulated human lung macrophages ex vivo to LDR
+increased IL-10 secretion and decreased IFNγ and IL-6 production.
+Therefore, these results also support the concept that LDR-mediated
+Fig. 2. Potential rationales and mechanisms responsible for the application of low-dose radiation therapy (LDRT) for COVID-19 patients.
+Table 1
+A few examples of immune cells and cytokines in COVID-19 patients & LDR-
+irradiated mice.
+Measurements COVID-19 Responses to LDR
+T Cells (Cd3, CD4, CD8, NK) Decreased Increased
+IL-6, TNF-α Increased Decreased
+IFN-γ Increased Decreased
+Types of increased microphages M1 M218,20
+MnSOD level or activity Decreased28 Increased34,35
+Note： Information cited in this table predominantly from the review by Kumer
+et al.,18 otherwise was indicated in the table. M1 & M2 are two types of mac-
+rophages: M1 macrophages are recognized as classically activated macrophages
+and show enhanced ability to phagocyte pathogens while M2 macrophages are
+requested in infection-free healing circumstances and have pro-tumoral func-
+tions. The polarization of macrophages can be driven by different
+micro-environmental molecules and leads to the production by the macrophages
+of different cytokines and chemokines.20
+N.E. Dunlap et al. Radiation Medicine and Protection 2 (2021) 139–145immune homeostasis with reduction of inflammatory response is most
+likely the mechanisms by which LDRT afford the therapy for the patients
+with COVID-19.23
+3.2. LDR induced adaptive or hormetic responses showing the resistance of
+multiple organs to virus-infection caused damages
+Except for the above anti-inflammatory and immuno-stimulatory ef-
+fects, LDRT may also induce systemic tissues' adaptive or hormetic
+response, making the tissues resistant to the challenge by virus. Oxidative
+stress is actively involved in the pathogenic process of respiratory viral
+infections, therefore, preventing the cytokine storm that rapidly gener-
+ates extra amounts of reactive oxygen species would be an important step
+to prevent multi-organ damage.1,15 Antioxidant therapy has been proven
+to most probably increase the effectiveness of the response against
+SARS-CoV-2.24 Recent studies have clearly shown the upregulation of
+oxidative stress gene markers during SARS-COV-2 viral infection and is
+under consideration as a predictor for COVID-19 severity and the dura-
+tion of ICU stay.25,26 Specifically, the COVID-19-associated oxidative
+damage to red blood cells has been reported in 9-year-old boy with
+COVID-19 symptom and positive for SARS-CoV-2 RNA.27 In samples from
+the lung, heart, and liver in a recent prospective cohort of 15 postmortem
+patients who died from COVID-19, manganese superoxide dismutase
+(MnSOD) was shown in both mitochondria and cytosol, suggesting that
+this enzyme may not sufficiently detoxify the reactive oxygen or nitrogen
+species in mitochondria, leading to an increased oxidation of mito-
+chondrial proteins.28 The NRF2 antioxidant gene expression pathway is141suppressed in biopsies obtained from COVID-19 patients29; leading to the
+hypothesis that activation of NRF2 has potential for treating COVID-19.30
+Calabrese et al.31 recently have addressed NRF2 activation as the
+responsible etiology for the clinical benefits of LDRT in COVID-19
+pneumonia. In our early studies we have provided evidence for the in-
+duction of NRF232,33 and its down-stream antioxidants, including SOD,34
+in various tissues of animals by LDR, which prevented diabetes-induced
+organ's damages. LDR-induced NRF2 and its downstream antioxidants
+not only offers the prevention of oxidative stress and damage caused by
+SARS-CoV2 infections, but also favorably rebalances the skewed oxida-
+tive redox homeostasis of immunological cells, driving them toward
+anti-inflammatory phenotypes.31 At the cellular and subcellular levels,
+hormetic doses of LDR (<1.0 Gy) induce polarization shifts in the pre-
+dominant population of lung macrophages, from an M1
+pro-inflammatory to an M2 anti-inflammatory phenotype.20,31 Intracel-
+lularly in response to LDR at 0.1 Gy, cytosolic CDK4 relocates to mito-
+chondria where it directly phosphorylates MnSOD at serine-106 (S106)
+to activate MnSOD enzymatic activity and mitochondrial respiration.35
+This LDR-mediated mitochondrial MnSOD activation and respiration
+make the cells more resistant to second high-dose radiation-induced
+damage in vitro and in vivo.35 Therefore, LDRT may protect patients with
+COVID-19 from SARS-CoV-2-induced cytotoxicity not only by activating
+NRF2-mediated transcriptional function for increasing its downstream
+antioxidants, but also by enhancing antioxidant activities through stim-
+ulating posttranscriptional modification of these anti-oxidative enzymes.
+Together, the NRF2-mediated antioxidant responses and the subsequent
+shifts to anti-inflammatory phenotypes would have the capacity to sup-
+press cytokine storms, resolve inflammation, promote tissue repair, and
+prevent COVID-19-related mortality.31
+3.3. Stimulating stem cell proliferation to repair the damage organs
+Infection of cells with SARS-CoV2 leading to the host cell damage and
+death.1,15 The repairing of these damaged or lost cells is an important
+step to recover from the infection-mediated ARDS; accordingly, thera-
+peutic strategies with different kinds of stem cells have been
+explored.1,36,37 The capacity for LDR at 75 mGy to 0.5 Gy to stimulate
+bone marrow progenitor cells has been demonstrated in our early
+works,38,39 and its therapeutic effects on damaged tissues also were re-
+ported from our group,40 and others.41,42
+Mesenchymal stromal/stem cells (MSCs) possess potent and broad-
+ranging immunomodulatory activities.43 As summarized by Rogers
+et al.,43 MSCs function via several mechanisms relevant to acute lung
+injury: when MSCs are administered intravenously, these cells sequester
+in the lung, but are immune-modulatory, anti-inflammatory,
+Table 2
+Detail of clinical report for the use of LDRT to treat COVID-19 patients.
+Authors
+(Country)
+Online time
+(Published
+time)
+No. of
+COVID-
+19 cases
+LDRT
+doses
+(Gy)
+Conclusions
+Ameri et al.49
+(Iran)
+July 21,
+2020 (Dec.
+1, 2020)
+5 0.5 With a response rate of
+80%, whole-lung
+irradiation in a single
+fraction of 0.5 Gy had
+encouraging results in
+oxygen-dependent
+patients with COVID-19
+pneumonia.
+Del Castillo
+et al.51 (Peru;
+Germany)
+Aug. 20,
+2020 (Dec.
+2020)
+1 1.0 Whole-lung low-dose
+radiotherapy seems to
+be a promising
+approach for avoiding
+or delaying invasive
+respiratory support.
+Delivered low doses are
+far from meeting
+toxicity ranges
+Hess et al.52
+(USA)
+Sept. 28,
+2020 (Dec.
+1, 2020)
+9 1.5 In a pilot trial of 5
+oxygen-dependent
+elderly patients with
+COVID-19 pneumonia,
+low-dose whole-lung
+radiation led to rapid
+improvements in
+clinical status,
+encephalopathy, and
+radiographic
+consolidation without
+acute toxicity. Low-dose
+whole-lung radiation
+appears to be safe,
+shows early promise of
+efficacy, and warrants
+further study.
+Sanmamed
+et al.54 (Spain)
+Nov. 26,
+2020
+(March 15,
+2021)
+9 1.0 LDRT was a feasible and
+well-tolerated
+treatment, with
+potential clinical
+improvement.
+Ameri et al.50
+(Iran)
+Dec. 2, 2020
+(March 15,
+2021)
+10 0.5/
+1.0
+LD-WLI with a single
+fraction of 0.5 Gy or
+1 Gy is feasible.
+Hess et al.53
+(USA)
+Dec. 16,
+2020
+(March 15,
+2021)
+10 1.5 Low-dose, whole-lung
+radiation for patients
+with COVID-19-related
+pneumonia appears safe
+and may be an effective
+immunomodulatory
+treatment.
+Papachristofilou
+et al.58
+(Switzerland)
+March 15,
+2021 (Aug
+1, 2021)
+11 1.0 Whole-lung LDRT failed
+to improve clinical
+outcomes in critically ill
+patients requiring
+mechanical ventilation
+for COVID-19
+pneumonia
+Bonet et al.56
+(Spain)
+May 19,
+2021
+10 0.5 LD-RT is not only an
+encouraging option for
+COVID-19 pneumonia
+patients, but a
+convenient and feasible
+procedure if performed
+in a coordinated way by
+reducing procedure
+times.
+Arenas et al.57
+(Spain)
+July 6, 2021 36 0.5 LD-RT appears to be a
+feasible and safe option
+in a population with
+COVID-19 bilateral
+interstitial pneumonia
+in the presence of
+Table 2 (continued )
+Authors
+(Country)
+Online time
+(Published
+time)
+No. of
+COVID-
+19 cases
+LDRT
+doses
+(Gy)
+Conclusions
+significant
+comorbidities
+Sharma et al.55
+(India)
+Nov. 18,
+2020
+10 0.7 Results of 90% response
+rate suggest the
+feasibility and clinical
+effectiveness of LDRT in
+COVID-19 patients
+having moderate to
+severe risk disease.
+N.E. Dunlap et al. Radiation Medicine and Protection 2 (2021) 139–145
+142antibacterial, and antiviral. They additionally are anti-lung fibrosis,
+anti-apoptosis of injured cells, and stimulate alveolar fluid clearance and
+lung tissue regeneration. These functions of MSCs have been confirmed
+by multiple in vivo studies in animal models and ex vivo human lung
+models, and furthermore, the in vivo safety of local and intravenous
+administration of MSCs has been demonstrated in multiple human clin-
+ical trials, including studies of ARDS.43
+ADSCs, an abundant type of MSCs, are proposed as a therapeutic
+option for the treatment of COVID-19 patients in order to reduce
+morbidity and mortality.43,44 We and others have indicated that LDR
+0.1 Gy was able enhance the proliferation of several human normal cell
+lines and animal bone-marrow stem cells in vivo, but not that of tumor
+cells, establishing a precedent for using LDR to stimulate stem cell
+therapies.45–48 A recent elegant study with human ADSCs isolated from
+10 donors has shown that LDR (50 mGy) promoted the proliferation and
+survival of ADSCs. LDR at dose of1.0 Gy did not have either genomic or
+cytotoxic effects detectable, but at greater doses (0.1–2.0 Gy) induced
+residual double-strand breaks and reduced the long-term survival and
+proliferation rate of ADSCs.44 These studies suggest that LDR could be a
+possible mediator to improve stem cells in potential therapy for the pa-
+tients with COVID-19.
+In summary, there are multiple potential mechanisms by which LDRT
+may provide beneficial effects in patients with COVID-19. Clinical trials
+are needed to assess if these theoretical benefits will translate into
+improved outcomes.
+4. Current status of LDRT for COVID-19 patients
+As of August 16, 2021, 17 different groups have registered LDRT trials
+for COVID-19 in ClinicalTrials.gov (Search of: low dose radiation, ther-
+apy | Covid19 - List Results - ClinicalTrials.gov). Among these clinical
+trials, four have competed, two are the status of “Active not recruiting”
+and the rest are “Recruiting”. One of the four completed clinical trials is
+the only clinical trial to explore “Inhalation Low Dose Radionuclide
+Therapy in Treatment COVID-19 (NCT04724538)”, for which Inhalation
+of 99Tcm-pertechnetate aerosol from commercial gas generator that was
+loaded by 4,165 MBq of 99Tcm -pertechnetate. Computed tomography
+(CT) scans and blood tests were conducted at 1 d before, 7 and 14 d after
+inhalation procedure for both 14 treated COVID-19 patients and 11 non-
+treated COVID-19 patients. The final analyzed results are expected soon.
+Within the literature, there are 9 publications for the case report or
+clinical trials available regarding the use of LDRT with COVID-19, which
+are summarized in Table 2.
+As the first report for the use of LDRT to the patients with COVID-19,
+Ameri et al. published a pilot study in 2020,49 and second study in
+2021.50 In the first study, they treated five patients with COVID-19 aged
+over 60 years with whole lung exposure to 0.5 Gy. They reported the
+improvement of four patients within a few days after irradiation, with an
+average discharging time of 6 days and no obvious radiation toxicity. In
+the subsequent study, they treated 10 COVID-19 patients with different
+dose patterns: 5, 1 and 4 patients with a single 0.5 Gy as did in first study,
+two 0.5 Gy with interval of 48–72 h, and a single dose of 1.0 Gy,
+N.E. Dunlap et al. Radiation Medicine and Protection 2 (2021) 139–145respectively. The mean improvements in blood oxygen level at 1 and 2 d
+after LDRT were 2.4% and 3.6%, respectively. Nine patients were treated
+after 1 d. Overall, the response rate (RR, defined as an increase in blood
+oxygen level) of these patients and clinical recovery (CR) were 63.6%
+and 55.5%, respectively.50
+In August 2020 Del Castillo et al.51 reported treatment of a 64-year
+old patient with COVID-19 with 1.0 Gy whole lungs exposure and
+found the significant improvement at 3 d post-LDRT, discharged to home
+at 7 d post-LDRT.
+In September 2020, the first pilot study from Hess et al.52 was
+available, in which they treated five patients with COVID-19 with a
+single dose (1.5 Gy) whole lungs exposure. They found that the respi-
+ratory condition of four patients improved in the first 24 h after exposure
+with an average recovery time as 1.5 d and discharge time of 12 d. There
+were no obvious acute radiation toxicities. By comparing the blood tests
+and imaging examinations the effectiveness of LDRT for patients
+COVID-19 is estimated about 80%.52 Then they treated another 10 pa-
+tients with 1.5 Gy whole lung exposure. By comparing with 10 control
+patients with and without other COVID-19 drugs, three key variables
+including the median times for clinical recovery and hospital discharge,
+and intubation rates were 3 vs. 12 d, 12 vs. 20 d, 10% vs 40% (LDRT vs.
+Control), respectively.53
+Sanmamed et al.54 treated 9 COVID-19 patients with whole lung
+exposure to 1.0 Gy and demonstrated that SatO2/FiO2 index significantly
+improved 3 d post-LDRT. Compared to COVID-19 patients without LDRT,
+the median days of hospitalization of patients who received LDRT was
+reduced by approximately 20%. Seven patients were discharged and two
+patients died in the hospital; the reasons for death were sepsis and severe
+baseline chronic obstructive pulmonary disease.
+Sharma et al. performed LDRT to treat 10 patients with COVID-19
+with an age range of 38–63 years. Both lungs of these patients were
+irradiated by a single-dose fraction (0.7 Gy). All patients completed the
+prescribed treatment. Nine patients achieved CR within a period ranging
+from 3 to 7 d, and discharged from hospital with the range of 10–24 d
+after LDRT. One patient died 24 d after LDRT. No radiation toxicity was
+observed in these patients. Overall, RR of these patients was 90%.55
+Under the same clinical trial, IPACOVID (NCT04380818),56,57 Bonet
+et al.56 have first optimized the procedure of LDRT for the patients with
+COVID-19. They were able to perform LDRT in a median of 38 min,
+suggesting that LDRT could be performed safely and easily. Then they
+treated 36 patients with COVID-19 pneumonia (a mean age of 84 years,
+19 men and 17 women) with 0.5 Gy LDRT along with dexamethasone
+treatment. Significant improvements compared to before treatment were
+achieved, as shown by improvements in oxygen saturations and amount
+of supplemental oxygen needed. In those who survived (23/36, 64%), a
+significant improvement was observed in the percentage of lung
+involvement in the CT scan at 1 week after LD-RT. No adverse effects
+related to radiation treatment have been reported. Through these two
+studies, they conclude that LDRT is a feasible and safe option in a pop-
+ulation with COVID-19 in the presence of significant comorbidities.57
+The above clinic studies on LDRT for the patients with COVID-19
+generally showed the improved and safe outcomes (Table 2); however,
+the outcome of Papachristofilou et al.58 is different from the above
+clinical outcomes. In this study, 22 patients were randomized to either
+whole-lung LDRT or sham-radiation therapy. They did not observe a
+difference in 15-d ventilator-free days or overall survival at 28 d between
+the two arms. In this study, whole-lung LDRT failed to improve clinical
+outcomes in critically ill patients requiring mechanical ventilation for
+COVID-19 pneumonia.58 This discrepancy was discussed for the potential
+confounders or issues.58,59
+In summary, performing LDRT is a new approach to treat pneumonia
+resulting from COVID-19 disease.60 The completed clinical trials that
+have performed LDRT to treat COVID-19 showed that the effectiveness of
+LDRT in treating COVID-19 was up to 90%. The vast majority of primary
+and secondary outcomes of clinical trial investigations regarding LDRT in
+treating COVID-19 found that LDRT can be considered a feasible143treatment to improve mortality of COVID-19 patients.
+5. Perspectives
+In the past century there has been substantial evidence from studies of
+intended and unintended irradiation of animals and humans demon-
+strating the harmful effects of radiation at high doses. However, LDR at
+100 mGy or lower is not only harmless, but can be beneficial with
+decreased rates of cancer and increased longevity.4,10,21,22 Historically,
+X-rays have been used to successfully treat bacterial and atypical
+(including viral) pneumonia.19,31 As summarized by Calabrese and
+Dhawan,31 a single treatment with LD X-rays quickly relieved respiratory
+distress and markedly reduced the risk of mortality in patients with
+pneumonia, especially when given early in the disease course. The re-
+ported total cure rate reached 83.1% among a total of 863 pneumonia
+patients treated by X-ray therapy, including 85 virus-induced pneu-
+monia; the reduced pneumonia mortality was similar to those treated by
+immune serum and sulfonamide. From the limited clinical trials
+(Table 2), LDRT in the most of cases appears to reduce or significantly
+relieve the course of severe pneumonia.
+With regard to the biologic effects of LDR, Torres Royo et al.61 sum-
+marized the previous studies on LDRT for benign pathologies with the
+conclusion that the net effect at doses of 0.1–0.3 Gy are
+anti-inflammatory actions. This is consistent with another comprehen-
+sive review, stating that low (<0.1 Gy) to moderate doses (0.1–1.0 Gy) of
+low and high LET radiation have anti-inflammatory effects on individuals
+with local inflammatory conditions, and may result in improvement in a
+variety of clinical symptoms and parameters.62 Therefore, LDRT would
+offer a low-risk, noninvasive, therapeutic alternative for elderly patients,
+with low toxicity. Currently it is only considered as a rescue treatment for
+the patients with COVID-19 when standard management has failed.61
+There remain several questions need to be further addressed in the
+future clinical trials. The first question is the dose level of LDRT for the
+patients with COVID-19. Several clinical trials showed improvement for
+the therapy of COVID-19 patients with dose range of 1.5 to 0.5 Gy
+(Table 2). Although the observation of Emory group indicated the
+improvement of 1.5 Gy-treated patients, the safety of this dose over the
+long-term outcome remains a concern. Based on recent estimation of the
+risks of radiation-induced cancer (RIC) and cardiac disease, Arruda
+et al.63 pointed out that the lung is at the highest risk for RIC. Lifetime
+attributable risks for lung cancer with a radiotherapy dose of 1 Gy was
+elevated for women >60 years of age and men <40 years of age. Only
+0.5 Gy had an acceptable risk of exposure-induced death. Therefore,
+Arruda et al. suggested that radiotherapy dose 0.5 Gy provides an
+acceptable LAR estimate (1%) for RIC and REID, irrespective of sex and
+age. The current ongoing trials should initially use doses 0.5 Gy to
+maintain the risks at an acceptable level and include only patients who
+fail or do not have any other treatment option.63
+Although there more than 10 clinical studies that have carried out to
+assess the role of LDRT in COVID-19 patients, most of these studies
+(Table 2) were with small participant numbers of 1–10 patients, were not
+controlled, and the results were complicated by treatment by other
+mechanisms such as remdesivir and dexamethasone.64
+Finally, the risk of radiation exposure in younger patients is less well
+understood. As such, we do not endorse the use of LDRT for teenagers or
+young adults with COVID-19 to ensure a lack of any potential side-effects
+for these radiation-susceptible populations. Further studies are needed to
+determine the optimal patient populations for consideration of LDRT.
+Given the rapid rise and spread of new variants, it may be the time
+now to consider using LDR to fight COVID-19, either as a therapeutic
+procedure alone, or as an adjunct to other forms of therapy being
+tested.64

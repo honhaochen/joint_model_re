@@ -1,0 +1,722 @@
+A novel and effective experimental method for describing the evolution curves and hot maps of biomass pyrolysis 
+vapors with the adjustment of sweeping gas flow rate was developed during condensation. The composition 
+proportion of pyrolysis vapors was inverted from the composition quantification of segmental bio-oil recovered 
+by the specific condenser with two flumes. The mathematical relationship between location and vapor compo-
+sition was fitted by Slogistic function. The condensable proportion of water decreased from 85% to 60% as N2 
+flow rate increased from 100 mL/min to 500 mL/min under 340 K water bath. But 500 mL/min N2 flow rate 
+accelerated the disturbance of condensing field and improved the recoveries of components with stronger 
+condensing abilities than water. The condensable proportion of guaiacol and its derivatives decreased from 60% 
+to 40% under 300 mL/min but increased to 55% under 500 mL/min. Furthermore, the evolution difference 
+between high-proportion and low-proportion components in pyrolysis vapors in the condensing field was also 
+discussed as well as the unique evolution of components with azeotrope phenomenon or special solubility. For 
+the first time, the adjustment mechanism of constant non-condensable components on the evolution of con-
+densable components was clarified during water bath condensation, which would remarkably improve the 
+comprehension for the complex phase transition process during the selective condensation of biomass pyrolysis 
+vapors.   
+1. Introduction 
+The condensation of pyrolysis vapors was one of the core technolo-
+gies for the bio-oil production from biomass pyrolysis and liquefaction 
+[1]. The adjustment for condensation was a cheap and effective method 
+to improve the quality of bio-oil in comparison with the optimization of 
+feedstock or pyrolysis technique, which was convenient to the imme-
+diate application on the pilot-scale and commercial platforms of biomass 
+pyrolysis and liquefaction [2]. Within the limited condensing capacity of 
+condenser, the numerous components in biomass pyrolysis vapors 
+exhibited various recovery effects because of the differences in their 
+condensing abilities [3]. The competitive relationship between these 
+components was observed during the liquefaction of pyrolysis vapors 
+and the components with strong condensing abilities were preferred to 
+condense [4]. Based on this competitive relationship the selective 
+condensation technology was developed to achieve the online separa-
+tion of pyrolysis vapors through setting the gradient multi-staged 
+condensers in a complete condensing system. The separation and 
+enrichment phenomenon of bio-oil components with fractional 
+condensation was analyzed by the investigations of several scholars [5, 
+6]. However, these conclusions only considered the variation of bio-oil 
+composition, but the actual condensing process simultaneously 
+involved the frequent phase transitions of hundreds of compounds and 
+how to study the componential evolution of pyrolysis vapors during 
+condensation became the primary difficulty for the comprehension of 
+condensing mechanism [7–9]. The component enrichment effect and 
+adjustment precision of selective condensation would be improved 
+significantly when the evolution mechanism of pyrolysis vapors was 
+grasped in the condensing field. 
+Palla et al. attempted to describe the evolution and recovery of each 
+component in high-temperature biomass pyrolysis vapors during indi-
+rect heat exchange through computational fluid dynamics (CFD) [10]. 
+The modified Euler model was established for the numerical simulation 
+of 12-component model compound of pyrolysis vapors. Compared with 
+* Corresponding author. 
+E-mail address: xfzhu@ustc.edu.cn (X. Zhu).  
+Contents lists available at ScienceDirect 
+Applications in Energy and Combustion Science 
+journal homepage: www.sciencedirect.com/journal/applications-in-energy-and-combustion-science 
+https://doi.org/10.1016/j.jaecs.2021.100047 
+Received 30 September 2021; Received in revised form 11 November 2021; Accepted 19 November 2021   
+Applications in Energy and Combustion Science 9 (2022) 100047
+2
+the experimental results under the similar conditions of pyrolysis and 
+condensation, the simulated evolution results of guaiacol and coniferyl 
+alcohol were coincident whereas the negligible recovery of acetic acid or 
+propionic acid was far from the actual situation [4,11,12]. The incom-
+plete model compound constitution of pyrolysis vapors and unknown 
+thermophysical properties of complex components led to the partial 
+difference between simulation and experiment, which was hardly 
+revised by the current detection and identification technologies [13]. 
+Therefore, the specialized experimental investigation was more likely to 
+seize the true condensing mechanism of biomass pyrolysis vapors [9]. 
+The vapor and liquid distribution measured by experimental methods 
+was closely related to the actual distribution on the premise of reliable 
+detection means. Ill et al. reported a dynamic phase equilibrium mea-
+surement for water activity in bio-oil based on Fourier transformed 
+infrared spectrometer (FTIR) [14]. But the vapor-liquid distribution 
+relationship of organic compounds would be not measured by this 
+method because of the inaccurate quantification of FITR for organics 
+[15]. Nevertheless, this study demonstrated the possibility on the 
+inversion of condensable componential evolution in the condensing field 
+from bio-oil components through effective experimental methods. 
+Assuming the negligible chemical reactions during condensation, we 
+designed a unique and practicable experimental method for the evolu-
+tion of biomass pyrolysis vapors based on bio-oil composition inversion 
+and function fitting [16–18]. The bio-oil from different positions of 
+condensing field was recovered segmentally and the local composition 
+proportion of pyrolysis vapors was inverted from bio-oil composition at 
+the corresponding location. The evolution curves and distribution heat 
+maps of condensable components in the condensing field were described 
+by selecting suitable function to fit the relationship between vapor 
+composition and location. The predictive effectiveness of this method 
+was verified after the condensing field was adjusted, and the description 
+precisions of linear and nonlinear functions were distinguished for the 
+evolutions of different components [18]. With the assistance of this 
+method the evolution distributions of water, acetic acid, furfural and 
+guaiacol in walnut shell pyrolysis vapors were investigated in a vertical 
+tubular heat exchanger at 273–353 K water bath temperatures, which 
+particularly revealed the recovery situation of condensable components 
+along with the condensing field including the initial point of conden-
+sation as well as the variation tendency and peak point of recovery rate 
+[16]. Besides water bath temperature, however, the condensation and 
+recovery of biomass pyrolysis vapors during indirect heat exchange were 
+also affected by sweeping gas flow rate and flow field shape and other 
+factors [3]. Among them, sweeping gas flow rate was a more sensitive 
+adjustment that exhibited better economy and quicker feedback time 
+than water bath temperature [19]. But the recovery evolutions of py-
+rolysis vapors with changing sweeping gas flow rate were seldom 
+studied due to lack of dependable research methods previously. 
+Furthermore, although the existing investigations summarized the 
+influence of sweeping gas flow rate on bio-oil yield and composition, the 
+individual impact on biomass pyrolysis or vapor condensation was not 
+distinguished [6,20]. The study of Huang et al. reported that bio-oil 
+yield increased first and then decreased with increasing inert gas flow 
+rate in a fluidized bed reactor [21]. The suitable increase in flow rate 
+decreased the residence time of pyrolysis products in the hot zone and 
+avoided some secondary reactions while the extreme increase led to the 
+eddy appearance in the flow field that would promote the secondary 
+reactions of pyrolysis products. Therefore, for exclusively studying the 
+influence of sweeping gas flow rate on condensation, the pyrolysis 
+reactor should have the ability to avoid the significant effect of sweeping 
+gas flow rate on biomass pyrolysis process. The previous results from our 
+study indicated that the dense pile of pyrolysis feedstock generated the 
+relatively saturated secondary reactions in the laboratory-scale fixed 
+bed biomass pyrolysis reactor based on a horizontal tubular furnace, and 
+the secondary reactions were negligibly affected by changing sweeping 
+gas flow rate [22]. For developing the adjustment methods of selective 
+condensation and reducing the production costs, the gap should be filled 
+in the individual effect of sweeping gas on the evolution of pyrolysis 
+vapors during condensation. In the present study, the novel and effective 
+experimental method based on bio-oil composition inversion and func-
+tion fitting was applied to investigate the effect of sweeping gas flow rate 
+on the evolution of pyrolysis vapors during condensation. The lique-
+faction of walnut shell pyrolysis vapors was conducted in the specific 
+condenser with two flumes for segmental bio-oil recovery. Bio-oil 
+organic composition was quantified by internal standard method. The 
+evolution curves and heat maps of condensable components were 
+described by fitting the relationship of remaining vapor proportion and 
+position with Slogistic function. The visual description of biomass py-
+rolysis vapors was successfully achieved without numerical simulation. 
+The evolutions of pyrolysis vapors under different N2 flow rates were 
+compared for the separation and purification of high value-added 
+components. 
+2. Materials and methods 
+2.1. Materials 
+The present study selected the walnut shells from Anhui Province, 
+China as pyrolysis feedstock to conduct the experiment of pyrolysis and 
+liquefaction. The proximate analysis of walnut shells (dry basis) was 
+analyzed according to Standard GB/T 28,731–2012. The weight per-
+centages of moisture, volatile, ash and fixed carbon in walnut shells were 
+3.73 wt.%, 74.32 wt.%, 0.97 wt.% and 20.98 wt.%, respectively. The 
+ultimate analysis of walnut shells (dry ash-free basis) was conducted 
+using Elementary VarioEL-III element analyzer. The weight percentages 
+of carbon, hydrogen, oxygen, nitrogen and sulfur were 52.62 wt.%, 5.67 
+wt.%, 41.26 wt.%, 0.34 wt.% and 0.11 wt.%, respectively. The values for 
+fixed carbon and oxygen were calculated by difference. 
+2.2. Laboratory-scale biomass pyrolysis liquefaction platform 
+The pyrolysis and condensation experiment of walnut shells was 
+conducted on the platform shown in Fig. 1. This laboratory-scale plat-
+form was made of three systems: sweeping gas transportation system, 
+fast pyrolysis system and vapor condensation system. The composition 
+of three systems was introduced in our previous studies [16,22]. 
+Particularly, the two flumes for bio-oil segmental recovery were added 
+on the inner wall of the first condenser. The locations of two flumes were 
+Fig. 1. Laboratory-scale platform for the pyrolysis and condensation experi-
+ment of biomass. 
+C. Wang et al.                                                                                                                                                                                                                                   
+Applications in Energy and Combustion Science 9 (2022) 100047
+3
+80 mm and 185 mm away from the vapor inlet of condenser. The reason 
+for the specific positions of flumes was devoted to more distinct 
+description at the beginning of fitted curve [16]. 
+2.3. Experimental parameters 
+The maximum load of pyrolysis reactor was about 25 g walnut shells 
+for each run, but the present study chose 20.0 g ± 0.5 g walnut shells as 
+pyrolysis feedstock for more sufficient heat exchange between reactor 
+and biomass. The pyrolysis temperature was set at 773 K ± 10 K that was 
+proved to be the most suitable temperature for the pyrolysis and 
+liquefaction of walnut shells on the present platform [18]. On the 
+promise of about 20 g pyrolysis feedstock and 773 K pyrolysis temper-
+ature, 300 s ± 5 s was verified to adequately pyrolyze these walnut shells 
+in the present reactor [18]. The effect of 300–1500 mL/min N2 flow 
+rates on bio-oil composition was reported in our previous study [22]. 
+The variation of sweeping gas in low flow rate range significantly 
+affected the recovery of liquid products but high flow rate possibility 
+damaged the air tightness of the whole device. Hence, N2 flow rates were 
+selected at 100 mL/min, 300 mL/min and 500 mL/min in turn for 
+analyzing the evolution of pyrolysis vapors. 
+The present study was devoted to the evolution of biomass pyrolysis 
+vapors with different sweeping gas flow rates in the single condensing 
+field, from which the evolution could be extended in the continuous 
+multi-staged condensing fields. Meanwhile, both extremely high and 
+low water bath temperature tended to narrow the influential scope of 
+sweeping gas flow rate, that had the potential to misunderstand the 
+relevant effect mechanism. The investigation on the same platform 
+indicated that the adjustment of sweeping gas flow rate showed the 
+largest influential scope under 340 K water bath [22]. Thus, the present 
+study set the water bath temperature at 340 K ± 1 K and the primary 
+target was the evolution variation of pyrolysis vapors under 340 K water 
+bath. The second condenser was set at 300 K ± 2 K (room temperature) 
+for the recovery of valuable condensable components in the remaining 
+vapors leaving the first condenser. For fitting evolution curve, the first 
+condenser should also be set at 300 K ± 2 K, at which negligible liquid 
+products were recovered in the second condenser. All liquid products in 
+the first condenser could be regarded as the total condensable compo-
+nents under the condensing capacity of water bath. 
+2.4. Bio-oil composition qualification 
+Because all bio-oil components were difficultly distinguished and 
+qualified by the existing means especially large molecular oligomers and 
+micro-content compounds, the typical components that could represent 
+other components with similar structures and boiling points were 
+preferred to be selected for investigation [13]. By comparing the values 
+and features of detectable components, water, acetic acid, furfural, 
+phenol, methyl cyclopentenolone (MCP), guaiacol, vanillin, 4-methyl 
+guaiacol, catechol, 4-ethyl guaiacol, syringol and eugenol were 
+selected for qualification [8]. The moisture in bio-oil was analyzed using 
+Karl Fischer titrator. The internal standard method based on gas 
+chromatography-flame ionization detector (GC-FID) was chosen to 
+quantify the weight percentage (wt.%) of representative organic com-
+pounds in bio-oil. 1, 2, 4, 5-tetramethylbenzene was used as internal 
+standard substance. The detailed method was given in our previous in-
+vestigations [17,18]. 
+2.5. Function fitting of vapor evolution 
+The evolution curves and heat maps of condensable components in 
+biomass pyrolysis vapors with the development of condensing field were 
+described through the combining method of bio-oil composition inver-
+sion and Slogistic function (Eq. (1)) fitting under the assumption of 
+negligible chemical reactions during condensation [18]. As calculated 
+by Eq. (2), the remaining vapor proportion (RVP) of one component 
+denoted the relative percentage of vaporous component to the total 
+component. M0 was the total mass of one component recovered by the 
+first condenser under 300 K water bath and Mi was the mass of one 
+component recovered by flume i under 340 K water bath (i ≤ 3). Flume 
+0 was the vapor inlet of condensing field and the theoretical value of M0 
+was kept at 0, and flume 3 was the bottom of condensing field. The 
+location of flume i was selected as ’x’ of Slogistic function and the 
+relevant RVP was selected as ’y’ of Slogistic function, which was utilized 
+to fit the vapor evolution curve of this component during condensation. 
+The first derivative of fitted curve was named as recovery rate that 
+represented the RVP decline per unit length of condensing field. The 
+relevant parameters in the fitted equations were listed in Table 1. 
+y=
+a
+1 + e− k(x− xc)
+(1)  
+Ri =
+M0 −
+∑
+Mi
+M0
+× 100% (2)  
+3. Results and discussions 
+3.1. Apparent behaviors of biomass pyrolysis and vapor condensation 
+Pyrolysis efficiency was calculated Eq. (3), which represented the 
+weight percentage of total pyrolysis volatile to initial biomass feedstock 
+[17]. Because of the negligible effect of sweeping gas flow on biomass 
+pyrolysis in the present reactor, the similar pyrolysis efficiencies and 
+feedstock masses proved that the components and proportions of py-
+rolysis vapors entering the condensing field were consistent with each 
+other in all experiments (Fig. 2). As the segmental flumes were installed 
+in the first condenser, unavoidable bio-oil adherence was observed on 
+the inner wall after the liquid products were extracted from the first 
+condenser. For comparing the degree of bio-oil adherence in different 
+experiments, adherent rate was defined as the weight percentage of 
+adherent bio-oil to total recovered liquid products (Eq. (4)) [17]. All 
+adherent rates were maintained at about 10 wt.%, and on the base of our 
+previous works this result indicated that the composition quantifications 
+of segmental bio-oil from different experiments could be compared with 
+each other because of the small and similar adherent rates. 
+Pyrolysisefficiency=
+Initialwalnutshellmass − Bio− charmass
+Initialwalnutshellmass
+×100wt.%
+(3)     
+Condensing efficiency=
+Bio − oil yield in one′ s condenser or flume
+Pyrolysis efficiency
+(5) 
+Under the same pyrolysis condition, the condensable components in 
+high-temperature biomass pyrolysis products were determined by 
+Adherent rate=
+Actual bio − oil recovery − Total bio − oil segmental recovery
+Actual bio − oil recovery
+× 100wt.% (4)   
+C. Wang et al.                                                                                                                                                                                                                                   
+Applications in Energy and Combustion Science 9 (2022) 100047
+4
+condensing condition. Poor heat exchange only allowed the condenser 
+to recover some oligomers and sugars but most of pyrolysis products 
+remained vapor, such as high-temperature oil bath and spraying. 
+Remarkable heat exchange could even recover CO2 and CH4 that were 
+non-condensable components under water bath, such as liquid nitrogen 
+bath. For comparing the distribution of condensable and non- 
+condensable components in the condensing field, the condensing effi-
+ciency was calculated by Eq. (5), which represented the ratio of the 
+recoverable components in one flume or condenser to the total pyrolysis 
+products [22]. Low condensing efficiency meant relative high propor-
+tion of non-condensable components in the current part of condensing 
+field. High-temperature water bath would weaken the heat exchange 
+between pyrolysis vapors and condenser and inhibit the liquefaction of 
+low-boiling components with poor condensing abilities. At 100 mL/min 
+N2 flow rate, the total condensing efficiency of the first condenser 
+increased from 0.62 to 0.69 when the water bath temperature decreased 
+from 340 K to 296 K. The most increment of condensing efficiency was 
+derived from the recovery improvement of the middle, which indicated 
+that the recovery of high-temperature vapors in the top was hardly 
+improved by decreasing water bath temperature because the limited 
+space of top section was not enough to provide a relatively sufficient 
+heat and mass exchange of pyrolysis vapors. 
+N2 belonged to the constant non-condensable component within the 
+adjustable temperature range of water bath, and the increasing N2 
+would thicken the layer of non-condensable components that hindered 
+the heat and mass exchange process in the condensing field. Thus, the 
+total condensing efficiency of the first condenser decreased with 
+increasing N2 flow rate, and meanwhile most of increasing non- 
+condensable components were recovered by the second condenser 
+which kept its total condensing efficiency due to the strong condensing 
+capacity from low water bath temperature. As N2 flow rate was adjusted 
+from 100 mL/min to 300 mL/min, the top condensing efficiency of the 
+first condenser considerably decreased from 0.23 to 0.14 whereas the 
+condensing efficiencies of middle and bottom section increased slightly. 
+This finding indicated the condensation of top section was inhibited 
+more seriously by increasing sweep gas due to the insufficient heat and 
+mass exchange in the front part of condensing field. But 300 mL/min 
+flow rate was difficult to completely inhibit the condensation of middle 
+and bottom, and the components that failed to condense in the top were 
+recovered in the middle and bottom, finally leading to the increment of 
+local condensing efficiencies. When N2 flow rate was further improved 
+to 500 mL/min, the top condensing efficiency no longer showed a sub-
+stantial decrease and the condensing efficiencies of three sections all 
+decreased about 0.1–0.2 because of the enhancing inhibition. The dis-
+tribution of condensing efficiency indicated that increasing N2 flow rate 
+exhibited a significant inhibition on the total recovery of liquid prod-
+ucts. The flow rates lower than 300 mL/min mainly decreased the re-
+covery effect of top section, and the inhibition phenomenon in the whole 
+condensing field was eventually observed after the flow rate was further 
+improved. 
+3.2. RVP evolution of representative components at different sweeping gas 
+flow rates 
+3.2.1. Water 
+Water was the most widespread component in the pyrolysis products 
+Table 1 
+Parameters in Slogistic equation used for the fitting of RVP evolution curves.   
+Water Acetic acid Furfural 
+100 mL/min 300 mL/min 500 mL/min 100 mL/min 300 mL/min 500 mL/min 100 mL/min 300 mL/min 500 mL/min 
+a 122.9885 110.8333 118.5560 147.6805 111.1026 133.4557 1490.7540 1397.4040 148.0530 
+xc 120.9526 184.9289 206.0954 118.1342 283.9441 189.8451 − 1678.5700 − 2865.2800 222.8167 
+k − 0.0116 − 0.0116 − 0.0081 − 0.0062 − 0.0075 − 0.0058 − 0.0016 − 0.0009 − 0.0034 
+R2 0.98950 0.99840 0.99967 0.99990 0.99750 0.99928 0.99997 0.99999 0.99631  
+MCP Phenols Guaiacols 
+100 mL/min 300 mL/min 500 mL/min 100 mL/min 300 mL/min 500 mL/min 100 mL/min 300 mL/min 500 mL/min 
+a 102.8313 99.4656 100.1348 104.0492 2117.5090 107.5599 138.4202 212.7478 123.2504 
+xc 263.7307 358.4823 298.2314 243.8220 − 4087.4400 356.2909 143.8749 − 43.5883 203.6689 
+k − 0.0127 − 0.0120 − 0.0152 − 0.0110 − 0.0007 − 0.0070 − 0.0063 − 0.0028 − 0.0071 
+R2 0.99889 0.97277 0.99754 0.97787 0.98292 0.99599 0.98615 0.99969 0.99968  
+Fig. 2. Distribution of pyrolysis efficiency, adherent rate and condensing efficiency under different N2 flow rates.  
+C. Wang et al.                                                                                                                                                                                                                                   
+Applications in Energy and Combustion Science 9 (2022) 100047
+5
+of lignocellulosic biomass. The bio-oil with high moisture was usually 
+produced by traditional biomass pyrolysis liquefaction technology, 
+which brought a series of difficulties for the application and refinement 
+of bio-oil. Hence, the separation of water from biomass pyrolysis vapors 
+during liquefaction was the important mission of selective condensation 
+[23]. Water belonged to the component hard to condense among the 
+detectable components and exhibited the weakest condensing ability in 
+the representative components. As shown in Fig. 3, the recovery rates of 
+RVP evolution curves of water all presented the tendency of rise first and 
+then fall along with condensing field at three N2 flow rates. The 
+consistent tendency was attributed to the poor condensing ability of 
+water. The recovery of water was slowed at the vapor inlet with insuf-
+ficient heat and mass exchange but increased with moving pyrolysis 
+vapors in the condensing field due to the constantly accumulated 
+chances of heat and mass exchange. However, the relative proportion of 
+non-condensable components gradually increased as pyrolysis vapors 
+moved to the middle and bottom of condensing field, which weakened 
+the heat and mass exchange between water and condenser. 
+When N2 flow rate increased from 100 mL/min to 300 mL/min under 
+340 K water bath, the initial recovery rate of water at the vapor inlet 
+decreased from 0.23%/mm to 0.12%/mm and the final RVP of water at 
+the end of condenser increased from 15% to 25%. Within 0–120 mm of 
+condensing field, the two curves of recovery rates approximately kept 
+parallel under 100 mL/min and 300 mL/min. The maximal recovery rate 
+under 100 mL/min was observed at 140 mm away from the inlet of 
+condensing field, whereas the location of the maximal recovery rate was 
+delayed to 180 mm under 300 mL/min. After 175 mm, the recovery rate 
+under 300 mL/min began to exceed the value under 100 mL/min 
+because of the lower relative proportion of constant non-condensable 
+components in the condensing field. When N2 flow rate increased 
+from 300 mL/min to 500 mL/min, the changeless recovery rate at the 
+vapor inlet indicated that the inhibition of increasing N2 flow rate on the 
+water recovery of top condensing field was approximately saturated 
+under 300 mL/min, and thereby the evolution curve in the top under 
+500 mL/min was coincident with the curve under 300 mL/min. After the 
+mixture vapors entered the middle condensing field, the relatively 
+serious inhibition on water recovery was observed under 500 mL/min 
+and the maximal recovery rate was merely 0.23%/mm that was about 
+0.7 times as much as the peak value under 300 mL/min. Therefore, the 
+final RVP of water under 500 mL/min was 1.6 times and 2.7 times as 
+much as the final values under 300 mL/min and 100 mL/min, 
+respectively. 
+With increasing N2 flow rate in 285 mm vertical tubular condenser, 
+the inhibition of the thickening layer of non-condensable components on 
+water recovery reached saturation first in the top of condensing field, 
+and the main section affected by this inhibition was transferred from the 
+top and middle to the middle and bottom. For this reason, the RVP 
+evolution curve of water under 300 mL/min decreased more slowly than 
+that under 100 mL/min before 60% of the whole condensing field, while 
+the curve under 500 mL/min decreased more slowly than that under 
+300 mL/min after 30% of the condensing field. At 340 K water bath 
+temperature, the liquefaction and recovery of water were effectively 
+reduced by promoting sweeping gas flow rate, which effectively 
+decreased bio-oil moisture and achieved the online partial separation of 
+water from organic compounds. 
+3.2.2. Acetic acid 
+Acetic acid accounted for a large proportion in the traditional py-
+rolysis liquefaction products of walnut shells that profoundly affected 
+the bio-oil properties as well as the separation of high value-added 
+components [24]. Although acetic acid presented a slightly stronger 
+condensing ability than water, the actual recovery of acetic acid in the 
+first condenser was lower than that of water. This finding possibly 
+resulted from the adherence of some organic components on the 
+condenser wall during the bio-oil transfer process from condenser to 
+liquid storage tank. As a high-content component, acetic acid showed a 
+stronger adhesion and the total mass of acetic acid in the recovered 
+bio-oil was lower than the actual situation, which had been reported in 
+our works. Therefore, the final RVP of acetic acid (Fig. 4) remained at 
+about 40% under 100 mL/min and this value increased with increasing 
+N2 flow rate. Between acetic acid and water, the similar recovery rates in 
+top section but the different recovery rates in middle and bottom section 
+indicated that the primary adherence possibly occurred in the middle or 
+bottom of condensing field. Generally, the bio-oil with low moisture was 
+apt to adhere to wall because of large viscosity, but our previous study 
+also found the serious adherence of bio-oil when high moisture led to the 
+stratification of oil and water phases. In the present study, the moisture 
+in the bio-oil recovered by the top was always maintained at 20 wt.% 
+that provided good fluidity and homogeneousness for bio-oil, whereas 
+the bio-oil recovered by the bottom exhibited a more visible stratifica-
+tion due to the moisture higher than 30 wt.%. Thus, the main reason for 
+the high final RVP of acetic acid was the more serious adherence of 
+acetic acid on the bottom wall. 
+As N2 flow rate increased from 100 mL/min to 300 mL/min, the 
+initial recovery rate of acetic acid was less than 0.10%/mm and the 
+descent speed of evolution curve was slowed significantly. Although the 
+total heat exchange of pyrolysis vapors increased with their movement 
+in the condensing field, the maximal recovery rate of acetic acid merely 
+reached to 0.21%/mm at the end of condenser, which was still less than 
+the maximal recovery rate in the middle of condensing field under 100 
+Fig. 3. Evolution curves and heat maps of water in biomass pyrolysis vapors during condensation.  
+C. Wang et al.                                                                                                                                                                                                                                   
+Applications in Energy and Combustion Science 9 (2022) 100047
+6
+mL/min. After the mixture vapors went through the first condenser 
+under 300 mL/min, 55% of acetic acid remained vapor that was 1.4 
+times as much as the final RVP of acetic acid under 100 mL/min. 
+Different from water, however, the RVP evolution curve of acetic acid 
+was not further slowed but improved under 500 mL/min, and the initial 
+recovery rate increased to 0.15%/mm. This phenomenon was because 
+the disturbance of streamline was accelerated by 500 mL/min N2, thus 
+promoting the molecular collisions in pyrolysis vapors and improving 
+the efficiency of heat and mass exchange during condensation. This 
+improvement was relatively small and showed little effect on water with 
+the weakest condensing ability, but the organic components with 
+stronger condensing abilities than water could be affected effectively. 
+Since the condensing ability of acetic acid was slightly higher than that 
+of water, the final RVP of acetic acid under 500 mL/min only decreased 
+about 5% from the final value under 300 mL/min. 
+The recovery of acetic acid would be inhibited by increasing 
+sweeping gas flow rate, but the recovery of acetic acid under the con-
+dition of large flow rate was improved since the increasing disturbance 
+of streamline promoted the intensification of heat and mass exchange of 
+pyrolysis vapors. Overall, due to the relatively weak condensing ability, 
+the total recovery of acetic acid under 500 mL/min successfully 
+decreased about 10% in comparison with the result under 100 mL/min. 
+Increasing N2 flow rate to 500 mL/min could still be regarded as an 
+effective method for the separation of acetic acid from pyrolysis vapors. 
+3.2.3. Furfural 
+As listed in Table 2, the total content of water and acetic acid was far 
+higher than the total content of other organic compounds, which 
+demonstrated that water and acetic acid belonged to high-proportion 
+components while other detectable compounds belonged to low- 
+proportion or trace-proportion components in walnut shell pyrolysis 
+vapors. The comparison for evolution mechanisms was impractical be-
+tween high-proportion and low-proportion components because of the 
+considerable difference in their heat and mass exchange methods. 
+Furfural was a component with weak condensing ability in the detect-
+able low-proportion components. As the water bath temperature of the 
+first condenser was set at 340 K, the final RVP of furfural in Fig. 5 was 
+still more than 65% under 100 mL/min N2 flow rate despite the mac-
+roscopical remarkable recovery of pyrolysis vapors. The high RVP of 
+furfural indicated the recovery of furfural was considerably incomplete 
+because of its weak condensing ability. 
+Under 100 mL/min, the recovery rate of furfural was 0.15%/mm at 
+the vapor inlet but it did not exhibit an upward tendency with the 
+movement of pyrolysis vapors in the condensing field. This result 
+implied that the furfural recovery was not improved during the devel-
+opment of the total heat and mass exchange of mixture vapors possibly 
+due to the existence of other factor affecting the condensation of furfural 
+during indirect heat exchange rather than condensing ability. Previous 
+investigation proved that furfural would present higher solubility in the 
+liquid containing abundant acetic acid [25]. In the present study, the 
+higher initial recovery rate of acetic acid promoted the initial recovery 
+rate of furfural under 100 mL/min because of a larger proportion of 
+acetic acid in walnut shell pyrolysis vapors and bio-oil. As the pyrolysis 
+vapors was moving in the condensing field, the recovery rate of furfural 
+decreased slightly with increasing relative proportion of 
+non-condensable components. When N2 flow rate increased to 300 
+mL/min, the initial recovery rate of furfural also decreased to 
+0.08%/mm with the substantial reduction of the initial recovery rate of 
+acetic acid. The increasing proportion of non-condensable components 
+inhibited the furfural recovery at the end of condensing field despite the 
+high recovery rates of acetic acid. Thus, the recovery rate of furfural also 
+showed a slightly downward tendency under 300 mL/min. As N2 flow 
+rate was set as 500 mL/min, the furfural recovery was significantly 
+improved by the increasing recovery rate of acetic acid and the 
+enhancing heat and mass exchange caused by high-frequency distur-
+bance. The final RVP of furfural under 500 mL/min was consistent with 
+Fig. 4. Evolution curves and heat maps of acetic acid in biomass pyrolysis vapors during condensation.
+Applications in Energy and Combustion Science 9 (2022) 100047
+7
+that under 100 mL/min. 
+Under the three N2 flow rates, the recovery rates of furfural evolution 
+curves all exhibited narrow variations and the maximal recovery pro-
+portion of furfural was no more than 35%. As a high value-added 
+component, furfural needed to be recovered more adequately. Signifi-
+cantly, 500 mL/min N2 flow rate effectively inhibited the water recovery 
+and improved the furfural recovery to the result achieved by 100 mL/ 
+min, which provided convenience for the separation and purification of 
+furfural. Therefore, the small decline of water bath temperature for the 
+condenser used to enrich furfural could further promote the furfural 
+recovery with maintaining 500 mL/min N2 flow rate. Meanwhile, a 
+condenser at higher water bath temperature for separating the compo-
+nents with strong condensing abilities could be set in front of the 
+condenser used to enrich furfural, which would also reduce the 
+complexity of purifying furfural from bio-oil. 
+3.2.4. MCP 
+MCP was universally applied in food production and processing as a 
+flavoring agent, and it presented the properties of olefin, carbonyl and 
+hydroxyl together [26]. Hence, the condensing evolution mechanism of 
+MCP was valuable to be studied despite the common content of MCP less 
+than 1 wt.% in bio-oil (Fig. 6). According to the boiling point distribu-
+tion of detectable components at normal atmosphere, MCP belonged to 
+the component with middle condensing ability in all discussed 
+components and exhibited a stronger condensing ability than furfural. 
+The final RVP value of MCP was higher than that of furfural under each 
+N2 flow rate. However, the initial recovery rate of MCP was no more 
+than 0.04%/mm that was merely approximate to the half of the minimal 
+initial recovery rate of furfural. This finding was probably because the 
+trace-proportion MCP in walnut shell pyrolysis vapors get little oppor-
+tunity for heat and mass exchange in the top of condenser where the 
+pyrolysis vapors contained abundant condensable components under 
+the present condition of condensation. After the vapors moved to the 
+middle of condensing field, the recovery rates of high-proportion com-
+ponents began to decrease whereas MCP exhibited a continuous increase 
+in recovery rate because it was weakly affected by increasing 
+non-condensable proportion by virtue of stronger condensing ability. 
+Under 100 mL/min, the recovery rate of MCP was about 0.04%/mm 
+at the vapor inlet and gradually increased along with condensing field 
+and reached the peak value of 0.32%/mm at the end of condensing field. 
+The recovery proportions of MCP were 5%, 20% and 30% in the top, 
+middle and bottom of condenser, respectively. As N2 flow rate was 
+improved to 300 mL/min, the initial recovery rate of MCP decreased to 
+0.015%/mm and the peak value of recovery rate decreased to 0.24%/ 
+mm due to the influence of increasing constant non-condensable pro-
+portion. In comparison with the result under 100 mL/min, the recovery 
+proportions of MCP in the three sections all decreased by about half 
+under 300 mL/min and the final RVP of MCP increased from 45% to 
+Fig. 5. Evolution curves and heat maps of furfural in biomass pyrolysis vapors during condensation.  
+Fig. 6. Evolution curves and heat maps of MCP in biomass pyrolysis vapors during condensation.  
+C. Wang et al.                                                                                                                                                                                                                                   
+Applications in Energy and Combustion Science 9 (2022) 100047
+8
+70%. After the N2 flow rate was further improved, the initial recovery 
+rate was changeless but the ascensional range of recovery rate under 
+500 mL/min was far broader than that under 300 mL/min. The endmost 
+recovery rate was 1.5 times as much as the value under 300 mL/min, 
+which indicated that the improvement effect of 500 mL/min N2 flow 
+rate on MCP recovery was concentrated at the end of condensing field. 
+As described in the evolution curves of MCP, the recovery proportions of 
+top and middle varied negligibly but the bottom doubled the recovery 
+proportion when N2 flow rate increased from 300 mL/min to 500 mL/ 
+min. 
+The evolution curves of MCP revealed that the condensing priority of 
+trace-proportion component was lower than that of high-proportion 
+component in the condensing field under 340 K water bath but the 
+trace-proportion component with stronger condensing ability was still 
+recovered effectively in the bottom of condenser. Likewise, the high- 
+frequency disturbance successfully improved the recovery of MCP 
+under 500 mL/min flow rate. Nevertheless, 340 K water bath tempera-
+ture showed a good recovery effect on water and specially the final RVP 
+of water was less than 20% under 100 mL/min. If the recovery of MCP 
+was required to be further strengthened, especially the improvement of 
+its initial recovery rate, the recovery effect of condenser on high- 
+proportion components with poor condensing abilities must be 
+reduced. An appropriate increase in the water bath temperature outside 
+the condensing field would effectively inhibit the recovery of high- 
+proportion components and provide more opportunities for the heat 
+and mass exchange of trace-proportion components with strong 
+condensing abilities. 
+3.2.5. Phenol and catechol 
+Generally, walnut shells contained more than 50 wt. % lignin, and 
+large amounts of phenolic compounds and pyrolytic oligomers were 
+generated during the pyrolysis of abundant lignin [27]. As representa-
+tive small-molecule phenolic compounds, the phenol and catechol 
+(phenols) in walnut shell pyrolysis vapors were essential ingredients for 
+medicine and chemical. At normal atmosphere, the boiling points of 
+phenols were higher than that of furfural and the pure phenols showed 
+stronger condensing abilities. Meanwhile, phenol or catechol also 
+belonged to the trace-proportion component in walnut shell pyrolysis 
+vapors. Therefore, the evolution curves for the RVP and recovery rate of 
+phenols were consistent with those of MCP under 100 mL/min. The final 
+RVP of phenols in Fig. 7 was slightly lower than that of MCP in 340 K 
+condensing field, which proved phenols presented a stronger total 
+condensing ability. In the composition of phenols, phenol exhibited a 
+weaker condensing ability than MCP whereas the condensing ability of 
+catechol was stronger than that of MCP. The above results indicated 
+catechol dominated the total condensing ability of phenols under the 
+present condition of condensation. 
+However, the evolution curve of phenols varied differently from MCP 
+after N2 flow rate increased. Under 300 mL/min, the recovery rate of 
+phenols changed negligibly at the vapor inlet but decreased with the 
+movement of pyrolysis vapors, and thereby the final RVP of phenols 
+increased from 40 to 80%. This phenomenon proved that the extra in-
+hibition effect on the recovery of phenols existed in the middle and 
+bottom of condensing field under 300 mL/min. The investigation of 
+Busca et al. reported that the azeotrope with weaker condensing ability 
+was generated by the combination of water and phenol-structure com-
+pound [28]. The significant heat and mass exchange under 100 mL/min 
+led to the sufficient recovery of water, phenols and their azeotrope 
+together, while the decreasing heat and mass exchange under 300 
+mL/min was insufficient to recover the phenols because the generation 
+of azeotrope was improved with ascending water in the mixture vapors. 
+When N2 flow rate was 500 mL/min, high-frequency disturbance pro-
+moted the recovery of phenols and azeotrope and improved the recovery 
+rate of phenols in the bottom of condenser. At the end of condensing 
+field, the recovery rate of phenols under 500 mL/min was 3 times as 
+much as that under 300 mL/min and the final RVP of phenols decreased 
+from 80% to 65%. 
+The evolution of phenols indicated that azeotropy also affected the 
+competitive liquefaction process of biomass pyrolysis components based 
+on their condensing abilities. The desired recovery of high-boiling 
+component demanded to strength the heat and mass exchange be-
+tween condenser and pyrolysis vapors when the target high-boiling 
+component and low-boiling component formed the azeotrope with 
+weaker condensing ability. The recovery under 100 mL/min was seldom 
+influenced by azeotrope because of the sufficient condensing recovery of 
+the overall pyrolysis vapors, but increasing azeotrope and decreasing 
+heat and mass exchange synergistically decreased the recovery of target 
+component under 300 mL/min. Fortunately, 500 mL/min sweeping gas 
+flow rate increased the disturbance of condensing field and improved 
+the recovery of azeotrope. 
+3.2.6. Guaiacol and its derivatives 
+Guaiacol and its derivatives (guaiacols containing 4-methyl guaiacol, 
+4-ethyl guaiacol, eugenol, syringol and vanillin) were high-boiling and 
+large-molecule phenolic compounds in the detectable components of 
+walnut shell pyrolysis vapors. As important fine chemical intermediates 
+guaiacols could be utilized to synthesize flavor and medicine [29–31]. 
+The content of each component of guaiacols was approximate to or more 
+than 1 wt.% in all segmental bio-oil and the total content of detectable 
+guaiacols was always approximate to or more than 5 wt.%. Hence, 
+Fig. 7. Evolution curves and heat maps of phenols in biomass pyrolysis vapors during condensation.  
+C. Wang et al.
+Applications in Energy and Combustion Science 9 (2022) 100047
+9
+guaiacols belonged to the low-proportion component in the pyrolysis 
+vapors. The boiling points of guaiacols ranked first in the discussed 
+components and thereby guaiacols presented considerably strong 
+condensing abilities. In Fig. 8, the recovery rate of guaiacols under 100 
+mL/min was 0.18%/mm at the vapor inlet and exhibited a tendency of 
+rising first and then falling along with condensing field. But the signif-
+icant recovery of guaiacols at the vapor inlet limited the ascensional 
+range of recovery rate because of their stronger condensing abilities and 
+larger proportions in pyrolysis vapors than trace-proportion MCP and 
+phenols. 
+When N2 flow rate increased to 300 mL/min, the recovery rate of 
+guaiacols decreased to 0.15%/mm at the vapor inlet and reached the 
+peak value in the top of condensing field. As the relative proportion of 
+non-condensable components increased in the condensing field, the re-
+covery rate slightly decreased to 0.12%/mm at the end of condenser. 
+The final RVP of guaiacols increased from 40% to 60%, but which was 
+still higher than the final values of furfural, MCP and phenols under 300 
+mL/min because of the strong condensing abilities. Under 500 mL/min, 
+the initial recovery rate decreased in comparison with that under 300 
+mL/min but the enhancing disturbance promoted the recovery of 
+guaiacols in the middle and bottom of condensing field. The recovery 
+rate reached the peak value of 0.21%/mm at 200 mm away from the 
+vapor inlet under 500 mL/min whereas the same peak value occurred at 
+150 mm under 100 mL/min. The adjacent positions of peak value 
+indicated that the recovery effect of condensing field on guaiacols under 
+500 mL/min was consistent with that under 100 mL/min. The two re-
+covery curves of guaiacols under 100 mL/min and 500 mL/min pri-
+marily kept parallel in middle and bottom sections and the final RVP 
+decreased to 45% under 500 mL/min. 
+Guaiacols presented the strong resistance to the inhibition of heat 
+and mass exchange. At 340 K water bath temperature, the recovery rates 
+of guaiacols with sufficient heat and mass exchange were maintained 
+between 0.18 and 0.21%/mm under 100 mL/min while the decreasing 
+recovery rates with poor heat and mass exchange were still maintained 
+between 0.12 and 0.15%/mm under 300 mL/min. However, the re-
+covery rate showed a significant upward tendency along with 
+condensing field when 500 mL/min N2 flow rate improved the 
+condensation of pyrolysis vapors in the middle and bottom sections. The 
+evolution results of guaiacols indicated that the heat and mass exchange 
+enhancement under 500 mL/min could completely achieve the 
+remarkable recovery effect of guaiacols, and simultaneously separate 
+20% of water and 10% of acetic acid from the recovered liquid products. 
+4. Conclusion 
+The suitable increment of N2 flow rate inhibited bio-oil moisture and 
+enriched the contents of organic compounds through increasing the 
+high-frequency disturbance of condensing field. The incremental 
+amount was determined by the property of condensable component. 
+When N2 flow rate increased from 300 mL/min to 500 mL/min, the final 
+remaining vapor proportion of acetic acid with poor condensing ability 
+only decreased from 55% to 50% while that of guaiacol and its de-
+rivatives with strong condensing abilities decreased from 60% to 45%. 
+Despite poor condensing ability furfural exhibited a significant recovery 
+at the vapor inlet due to the great solubility of furfural in high-content 
+acetic acid. The recovery of phenol and catechol was considerably 
+inhibited in the middle and bottom of condensing field because of the 
+azeotrope formation between water and phenol-structure compounds. 
+Declaration of Competing Interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgement 
+This work was supported by National Key Research and Develop-
+ment Program of China (2018YFB1501404).

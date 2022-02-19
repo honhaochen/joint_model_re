@@ -1,0 +1,993 @@
+Microcellular Injection Molding (MIM) is a variant of injection molding technology used to manufacture
+plastic components, with a cellular structure and reduced weight. However, this technology is charac-
+terized for producing components with a poor surface finish and impacted structural integrity. To
+improve the molded surface appearance, the MIM process conditions have been thoroughly studied,
+nevertheless, some marks are often noticeable. For this reason, the combination of MIM with decorative
+technologies enables components with high surface finish, as well as, decorative and functional prop-
+erties, among other benefits. Since the development of the technology surface improvement has been the
+focus of many research articles and recently, supported by the progress in machinery, technology inte-
+gration has emerged as a solution. This review aims to expose the main advantages, disadvantages, and
+methods for surface improvement of MIM molded components. The key modifications and requirements
+for the tooling system as the supercritical fluid unit, the fuse, and mold modifications are discussed. The
+advantages of integration of these different processes with MIM technology are further described and a
+review of the progress so far is addressed as well as the incorporation of numerical simulation for the
+MIM components production. For that, technology integration of two-shot injection molding (2 K Shot),
+In-Mold Decoration (IMD), In-Mold Labeling (IML), and In-Mold Electronics (IME), which represent the
+biggest integration potential with MIM are examined.
+© 2021 The Authors. Publishing services by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This
+is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/
+4.0/).1. Introduction
+Injection molding technology is widely used to produce poly-
+meric material components with complex geometry in an auto-
+mated process, to achieve high throughput rates required for large-
+scale productions, and for a vast range of products. The variables of
+the process are diverse and need to be closely monitored to ensure
+proper component production [1,2]. The rapidly growing demand
+for lightweight molded components and reduced material con-
+sumption have enabled the development of new manufacturing
+processes. Microcellular Injection Molding (MIM) is a type of in-
+jection molding where molded components are produced with ard of International Journal of
+y Elsevier B.V. on behalf of KeAi Cocellular structure, providing a weight reduction, and a shorter cycle
+time when compared with conventional injection molding (CIM)
+[3,4]. Despite its many advantages, MIM components are known for
+their poor surface finish, exhibiting swirl and silver marks on the
+molded surface. To improve the molded surface appearance, MIM
+technology has been thoroughly studied by the optimization of the
+process conditions [5e8], enforcement of the process with the
+resort of Rapid Heat and Cycle Molding (RHCM) system [5,9], gas
+counter-pressure [10], core-back [11,12], and co-injection molding,
+with a formation of a solid shell by CIM and a foamed core [10,13].
+However, the complete removal of themarks is not successful. With
+the emerging of a new and wide range of technologies, such as In-
+Mold Decoration (IMD), In-Mold Labeling (IML), and In-Mold
+Electronics (IME), focused on the decoration and functionalization
+of components surface, the surface finish of MIM molded compo-
+nents ceases to be a problem. The blend of features from each of
+these technologies may produce better outcomes. In this paper, ammunications Co. Ltd. This is an open access article under the CC BY-NC-ND license
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152literature review was employed to summarize the existing studies
+for the integration of MIM technology with different processes,
+highlighting the advantages and the potential of the integration of
+different processes with MIM technology for a high surface
+appearance.2. Microcellular Injection Molding
+Microcellular Injection Molding (MIM) is a less widespread
+technology, having recently emerged as an alternative to conven-
+tional methods, supported by the lightweight trend, in order to
+reduce the consumption of raw material needed to produce a
+finished component [14e16]. With this type of injection molding
+technology, the molded components are produced with a cellular
+structure, typically the cells have micro dimensions, 1e100 mm, and
+a density of 107e1015 cell/cm3, providing weight reduction (5%e
+30%) driven by the hollow core of comprising cells [8,17,18]. The
+typical cellular structure resulting from MIM technology can be
+obtained by the introduction of blowing agents in the melted
+polymer during the injection molding process, creating a one-
+phase solution during plasticization [19,20], through controlled
+conditions of pressure and temperature [21]. The introduction of
+the blowing agent supports the formation of a cellular structure
+that expands during the filling, packing, and cooling phase,
+resulting in parts with decreased warpage, making a 1:1 wall-to-rib
+ratio feasible, increasing the freedom of design [22,23]. With MIM
+technology, the packing phase can almost be eliminated as the cell
+expansion process provides a fully packed part with reduced
+warpage, and decreased residual stress, ensuring dimensional ac-
+curacy [9,24]. The resulting molded component is the holder of a
+high strength-to-weight ratio, high energy absorption, and excel-
+lent heat and acoustic insulation [10,25]. MIM requires a faster
+filling stage, when compared with CIM, to initiate cell nucleation,
+promoted by the high pressure drop, the moment the melt passes
+through the gate into the cavity. This, combined with a smaller
+packing phase leads to a significant reduction in the cycle time,
+saving up to 15%e40% of the time spent to produce a conventional
+molded component, depending on the material and designed
+product [26]. Fig.1, presents themain differences between the cycle
+stages of CIM and MIM.2.1. Blowing agents
+The blowing agents used in the process can be either physical
+(PBA e Physical Blowing Agent), such as Nitrogen (N2) and Carbon
+Dioxide (CO2) [27,28], or chemical (CBAe Chemical Blowing Agent),Fig. 1. Comparison between a C
+138inorganic or organic components such as Calcium Carbonate
+(CaCO3) and Talc [29e31]. The PBA variant is a cleaner technology
+that guarantees a more uniform and denser cell structure with
+smaller dimensions, for that reason it is usually used in applications
+where a uniform cell structure is required in order to somewhat
+maintain the mechanical properties throughout the molded
+component [4,32]. The addition of a PBA is accomplished by
+injecting gas in its supercritical fluid (SCF) phase through a dedi-
+cated SCF injector. In this phase the gas is in a liquid-like state,
+obtained by maintaining the PBA above a critical pressure (Pcr) and
+temperature (Tcr), allowing the gas to quickly diffuse into the
+polymer melt, creating a single-phase inside the barrel. After the
+material passes through the injection system, the pressure drops
+rapidly, causing high thermodynamic instability, leading to the
+precipitation of the gas phase out of the polymer, initiating the cell
+expansion. The high pressure and temperature, characteristic of the
+injection molding process guarantee that the PBA maintains its SCF
+phase until the material is injected into the cavity [33]. In Fig. 2 is
+depicted the foaming process, described above.
+The introduction of a cell expansion agent results in injected
+components with surface defects such as silver streaks and swirls.
+These defects are caused by the contact of the mixture polymer/
+gas with the cold mold wall, in the moment of contact, the poly-
+mer starts to freeze, and the cells rupture, dragging across the
+mold wall and resulting in the aspect associated with MIM, as
+illustrated in Fig. 3.2.2. Microcellular Injection Molding unit and tool requirements
+In MIM, the mold tool and the molding unit need to undergo
+some modifications, specific to the technology, diverging from CIM
+in the cost and complexity depending on the blowing agent (CBA or
+PBA).2.2.1. Physical blowing agent MIM variant
+The physical variant of MIM requires the setup of an injection
+molding unit with an external PBA storage container. Additionally, a
+control unit is necessary to timely regulate the amount of PBA
+introduced in the barrel, under pressure, guaranteeing that the gas
+is at its SCF phase to properly mix with the polymer melt. In PBA
+technology, when MuCell® (the most commonly used MIM tech-
+nology, owned by Trexel Inc.) is employed, a special fuse is required
+to ensure proper mixing. As depicted in Fig. 2, the fuse is composed
+of an end region that possesses a characteristic geometry to pro-
+mote dynamic mixing, assuring the creation of the one phase so-
+lution. As such, modifications are made to the end screw section orIM cycle and a MIM cycle.
+Fig. 2. Physical microcellular foaming mechanism and its stages along the injection molding process.
+Fig. 3. Flow-induced marks formation scheme (a), molded component representation
+of silver streaks (b), adapted with the permission of [34].
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152to the nozzle section by attaching rhombus, Z-mixers, or even static
+mixers [24]. Due to this increment the MuCell® screw is longer
+than the commonly used in the conventional injection molding,
+region 3 of Fig. 2. Recently, Trexel Inc. Introduced a new commercial
+screw Tip Dosing Module, which increased the performance with
+lower implementation cost. This solution optimized the mixing
+module, with reduced space requirements, and is compatible with
+standard three-zone screws. Alternative processes to MuCell® have
+emerged, for instance, Yusa et al. [35] developed a MIM technology
+using non-SCF physical blowing agents through the incorporation
+of PBA directly from gas cylinders into the molten polymer through
+an injection valve and vent hole, however, more studies are
+required before this methodology may be implemented
+industrially.
+2.2.2. Chemical blowing agent MIM variant
+The chemical variant of MIM does not require modifications to
+the injection unit, needing only a shut-off-nozzle [36]. The foaming
+mechanism is promoted by the reaction of the CBA in the polymer
+melt, due to the high temperature. Some CBA are exothermic which
+can potentiate an early blowing of the cells, reducing residence
+times for the material, consequently, the cell structure is not139uniform in most cases [37]. The CBA reactions may also result in
+byproducts, such as water, which can lead to additional degrada-
+tion of the polymer matrix [38], and subsequent reduction of me-
+chanical properties, also the subproduct can damage the molding
+cavity [32,39]. The molding cavity and the screw can also suffer
+from this reaction and be damaged prematurely, which can influ-
+ence their durability [32,39,40]. This phenomenon can be avoided
+by the use of PBA, although, requires more capital investment,
+however, in the long run, PBA will become advantageous when
+compared with CBA [40]. In Table 1, is presented a summary com-
+parison of the two MIM variants.
+For both variants of MIM, a shut-off-nozzle should be consid-
+ered to prevent early blowing and the return of the material into
+the barrel, Fig. 4 [41].
+2.2.3. Mold modifications
+Concerning the mold modifications, there is a lack of studies
+that reference the required modifications, and the main referenced
+alteration is the use core-back technique, which consists of the
+movement of the mold wall after the cavity is fully filled. The mold
+movement is applied to promote uniform nucleation and cell
+growth through the component to be molded. This technique is
+usually applied to parts that require a higher degree of structural
+integrity, and cell uniformity is of the most importance [42,43]. The
+modifications required for the application of core-back require a
+unique mold design that must be able to retract in a precise way to
+ensure that the pressure loss caused by the increase of space inside
+the cavity is equally distributed and consequently boost cell
+nucleation and growth [11,12]. Although advantageous, this tech-
+nique requires the additional module that will increase the cost of
+the overall technology and since many of the developed compo-
+nents with the technology do not require high structural integrity,
+this technology is often not considered.
+2.3. Surface improvement
+Although aesthetically poor, MIM may assure the elimination of
+sink marks, still, it is crucial that the part presents an impeccable
+surface finish when needed. In order to reduce the effect that the
+creation of the cellular structure has in the produced part, several
+parameters of the injection molding process must be closely
+monitored and optimized, for instance, the filling stage should
+comprise an injection speed profile with a slow speed in its first
+stages, and a full speed for the remaining injection time to prevent
+Table 1
+Comparison of the process and cost: physical and chemical MIM, information
+gathered from Refs. [32e40].
+Physically MIM Chemical MIM
+Initial Cost (equipment) High Low
+Cost of blowing agent Low Medium
+Tool complexity Low Medium
+Machinery complexity High Low
+Changes in CIM process Needs a
+different
+injection unit
+and peripheral
+equipment
+The same injection
+unit can be used
+Durability High Medium; Release of
+byproduct that can
+damage molding cavity
+Cost-benefits In long term is
+more beneficial
+e
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152an overgrown structure in the flow front [27]. Due to challenges
+inherent to the technology, different solutions have been proposed
+in the attempt to minimize or even eliminate aesthetical defects on
+the molded part surface. Gas counter-pressure is one of the tech-
+niques most used due to its simplicity and capability to achieve
+good surface results. The technique consists of filling the molding
+cavity with a gas, increasing the pressure in the flow front, cir-
+cumscribing the growth of the nucleated cells until the cavity is
+fully filled. Only then the pressure inside the cavity is reduced and
+the cells begin to grow, in this stage, the frozen layer is almost fully
+formed, and the migration of cells to the surface is avoided,
+resulting in a more uniform surface finish with improved rugosity
+[44]. Another commonMIM variation to diminish surface defects is
+the mold opening technology, which is applied by completely
+filling the cavity with polymer melt, ensuring higher melt pressure,
+and delaying the cell growth while the polymer melt in contact
+with the mold wall freezes, preventing defects caused by the cells.
+Then the mold retracts and the cellular growth starts, guaranteeing
+a smother surface and balanced cell structure [16]. In Fig. 5 a) is
+presented the surface of a MIM produced part at different distances
+from the gate. It can be clearly observed surface defects on the
+molded component, with increasing surface rugosity in the furthest
+region from the gate, due to the free cell formation in the flow front.
+In Fig. 4 b) is presented the same part processed with the moldFig. 4. Physical MIM Injecti
+140opening MIM technology, with lower rugosity when compared
+with MIM, as expected.
+The RHCM system, also known as Variotherm is also frequently
+applied to enhance the surface finish, resulting in a molded
+component with high gloss and with minimized surface defects,
+such as swirls or silver streaks and weld lines [5]. In this process,
+the mold and cavity are heated to high temperatures during the
+filling and packing phase and rapidly cooled during the cooling
+phase, as presented in Fig. 6.
+Dong et al. [45] studied the influence of the RHCM on the surface
+of the injected MIM parts by using a dynamic mold temperature
+control system where the temperature was elevated during filling
+and quickly reduced. In Fig. 6 is presented the result obtained in the
+study, and as it can be observed there is a significant reduction in
+surface rugosity was achieved with the increase of mold temper-
+ature from 30 C to 140 C. Even when the mold temperature is
+increased to 60 C, the surface appearance is improved, resulting in
+parts with a better appearance, as can be seen in Fig. 7.
+Additionally, Dong et al. [45] give and plausible explanation to
+this phenomenon stating that due to the high mold temperatures
+the cells do not immediately freeze and the continuous flow of the
+melt removes the surface marks. This process results in the
+continuous reduction of space inside the molding cavity, increasing
+pressure and temperature leading to the redissolution of the gas
+into the melt, granting a smoother surface, as seen in Fig. 8.
+When confronting the study developed by Dong et al. [45] with
+Hou et al. [16] it may be observed that surface finish may be
+improved either by RHCM or by mold opening technique. However,
+it is noticeable the lower overall surface rugosity achieved by the
+RHCMmethod, which is coherent with whatwas expected from the
+technology, since the mold high temperature allows polymer chain
+mobility, while in the mold opening technique, the material in
+contact with mold wall forms a frozen layer, constraining the
+polymer chains mobility, causing the characteristic surface defects
+of MIM produced component without RHCM.
+As already mentioned, core-back technology has also been
+applied to MIM to promote uniform nucleation by maintaining the
+mold cavity smaller during the filling phase, as a result, the cell
+growth is delayed. When the cavity has fully filled the cavity
+slightly retracts, decreasing the pressure inside the cavity and
+promoting uniform nucleation and cell growth [42,46]. The tech-
+nology has also been called High-Pressure Foam Injection Moldingon unit setup example.
+Fig. 5. Surface finish of a MIM molded component a) conventional MIM, b) mold-opening MIM, reprinted with the permission of [16].
+Fig. 6. RCHM cycle representation during MIM.
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152(HPFIM) [47] since the pressure is maintained inside the cavity
+during the filling stage. The high pressure and sequential pressure
+drop can be favorable to a uniform cell structure formation and,
+usually, is applied for that purpose but, recently, the HPFIM has141been applied without the cavity retracting stage, resulting in fully
+packed parts without a visible cellular structure. The use of this
+variant resulted in the production of polylactic acid (PLA) glasses
+fully transparent [48]. The combination of the different
+Fig. 7. Surface rugosity analysis for a molded MIM part with different mold temperatures, reprinted with permission from Ref. [45]. Copyright (2018) American Chemical Society.
+Fig. 8. Proposed explanation for surface cell marks solved with RHCM system: (a) originally generated surface bubble marks, (b) island protuberances, and (c) original surface
+bubble marks are eliminated. Reprinted with permission from Ref. [45]. Copyright (2018) American Chemical Society.
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152technologies reviewed above has promoted good results in the
+molded components produced by MIM. However, even with an
+improved surface finish, the MIM parts are not aesthetically com-
+parable to conventional injected parts and can be aesthetically
+unattractive to the consumer. To overcome this problem, the
+combination of different molding and decorative technologies with142MIM will improve the molded component value, with an aesthet-
+ically pleasing surface. Therefore, considering the integration of
+different technologies is a solution to produce high-end products
+with additional functionality, while reducing the weight of the
+products and the environmental impact by using less raw material
+in the process.
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e1522.4. Commercial microcellular injection molding techniques
+Similar MIM techniques are commercially available. In most
+cases, the use of PBA is preferred due to its stability during the
+injection process when compared to CBA, as a result of CBA
+exothermic or endothermic properties [24,49]. The most common
+technologies using PBA are MuCell® [50], OptiFoam [51], and
+ErgoCell [49]. The application of these technologies demands an
+additional gas injection unit, which is connected to the plasticizing
+unit. In addition, as already mentioned, the technologies require
+the use of an optimized screw to ensure proper gas-polymer
+mixture [27]. Amongst the presented technologies, MuCell® is by
+far themost known and used due to its long presence in themarket.
+Trexel Inc., the owner of MuCell® technology, has patented the
+process in 1984 after being developed in MIT e Massachusetts
+Institute of Technology. Similar technologies to MuCell® have
+emerged in the market, such as Ergocell but, eventually, Trexel
+proclaimed patent rights to the technology, which demanded that
+when an Ergocell machine was sold it should comprise MuCell®
+licensing. Later on, the Demag Ergocell retracted their position in
+the market [27]. As already mentioned IQ Foam® [4], a serious
+contender to MuCell®, dismisses the need for gas injection into the
+barrel, injecting the PBA directly in the hopper. Table 2 summarizes
+the commercial MIM technologies, their present status, and the
+main advantages/disadvantages.
+2.5. Limitations of MIM
+Like most technologies, MIM has its limitations, the most
+commonly linked to the above mentioned, poor superficial finish-
+ing [7,13], plus the technology result in parts with a lower me-
+chanical strength of the injected part [27,56], when compared withTable 2
+Main MIM techniques and commercial products.
+Commercial
+Name
+Owner Main Features
+PBA MuCell® Trexel Inc. Biggest technology in the market
+Weight reduction up to 30%.
+Ergocell Sumitomo Demag PBA injected through an additional
+nozzle located between the
+plasticization cylinder and injection
+nozzle.
+OptiFoam Sulzer Chemtech Ltd The PBA is introduced in the nozzle
+through a centered torpedo. The
+injection and mixing unit is fitted
+between the needle shutoff nozzle
+and the plasticization unit.
+ProFoam IKV Aachen Adds PBA into themixture to plastic
+pellets before melting; System
+installed in the hopper of the
+injection molding machine.
+IQFoam ® Volkswagen Contains two gas injector units and
+a two-chambered unit assembled
+between the hopper and the barrel
+where the solid pellets are
+impregnated with gas; The foaming
+can be controlled only by the gas
+pressure, being easily automated.
+CBA TecoCell® Trexel Inc. Uses nano-sized CaCO3 particles to
+produce high density foams with
+microcellular structure.
+EcoCell® Polyfil Corp Uses nano-sized CaCO3 particles to
+produce high density foams with
+microcellular structure.
+143a CIM part. The surface defects, appear during the filling stage and
+are generally characterized by swirl marks, caused by the trapped
+gas on the part surface [57], and silver streaks (flow-induced marks
+resulting from the shear of microcells when in contact with the
+cavity wall, freezing immediately) [28,58]. The variation of the
+mechanical properties is appointed as a consequence of the cellular
+structure that comprises the molded component with hollow
+cavities, resulting in the decline of the flexural modulus and tensile
+strength of the produced part [59]. However, in some cases, this
+reduction can be negligible as Guo et al. [60] have reported. The
+team was able to produce injected components with only a small
+decrease in mechanical property, with a reduction of only 0.9% in
+tensile strength when compared with the CIM process, having re-
+ported the same scale of results for impact resistance and flexural
+strength tests. Nevertheless, in most cases, it is reported a decrease
+in mechanical strength that can be detrimental to the molded part
+[61,62], depending on the final application. For that reason, the cost
+savings and the material reduction cannot be the key parameters
+used to select the technology. In fact, the final application of the
+molded component must be the main factor to determine whether
+the product may be designed and produced byMIM technology. An
+example of some technologies that can be employed with MIM are
+In-Mold Labeling (IML), In-Mold Decoration (IMD), In-Mold Elec-
+tronics (IME), and over-molding or 2 K shot molding. These tech-
+nologies will be described below, and their integration with MIM
+technologies will be address in the following topics.
+3. In-Mold Labeling (IML), In-Mold Decoration (IMD), and In-
+Mold Electronics (IME)
+The IML and IMD technologies, also known as film-insert
+molding (FIM), are techniques that enable the decoration of aStatus Advantages/Disadvantages Ref.
+Commercially available The process depends on
+temperature and pressure;
+Needs a specific screw geometry;
+May require a secondary non-
+return valve geometry.
+[50,52]
+Requires a MuCell® license
+to be used
+Achieves different degrees of
+foaming due to an independent
+piston pump speed, not linked to
+the screw movement; Requires a
+great equipment investment.
+[40,52,53]
+Dropped due to patenting
+issues
+Similar to MuCell®, can achieve
+homogeneous mixing in the
+plasticizing phase.
+[40,52]
+No longer available Limited solubility due to the
+introduction of PBA in the solid
+state of pellets.
+[3,52]
+Commercially available Reduced cost when compared to
+similar technologies; Its design
+reduces losses of gas during
+injection.
+[4]
+Commercially available Cleaner, more environmentally
+friendly method when compared to
+other CBA methods.
+[54]
+Commercially available Similar to TecoCell® but for
+extrusion purposes.
+[55]
+Fig. 10. Two-Component injection molding exemplification.1st with MIM and 2nd by
+CIM.
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152molded component during the injection molding process [63,64].
+Even though the IML and IMD are often used as synonyms in
+literature, the main difference between the two is appointed to the
+end application of the product. For products with shorter lifespans
+as are packaging for cosmetics and food containers, IML is most
+used as labels with the goal to enhance the aesthetic appearance of
+the products, while informing the consumer [64,65]. On the other
+hand, IMD is used for high-end products, such as toys, appliances,
+and automotive components [66,67] where better finishing is
+needed. In some cases, the geometry of the molded component can
+demand a pre-process where the film is conformed to precisely fit
+the molded component [68]. The process is carried out by ther-
+moforming of the film, and in these situations, the producer must
+ensure that the electronic components can meet the formability of
+the material and resist two different thermal processes. The
+inserted film may require a pre-processing by thermoforming to
+ensure proper alignment with the component to be molded, as-
+suring a strong bond between the two parts of the molded
+component (film þ injected part) [69,70].
+IME is considered a variant of the film-insert molding, IMD,
+combined with printed electronics [71], in which the film inserted
+in the mold is incorporated with electronic components, such as
+conductive inks [72] surface mount devices (SMDs), or LED's,
+resulting in a functional high-end product [73,74]. This technique
+enables a one-step production process by eliminating post-
+processing necessities [72,75]. However, the fragile constitution
+of such materials implies a thorough study to determine the proper
+allocation of the electronic components in the molded part. While
+being over-molded, the electronic components can degrade or
+dislocate due to high temperatures and pressure exerted on the
+film. The working principle of the technologies is very similar,
+differing in the end application and the components presented on
+the films. In IML, IMD, and IME, a film is inserted in the mold with
+precise dimensions, adjusted to the component to be produced, the
+process starts with the introduction of pre-cut film in an opened
+mold, by a robotic arm, aligned with the injection molding cycle
+[69,76], Fig. 9. The fixation of the film in the mold is then accom-
+plished by vacuum, electrostatic fields, ormechanical pins placed in
+the mold cavity [77]. Most commonly, vacuum or electrostatic
+fields are used to avoid any damage or visible mark in the moldedFig. 9. FIM ma
+144part as a result of the mechanical pins [76]. IMD and IME products,
+require durability, hence, the films are thicker and consequently are
+less suitable for thermoforming, resulting in stretch marks. As a
+result, the technique is usually associatedwith shallower and not so
+complex parts [78].
+The technologies presented above, have the advantage of
+masking any marks present on the surface of the molded compo-
+nent, however, improper preparation of this process may result in
+defects, such as creases or folds [78], cracked inks [24], and wash-
+out [79]. Another crucial factor with the techniques lies in the
+compatibility between the film and the resin to ensure proper
+bonding between the two different materials [80e82].4. Two-shot injection molding (2 K)
+Two-shot injection molding (2 K shot), is a variant of multi-
+component molding (MCM) [83]. With this technique it is
+possible to inject two different materials, or the samematerial with
+different colors, resulting in products with great bonding proper-
+ties [84,85]. As the terminology indicates, this injection process is
+composed of two sequential steps. In the first step, a molded
+component is produced inside the mold, and cooled to its solid-
+state, in the second step, the mold opens, rotates and the secondin steps.
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152shot of resin is injected into the molding cavity over the first
+molded component [86]. During the second injection, the interface
+of the previously injected component is heated, and a bond is
+formed at the molecular level [87]. Fig. 10 exemplifies the above
+mentioned process. The bonding of the two parts is assured by a
+degree of melting of the first injected component during the in-
+jection of the second part [88]. This allows the producer to reduce
+costs in production by cutting to the number of steps necessary to
+develop a molded part with different combinations [89]. However,
+the technique is limited by the materials used, where weak bonds
+can lead to poor mechanical performance [90], for this reason, it is
+crucial that material compatibility is guaranteed early in the
+developing steps. As for applications, this technology usually is
+associated with multi-color or multi-material, and soft-rigid com-
+ponents [91] with the possibility of mastering complex parts with
+improved efficiency and quality. Its main drawbacks lie in material
+suitability to the product while maintaining dimensional stability
+[87]. In Table 3 are presented the key advantages and disadvantages
+of the techniques discussed above, and referenced the main ap-
+plications for the different technologies. The techniques are pre-
+sented independently from each other, with the exception of the
+FIM production techniques which are presented separated in the
+end application, as this category represents the major divergences.
+As the FIM process, the 2 K shot technology can represent an
+alternative to cover any surface defects that may exist in the MIM
+produced component. By injecting a new component over the MIM
+produced component, all the defects can be completely masked by
+maintaining the weight reduction provided by MIM in the core of
+the produced part.
+5. Technology integration
+The combination of the abovementioned technologies may help
+reduce the number of steps necessary, in an integrated process,
+lowering energetic costs and raising efficiency by decreasing pro-
+duction time and increasing cadence [29,40]. The integration of two
+or more of the mentioned technologies enables the possibility to
+obtain a product with reduced use of raw material, with higher
+functionality, and aesthetically agreeable [6,33]. In fact, integrating
+different technologies is not a new practice in the packaging in-
+dustry. In 2008, Britton Decorative patented the process of creatingTable 3
+Technologies: advantages, disadvantages, and main applications.
+Technologies Advantages Disadvantages
+Film Insert
+Molding
+IMD Good adhesion;
+Hides surface part defects;
+Cleaner technology than similar
+methods (spray coating);
+Eliminates the necessity of additional
+steps, reducing costs;
+Adds functionality in a one-step process
+(IME).
+Carefully select
+material; comp
+Film introductio
+differentiated h
+increase warpa
+An incorrect film
+wrinkles and vi
+IML
+IME
+MIM Reduces part weight - up to 30%;
+Less raw material used;
+Cycle time savings - 10%e40%;
+No packing needed;
+More design freedom - design of 1:1
+(wall thickness to rib structure).
+Less mechanica
+Costly investme
+Requires specifi
+Requires the us
+2 K shot High adhesion and mechanical integrity
+Higher aesthetics quality can be
+achieved;
+Eliminates the assembly step.
+Compatibility d
+Requires two in
+rotational mold
+145raised areas, in packaging, with MuCell® technology combined
+with IML. Films with 30e50 mm of thickness, the area with resin
+were injected simultaneously with the expansion agent to ensure
+that the printed areawould not adhere to the plastic material but to
+the MuCell® part, originating the raised effect [94]. In 2014, Uni-
+lever was the pioneer in the production of packaging using Zote-
+foam's MuCell® Extrusion technology for its Body Wash Bottles
+combined with IML technology, ensuring a reduction of 15% of the
+material used in the bottles [95,96]. Some food packaging, such as
+butter and yogurt are also produced by the integration of MuCell®
+and IML technology, being reported a 10% increase in thermal
+insulation, also, achieving 40% clamp tonnage reduction and a 15%
+decrease in cavity pressure [97,98]. In 2013, Engel presented Dol-
+phin technology [99] as a high-end decorative component for the
+automotive industry with cost-effective production. The products
+resulted from a balance between the soft touch and engaging looks.
+The technology is an outcome of the integration of MuCell®, 2 K
+injection molding, and compression technology [100]. Chen et al.
+[57], studied the possibility of reducing visual defects of a MIM
+molded component with the insertion of a film (PET þ PC) in the
+mold cavity, acting as an insulator between the mold surface and
+the melt, delaying the heat transfer, combining IMD and MIM
+technologies. It was reported a significant increase in the surface
+quality of the molded component and even a decrease in rough-
+ness, the setup and results of the introduction of film are presented
+in Fig. 11, where can be observed a reduction of defects on the
+surface of the molded part with the increase in thickness.
+In an attempt to evaluate the feasibility of a hybrid co-injection
+and MIM molding process, Turng and Kharbas [84] used different
+colored materials and co-injected a part, where the core material
+was produced by MIM and the shell a solid material. It was observed
+a decrease of the sinkmarks and an improvement of the dimensional
+stability of the molded components while maintaining the surface
+quality presented by the shell material. Similar toTurng's study, skin/
+core approach Suhartono et al. [101] have also investigated a way to
+enhance the surface quality ofMIMmolded components by using co-
+injection molding, For the production of the parts it was used
+polypropylene (PP) and PP with glass fiber for MIM production.
+Higher weight reduction of the injected PP with glass fiber was
+achieved, explained by higher Melt Flow Index (MFI), and weaker
+melt strength that allowed better cellular nucleation and enhancedMain Applications Ref.
+ion of compatible
+atibility
+n induces a
+eat transfer that may
+ge;
+fixation results in
+sible defects;
+High-end applications with high
+durability;
+Displays;
+Automotive interior parts
+[60,67]
+Logo imprinted products
+Label of food packaging and cosmetics
+Products for low-end applications
+[76,92]
+High-end applications with electronic
+components
+Electronic displays
+Automotive interior parts (central
+console, instruments panel)
+[71,72]
+l strength
+nt
+c equipment
+e of a blowing agent
+Automotive part interiors and motor
+components
+Packaging, food, and cosmetics
+HVAC systems
+[33,93]
+ependent
+jection units and
+ing plates
+Toys
+Toothbrushes
+Tool handles
+[87,91]
+Fig. 11. Illustration of (1) the setup used for the study, (2) results (a) with no film, (b) with a film insert with a thickness of 0.125 mm, and (c) with a film insert with a thickness of
+0.188 mm, reprinted with the permission of [57].
+Fig. 12. Surface profile, topography, and shrinkage results from the IMD, CIM, IMD/MIM, and MIM samples tested by Guo's team, reprinted with the permission of [60].
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152
+146
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152surface appearance when compared to the MIM PP molded
+component. Recently, Guo et al. [60] presented a thorough study on
+the integration of IMD/MIM to improve surface finishing. The MIM
+molded component presented the loss of mechanical properties,
+with lower stiffness and decreased flexural strength, but showing
+little differencewhen comparedwith the solid counterpart.With the
+integration of IMD in the process, Guo et al. managed to reduce
+surface defects, due to the slower heat transfer, results presented in
+Fig. 12. However, it led to an increase of the warpage in the molded
+component due to the film in the surface, resulting in contrasting
+temperatures in the mold and different cooling rates. Also, when
+comparing MIM with CIM, was reported smaller warpage reduction
+for theMIMþ IMDwas due to the expansion of the cells in the cavity.
+Another significant result refers to higher cell size, on the sidewhich
+contains the film due to the higher temperature, increasing ther-
+modynamic instability of the gas, lowering the material solubility,
+which increases the nucleation rate, and the slower cooling phase
+allows the cell to grow.
+The study developed by Guo et al. exhibited an increased
+warpage when FIM is considered which is in agreement with the
+literature. However, the preservation of the mechanical property is
+not coherent, as the produced part possesses regions with different
+cell sizes, which should be reflected in lower or inconsistent me-
+chanical properties.
+In a similar study, Kui et al. [102] have carried out an experiment
+in an attempt to prove that the application of a film in the mold can
+be beneficial to reduce the superficial defects of the MIM molded
+component. In the study, a PET film was used to reduce the surface
+roughness and nano-CaCO3 was introduced in the composition in
+order to maintain mechanical properties. The integration of IMD
+and MIM technologies was carried out with a single film thickness
+and resulted in different weight reductions, between 2 wt% and
+10 wt%. Contrary to the expected, the foamed composites resulted
+in molded parts with higher tensile properties when compared
+with the solid molded part produced by CIM. Likewise, for flexural
+strength, onMIMmolded part, when comparedwith CIM, being the
+best result achievedwith the incorporation of 6 wt% of nano-CaCO3.
+The cellular structure also improved with the incorporation of the
+nanoparticles. Above 6 wt% incorporation, the nanoparticles
+agglomerate resulting in nucleation deficient spots. The film-
+covered side was evaluated, by surface analysis. A smoother sur-
+face with lesser defects was observed as a result of slower cooling.
+The incorporation of the nanoparticles contributed to the reduction
+of cell formation on the part surface by restricting their movements
+from the core to the cavity wall. This study provides interesting
+insights with the combination of the introduction of nanoparticles
+in the material composition, and the MIM technology, resulting in
+products with higher mechanical properties coupled with weight
+reduction, demonstrating the importance of further investigation
+in this theme.
+In Table 4, are chronologically presented the studies and patents
+reviewed above, highlighting the technologies employed, materials
+used, and the main results.
+The most recent studies reflect the advantages and benefits of
+using dedicated software, specifically developed for MIM, in a
+specialized numerical simulation to prevent problems during pro-
+duction, and predict weight reduction, cell size distribution as well
+as cell density. By simulating the cell growth, the software pos-
+sesses the capability to predict warpage behavior and sink marks
+reduction even to a close approximation of reality. The majority of
+MIM numerical simulation studies reported in the literature are
+focused on the process itself [103e105] and few studies focus on
+the integration of processes, for instance, Yan et al. [102] reported
+numerical simulation images for temperature prediction, but the
+numerical simulation study is not further discussed.147In this section, two studies with the integration of technologies
+and the use of numerical simulation inMoldex3D andMoldflow, the
+most used software, will be briefly analyzed. The 1st study, already
+presented above will be further disclosed in this section. As depicted
+above, the integration and comparison of MIM with different injec-
+tion molding technologies was analyzed with resort to numerical
+simulation, with a focus on the shrinkage and warpage behavior of
+the developed components. The results showed a close approxima-
+tion to the expected behavior of the molded part, as can be observed
+in Fig. 13, were the relation of the predicted mold temperatures in all
+samples (IMD, CIM, IMD/MIM, MIM) with the warpage behavior and
+the introduction of a film in the cavity influence is examined. Also
+notorious is the predicted warpage tendency reflected on the mol-
+ded part. It may also be concluded that the introduction of a film
+during the molding process will strongly affect the warpage of the
+MIM and CIM molded components, almost to the same extent,
+although it was expected lower warpage for MIM.
+Yang et al. [106] studied the effect of the incorporation of a film
+on the surface morphology of a MIM produced component, inte-
+grating the MIM and IMD technologies. With resort to numerical
+simulationwas possible to predict the warpage created by the film
+incorporation and different cooling rates through the molded
+part. As a form of validation of the numerical study, the part was
+experimentally reproduced. It was reported a 3% error of simu-
+lated temperature compared to the experimental molded
+component. The effect of the film in the polymer crystallization
+was also evaluated, concluding that the film incorporation results
+in a higher crystallization due to slower cooling time, allowing
+more time for the crystallization process to occur. In the presented
+cases, the numerical studies helped to predict the warpage
+behavior of MIM components, as well as the density of the molded
+part and cell size, however, numerical simulation cannot yet
+provide an exact replica for the analyzed model, for instance,
+there is an over prediction of the warpage values in the injected
+part. For this reason, the use of numerical simulation in the study
+of integrated processes is not yet widely employed. From what is
+gathered from the reported studies, the differences between
+software are scarce and either option, Moldex3D or Moldflow, is
+valid for simulating the MIM process. It is noteworthy that in the
+process simulation, as in any Computer Aided Engineering (CAE)
+software, the results obtained are indicative and enable to predict
+the material behavior, detect potential problems, and help with
+cost reduction by digitalizing some product development stages.
+It is, however, important to underline that this analysis does not
+replace fundamental knowledge about polymeric materials, mold
+design, and the injection molding process and, therefore, contains
+a low percentage of associated error, still, simulations are very
+useful to support the work of product developers. Therefore, it is
+possible to notice that new studies using numerical simulation are
+increasing, and it is expected that in the future, numerical simu-
+lations may predict more accurately the injection molding process
+of MIM components.
+6. Microcellular Injection Molding trends and outlooks
+MIM technology is nowadays the focus of several projects
+worldwide. The possibility to produce one material components,
+and therefore completely recyclable, with reducedmaterial amount
+is the driving force of the technology as it presents a solution for the
+hard to recycle fiber filler thermoplastics. In a big production sys-
+tem, it may represent savings of tons of material to produce the
+parts, translating in savings for the producing companies. In the
+future, it is expected that the cost of this technology will be lower
+due to the high demand and the development of new technologies
+for MIM parts production. The application of such components in
+Table 4
+Literature review of MIM integration with FIM and Co-Injection technologies.
+Title Year Technologies
+employed
+Commercial
+owner
+Material Remarks Ref.
+Development of a Hybrid Solid-
+Microcellular Co-injection Molding
+Process
+2004 Co-Injection,
+MIM
+e Polystyrene (PS) Successful Integration of technologies with
+shell/core layout, resulting in 90% reduction
+of sink marks and guaranteeing
+dimensional stability; Higher weight
+reduction with the increase of the core
+volume (microcellular) compared to the
+core solid part;
+Formation of a thinner, longer, and more
+uniform core/shell part.
+[84]
+Method for producing at least one
+raised area on a plastic container
+2008 MuCell®, IML Britton
+Decorative
+PP, polyethylene
+(PET) film
+Film thickness of 30e50 mm, combined
+technology for a raised effect.
+[94]
+Using thermally insulated polymer film
+for mold temperature control to
+improve the surface quality of
+microcellular injection molded parts
+2008 MuCell®, IMD e Polycarbonate (PC),
+PET film, N2
+From no film insert to film thickness
+variation, maximum 0.188 mm, PBA
+content of 0.3 wt%; Surface roughness
+reduced from 5.6 mm to 1.8 mm (78%e93%
+reduction); MuCell® marks were removed
+by a film layer of 0.188 mm.
+[57]
+A new quality of soft touch 2013 MuCell®, IMD Engel e Combines dolphin technology to produce a
+cost-effective solution with soft touch.
+[99]
+Unilever launches breakthrough
+packaging technology that uses 15%
+less plastic
+2014 MuCell®, IML Unilever® e Extruded product, combined with
+Zotefoams; With the technology, Unilever®
+reduced the materials used by 15% in the
+Dove bottles.
+[95,96]
+MuCell® Technology Beneficial for
+Unique Packaging Applications:
+Innovative 3D In-Mold Technology
+Provides Multi-Sensory Experience
+for Consumers
+2014 MuCell®, IML Paccor/Unilever e The producer claims that achieved, material
+reduction e 6%; Clamp tonnage reduction -
+40%; Cavity pressure reduction e 15%.
+[97]
+Improvement on the surface quality of
+microcellular injection molded parts
+using microcellular co-injection
+molding with the material
+combinations of PP and PP-GF
+2017 MuCell®,
+Co-injection
+molding
+e PP, PP-glass fiber
+(10 wt%)
+Shell/core layout to improve surface
+quality; 5.1% weight reduction for PP,
+increased to 8% by glass fiber incorporation;
+Higher weight reduction on PP/PP without
+incorporation of glass fiber explained by
+heavier nucleation, and smaller cells; The
+co-injected part possesses higher gloss,
+46.6% higher when compared with the
+Mucell® part.
+[101]
+A combined in-mold decoration and
+microcellular injection molding
+method for preparing foamed
+products with improved surface
+appearance
+2019 MuCell®, IMD e PP, PET film Film thickness of 0.2 mm, PBA content of
+0.5 wt%; The numerical simulation used to
+study shrinkage and warpage tendency;
+Reduced surface roughness with IMD when
+compared to MIM; Reduced warpage,
+2.1 mm with CIM to 1.6 mm with MIM;
+Higher warpage than MIM alone due to
+slower heat transfer and asymmetrical
+cooling.
+[60]
+Investigation on Foamed PP/Nano-
+CaCO3 Composites in a Combined in-
+Mold Decoration and Microcellular
+Injection Molding Process
+2020 MIM, IMD e PP, CaCO3, PET film,
+N2
+Film thickness of 0.2 mm and PBA content
+of 0.5 wt% of N2; Higher tensile, flexural,
+and impact strength was achieved by the
+incorporation of 6 wt% CaCO3 when
+compared with CIM; Film incorporation
+guaranteed a smoother surface due to
+higher temperatures and slower cooling
+times.
+[102]
+Investigation on forming defects and
+crystallization of plastic parts in
+combined in-mold decoration and
+microcellular injection molding
+based on a multiphase flow-solid
+coupled heat transfer model
+2020 MuCell®, IMD e PP, PET film, N2 Film thickness variation form 0e0.3 mm,
+PBA content of 0.5 wt% of N2; Numerical
+simulation of IMD/MIM process through
+implicit domain coupling algorithm (IDCA);
+Higher warpage for higher film thickness
+(0.7e1.5 mm); Almost 30% increase in
+crystallization for 0.2 mm of film thickness.
+[106]
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152stricter industries, i.e. automotive, is still a challenge due to the loss
+of mechanical properties when compared with CIM. Some studies
+claim to improve themechanical properties by controlling themold
+andmelt temperature [102,107], gas counter pressure [108], or with
+the introduction of fillers to act as reinforcement [109], nonethe-
+less, it is still insufficient to reach the high standards employed by
+the automotive industry. New developments have emerged on the
+production of molded components with a nanocellular structure by148controlling high pressure foam injection molding, resulting in
+molded components with good mechanical strength and reported
+surface appearance closely relating to the conventional counterpart
+[110]. However, these findings are still laboratory-based and
+require further studies to be adopted by the industry.
+The poor surface finish of the molded components is its biggest
+drawback and for that reason, recent studies focus on alternatives
+to overcome this problem. Chang et al. [111] took advantage of the
+Fig. 13. Comparison of the warpage and temperature difference on both sides among the IMD, CIM, IMD/MIM, and MIM samples, reprinted with the permission of [60].
+D. Dias, C. Peixoto, R. Marques et al. International Journal of Lightweight Materials and Manufacture 5 (2022) 137e152low packing phase and clamping force needed for MIM and used
+aluminum material (QC-10) and highly polishable steel (M333),
+both with high thermal conductivity to produce mold inserts with
+the cooling system. With this study, it was possible to improve
+surface finish by a quick cooling rate and without significant
+damage to the mold inserts. Chen et al. [105] developed a special
+coating of PFTE and Zirconia to improve MIM produced compo-
+nents surface. These new solutions combined with the already
+discussed technologies, gas counter-pressure, and RCHM, help to
+improve the popularity of the technology.
+As the industry moves towards sustainable processes, so does
+the MIM technology, as a new trend by combining MIM with bio-
+based thermoplastics [38,112,113] representing an alternative to the
+conventional petroleum-based components. However, processing
+such materials has its challenges, mainly due to the higher pro-
+cessing difficulties associated with these biobased plastics, thus
+additional research is required. In the specific case of biopolymers,
+due to the processing difficulties, for example, low processing
+temperatures are required to improve, the introduction of a PBA in
+the system reduces de viscosity of the polymer melt, enabling in-
+jection molding at lower temperatures than the usual operating
+temperatures of the polymer [114].
+Regarding the integration of MIM with other technologies, it
+seems to be a clear trend that allows the producer to cut down the
+materials while giving the product functionality in a one-step
+process while reducing warpage complications.7. Concluding remarks
+MIM is a clear trend for the injection molding industry, in the
+present work, the technology is addressed and the integration of
+2 K Shot, IMD, IML, IME with MIM is reviewed. The integration,
+when successful, is of high profit and capable of producing com-
+ponents in a one step process, reducing costs and boosting new
+developments. It may result in molded components with fewer
+defects, higher functionality, versatility, and increased product
+value. However, the process is challenging due to different re-
+quirements from the different technologies, increasing in
+complexity with the conjugation FIM with MIM. This means that
+the injection molding machine requires a significant capital in-
+vestment, and the production sequence must be carefully studied
+early in the developing phase. At an early stage, numerical
+simulation can help to predict potential problems, address them
+early and diminish the postproduction modifications. But, as far as
+we can identify, the combination of these technologies is not149easily found in the literature even though it can save time and can
+be a strong ally as it may result in cost savings. The reduced me-
+chanical performance of the MIM produced components, is still a
+challenge to overcome, discouraging the industry from appointing
+MIM as a manufacturing technology to produce a high-end
+product market. This is why, the integrative setup should be
+considered as an alternative, where mechanical performance may
+be enhanced and the aesthetic element optimized while retaining
+the weight loss characteristic of the MIM molded part. Since this
+type of process integration is still underexplored, new problems
+are arising, for instance, when FIM is combined with MIM, the
+residual gas that slowly migrates to the surface of the molded part
+is trapped in the film/plastic interface. As a solution, process
+optimization with variation of gas introduction (wt%) and injec-
+tion velocity could be considered to prevent such issues. Also, the
+incorporation of nanoparticles should be considered to overcome
+the loss of mechanical properties. These are some examples where
+the industry should focus its innovative efforts. Thanks to the
+current demand in the European Union for the reduction of ma-
+terial waste and plastic, in recent years more studies have been
+published on MIM integration with other technologies. In the
+future, it is expected that the integration of these technologies
+will be a strong part of the injection molding market, especially
+for high-end applications.
+Funding
+This work was supported by the European Regional Develop-
+ment Fund (ERDF), through the Competitiveness and Internation-
+alization Operational Program (COMPETE 2020) of the Portugal
+2020 Program [I&DPIIMIO - I&D de Processos para Injeç~ao Inte-
+grada POCI-01-0247-FEDER-042832].

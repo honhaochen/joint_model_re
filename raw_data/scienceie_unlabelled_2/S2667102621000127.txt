@@ -1,0 +1,391 @@
+Objective The study aimed to develop a machine learning (ML)-coupled interpretable radiomics signature to 
+predict the pathological status of non-palpable suspicious breast microcalcifications (MCs). 
+Methods We enrolled 463 digital mammographical view images from 260 consecutive patients detected with 
+non-palpable MCs and BI-RADS scored at 4 (training cohort, n = 428; independent testing cohort, n = 35) in the 
+First Affiliated Hospital of Nanjing Medical University between September 2010 and January 2019. Subsequently, 
+837 textures and 9 shape features were subsequently extracted from each view and finally selected by an XGBoost- 
+embedded recursive feature elimination technique (RFE), followed by four machine learning-based classifiers to 
+build the radiomics signature. 
+Results Ten radiomic features constituted a malignancy-related signature for breast MCs as logistic regression 
+(LR) and support vector machine (SVM) yielded better positive predictive value (PPV)/sensitivity (SE), 0.904 
+(95% CI, 0.865–0.949)/0.946 (95% CI, 0.929–0.977) and 0.891 (95% CI, 0.822–0.939)/0.939 (95% CI, 0.907–
+0.973) respectively, outperforming their negative predictive value (NPV)/specificity (SP) from 10-fold cross- 
+validation (10FCV) of the training cohort. The optimal prognostic model was obtained by SVM with an area 
+under the curve (AUC) of 0.906 (95% CI, 0.834–0.969) and accuracy (ACC) 0.787 (95% CI, 0.680–0.855) from 
+10FCV against AUC 0.810 (95% CI, 0.760–0.960) and ACC 0.800 from the testing cohort. 
+Conclusion The proposed radiomics signature dependens on a set of ML-based advanced computational algo- 
+rithms and is expected to identify pathologically cancerous cases from mammographically undecipherable MCs 
+and thus offer prospective clinical diagnostic guidance. 
+Breast cancer screening is widely recognized as the most effective
+ay to improve the rate of early diagnosis, survival rate and quality of
+ife of breast cancer patients [1] . Digital Mammography (DM) proves
+uperior to other breast screening methods, e.g., breast magnetic reso-
+ance imaging (MRI) and ultrasound, for the detection of breast MCs,
+urther allowing radiologists to scrutinize possible invasive ductal car-
+inoma in situ (DCIS) [2–5] . Mammographic abnormalities radiologi-
+ally scored at 4 according to the Breast Imaging Reporting and Data
+ystem (BI-RADS) Atlas [6] are considered highly suspicious for malig-∗ Corresponding authors: Yang Chen, The Laboratory of Image Science and Techno
+ngineering, Southeast University, Nanjing, Jiangsu 210096, China (Email: chenyan
+ospital of Nanjing Medical University, Nanjing, Jiangsu 210029, China (Email: jyn_
+ttps://doi.org/10.1016/j.imed.2021.05.003 
+eceived 6 May 2021; Received in revised form 23 May 2021; Accepted 27 May 202
+667-1026/© 2021 Chinese Medical Association. Published by Elsevier B.V. This is a
+ http://creativecommons.org/licenses/by-nc-nd/4.0/ ) ancy, and therefore, should undergo pathological examination which
+onfirms the ultimate results as noncancerous or cancerous for further
+urgical or noninvasive strategy making. However, real clinical statistics
+eveal only approximately 35% cancerous MCs calling for mastectomy
+f all the biopsied samples [7] . To raise diagnostic accuracy rate in ra-
+iology and to reduce unnecessary biopsies, radiomics for interpretable
+eature analysis concerning breast MCs is thus in the ascendant. 
+Radiomics provides prospect for precise diagnosis in clinical oncol-
+gy studies through the quantitative enhancement of medical imaging
+epositories that depend on advanced mathematical analysis and ar-
+ificial intelligence techniques [8–9] . Although the present radiomicslogy,
+cheme is in the paradigm shift to a symbiosis of handcrafted features
+ased on image intensity, shape, or texture and deep features gener-
+ted by various deep learning networks, the latter presents a surplus of
+omputer science automation and thus undermines its decipherability in
+linical diagnosis [10–14] . As noted by Afshar et al. [15] , four main pro-
+essing tasks, i.e., image acquisition, segmentation, feature extraction
+nd statistical analysis with model building constitute the conventional
+adiomics pipeline for handcrafted features. Specifically, handcrafted
+eatures are able to represent local statistical properties established on
+ixel intensity, e.g., energy, entropy and gray-level co-occurrence matrix
+GLCM), from the transformative image derived by wavelet decomposi-
+ion or by multiscale operators such as the Laplacian of Gaussian filter
+LoG) and the Local Binary Pattern technique (LBP) [16–18] . Generally,
+ll the studies reported in medical literature employed a broad range
+f machine learning techniques such as KNN [19] , AdaBoost [20] , and
+aussian Naive Bayes (GaussianNB) [21] . 
+In this study, we generated a radiomics discriminative signature us-
+ng machine learning techniques as the data miner to analyze its de-
+erminability between noncancerous and cancerous cases measured by
+PV/SP and PPV/SE to reduce dispensable biopsy and supplement fur-
+her analysis of malignant calcification with radiological imaging knowl-
+dge as reference for clinical use. 
+. Methods 
+.1. Patients 
+This retrospective study was approved by the Institutional Ethics
+ommittee of the First Affiliated Hospital of Nanjing Medical Univer-
+ity. Informed consent was signed and obtained from patients before
+iopsy or surgery. Furthermore, our study was also in compliance with
+he Helsinki declaration. 
+We considered patients who presented to the First Affiliated Hospital
+f Nanjing Medical University between September 2010 and January
+019. In the study, 260 patients with MCs (mean age 47 years; range
+0–85 years) were recruited for investigation, who were diagnosed by
+ore needle biopsy. Among them, 130 (50%) cases were diagnosed as
+alignant and others (50%) as benign by definitive surgery pathology. 
+All patients met the following criteria: (1) with MCs detected and BI-
+ADS scored at 4; (2) undergoing surgical biopsy with mammographic
+uidance; (3) microcalcifications were confirmed to be successfully ex-
+ised by X-Ray photography; and (4) pathological result as gold stan-
+ard. Patients who had the history of any therapy for breast lesions
+efore mammography were excluded. igure 1. Multiple lesions of MCs presented in a left craniocaudal (LCC) view 
+mage (a) and its ROI (b) pathologically diagnosed as malignant and its manually 
+nnotated mask (c). 
+96 .2. Data acquisition and annotation 
+All patients involved underwent digital mammographic examination
+f the breast on a full-field digital mammography unit (Selenia, Ho-
+ogic, USA). Two expert radiologists who were blinded to the pathology
+esults independently examined mammograms and categorized MCs ac-
+ording to morphology and distribution descriptors at screening. The tis-
+ue blocks were reviewed and discussed by radiologists and pathologists
+uring the consultation after biopsies. They would discuss and make
+onsensus in case of disagreement. Following that, the results were sent
+o locate and select regions of interest (ROIs) in the Digital Imaging and
+ommunications in Medicine (DICOM) images with bounding boxes. 
+To analyze the corresponding computational shape features of ROIs,
+egional masks representing MCs distributional information had to be
+anually segmented by a radiologist with 10 years of experience and is
+isplayed in Figure 1 c, owing to its relevance to the possible malignancy
+s defined in the latest BI-RADS Atlas Fifth Edition [6] . 
+.3. Radiomics feature extraction 
+Based on the original DM and its corresponding ROI mask integrated
+ith another three categories of graphical transform operators at mul-
+iple scales as derivative image types, shape features, intensity-based
+tatistics and interpixel relationships were accordingly calculated. All
+mage analysis development work was performed within Python 3.7.3
+sing the PyRadiomics package. 
+.3.1. Shape indicators 
+Nine of the two-dimensional shape features (Shape2D) exhibited in
+he last row of Table 1 , i.e., elongation, major axis length, maximum
+iameter, mesh surface, minor axis length, perimeter, perimeter surface
+atio, pixel surface and sphericity, were served as distributional descrip-
+ors of breast MCs and were only calculated on the nonderived image
+nd mask for the sake of its independency from graylevel intensity dis-
+ribution. Definitions of each aforementioned shape metrics e.g., elon-
+ation, can be found in [22] . 
+.3.2. Image transformation 
+To combine intensity properties and textures on various hierarchi-
+al scales, three universally used texture operators, i.e., Laplacian of
+aussian (LoG) spatial filters ( 𝜎 = 1 , 2 , 3 ), single level coiflet decompo-
+ition and Local Binary Pattern (LBP) algorithm in its uniform pattern
+ere applied to the original DM image, respectively, before following
+he texture extraction. 
+.3.3. Intensity-based and interpixel relationships 
+With regard to texture analysis, we investigated 18 first-order sta-
+istical features representing intensity properties, 24 gray-level co-
+ccurrence matrix (GLCM) features, 16 gray-level size zone matrix
+GLSZM) features, 16 gray-level run length matrix (GLRLM) features,
+ neighboring gray tone difference matrix (NGTDM) features and 14
+ray-level dependence matrix (GLDM) features representing interpixel
+elationships, as defined in [22] and also stated in Table 1 . A total of 93
+etrics were employed on the aforementioned three derivative image
+ypes and the original one. Ultimately, all the six classes of radiomics
+extures amounting to 837 for each of the view images were extracted
+n four different image types, including an original image and derived
+mages of the other three types in question, i.e., LoG filtered, wavelet
+ransformed, and LBP operated. 
+.4. Radiomics signature building 
+The yielded textural and shape radiomic features were scaled by Z-
+core standardization for preprocessing to render into the standard nor-
+al distribution. Next, three feature selection methods were applied suc-
+essively on the preprocessed features for signature construction. Firstly,
+M. Li, L. Zhu, G. Zhou et al. Intelligent Medicine 1 (2021) 95–103 
+Table 1 Statistical measures of radiomics features 
+Feature categories Feature names (optional) Dimensions 
+First-order statistics 10Percentile, 90Percentile, Energy, Entropy, Interquartile Range, Kurtosis, Maximum, Mean Absolute Deviation, Mean, 
+Median, Minimum, Range, Robust Mean Absolute Deviation, Root Mean Squared, Skewness, Total Energy, Uniformity, 
+Variance 
+18 
+GLCM Autocorrelation, Cluster Prominence, Cluster Shade, Cluster Tendency, Contrast, Correlation, Difference Average, 
+Difference Entropy, Difference Variance, Inverse Difference (ID), ID Normalized (IDN), Inverse Difference Moment (IDM), 
+IDM Normalized (IDMN), Informational Measure of Correlation (IMC) 1, IMC2, Inverse Variance, Joint Average, Joint 
+Energy, Joint Entropy, Maximal Correlation Coefficient (MCC), Maximum Probability, Sum Average, Sum Entropy, Sum 
+Squares 
+24 
+GLSZM Gray Level Non-Uniformity, Gray Level Non-Uniformity Normalized, Gray Level Variance, High Gray Level Zone 
+Emphasis, Large Area Emphasis, Large Area High Gray Level Emphasis, Large Area Low Gray Level Emphasis, Low Gray 
+Level Zone Emphasis, Size Zone Non-Uniformity, Size Zone Non-Uniformity Normalized, Small Area Emphasis, Small 
+Area High Gray Level Emphasis, Small Area Low Gray Level Emphasis, Zone Entropy, Zone Percentage, Zone Variance 
+16 
+GLRLM Gray Level Non-Uniformity, Gray Level Non-Uniformity Normalized, Gray Level Variance, High Gray Level Run Emphasis, 
+Long Run Emphasis, Long Run High Gray Level Emphasis, Long Run Low Gray Level Emphasis, Low Gray Level Run 
+Emphasis, Run Entropy, Run Length Non-Uniformity, Run Length Non-Uniformity Normalized, Run Percentage, Run 
+Variance, Short Run Emphasis, Short Run High Gray Level Emphasis, Short Run Low Gray Level Emphasis 
+16 
+NGTDM Busyness, Coarseness, Complexity, Contrast, Strength 5 
+GLDM Dependence Entropy, Dependence Non-Uniformity, Dependence Non-Uniformity Normalized, Dependence Variance, 
+Gray Level Non-Uniformity, Gray Level Variance, High Gray Level Emphasis, Large Dependence Emphasis, Large 
+Dependence High Gray Level Emphasis, Large Dependence Low Gray Level Emphasis, Low Gray Level Emphasis, Small 
+Dependence Emphasis, Small Dependence High Gray Level Emphasis, Small Dependence Low Gray Level Emphasis 
+14 
+Shape2D Elongation, Major Axis Length, Maximum Diameter, Mesh Surface, Minor Axis Length, Perimeter, Perimeter Surface 
+Ratio, Pixel Surface, Sphericity 
+9 
+Figure 2. Plots demonstrate features with (a) and without (b) significant linear dependency. 
+However, Figure 2
+evealed that ANOVA-selected candidates still intertwined in certain lin-
+arity. Therefore, Pearson redundancy-based filter (PRBF) [23] was per-
+ormed on the rest of the features to statistically drop out linearly de-
+endent features from the feature space ( Figure 2 ). Subsequently, ordi-
+ary least squares (OLS) [24] , a backward elimination algorithm that
+stablished a linear regression model for the estimation of each fea-
+ure variable’s weight further crossed off those less important candi-
+ates. Following that, the final feature importance ranking was gener-
+ted through the retrospective algorithm, i.e., XGBoost-embedded RFE
+25] , to gain insights into clinical interpretability. The importance met-
+ic was set as ‘weight’, namely the percentage representing the relative
+umber of times a particular feature occurs in the boosted trees of the
+odel. 
+After obtaining the 10 top-ranking features, four machine learning-
+ased algorithms, i.e., LR, SVM, Gaussian Naive Bayes (GaussianNB)
+nd K-nearest neighbors (KNN), were performed to classify our clinical
+M dataset. As for SVM, Gaussian Radial Basis Function (RBF) was set97 s the kernel function. The other key parameters such as C/gamma in
+VM and solver/tolerance in LR were cherry-picked by grid search. 
+.5. Validation of the radiomics signature model 
+During training, validation and testing, we considered views, i.e.,
+raniocaudal (CC) and mediolateral oblique (MLO), as individuals for
+ure imaging research of DMs. However, predictive outputs derived
+rom multiple views for the same patient were supposed to be combined
+hrough voting for the final diagnostic result in clinical practice. Thus,
+he prognostic performance of the above signature models was eval-
+ated using 10FCV method and also the independent testing set. The
+o-called independent indicates that different views of the same breast
+ere not involved in both training set and testing set simultaneously.
+nstead, this situation could possibly happen during 10FCV in light of
+egarding each view as a single study object. 
+The overall quality of classifiers in question was quantified by AUC
+cores and ACC, with its diagnostic ability for noncancerous MCs as-
+essed by NPV/SP and cancerous PPV/SE. 
+M. Li, L. Zhu, G. Zhou et al. Intelligent Medicine 1 (2021) 95–103 
+Figure 3. Intermediate results of t -test in ordinary least squares. 
+Figure 4. P values derived from ANOVA analysis. 
+Figure 5. Feature importance ra
+98 .6. Statistical analysis 
+The feature-label correlation and the inter-feature redundancy
+ere evaluated using ANOVA F-statistical and Pearson correlation
+oefficients successively, and their nonparametric version as appropri-
+te. T-test was performed in OLS, as exhibited in Figure 3 , to examine
+he significance of the parameters fitted by its linear regression model. 
+With respect to AUC analysis, MannWhitney statistics was used as an
+stimator of AUC, around which the 95% confidence interval (CI) was
+btained by the Delong test. Youden’s index was thereby calculated to
+nd the optimal cut-point, so was the confusion matrix to produce ACC,
+PV/SE and NPV/SP. 
+The mentioned statistical techniques were all practiced based on the
+ython 3.7.3 packages concerned, e.g., sklearn. metrics and scipy. stats.
+s a routine, the significance level was set as 5%. nking by XGBoost in RFE. 
+M. Li, L. Zhu, G. Zhou et al. Intelligent Medicine 1 (2021) 95–103 
+Figure 6. The violinplots of the 10 textural features.
+distributional mask of ROIs. . Results 
+.1. Feature selection 
+Preliminarily, 837 textures and 9 shapes were extracted from each
+iew in our clinical non-public training cohort. Posterior to Z-score and
+issing/invalid data handling, 805 features were trimmed by the one-
+ay Analysis of Variance (ANOVA) F-test, yielding 426 candidates with
+heir P values less than 0.05 as in Figure 4 . PRBF was then implemented
+ithin the above candidates to shrink linearity in the feature set. The
+ptimal set containing 10 textures, as given in Figure 5 displaying their
+mportance ranking, was ultimately derived by RFE. Moreover, it was
+lso expected for all the selected features to significantly differ between
+he two categories of benign and malignant ( P < 0.05). 99 .2. Radiomics signature 
+As presented in Figure 6 , larger “wavelet-HH_ngtdm_Busyness ”
+nd “wavelet-LH_firstorder_Maximum ”, indicating more rapid changes
+etween pixels on the coiflet transformed image, were found in the
+alignant cases than those in the benign cases, so were “lbp-2D_glrlm_
+unEntropy ”, “log-sigma-3-mm-3D_firstorder_Energy ”, “log-sigma-
+-mm-3D_glszm_ZoneEntropy ” and “log-sigma-1-mm-3D_firstorder_
+ean ” which implied higher heterogeneity or disorder in the texture
+atterns for the malignant. However, “wavelet-HH_glcm_Imc2 ” and
+log-sigma-3-mm-3D_firstorder_Uniformity ” were higher in the benign
+roup, lending support to the assumption that the noncancerous
+Cs exhibited higher textural uniformity under the corresponding
+M. Li, L. Zhu, G. Zhou et al. Intelligent Medicine 1 (2021) 95–103 
+Table 2 Performance summary of the radiomics signature 
+10FCV 
+Description Metrics (95%CI) LR SVM KNN GaussianNB 
+Malignancy-focused PPV 0.904 (0.865–0.949) 0.891 (0.822–0.939) 0.768 (0.557–0.985) 0.688 (0.519–0.890) 
+SE 0.946 (0.929–0.977) 0.939 (0.907–0.973) 0.512 (0.257–0.845) 0.773 (0.482–0.920) 
+Benignity-focused NPV 0.763 (0.592–0.907) 0.782 (0.606–0.878) 0.592 (0.436–0.688) 0.767 (0.591–0.922) 
+SP 0.807 (0.566–0.980) 0.763 (0.433–0.971) 0.848 (0.639–0.989) 0.710 (0.467–0.913) 
+Overall Performance AUC 0.900 (0.836–0.964) 0.906 (0.834–0.969) 0.831 (0.749–0.913) 0.776 (0.674–0.878) 
+ACC 0.787 (0.685–0.860) 0.787 (0.680–0.855) 0.654 (0.545–0.757) 0.705 (0.516–0.890) 
+Testing 
+Overall Performance AUC 0.790 (0.723–0.956) 0.810 (0.760–0.960) 0.783 (0.623–0.950) 0.703 (0.516–0.890) 
+ACC 0.713 0.800 
+Figure 7. PPV/SE values of the LR (a, c) and of the SVM (b, d). 
+Figure 8. AUC scores from 10FCV within the training cohort of the 428 DM 
+views. 
+3. Validation and prognosis 
+To acquire in-depth knowledge about the clinical implication of the
+elected 10 radiomics features, we investigated six metrics, i.e., PPV/SE,
+PV/SP, ACC and AUC, derived from 10FCV and on the testing cohort,
+s summarized in Table 2 . Performance of KNN and of GaussianNB is
+enerally inferior to that of LR and of SVM from 10FCV. As a result,
+hey were dismissed in the testing evaluation of ACC. Furthermore, the
+eveloped radiomics signature was considered to be more related to
+he prediction of cancerous lesions based on the higher and more sta-
+le PPV/SE scores from both LR and SVM, specifically achieving 0.904
+95% CI, 0.865–0.949)/0.946 (95% CI, 0.929–0.977) and 0.891 (95%
+I, 0.822–0.939)/0.939 (95% CI, 0.907–0.973) respectively for valida-
+ion, as observed in Figure 7 . Alongside the confusion matrix-related
+etrics, the AUC scores of the proposed prognostic models were also
+nalyzed as in Figure 8 for validation and in Figure 9 a for testing. 
+. Discussion 
+In this study, we developed an ML-aided radiomics signature to pre-
+ict microcalcifications as cancerous or noncancerous and found 10 in-
+erpretable textures as malignancy-related. It demonstrated a moder-
+te prognostic performance for non-palpable MCs status in our clinical
+ataset, presenting possibility to provide clinical guidance in pertinent
+herapy. 100 For the signature construction, 837 textures and 9 shapes serving as
+eature candidates were trimmed to the 10 most contributive, among
+hich GLCM-associated characteristics following the coiflet transfor-
+ation and first-order statistics succeeding to the LoG spatial filtering,
+.g., “wavelet-HH_glcm_Imc2 ”, “log-sigma-3-mm-3D_firstorder_Energy ”
+nd “log-sigma-1-mm-3D_firstorder_Mean ”, dictated the discriminabil-
+ty of the classification model. More specifically, the selected radiomics
+eatures translated properties such as heterogeneity, uniformity and dis-
+rder of mammographic MCs into computable values. It is also worth
+oticing that all the shape indicators were excluded by the OLS - because
+M. Li, L. Zhu, G. Zhou et al. Intelligent Medicine 1 (2021) 95–103 
+Figure 9. AUC (a) and ACC (b) results using 35 view images of 20 patients. 
+Figure 10. Significance of difference between benign/malignant shapes tested by ANOVA. 
+Figure 11. Misclassified ROIs from the benign cases (a-b) and the malignant (c-d). 
+their obscurity in feature importance ranking against textural ones
+uring backward elimination - despite their P value suggesting signifi-
+ant difference between their benign and malignant groups in ANOVA
+ P < 0.05) as presented by Figure 10 . This obscurity is also demon-
+trated in Figure 3 as the first three shape2d-related features yielded
+ values in t -test greater than 0.05. As to the classification, varied ma-
+hine learning-based methods also influenced the final result. In our
+resent study, LR and SVM proved to be more robust with higher prog-
+ostic AUC, generally outclassing KNN and GaussianNB as reported in
+able 2 . 
+Table 3 compares the overall performance from the corresponding
+ross validation of previous benchmark radiomics studies on the breast
+ancer classification with that of our study. Notably, only Chen et al.
+26] among the benchmarks in question had the BI-RADS category of101 heir image dataset clearly stated. The majority of existing radiomics
+tudies performed their predictive model on medical image cohorts
+hroughout BI-RADS categories 2–5, which decentralized the discrim-
+native target to some extent owing to the visible deference between
+amples at BI-RADS 2–3 and those at BI-RADS 5. In contrast to previ-
+us studies, our radiomics signature model exhibits certain competence
+y tan AUC score of 0.906 and handled a more challenging task, par-
+icularly in regard to pure mammographic microcalcifications that are
+uspicious for or highly suggestive of malignancy, namely with BI-RADS
+qual to 4. 
+There are some drawbacks and limitations in our project that require
+odifications. Figure 11 displays four misclassified samples from ROIs
+athologically confirmed as benign and malignant respectively. Despite
+heir inappreciable distinction, possible causes and further suggestions
+M. Li, L. Zhu, G. Zhou et al. Intelligent Medicine 1 (2021) 95–103 
+Table 3 Comparison of the validation performance with the previous benchmark studies 
+Sources Dataset/Size (n) Feature type AUC (95% CI) ACC 
+Li et al. (2018) [10] Non-public/388 Radiomics (energy, entropy, etc.) + Clinical statistics (age, the 
+status of lymph node metastasis, etc.) 
+0.72 
+(0.63–0.81) 
+- 
+Chen et al. (2019) [26] Non-public/81 Mammographical features pixel intensity-based 
+metrics) + MRI features (kinetic metrics) 
+0.903 0.815 
+Fanizzi et al. (2020) [27] BCDR [29] /130 Multiscale wavelet textures 0.921 0.885 
+Chen et al. (2015) [28] DDSM [30] /300 Topology (graph) 0.91 ± 0.05 0.852 ± 0.057 
+George et al. (2019) [31] DDSM/289 Topology (chain) 0.892 ± 0.008 0.865 ± 0.013 
+Suhail et al. (2019) [32] DDSM/288 Topology (tree) - 0.79 
+This work Non-public/463 Textures (first-order statistics, etc.) + Shapes (Elongation, etc.) 0.906 
+(0.834–0.969) 
+0.787 
+(0.680–0.855) 
+AUC: area under the surve; ACC: accuracy.
+Firstly, it was labor-consuming and clinician-
+ependent to manually annotate the ROI areas as we carried out in the
+tudy, thereafter calling for the prospective auto-detection techniques
+n the fine morphology and distribution of MCs. Secondly, the absence
+f shape signatures was at variance with empirical knowledge from ra-
+iologists, implying that more morphological statistics should be sup-
+lementally scrutinized. Thirdly, PRBF performed in this study was not
+ompetent enough to take more correlation other than linearity into
+onsideration during redundancy elimination requiring more elaborated
+tudy on other non-linear relationship. Finally, considering that the AUC
+as down from 0.906 (95% CI, 0.834–0.969) to 0.810 (95% CI, 0.760–
+.960) with the participation of our independent dataset, large-scale
+uture cases from more centers should be enrolled to further evaluate
+nd adjust our model. 
+In conclusion, our study extracted radiomics features depicting
+he distributional characteristics of breast MCs followed by XGBoost-
+mbedded RFE as feature selection to constitute a predictive radiomics
+ignature and to achieve moderate performance. Besides, the studied
+nterpretable textural signature more or less disclosed some underlying
+elevance to malignant lesions as reported by our probe into their per-
+ormance of PPV/SE and NPV/SP. 
+onflicts of interest statement 
+The authors declare that they have no competing interests. 
+unding 
+This work was supported in part by the State’s Key Project of
+esearch and Development Plan (Grant Nos. 2017YFC0109202 and
+017YFA0104302), in part by the National Natural Science Foundation
+Grant No. 61871117), in part by Science and Technology Program of
+uangdong (Grant No. 2018B030333001). 
+uthor contributions 
+Yanni Jiang and Yang Chen contributed to the conceptualization and
+unding acquisition. Liyu Zhu was responsible for the data curation. For-
+al analysis and Methodology were jointly performed by Min Li and
+ianan He. Min Li wrote the manuscript. Guangquan Zhou, Yanni Jiang
+nd Yang Chen edited and reviewed the manuscript. 
+cknowledgements 
+The authors gratefully acknowledge the First Affiliated Hospital
+f Nanjing Medical University for their clinical digital mammography
+ataset support.

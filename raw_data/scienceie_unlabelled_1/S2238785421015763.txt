@@ -1,0 +1,857 @@
+Lightweight structure of transportation vehicles is an effective
+way to achieve energy conservation and emission reduction.
+To this end, lightweight materials like Al alloys and Mg alloys
+have been used more and more in automobile industry. This
+has inevitably led to challenges in joining Al alloys and Mg
+alloys, and dissimilar welding is able to employ the).
+by Elsevier B.V. This is
+).advantages of both materials simultaneously [1]. Friction stir
+welding (FSW), as a solid-state process, is especially suitable
+for joining dissimilar Al/Mg alloys. It can avoid defects caused
+by melting/solidification in fusion welding and produce very
+low residual stress and distortion [2e4].
+During the FSW process with intense plastic deformation
+and frictional heating, dynamic recrystallization (DRX) can
+occur in three types: continuous dynamic recrystallizationan, discontinuous dynamic recrystallization (DDRX) and
+geometric dynamic recrystallization (GDRX) [5e7]. DRX during
+FSW has an important effect on the grain microstructure
+refinement in the weld nugget zone (WNZ). For FSW of the
+samemetal (Al alloy or Mg alloy), the resultant grain structure
+in the weld is usually the main factor affecting the joint
+strength. For dissimilar FSW of Al/Mg alloys, the joint strength
+primarily depends on metallurgical bonding by formation of
+intermetallic compounds (IMCs) and mechanical interlocking
+due to the tortuous bonding interface [1,2,8,9]. The amount
+and thickness of brittle IMCs have to be controlled within
+appropriate ranges [10]. On the other hand, the microstruc-
+tures in dissimilar welds are still critical to determine the joint
+quality, and the abnormal grain structure will also severely
+affect the properties of the joints. At the same time, the
+corrosion resistance of the joints is dependent on the grain
+microstructure in WNZ [11,12]. Therefore, the evolution of
+grain structures in dissimilar welds should be deeply investi-
+gated. However, previous studies only focused on the micro-
+structure evolution of the same metal FSW welds [5e8]. For
+dissimilar FSW of Al/Mg alloys, the different thermodynamic
+properties of twomaterials and the IMCs formation will result
+in different characteristics of grain structures.
+Recently, in order to suppress the generation of IMCs and
+alleviate the influence of some inherent problems in FSW on
+joint strength [13], some modified FSW process have been
+proposed, such as under liquid nitrogen or underwater FSW
+[14,15]; water cooling assisted FSW [16]; heat assisted FSW
+[17]; and hybrid laser friction stir welding [18]. Nonetheless,
+suchmodifications increased the operation difficulty and cost,
+which hinders their application in practice. Since ultrasonic
+vibration (UV), as a kind of mechanical energy, can lower the
+yield strength of materials during plastic deformation, UV has
+been applied to assist FSW of Al/Mg alloys [19e21]. As for the
+exertion mode of UV, Benfer et al. [19] applied UV on one base
+material via a roller, while Ji et al. [20] and Liu et al. [21] placed
+an ultrasonic generator toward the bottom of Mg plates. The
+authors’ group developed a different system, which applies
+UV directly on the top surface of basematerials and in front of
+the tool, namely the ultrasonic vibration enhanced friction stir
+welding (UVeFSW) [10,22]. Our previous studies have shown
+that the ultrasonic field cannot only promote the mixing of Al
+and Mg materials, but also inhibit the growth of IMCs, so as to
+significantly improve the joint strength in Al/Mg dissimilar
+FSW [10,23e25]. However, the underlying mechanism of
+UVeFSW in dissimilar Al/Mg alloys and its influence on the
+microstructure evolution have not been elucidated.
+In this work, the FSW and UVeFSW butt welding of dis-
+similar Al/Mg alloys were carried out, and the grain structuresTable 1 e Nominal composition and mechanical properties of
+Alloy Nominal chemical compositio
+Si Fe Cu Mn Mg
+6061-T6 0.51 0.20 0.30 0.009 1.09
+AZ31BeH24 0.016 0.001 0.003 0.44 Bal.
+(Note: the suppliers of 6061-T6 and AZ31BeH24 were Jinan Zhixin Alum
+Products Co., Ltd. (Luoyang, China), respectively.).in different regions of the welds under different welding
+conditions were characterized. The grain size, misorientation
+angle distributions and textures on both sides of bonding
+interface were compared. The DRX mechanisms at different
+locations in WNZ were analyzed, and the influence of UV on
+the grain structure evolution in dissimilar FSW of Al/Mg alloys
+were discussed.2. Experimental
+6061-T6 Al alloy and AZ31BeH24 Mg alloy plates with a
+thickness of 3 mm were butt welded. Their chemical compo-
+sition and mechanical properties are listed in Table 1. Fig. 1
+shows the experimental set-up. The ultrasonic vibration was
+directly acted on the workpieces in front of the tool via the
+sonotrode with an angle of 40 relative to the workpiece sur-
+face and a distance of 20 mm away from the tool axis. In this
+experiment, the UV frequency was 20 kHz, and the output
+power was about 220 W. Conventional FSW and UVeFSW ex-
+periments were made to compare the difference of micro-
+structure evolution in dissimilar Al/Mg alloys WNZs.
+According to the experimental optimization results, the
+test conditions were as follows: the tool rotating speed was
+800 rpm, the welding speeds ranged from 30 to 80 mm/min,
+the tilt angle of the tool was 2.5, and the plunge depth of the
+shoulder was 0.15 mm. Mg alloy plates were placed on the
+advancing side (AS) while Al plates were on the retreating side
+(RS), and the pinwas offset to theMg alloy side by 0.3mm. The
+tool used, made of H13 tool steel, consisted of a concave
+shoulder with a diameter 12 mm and a cone-shaped pin with
+right-hand thread. The tip and root diameters of pin were 3.2
+and 4.2 mm, respectively, and the length was 2.75 mm. For
+description convenience, C is used to represent the conven-
+tional FSW tests, while U is used to represent the UVeFSW
+tests, that is, C-800-30 means the conventional FSW test with
+process parameters 800 rpm-30 mm/min, while U-800-50
+means the UVeFSW test with process parameters 800 rpm-
+50 mm/min.
+After welding, the metallographic samples were cut by
+electric spark wire cutting machine. Then, samples were
+grounded and polished with different sets of emery papers up
+to 1000 grit and followed by 0.5 mm diamond slurry. For elec-
+tron backscattered diffraction (EBSD) characterization, the ion
+beam slope cutter (Leica EM TIC 3  ) was used to remove the
+surface stress of the samples. The field emission scanning
+election microscope (FE-SEM) (Zeiss Gemini 500) was used to
+collect the grain microstructure information in the weld. In
+the process of EBSD characterization, the scanning step sizebase material.
+n (wt. %) Mechanical properties
+Cr Ti Zn Al UTS (MPa) EL (%)
+0.13 e 0.05 Bal. 294 10
+e e 1.10 3.05 260 12
+inum Industry Co., Ltd (Jinan, China) and Luoyang Shengte Metal
+Fig. 1 e Schematic of the FSW and UVeFSW of dissimilar Al/Mg alloys.
+was 0.1 mm for the regions in WNZ and 0.3 mm for the thermal
+mechanical affected zone (TMAZ).
+For macrostructure observation, the Al alloy side was
+etched firstly by Keller reagent (1 ml HF þ 1.5 ml HCl þ 2.5 ml
+HNO3 þ 95ml H2O) for 5 s. Then, the Mg alloy side were etched
+by picric acid solution (4.2 g picric acidþ 70ml ethanolþ 10ml
+acetic acidþ 10ml H2O) for 10 s. Themacrographs of thewelds
+were taken by Zeiss Daheng Invasion USB cameramicroscope.3. Results and discussion
+3.1. Microstructure of base materials
+Fig. 2 shows the microstructure of base materials (6061-T6 Al
+alloy and AZ31BeH24 Mg alloy). The grains in Al alloy are long
+strips, as shown in Fig. 2a, and the average grain size is
+~32.8 mm. The grain boundary information is shown in Fig. 2b,
+where the green boundaries represent low angle grain
+boundaries (LAGBs) and the black boundaries represents high
+angle grain boundaries (HAGBs). Most of the grain boundaries
+in Al base material are HAGBs, and the proportion of LAGBs is
+only 3.9%. Moreover, it can be seen from the misorientation
+angle distributions (Fig. 2c) that the grain orientation is close
+to random distribution. This illustrates that the grains in Al
+base material did not have preferred orientation during
+growth, which can also be found from the pole figures of Al
+base material (Fig. 3a), with no obvious texture formed.
+As shown in Fig. 2d, the Mg alloy base material contains
+both coarse grains (up to about 65 mm) and very fine grains
+(about 1 mm), which is the typical structure of hot-rolled Mg
+alloy [26], and the average grain size is ~5 mm. Moreover,
+different from the Al basematerial, Mg basematerial contains
+a large number of LAGBs (Fig. 2e), and its proportion is 47.6%.
+At the same time, there are some twin grains in Mg base
+material, and a peak value at about 86 inmisorientation angle
+distributions histogram (Fig. 2f), indicating that these twingrains are {101-2}<1-011> tensile twins. In addition, according
+to the pole figures (Fig. 3b), it can be determined that there is
+no obvious special texture in Mg base material, only the
+deflected {0001} basal texture, and the maximum texture in-
+tensity is 11.36 multiple of random density (MRD).
+3.2. Bonding interface morphology
+Fig. 4 shows the macrograph of the welds at transverse cross-
+section in FSW and UVeFSW. Different from the case of same
+material FSW, there is an obvious bonding interface in the
+WNZ of dissimilar Al/Mg alloys. The tortuous interface in-
+dicates that the Al and Mg strips interpenetrated with each
+other in WNZ, and formed mechanical interlocking struc-
+tures. It can be found that when UV was applied, the length of
+bonding interface increased, that is, the degree of mutual
+mixing of materials increased. This is related to the acoustic
+softening effect of UV, which reduces the material flow stress
+and promotes the material flow in the WNZ [10].
+At the same time, the metallurgical bonding was achieved
+by formation of the IMCs along the bonding interface. There-
+fore, the existence of Al/Mg bonding interface has an impor-
+tant impact on the joint strength. In this study, the
+observation of grain structure in the WNZ was mainly carried
+out along this interface. As schematically illustrated in Fig. 4g,
+the small red and yellow squares near the bonding interface
+indicate the EBSD observation positions on the Al side and the
+Mg side, respectively.
+3.3. Grain structure at mid-depth locations under
+different welding speeds
+3.3.1. Grain microstructure at A3 in the WNZ of the Al side
+Firstly, the grains at the WNZ in the Al side, i.e., location A3 in
+Fig. 4g, was characterized by EBSD. Fig. 5 shows the obtained
+grain microstructure morphology at A3 in FSW and UVeFSW
+under three levels of welding speed. In Fig. 5, the black grain
+Fig. 2 e IPF maps, GB maps and misorientation angle distributions of base materials (a, b, c): Al alloy; (d, e, f): Mg alloy.
+boundaries were the HAGBs, the silver gray grain boundaries
+were the LAGBs, and the division value between themwas 15.
+Regardless of FSW or UVeFSW, fine grains were formed in the
+WNZ on the Al side.When the welding speedwas 30mm/min,
+the grains had an obvious inclined downward deformation
+orientation, as shown by the black dotted line in Fig. 5a and b.
+Since the pin used in this study was cone-shaped with right-
+hand thread, the counterclockwise rotation of the pin during
+welding was conducive to promoting the downward flow of
+material [27], so that the grains had an inclined downward
+deformation orientation. When UV was applied in UVeFSW,
+such inclination angle was decreased, which may be due to
+the fact that UV field can effectively enhance thematerial flow
+in horizontal direction [21]. However, there was no inclined
+downward deformation orientation under other two welding
+speeds (50 and 80 mm/min), which may be because the ma-
+terial cannot flow downward effectively at the higher welding
+speed. The more specific reason requires a further detailed
+exploration of the material flow in Al/Mg dissimilar FSW.
+The fine grains in the WNZ of the Al side were obviously
+produced by DRX. It can be found that the boundaries of most
+grains were composed of some LAGBs and some HAGBs, such
+as the grains in the white circles in Fig. 5, which is a typicalfeature of CDRX [28]. In addition, it can also be observed that
+some elongated grains were decomposed into several sub-
+grains, which formed a LAGB with little difference in grain
+orientation, as shown by the black arrows in Fig. 5. This il-
+lustrates that GDRX also played a certain role [29], but CDRX
+should be the dominant mechanism of grain DRX.
+According to statistics of grain size in Fig. 5, for FSW with
+welding speed of 30, 50 and 80mm/min, the average grain size
+in Al sideWNZ was 0.92 ± 0.21; 1.18 ± 0.24; and 0.86 ± 0.24 mm,
+respectively. In UVeFSW, the corresponding average grain size
+was 0.79 ± 0.18; 0.98 ± 0.22 and 0.96 ± 0.26 mm, respectively. It
+can be found that after application of UV field, the grain size
+was refined at the welding speed of 30 and 50 mm/min, but it
+coarsened a little bit at the welding speed of 80 mm/min.
+However, the change of grains size with and without appli-
+cation of UV is small. This is because the thermo-mechanical
+action in FSW already refines the grains in WNZ to a consid-
+erable degree. The exerted UV, which just plays an auxiliary
+role, can only cause the change of grains size to a certain
+extent. It should be noted that the grain size in theWNZ of the
+Al side was very small (about 1 mm) in both cases of dissimilar
+FSWandUVeFSW.Usually, in FSWof the sameAl alloys (6061-
+T6) under the same rotation speed and higher welding speed,
+Fig. 3 e Pole figures of base materials. (a) Al alloy, (b) Mg alloy.
+the minimum average grain size in the WNZ was greater than
+2 mm [30]. This is because the temperature inWNZ during FSW
+of Al alloy is usually higher than that during dissimilar FSW of
+Al/Mg alloys [2].
+In addition, the average grain size increased first and then
+decreasedwith the increase of welding speed in both FSW and
+UVeFSW, although the grain size difference between 50 andFig. 4 e The weld morphology in FSW (a, c, e) and UVeFSW (b, d
+bonding interface (g).80 mm/min cases was very small in UVeFSW. Generally, the
+lower the welding speed is, the higher the welding heat input
+is, and the easier for grain to grow. The reason for this is that
+the recrystallized grain size in the WNZ is not only dependent
+on the temperature, but also dependent on the strain rate of
+material deformation. The specific relationship can be
+expressed by following equations [31e33]., f), and schematic of EBSD data acquisition locations near
+Fig. 5 e IPF maps of grain microstructures at location A3 (the WNZ in the Al side) in FSW and UVeFSW under different weld
+speeds.
+where dWNZ is the grain size in WNZ, dBM is the grain size in
+base materials, Z is the Zener-Holloman parameter, _ε is the
+strain rate, Q is the lattice diffusion activation energy, R is themolar gas constant, T is the temperature in WNZ, Rm is the
+average material flow rate (about half the rotation speed), re is
+the effective radius of dynamic recrystallization region, Le is
+the effective depth of dynamic recrystallization region, Tm is
+themelting point of basematerials,u is the rotation speed, v is
+the welding speed, K and a are constants.
+Based on Eqs. (1)e(4), the higher the temperature, the larger
+the grain size in the WNZ, while the larger the strain rate, the
+smaller the grain size. Therefore, when the welding speed
+increased, on one hand, the decreasing of temperature
+reduced the grain size, but on the other hand, the decrease of
+strain rate increased the grain size. Under the complex action
+of these two effects, the grain size did not change monoto-
+nously with the increase of welding speed. With applied UV
+Fig. 6 e Grain microstructure information at location A3 (the WNZ in the Al side) in FSW and UVeFSW. (a) Misorientation
+angle distribution, (b) LAGBs fraction, (c) Comparison of recrystallization degree.
+field, the acoustic softening effect can significantly reduce the
+deformation stress of the material, so as to promote the ma-
+terial deformation [34,35] and increase the strain rate
+[10,22,23]. Moreover, the UV field has little effect on the
+welding temperature [10]. Thus, theoretically, the grain size
+will be reduced after applying UV, which is also validated by
+above-mentioned test results. As for the increase of average
+grain size at welding speed of 80 mm/min, it will be discussed
+in detail in Section 4.
+Fig. 6 shows the misorientation angle distribution, LAGBs
+fraction and recrystallization degree at location A3 in the
+WNZ of the Al side. It can be found that after the application
+of UV, LAGBs fraction decreased, and the recrystallization
+degree of grains increased, which indicates that more LAGBs
+were transformed into HAGBs in UVeFSW. Hu et al. [29] also
+found that the UV field can promote the recrystallization
+behavior of grains in FSW of same 2219 Al alloy, which is
+consistent with the results of dissimilar UVeFSW in this
+study. In contrast, in C-800-80, although the recrystallization
+degree of the grains was low, there were a large amount of
+extremely fine grains (as shown by the white arrows in
+Fig. 5e), which reduced the average grain size. When the
+welding speed was 30 and 50 mm/min, the grain morphology
+well conformed to the law that the LAGBs fraction decreases,the recrystallization degree increases, and the grain size is
+refined. In addition, with the increase of welding speed, the
+recrystallization degree decreased gradually, which is mainly
+because the dislocation motion rate decreased with the
+decrease of welding heat input, which affected the dynamic
+recrystallization process.
+3.3.2. Grain microstructure at B3 in the WNZ of the Mg side
+The grain microstructure at location B3 in the WNZ of the Mg
+side is shown in Fig. 7. Different from the Al alloy side, no
+obvious deformation orientation of grains was found in the
+WNZ atwelding speed of 30mm/min,whichmay be due to the
+different recrystallization processes of Al alloy andMg alloy. It
+was observed that most grain boundaries in the WNZ of the
+Mg side were also composed of some HAGBs and some LAGBs,
+as shown in the white circles marked in Fig. 7, indicating that
+CDRX had occurred. At the same time, some grain boundaries
+expanded outward and formed new grains at the grain
+boundary, as shown by the black arrows in Fig. 7, which ac-
+cords with the typical characteristics of DDRX [36]. Therefore,
+the recrystallization mechanism in the WNZ of the Mg side
+includes CDRX and DDRX, which is consistent with the
+recrystallization mechanism in FSW of similar Mg alloys
+[36,37].
+Fig. 7 e IPF maps of grain microstructures at location B3 (the WNZ in the Mg side) in FSW and UVeFSW under different weld
+speeds.
+In FSW, when the welding speed was 50 and 80 mm/min,
+most grains in the WNZ of the Mg side had obvious <0001>
+orientation. But in UVeFSW, this phenomenon only appeared
+in theweldmadewithwelding speed 50mm/min. Thismay be
+due to the change in the degree of grains recrystallization and
+thematerial flow after the application of UV field. According to
+statistics of grain size in Fig. 7, the average grain size at
+location B3 was 1.68 ± 0.26; 2.57 ± 0.43 and 2.38 ± 0.36 mm in
+FSW under weld speed of 30, 50 and 80 mm/min, respectively.
+With applied UV, the average grain size at location B3 was
+0.93 ± 0.19; 2.32 ± 0.44 and 2.02 ± 0.41 mm in UVeFSW,
+respectively. With the increase of welding speed, the grain
+size in the WNZ of the Mg side first increased and then
+decreased, similar to the case on the Al side. This indicatesthat in the same weld, although the materials are different at
+two sides, the variation law of grain size affected by temper-
+ature and strain rate is the same. But the grain size at B3 (the
+WNZ in the Mg side) was generally larger than that at A3 (the
+WNZ in the Al side). This is not only related to the different
+stacking fault energy of Al and Mg materials, but also related
+to the original grain size of two base materials [28,38]. How-
+ever, compared with the cases of same Mg alloy FSW or dis-
+similar Mg alloy FSW [36,38], the grain size in the WNZ of the
+Mg side is much smaller in dissimilar FSW of Al/Mg alloys.
+This is also due to the relatively low welding temperature in
+dissimilar FSW of Al/Mg alloys [2].
+When the welding speed was 30 mm/min, the grain size in
+the WNZ of the Mg side changed greatly before and after the
+Fig. 8 e Grain microstructure information at location B3 (the WNZ in the Mg side) in FSW and UVeFSW. (a) Misorientation
+angle distribution, (b) LAGBs fraction, (c) Comparison of recrystallization degree.
+application of UV, from 1.68 mm reduced to 0.93 mm.Moreover,
+it can be found from Fig. 8a and b that the LAGBs fraction
+decreased greatly with UV field. At the same time, the
+recrystallization process was greatly improved (Fig. 8c).
+However, such a significant UV effect was not found in other
+two cases (50 and 80mm/min). FSW is a complex process with
+coupled thermal-mechanical-material flow behaviors, and
+the influence mechanism of UV field on the multi-field phys-
+ical coupling needs to be further studied.
+Some twin grainswere found in case C-800-50, as shown by
+the white arrow in Fig. 7c. And it can also be seen from Fig. 8a
+that the misorientation angle has an obvious peak at about
+86. Similar phenomenon was also observed in FSW of Mg
+alloys by other scholars [36,39], and explained that this should
+be related to the transformation of twin boundary into HAGBs
+during large strain deformation. However, no twins were
+found in the weld of U-800-50. When the welding speed was
+80 mm/min, the misorientation angle was mainly distributed
+in the range of 10e30. With applied UV field, the misorien-
+tation angle was widely distributed in the range of 2e93. This
+also occurred at the case of welding speed 30 mm/min. Mir-
+onov et al. [36] pointed out that when themisorientation angle
+was widely distributed between 15 and 93, DDRX occurred.
+Therefore, in the FSW cases of C-800-30 and C-800-80, thedominant recrystallization mechanism was CDRX, while in
+UVeFSW that was DDRX. In the CDRX process, a large amount
+of LAGBs are generated, and then these LAGBs gradually
+transform to HAGBs. However, in DDRX process, it does not
+need to produce a large amount of LAGBs to complete the
+recrystallization process. In addition, the higher degree of
+recrystallization means that more LAGBs have been trans-
+formed to HAGBs. That is why the LAGBs fraction decreases
+significantly when UV was applied at welding speed 30 mm/
+min.
+Similarly, the dominant recrystallization mechanism of
+grains was CDRX in both C-800-50 and U-800-50. However, the
+twin recrystallization mechanisms also appeared in C-800-50.
+This illustrates that UV has an important effect on the
+recrystallization process of grains in the WNZ of the Mg side.
+Meanwhile, Fig. 8c shows that under the welding speed of 30
+and 80 mm/min, the application of UV significantly improved
+the recrystallization degree of grains. In addition, it is worth
+noting that for both FSW and UVeFSW, there was a peak in the
+misorientation angle at about 30. This is because the
+maximum rotation angle of grain orientation around the c-
+axis will not exceed 30 whenMg alloy grains recrystallize and
+grow, since Mg has hexagonal close-packed crystal structure
+[36,40,41].
+Fig. 9 e IPF maps of grain microstructures at locations A1-A4 (the WNZ in the Al side) in FSW and UVeFSW (welding speed
+50 mm/min).
+03.4. Variation of grain microstructure along weld depth
+direction
+Since the shoulder has a big diameter than the pin, the ma-
+terial in the WNZ at different depths experiences different
+thermo-mechanical actions during the FSW process [42]. This
+uneven distribution of temperature and strain/strain rate
+along the thickness direction has an important impact on the
+microstructures of the weld [43]. Therefore, four different
+depth positions (A1-A4 and B1eB4 in Fig. 4g) were selected
+along the Al/Mg bonding interface to observe the grain
+microstructure.
+3.4.1. Grain microstructure at A1-A4
+In Al alloy side, the EBSD scanning positions were A1-A4 as
+shown in Fig. 4g. Fig. 9 presents the grain microstructures at
+four locations A1-A4 in FSW and UVeFSW welds made at
+welding speed of 50 mm/min (the joint was with the highest
+strength at thiswelding speed [23]). Since locationA1was only
+0.5 mm below the top surface of the weld, the material here
+underwent severe plastic deformation due to the influence of
+the shoulder, and the grains were pulled into stripes with
+obvious deformation orientation in the horizontal direction,
+as shown by the white dotted line in Fig. 9a and e. Location A2
+was a little far away from the shoulder, and was less affected
+by the shoulder, so that the grains here were only slightly
+elongated (Fig. 9b and f). The grains in regions A3 and A4,
+mainly affected by the pin, experienced relatively lower strain
+and strain rate, so that they were composed of equiaxed
+grains. However, the grains at region A4 had an obvious in-
+clined downward deformation band (as shown by the white
+dotted lines in Fig. 9d and h), which was related to the localmaterial flow. Only in term of grainmorphology, there was no
+obvious difference in FSW and UVeFSW. In addition, due to
+the influence of shoulder, the recrystallization process of
+grains in region A1was greatly affected by strain. As shown by
+the black arrows in Fig. 9, many elongated grains were
+decomposed into several sub-grains with the same orienta-
+tion, which shows that GDRX played an important role in re-
+gion A1. However, this phenomenon was less obvious in
+regions A2-A4 where CDRX became the major recrystalliza-
+tion mechanism of grains.
+According to statistics of grain size in Fig. 9, for FSW
+sample, the average grain size in regions A1-A4 was
+0.67 ± 0.18; 0.91 ± 0.26; 1.18 ± 0.24 and 0.93 ± 0.25 mm,
+respectively. In UVeFSW, the average grain size was
+0.62 ± 0.16; 0.96 ± 0.23; 0.98 ± 0.22 and 0.96 ± 0.23 mm,
+respectively. In both FSW and UVeFSW welds, the average
+grain size increased first and then decreasedwith the increase
+of the distance from the top surface of the weld, although the
+grain size difference is small. The minimum grain size
+appeared at the position close to the shoulder (region A1),
+while the maximum grain size occurred at the mid-depth of
+the weld (region A3). In addition, it is worth noting that there
+was almost no difference in the average grain size at locations
+A2, A3 and A4 in UVeFSW, but a significant size difference
+existed there in FSW. This should be due to the UV field
+induced variation of thermal-mechanical process in WNZ.
+When the UV field was applied, the average grain size at lo-
+cations A1 and A3 decreased and increased at locations A2
+and A4, but the difference in grain size was very small in FSW
+andUVeFSWof dissimilar Al/Mg alloys. Hu et al. [44] found the
+grain size in the WNZ of 2219-T6 Al alloy FSW increased after
+the application of UV field. Gao et al. [45] and Padhy et al. [30]
+Fig. 10 e Grain microstructure information at locations A1-A4 in FSW and UVeFSW. (a) Misorientation angle distribution, (b)
+LAGBs fraction, (c) Comparison of recrystallization degree.
+found that the grain size in the WNZ of 2024-T3 or 6061-T6 Al
+alloy FSW was refined after applying UV. Therefore, the UV
+effect on the grain microstructure evolution is more compli-
+cated in dissimilar FSW, and further study needs to bemade in
+this aspect.
+Fig. 10 shows the misorientation angle distribution, LAGBs
+fractionandrecrystallizationdegreeof grains in regionsA1-A4.
+It is worth noting that the LAGBs fraction in regions A1-A4
+increasedfirst and thendecreased (Fig. 10b), and theminimum
+valuewas foundat regionA1,but the recrystallizationdegreeof
+grains at region A1 was not the largest, which was slightly
+lower than that in region A2 (Fig. 10c). This should be due to
+different mechanisms of grain recrystallization. In region A1,
+the grains were greatly affected by the strain in shoulder
+affected zone, GDRX was the main recrystallization mecha-
+nism, while other regions were less affected by shoulder, and
+CDRX was the main recrystallization mechanism. Therefore,
+the grains in region A1 did not need to gradually transform
+from LAGBs to HAGBs during the recrystallization process.
+Moreover, the misorientation angle in region A1 was mainly
+distributed in the high angle range (Fig. 10a). With application
+of UV field, although there was no obvious difference in the
+recrystallization mechanism and the misorientation angledistribution in regions A1-A4, the degree of recrystallization
+has been improved to varying degrees (Fig. 10c).
+3.4.2. Grain microstructures at B1eB4
+Fig. 11 shows the grain microstructures at different depth
+positions (B1eB4 in Fig. 4g) in the WNZ of the Mg side. In re-
+gion B1, the grains have obvious <0001> orientation, while for
+other locations, except region B4 in UVeFSW, most grains
+were close to <0001> orientation. This phenomenon is related
+to the fact that the material flow during welding is mainly
+affected by the shear force of the pin [38]. For the region B4 in
+UVeFSW, it is at the bottom of the WNZ. Generally, the Al/Mg
+material will be violently mixed here under the influence of
+the tip end of the pin [9,23,44]. Therefore, the flow of the
+material is more complex, and the grain orientation is no
+longer simply affected by the shear force of the pin. In addi-
+tion, the grains in region B1 were equiaxed, which was
+different from that of Al alloy side where grains were elon-
+gated under the influence of shoulder. This should be due to
+the different stacking fault energy of Al and Mg, resulting in
+different recrystallization processes.
+According to statistics of grain size in Fig. 11, the average
+grain size of regions B1eB4 in FSWwas 1.41 ± 0.23; 1.64 ± 0.35;
+Fig. 11 e IPFmapsofgrainmicrostructuresatB1eB4 (theWNZintheMgside) inFSWandUVeFSW(weldingspeed50mm/min).
+22.57 ± 0.43 and 1.88 ± 0.31 mm, respectively. In UVeFSW, the
+average grain size at B1eB4 was 1.08 ± 0.22; 1.66 ± 0.38;
+2.32 ± 0.44 and 0.92 ± 0.37 mm, respectively. The grain size in
+theMg alloy side was larger than that in the Al alloy side.With
+the increase of the distance from the top surface of the weld,
+the average grain size in regions B1eB4 first increased and
+then decreased, and the maximum grain size was at the mid-
+depth of the weld (B3), like the case at the Al alloy side. With
+application of UV, the grain size in regions B1, B3 and B4
+decreased, and only the grain size in region B2 increased
+slightly. And except for region B4, the differences in other
+regions are also very small like that in the Al alloy side.
+Different from the Al alloy side, the smallest grain size at
+theMg alloy side in UVeFSWdid not appear in region B1, but in
+region B4. This was because region B4 contains fine grain area.
+As shown in Fig. 11h, it can be divided into coarse grain area
+and fine grain area according to grain size, and its boundary
+was roughly defined by the black dotted line. After statistics,
+the average grain size of coarse grain area and fine grain area
+was ~1.41 mm and ~0.82 mm, respectively. This demonstrates
+that the material here underwent ununiform plastic defor-
+mation. Region B4 locates in the severe mixing zone, so that
+the grain evolution at different points of this region is
+different. In this study, the EBSD scanning region was deter-
+mined just according to the distance from the bottom of the
+weld. This also be the reason why the grain microstructure is
+so different between CeB4 and UeB4. Therefore, further
+experimental research is needed to understand the evolution
+process of grains in different locations at the bottom of the
+weld.
+Fig. 12 shows the microstructure information of the grains
+at locations B1eB4 in FSW and UVeFSW. For regions B1eB3 inboth FSW and UVeFSW, the misorientation angle was mainly
+distributed at 2-30, and there were peaks at about 2 and 30.
+But the grain misorientation angle in region B4 was widely
+distributed at 2-90, and there was a peak only at about 30.
+The reason for this difference may be that the dominant
+recrystallization mechanism is different [36], that is, the
+dominant mechanism in region B1eB3 is CDRX, while in re-
+gion B4 it is DDRX. Therewas also an obvious peak at about 86
+in region B3 in FSW. This is because twin grains appeared at
+region B3 in FSW, as shown by the white arrow in Fig. 11c.
+There was no obvious difference between FSW and UVeFSW
+in the misorientation angle distribution in other regions.
+According to statistics, the LAGBs fraction in region B4 was
+the lowest, which was 11.7% in FSW and 8.1% in UVeFSW
+(Fig. 12b). On one hand, this is due to the high degree of
+recrystallization in this region (Fig. 12c), on the other hand,
+DDRX does not produce a large amount of LAGBs. The regions
+B1eB3 contained a large amount of LAGBs. The LAGBs in re-
+gion B1 was the largest in FSW, while in UVeFSW the LAGBs in
+region B2 was the largest. Moreover, with application of UV
+field, the LAGBs in region B2 increased, but the recrystalliza-
+tion degree of grains in each region was improved to varying
+degrees. This is because that UV not only promotes the grain
+recrystallization process, but also affects the grain recrystal-
+lization mechanism. That is, the area fraction of grains with
+CDRX or DDRX changes. It can be concluded that although the
+grains in the Mg alloy side and the Al alloy side experienced
+almost similar thermalemechanical processes during the
+welding, there were different evolution regularities of grain
+microstructures at both sides along the weld depth direction
+due to the different stacking fault energy and initial grain size
+of base materials.
+Fig. 12 e Grain microstructure information in B1eB4 of FSW and UVeFSW, (a) Misorientation angle distribution, (b) LAGBs
+fraction, (c) Comparison of recrystallization degree.
+j o u r n a l o f ma t e r i a l s r e s e a r c h and t e c hno l o g y 2 0 2 2 ; 1 7 : 1e2 1 133.5. Grain microstructure in the TMAZ
+To better understand the ultrasonic influence on the changes
+of grain structures in different regions of the weld, the grains
+in thermal mechanical affected zone (TMAZ) were character-
+ized and analyzed.
+Fig. 13 shows the grain microstructure information at
+locationA5 (Fig. 4g) in theTMAZof theAl alloy side. It shouldbe
+noted thatbecauseUVcausedexpansionof theWNZvolume in
+UVeFSW [10,23,44], the selected checking point A5 in UVeFSW
+was a little bit farther from the weld centerline than that in
+FSW, as indicated in Fig. 4g. There were large grains and fine
+grains at location A5 in the TMAZ of the Al alloy side, and the
+fine grains were mainly distributed at boundaries of large
+grains, formed a typical necklace structure (Fig. 13a and c).
+Fromthegrainboundaries images (Fig. 13band f), it canbe seen
+that a large amount of LAGBs were formed in the TMAZ of the
+Al alloy side. Its proportion in FSWandUVeFSWwas 72.7%and
+68.4%, respectively. In the welding process, although the ma-
+terial here did not directly contact with the tool, plastic defor-
+mation still occurred under the driving of the material flow in
+the stirred zone, resulted in a lot of dislocations generated in
+grains. And these dislocations formed LAGBs through aggre-
+gation and rearrangement. Simultaneously, dislocationswould accumulate here first because of the high distortion
+energy at the original grain boundaries.
+Fig. 13d and h are KAM (kernel average misorientation)
+images, which were plotted with the average value of the
+orientation deviation between each pixel and the nearest
+pixel. It can be used to qualitatively indicate the uniformity of
+the plastic deformation of thematerial, and indirectly indicate
+the dislocation density of the material [46]. The higher KAM
+value indicates that it has larger strain and higher dislocation
+density. In Fig. 13d and h, the grain boundaries have higher
+KAM values, indicating the accumulated dislocations here.
+Under continuous action of deformation and heat, the LAGBs
+can transform to the HAGBs by absorbing and consuming
+dislocations, thereby formed new grains on original grain
+boundaries. This is a typical CDRX process, and this process
+would significantly reduce the dislocation density. As shown
+in Fig. 13, the grains in the area marked by the black circles or
+ellipses had completed recrystallization process, and thus had
+a lower dislocation density. When the UV field was applied,
+although there was not much difference in the morphology of
+the grain structures here, the degree of recrystallization was
+improved.
+Fig. 14 shows the grain microstructure information at
+location B5 (Fig. 4g) in the TMAZ of the Mg alloy side. The
+Fig. 13 e IPF maps (a,e), GB maps (b,f), grain morphology maps (c,g) and KAM maps (d,h) at A5 in Al side TMAZ (50 mm/min).
+(a, b, c, d): FSW; (e, f, g, h): UVeFSW.
+Fig. 14 e IPF maps (a,e), GB maps (b,f), grain morphology maps (c,g), KAM maps (d,h), misorientation angle distribution (i)
+and calculated grain size (j) at B5 in Mg side TMAZ (50 mm/min). (a, b, c, d): FSW; (e, f, g, h): UVeFSW.
+j o u r n a l o f ma t e r i a l s r e s e a r c h and t e c hno l o g y 2 0 2 2 ; 1 7 : 1e2 114
+Fig. 15 e {101} and {111} pole figures at location A3 (the WNZ in the Al side) under different weld speeds. SPN-shear plane
+normal, SD-shear direction.
+Fig. 16 e The standard {111} pole figure of FCCmetals under
+simple shear. SPN-shear plane normal, SD-shear direction.
+j o u r n a l o f ma t e r i a l s r e s e a r c h and t e c hno l o g y 2 0 2 2 ; 1 7 : 1e2 1 15difference from the Al side was that the grain size here was
+relatively uniform. Meanwhile, Fig. 14c and g demonstrate
+that the grains in the TMAZ of the Mg alloy side have higher
+degree of recrystallization than that in Al side. There may be
+two reasons for this difference. First, in this study, Mg alloy
+was placed on the AS, so that it experienced more severe
+plastic deformation. Second, the Al alloy and Mg alloy have
+different stacking fault energy and deformability, so that the
+conditions for occurring recrystallization were different.
+According to statistics of grain size in Fig. 14, the average
+grain size at the TMAZ of the Mg alloy side in FSW and
+UVeFSW was 3.34 ± 0.52 and 2.51 ± 0.42 mm, respectively.
+Obviously, the grains were refined when the UV was applied,
+which should be due to the recrystallization process promoted
+by UV field. In addition, themisorientation angle in FSWhad a
+higher peak value at low angles (2-5), and had a wide distri-
+bution in the range of 20e90, as shown in Fig. 14i. In UVeFSW,
+the grain misorientation angle was mainly distributed in the
+range of 2e30, and had an obvious peak at about 30. Mg base
+material contains large grains and small grains. These small
+grains would not undergo recrystallization under insufficient
+heat, so that some small grains may retained in the FSW.
+However, when the UV field was applied, the deformation
+degree of material increased, and the recrystallization degree
+increased, so that the original grains were replaced by
+recrystallized ones. Therefore, the misorientation angle dis-
+tribution in FSW and UVeFSW was different.3.6. Texture evolution
+3.6.1. Al alloy side
+During the welding process, the Al alloy material will arise
+preferred orientation during the grain growth process due to
+Fig. 17 e {101} and {111} pole figures at locations A1-A4 (the WNZ in the Al side, 50 mm/min).
+j o u r n a l o f ma t e r i a l s r e s e a r c h and t e c hno l o g y 2 0 2 2 ; 1 7 : 1e2 116the shearing and extrusion of the pin, and then form textures
+in WNZ. Fig. 15 shows the pole figures at location A3 in the
+WNZ of the Al side at different welding speeds after proper
+deflection. By compared with the {111} standard pole figure in
+the simple shear deformation of face-centered cubic metal
+(Fig. 16) [39], it can found that the texture component in C-800-
+30 was mainly C{001}<110> shear texture, while the texture
+component in U-800-30wasmainly A*
+1/ A
+*
+2 {111}<112> andA/ A
+{111}<110> shear texture.When the welding speedwas 50 and
+80 mm/min, the main texture components in FSW and
+UVeFSW were same. At 50 mm/min, it is mainly composed of
+C{001}<110> component, and at 80 mm/min, it was mainly
+composed of A*
+1/ A
+*
+2 {111}<112> and A/ A {111}<110> compo-
+nents. For different welding speeds, the texture component
+produced in the weld was different. In addition, when the
+welding speedwas 30mm/min, themaximum intensity of the
+texture was reduced with the application of UV field, from
+5.37 MRD (multiple of random density) to 3.80 MRD. This may
+be related to the appearance of different shear textures.
+However, when thewelding speedwas 50 and 80mm/min, themaximum intensity was increased, because the UV enhanced
+the material deformation in the WNZ.
+Fig. 17 shows the {110} and {111} pole figures at locations A1-
+A4 at Al side WNZ (welding speed 50 mm/min), and for the
+convenience to make comparison, they were also properly
+deflected. In FSW, the main texture components in locations
+A1, A2, and A4 were A*
+1/ A
+*
+2 and A/ A, and in location A3 was C
+component. In UVeFSW, the textures in location A1 was A*
+1/ A
+*
+2
+and C components, in location A2 was B/ B components, in
+location A3 was C component, and in region A4 was A*
+1/ A*
+2
+components. Except for the location A4, the texture intensity of
+other locations increased slightly when UV field was applied.
+It is worth noting that the B/ B and C components are
+common textures in FSW of similar Al alloy [47,48]. But in this
+study, the B/ B component only appeared in location A2 in
+UVeFSW, and there were also fewer locations where C texture
+appeared. The texture components A*
+1, A
+*
+2, A and A usually
+occur in the deformation process with lower strain, while the
+B/ B and C components appear with higher strain deformation. And the appearance of B/ B texture requires the
+material to experience greater strain than C texture [47].
+Therefore, from the texture components it was found that the
+degree of material deformation in Al/Mg dissimilar FSW is
+relatively low. However, the WNZ in UVeFSW contains more
+B/ B and C shear textures, which indicates that the strain of
+the material in WNZ was increased when the UV was applied.
+This proves that the UV can promote the plastic deformation
+and material flow in the WNZ in terms of texture evolution.
+3.6.2. Mg alloy side
+Fig. 18 shows the {0001} and {11-20} pole figures at location B3
+in the WNZ of the Mg alloy side at different welding speeds. It
+can be found that the {0001} base texturewasmainly produced
+in theWNZ of theMg alloy side. This is the same as the texture
+component commonly found in FSW of same Mg alloy [37,39].
+In FSW, the grains deformation is mainly driven by the
+shear action of the pin, and the direction of the shear force is
+the tangent direction of the pin surface. Thus, the grain c-axis
+in the central area of the WNZ is generally parallel to the
+welding direction (WD) [38]. However, in this study, the c-axis
+of grains was deviated. There are two reasons for this phe-
+nomenon. First, in this study, although the EBSD scanning
+area was located 1.5 mm from the bottom of the weld (the
+mid-depth), it would be slightly biased to the Al side orMg side
+because the Al/Mg bonding interface was tortuous and irreg-
+ular. Second, the pin used in this study was cone-shaped, sothat the normal direction of shear force at theweld center was
+not parallel to WD. However, when the welding speed was
+30 mm/min, the grain c-axis deflected to ND in both FSW and
+UVeFSW. Considering the obvious downward trend of mate-
+rial flow at 30 mm/min (Fig. 5a and b), the deflection of the c-
+axis here may be caused by the downward flow of the mate-
+rial. In addition, the texture intensity was significantly
+reduced when UV field was applied at welding speed of 30 and
+80 mm/min. This is because more complete recrystallization
+behavior of Mg alloy grains occurred in UVeFSW, which
+weakened the orientation of grains.
+The {0001} and {11-20} pole figures at different depth posi-
+tions in the WNZ of the Mg alloy side are shown in Fig. 19.
+Although the locations in the weld were different, the {0001}
+base texture all formed. Firstly, in locations B1eB3, regardless
+of FSW or UVeFSW, the grain c-axis was approximately par-
+allel to WD, which was the result of the shear force effect of
+the pin duringmaterial deformation [38]. However, in location
+B4, not only the grain c-axis deflected greatly, but also the
+texture intensity decreased significantly. As mentioned
+earlier, the materials at B4 located in the severe deformation
+zone, and the material flow in this zone is not simply hori-
+zontal or vertical but like swirl [9,23,44], so that the preferred
+orientation during grain growth was also changed. Mean-
+while, the higher degree of recrystallization in this location
+(Fig. 12c) would weaken the preferred orientation of grain
+growth. In addition, Mironov et al. [36] pointed out that a
+strong basal texture would be formed when the grain
+misorientation angle was almost not distributed between 30
+and 85. The misorientation angle distribution (Figs. 8 and 12)
+and the pole figures (Figs. 18 and 19) in this study are consis-
+tent with the result in [36].
+3.7. Role of UV field
+Based on the grain microstructure at different locations under
+different welding speeds, a common characteristic was found.
+That is, regardless of how the grain size changed with and
+without application of UV, the degree of grains recrystallization
+was always improved. During the welding process, the Al/Mg
+material flows from the front to the back of the pin under the
+shearing and squeezing action of the tool, and finally deposits
+behind the tool and fills the gap left by the pin. During this high
+temperature and high strain process, the grains undergo dy-
+namic recrystallization behavior. Although the grain micro-
+structure in Al and Mg side weld has different recrystallization
+processes, they all depend on the motion of dislocations andthe migration or slippage of grain boundaries. It is well known
+that UV can promote themotion of dislocations inmetal plastic
+processing [35,44,49,50]. Essentially, friction stir welding is also
+a metal plastic deformation process. Thereby, the UV in FSW
+can promote the motion of dislocations, and then promote the
+entanglement, aggregation, rearrangement of dislocations and
+the dipole annihilation. As shown in Fig. 20, during the dynamic
+recrystallization process, due to the influence of the UV, the
+motion and rearrangement of dislocations are accelerated.
+These continuously accumulating dislocations promote the
+formation of LAGBs, and at the same time, the transformation
+of LAGBs into HAGBs by absorbing dislocations is also acceler-
+ated. Thus, the degree of recrystallization of grains is increased.
+In this process, dislocations are also consumed in large
+quantities.
+In general, the higher the degree of recrystallization, the
+smaller the grain size. This is also the reason why the average
+grain size decreased when UV field was applied in most sub-
+regions of WNZ. However, the role of UV in promoting dislo-
+cation motion and grain boundary transformation shortened
+the incubation period of recrystallized grain nucleation,which
+made the recrystallized grains enter the growth stage earlier.
+Meanwhile, UV can also promote grain boundary slip/migra-
+tion. The applied UV can also promote generating a large
+number of vacancies by reducing the vacancy formation en-
+ergy [44]. These vacancies are easy to deposit at the grain
+boundary under the lowest energy criterion, which can not
+only promote the motion of dislocations at the grain bound-
+ary, but also promote the self-diffusion of the grain boundary
+[51]. Thus, grain boundary slip or migration are also indirectly
+promoted. This causes the recrystallized grains nucleate
+earlier and grow faster in UVeFSW, leading to an increase in
+the average grain size in some locations. A typical example
+was in Al side WNZ of C-800-80, as shown in Fig. 5e and f.
+Although the recrystallization degree of grains in conven-
+tional FSW was low, it contained a large number of fine
+recrystallized grains that had not yet grown, so that the
+average grain size was smaller than that in UVeFSW. In
+addition, the acoustic softening effect of UV can promote the
+material flow in the WNZ, which also has a certain impact on
+the recrystallization mechanism of grains.4. Conclusions
+(1) In dissimilar FSW of Al/Mg alloys, the recrystallization
+mechanisms of WNZ grains at Al alloy side are CDRX
+and GDRX, while at Mg alloy side, that are CDRX and
+DDRX. In both sides, CDRX plays a leading role.
+Compared with the cases in FSW of same alloys, finer
+grains structures were obtained in dissimilar FSW of Al/
+Mg alloys due to a little bit lower welding temperature.
+(2) Ultrasonic vibration has little influence on the recrys-
+tallization mechanism of grains at Al alloy side, but hasgreat effect on the grains structure in the Mg alloy side.
+Especially when the welding speed was 30 and 80 mm/
+min, the exerted ultrasonic vibration changed the main
+recrystallization mechanism of grains in the Mg alloy
+side, that is, from CDRX to DDRX.
+(3) Although there are different grain evolution processes
+at Al alloy and Mg alloy sides, their average grain sizes
+in WNZ increased first and then decreased with
+increasing of welding speed. The average grain sizes in
+the WNZ also increased first and then decreased along
+the thickness direction, and the maximum grain size
+was at the mid-depth of the weld.
+(4) For joining of dissimilar Al/Mg alloys, low strain shear
+texture appeared more in the WNZ of the Al side, such
+as A*
+1, A*
+2, A and A components in FSW, while in
+UVeFSW, more regions in the WNZ were with high
+strain shear textures C and B/ B, because the acoustic
+softening effect of ultrasonic field promoted the mate-
+rial deformation. In the WNZ of the Mg side, only {0001}
+basal texture appeared in both FSW and UVeFSW.
+(5) Ultrasonic vibration can promote the motion, aggrega-
+tion and annihilation of dislocations in stirred zone,
+which is the key factor affecting the thermal-
+mechanical behavior in the welding process. Thus, the
+evolution of grain microstructure in the weld was var-
+ied, and the recrystallization degree of grains was
+improved in UVeFSW.Declaration of Competing Interest
+The authors declare that they have no known competing
+financial interests or personal relationships that could have
+appeared to influence the work reported in this paper.
+j o u r n a l o f ma t e r i a l s r e s e a r c h and t e c hno l o g y 2 0 2 2 ; 1 7 : 1e2 120Acknowledgement
+The authors appreciate the financial support to this work from
+the National Natural Science Foundation of China (Grant No.
+52035005).

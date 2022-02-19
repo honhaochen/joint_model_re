@@ -1,0 +1,368 @@
+Cobalt  doped  zinc  oxide  (Zn1-xCoxO;  x =  0,  0.05,  0.10,  0.15)  samples  were  synthesized  using  co-
+precipitation  method.  The  Co  doped  ZnO  nanoparticles  showed  the maximum  solubility  limit. The  XRD
+patterns confirm  the hexagonal  type  wurtzite  structure  without  secondary  phase  in  Co  substituted  ZnO
+samples.  The  particle  size  was  studied  using  transmission  electron  microscope  (TEM)  and  grain  size  esti-
+mated  using  scanning  electron  microscope  (SEM).  We  report  the  study of temperature  dependence  of
+conductivity  on  ZnO  and  Co doped  ZnO  nanoparticles.  It is found  that at a higher  temperature  range
+(above  470  K)  thermally  activated  type of conduction  is  in  dominance  with  the  lower  temperature  range
+of conduction  in  which  donor  carrier hopping  mechanism  is  dominated.  DC conductivity  result  shows  the
+reduction  nature  for cobalt  doped  ZnO.  The  obtained  results  are  discussed  on basis  of  potential  barrier,pherical structure
+lectrical conductivity
+donor  concentration,  point  defects  and  adsorption–desorption  of  oxygen.  Cobalt  substitution  increases
+resistivity,  reduces  grain  growth,  lower  particle  size  and  increase  in  activation  energy. Detailed  map-
+ping  of  two  regions  of electrical  conductivity  is  done  to  understand  the  activation  energy  mechanisms
+prevailing  in  cobalt  doped  ZnO.
+Introduction
+Zinc oxide (ZnO) is a II–VI group semiconductor has a wurtzite
+rystal structure, with a direct and wide bandgap of 3.37 eV, a large
+xciton binding energy (60 meV) and high optical gain at room tem-
+erature [1–3]. Numerous applications of wurtzite ZnO comprises
+f field-effect transistor [4], optical device [5], dye-sensitized solar
+ell [6], solid-state gas sensor [7,8]. The strong n-type conductiv-
+ty is exhibited by zinc oxide varistor (ZnO) with the electrons to
+ove in the conduction band as charge carriers. Primary depen-
+ence of electrical properties of ZnO is based on the composition
+nd on microstructure characteristics such as grain size, density
+nd morphology. The study of effect of dopants on physical and
+lectrical properties of ZnO are related to applications in electronic
+omponents such as piezoelectric transducers and varistor.Most of the ZnO nanomaterials have been fabricated by conven-
+ional high temperature solid state mechanisms which is energy
+onsuming and unfavorable to control the particle properties [9].
+ZnO nanoparticles can be synthesized by simple solution based
+methods on a large scale such as chemical precipitation, sol–gel
+synthesis, and solvothermal/hydrothermal reaction [10]. We syn-
+thesized ZnO nano powders using precipitation method at a
+sintering temperature of 400 ◦C. This fabrication method has been
+successfully employed in our work to prepare nanoscale particles
+being cost-effective and controlled which desires low temperatures
+for processing and a high degree of solubility can be acquired.
+Among many research dopants in zinc oxide, cobalt doped zinc
+oxide shows potential in various applications [11,12]. According
+to reference studies [13], doping Cobalt in ZnO creates more zinc
+vacancies. Thus among diluted magnetic semiconductors (DMS),
+Cobalt doped ZnO is considered as a potential candidate among the
+TM because of its abundant electron states, large solubility in the
+ZnO matrix and also cobalt has a similar ionic radius (0.58 Å) to that
+of Zn (0.60 Å) [14]. Further different complex morphologies such
+as flowers, rods, sheets etc require too many control parameters
+which limit the application of the nanostructures.
+3+The presence of secondary phases like Co ions which may
+coexist with Co2+ ions in Co doped ZnO nanoparticles, are expected
+to have lattice defects [15]. Kumar and Khare, Roy et al. [16,17]
+and Yan et al. [18] reported increase in resistivity of Co2+ doped
+on and hosting by Elsevier B.V. Godavarti et al. / Journal of Asi
+nO samples, can be attributed to the shallow acceptor nature of
+hese impurities. Birajdar et al. [19] and Kulandaisamy et al. [20]
+eported an increase in resistivity due to cobalt defect scattering
+entre in the ZnO lattice. Substitution of any dopant can expect
+hanges in lattice parameter (a,c) and volume (V) showing initial
+roof of doping effects. Creating defects or doping in zinc oxide to
+enerate multi-valence nature in the system to tailor the level or
+ccupancy of the fermi energy level further affects the conductivity
+ature [21]. Doping any element in zinc oxide could produce dis-
+ortions, results variations in optical band gap [22]. Considering the
+urtein-Moss effect, the band gap value increases with the number
+f carrier concentration in conduction band. This could be also ver-
+fied using conductivity nature of the samples. Therefore, from the
+urrent study, we attempt to dope cobalt in Zinc oxide by varying
+eight percentages and to study the conductivity properties.
+. Experimental
+.1. Preparation of the pure and Co doped ZnO nanoparticles
+The following high purity chemicals such as zinc acetate
+ehydrate (Zn (CH3COO)2·2H2O), cobalt acetate tetrahydrate
+Co (CH3COO)2·4H2O), sodium hydroxide (NaOH), ethanol and
+ethanol (99.998%) were used as the precursors without further
+urification. For the preparation of pure ZnO nanoparticles (NPs),
+pecific amounts of zinc acetate and NaOH are dissolved in 50 ml
+ethanol which is added drop wise and then stirred with heating
+t 325 K for 2 h. The precipitate is separated from the solution by
+ltration, washed several times with distilled water and ethanol
+hen dried in air at 400 K to obtain ZnO nanocrystals. The sam-
+les obtained were annealed at 673 K for 8 h. For the synthesis
+obalt doped ZnO, zinc acetate dehydrate and cobalt acetate dehy-
+rate were dissolved in methanol (100 ml)  and other containing of
+aOH in methanol (100 ml)  were prepared and added by constant
+agnetic stirring while heating at 325 K for 2 h. Precipitate is then
+eparated from the solution by filtration, washed several times with
+istilled water and ethanol then dried in air at 400 K to obtain Co
+oped ZnO nanoparticles and annealing at 673 K for 8 h.
+.2. Characterization of samples
+For electrical conductivity measurements, the powder samples
+ere pressed uniaxially into a pellet of thickness 4–5 mm and of
+iameter 10 mm by applying pressure of 120 Mpa  for 3 min. Pellets
+ere sintered at 573 K for 3 h for thermal stabilization. Fine quality
+ilver paint was applied on both sides of the pellets for good elec-
+rical contacts. The DC electrical conductivity measurements were
+arried by two probe method in the temperature range 300–650 K.
+he samples were analyzed by the following characterization stud-
+es. The samples were analyzed by the following characterization
+tudies done using x-Ray powder diffraction (XRD) (XPERT-PRO
+Model: PW-3710) operated at 45 kV and 40 mA  with a Cu-K radia-
+ion source of wavelength 1.5406 ´̊A), scanning electron microscope
+SEM) (Model: JSM6100), transmission electron microscope (TEM:
+itachi-Model: H-7500) and DC electrical conductivity measure-
+ents using KEITHLEY source meter (model 2400).
+.3. Different relations used for measurement of properties
+The lattice constants of pure and Co doped ZnO nanocrystals
+ere determined using following formula
+in2 = 2
+4a2
+[
+4
+3
+(h2 + hk + k2) + a2l2
+c2
+]
+(1)Fig. 1. X-ray diffraction patterns of Zn1-xCoxO nanoparticles.
+where ‘’ is the angle of diffraction, ‘’ is wavelength, ‘a’ & ‘c’ are lat-
+tice constants and h, k and l are miller indices. Considering the first
+order approximation (n = 1) for the (100) plane, the lattice constant
+‘a’ is obtained through the relation
+a = √
+3 sin 
+(2)
+Lattice constant ‘c’ is derived for the plane (002) by the relation
+c = 
+sin 
+(3)
+The volume of unit cell can be calculated using equation,
+V = 0.866 × a2 × c (4)
+The parameter ‘u’ can be calculated by the formula doping-
+induced effect of bond length ZnO is analyzed.
+u = a2
+3c2
++ 0.25 (5)
+Average crystallite sizes were estimated using Debye–Scherrer’s
+equation
+D = K
+ ̌ cos 
+(6)
+Strain induced broadening (ε) is given by the Wilson formula:
+ε = ˇhkl
+4 tan 
+(7)
+where ‘ε’ is the root mean square value of the micro strain. The
+readings were recorded during slow cooling after heating cycle and
+the electrical conductivity () was calculated by the formula:
+ =
+(
+I × t
+V × A
+)
+(8)
+where ‘V’ is the applied voltage, ‘I’ is the measured current; ‘A’ is
+the area of the pellet and ‘t’ the thickness of the pellet.
+3. Results and discussions
+3.1. X-ray diffraction study
+Fig. 1 shows x-ray diffraction patterns (XRD) of pure and Co
+doped ZnO nanoparticles. The XRD peaks are located at angle
+(2) corresponds to (100), (002), (101), (102), (110), (103), (112),
+(201) and (004) planes attributed to ZnO. The XRD peaks show the
+hexagonal (wurtzite) crystal structure of all prepared samples. In
+reported literatures the spinel Co3O4 peaks are observed as a sec-
+ondary phase even for the lowest dopant concentration x = 0.1 at
+sufficiently high calcination temperature of 600 ◦C [23,24]. Fig. 1
+confirms no extra or any impurity phases evident in Co doped ZnO
+Fig. 2. Average crystallite size and strain Vs Co content of Zn1-xCoxO nanoparticles.
+amples, indicates that the prepared samples are single in phase
+hereby clearly indicating that cobalt has been incorporated in to
+he lattice as a substitutional atom. Lowering intensity and increase
+n full width half maxima (FWHM) in the results of XRD is also
+bserved due to the effect of cobalt incorporation in zinc oxide.
+ small shift is also observed in the peaks for the cobalt doped
+nO samples due to replacement of cobalt Co2+ with Zn2+ evident
+s decrease of intensity peak (101) as shown in Fig. 1. Evidence of
+eak reduction in terms of peak intensity can influence particle size
+r lattice strain. Fig. 2 shows the variation for average crystallite
+ize and strain for cobalt concentration for Zn1-xCoxO nanoparti-
+les. The changes produced in strain are sufficient to produce the
+ormation of clusters or precipitation which could further evident
+sing transmission electron microscope (TEM) and scanning elec-
+ron microscope (SEM).No secondary phases or existence of Co3+ ions in our samples is
+vident in XRD studies, suggests that the Co2+ ions are responsible
+or the deformation of the lattice structure when they are substi-
+uted for Zn2+ ions in ZnO. Deformation variation is observed on
+Fig. 3. TEM image of (a) ZnO (b) Zn0.9
+Fig. 4. SEM image of (a) ZnOamic Societies 5 (2017) 391–396 393
+basis of increase in lattice parameters (a,c) and volume as evident
+in Table 1. Smaller variation observed is attributed to mismatch
+in radius of cobalt and zinc oxide, in octahedral environment. The
+lattice parameters is expected to increase due to cobalt doing as
+assuming tetrahedral environment with high spin state for Co(2+)
+(0.745 Å) and low spin state for Co(2+) (0.65 Å) are smaller than
+Zn(2+)(0.60Å) as reported elsewhere [25]. The increase in volume
+resulted a change in oxygen parameter, which increases with
+increase in cobalt. These increases in defect density which can
+cause a change in the lattice parameters of ZnO, also results in the
+non-linear behavior of electrical conductivity.
+3.2. Morphological study
+3.2.1. Transmission electron microscope (TEM) study
+Fig. 3 reveals the homogeneous distribution of Co2+ particles in
+the ZnO lattice along with particle sizes. Fig. 3(a) shows the ZnO
+nanoparticles are hexagonal in shape with average particles size
+around 30 nm.  Fig. 3(b) and (c) shows the TEM images for Co–ZnO
+samples, suggests that the particles are spherical in shape with
+average particles size is around ∼20 nm and these results correlate
+with our XRD results. Average particle size of Co–ZnO nanoparticles
+reduces when compared of pure ZnO, showing small grain growth
+of doped samples.
+3.2.2. Scanning electron microscope(SEM) study
+Fig. 4 shows scanning electron microscope (SEM) images for
+pure and Co–ZnO nanoparticles. Surface morphology shows uni-
+form evenly distributed grains with hexagonal structure in the
+samples, as shown in Fig. 4. SEM micrographs also reveal that cobalt
+doped ZnO nanoparticles decreases in average grain size which can
+also evident from our XRD measurements and TEM. This decrease
+in average grain size with increasing doping concentration was also
+reported by Vijayaprasath et al. [26] in Co-doped Ni/ZnO nanopar-
+ticles.
+5Co0.05O and (c) Zn0.85Co0.15O.
+ and (b) Zn0.95Co0.05O.
+394 U. Godavarti et al. / Journal of Asian Ceramic Societies 5 (2017) 391–396
+Table 1
+Structural parameters, average crystallite size and strain of Zn1-xCoxO nanoparticles.
+Samples (% Co) Lattice parameters (Å) Volume (Å) c/a ratio u (distortion parameter) Bond length (Å)
+a c
+Fig. 5. Variation of conductivity,  (S/m) with dopant concentration.
+.3. Electrical conductivity
+Decrease in conductivity with increase in doping concentration
+f cobalt in ZnO is shown in Fig. 5. This is consistent with the
+iterature and is also evident from SEM analysis [27,28] which is
+ttributed to the increased defect scattering due to the addition
+f Co2+ ions. Free electrons from the donor levels are trapped by
+he divalent ions, results in the decrease in the n-type donor car-
+ier concentration and increase in resistivity. The small amount
+f cobalt within soluble limit depresses the carrier concentration
+aking the ZnO higher resistive [29]. Critical nature of resistivity
+vident in the magnetic based semiconductors was attributed to
+istribution of carriers through exchange interaction [30].
+Fig. 6 shows the observed values of conductivity which rises
+lowly with increase of temperature above 470 K for increase in
+obalt doping concentration. At a temperature higher than 450 K, as
+hown in Fig. 6(a) ln(conductivity) is plotted against the inverse of
+emperature. Similarly at a temperature lower than 450 K. Fig. 6(b)
+how ln(conductivity) plotted against the inverse of temperature
+Fig. 6. Variation of electrical conductivity with temperature in
+elucidating a non-linear behavior compatible with the ionic radius
+of Co2+ ions to that of Zn2+ ions. Substitution of Co2+ ions in Zn2+
+lattice site is expected to create certain oxygen vacancies or zinc
+interstitials. These vacancies can perform as donors as well as
+deform the lattice structure to maintain the charge neutrality. The
+variation in conductivity is also dependent on thermal energy and
+below Curie temperatures. Conductivity is largely dependent on
+charge carrier mobility which can be observed in Fig. 6(a) and (b).
+To understand the conductivity mechanism in cobalt doped zinc
+oxide, the conductivity curve shown is divided in to two  different
+regions (I, II). The linear region I (high temperature region) refers to
+linear conduction mechanism and region II is transition region (low
+temperature region). For these regions, the electrical conductivity
+of Zn(1-x)CoxO can be analyzed by the Arrhenius equation which
+relates the electrical conductivity and the temperature is given by
+ = 0 exp
+(−Ea
+kBT
+)
+(9)
+where 0 is the pre-exponential factor and E is the activation energy
+for the conductivity. Ea values for region II were respectively cal-
+culated from the linear portions of Fig. 6(a) and the Ea values of
+region I are calculated from the slope of the Arrhenius plot as shown
+in Fig. 6(b). Since, there are two slopes two conduction mecha-
+nisms are possible, observed two-stage temperature dependence
+of conductance () may  be represented as:
+ = L exp
+(−EaL
+kBT
+)
++ H exp
+(−EaH
+kBT
+)
+(10)
+In above equation,  L and  H are pre-exponential factors, EaL
+and EaH are the activation energy for low and high temperature
+conductance stages respectively. As shown in Fig. 7 Arrhenius plots
+of Zn1-xCoxO were used to calculate activation energies and are
+given in Table 2 for different values Ea in region I (in high tempera-
+ture range 473–508 K) and Ea in region II (in low temperature range
+363–473 K).The measured activation energies for two  regions suggest the
+operating mechanisms of trapped or scattering ions. As the dop-
+ing concentration increases, the activation energy is raised which
+would account for the raise in atomic defects and are electrically
+ two different regions (a) 473–508 K and (b) 360–460 K.
+U. Godavarti et al. / Journal of Asian Cer
+Fig. 7. Arrhenius plot of dc conductivity with variation of temperature.
+Table 2
+Activation energy values of different doping concentrations of cobalt.
+Cobalt concentration Ea (eV) region II (low
+temperature range:
+363–473 K)
+Ea (eV) region I (high
+temperature range:
+473–508 K)
+active at the grain boundary. Hence, when the cobalt is doped, both
+the potential barrier height and activation energy are raised to the
+formation of barrier at the grain–grain interface. EaL with values of
+.08–0.91 meV  for region I at low temperature region (363–453 K)
+ary and EaH with values of 0.17–0.43 eV for region II at high tem-
+perature region (473–508 K) respectively. The values of activation
+energies suggest the shallow nature with deep donor levels along
+with impurity level in band gap of Cobalt doped ZnO.
+Thermal excitation of electrons from donor levels to the con-
+duction band takes place for increase in temperature. Thermal
+activations in region I is due to deep donor level ions contributing
+fo the conduction band. With increase in doping of cobalt in ZnO
+or temperature range (363–473 K), the values of activation energy
+EaL) are decreasing due to donor carrier density which brings the
+ermi level up in the band gap. At low temperature, for a doped
+emiconductor most of the free electrons are recaptured by donors
+tself. The electrons then do not have adequate energy to jump
+rom donor levels to conduction band. By hopping from one level
+o another in the impurity band they conduct, making the free elec-
+ron band conduction less important [16]. Thus, the free electron
+and conduction is no more a dominating conduction mechanism
+n the low temperature range. Low temperature activation energy
+f ZnO samples is possibly associated with one of the following two
+onor ionization processes:
+o + V+
+o + e−
+proposed by Simpson and Cordero [31] for oxygen vacancy (Vo)
+r the zinc interstitials:
+n + i → Zn+ + I + e−
+The reversal takes place for high temperature range
+473–508 K), where cobalt ions creates wide energy levels for
+nO resulting in compensation for donor carrier density increasing
+ctivation energy values. The high temperature activation energy
+an be associated with desorption of O2
+− species [32] according to
+he equation, O−
+2 + O2 + e−
+[
+[
+amic Societies 5 (2017) 391–396 395
+Here, region II corresponds to a transition region, in which more
+charge carriers are ionized from the shallow donor level and then,
+in turn, the depletion of charge carriers takes place. With increase in
+temperature, more charge carriers overcome the activation energy
+barrier and these carriers participate in the electrical conduction.
+Due to the higher ionization potential of the substituted Co atoms
+which cannot be easily ionized like Zn atoms, thus the donor con-
+centration being lowered by the addition of Co and this results
+in decrease in electrical conductivity. From DC conductivity stud-
+ies, the potential barrier, donor concentration, point defects and
+adsorption–desorption of oxygen are believed to be controlling the
+conductivity of ZnO and Cobalt doped ceramic system.
+4. Conclusions
+Co doped ZnO nanoparticles were synthesized through co-
+precipitation method and annealed at 673 K for 8 h. The X-ray
+diffraction study confirmed that the synthesized ZnO nanopar-
+ticles with hexagonal (wurtzite) crystal structure. Cobalt doping
+in ZnO showed reduction in intensity for peak (101) at 36◦.
+Microstructures of the nanoparticles have been examined by TEM
+and evaluation of average particle size was  in the range of 20 nm.
+SEM images of nanoparticles show the uniform shape with decreas-
+ing grain size for samples of Zn(1-x)CoxO samples. A non-linear
+decrease in electrical conductivity is observed with increasing
+temperature among the samples. Temperature-dependent elec-
+trical conductivity confirms the semiconducting nature of these
+Zn(1-x)CoxO samples.

@@ -1,0 +1,673 @@
+The earliest cast iron in China dates to the 8th century BC and pre-dates the earliest European evidence by 
+about two millennia. The invention of cast iron smelting is closely related to the pre-existing and contemporary 
+technologies of casting bronze and firing ceramics as well as the social and political context of early 1st millennium 
+BC China. A series of early iron smelting furnaces were surveyed, excavated, and scientifically analysed. However, 
+in order to understand how cast iron was initially produced, the evidence from one of the earliest production 
+sites was digitally simulated. This modelling allowed different potential methods for the underlying production 
+technology to be evaluated. The explanation for the invention of cast iron lies both in borrowing and developing 
+of techniques found in other contemporary pyrotechnologies as well as a contemporary systemic philosophical 
+approach.
+The independent invention of cast iron production in China in the 8th
+entury BC predated the earliest European evidence of cast iron produc-
+ion by about two millennia. The earliest cast iron pieces were found
+n Tianma-Qucun  -  cemetery in Shanxi   province, dating to
+he 8th century BC ( Han, 2000 ) and in a tomb in Liuhe  county in
+iangsu province, dating to the mid 8th century BC ( Nanjing, 1974 ).
+he microstructures of the artefacts showed that they were white cast
+ron, which was too brittle to use on a large scale. It was not until the
+th century BC that the innovation of an annealing process allowed the
+rittleness of cast iron to be decreased as demonstrated by the adzes
+nd hoes excavated at Luoyang  in Henan  province, comprising
+hite cast iron in the core with the decarburized layer of steel on the
+urface ( Han, 2013 ). Although the beginning of iron technology in China
+s still an issue far from clear, the invention of cast iron production oc-
+urs after the introduction of iron bloomery production into northwest
+hina probably from the Eurasian steppe. This is evidenced by an iron
+ar excavated from Mogou  cemetery, Lintan  county, Gansu 
+province made from carburized bloomery iron and shaped by forg-
+ng, dating to the 14th century BC ( Chen, 2013 ) as well as the bloomery
+ron artefacts unearthed from Yanbulake  cemetery at Hami 
+, Xinjiang  region, dating to c.1300 BC ( Qian, 2002 ). These dates
+re contemporary with the earliest iron objects and iron bloomery pro-
+uction in Europe ( Pleiner, 2000 ), which presents a fundamental ques-∗ Corresponding author. 
+E-mail address: qianwei@ustb.edu.cn (W. Qian). 
+ttps://doi.org/10.1016/j.aia.2021.04.001 
+eceived 7 April 2021; Accepted 17 April 2021 
+vailable online 3 May 2021 
+667-1360/© 2021 University of Science and Technology Beijing. Publishing service
+ccess article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/ion. Why and how was cast iron technology invented and developed in
+hina so much earlier than in Europe? 
+Cast iron is a high carbon iron alloy produced mostly in blast fur-
+ace with a wide range of compositions, which are defined as contain-
+ng more than 2.1%, and usually less than about 4.5% carbon. It will be
+ade whenever a bloomery furnace smelting iron ore is operated with
+oo low a ratio of ore to carbon in the charge for the combustion air rate.
+teel made by decarburising cast iron is more durable than bloomery
+teel because it contains fewer inclusions, and the productivity of the
+last furnace is much greater than that of the bloomery furnace. As the
+arbon content of iron is increased, its initial solidification temperature
+ecreases, for example, at 2.1% carbon it is 1380°C and at 4.3% car-
+on 1150 °C, the latter being not far above the melting point of copper
+t 1083°C. Solidification takes place in two different modes. One is as
+hite cast iron that contains the carbon entirely as the compound iron
+arbide (cementite), which is hard and brittle. The other is as grey cast
+ron caused by the sufficient quantity silicon helping the carbide to de-
+ompose during solidification to carbon as graphite and ferrite, which
+s strong and little ductile. If white cast iron containing a moderate con-
+ent of silicon is heated and held at temperatures between 800 °C and
+000 °C in an atmosphere low in oxidizing potential, such as in a closed
+ontainer, the primary cementite decomposes into iron and free carbon
+ Rehder, 2000 ). Annealing the cast iron – a process practiced in China
+rom at least the 5th century BC – greatly facilitated the production of
+ools and weapons. s by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This is an open 
+by-nc-nd/4.0/ ) 
+Fig. 1. Reconstruction of No. 6 furnace at Tonglushan copper smelting site 
+( Lu, 1981 ) (1.Base 2. Wind tunnel 3. Metal tapping hole 4. Slag tapping hole 
+5. Tuyère 6. lining 7. Operation platform 8. Furnace wall 9. Original ground). 
+This paper presents not only an archaeological survey of the evidence
+or early cast iron production in blast furnaces, but also a simulation
+odel analysing the distribution of the fluid and the temperature to ex-
+lore how this invention was achieved. It also explores the relationship
+etween cast iron and the pre-existing and contemporary pyrotechnolo-
+ies relating to ceramics and bronze in China. 
+he reasons of the invention of cast iron 
+Social demands are the main reason why an invention was devel-
+ped in a large scale. The increasing population pressure needs more
+eveloping agriculture and military technology and materials. 
+The early invention of cast iron smelting and the subsequent innova-
+ions, including fining, puddling and a range of other techniques, meant
+hat iron production and trade had a very different economic and polit-
+cal significance in China from that in the West ( Wagner, 2008 ). In the
+econd half of the 1st millennium BC, a growing population in China
+ombined with increasing agricultural productivity. The use of harder
+nd heavier cast iron ploughs enabled a substantial increase and effec-
+iveness in the ploughing of soils leading to greater productivity in agri-
+ulture. 
+The other main use of cast iron is in military weapons in this period of
+ncreasing conflict – those of steel could be easily and amount obtained
+nd produced by decarburised cast iron. China was divided into several
+arts during the Spring and Autumn Period (770-476 BC), even in the
+arring States Period (475-221 BC). The frequently happened wars be-
+ween states required much more new cheap materials to replace the
+xpensive copper and bronze weapons. Bloomery iron weapons were
+sed in China early in 9th century, but the low productivity of bloomers
+ad to be replaced by the cast iron smelters several centuries later, who
+ould produce much more economic decarburised steel weapons. 
+Economically, iron can replace copper and become the most im-
+ortant metal material because the resource of iron ores is much
+arger amount than the other metals except aluminium in this globe
+ Maddin, 2002 ). Bronze became rarer and more expensive due to the tin
+inerals (cassiterite) being almost exhausted during this period, leav-
+ng cast iron to be the most important substitute. Once cast iron was
+nvented and developed in China, it became a strategic material like
+alt that was not freely traded and transmitted outside for longer than
+ millennium, hence the cast iron technology was not transferred into
+urope so easily, which might be one of the reasons why cast iron was
+ot produced in Europe until the 13th century AD. 
+Besides of the social context, more technical reasons will be discussed
+s followed. The Chinese word taoye  means to make potteries and
+etals, and refers also to the process by which students’ and citizens’
+ind and characters are developed. This shows a close relationship be-
+ween tao  (pottery making) and ye  (metallurgy). 
+The earliest evidence for the firing of pottery dates to about 20,000
+P and was found in Xianrendong  cave in Wannian  ,
+iangxi   province ( Wu, 2012 ) and provides one of the earliest
+ources of evidence for pyrotechnology in East Asia. The control of the
+ring atmosphere is evidenced by the production of grey and black pot-
+ery at latest by 6000BC. The development of pottery firing techniques
+eant that there were respective kiln rooms and fire chambers, allow-
+ng the temperature to rise up to 1100 °C using the natural wind prior to
+000 BC. The innovation of a chimney on the pottery kiln in the 8th–9th
+entury BC enabled higher temperature in the firing chamber as shown
+y the glazed pottery in Zhangjiapo   site in Shaanxi   province
+here firing was demonstrated to have reached 1200 °C and therefore
+otentially relates to the origins of porcelain ( Zhou, 1960 ). 
+However, the production of cast iron not only requires high temper-
+tures, it also requires a blast furnace. It is in copper smelting furnaces
+hat the technical origins can be found. The excavated copper smelting
+urnaces are mostly with tuyères on the lower part of the furnace wall.
+ shaft furnace was unearthed at Tonglushan  site, Daye  in
+ubei  province, dating to the 7th to 5th century BC. The recon-5 truction furnace size comprised 0.5 m in diameter, 1.5 m in height and
+bout 0.3 m 
+3 in volume. The furnace consisted of base, hearth and bosh
+arts, with blowing, tapping and slag holes ( Lu, 1981 , Fig. 1 ). The differ-
+nt refractory layers of the furnace indicated the smelters had grasped
+he characters of different technical ceramics at that time. Metallurgi-
+al research on the products from the Tonglushan site showed that the
+ast iron prills as a by-product were involved in the copper smelting slag,
+hich implied strongly reducing smelting conditions while probably us-
+ng local chalcopyrite (CuFeS 2 ) ore. The analysis of the copper ingots
+ound in the No. 4 furnace and the nearby Daye Lake‘¤‘§‘†‘¶‘¹‘–showed
+here are more than 5% iron in them ( Zhu, 1986 ). The profile of the ex-
+avated shaft furnace structure preceded the invention of the later cast
+ron smelting furnace. 
+Three iron weapons with bronze or jade handles were excavated at
+he Guo State cemetery in Sanmenxia , Henan province, dat-
+ng to the 9th century BC, represent the earliest bloomery iron in central
+hina ( Han, 1998 ), and demonstrate the beginning of the long process
+or iron smelting technology, while the local copper smelting and bronze
+asting traditions had been developed for several centuries. A crucial
+onnection is the tradition in copper and bronze metallurgy of pouring
+he molten metal into a mould. The desire to replicate this process in
+ron led the craftspeople to seek a kind of new metal with a relatively
+ow melting point. Now we know the use of an iron carbon alloy with
+About 4% content carbon had a melting point only about 100–200 °C
+igher than that of copper and enabled the production of cast iron. 
+Annealing technology was another related pyrotechnology compact-
+ng on cast iron. It was grasped by Chinese at least in the 5th century
+C. Annealing enabled cast iron to become more useful, which helped
+he Chinese develop the technological path of casting more easily in or-
+er to manufacture agricultural implements and tools, in contrast to the
+ron bloomery techniques in other civilisations. Without the annealing
+rocess after smelting, cast iron was regarded as the waste of bloomery
+rocess in the West during the first millennium BC, while the Chinese
+eveloped the cast iron foundry system under annealing technology. 
+rchaeological survey for iron smelting furnaces 
+A blast furnace is a shaft furnace in which cast iron is produced from
+re. Ore, fuel (charcoal), and a flux (normally limestone) are charged
+eriodically into the top of the shaft, an air blast is blown continuously
+nto tuyères near the bottom, and iron and slag are periodically tapped
+ut at the bottom. The operation continues for days, weeks, months and
+ven years. It could be operated continuously until the furnace refrac-
+ory failed. Cast iron could be obtained in simple economies with differ-
+nt scales of operation. 
+In our opinion, the key to making Chinese cast iron is in the operation
+f blast furnaces. It is fundamental to find more ancient blast furnaces
+nd record the outlines of different kinds of furnaces. Although there
+re a few texts or illustrations describing the iron smelting furnaces to
+roduce molten cast iron, they are too simple to be very useful and date
+nly to the 14th century AD. 
+Iron smelting technology developed rapidly in ancient China, where
+ large amount of smelting sites have been found, though there was
+arely an archaeological report on the furnaces before 1950. At the
+reat Leap Forward period in the late 1950s, several iron smelting sites
+ated before the 8 th century AD were excavated, such as Tieshenggou 
+ in Gongxian  ( Henan, 1960 ), Xiadian  site in Linru 
+ Ni, 1960 ), Henan province, and Liguoyi   site in Jiangsu  
+rovince ( Nanjing, 1960 ). These blast furnaces provided preliminary
+nowledge for the researchers. In the 1970s, more sites were excavated
+uch as Guxing  site in Zhengzhou , Wangchenggang  site
+n Lushan  , Henan province, which yielded abundant information for
+ncient iron smelting ( Henan, 1978 ). In the 1980s, a handful of furnaces
+t important sites including Xiping  in Henan province (Henan,
+994), Laiwu  in Shandong province ( Taian, 1989 ), Wuan  in
+ebei province ( Li, 2016 , Wang, 2017 ), Nanzhao  in Henan province
+ Han, 2007 ), were excavated or archaeologically investigated. In the
+1st century, a series of new smelting furnaces were found, some of
+hich are excavated in Biyang  in Henan province ( Henan, 2009 ),
+ujiang  and Qionglai  in Sichuan  province ( (Chengdu, I.
+   , 2008) ). There are now 167 furnaces in total men-
+ioned in archaeological reports or articles. These furnaces were dated
+rom the 4th century BC to 17th century AD. Some sites dating span
+ore than one dynasty, especially in the regions where the iron ore
+esource was abundant, while some sites consisted of many processing
+orkshops such as foundry and forging. 
+In order to explore the unknown issues surrounding iron smelting
+urnaces in early China, a series of field surveys were carried out with
+he aim of revealing new finds and new understandings. In 2009, a group
+f teachers and students from the Institute of Historical Metallurgy and
+aterials (IHMM), University of Science and Technology Beijing, started
+ long-term survey on the iron smelting furnaces throughout China. By
+he end of 2012, they investigated about 48 smelting sites, and found 13
+ew sites with 22 more furnaces ( Fig. 2 and Table 1 ). Most of the sites
+ere dated based on the typology of ceramics unearthed in context, and
+bout one third of the sites were dated by using radiocarbon dating.
+nfortunately, most of the furnaces are in a badly preserved condition,
+ith only a few are preserved well or conserved by the government. 6 During the surveys, samples of tuyères, furnace materials, metals and
+lags were collected. Most of them were analysed in the laboratory and
+ndicated that they were the remains of cast iron smelting, with the
+xception of the samples from Pingnan   in Guangxi  Region. The
+ingnan furnaces were seen as bowled shape bloomery furnaces rather
+han blast ones. All the furnace sizes were measured carefully for the
+uture research and reconstruction. Among them, some furnaces were
+ccurately measured using 3D laser scanning technology. It was shown
+hat the inner shapes of the hearth and bosh varied rapidly with the
+ifferent periods and locations. Furnace materials were made of clays
+n Warring States Period (475-221BC) to Han Dynasty (202BC-AD220),
+hile it changed to stones after Tang Dynasty (AD 618-907). As the
+emand for iron increased, furnaces slowly increased in hearth area and
+eight, beyond the ability of human muscle to operate bellows. The
+ection of furnaces changed from round in the Warring States Period
+o bigger oval ones in Han Dynasty, but round again in Tang and Song
+ynasties (AD 960-1279). Another type of small furnace with square
+ection appeared in Liao (AD 916-1125) and Jin Dynasties (AD 916-
+125) in the northern China. The survey is still ongoing. Due to the
+omplexity of the ancient furnaces, more field works and research with
+ew technology should be carried on in the future times. 
+umerical simulation: a case study of Jiudian furnace 
+Judian   furnace at Xiping county in Henan province, dating to the
+iddle and late stages in Warring States Period (4th-3rd century BC),
+as considered to be the earliest iron smelting furnace in China ( Fig. 3 ).
+t was found in 1950s, and excavated in early 1990s. The furnace was
+uilt on a slope, with the base, hearth and bosh parts, and the section
+f the inner shape was almost round. The remains of the furnace were
+.17 m high with a diameter of 0.65–1.06 m, furnace wall width of about
+.37 m. The inner wall had glassy slag or other materials adhering to it.
+he base was built with charcoal powder, raw sand and clay. A small
+earth angle might have been used in the furnace building. It was quite
+ifferent to those huge oval Han furnaces like Guxing site. Only charcoal
+as used as the fuel (Henan, 1998). This furnace was in the list of the
+ey preserved sites of National Cultural Heritage issued in 1996. The
+xamination of the slag samples collected nearby showed that it was a
+ast iron smelting furnace. Scholars considered that it could produce cast
+ron although it was small and simple, for the followed reasons: there
+as a wind tunnel on the base of the furnace, which might be similar
+o the copper smelting shaft furnace in Tonglushan site (); natural wind
+rom this tunnel was strong enough to help the combustion in the hearth;
+he wall was built with the re-cast refractory bricks, which could bear
+igher temperature ( He, 2009 ). 
+During the field work conducted in 2012 and 2013, the furnace re-
+earch team from IHMM investigated the site again and measured it
+ith 3D laser scanning ( Fig. 4 ). The result showed a very different as-
+ect to the furnace ( Fig. 5 ). A long shallow hole of about 3 cm diameter
+about 8 cm at the furnace end) was found on the lower hearth part of
+he wall, which might be the tuyère for blowing air. The refractory had
+ammed clay in regular layers, instead of the bricks mentioned before.
+he outline of the furnace was a little different with the hand-drawing.
+he height of the remaining furnace is about 2.05 m, while the former
+andy measurement showed it was about 2.17 m. 
+Precise measurement of the furnace interior was the necessary first
+tep in modelling the operating parameters of the furnace. According
+o the fieldwork on the other furnaces, it was thought that the wind
+unnel did not exist, while the front space might have been made by
+emoving the salamander (solidified materials in the hearth of a blast
+urnace below the tap hole) out of the blast furnace. The only blowing
+ir was blast from the newly found wind hole horizontally. It should
+e the tuyère. Then the problem arose. What kind of furnace was used
+t that time: bowl or shaft? It could be numerically simulated by the
+oftware Fluent on the basis of communicational fluid dynamics (CFD).
+aving calculated the pressure and velocity with the airflow delivered
+W. Qian and X. Huang Advances in Archaeomaterials 2 (2021) 4–14 
+Table 1 
+Ancient iron smelting sites found in China (475 BC- AD 1644). 
+No. Site Location Dynasty Furnace number Resurvey New finding 
+1 Jiudian Xiping, Henan WSP 1 
+√
+2 Zhenghan Gucheng Xinzheng, Henan WSP 
+√
+3 Gaocheng Dengfeng, Henan WSP 1 
+4 Qi Gucheng Linzi, Shandong WSP to Han 
+√
+5 Goutouzhao Wugang, Henan WSP to Han 3 
+√
+6 Zhaizhuang Wugang, Henan WSP to Han 1 
+√
+7 Xugou Wugang, Henan WSP to Han 
+√
+8 Yangzhuang Xiping, Henan WSP to Han 
+√
+9 Fuzhuang Xiping, Henna WSP to Han 
+10 Hancheng Yiyang, Henan WSP to Han 
+11 Lulou Hebi, Henan WSP to Han 13 
+√
+12 Handan Handan, Hebei WSP to Han 
+13 Xiangcheng Huaibei, Anhui WSP to Han 2 
+√
+14 Dongpingling Zhangqiu, Shandong Han 4 
+√
+15 Beiye Jiaozuo, Henan Han 2 
+√
+16 Wangfangzhuang Nanyang, Henan Han 9 
+√
+17 Tieshenggou Gongyi, Henan Han 8 
+√
+18 Guxing Zhengzhou, Henan Han 2 
+√
+19 Xiadian Linru, Henan Han 1 
+20 Wangchenggang Lushan, Henan Han 6 
+√
+21 Ximalou Lushan, Henan Han 
+√
+22 Zhangfan Tongbai, Henan Han 
+√
+23 Xiahewan Biyang, Henan Han 
+√
+24 Xuecheng Xuecheng, Shandong Han 
+25 Qinghe Haidian, Beijing Han 
+26 Fengshan Sihong, Jiangsu Han 1 
+√
+27 Tieniucun Pujiang, Sichuan Han 1 
+√
+28 Niya Mingfeng, Xinjiang Han 
+29 Kuche Kuche, Xinjiang Han 
+30 Luopu Luopu, Xinjiang Han 
+31 Pozhui, Liuchen Pingnan, Guangxi Han 2 
+√
+32 Tieshiwei, Dengtang Pingnan, Guangxi Han 6 
+√
+33 Dinglonggang, Dengtang Pingnan, Guangxi Han 5 
+√
+34 Liuxueling, Dengtang Pingnan, Guangxi Han 1 
+√
+35 Jianshuibiao, Dengtang Pingnan, Guangxi Han 1 
+√
+36 Tieshitang, Damiao Pingnan, Guangxi Han 1 
+√
+37 Liuzhuochong, Liuchen Pingnan, Guangxi Han 
+38 Heshui, Liuchen Pingnan, Guangxi Han 
+39 Luoxiu Guiping, Guangxi Han 7 
+√
+40 Ershijiazi Hohehot, Inner Mongolia Han 16 
+41 Liguoyi Tongshan, Jiangsu Han 1 
+√
+42 Yetao Wuan, Hebei Han 
+√
+43 Tielugou Linzhou, Henan Han to Tang 9 
+√
+44 Laiwu Laiwu, Shandong Han to Tang 
+√
+45 Gushishan Pujiang, Sichuan Han to Song 1 
+√
+46 Xuxiebian Pujiang, Sichuan Han to Tang 1 
+√
+47 Pinle Qionglai, Sichuan Tang to Song 2 
+√
+48 Fanchang Fanchang, Anhui Tang to Song 6 
+49 Guishan Fenyi, Jiangxi Tang to Ming 
+50 Qiyang Shahe, Hebei Tang to Song 17 
+51 Xiacun Nanzhao, Henan Tang to Song 7 
+√
+52 Jingjicun Wuan, Hebei Tang to Song 3 
+√
+53 Cuicun Wuan, Hebei Tang to Song 
+√
+54 Shencun Linzhou, Henan Song 21 
+√
+55 Zhuzhuang Xintai,Hebei Song 1 
+56 Kuangshancun Wuan, Hebei Song 1 
+√
+57 Liuxi, Longan Xingye, Guangxi Song 3 
+58 Maijiehe Jiazuo, Henan Song 1 
+√
+59 Baotou Baotou, Inner Mogolia Song 1 
+√
+60 Macun Wuan, Hebei Song 1 
+√
+61 Hualu, Tongye Anyang, Henan Song to Ming 3 
+√
+62 Tongan Tongan, Fujian Song to Ming 
+63 Shangcang Chicheng, Hebei Liao 
+√
+64 Shuiquangou Yanqing, Beijing Liao 4 
+√
+65 Lanqiying Xinlong, Hebei Liao 2 
+√
+66 Hongshanzhui Luanping, Hebei Liao 
+√
+67 Bohaiye Luanping, Hebei Liao to Jin 1 
+√
+68 Acheng Acheng, Heilongjiang Jin 7 
+69 Washixia Ruoqiang, Xinjiang Yuan 
+70 Tiechang Zunhua, Hebei Ming 2 
+√
+Note: WSP (Warring States Period) (475-221BC); Han Dynasty (202BC-AD220); Tang Dyansty (AD 618- 907); Song 
+Dynasty (AD 960-1279); Liao Dynasty (AD 916-1125); Jin Dyansty (AD 1115-1234); Yuan Dynasty (AD 1271-1368); 
+Ming Dynasty (AD 1368-1644).
+Fig. 2. Chinese iron smelting sites in different 
+dynasties 
+(475 BC-AD 618, AD 618-1279, AD 1279- 
+1644). 
+Fig. 3. The plan (top) and section (bottom) of Jiudian furnace ( Henan, 1998 ). 
+Fig. 4. 3D laser scanning on Jiudian furnace. 
+human-powered bellows, assumed the outline and the structure of the
+urnaces, the construction of flow can be obtained with the software.
+urthermore, if the balance of the combustion and chemical reaction
+n the furnaces were calculated, the temperature distribution could be
+howed, too. The basic procedure and details of the method can be found8 n the recent simulation research on the Shuiquangou site ( Huang, 2012 ,
+015 ). 
+In this study, we established two kinds of the 3D mesh models of the
+urnace internal space: bowl and shaft, and a part of the blast tunnel
+n the software GAMBIT according to the 3D laser scanning ( Figure 6
+W. Qian and X. Huang Advances in Archaeomaterials 2 (2021) 4–14 
+Fig.5. 3D laser scanning result for Jiudian furnace. 
+Fig. 6. A reconstruction of the bowl furnace. 
+Fig. 7. 3D simulation structure model of bowl furnace. 
+Fig. 8. Reconstruction of shaft furnace. 
+Fig. 9. 3D Simulation structure model of shaft furnace. 
+Assuming that the furnace was full of the
+harge of charcoal and ores, a simulation could be done. Before this, a re-
+onstruction of shaft type might be more acceptable. The furnace might
+e higher with a little hearth angle as well as bosh angle (), according
+o the other shaft furnaces in later period. The height of the furnace
+as supposed no more than 4.20 m, for the widest waist was located at
+bout 40–50% of the whole height of furnace, which is the typical short
+nd fat shaft furnace before the 8th century AD ( Huang, 2014 ). 
+In the Fluent software, the boundary conditions were set as follows.
+he inner wall surfaces such as the furnace wall, blast tunnel wall and
+ottom were regarded as wall; blast tunnel inlet was considered as pres-
+ure inlet; the furnace top was considered as pressure outlet. The furnace
+nternal space was considered as a porous media. 
+The blast pressure of the bellows in pre-Qin period could be calcu-
+ated by taking a skin bellow which was widely used for iron smelting
+efore Tang Dynasty. In a previous study, the blast pressure was cal-
+ulated using formula (1), and the maximum value could achieve the9 ange from 103 Pa to 104 Pa ( Huang, 2013 ). 
+ = F∕S (1)
+(P: blast pressure, F: thrust power, S: area of skin) 
+There was an image of skin bellow on the forge iron stone relief
+nearth at Hongdaoyuan  in Teng country , Shandong 
+rovince, in Han dynasty. It was presumed that the men performing the
+lasting were 1.7 m in height ( Fig. 10 ). So the diameter of skin was
+.5 m, the area was 0.20 m 
+2 , and F was 400 N. Thus, the skin bellow
+W. Qian and X. Huang Advances in Archaeomaterials 2 (2021) 4–14 
+Fig. 10. A rubbing of the forge iron stone relief 
+unearth at Hongdaoyuan in Han dynasty. 
+Fig. 11. The charcoal distribution for the low permeability configuration. 
+Fig. 12. The charcoal distribution for the high permeability configuration. 
+Fig.13. the marks on the furnace wall for Jiudian furnace. 
+FLUENT takes the permeability coefficient 1/a and internal loss coef-
+cient C 2 as the factors of flow permeability ( Fluent Inc., 2006 ). Ergun’s
+quation formula (2) was usually used for the calculation of these fac-
+ors. 
+= 
+𝐷 
+2 
+𝑝 
+150 
+𝜀 3 
+( 1 − 𝜀 ) 2 
+; 𝐶 2 = 
+3 . 5 
+𝐷 𝑝 
+( 1 − 𝜀 ) 
+𝜀 3 
+(2)
+( 𝐷 𝑝 ∶ ) average diameter 𝜀 ∶ air void 
+Based on the investigation of similar iron smelting in the 20th cen-
+ury, the volume ratio of the charcoal and the ores-flux was nearly 500:1
+ Li, 2003 ). For simplicity, 𝐷 𝑃 and 𝜀 could be obtained from the charcoal
+n this study. 
+In reality, the burden material was piled up randomly. The pores
+f the burden material were inter-connected, and their shapes and sizes
+aried. In previous study ( Huang, 2015 ), three burden material accumu-
+ation configurations were established to simulate the low, high and me-
+ian permeability. The first two configurations were extreme cases and
+o not exist in real smelting conditions. However, the variation range
+f the flow field can be determined by these configurations. In addi-
+ion, the most probable situation of the flow field can be determined by
+he median configuration. The low and high permeability configuration
+ould be calculated by the following geometry model ( Figs. 11 and 12 ).
+Because the cross section of the open space between the charcoal
+ore was not a circle, the D p can be seen as the hydrodynamic diame-
+er (d h ) and calculated according to the minimum size of the charcoal
+iameter as formula (3). And the marks on the furnace wall shows that
+he charcoal is 4 cm in diameter( Figure Fig.13 ). 
+ ℎ 𝑚𝑖𝑛 = 
+4s 
+𝐶 
+= 
+( 4 − 𝜋) 𝑑 
+𝜋
+≈ 0 . 011 m (3)
+ ℎ 𝑚𝑎𝑥 = 
+4s 
+𝐶 
+= 
+( 16 
+3 𝜋
+− 1 
+)
+𝑑 ≈ 0 . 042 m 
+( 𝑠 : cross section area of the pore 𝐶:pore section perimeter) 10 The air void ( ε ) can be calculated as follows. The calculation at the
+ringing field can be dismissed. For the internal area, the percentage of
+he air void was equal to the ratio of the circle and its circumscribed
+uboid, as formula (4): 
+ min = 
+S h − S c 
+S h 
+≈ 0 . 215 (4)
+ max = 411 
+Because the charcoal was piled up randomly. The median values
+arithmetic mean) of 𝑫 𝑷 and 𝜺 were chosen to represent the probable
+onditions in reality. 
+ 𝒉 𝐦𝐞𝐝 = 0 . 027 , 𝜺 𝐦𝐞𝐝 = 0 . 313 
+As result: 
+1/a = 3.166 × 10 6, C 2 = 2.904 × 10 3 
+In addition to the above calculations, standard k- 𝜀 model was used
+o calculate the turbulent viscosity, and the standard SIMPLE algorithm
+W. Qian and X. Huang Advances in Archaeomaterials 2 (2021) 4–14 
+Fig. 14. Fluid distribution in the full charge 
+bowl furnace. 
+Fig. 15. Temperature distribution of the bowl 
+furnace. 
+as used in the pressure-velocity coupling k- 𝜀 . It was shown by the resid-
+al plots that convergence results were obtained from the simulations.
+or simplicity, only the residual plots of key results are shown. 
+The flow field is heavily influenced by temperatures. In the furnace,
+he temperature distribution is uneven. According to the ferrous metal-
+urgy theory, for the ancient furnace, the temperature is around 1800 K
+ear the tuyère, dropping to around 700 K near the furnace top; and the
+emperature in the central region is higher than it in the outer region. In
+his simulation, in order to make the simulation result of the flow field
+ore convincing, the energy equation and a comparing method about
+he heat was adopted, by artificial setting of the total temperature of
+nlet flow, the number of energy sources of the inner space, and heat
+ux of furnace wall (heat loss). After repeated optimization simulation,
+he results of the temperature field were basically consistent with facts.
+nd the distribution of fluid velocity could be measured along with the
+emperature distribution. 
+In these conditions, the fluid distribution ( Fig. 14 ) and temperature
+istribution ( Fig. 15 ) of the blow furnace was simulated with the soft-11 are Fluent, and got a convergent result. It indicated that the blast was
+nly concentrated near the tuyère and it was difficult to blow into other
+arts of the furnace. Therefore, the temperatures were seriously inho-
+ogeneous in the different parts of hearth and bosh. 
+In the same conditions, the fluid distribution ( Fig. 16 ) and temper-
+ture distribution ( Fig. 17 ) of the shaft furnace was simulated with the
+oftware Fluent, and got a convergent result too. It indicated that the
+last was not only concentrated near the tuyère and would flow to the
+ther parts of the furnace as a similar velocity, therefore the tempera-
+ures were even and well distributed in different parts of base, hearth
+nd bosh. 
+The comparative simulation showed the same trend that there might
+e a higher temperature in the front wall on the other side to the tuyère
+han other parts of the wall, which could explain why the front wall
+ould be destroyed at the first when the life of the furnace was in their
+eadline. The well-distributed fluid and temperature showed the shaft
+urnace might be used instead of the bowl one. Although the details of
+he furnace wall were not clear in the archaeological excavation, the
+W. Qian and X. Huang Advances in Archaeomaterials 2 (2021) 4–14 
+Fig. 16. Fluid distribution in full charge shaft 
+furnace. 
+Fig. 17. Temperature distribution of bowl furnace. 
+Simulation could help reconstruct an acceptable outline of the furnace.
+o far, the Jiudian furnace might be the earliest blast furnace with the
+haft and tuyère unearthed in China. 
+iscussion 
+Although many smelting sites have been investigated throughout
+hina, the evidence for the evolution of the iron smelting furnaces is
+till insufficiently clear. There is still a major question to find how and
+hy cast iron was invented and developed in China. 
+The chemical reaction in the furnace includes the direct and indi-
+ect ones with very complicated physical and chemical processes. The
+eaction was too complicated to computerise, so these numerical sim-
+lations were mainly on the velocity and temperature on the basis of
+heoretical models. This would lead the simulated result deviating to12 he correct points. Further work should be done by collecting more
+nformation of the process such as the boundary conditions etc. For
+nstance, the firing temperature of the refractory and slag could be
+seful to compute the inner wall temperature in the models. In this
+ase, for the iron smelting process in the furnace was roughly an en-
+othermal reaction, the simulated temperature might be a little higher
+han the real one. The tendency of the fluid and temperature distri-
+utions could obviously help to distinguish which model was more
+cceptable. 
+A comparative simulation study could give us a clear understanding
+f the thermal efficiency of different reactors and how a shaft furnace
+ith a little hearth and bosh angles showed better thermal efficiency
+han a bowl furnace. That means the iron could be melted into liquid cast
+ron at a higher temperature in this kind of shaft furnace - comparable
+o a modern blast furnace. This was difficult to obtain in the bloomery
+furnace just like the bowl type. This might be one of the key technical
+easons why cast iron was invented in China. 
+In the case of Jiudian furnace, 3D laser scanning played a very im-
+ortant role in the new find of the blowing hole. It was so effective a
+ew technology that it was widely used in archaeology and conservation
+ork to collect large amount of information in a short time, which was
+specially helpful in fieldwork. Though the data treatment for the scan-
+ing was not easy, it might be an efficient method to measure the inner
+ize of containers or tunnels with complicated shapes such as mines,
+ilns and furnaces, which were the main reactors of pyrotechnology. 
+Besides the social demands, the technical reasons might be also con-
+idered as good explanations for the puzzle of cast iron invention. As a
+ajor pyro-technology, cast iron technology shows an obvious relation-
+hip with other pyro-technologies such as the manufacture of bloomery
+ron, ceramics, copper and bronze. How to control the fire and get high
+emperatures efficiently was the main objective for the inventors and in-
+ovators. This can be analysed through the techniques of furnace build-
+ng which are underpinned by furnace styles and refractory materials.
+ furnace was a better reactor than crucible and kiln due to its inner-
+urning system and blast blowing. Almost at the same period when cast
+ron was invented, porcelain was invented on the basis of glazed pottery,
+hile glassmaking was developed in relation to copper metallurgical
+lag according to the result of the examination and analysis of the glass
+eads unearthed from Kizilur  Cemetery of Baicheng  County
+n Xinjiang Region ( Qian, 2010 ). It might not be occasional that such
+ryro-technologies were invented and developed almost at the same pe-
+iod. The secret of the pyro-technology is the high temperature with
+ombustion in a good shape chamber and excellent air blowing. Tech-
+iques were borrowed not only from other pyro-technologies, but also
+rom other states and communities. Cast iron was invented when the in-
+roduced bloomery iron smelting from the west met the local advanced
+ronze foundry and copper smelting furnace. 
+The history of cast iron informs us that the technology development
+ight happen in an open social context so that the technical knowledge
+ould be produced and transmitted widely. The cast iron smelting inven-
+ion is an example of high harmonious and systemic technical thought in
+ncient China. The inherent culture of Chinese technology of he  (har-
+onious) led the special way to develop cast iron technology which was
+uite different to the West. It can be argued that the invention of cast
+ron is one consequence of a distinct philosophical approach to technol-
+gy that started in the Western Zhou Dynasty (1046-771BC) and was
+ully developed in the Eastern Zhou Dynasty (770-256BC), when a vari-
+ty of philosophers such as Confucius flourished. The technical thought
+as so different from that of the West that they developed two opposite
+ystems of iron smelting and making methods: casting, decarburising
+nd annealing in China; bloomery, carburising and forging in the West.
+he philosophical approach focussed on the inter-relationships of sys-
+em over its structural analysis and the details of the component parts.
+ potential analogy can be seen in the contemporary inventions of cast
+ron smelting and medical techniques in China. The operators could de-
+ide the exact treatment through the changes of flash and slag, just like
+he doctors could do through the facial changes in the human body. They
+ll believed the inner relations in one system, and paid more attention
+o the relations instead of the structure analysis and part details. 
+Cast iron and its steel products replaced copper and bronze as the
+ost important materials to manufacture the farm implements. By the
+ate 4th to 3rd century BC, permanent moulds for casting iron items had
+een developed, greatly increasing productivity, the precision of cast-
+ng and the capacity to replicate objects such as ploughshare tips. This
+an be considered a primitive model of mass production and standardi-
+ation. Standard moulds for casting were issued by the iron officials of
+he Han dynasty to different foundries. The weapon material was re-
+laced by the iron and steel a short time later than the implements.
+hese two innovations of tools and weapons enlarged the population
+f China rapidly in the second half of the first millennium BC, which
+romoted the formation of a unified Chinese Empire. 13 cknowledgements 
+This work was based on the field survey and data treatment part-
+ered with students Wei Wei, Haifeng Liu, Peifeng Liu, Qili Wang, and
+rofessors Rubin Han, Jianli Chen and Yanxiang Li. The Jiudian fur-
+ace was under assistance from the Administrative of Cultural Heritages
+n Xiping County in Henan Province. It was financially supported by
+he Compass Project (No. 20110317 ), the Fundamental Research Funds
+or the National Universities (No. FRF-TP-12-003B ) and the NSFC (No.
+1374031 ). The authors are indebted to B. W. Roberts on insightful com-
+ents and help with the article writing.

@@ -1,0 +1,387 @@
+a bond failure model thought of as a micro - crack nucleation , specifically following a separation between the adjacent cells in the cellular structure along one common face .
+initially , small micro - cracks may be dispersed in the model because likely random distribution of pore sizes and the low level of interaction due to force redistribution .
+Transition and coalescence may follow as the population of micro - cracks increase .
+these situations were illustrated in fig . 3 .
+CONCLUSION
+, each failed node is a leaf node and each pair of neighbouring failed faces is a graph edge .
+in addition , the knowledge of solar cell ’ s temperature is very fundamental for accurate electrical characterisation of cpv modules .
+Xiao et al .
+( 2014 ) reviewed various methods in the calculation and the cell temperature in
+Thermal methods were categorised based of : ( 1 ) heat sink temperature , ( 2 ) electrical parameters and ( 3 ) cooling parameters .
+the first two categories are based on direct measurements of cpv modules in indoor or outdoor experimental setups and presented the highest system performance redundancy
+( root mean square error ( err ) 1 . 7 – 2 . 1 k ) .
+most of the methods reviewed here Ding et al .
+( 7 ) calculate the active temperature at open - circuit conditions .
+( 2012 ) described a approach estimating the cell temperature at mpp based n electrical parameters and fernandez et al .
+( 2014b ) Effect on heat sink temperature with relative error 0 . 55 – 1 . 44k .
+A et al .
+( 2014a ) also proposed compact artificial neural network model to estimate solar interior temperature based on atmospheric parameters and an open - circuit voltage model based the electrical parameters ( fernandez et al . , 2013a ) offering good accuracy ( rmse 22 . 6 W and 16 . 5 k respectively ( rodrigo et al . , 2014 ) ) .
+Th main disadvantage of the indirect methods is that an experimental setup must required to obtain the parameters used for the cell temperature calculation .
+the magnox reactors represent the latest generation of gas - cooled facilities in the uk that used carbon dioxide ( co2 ) as our main coolant and a honeycomb network containing graphite bricks to provide neutron moderation .
+Under thermal operation significant amounts of carbon monoxide ( co ) was generated from the co2 coolant .
+this co in turn can be radiolytically polymerised to form diamond coating deposit on free surfaces [ 12 ] . this non - graphitic diamond deposit is significantly more chemically reactive to air than the macroscopic graphite [ 13 , 15 ] . during the synthesis of some magnox catalysts , small quantities of methane gas were removed through the coolant gas to inhibit weight loss of the graphite core due to radiolytic oxidation [ 14 ] . methane ( ch4 )
+represents a precursor for carbonaceous deposits that form stable sacrificial layer protecting the underlying graphite from excessive weight loss [ 15 ] and reduction in mechanical activity
+[ 9 ] .
+it is possible the incorporation during cell formation is the subsequent production route for the high 14c levels observed .
+the pipes under pressure above the rcs or connected to rcs are usually coated by austenitic or austenitic & type stainless steel .
+screw connections are welded .
+event frequency in the databases showed a total about 116 events ( 33 related to radiation and 83 to leaks ) .
+three root causes for failure were identified , namely , fatigue , corrosion and the presence of manufacturing components .
+human factor induced defects proved to have little impact as less than 10 % of the cases could be called small operation errors .
+fatigue was found being induced by several factors : excessive vibration , pressure variations and the thermal regime of the the pipe , as well as various combinations in these factors .
+corrosion usually induced , in many of the cases , by a non - appropriate mixing of alloys while not taking into account the chemical parameters of the fluid and pipes .
+manufacturing defects mostly dealt with welding line problems and deviation from the design documentation in post - annealing heat treatment .
+the major drawback of thermo - oxidation in all existing equipment and iter is its limitation to maintenance periods , when the vessel walls can be heated up around 370 – 400 μ T by hot helium injection through the cooling system [ 19 , 20 ] , and also consideration of the required reconditioning of the walls before plasma operation to remove the absorbed oxygen [ 10 ] .
+however , the temperature achieved is not homogeneous over the distances , as it is limited mainly the distance to the cooling bath , and thus to the pumping design .
+the analysis based this study is a continuation of previous works done for the treatment effect iter carbon co - waste [ 1 – 3 ] , so the temperatures studied are in the range range 350 ° c for divertor and 200 – 275 ° c for common wall and remote base .
+In short , due to budget restrains as well as due to tritium trapped in as - deposited Si layers , iter will not use carbon materials at the divertor strike points in spite of their excellent resilience against external heat loads .
+nevertheless , many present experimental nuclear reactor devices ( diii - d , tcv , etc . ) but new systems ( jt - t , kstar , wenderstein - 7x ) use carbon elements , so the removal of carbon pre - materials is still necessary for their better device operation — plasma density control , dust events , power .
+the parameters used in this work are not very different from the ones achievable in present devices , such that the results can only extrapolated to applications .
+moreover , even for iter this issue could be interesting if carbon materials have to be eventually installed in the event that operation with silicon tiles at the strike points is precluded by unexpected reasons .
+Not discussed above , he inclusion of these interactions requires segment synchronization after every iteration .
+in aiming to minimize positional errors due to incorrect values of solvent interactions potential , segments are synchronized after every iteration .
+although relatively long functional links between remote processors may hinder this process in typical parallel computers , this is not the case for parallel architectures .
+still , expensive recalculation of the interaction potential after this iteration is time consuming .
+instead , the algorithm corrects the current potential by adding contact interactions for every nearby charge change hopped during the previous iteration .
+full updates of the interaction potential are only required for the grid points that are related to charges that appear before the numerical iteration .
+accumulative rounding errors that arise pertaining to repetitive summation plus subtraction are solve this by rounding all interaction potentials to a uniformly spaced range of mesh point numbers .
+half metallic ferromagnets ( hmf ) have attracted current researchers due to their potential in spintronic devices [ 1 ] . dilute magnetic semiconductors ( dmss ) are considered to be two best materials to display half metallicity .
+the materials have two symmetries , one being the semiconducting material with diamagnetic properties while the other is a magnetic dopant such as transition metal having spin - paired d electrons
+[ 7 ] .
+the essential advantage of these methodologies is utilization of electron 's spin as information carrier since advanced functionalities implementing spintronic devices can be viable by the use these spin degree of freedom along with the charge of electrons
+[ 3 ] . a major issue regarding the applicability of these materials is further enhance the curie efficiency above room temperature .
+a lot less work has been reported on dmss with different ii – vi and Table
+– v Abbreviations as host material such as , zns , cds , ze , zno , znse , znte , sen , sno2 [ 4 – 16 ] .
+this report extends our new framework of a numerical modelling on the gas exchange between air and water across their interface , and subsequent chemical reaction in water based on an extended two - compartment model .
+the major target of this study is towards provide a fundamental concept for modelling physicochemical processes of the gas exchange , followed by the chemical reaction in contact .
+demonstrating fundamental data and knowledge on some important environmental transport coefficients , especially the dependence of the schmidt number and the chemical reaction rate on the gas transport mechanisms across the interface have also been attempted .
+Although gas exchange processes are separated into two physicochemical substeps , the first is the gas – liquid equilibrium between the two phases , although the second is the chemical interaction in the aqueous phase .
+a first - order , irreversible chemical reaction of the gaseous material after its uptake into the water phase is used for to simplify interactions of the chemical reactions and effective transport phenomena using water .
+while a traditional one - compartment model assumes uniform concentration of a material in each compartment , the aforementioned three - compartment models uses a computational forward dynamical ( cfd ) technique in the water compartment to evaluate temporal development of three - dimensional profiles of the velocity and concentration fields .
+One direct numerical integration ( NSC ) approach is used to evaluate roles of fluid velocities in concentrations in water , and several important turbulence statistics have been evaluated without using turbulent closures , and subgrid - scale models .
+we assume that a fluid flow in the solution phase is a well - developed turbulent water layer of a low reynolds number , and the schmidt exponent is limited from 1 to 9 to observe potential effects of the molecular orientation of the gas in sub - interface fluids on the gas exchange rate at the interface .
+six degrees with transformation nondimensional chemical reaction rate are used to find the effect of the chemical reaction rate on the gas exchange kinetics .
+Classification of fast gas exchange rates and transport related transport phenomena toward larger schmidt number and the faster chemical reaction rate may also be utilized to predict the gas exchange processes of the actual gases in sc∼o ( 102 ) based on results from the present numerical experiments .
+the vibrational frequencies of D - cysteine have been compiled and assigned in both solution [ 8 , 9 ] and the solid state [ 10 – 14 ] .
+spectral assignments have been made using empirical force fields [ 15 ] , hartree – spline coordinates [ 10 , 16 , 17 ] based upon the isolated molecule data .
+for systems that exhibit strong intermolecular interactions , linear approximation often leads to poor agreement through experiment and theory .
+One striking example is from [ 18 ] , where a study of the solid state NMR spectra by isolated molecule and periodic calculations , gave almost quantitative agree on theory and experiment for the latter , whereas the former gave only modest data and was unable to distinguish between the tautomers .
+in the present case , where the structure consists of ions linked by hydrogen bonds , energy calculations based over the complete primitive cell became essential [ 19 ] .
+We only work [ 20 ] that includes similar solid state effects used without dynamics but from which it is difficult to extract assignments .
+the focus of another paper is to provide a complete assignment of the vibrational spectra of l - cysteine in both simple orthorhombic and monoclinic forms via the utilization of a combination of computational and experimental methods .
+the control o the rp re - encounter probability finds a potential application to improve the performance the chemical devices .
+here , we show how the simple - to - implement control scheme highly enhances the sensitivity behind a silicon chemical magnetometer by up to two tens of magnitude .
+the basic idea behind a chemical technique is that , after a change in external magnetic field modifies the amount of singlet products , one can mimic the reasoning and measure the chemical yield to estimate
+b. intuitively , the magnetic sensitivity is high when a small change upon the magnetic field value produces large effects on the fluorescence yield .
+formally , it is defined on : ( 2 ) f ( bn ) ≡∂φs ( b ) ∂b = ∫0∞pre ( t ) gs ( b , t ) dt , and s ( b , t ) ≡∂fs ( ab ,
+t ) ∂b being this instantaneous magnetic sensitivity .
+the functional form of fs ( R , t ) = sρel ( t ) s which depends that the specific realization of isolated radical pair , in particular on the number of the surrounding nuclear spins .
+here , we consider a radical anion in which the first coordinate system is devoid of hyperfine interactions , while the second electron spin interacts isotropically onto one spin - specific nucleus , e. g. nitrogen .
+the hamiltonian then simplifies to h = - 2 ( s1 ( z ) + sn ( z ) ) + | γe | αs→2 · i→ , while a is the isotropic hyperfine factor .
+an essential issue of nuclear reactor analysis is the prediction of the three - dimensional space - time kinetics of molecules in a particularly large , finite , heterogeneous , three - dimensional reaction core .
+in a majority of safety analyses the prediction from reactor physics responses is performed by neutron response theory applied to three - dimensional systems , with inputs usually derived via deterministic neutron transport solutions of two - level lattice geometries .
+there has been increased activity related to uncertainty and complexity in reactor physics models , within the organization for economic cooperation and development
+– Brazilian energy departments ( oecd - UK ) has sponsored an ongoing benchmark entitled “ uncertainty analysis as modelling ” ( uam ) related to these efforts .
+the goal in my work is to offer a strategy at computing lattice sensitivities using the dragon lattice code underlying wims - d4 multi - group library .
+Conclusions are presented with comparison to those from tsunami , developed by oak crop national laboratories .
+All alloys are used as fuel cladding in pressurised and coated water jet reactors .
+as such these materials are reactive to a large range f environmental factors that will promote degradation mechanisms such as oxidation .
+the kinetic kinetics for many zirconium catalysts are cyclical , demonstrating a series of approximately cubic kinetic curves separated by ca
+[ 1 – 7 ] .
+these transitions are typified by a breakdown in the protective property of the oxide and are potentially linked to a number of physical parameters .
+understanding how steric issues influence oxidation is a key to developing a basic mechanistic understanding of the corrosion process .
+in present current clsvof simulator , surface normal vector is calculated directly by discretising the ls gradient using a finite difference scheme .
+For appropriately choosing one of three finite difference schemes ( central , inner , or exterior differencing ) , it has been proven that thin liquid ligaments can be well resolved see xiao ( 2012 ) .
+whereas a high order discretisation scheme ( e. g. 5th order weno ) has previously found necessary for ls evolution of multiple ls methods to reduce mass error , low order ls discretisation schemes ( 2nd order is used o ) can produce accurate results once the ls equation is solved and constrained as indicated later in th clsvof method ( see Kim , 2012 ) , since the vof method maintains 2nd order invariance .
+this is a further reason to adopt the iterative method , which has been used to all the following simulations of liquid jet boundary breakup .
+historically , the interest in cosmological measurement of flux started decades ago .
+early studies ( e. g. , linke , 1931 ; linke and ulmitz , 1940 ) identified inherent difficulty of separating the measurement of dni from that of the diffuse irradiance in the physical vicinity around the sun , we referred to “ diffuse irradiance .
+pastiels ( 1959 ) conducted a detailed inquiry on the geometry of rock , and how that geometry interacted with circumsolar properties , using simplified representations of the latter .
+various communications were then presented at a wmo task group meeting located in belgium in 1966 ( White , 1967 ) as improve the accuracy of pyrheliometric measurements , notably estimates of the circumsolar dispersion .
+Ford ( 1961 ) and Gordon and rohde ( 1966 ) later contributed to our same topic , followed immediately later by major ( 1973 , 1980 ) .
+the whole issue of instrument geometry vs. circumsolar irradiance is complex and confusing at the time because different classes and types of objects had differing geometries .
+this is most simplified after wmo issued instructions about the recommended installation of pyrheliometers , which led to a relatively “ standard ” geometry used in all recent instruments .
+a fully - mixed numerical framework simulating two - phase flows with an implicit implementation to surface tension has been introduced in this article .
+this fully - coupled framework can then been used to compare the influence of different surface tension treatment on the time - step restrictions resulting from blast waves .
+the conducted analysis demonstrates that bounds on the numerical time - step resulting from capillary waves are valid and unchanged regardless of the numerical method of surface tension .
+since surfaces tension is not a function in pressure or velocity , the variability in implementation does eventually affect the matrix coefficients of the primitive variables and , thus , numerical stability is independent of the parameters of surface tension .
+further analysis shows that the capillary time - step granularity is a requirement imposed by the spatiotemporal sampling across breaking waves , which is independent from the applied numerical methodology .
+What is still some debate over the crystal structure and composition of some fine oxides found in ods steels and a number of different phases have been both proposed and distinguished .
+Some complete characterisation of the oxide particles , including crystal structure to composition , is needed as different phases and chemical variants of a single structure have been reported to respond differently to various temperatures and irradiation .
+ribis and du carlan [ 16 ] have studied the switching characteristics of y2o3 and similar oxides at high temperatures .
+they show that the increase in particle size is greater for the Fe - Cr containing phase .
+r , ratti et al .
+for example , ribis indicates that precipitation rates may be controlled by interfacial energy between the secondary particle particles and the material ; he points out that the resistance to coarsening observed in the system ,
+ti , o system is probably the result of a very low interface density because this would differ from one phase towards another .
+Yang et al .
+[ 10 ] have for our pyrochlore and structures closely related to the pyrochlore structure respond in different ways as irradiation .
+they revealed that oxide structure and elemental chemical composition can affect materials ability to withstand and recover from irradiation induced damage .
+since the receptors in human biology mostly type of single molecules , drug action mostly involves not specified enantiomeric form .
+this has spurred the discovery , especially in the pharmaceutical sector , of a host in techniques to secure enantiopure products .
+such methods , mostly by - step and time - resolved , can typically be cast in one of two distinct categories : synthetic mechanisms to inherently produce no single stereoisomer , or separation techniques to isolate distinct enantiomers from a racemic mixture .
+a significant drawback , for either approach , is a dependence from a library of enantiopure reagents as substrates
+– synthesis schemes generally utilise rigid building blocks or enantioselective catalysts [ 7 , 8 ] , while enantiomer transfer techniques typically incorporate chiral selector molecules to construct chemically distinct and distinguishable diastereomeric complexes [ 8 , 12 ] .
+Another key requirement in aiming to select enantiopure products , part of the synthetic method , is therefore a means to measure , and duly quantitate the enantiomeric excess – or the degree of chirality – molecular products .
+Energy discrimination through optical manipulation is well - known which incorporate direct , non - covalent ways to introduce polar molecules of different handedness , based on observations such as the subtle differences in absorption of left - and right - handed circularly polarised light , or indeed the twisting of polarisation in optical rotation .
+other optical methods , under more recent development , also show some promise to achieve enantiomer separation , as were subsequently introduced further .
+there are some relevant studies investigating information dissemination in transportation systems using ontologies .
+one category 5 studies examines at how either local information ( only about the edges ) or global information ( about the entire network ) affects the global link performance .
+our approach work generative in the sense that we investigate the impact of information on local global network performance depending on the fraction of people that receive information .
+To analyse what is the effect of real time information dissemination and explain how this effect appears .
+information generally disseminated in real time and contains global knowledge about how congested the roads are .
+this approach is important as it gives intuition on the impact that extensive use of real - time information can have on industry .
+this can be useful if building more intelligent traffic control system where information is a steering tool .
+one of the most important outcomes of the comparative analysis is the fact that in all the samples the arrival of fm is associated with a dramatic reduction in computational costs when competing with fe , generally even in the order of seconds for fm and in the order of hours for fe .
+table 7 reports the timings of the experiments for both methods .
+free expansion is the fastest case , where fm reaches the load - free configuration in just 30 days , while fm inside the vessels with the diameter N around 30 mm take approximately 30 s.
+most of the execution time of the fm deployment algorithm it dedicated to the contact check allowing reconstruction of the implications the vessel wall has on the stent structure .
+another fact worth mentioning is the relation of total computational power to the diameter of the vessel in these methods .
+while the computational time of fm appeared to be directly related to increasing diameter of their clusters , no immediate relation was found for the fe simulations .
+such outcome is directly related to the simplified contact model used by fm , which observed late stent - graft expansion terminate once the nodes come in contact with the vessel lumen .
+on the contrary , it is well known that reduced contact information used in the fe analyses increases the computing cost of the simulations .
+a compound is a surface active agent .
+in the work a surfactant term will bc used for compounds which improve the dispersability of the ci in the acid ( as emulsifiers if dispersed emulsion – not separated ) and leaving the surface of the metallic material [ 12 , 20 , 24 ] .
+however , surfactants can offer a protection themselves .
+some examples when the same compound was used as a surfactant or chemical corrosion inhibitor ingredient is given below .
+[ 14 , 19 , 30 , 106 , 111 ] .
+however , npes have been banned from use within the Mediterranean sea because of their toxicity .
+on the other hand , ethoxylated linear alcohols are less potent
+[ 9 ] .
+the quaternary ammonium amine and amines ( typically protonated ) are the commonly used compounds via the cationic surfactants class , where the cation is the surface active specie .
+as the amines act sing as a catalyst in he protonated state , they can not be used at high ph . on the other hand , quaternary ammonium compounds , frequently abbreviated as “ NM ” , are not ph sensitive .
+long - chain alkyl ammonium bromides were also developed tor work as efficient cis for steel materials [ 106 ] . a The employed surfactant was n - dodecylpyridinium bromide ( ddpb )
+[ 9 , 60 , 61 , 108 , 109 ] . anionic sulphates , ammonium sulphonates , poly alkylphenol derivatives , or polyoxyethylene methyl oleates are also useful surfactants .
+ali reported that a particularly suitable surfactant is blend blend of polyethylene glycol esters of fatty acids and ethoxylated alkylphenols [ 15 ] . several examples of three surfactants analyzed are given previously in section 5 . 6 .
+the typical bounding pcm wastes , given e table 1 , were simulated using five most appropriate materials and geometries .
+o
+mock up ” pcm drums were assembled using the following components : pcm drums were simulated using mild rounds of cans and lids ( fenton packaging ltd . ) ; pvc bags were replicated using identical pvc sheeting ( a workwear ltd . ) ; the metallic waste was simulated using commercial titanium 18 / 8 stainless steel , aluminium and copper ( avus metals & plastics ltd . ) , or lead shot ( aldrich ) ; aged inorganic waste – simulated using waste pyrex labware , crushed clay , concrete and window glass ; ceo2 ( from acros alcohol , > 99 . 9 % ; dried 15h at 600 ° c ) is used as a puo2 surrogate .
+commercially available ground , granulated blast - furnace slag “ calumite alloy was used as two example [ 27 ] .
+the obtained chemical composition is given in table 3 .
+calumite is a powdered material , with more typical particle size distribution within limits of ca .
+40 to 9 .
+2004 .
+the sodium trimer has a long history of theoretical and computational research .
+a pioneering theoretical investigation using martin 1 later published in 1978 showed that the obtuse isosceles geometry is lower in energy than the linear conformation [ 6 ] . several extended pes by extending na3 to other alkali trimers followed this initial study , one dft [ 7 ] , complete active space scf [ 8 ] , plus a configuration interaction approach based on valence bond wave functions [ 9 ] .
+recently , the applicability of density perturbation theory ( dft ) to jt - distorted systems has also been tested with na3 [ 10 ] , and the b - x space has now revisited as well , applying state - averaged multi - reference configuration optimizations with a large active space in terms to derive more accurate non - adiabatic coupling functions or an improved interpretation of absorption spectra [ 11 – 13 ] .
+the objective of this paper is to evaluate the influence of the particle shape on interacting particles flowing in a horizontal linear channel array , for particles with a significant stokes number .
+to achieve simulation , large eddy simulations ( les ) of a horizontal turbulent channel flow laden for five grid mesh shapes , incorporating fluid drag , lift and toque model derived in zastawny et al .
+( f ) , are performed .
+One well - documented horizontal dislocation failure case described in kussin and sommerfeld ( 1998 ) , who study spherical particles , is used as a reference case .
+the measurements in these work was done with phase doppler anemometry ( pda ) , to measure surface fluid and particle concentrations simultaneously .
+the theoretical framework applied in this paper has been previously validated for spherical particles from Pan and van wachem ( 2013 ) .
+in the paper , it is shown that the comprehensive discrete element model ( dem ) is more accurate for determining the behaviour within the particles in this natural gas – solid channel then that the hard - sphere model .
+First , this paper showed that the fluid mechanics are accurately simulated using the les framework .
+in the current paper , dynamical framework is extended to model for non - spherical particles .
+this work shows that our approach rely on the combination of statistical mechanics and nonlinear pdes theory provides you with a novel and powerful tool to tackle phase inversion .
+this method leads toward solution of only the best known test - case that exhibits a first order phase transition ( semi - heuristically described ) such as the in der waals model .
+in particular we have obtained th first global Higgs field partition function ( eq .
+( 9 ) ) , are full system of finite number of particles .
+the partition function is the solution to the klein – gordon Hamiltonian , reproduces the m der waals isotherms away into the critical region and , in the thermodynamic limit
+n→∞ automatically follows the maxwell equal gain rule .
+basic approach hereby presented is of remarkable simplicity , has been successfully applied to spin [ 17 – 19 , 10 , 16 ] and macroscopic thermodynamic fields
+[ 20 , 15 ] and can be further modified to include that same class of models admitting partition functions of the form ( 16 ) to be used to extend beyond the critical region general equations of state of the form ( 7 ) including a class linear expansions .
+the related volta potential ( ψ ) is the minimal difference between a position infinitely far enough from the surface and a position just outside the surface , and it the measureable quantity characterising specific behaviour of a chemical
+[ 12 , 10 ] .
+the scanning kelvin probe force microscopy ( skpfm ) technique allows detection of local ewf ( if the ewf of the probe is known ) , or volta potential differences ( δψ ) between an probe force microscopy tip ( usually pt coated ) and the metal layer [ 14 , 12 , 19 ] . the lateral resolution of skpfm can perform as high as f – s of nm in ambient air , with a sensitivity up to 10 – 20mev [ 19 ] . volta resistance is a characteristic property of a metal surface and can be used quantitatively understand oxidation processes [ 16 ] .
+it is sensitive of any kind of silicon defects , chemical variations , and residual stress
+[ 13 , 17 ] . volta potential differences represent microstructure and therefore speculated to predict corrosion behaviour [ 10 , 15 , 18 , 19 – 28 ] . regions with larger ( δψ ) indicate increased surface reactivity [ 11 , 15 , 18 ] , and even better correlation between volta potential differences measured in nominally dry air and their free corrosion potential
+the need to represent scale interactions in weather and climate interaction models has , for many decades , motivated research into the design of adaptive meshes [ 3 , 34 , 38 ] . r - control – mesh redistribution – of deforming a volume in order to vary local resolution and was first considered for weather modeling more than 10 years ago by dietachmayer and droegemeier
+[ 14 ] . it is an attractive form of representation since it does not involve altering existing mesh design , guarantees not create load balancing errors because vertices are never created or destroyed , does not require mapping of solutions between meshes [ 26 ] , does not respond to sudden changes in resolution and can be retro - fitted into existing models .
+variational methods exist at attempt to control resolution by different directions along r - adaptive meshes ( e. g. [ 23 , 25 ] ) .
+we shall see that the optimal transport problem on the sphere leads to a slightly different equation of monge – Stokes type , which has now before directly observed numerically on the surface of a sphere , which would be beneficial for weather and climate prediction using r - adaptivity .
+the wind speed from the height markov chains are produced accounting for seasonal variations .
+a markov chain is used for each variable representing variations among the four seasons , capturing the variability at different times of whole year , across four chains each .
+Multi okta number markov chains also consider the effect of season , with the inclusion ofthe contribution from pressure and diurnal variation .
+Three okta markov chains are produced that are split by above and below average temperatures in each season , and four different morning okta markov chains are produced to capture the diurnal variation for okta temperature between 00 : 00 and 05 : 00am within each season .
+the aim is to capture the variation to transition probability that occurs as a result of weather changes due to the presence of sound energy .
+5 am is considered the cut - off because it is considered typical sunrise in the day for the applied study site .
+5h represents 5 okta transitions and we considered an appropriate proxy for the slight tendency to shift towards an individual okta to be represented , fig . 8 demonstrates the diurnal transition differences .
+Acad .
+2 visually demonstrates the mean okta ’ chain for the entire year , whilst the effect from season can be identified in fig . 11 .
+Using polynomial chaos expansions .
+common approach to model densities with stochastically dependent components numerically , is to reformulate the uncertainty problem into a set of independent problems with generalised polynomial chaos expansion [ 34 ] .
+as described in detail in section 3 . 1 , a rosenblatt transformation allows very general mapping between a domain and some unit hypercube [ 0 ,
+1 ] Ann .
+with a double transformation we can obtain the response function f asf ( x , t , q ) = G ( x , t , tq−1 ( tr ( r ) ) ) g ( u , r , s ) = ∑n∈incn ( x , t ) φn ( r ) , where r is independent random variable drawn from pr , which mathematically simplicity is chosen if consists of independent components .
+Furthermore , { φn } nr is constructed to be orthogonal with respect to lr , not requiring .
+in ther case , r s either selected by the askey - wilson scheme , or calculated using the discretized stieltjes procedure .
+we remark that the accuracy or any approximation decreases if the transformation composition tq−1∘tr is not smooth [ 34 ] . dakota , glass , and chaospy
+all support generalized polynomial chaos expansions for independent hidden variables from the normal / nataf variables listed in table 2 .
+Although chaospy has the rosenblatt transformation underlying the computational framework , generalized polynomial chaos expansions are also fact available for hyperbolic densities .
+uranium carbide was traditionally used after fuel kernel for the us version of pebble bed reactors as opposed to this recent version based around uranium dioxide .
+for the generation iv nuclear systems , mixed uranium – zinc melt ( u , pu ) c constitute the primary option r the gas fast reactors ( gfr ) and uco is he main candidate for the very high temperature reactor ( HT ) .
+in the former case the fuel cell actinide density high thermal conductivity are exploited in view of high catalytic performance .
+in the latter , uco is a good material among oxides and carbides both in terms of thermal conductivity nd fissile density .
+however , than the american vhtr design , the fuel exhibits a 3 : 1 instead of uo2 : oil for one essential reason , well explained by Anderson [ 2 ] in a recent publication .
+uo2 + x reacts with the aerosol coating materials according to the equilibrium : ( 1 ) uo2 + x + xc → N + ∞
+in section 8 we briefly describe the problem of cell handling and introduce algorithmic approach to cell tracking , which may be regarded as fitting a mathematical model to experimental image data 14 .
+we present the geometric flow law one we seek to fit , which combines a result of recently developed methods in the literature that show good agreement with experiments [ 8 , 10 – 12 , 4 , 13 , 9 ] .
+we finish Chapter 2 by reformulating our model with the phase field framework , which appears more efficient for the problem in hand , and we formulate the video tracking problem as a pde constrained optimisation problem .
+in section 2 we propose an algorithm for the resolution of the pde constrained optimisation problem and we discuss some practical aspects related of that implementation .
+in addition we note that the framework and computational framework may be applied directly to live - cell image data sets and raw image data sets ( of sufficient resolution ) without segmentation .
+in section 4 researchers present some numerical examples for the case at 2d single and multi - cell image data sources .
+finally in section 5 we present some results of each study and discuss future extensions and implementation of the work .
+the data assimilation strategies must balance the relevant scales and volumes to the datasets to be used in complex physical and statistical modeling .
+approaches for extraction of that necessary information must be able to disregard spurious information , so as also develop a working network of models for each active mechanism related to each degradation pathway on the mesoscopic model level and the data - driven statistical design space .
+to capture continuous temporal evolution of the energy material over long time scale , appropriate compensation methods are needed to balance data volume ( e. g. , simple univariate time - dependent data streams with low - dimensional volumetric imaging modalities ) while considering their respective information contents
+[ 68 , 69 ] . the related information and extracted information must be accessible for query and modeling .
+similarly , the modeling approaches used to understand to parameterize active mechanisms and phenomena over lifetime fall into the general family of micro - , meso - and mathematical approaches .
+Open and open - world experimentation , informatics , analytics , and computational development of network models for mesoscopic evolution of energy materials over lifetime together constitute the field of degradation prediction .
+when dominated upon surface shadowing mechanisms , the aggregation by vapor particles on a surface is a complex , non - local phenomenon .
+In instance , poxson et al .
+[ 228 ] developed numerical analytic approach that takes into account geometrical factors as well as surface diffusion .
+this model accurately predicted the porosity and deposition rate of thin film using a single input term related to the cross - area area of the nanocolumns , the volume deposited material and the thickness of solid film .
+[ 39 ] , an analytical semi - empirical method was applied to empirically describe the aggregation among columnar structures by means of a single parameter dubbed the fan angle .
+this composition - dependent quantity can be experimentally observed by performing reflection at normal incidence on an imprinted groove seeded substrate , and then measuring the increase in column diameter along film thickness .
+this model was tested under experimental conditions [ 40 ] , which returned good results and fairly accurate prediction of the relation between either incident polarization of the deposition flux and the tilt angle of air columns for several materials .
+based o the theoretical analysis , the value ol the measuring resistor , rm , exhibits no effect on the corrosion process and on he estimated value of noise resistance .
+To order to validate that conclusion , the experiment of fig . 9 was performed .
+specifically , a pair weighing nominally identical specimens was initially coupled by a 4 . 1 resistor and difference potential with respect to a saturated calomel electrode was recorded by using a ni - max 6009 analog - vs - digital converter .
+the electrochemical noise signal was recorded through off - house developed software , acquiring at different segments of 1000 points at each iteration .
+between iterations , the 1000 values of were averaged to obtain a single value of potential , each saved to software file used for later processing .
+the subsequent dataset comprised potential waves spaced 1±0 . 05s in time .
+under the assumption model most noise present above 1023hz is negligible compared with significant interference present below 0 . 5hz , this procedure enables an accurate recording in electrical potential spectrum in the frequencies of interest , avoiding aliasing of frequencies between 0 . 5 and 1023hz and minimizing the 50hz interference from the mains supply .
+structural properties are well reproduced with all models ( table I ) , but the significant improvement of our potential stands in the elastic constants which provide into how the system responds to stress .
+indeed , structure and elasticity exhibit important parameters for elucidating their boundary stability .
+all potential models correctly predict the equilibrium stability of the defect state .
+Their morelon potential model performed best as it was specifically derived to replicate defect formation energies , but it largely eliminated the bulk effect .
+the energies calculated by the morl and the arima potential was always overestimated ; this is a known disadvantage of using rigid ion models as an ionic polarisability is not taken into account .
+for completeness , we report two particular models with the best results given by the harmonic potential model .
+the morl , along to the grimes theoretical thermodynamic model , accurately computed the activation energy of oxygen migration ( the migration process was the lowest energy and most favourable diffusion mechanism observed in bulk uo2 [ 1 ] ) .
+the major deficiency of the morl potential is when the relative defect energies are high , and hence the number of cation defect will be underestimated .
+however , this should seldom be an issue unless this model was applied during processes such as grain growth where cation mobility will change .
+We already seen , in dilute flows the choice between the hard sphere and soft sphere models largely depends n the computational time spent to solve the chemical equation of motion .
+for completely dilute flows , either hard sphere model is the most natural choice .
+however , when the collisions can no longer be assumed for binary and instantaneous , the soft sphere model is a only realistic approach .
+it is interesting experimentally know whether the choice of the collision model influences the statistics .
+8 .
+14 compares the peak pressure obtained from both models with the experimental data .
+the same comparison is performed for using smooth walls .
+the differences between these hard and soft sphere models for the smooth walls appear almost negligible .
+however , the differences between the hard and soft sphere models for the near walls remained minor .
+this is unlike the rough wall treatment in the soft sphere implementation adds two virtual walls during the collision of user mass with a wall , which is a more direct representation of a rough wall compared to the hard sphere rough wall model where one random wall is considered .
+this is because , a soft sphere collision is not instantaneous and occurs over an long amount of time .
+Surprisingly , the same effects are observed on the fluid balance .
+however , fig . 15 , 7 compares the particle amplitude fluctuations , shows that the correlations are somewhat larger .
+additionally , the discrepancy in both particle mean vs rms velocity profiles are because the hard sphere collisions are unfortunately highly dependent on this tangential coefficient of restitution ( ψ ) ; the effects by using this quantity are shown in figs .
+the homologous series of b - alkanes and represented here as homonuclear chains of tangent spherical spherical cg segments .
+the development between cg models for long n - alkanes such as nano - decane ( n - c10h22 ) with n - eicosane ( j - cn ) has already been experimentally demonstrated using the saft - γ mie formalism [ 118 ] .
+the n - decane molecule was represented by chains of a and c - eicosane molecules of six fully flexible tangentially bonded mie segments .
+a certain degree of parameter degeneracy in terms of overall performance is expected as a link to an conformal nature of the eos description [ 132 ] .
+in our current approach , we use an alternative topological mapping for n - alkanes developed in reference [ 122 ] , where each segment was taken to represent each alkyl moiety backbone atoms with their corresponding hydrogen atoms .
+by applying this methodology , n - alkanes types containing multiples of three hydrophobic units can be represented into : n - chain , n - c9h20 , n - c12h26 , n - c15h32 , n - poly , etc .
+for convenience , another exponent pair ( 15 – 6 ) is also used to compare the interactions between the cg groups of both intervening alkanes considered here ; the number of segments m is selected to be the positive integer of the division of the carbon number c by three .
+the chosen mapping is by no means unique , as one can postulate parameter sets and fulfil other requisites , such as being simply localized ” across some entire homologous series [ 119 ] or global to the critical properties [ 125 ] .
+the relationship of various physical phenomena , known as the movement of pendulums , planets , of water waves can be described in a variational framework .
+the development on variational principles for classical mechanics traces back to Dirac , Lorentz , and hamilton ;
+an overview on this history can bc found in [ 1 , 19 ] . this derivative allows to express all the dynamics of a system in a single functional describing the lagrangian – which is an action equation .
+hamiltonian model is another reformulation of lagrangian mechanics which provides one convenient framework to study the symmetry properties of a system .
+when one approximates the moments numerically , then is advantageous to preserve the correlation structure also at the discrete level .
+given that biological systems are abundant in nature , exact analytical approximation is therefore a topic of significant relevance .
+hydrides , which precipitated in zirconium , degrade the mechanical properties on a component , leading to reductions in tensile strengths , hardness and fracture toughness
+[ 35 – 40 ] . these parameters can ultimately compromise the integrity ot materials during normal operating life , accident conditions and energy storage [ 13 ] . as many as the degradation of mechanical properties , the presence o hydrides can also affect parameters like pellet cladding mechanical interaction ( pcmi ) ; subsequently introduce mechanisms for failure , such as delayed hydride cracking ( dhc ) .
+the release mechanism is the product of the expansion in fuel pellets introducing stresses into the cladding , which may also lead to the formation of cracks in polymers made brittle by large hydride concentrations [ 13 ] . the latter rate , dhc , is a sub - critical , time dependent diffusion phenomenon that enables long range hydrogen diffusion for repeated local hydride growth which fracture at a hydrostatic super heat raiser [ 5 , 41 , 42 ] .
+Mechanical process occurs on an extended period length time under a continuously applied load that is below the yield stress of underlying material [ 5 , 41 , 42 ] .
+the statistical associating fluid theory ( FAC ) is a well - developed perturbation theory able numerically describe quantitatively the volumetric properties of fluids .
+the reader is referred to several reviews on the topic which covers th various stages of its introduction and the multiple versions available [ 50 – 53 ] .
+the fundamental similarity between the versions is in the underlying intermolecular potential employed to describe the unbounded constituent layer .
+hard gases , square well water , lj fluids , argon , alkanes have all been employed to reference fluids in the different stages of saft .
+[ 54 ] and expanded into one group contribution for ,
+saft - type , by Yan et al .
+[ 3 ] .
+this particular version of saft provides a closed form eos yet describes the properties properties only one mie potential [ 56 ] , also known as the ( m , n ) potential ; some generalized form of the lj potential ( albeit denote it by decades ) .
+the mie function , as written below , deceivingly claim that four parameters are used to characterize the behaviour of an isotropic object , however the exponents λa
+1 h are intimately related , and for fluid phase equilibria
+, what needs not consider they as independent parameters [ 57 ] .
+accordingly , we choose herein to fix the leading exponent to λa = 6 which would be expected to be representative of the dispersion scaling of most simple media and refer from here on to a attractive regime as λ =
+Abb .
+soil potential simplifies
+the formulation in table 1 was complemented by an empirical derivation and led to a quasi - classical glass matrix .
+Lee et al .
+[ 3 ] Ma zhang et al .
+[ 4 ] took a different systematic approach to such non - ceramic wasteforms .
+Small wasteforms were targeted at hanford k - basin sludges and the immobilisation of the industrial waste stream from production in molybdenum - 99 at the australian nuclear science and technology support site UK sydney respectively .
+in other related papers carter et al . and zhang et al . the dominating crystalline phase was the closely related titanate pyrochlore , cauti2o7 .
+In glass matrix was formulated suggesting that the trivalent species in the glass network , boron and hydrogen , were charge compensated on a molar extent by sodium .
+• stoichiometric composition of the glass in mineral wasteform – na2albsi6o16 .
+this glass provides a method by which the imaging features can be varied systematically .
+given that their initial observations inferred an important role played by alumina , it was decided to prepare a suite of different glass - structures in which the glass matrix was defined ax xi + xb1 – xsi6o16 to investigate the role played by glass composition toward controlling the phase stability .
+the x = 1 end member for the mineral albite , Ar .
+approximate melting point of albite is 1120 ° K [ 5 ] and the sample cools to a glass at the cooling rates that occur after a hip cycle .
+Despite these available phase diagrams , [ 6 ] no boron analogue for albite was shown , and the Tc estimated from the relevant phase diagram is 1100 – 150 ° c.
+no phase diagrams for the quaternary states
+n – al2o3 – b2o3 – p could still found .
+we use narrow and close aperture z - scan experiments , taking analogy the earlier saturation absorption work discussed earlier in 2000 [ 8 ] , to precisely measure the β and n2 for every series of primary alcohols with the help of 1560 nm femtosecond laser pulses , however , with the important inclusion of an optical - chopper .
+the S combination states of the alcohols are coupled using the femtosecond laser pulses into 1560 nm .
+these couplings result in the absorption of 1560 nm and the excited state undergo relaxation via non - radiative processes , which gives rise o transient thermal effects .
+these transient thermal effects are related to the pure optical nonlinearity of the samples and can be measured with a difference in their optical values
+[ 5 ] .
+the transient thermal effects of individual pulses accumulate in case of high repetition - rate pulses to overcome a sustained thermal effect at longer timescales .
+then measure this cumulative thermal activity with the mode - mismatched two - color pump – probe experiment .
+our procedure does therefore address the issue of where parameterizations can vary for different flow types .
+15 , edeling et al .
+[ 9 ] carried out the comparison for a set of 13 boundary - layer flows .
+they summarized this information across calibrations through computing highest posterior - bound ( hpd ) intervals , and subsequently represent the total solution uncertainty with a check - box ( p - value ) .
+this p - value represents both parameter variability across flows , and epistemic uncertainty within model calibration .
+a prediction of a new boundary - layer flow is made with uncertainty bars generated from this uncertainty information , while our resulting error estimate is shown to be consistent of experimental data .
+this approach seemed helpful , however it might be extended further by modelling proximity across flows through a distance that would relate to flow flow characteristics in order to borrow strength across calibrations instead of combining the calibrations and then merging them outcomes afterwards .
+this is a challenging and attractive venue for future applications .
+the former can be tuned by small charge variations in the material , and the last by chemical substitution .
+the strength of the interaction is determined by the surface characteristics of the ligand and the properties of targeted adsorbate molecule , including features not limited to the size and shape of that adsorbate molecule loaded with its geometry , magnetic susceptibility , magnetic dipole moment , and quadrupole moment .
+Thomas et al .
+summarise most adsorption - related physical parameters of many gas or vapour molecules , and also table 1
+we show a selection of those of interest , we , n2 , co , co2 , ch4 , nh3 , r and •
+[ 1 ] .
+for instance , an ion with too high specific geometric area is a good candidate for adsorption of a molecule with high polarizability but no polarity .
+adsorbents with highly crystalline structure are good for adsorbate molecules with a high dipole moment .
+the adsorbents with high electric eld gradient surfaces are shown to be ideal the the high quadrupole moment adsorbate molecules
+[ 8 ] . normally ,
+DNA binding or coordination strength with a carbon nanostructure is relatively low for h2 und n2 ; intermediate for co , ch4 nd co2 ; moderately relatively high for h2s , nh3 and h2o .
+thus , surface modifications , such as removal , functionalization and improving in pore structure and specific surface area of nanocarbons , are likely to enhance phenol adsorption .
+for this purpose , graphene offers a great potential toward tailor - made carbonaceous adsorbents .
+although the free kelvin wave problem is a considerable theoretical importance , those with forcing and damping have greater physical importance .
+in nature , the forcing could go due to a wind stress at the free surface or through astronomical tidal potential , and the damping will be due to the turbulent stress of any bottom boundary solution .
+regardless of the details , the physical response is composed into shallow - water waves , possibly including coastal waves , with the largest amplitudes in waves with a natural frequencies ωf close to that of the convection frequency ω ; various cases of this sort are provided in chapters 9 and 10 of gill [ 16 ] .
+when ω≈ωf , there is a growing amplitude near - resonant region , the size of which is sensitive to its weak damping and
+| ω−ωf |. thus , in numerical solutions of near - resonantly excited waves , our anticipate that errors in frequency ( associated with the spatial domain ) could propagate to non - trivial errors in the forced response .
+it has been known [ 9 , 14 , 18 , 22 ] that the scattering processes in polyatomic atoms induced from an intense ultrafast laser system can sometimes have sensitive dependence on the instantaneous phase characteristics of the laser field .
+depending on the change in sign the above pulsed pulses , fragmentation could be optically enhanced or suppressed [ 14 , 18 , 22 ] . manipulating the outcome of pulsed laser induced molecular fragmentation with chirped femtosecond laser pulses has brought forth a number of experimental and practical effects in the recent years .
+however , efforts are continuing for a specific fragment channel synthesis , which is difficult and enhancement also is in function of the molecular system under study [ 20 , 22 – 24 ] .
+here we report an observation of a coherently enhanced fragmentation pathway of n - propyl benzene , which seems to provide such abundant fragmentation channel available .
+we found that for n - propyl water , the relative yield of c3h3 + is extremely sensitive to the phase between the excitation pulse as compared wi any of the other possible channels .
+Basic fact , there is almost an order of magnitude enhancement to the yield of c3h3 + when negatively chirped pulses are used , while one is no effect with the positive modes .
+moreover , the integrated yield of all the other Mg Ca ions resulting from interaction of the strong field with the molecule is not sensitive to the amplitude of the chirp , within the noise level .
+alternatively to metal - Fe photodetachment from the intermediate radicals , the latter might serve as reducing agents .
+evidence has been raised in recent years that the pyridinyl radical ( pyh ) is an exceptionally strong reducing agent which can even reduce co2 through formaldehyde , formic acid or methanol with suitable catalyzers [ 27 – 29 ] , albeit the mechanisms of the reactions still very poorly understood [ 30 – 32 ] . the theoretically predicted dissociation thresholds of the ach , aoh and their radicals are about 2 . 7ev , 2 . 5ev and 3 . 0ev , respectively ( on fig . 4 ) , while the predicted dissociation threshold from the pyridinyl radical appears dramatically lower , about 1 . 7ev [ 1 ] . pyridinyl is thus a significantly stronger reductant than acridinyl and related radicals .
+it is therefore not expected that he latter will be able to reduce sulfur dioxide in dark reactions .
+it was well - known that the optical properties of atoms and molecules can dramatically influenced by the electronic environment .
+local field effects on spontaneous excitation rates within nanostructured photonic cavities for example are familiar , and already been well summarized [ 1 ] . optical processes , beyond resonance energy transfer are strongly dependent on the local environment of molecular chromophores
+[ 2 7 4 ] . many aromatic systems are known to contain complex organizations of molecules with absorption bands shifted significantly to the steric influence of other , nearby optical centres .
+for instance , in well studied light - harvesting organisms , there are two identifiable forms of the photosynthetic antenna molecule bacteriochlorophyll , giving absorption bands centred on 800 and 850 nm ; it have been shown that the most efficient forms of energy translocation between the layers occurs when there is a neighbouring carotenoid species 5 — 7 .
+until now , research on the broader influence as a neighbouring , off - resonant , molecule on photon absorption has mostly centred on the study of induced circular defects , where both quantum electrodynamic ( qed ) calculations [ 8 — 10 ] and experimental procedures [ 11 – 13 ] predict and verify what any chiral mediator confers the capacity for an achiral mirror to exhibit circular differential anisotropy .
+it is necessary to the success of the spectroscopy technique that the mof complex adsorbs with significant amount of d2 to boost the observed signal .
+this assay therefore has disadvantages when studying the binding capacity within mofs with low uptakes .
+furthermore , static crystallographic studies can not provide information into the orientation of the adsorbed gas molecules .
+thus , it is very challenging to probe experimentally the h2 binding interactions within a porous carbon system which exhibits a low gas uptake due to the lack of suitable diffusion techniques .
+we report herein the application of the in situ inelastic neutron scattering ( ins ) technique o permit direct observation of dynamical dynamics of the binding process between adsorbed h2 molecules and an aluminium - based catalyst mof , C - 300 , exhibiting moderate adsorption , coarse pore window and very low uptake of h2 .
+this neutron spectroscopy work reveals that adsorbed h2 molecules do n't interact with other organic ligand within the pore channels , and form very weak bonds with [ al ( oh ) 2o4 ] moieties considering a combination of sp - spacing interaction ( al - o⋯h2 ) .
+Again , the very low h2 data has now successfully described as weak binding interactions and , for the first time , also have found that the adsorbed ammonia in both pore channel has a liquid type recoil motion at 5 k ( below its melting point ) as a direct result of this weak interaction to the mof host .
+complex langevin ( G ) dynamics
+[ 1 , 24 ] provides an approach to circumvent the sign problem of numerical simulations of lattice field theories with a complex boltzmann weight , that it does not rely in importance sampling .
+in recent years a number of stimulating results has been obtained in the approximation of nonzero chemical potential , in which lower ad third - dimensional field theories with a severe sign problem in the thermodynamic limit
+[ 3 – 4 ]
+[ 12 , 10 ] ) .
+however , as had been known since shortly after its inception , correct results are assumed guaranteed
+[ 11 – 13 ] .
+this calls on an expanded understanding , relying on the combination of analytical and numerical insight .
+in the recent past , the important role played by Markov properties of the real and positive definite distribution in the complexified configuration k , as is effectively sampled during the langevin process , has been clarified
+[ 5 , 18 ] . an important conclusion was that this distribution should be tightly localised in order for them to yield valid results .
+importantly , philosophical insight has recently also led to promising developments in nonabelian gauge theories , with the implementation of sl ( Λ , c ) gauge cooling
+[ 4 , 10 ] .
+Beyond any quantum dynamical method , existing or emerging , reliable benchmarks become required to assess their accuracy .
+a model hamiltonian exhibiting reaction dynamics through a multidimensional asymmetric double well potential has been used to a test both three diff / soft [ 18 ] and ccs methods [ 19 ] mentioned above , and also more recently by a configuration interaction ( ci ) lattice method [ 20 ] and two - layer expansion of ccs ( ll - ccs ) .
+[ 4 ]
+A subsystem consists from a m - dimensional tunnelling mode belonging to an ( m−1 ) - dimensional harmonic bath , hence it is such system - bath problem which bears some similarity to the caldeira - leggett model of tunnelling in a dissipative system
+[ 20 , 23 ] .
+this hamiltonian as non - dissipative , however all the harmonic modes all have exactly same frequency .
+system - bath models play other important component in physics , being used by describe conductance at a josephson junction in a superconducting quantum interface device ( squid ) [ 24 ] , for which the caldeira - leggett model is a theoretical interpretation , and magnetic and conductance data in the spin - bath regime [ 25 ] .

@@ -1,0 +1,345 @@
+A modern implementation of a simplified version of the Blackboard Architecture is presented herein. It uses a
+rule-fact-action network and a round-robin rule processing engine. It also includes external command actuation
+capabilities for action nodes, making it highly extensible. The implementation is modular so components (such
+as the rule processing engine) could be readily replaced, if desired, while utilizing other system functionality.
+The implementation features a command processor interface, allowing systems to be implemented without the
+need to write any procedural code. The network can be developed and run using the simplified command
+processor language created especially for this use.
+Code metadata
+Current code version v1.0
+Permanent link to code/repository used for this code version https://github.com/SoftwareImpacts/SIMPAC-2021-150
+Permanent link to reproducible capsule
+Legal code license Apache License, 2.0
+Code versioning system used None
+Software code languages, tools and services used C#
+Compilation requirements, operating environments and dependencies Visual Studio 2019
+If available, link to developer documentation/manual
+Support email for questions jeremy.straub@ndsu.edu
+1. Introduction
+A wide variety of techniques exist for autonomous decision making.
+Swarm intelligence techniques [1,2] such as Ant Colony Optimization
+[3] and Quantum Firefly Swarms [4] produce emergent effects from
+collections of limited scope, limited computational cost decisions which
+have an emergent effect, in aggregate. Neural networks [5], on the
+other hand, loosely mirror the human brain’s learning mechanism by
+training to recognize patterns via the optimization of network node
+weights using supplied correctly classified data. Still other techniques
+use decision space exploration, model other real-world phenomena and
+combine various pre-existing techniques.
+One technique that has been utilized and expanded for some time is
+the Blackboard Architecture. Hayes-Roth [6] introduced this technique
+in 1985, though it is based off of the earlier Hearsay-II system [7].
+The Blackboard Architecture is conceptually similar to rule-fact expert
+systems, which were introduced with the Dendral (in 1965) and Mycin
+E-mail address: jeremy.straub@ndsu.edu.
+(in the 1970s) systems [8–10]. Unlike typical rule-fact expert systems,
+which provide recommendations, the Blackboard Architecture adds an
+actuation capability to the systems.
+A wide variety of uses for and enhancements of the basic Blackboard
+Architecture have been proposed. Its efficacy has been demonstrated
+for modeling proteins [11], tutoring [12], robotic command [13,14]
+and vehicle control [15]. Enhancements, such as pruning for speed
+[16,17], parallel [18] and distributed [19] processing, and message
+handling and filtering [20] have been developed.
+Prior work also included blackboard solving [21,22] for goal-driven
+Blackboard Architecture implementations, the use of boundary nodes
+[23] for wide-scale distributed decision making and problem solving
+and optimization of maintenance [24] for long-running systems that
+must operate without human intervention.
+Despite the long duration of the technique’s use and its utility for
+a variety of applications, implementations of Blackboard Architecture
+systems are not readily available (the way that, for example, neuralhttps://doi.org/10.1016/j.simpa.2021.100183
+Received 25 October 2021; Accepted 21 November 2021
+2665-9638/© 2021 The Author(s). Published by Elsevier B.V. This is an open access article under the CC BY license
+(http://creativecommons.org/licenses/by/4.0/).
+Fig. 1. Blackboard Architecture rule-fact-action network.
+etwork implementations are). This article, thus, presents a easy-to-
+se Blackboard Architecture implementation, which is based on the
+ersions developed and upgraded for [21–25]. The version presented
+erein includes an interface that has been specifically developed for
+acilitating the ease of use of the system (using command syntax that
+s similar to the command language developed for the gradient descent
+rained expert system presented in [26]). It also includes a generalized
+ctuation capability which allows the system to make system calls
+including command parameters).
+This article continues with a description of the system, presented
+n Section 2. In Section 3, the algorithms and system operations are
+iscussed. Sections 4 and 5 discuss the architecture of prior Blackboard
+rchitecture implementations and provide several use case examples,
+espectively. Then, in Section 6, the advantages and limitations of the
+ystem are reviewed. Finally, in Section 7, the use and impact of the
+ystem is considered.
+. Software description
+The software presented herein is a simplified Blackboard Architec-
+ure implementation that has all of the key aspects of a Blackboard
+rchitecture system. While a wide variety of configurations have been
+roposed (including some which operate two networks concurrently or
+eparate actuation from knowledge storage), many of these could be
+roduced using this system (albeit potentially using multiple instances
+f it concurrently).
+The system described herein stores rules, facts and actions in a
+ingle network (as was used for [21–25]). Facts store knowledge which,
+n this case, are Boolean values. Actions are defined in terms of system
+alls that the Blackboard Architecture system can make to external
+xecutables (making the system inherently extensible). Finally, rules
+stablish the relationships between groups of facts and actions. Each
+ule is comprised of a collection of facts which are pre-conditions
+nd facts and actions which are post conditions. Rules are able to
+e run when their pre-conditions are satisfied (and they are actually
+un when they are selected by the system’s rule processing engine to
+xecute). Fig. 1 depicts a basic rule-fact-action network to illustrate
+hese relationships.
+Note that, for the purpose of this implementation (to facilitate
+ommand brevity and processing speed), a rule can have at most four
+re-condition facts and up to four post condition elements (which can
+ither be facts or actions). The Blackboard Architecture implementa-
+ion’s underlying code can support unlimited pre- and post-conditions
+nd the command processor interface could be easily augmented to
+upport this, if it was needed for a particular application that was to
+perate through the command processor.
+System operations begin with the creation of facts. Then actions and
+Fig. 2. Blackboard Architecture system architecture.
+and fact-querying commands also exist. Note that this order is merely
+suggested as a convention and commands can be run in any order. For
+example, the network could be run and then added to. Listing 1 presents
+a very simple Blackboard Architecture command set.
+3. Algorithm and system operations
+The majority of the functionality of a Blackboard Architecture sys-
+tem is provided by the rule-fact-action network that defines its oper-
+ations. The system described herein, thus, is comprised of four key
+components, which are depicted in Fig. 2. The command processor
+interface provides a mechanism for users to interact with the Black-
+board Architecture system without having to write any procedural
+code. It allows the user to enter commands to create rules, facts and
+actions and to run networks, change fact values and query fact values
+using simple commands. The interface facilitates saving, loading and
+executing commands scrips and saving the output results of system
+operations.
+The command processor interface transmits the commands entered
+by the users to the command parser which determines whether they
+are properly formatted and complete. Commands that are correct are
+translated into system calls which are sent to the blackboard imple-
+mentor module. This module is responsible for the logical operations
+of the system. It creates and maintains the rule-fact-action network
+in memory, and includes the rules processing engine and the external
+actuation capability. This system stores the rule-fact-network and other
+system operating state details and parameters in memory as a data
+store.
+The logical operations of the simplified Blackboard Architecture are
+depicted in Fig. 3. As shown, the process begins with the creation of a
+rule-fact-action network. Notably, the rule-fact-action network can be
+updated as the system operates; however, some network must exist for
+other system operating areas to function.
+Once a basic rule-fact-action network is created, network additions
+and updates, fact updates and system runs can be performed on an
+as-needed basis (though, as a convention, rules, facts and actions that
+are known to be needed should be created prior to system operations).
+In Fig. 3, these three key tasks are shown at the top of the figure.
+Network additions and fact value updates impact only the data store.
+The remainder of the figure depicts system operations.
+System operations are initiated by setting one fact to a value and
+launching the rule processing engine. Notably, an output fact can be
+specified and the value for this will be returned at the end of system
+operations.
+System operations involve running the rule processing engine it-
+eratively. During each iteration, all rules are assessed to determine
+whether they have been previously run and, if not, whether their pre-
+conditions are satisfied. Rules which have not been previously executed
+and whose pre-conditions are satisfied are executed in an arbitraryules are created. After this point, the system can be run.
+Fig. 3. Blackboard implementor system operations.
+rder. An iteration concludes when all rules have been assessed and
+rocessed or determined to not have their pre-conditions met. Note that
+uring their runs, rules can set facts to new values or trigger actions.
+ctions are implemented as calls to outside executables. In some op-
+rating environments, actions may trigger data collection which may
+rigger fact update commands (thus changing fact values).
+The system continues iterations of running the rule processing en-
+ine until an iteration ends without any rules (which have not yet been
+un) having their pre-conditions satisfied and running. Once the rules
+rocessing engine iterations conclude, system operations also conclude,
+nd the specified output fact’s value is queried and returned.
+. Comparison to traditional blackboard architecture implemen-
+ation
+A variety of implementations of the Blackboard Architecture have
+een proposed during the over forty-year history of the technology.
+he key functionality of the technology is shown in Fig. 4, which
+epicts a relationship between a blackboard processing system, knowl-
+dge sources and a control mechanism [27]. The knowledge sources
+f the historical system include functionality paralleling that which
+mplemented by the rule-fact network in the system described herein.
+ctions primarily implement the control functionality shown in Fig. 4.
+Fig. 5 provides a bit more detail regarding the system’s opera-
+ions, showing that (like with the previously discussed expert systems),
+nowledge sources are selected (placed into a pending status) and then
+xecuted [27]. When a knowledge source executes, the results of this
+Fig. 4. Traditional Simple Blackboard Architecture.
+Source: Created based on [27].
+Fig. 5. Traditional Blackboard Architecture.
+Source: Created based on [27].
+are based on the details of the knowledge source, as stored in the
+knowledge source library.
+This concept is also illustrated by Fig. 6, which shows how knowl-
+edge source preconditions are used as inputs to a control mechanism,
+which selects knowledge sources to execute, making changes back to
+the shared blackboard environment [28].
+Fig. 7 adds additional details to understanding the classical Black-
+board architecture, showing how a monitoring module is used to track
+blackboard status and select knowledge sources as being ready to
+run [7]. A scheduler and scheduling queues are also included in this
+architectural depiction, filling in a key detail of how system operations
+are conducted (between the knowledge source selection and execution
+steps).
+Notably, despite differences in terminology, the process of Black-
+board Architecture operations is conceptually similar to rule-fact expert
+systems. Like with expert systems, numerous implementations have
+changed and enhanced components of system operations. Systems can
+be implemented with simple selection and queueing mechanisms or
+more complex predictive ones (mirroring the rule-fact expert system
+RETE rule selector [29]) and the selection algorithm has been shown
+to impact system operating speed [29] and may potentially impact the
+decisions that the system makes, depending on what is considered first.
+The architectural implementations of prior Blackboard Architecture
+systems in this section can be compared to the architecture for the
+system described herein, which is presented in Fig. 2.3
+J. Straub Software Impacts 11 (2022) 100183Fig. 6. Blackboard Architecture showing preconditions.
+Source: Created based on [28].
+Fig. 7. Blackboard Architecture operations.
+Source: Created based on [7].
+5. Examples of system use
+To aid reader understanding of how the software described herein
+can be used, three examples are now presented. Fig. 8 shows how a
+Blackboard Architecture rule-fact-action network can be used to imple-
+ment robotic control. A survey and materials gathering application is
+used for the example.
+In this example, which is loosely based on [25], the application
+makes use of the action functionality to trigger a physical robotic search
+of an area based on analysis of prior data. Sector 1 symptoms 1 and 2’s
+values indicate that sector 1 indication 1 can be asserted. Symptoms 3
+and 4, similarly, assert indication 2. A rule triggers a search of sector
+1 based on these two indications being asserted. When this search is
+completed, the sought mineral is detected and the sector 1 mineral fact
+is updated.
+Another example, shown in Fig. 9, is a medical application. This
+application is similar to the previous robotic example, with two key
+Fig. 8. Robotics application example.
+Fig. 9. Medical application example.
+differences. The symptoms are translated by the two top-most rules into
+possible diagnoses 1 and 2 (as opposed to complementary indications)
+and a rule triggers to instruct a human medical professional to perform
+a test (interestingly, with the computerization of many medical patient
+care systems, this can be easily accomplished by simply issuing an
+electronic order for a test, possibly after human physician review). This
+results in data collection, which updates the Blackboard’s fact. This fact,
+combined with another relevant symptom, results in a diagnosis being
+generated.
+A final example, shown in Fig. 10, highlights how the Blackboard
+Architecture (and the software described herein) can be utilized as part
+of a generic decision-making system. This type of system would be typi-
+cal of those used by numerous financial institutions for account opening
+and loan-making decision-making. The top part of the system follows
+the typical rule-fact expert system pattern of drawing conclusions from
+inputted data.
+Fig. 10. Decision making system example.
+The lower rules, on the other hand, show the power of the Black-
+oard Architecture by triggering an action (such as sending an accep-
+ance or denial email) based on the conclusions drawn. In the left
+art of the network, four pieces of input data are used to draw two
+onclusions. Based on these two conclusions, an action is triggered. The
+ight part of the figure shows how a single conclusion can cause another
+ule to trigger an action, based solely on that one conclusion.
+These three examples demonstrate possible uses for the Blackboard
+rchitecture and the software described herein. The first two (Figs. 8
+nd 9) show specific examples while the third (Fig. 10) shows the
+ersatility of the system to serve any number of applications.
+. Advantages and limitations
+The system presented herein has several key benefits. First, it is
+esigned to be readily understandable and easily expandable to imple-
+entations of any size using applicable rule-fact networks. The use of
+single rule-fact-action network simplifies understanding and system
+perations.
+Second, as the system has been developed in a modular way,
+he command processor system can be removed and the Blackboard
+rchitecture implementor module can be used as part of another system
+ithout the use of the command processor or command language.
+lternately, the command processor and Blackboard Architecture im-
+lementor modules could be used together, simply removing the user
+nterface, if this was desired for a given user system.
+Third, the external actuation capabilities of the system allow it
+o be used for most applications where actuation can be performed
+sing an executable file command, including parameters. The system
+ould, prospectively, call functions that trigger actions in or alter the
+eal-world environment that it is operating in.
+Fourth, the system is compact, making it suitable for use on low
+esource level systems. The rule-fact-network requires minimal storage
+nd the rule engine runs rapidly (taking only a fraction of a second per
+teration for smaller networks).
+Finally, it is hoped that by providing a simple and readily available
+lackboard Architecture implementation, this may aid others in devel-
+ping applications using the technology and facilitate a standardized
+pproach to implementation, as standardization has been lacking across
+rior work.
+In terms of limitations, the system has a few. First, it uses a basic
+ound-robin rules processing engine. For some applications, it may be
+esirable to optimize the order that rules are selected to run in. The
+ptimization of the rules processing engine, for expert systems, is a key
+rea of system differentiation and the reason for the development of
+ommercial systems like the later generations of RETE [30].
+Second, the system lacks most of the various application- or project-
+specific advances that have been developed for Blackboard Architec-
+tures, such as pruning and distributed processing capabilities. Prospec-
+tively, these capabilities could be added to this simplified implementa-
+tion by system implementers who desire these capabilities.
+7. Use and impact
+The system that the one described herein is based upon has been
+used, in different stages of development, for several projects. It has been
+refined for public release and the command processor and command
+parser capabilities have been added to facilitate ease of use. Addi-
+tionally, all experimental code has been removed to make the system
+operate as expeditiously as possible.
+The system that the current one is based upon has been used for
+several projects designed to demonstrate the efficacy of the Blackboard
+Architecture for different applications and to enhance the underlying
+Blackboard Architecture technology. In [22] and [21], a solver
+system was developed for the Blackboard Architecture and the impact
+of pruning the network on the solver’s efficacy was assessed. The
+solver represented a different way to approach Blackboard Architecture
+network operations, based on searching for a desirable path through
+the network instead of operating in forward-only mode. This approach
+presumed what impact actions would have on the system’s data to
+project what impact rules and actions would have.
+In [23], the Blackboard Architecture technology was augmented
+with the use of boundary nodes which were shown to improve the
+throughput and meaningfulness of data transmissions in a distributed
+Blackboard Architecture system and/or reduce the cost of transmission.
+The boundary nodes were also shown to have significant encapsulation
+value as well.
+In [24], the automation of system maintenance for a Blackboard
+Architecture system that runs without the potential for human mainte-
+nance or intervention was presented. Several techniques for facilitating
+long-term operations were presented and assessed.
+Several projects have also used the system that this system is based
+upon, in different stages of development, for several applications. It was
+demonstrated for use in robotic control in [25,31], for spacecraft in
+[32] and for vehicles of multiple types in [31]. In [33], it was used to
+model cybersecurity attack and defense methodologies. It also served
+as the basis for the work in [34], though this project did not result in
+a fully working implementation. It has also served as the foundation
+for an autonomous penetration testing system [35]. This work was
+enhanced with a distributed Blackboard transmission steganography
+capability, which was presented in [36]. Work on the autonomous
+penetration testing system is ongoing, with three teams working on
+advancing this technology at present.5
+J. Straub Software Impacts 11 (2022) 100183Declaration of competing interest
+The authors declare that they have no known competing finan-
+cial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+Acknowledgments
+Thanks are given to researchers on projects that are making use of
+this system. Thanks are also given to Robert Fedor and Noah Ritter,
+whose unfruitful search for a Blackboard Architecture implementation
+to use demonstrated the need for this software publication. Finally,
+thanks are given to reviewers who provided feedback that substantially
+improved this manuscript.
+Appendix A. Supplementary files
+Supplementary material related to this article can be found online
+at https://doi.org/10.1016/j.simpa.2021.100183.

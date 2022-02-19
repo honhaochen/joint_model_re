@@ -1,0 +1,390 @@
+In this exploratory work, micrometric radiopaque W–Fe–Mn–C coatings were produced by magnetron sputtering 
+plasma deposition, for the first time, with the aim to make very thin Fe–Mn stents trackable by fluoroscopy. The 
+power of Fe–13Mn-1.2C target was kept constant at 400 W while that of W target varied from 100 to 400 W 
+producing three different coatings referred to as P100, P200, P400. The effect of the increased W power on 
+coatings thickness, roughness, structure, corrosion behavior and radiopacity was investigated. The coatings 
+showed a power-dependent thickness and W concentration, different roughness values while a similar and 
+uniform columnar structure. An amorphous phase was detected for both P100 and P200 coatings while γ-Fe, bcc- 
+W and W3C phases found for P400. Moreover, P200 and P400 showed a significantly higher corrosion rate (CR) 
+compared to P100. The presence of W, W3C as well as the Fe amount variation determined two different micro- 
+galvanic corrosion mechanisms significantly changing the CR of coatings, 0.26 ± 0.02, 59.68 ± 1.21 and 59.06 
+± 1.16 μm/year for P100, P200 and P400, respectively. Sample P200 with its most uniform morphology, lowest 
+roughness (RMS = 3.9 ± 0.4 nm) and good radiopacity (~6%) appeared the most suitable radiopaque biode-
+gradable coating investigated in this study.   
+1. Introduction 
+Biodegradable metals, a new class of biomaterials, are promising in 
+stenting applications. Cardiac biodegradable stents have to sustain 
+coronary vessels as long as required and then degrade being catabolized 
+by physiological pathways [1]. These tiny devices also require to be 
+visible during their implantation. In fact, cardiac stents, tiny expandable 
+devices mounted on a balloon catheter, are inserted into a vein, and 
+guided under fluoroscopy imaging toward the diseased segment of the 
+coronary vessel. Magnesium, zinc and iron-based alloys have been 
+investigated as potential metals for biodegradable stents [2]. Today, 
+only one biodegradable metal stent has been commercialized in Europe, 
+fabricated from a Mg alloy [3]. In this device, two tantalum markers are 
+inserted on the extremities of the stent to position the stent under X-ray 
+irradiation [4]. However, tantalum is corrosion-resistant; thus, its fate 
+upon degradation of the stent in the body is unclear and raises concern. 
+Other works used different approaches to increase the radiopacity of 
+NiTi stents. For instance, addition of 10 wt% of W [5] was revealed as a 
+valid approach, as well as the application of sputtered 5–10 μm Ta 
+coatings on NiTi surfaces [6]. In these studies, the Ta and W materials 
+Peer review under responsibility of KeAi Communications Co., Ltd. 
+* Corresponding author. Laboratory for Biomaterials and Bioengineering, CRC-I, Axe Médecine Régénératrice, Centre Hospitalier Universitaire (CHU) de Québec - 
+Université Laval, 10 rue de l’Espinay, Québec, G1L 3L5, Canada. 
+E-mail address: diego.mantovani@gmn.ulaval.ca (D. Mantovani).  
+Contents lists available at ScienceDirect 
+Bioactive Materials 
+journal homepage: www.keaipublishing.com/en/journals/bioactive-materials 
+https://doi.org/10.1016/j.bioactmat.2021.10.022 
+Received 24 October 2020; Received in revised form 1 May 2021; Accepted 18 October 2021   
+Bioactive Materials 12 (2022) 64–70
+65
+exhibited a much higher visibility in X-ray images compared with bare 
+NiTi stents. 
+Fe–Mn–C are biodegradable alloys characterized by a high level of 
+formability and acceptable corrosion properties compared to the Mg 
+alloys currently used for biodegradable metal stents [7]. Fe–Mn–C alloys 
+are ductile and they have a high yielding strength (σY ≈ 620 MPa) which 
+make them promising candidates for the fabrication of thin degradable 
+stents. This could yield to considerable improvements at the clinical 
+implantation step [8]. However, the radiopacity of Fe–Mn–C alloys to 
+the X-rays used in interventional fluoroscopy (30–80 keV) and in 
+CT-scanning is low (e.g. ρ = 7.72–7.59 g cm− 3; μ/ρ = ~1.50–1.81 cm2 
+g− 1 at 50 keV), if compared to more electron-dense alloys (e.g. Co–Cr, ρ 
+= 9.27 g cm− 3, μ/ρ = 2.58 cm2 g− 1 at 50 keV) [9,10]. As a result, 
+inadequate visibility in fluoroscopy is a major drawback of Fe–Mn–C 
+stents, especially for thinner devices. Fluoroscopy is a real-time 
+X-ray-imaging technology used during the implantation, whereas 
+CT-scan is an X-ray based three-dimensional imaging technique used 
+effectively for the post-surgery follow-up of the device. Therefore, one 
+promising strategy to improve the radiopacity of Fe–Mn–C alloys is to 
+enrich them with radiopaque elements [11] such as tungsten (W). 
+Tungsten is a high-density (19.30 g cm− 3) biodegradable element, 
+with a relatively greater X-ray attenuation coefficient (5.94 and 7.81 
+cm2 g at 50 keV and 80 keV, respectively), compared to both Fe (1.95 
+and 0.59 cm2 g at 50 keV and 80 keV, respectively), and Mn (1.71 and 
+0.53 cm2 g at 50 keV and 80 keV, respectively) [10–12]. The radiopacity 
+of biodegradable Fe–Mn–C devices could be improved by adding W-rich 
+coatings, provided these coatings could also biodegrade within a few 
+months (typically 6) after implantation. The novelty and impact of the 
+proposed approach resides in the development of new and advanced 
+radiopaque coatings providing visibility of the whole stent, and not only 
+at the two extremities such as with the Ta markers integrated in current 
+Mg stents. 
+The present study is based on the hypothesis that a Fe–Mn–C foil (or 
+wire) coated with a W-rich radiopaque coating, could present similar 
+corrosion properties as the base metal (Fe–Mn–C), while providing a 
+functional radio-visibility for X-ray interventional fluoroscopy and CT 
+imaging. Among several deposition techniques, plasma-based magne-
+tron sputtering was selected for its potential to deposit a uniform, highly 
+adhesive and strongly cohesive coating by tuning several deposition 
+parameters such as sputtering power, pressure of the chamber during the 
+deposition and temperature of the substrate [13]. In this study, several 
+W–Fe–Mn–C coatings were obtained using co-deposition of W and 
+Fe–Mn–C targets by the magnetron sputtering technique. The amount of 
+W in the coatings was varied between ~45 at.% and ~87 at.% by using 
+sputtering powers applied to the W target from 100W to 400W. The 
+effect of chemical composition on the physiochemical and electro-
+chemical properties of W–Fe–Mn–C coatings was investigated by several 
+characterization techniques. Finally, radiopacity of the coatings, was 
+measured by a micro-CT scanner (2D projections as for fluoroscopy). 
+2. Materials and methods 
+2.1. Substrates 
+For the chemical composition, structure and corrosion character-
+ization studies, coatings were deposited on Silicon wafers (CZP<100>, 
+Universitywafer Inc., MA, USA). Silicon was selected as the reference 
+substrate to assess microstructure, phase structure, thickness, rough-
+ness, as well as corrosion behaviour of W–Fe–Mn–C coatings. This sys-
+tem allowed a preliminary characterization of the coatings features, e.g. 
+an easily assignment of the XRD reflexes and an accurate assessment of 
+coating thickness. Pure Fe foil (99.99%, 50 ± 5 μm, Goodfellow, USA) 
+was instead selected as substrate to study the radiopacity of the same 
+coatings since both thickness and attenuation coefficient of Fe are close 
+to those of thin biodegradable stent wiring. Future studies envisage to 
+assess radiopaque coating depositions on Fe-based 3D materials to 
+consider both the real substrate surface features and its more complex 
+geometry. 
+2.2. Coating process 
+The magnetron sputtering deposition system, equipped with radio- 
+frequency (RF) and pulsed DC power supplies, was used to perform 
+depositions with a double target system (Plasmionique MS300, Var-
+ennes, QC, Canada). DC power source was used for the sputtering a 
+tungsten (W) target, whereas RF power source was used for the 
+Fe–13Mn-1.2C target (Hadfield steel from Polstar Steel, Mississauga, 
+ON, Canada). The base pressure was ~1 × 10− 6 Torr before starting the 
+deposition. An Ar (99.9%) working pressure (PW) of 20 mTorr, and a 
+deposition time of 60 min were kept throughout the deposition pro-
+cedures. The sample holders were set at a distance of 10 cm from the 
+center of the targets. Both targets were set at an angle of 30◦ with center 
+line of the sample holder. A sputtering power of 400 W was applied on 
+the Fe–13Mn-1.2C target while three different powers (100, 200, 400 W) 
+were applied on the W target in order to vary the chemical compositions 
+of coatings. Since only the tungsten power was varied, samples are 
+referred to as P100, P200, and P400 (where the numbers indicate the 
+power values adopted for tungsten deposition). 
+2.3. Characterization 
+Microstructural characterizations of surfaces and cross-sections of 
+samples were conducted by Scanning Electron Microscopy (SEM) per-
+formed with a FEI Quanta250 SEM system (Thermo-Fisher, OR, USA) 
+using a secondary electron detector. The SEM images were acquired 
+with an acceleration voltage of 15 kV. Topography and roughness of the 
+samples were investigated by Atomic Force Microscopy (AFM, Dimen-
+sion™ 3100, Digital Instrument, CA, USA), operated in tapping mode. 
+Elemental analysis of samples was carried out by a micro-X-ray fluo-
+rescence spectroscopy system (μ-XRF, Bruker, Tornado M4, USA) 
+equipped with a rhodium (Rh) source and two detectors. The acquisi-
+tions were performed at E = 50 kV on 3 areas of 1 × 1 mm2 for each 
+sample. Crystallographic structure of the coating was assessed by X-ray 
+Diffractometry (Siemens® D5000, graphite monochromator, Texas 
+USA). Surface elemental analysis was performed by X-ray photoelectron 
+spectrometry (PHI 5600-ci, Physical Electronic, MN, USA), with an 
+achromatic Al X-ray source, at an incident angle of 45◦ and at a residual 
+pressure of 8 × 10− 9 Torr. The analyzed area was 0.5 mm2, and survey 
+spectra analyses were done in triplicate. Corrosion behavior was 
+investigated by electrochemical tests at room temperature using a mini- 
+cell system [14], in modified Hanks’ solution, whose composition and 
+preparation were reported elsewhere [15]. The open circuit potential 
+(OCP) was recorded for 20 min followed by a potentiodynamic polari-
+zation (PDP) test at a scan rate of 0.166 mV/s, in the range - 0.5 to + 0.5 
+V. The corrosion rate (μm/year) was calculated according to the estab-
+lished protocol reported in Ref. [16]. Five samples per condition were 
+used to investigate electrochemical properties. Statistical analyses and 
+comparisons among groups were evaluated by one-way ANOVA with 
+post hoc Tukey test to correct for multiple comparisons. Significance was 
+retained when p < 0.05. Data are expressed as mean ± standard error of 
+the mean. 
+2.4. Radiopacity 
+The radiopacity of W-rich coatings (1.8 and 4.5 μm thick) deposited 
+on 50 μm-thin pure Fe foils, was measured with a X-ray computed micro 
+tomography system (CT, eXplore Locus 80, GE Healthcare, Milwaukee, 
+USA), operated with a W anode and by keeping a fixed angle (vertical 2D 
+projections: “0” angle). The samples were embedded in gelatin type A 
+(50 g/L in deionized water) and inserted in the CT scanner. The 
+following imaging parameters were used: 60 and 80 kVp energies 
+(tungsten anode tube voltage), 450 mA current, 100 ms detector 
+S. Ravanbakhsh et al.                                                                                                                                                                                                                          
+Bioactive Materials 12 (2022) 64–70
+66
+exposure time, 1 x 1 binning. Image visualization and signal measure-
+ments were performed on MicroView (Parallax Innovations version: 
+2.5.0, Ilderton, ON, Canada). Correlation of contrast to gray–scale value 
+was calculated as follows [17]: 
+C=
+GSVcoated − GSVuncoated
+GSVcoated + GSVuncoated
+× 100 (1)  
+where C is the contrast, GSVcoated and GSVuncoated are grayscale values of 
+coated and uncoated samples for the 2D projected X-ray attenuation 
+images acquired at “0” angle in the CT-scanner. 
+3. Results and discussion 
+Samples of the coated substrates were fractured. Both cross-sections 
+and top-views were visualised in SEM (Fig. 1a–i). The coatings produced 
+at three different sputtering powers (P100, P200 and P400; corre-
+sponding to the three different powers of 100, 200 and 400 W, respec-
+tively), had power-dependent thicknesses and W concentrations, while 
+showing similar columnar structures (Fig. 1a–c). Thickness values of 0.9 
+± 0.2 μm, 1.3 ± 0.1 μm and 1.8 ± 0.2 μm were found for P100, P200 and 
+P400, respectively, (Fig. 1a–c). No evidence of cracking was found on 
+the sample surfaces (Fig. 1d–f). In addition, both P100 and P200 samples 
+showed a relatively uniform structure, whereas, in the case of P400 
+samples, a microstructure composed of two different morphologies was 
+found (Fig. 1i): Pyramidal crystallites emerging from a smoother base 
+were evident both from SEM and AFM analyses (Fig. 1i and l). In 
+particular, AFM analysis (Figure 1l) clearly showed the microstructure 
+typical of P400 samples where the height of the crystallites could be in 
+the range of 50–60 nm. In fact, roughness values (RMS, 2 × 2 μm2) of 
+P100 (3.9 ± 0.4 nm) and P200 (6.1 ± 1.0 nm) did not significantly differ, 
+Fig. 1. P100, P200 and P400 coatings: (a–c) cross-sections of fractured coatings for 1 h of deposition visualised by SEM; (d–i) top views of the coatings; (j–l) AFM 
+images and roughness measurements of the coatings (RMS, 2 × 2 μm2). 
+S. Ravanbakhsh et al.                                                                                                                                                                                                                          
+Bioactive Materials 12 (2022) 64–70
+67
+while RMS increased up to 54.3 ± 8.1 nm for the coating obtained at the 
+highest W sputtering power (P400). The differences observed in coating 
+microstructures can be correlated to the amounts of tungsten and other 
+elements in the coating deduced from XRF analysis (Table 1). Increasing 
+the sputtering power during the deposition increased the W content 
+(three times higher for P400 sample) while drastically decreased Fe and 
+Mn amounts. 
+The effect of a higher amount of W on the crystallographic structure 
+of the coatings was assessed by XRD measurements. The XRD patterns 
+revealed for P100 and P200 coatings, did not show clear reflexes 
+(Fig. 2b), with the exception of a wide reflection at 2θ = 42◦, indicative 
+of the presence of amorphous phase. In the P400 coating however, Bragg 
+reflex corresponding to γ-Fe (111) and bcc W (110) were clearly 
+observed. The presence of a reflex at 2θ = ~37◦ was attributed to the 
+formation of tungsten carbide (W3C), which could be associated to the 
+pyramidal structures found on the surface of the sample, as evidenced by 
+SEM and AFM images (Fig. 1f and i). The presence of C in W coatings 
+produced by sputtering, is known to promote the formation of W-rich 
+metallic carbides [18]. Also, traces of γ-Fe (2θ = ~44◦) were deduced in 
+the P400 sample XRD spectra, as Mn is well-known as a stabilizer of 
+austenitic iron [2]. Furthermore, Fe can accelerate the formation of 
+tungsten carbide [19]. 
+XPS analyses of the samples and Fe–Mn–C target were shown in 
+Fig. 3. The Mn/Fe weight ratio of Fe–13Mn-1.2C target used for sput-
+tering was ~0.15. However, XPS results showed (Fig. 3) that on the 
+outermost layer of the coating the Mn/Fe ratio varied from ~0.25, to0.5 
+and ~1.0 for P400, P100 and P200, respectively. Thus, the upper surface 
+of the coatings (~5 nm) is richer in Mn, compared with the material of 
+the sputtered target (Fe–13Mn-1.2C) and this independently from the 
+power used to sputter the W target (100, 200, and 400 W). Both XPS 
+(Fig. 3 and Table 2) and XRF (Table 1) analyses confirmed the increase 
+of W in coatings along with the sputter power applied to the W target. As 
+a result, the total amount of metallic elements (∑ = W + Mn + Fe) on 
+the surface increased from 16.96 ± 0.76 at. %, to 20.93 ± 1.13 at. %, and 
+to 28.20 ± 0.92 at. % for P100, P200 and P400, respectively. However, 
+the W/(W + Fe + Mn) ratio was 0.36 ± 0.02, 0.48 ± 0.3 and 0.81 ± 0.3 
+for P100, P200 and P400, respectively. By opposition, the Fe/(W + Fe +
+Mn) decreased at higher tungsten deposition power. Comparing Mn/Fe 
+ratio of the surface of the coating with Fe–Mn–C target, it was noticed 
+that P400 presented lower Mn/Fe ratio led to conclude that there is an 
+Mn depletion for P400. In conclusion, the outermost surface of sample 
+P400 showed a lower content of O1s and Mn2p3, higher content of W4f 
+compared to other conditions. The difference in the chemical composi-
+tion of surface of the coating at higher deposition power can strongly 
+affect its corrosion behavior. 
+The corrosion behavior of the different samples was assessed by 
+testing 5 samples per condition (Fig. 4). First, the OCP curves showed 
+that after 600 s, all curves achieved a stabilization potential (Fig. 4a). 
+However, the potential plateaus were different for the three considered 
+conditions, showing a general decrease for higher amounts of W. In fact, 
+samples P200 and P400 showed a potential shift to more negative 
+values, indicating a higher electrochemical activity at their surface. 
+Fig. 4b, displaying the potentiodynamic polarization curves of the 
+coatings allowed to evaluate the corrosion current density (Icorr) and 
+Fig. 2. X-ray diffraction patterns of P100, P200 and P400 coatings.  
+Fig. 3. (a) XPS survey results of the coatings. The amount of Fe, Mn and W 
+were respectively calculated on the basis of Fe2p3, Mn2p3 and W4f orbitals.
+S. Ravanbakhsh et al.                                                                                                                                                                                                                          
+Bioactive Materials 12 (2022) 64–70
+68
+corrosion rate (CR) [20]. The calculated CR, on the basis of Tafel 
+extrapolation, increased drastically with increasing W sputtering powers 
+from 0.26 ± 0.02 μm/year for P100 to 59.6 ± 1.2 μm/year for P200 and 
+59.0 ± 1.1 μm/year for P400 sample. The results showed that there was 
+no significant difference between CR of P200 and P400. Compared to the 
+sample P100, it was possible to notice that the anodic curve of the 
+samples P200 and P400 shifts to higher current density values, indi-
+cating a higher anodic dissolution of the metal. Increasing the corrosion 
+rate could be related to the difference in the standard potential of W 
+(− 0.04 V), which was higher in comparison with that of pure iron 
+(− 0.44 V), and could be considered to act as a superior cathode [21]. In 
+this case, W was functionalized as a cathode and the Fe acted as the 
+Fig. 4. (a) OCP vs immersion time in Hank’s modified solution for samples P100, P200 and P400; (b) Potentiodynamic polarization curves of P100, P200 and P400 
+and (c) table of their electrochemical parameters. 
+Fig. 5. Radiopacity results of 50 μm-thick Fe foils coated with W–Fe–Mn–C using 100, 200 and 400 W applied to the W sputter target (P100, P200 and P400 
+samples); the samples were CT-scanned at (a) 60 kVp and (b) 80 kVp (tungsten anode); images from which the contrast results were extracted, are inserted below 
+each graph. 
+S. Ravanbakhsh et al.                                                                                                                                                                                                                          
+Bioactive Materials 12 (2022) 64–70
+69
+anode to generate micro-galvanic corrosion. Increasing the W amount 
+increased the cathodic areas and micro-galvanic sites what could explain 
+the highest corrosion rates. However, increasing the W amount did not 
+increase the CR of P400 samples while P200 was more prone to corro-
+sion compared to P400. It seems that both the presence of W3C and the 
+higher surface roughness of P400 sample have a dominant effect on the 
+corrosion properties of this alloy rather than the effect of a higher 
+amount of W. It was reported by Pradhan et al. that the depth of pene-
+tration of the corrosive solution increased with the surface roughness 
+and the electron release rate was also significantly higher for a rougher 
+surface. For this reason, coating CR increased with the real surface area 
+[22]. Tungsten carbide increased the CR of the Fe-based alloy coating. 
+However, increasing the mass fraction of the fragile tungsten carbide 
+phase leads to holes and other defects that can increase the CR of coating 
+[23]. 
+Attenuation of X-rays by the coatings was measured by a microCT 
+scanner with a tungsten anode X-ray tube operated at 60 kVp and 80 
+kVp. The results of these radiopacity tests are reported in Fig. 5. The 2D 
+projection images, from which the contrast results were extracted (at “0” 
+degree angle in the CT scanner), are inserted in Fig. 5. More radiopaque 
+Fe foils were obtained by applying higher sputtering powers at the W 
+target, which led also to thicker coatings. The maximum radiopacity was 
+achieved for the P400 sample (4.5 ± 0.2 μm thick on a 50 μm-Fe foil), 
+measured at 80 kVp, with a 7.6% contrast between coated and uncoated 
+Fe foil. At 60 kVp the contrast measured for the P400 sample decreased 
+to 7.1%, in spite of the presence of the k-edge of W at 69 keV. This very 
+slight decrease in contrast between the 80 kVp and 60 kVp operation 
+modes, reflects the broad range of the energy spectrum of photons 
+produced by the tungsten anode tube. In fact, this range of photon en-
+ergies is relatively similar to that observed in fluoroscopy systems in the 
+stenting clinics. Interestingly, in the thinner coatings (1.8 ± 0.2 μm), and 
+at the highest sputtering powers used for W (400 W), a decrease in 
+contrast was observed by changing from 60 kVp to 80 kVp. Although the 
+80 kVp maximum tube energy is well above the k-edge of W, the amount 
+of tungsten in the thin coatings in not sufficient to generate a significant 
+attenuation effect. As a result, more photons pass through the coated Fe 
+foils at 80 kVp compared with the 60 kVp condition, and thus lower 
+contrasts are found at higher X-ray tube energies. Pure Fe has an 
+attenuation coefficient of 1.205 cm2/g at 60 keV, and 0.595 cm2/g at 80 
+keV [10]. These findings were compared to the radiopacity of conven-
+tional Co–Cr (L605) stents. In this alloy, the presence of 15 wt% tungsten 
+provides optimal visibility in fluoroscopy [24]. To increase the visibility 
+of pure Fe foils, this weight percentage of tungsten should be integrated 
+to thickness of the 50 ± 5 μm of Fe foils treated in the present study. The 
+concentration of W achieved in the (4.5 ± 0.2 μm) coatings was 60.70 ±
+0.06 wt % for P200 and 87.45 ± 0.06 wt% for P400. The thickness of the 
+coatings represents 8.25% of the total section of the deposited sub-
+strates. The total weight percentage of W found in each one of the 
+coatings, multiplied to the relative section of the coatings, points to an 
+approximate weight concentration of 5.01 wt% and 7.22 wt% equiva-
+lent W in the deposited Fe substrates. Hence in order to reach the same 
+level of X-ray visibility in Fe alloys imaged in fluoroscopy as that pro-
+duced by 15 wt%. W in conventional CoCr alloys, the sputtered 
+W–Fe–Mn–C coatings should be at least 2 or 3 times thicker. Therefore, 
+based on the literature related to radiopaque coatings [6] and the results 
+obtained in the present study W–Fe–Mn–C coatings at least 10 μm thick 
+would be necessary to achieve visibility. In this light, 4–5 μm thick 
+coatings can be applied on both sides of the Fe–Mn stents to provide 
+optimum radiopacity. In the clinics, the efficient tracking of stents in 
+fluoroscopy require the objects to be visualised at to contrast of at 300 
+Hounsfield unit (HU), while the contrast of blood containing iodine 
+(contrast agent) is 200 HU [25,26]. The next step of this work will 
+consist in developing 3D objects with a W-rich coating, for visualization 
+in both fluoroscopy and X-ray CT-scanning. It should be mentioned that 
+the geometry of the stent has an important effect on the coating thick-
+ness, columnar growth angle, and porosity. Therefore, in the next step of 
+this work a comprehensive study will be done to put into evidence the 
+effect of stent geometry on the properties of the coatings. 
+4. Conclusions 
+Micrometric coatings of W–Fe–Mn–C alloy were deposited on Si 
+wafers and Fe-foils by magnetron co-sputtering of Fe–13Mn-1.2C and W. 
+The increase of the sputtering power of W from 100 W to 400 W varied 
+the W amount found on sample surfaces, from 45.6 ± 0.7 to 87.5 ± 0.2 
+wt%. SEM and AFM studies evidenced a change in the coatings thick-
+ness, morphology and roughness by increasing the amount of tungsten. 
+Thickness values of 0.9 ± 0.2 μm, 1.3 ± 0.1 μm and 1.8 ± 0.2 μm were 
+found for P100, P200 and P400, respectively. W3C phase was found just 
+in the P400 sample. The presence of W, W3C, as well as the variation of 
+Fe amount in the coating chemical composition, changed sample 
+corrosion rate from 0.26 ± 0.02 to 59.68 ± 1.21 and 59.06 ± 1.16 μm/ 
+year. In particular, P200 and P400 showed a higher CR compared to 
+P100. Two different kinds of micro-galvanic corrosion mechanism were 
+found to increase the corrosion rate of P200 and P400. In the case of 
+P400 both the higher roughness and the presence of W and W3C as 
+cathodic sites played an important role in increasing the CR of the 
+coating. Sample P200 displayed the most uniform morphology, low 
+roughness (6.1 ± 1.0 nm) and high corrosion rate (59.68 ± 1.21 μm/ 
+year), and also it provided acceptable radiopacity (~6%) compared to 
+other conditions. In this light, W–Fe–Mn–C coating obtained by 
+magnetron co-sputtering of Fe–13Mn-1.2C (400 W) and W (200 W) 
+could be considered as presuming candidate for the development novel 
+radiopaque degradable coatings on biodegradable Fe–Mn based im-
+plants. W–Fe–Mn–C coatings at least 10 μm thick would be necessary to 
+achieve visibility. The obtained 4.5 μm thick coatings can be applied on 
+both sides of the Fe–Mn stents to provide optimum radiopacity. 
+Declaration of competing interest 
+This manuscript has not been published and is not under consider-
+ation for publication elsewhere. The authors do not have conflicts of 
+interest to disclose. 
+Acknowledgements 
+The authors would like to thank Dr. Stephane Turgeon, Mrs. Leticia 
+Marin and Mr. Vinicius Sales for their help in this project. This work was 
+partially funded by the Natural Science and Engineering Research 
+Council of Canada (the Fonds de Recherche du Québec sur les Natures et 
+Technologie), the Canada Foundation for Innovation, and the CHU de 
+Québec Research Center (through the Fonds de Recherche du Québec sur la 
+Santé).

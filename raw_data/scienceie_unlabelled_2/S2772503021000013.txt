@@ -1,0 +1,419 @@
+Text messages with strategically placed emoticons impact recipient perceptions regarding truth or deception 
+of the content. This article describes an experiment using 3 treatments applied randomly to 4 deceptive and 4 
+truthful message snippets. The original content of the snippets related to scholarship interviewee comments that 
+truthfully or deceptively described their background. Each message was represented in one of three ways: plain 
+text, annotated text, or text with embedded emoticons. The data were analyzed using a 2 (Text Veracity: Honest or 
+Dishonest) x 3 (Cues: Plain Text vs Annotated Text vs Emoticons) design. The dependent variable reflected partic- 
+ipant perception of the snippet’s honesty or dishonesty. Results show extra emotional cues impacted perceptions 
+of the message content. Overall, this study demonstrated annotated text and text with embedded emotion were 
+more likely to be judged as deceptive than plain text. This was particularly true when messages were deceptive. 
+True messages were detected as truthful more often in plain text. 
+Deception is an unfortunate but common occurrence in many com-
+uter mediated communication venues [ 34 , 42 ]. Lean computer media,
+haracterized by reduced capacity to carry information, is no excep-
+ion. Modern applications such as email, social media posts, and text
+essages fall into this category. According to the Pew Research Center
+45] , 78% of females and 65% of males in the U.S. regularly used so-
+ial media. While popular, using leaner, computer-based exchanges can
+ake discerning non-verbal cues a difficult and cognitively taxing chal-
+enge [ 8 , 51 ]. Various approaches have evolved in an attempt to use non-
+erbal cues that can enhance communication in these venues [ 5 , 36 ].
+ncluded are: (1) replacement of physical gestures with symbols (e.g.,
+moticons or icons like a thumbs-up or smiling face) [17] ; and (2) ad-
+ition of annotated text or paralanguage (e.g., descriptors that provide
+etails about the message sender’s emotional or physical state) [ 30 , 39 ].
+espite widespread use, nonverbal cues embedded in both speech and
+ext can be non-diagnostic [2] and easily misunderstood [ 27 , 61 ]. Re-
+ardless of interpretation of the message, these cues impact perceptions.
+.1. Emoticons 
+Emoticons are graphical representations of facial expressions or body
+ositions meant to convey the sender’s emotional state or provide other
+onverbal cues [17] . Emoticons often are used in lean communication∗ Corresponding author. 
+E-mail addresses: mchaney@ksu.edu (R. McHaney), jfgeorge@iastate.edu (J.F. Ge
+ttps://doi.org/10.1016/j.teler.2021.100001 
+eceived 17 May 2021; Received in revised form 26 October 2021; Accepted 12 Dec
+772-5030/© 2021 The Author(s). Published by Elsevier B.V. This is an open access 
+ http://creativecommons.org/licenses/by-nc-nd/4.0/ ) pplications which are increasingly popular due to availability, ease of
+se, and low cost [52] ; and because of widespread mobile technology
+28] . Huang et al. [29] report that use of emoticons supplement non-
+erbal communication and add to feelings of enjoyment, personal inter-
+ction, perceived information richness, and perceived usefulness; and
+herefore add to communication value. In lean communication channels,
+esearchers suggest that emoticons act as nonverbal surrogates [15] and
+nhance the exchange of social information [55] when used in purpose-
+ul ways [48] . In some instances, this is an advantage since the risk of
+nintentionally leaking nonverbal information is lower in lean venues
+40] . As suggested by Derks et al. [ [14] , p. 380], “[ e ]moticons are used
+ore consciously than actual nonverbal behavior, which implies that
+here is more control over the message a person wants to convey. ” There-
+ore, emoticons allow a sender to influence the receivers’ perceptions of
+essage intention [46] . While this can clarify and enhance message con-
+ent, it also can encourage deception. This perspective is supported by
+uor et al. [37] who suggest that “IM text messages containing emoti-
+ons [generate] different emotional effects compared with those without
+moticons in some scenarios. Therefore, emoticons may serve the func-
+ion of modified text messages. ” In the current study, we expect to find
+hat people interpret messages differently when texts are infused with
+dditional social meaning through use of emoticons [ 14 , 15 , 63 ] This idea
+s examined in Hypothesis 1: 
+H1: People’s perceptions are altered by emoticons or other cues in
+ean media. orge). 
+ember 2021 
+article under the CC BY-NC-ND license 
+Deception in communication has been defined as “a message know-
+ngly transmitted by a sender to foster a false belief or conclusion by
+he receiver ” ( [4] , p. 205). This definition suggests deception is inten-
+ional, means to mislead or create a false perception in a recipient, and
+xcludes mistakes and/or non-intentional behaviors. Under this defi-
+ition, it stands to reason that deceptive communication takes longer
+o formulate [41] and could lead to inconsistencies [62] , particularly
+n synchronous settings. Past research into face-to-face communication
+uggests unintentional signals called leakage provide indicators of de-
+eption [ 13 , 51 ]. A strategically dishonest sender can avoid use of known
+eception indicators to thwart detection and, as such, enshroud the truth
+ 23 , 24 , 57 , 58 ]. Derks et al. [14] suggest richer lean media such as emoti-
+ons can be used for this purpose. 
+.2.1. Plain text 
+Lean media is common in modern computer mediated communica-
+ion systems and is characterized by a low capacity to carry information
+ompared to face-to-face interaction or other richer forms of commu-
+ication [ 9 , 10 ]. Since plain text is a less-rich media, deception may be
+ore difficult to detect [22] when messages are sent in this form. Prior
+tudies indicate that plain text alone may not be enough to reliably de-
+ect deception [39] , although attempts to automate deception detection
+ndicate sophisticated algorithms may one day improve the situation
+ 57 , 59 ]. Hypothesis 2 addresses deception detection with plain text to
+stablish a baseline within the current dataset: 
+H2: People are less likely to detect deception in plain text due to a
+earth of emotional and non-verbal cues. 
+.2.2. Enriching plain text 
+Plain text can be enhanced or annotated with non-verbal cues, such
+s hand gestures, smiles, frowns, yawns, or other words to indicate emo-
+ional content. Some researchers describe this as paralanguage [ 30 , 36 ].
+nnotating plain text with additional text descriptors should enhance a
+essage’s capability to transmit more meaning or sentiment [54] , and
+his may lead to more successful deception detection [47] . We believe
+nnotated text can introduce higher levels of media richness [12] . This
+eads to our third hypothesis: 
+H3: People are more likely to detect deception in annotated text mes-
+ages than plain text since the number of cues is enhanced. 
+Emoticons also can provide a mechanism to enrich lean media [53] .
+he use of emoticons enhances communication with additional infor-
+ation in ways that approximate how non-verbal communications en-
+ance face-to-face communication [29] . Therefore, we believe the en-
+ancement of media richness will result in higher levels of deception
+etection. Our Hypothesis 4 becomes: 
+H4: People are more likely to detect deception in messages that con-
+ain emoticons than plain text since the number of cues is enhanced. 
+.3. Deception in social media type communications 
+Many receivers believe that online communication, particularly from
+nknown persons, can be deceptive [ 16 , 25 ]. Other researchers sup-
+ort this viewpoint from a variety of perspectives [ 49 , 60 ]. Brennen
+3] looked at underlying motivations for online deception and suggested
+hat, “[ l ]ies affect the distribution of power in society. Lies add to the
+ower of the liar and reduce the power of those who have been de-
+eived by altering their choices. Lies may misinform us by eliminating
+ome of our objectives or making certain objectives seem unattainable
+r no longer desirable ” [3] . 
+Since people already appear to distrust social media [64] , we believe
+hat people are more likely to have a heightened sense of alertness re-
+arding messages that contain emotional rather than purely factual con-
+ent. Therefore, messages with emoticons may receive more scrutiny,
+nd people are less likely to believe the message because they do not2 xpect emotion in a factual rather than social exchange [7] . Therefore,
+ur hypothesis becomes: 
+H5: People can better detect deception in ‘social media like’ text
+hich includes emoticons over plain text. 
+This leads into our final hypothesis. The literature is clear that peo-
+le are better at detecting truth than they are at detecting deception
+ 6 , 18 , 31 , 32 ]. Accuracy rates for honesty are routinely as high as the
+0 to 80% range, while accuracy rates for detecting deception are rou-
+inely in the 30% range [32] . Therefore, adding emotional content and
+ichness may distract the receiver from the message intention and make
+onesty detection more difficult. If this is the case, we would expect to
+nd that plain text makes the detection of truth easier. Therefore our
+th hypothesis is: 
+H6: Plain text is enough to detect honesty. 
+. Methods 
+.1. Subjects and sample 
+A sample of 600 subjects located in the United States was collected
+uring the fall months of 2018. The panel was developed with the help
+f survey specialists from Qualtrics to ensure a representative respon-
+ent group. Respondents were stratified according to age (18–65 + years
+ld), gender, and social media usage. The sample was 49.7% female and
+0.3% male. No significant effects due to collected demographics were
+ound. Fourteen respondents were removed due to poor quality of re-
+ponses. Others had been pre-emptively filtered because they rated all
+nippets as indeterminate or failed attention checks. The analysis was
+onducted on a group of 535 respondents, each of whom responded to
+ight questions, for a total of 4280 responses. Each response ranged from
+ to 7, on a 7-point Likert scale. After removing the 860 responses of ‘4 ′
+r ‘neutral,’ 3420 responses remained. Of these, 1417 were plain text
+588 of these were deceptive), 1418 were annotated text (568 of these
+ere deceptive), and 1445 were text with emoticons (549 of these were
+eceptive). That means that 2863 responses included emotional content
+n addition to plain text. 
+.2. Procedure 
+The study initially used a 2 (Text Veracity: honest or dishonest) x 3
+esign (Cues: Plain text vs Annotated Text vs Emoticons), with 6 levels.
+his was implemented using 8 independent judgements —4 with decep-
+ive messages and 4 with truthful messages for text veracity. Each partic-
+pant viewed all 8 text snippets assigned in random order. In addition,
+ach snippet randomly used 1 of 3 media representations (plain text,
+nnotated text, or text with embedded emoticons) to provide the cues
+imension of the design. The original content of the snippets related
+o scholarship interviewee comments that truthfully or deceptively de-
+cribed their background. To create the annotated texts, plain text tran-
+cripts were transcribed and then annotated regarding physical move-
+ents, coughs, yawns, pauses, and other cues observed on interview
+ideos. For the text with emoticons, a small group of social media users
+nserted emoticons into the text snippets. Multiple researchers checked
+he annotations and emoticons to ensure they represented visual cues
+rom the videos. For example, a firm face expression was represented
+s ⟨firm face ⟩ in annotated text and as a in text with emoticons. A
+mile was represented as ⟨smile ⟩ in an annotated text snippet and as 
+n the text with emoticons. Paralanguage utterances such as umm, oh,
+nd hmm were also added to the annotated transcript in a consistent
+anner [30] . Each text snippet with emoticons had five inserted sym-
+ols to ensure consistency across the entire sample. This was consistent
+ith parameters found by Park et al. [44] , who studied text message
+ontent and found that most users included emoticons in their messages
+only 5.7% did not) and that the frequency of emoticon use indicated
+ultiple emoticons per message (one emoticon used (37.7%), two to
+R. McHaney and J.F. George Telematics and Informatics Reports 1–4 (2021) 100001 
+Table 1 
+Odds ratio estimates for treatment and veracity. 
+Effect Point Estimate 95% Wald Confidence Limits 
+Treatment Annotated Text vs Plain Text 0.281 0.242 0.327 
+Treatment Emoticons in Text vs Plain Text 0.364 0.314 0.422 
+Veracity Dishonest Snippet vs Honest Snippet 0.768 0.682 0.865 
+.3. Variables 
+The source material used in the survey was titled and described to
+rovide a context. Participants were asked to determine the snippets’
+eracities after reading/viewing. An embedded survey required a deci-
+ion which was not time-constrained, and the snippet remained on the
+creen so it could be reread if desired. Individuals assessed truthfulness
+r deception on a 7-point Likert scale, ranging from 1 (e.g. very honest)
+o 7 (e.g. very dishonest). A response of ‘4 ′ was considered indecisive
+nd removed from the dataset. 
+. Results 
+We first approached the data using a 2-way ANOVA in SAS 9.4.
+owever, a violation of normality suggested this approach could not
+eliably be used (test for normality - Kolmogorov-Smirnov D = 0.194,
+ < .010). Instead, we used proc logistic in SAS 9.4 with a cumulative
+ogit model and Fisher’s scoring. The main effects model used treatment
+nd statement veracity as independent variables in a 2 (Text Veracity:
+onest or dishonest) x 3 design (Cues: Plain text vs Annotated Text vs
+moticons), with 6 levels. Respondent rating was used as the depen-
+ent variable. The overall model was statistically significant (Wald Chi-
+quare = 319.981, df = 3, p < .000). Annotated text was considered
+he most dishonest (mean = 4.51, s.d. = 0.089), followed by text with
+moticons (mean = 4.19, s.d. = 0.091), with plain text perceived as the
+ost honest (mean = 2.98, s.d. = 0.076). Pairwise comparisons demon-
+trated that each treatment was statistically significant from the other
+wo (See Table 1 for Odds Ratios). 
+The main effects were tested further with a test for the equality of
+roportions considering all 6 levels. Proc Freq with the riskdiff option
+as used in SAS 9.4 to conduct this test. The results were significant for
+he overall model (Wald Chi-Square = 322.172, df = 5, p < .000). Fig. 1
+llustrates the data broken down into the 6 levels. Based on the analyses
+onducted, H1 was supported. 
+H2 predicted that deception would be difficult to detect in plain text
+essages since these were devoid of any cues. We tested Hypothesis 2
+sing the Cochran-Mantel-Haenszel test, which is designed to determine
+ignificant difference in repeated measure, binary data sets [ 11 , 35 , 38 ].
+ script was run in SAS 9.4 using PROC FREQ with the CMH2 option set
+o produce Cochran-Mantel-Haenszel statistics. The sample size used for
+he test was 1149. To qualify for inclusion, an item had to represent one
+f the plain text examinations. The outcome was statistically significant
+CMH = 232.76, p < .0001). Deception was only detected 28.4% of the
+ime in the plain text sample. Therefore, H2 was supported. 
+We used repeated measures linear regression, in SPSS Version 25,
+o test Hypotheses 3 and 4. The GENLIN command was used, with a
+inomial distribution and logit as the link function. Repeated measures
+ere used, as each participant answered eight different questions. The
+ain effects model used treatment as the independent variable and the
+orrectness of the veracity judgment (a discrete variable with two pos-
+ible values) as the dependent variable. The Bonferroni process, with
+< 0.05, was used for pairwise comparisons. The analysis examined
+nly the reactions to the false snippets. There were 588 deceptive plain3 ext snippets, 569 annotated text snippets, and 549 text snippets with
+moticons. The overall model was statistically significant (Wald Chi-
+quare = 213.409, df = 2, p < .000). 
+H3 predicted that participants would be more accurate at detecting
+eception in annotated text than in plain text snippets. The hypothe-
+is was supported. The accuracy rate for plain text was 27% (standard
+rror = 0.020), while the accuracy rate for annotated text was 63%
+s.e. = 0.023). The difference between plain text and annotated text was
+tatistically significant. H4 predicted that participants would be more
+ccurate at detecting deception in text with emoticons than in plain
+ext snippets. The hypothesis was supported. The 27% accuracy rate for
+lain text was less than the accuracy rate for text with emoticons at 61%
+s.e. = 0.024). The difference between plain text and text with emoticons
+as statistically significant. 
+H5 predicted that truthful messages with emoticons were more likely
+o be distrusted than truthful plain text messages [63] . We tested Hy-
+othesis 5 the same way we tested H4, except we used only the honest
+nippets in the analysis. There were 561 honest plain text snippets and
+99 honest text snippets with emoticons. The overall model was statis-
+ically significant (Wald Chi-Square = 118.260, df = 2, p < .000). The
+ccuracy rate for honest plain text was 73% (s.e. = 0.021), which was
+tatistically significantly different from the accuracy rate for text with
+moticons (51%, s.e. = 0.024). The differences in accuracy imply that
+ext snippets with emoticons were less trusted, supporting H5. 
+H6 suggested that since people are better at detecting honesty than
+ishonesty, all that is needed to detect honesty is plain text. We tested
+his hypothesis using the generalized estimating equations (GEE) ap-
+roach, designed to determine significant differences in repeated mea-
+ure, binary data sets [ 33 , 50 ]. A script was run in SAS 9.4 using PROC
+ENMOD with repeated measures. The sample size used for the test was
+715. To qualify for inclusion, an item had to represent a non-deceptive
+essage using plain text, annotated text, or text with emoticons. The
+utcomes were statistically significant ( z = − 9.95, p < .0001). Indicating
+odel significance. Truth was detected in plain text 73.4% of the time.
+n the annotated text, it was detected 42.5% of the time and in the text
+ith emoticons, it was detected 51.1% of the time. A Tukey-Kramer test
+or differences further revealed that plain text was significantly better
+or detecting honesty than annotated text ( z = − 10.60, p < .0001) and bet-
+er for detecting honesty than text with emoticons ( z = − 8.72, p < .0001).
+herefore, H6 was supported. 
+For a post hoc analysis, we looked at each of the eight questions in
+etail. Questions 1, 3, 5 and 7 all involved dishonest snippets. Questions
+, 4, 6 and 8 used honest snippets. Given there was only one response
+er participant per question, we could use one-way ANOVA to analyze
+ifferences within the responses to a question. For all the dishonest snip-
+ets, except for Question 3, participants who read the version of the snip-
+et with emoticons were better at detecting deception than were those
+ho read plain text only ( Table 2 ). For the honest snippets, except for
+uestion 2, participants who read the text only snippet were better at
+etecting deception than were those who read the text with emoticons.
+his pattern suggests that plain text is all that is needed to successfully
+etect honesty. Augmented text seems to get in the way of making that
+etermination. On the other hand, when the text is dishonest, plain text
+s not enough for accurate detection. The presence of emoticons – either
+ecause they are in themselves are indications of specific deceptions or
+hey signal dishonestly more generally – helps detect deception in text.
+R. McHaney and J.F. George Telematics and Informatics Reports 1–4 (2021) 100001 
+Fig. 1. Correct and incorrect responses by treatment (1 = plain text, 2 = annotated text, 3 = emoticons). 
+Table 2 
+Plain text versus emoticons. 
+Question Type Plain text mean Text with emoticons mean Difference statistically 
+significant at p < .05? 
+1 Dishonest 0.14 (0.347) 0.34 (0.474) Yes 
+2 Honest 0.45 (0.499) 0.36 (0.480) No 
+3 Dishonest 0.39 (0.488) 0.50 (0.502) No 
+4 Honest 0.72 (0.450) 0.43 (0.482) Yes 
+5 Dishonest 0.25 (0.433) 0.53 (0.501) Yes 
+6 Honest 0.58 (0.495) 0.30 (0.458) Yes 
+7 Dishonest 0.15 (0.358) 0.60 (0.492) Yes 
+8 Honest 0.67 (0.473) 0.52 (0.501) Yes 
+Standard deviations in parentheses. 
+Several remedies have evolved to help enhance lean communica-
+ion. Our study examined two of these: annotated text (paralanguage)
+nd emoticons. We started with a broad examination of whether percep-
+ions regarding the perceived truthfulness of messages with embedded
+motional cues were different than those of subjects viewing the same
+essages without the cues. As expected, the findings regarding our first
+ypothesis showed that the cues significantly impacted perceptions, re-
+ardless of message interpretation [2] . Specifically, added cues tended
+o increase the perception that all communication was dishonest in a
+ample that was evenly split between honest and dishonest messages
+e.g. mean score of 2.98 for messages with no emotional cues versus
+.35 for messages with emotional cues where 1 was honest and 7 was
+ishonest). Respondents’ perceptions that the messages were dishonest
+ncreased by nearly 46% when cues were introduced. 4 We now knew embedding emotional or other non-verbal cues into
+essages changed recipients’ perception. The next step in our explo-
+ation was to understand the nature of these perceptions. Prior research
+as established that non-verbal cues (e.g. leakage) in face-to-face com-
+unication provide indicators that deception may be present [ 19 , 20 ].
+herefore, it stands to reason that messages without cues would make
+eception more difficult to detect. Our second hypothesis considered
+nly deceptive text messages which had no embedded cues. As expected,
+eceivers were very poor at detecting deception in plain text. Our results
+ndicated that when deceptive plain text was presented to the respon-
+ents, only 28.4% thought it was not truthful. This result was signifi-
+antly different from chance. 
+Our third and fourth hypotheses examined two methods for embed-
+ing emotional or non-verbal cues into deceptive, plain text messages.
+he first used annotated text and the second used emoticons. We ex-
+ected both methods to increase the ability of recipients to detect de-
+eption based on prior research into emotional leakage [ 20 , 21 ]. The
+esults supported our hypotheses, with 67.1% of the receivers detecting
+eception in annotated text messages and 61.3% detecting deception in
+essages with embedded emoticons. 
+While these results are theoretically supported, it is possible that
+he same phenomenon could occur in truthful messages because peo-
+le might inherently distrust enhanced text messages, which resembled
+ostings found in social media. This seems to be a distinct possibility
+ecause we currently live in a world of fake news, alternate truths and
+idespread distrust in social media messages [ 1 , 3 , 16 ]. This perspective
+as further supported by data collected in the survey representing re-
+pondents who believed people were deceptive in social media messages
+83% marked ‘yes’). To investigate, we examined just truthful messages.
+n plain text, only 26.6% of the respondents incorrectly believed the
+essages to be deceptive. This value jumped to 48.9% in text with em-
+edded emoticons. While both occur less than mere chance, we see that
+mbedded emotional content did make the receivers more suspicious of
+essage veracity. 
+We again looked at only honest messages with our final hypothesis.
+e posited that plain text would provide enough information to detect
+onesty, and this was supported: 73.4% of the respondents correctly
+elieved the honest messages when these were presented in a plain text
+ormat. 
+Our results provide several interesting insights. First, deception was
+sually more accurately detected in annotated text or in text with em-
+edded emoticons. Second, truths were more accurately detected in
+lain text, where the respondents did not observe leakage. This sug-
+ests additional questions: (1) did the emoticons tend to make people
+ess likely to believe a statement? (2) was plain text better for truth? An-
+wers to both questions appear consistent when viewed through the lens
+f leakage theory [20] . People expect emotional leakage to be present
+hen messages are deceptive. This is particularly true when “leaked
+motions [are] incongruous with the intended message ” ( [65] , p. 66).
+urther, social media-like messages often are misunderstood [56] , and
+moticons can be used in ways that do not make sense to the receiver,
+lthough they may seem clear to the sender. In fact, many emoticons
+ave obscure, unclear or multiple meanings, particularly when culture
+r other factors are considered [43] . So, in the current study, the use
+f emoticons may have confused the receiver and as a result, a cautious
+esponse emerged which caused them to suspect deception. 
+Another possibility was the level of inserted emotion. Each message
+ad 5 emoticons inserted for consistency. While this number is not un-
+sual or unexpected [44] , it may have been enough to make people feel
+nsure about the message content. Park et al. [44] further suggested
+hat while emotion may be expected in social conversation, it is not ex-
+ected in task-oriented interaction (e.g. work-related communication).
+hen emotion is encountered, it may be viewed as suspicious, resulting
+n a sense of cognitive dissonance that naturally manifests as distrust.
+hen a receiver develops a sense of cognitive dissonance, they will seek
+o resolve the sensation, and this may mean changing their perception
+rom belief to disbelief in the sender’s message. This same phenomenon
+as been used to train auditors in fraud/deception detection. Hobson
+t al. [ [26] , p. 1139] suggests that, “[cognitive dissonance] should help
+xperienced auditors better identify fraud companies by reducing their
+earned tendency to discount fraud cues. 
+.1. Practical implications 
+This research has several managerial implications. First, understand-
+ng that text-only messages are readily viewed as honest, and that de-
+eption is more difficult to detect in plain text (as compared to enhanced
+ext message) is a powerful bit of information. Where less-than-honest
+essages might be helpful, as in business negotiations, the use of plain
+ext without enhancements seems to make those deceptions harder to
+iscover. Not only do plain text messages provide few cues to detection,5 hey are not suspect in the way that enhanced messages are, in the way
+hat they mimic social media posts, which many view as suspicious. 
+.2. Limitations 
+Several limitations in the design and measurement of this study are
+resent. First, data were collected via survey and are, therefore, subject
+o criticism common to this methodology. Another limitation is gener-
+lizability. The deception material and experimental treatments were
+eveloped in midwestern university settings in the United States. 
+RediT author statement 
+Roger McHaney: Conceptualization, Methodology, Data curation,
+riting- Original draft preparation, Validation, Writing- Reviewing and
+diting. 
+Joey George: Conceptualization, Methodology, Data curation,
+riting- Original draft preparation, Validation, Writing- Reviewing and
+diting. 
+eclaration of Competing Interest 
+The Author(s) declare(s) that there is no conflict of interest. 
+cknowledgement 
+This research was funded in part by a Kansas State University College
+f Business Summer Research Grant.

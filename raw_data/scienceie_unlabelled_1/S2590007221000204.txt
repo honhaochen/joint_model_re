@@ -1,0 +1,335 @@
+This study investigated the characteristics of plasma ionization that occurs during plasma arc discharge in water 
+using carbon electrodes. The characterization of plasma ionization begins by observing the arc shape using a 
+digital camera associated with voltage oscillation using current and voltage vs. time (I-t and V-t) characteristics. 
+Furthermore, the ionization energy calculation is performed using simultaneous I-t and V-t measurement data. 
+These calculations are then compared to the photon energy from the optical emission spectroscopy (OES). The 
+results from the digital camera indicate four types of arc discharge in terms of shape and intensity related to 
+voltage oscillation. Moreover, the energy calculations show that by using the I-t and V-t methods is possible to 
+measure the plasma ionization detected not only in the range 1–4 eV but also in the outside range, including 
+smaller than 1 eV and greater than 4 eV. These ranges correspond to the emission lines in visible light, infrared, 
+and ultraviolet, respectively. In addition, the I-t and V-t methods can also measure the excitation and recom-
+bination energy of the arc discharge plasma ionization. This study reveals the possibility of investigating the 
+characteristics of plasma ionization using simultaneous I-t and V-t measurements, which comprise an easier and 
+more practical method in the diagnostics of carbon nanoparticle synthesis   
+1. Introduction 
+Over the past decade, plasma diagnostics has been a topic of interest 
+for researchers studying the characteristics of plasma species in various 
+fields, such as electronics [1], materials synthesis [2], energy [3], and 
+even medicine [4]. One of the plasma applications in materials syn-
+thesis, carbon nanomaterial fabrication is a key plasma application. The 
+most common plasma methods for synthesizing carbon nanomaterials 
+are laser ablation [5,6], chemical vapor deposition (CVD) [7,8], and arc 
+discharge [9]. The arc discharge method has some benefits making it 
+preferable to other methods, including fewer defects and high flexibility. 
+During the arc discharge process, electrons are discharged from the 
+cathode to the anode, causing energy to be released in the gap between 
+two electrodes. The energy is released in the form of plasma arc 
+discharge at high temperatures, resulting in electrode surface erosion 
+and the formation of carbon nanoparticles [10]. Carbon nanotubes 
+(CNTs) and carbon nano-onions are typical examples of nanoparticles 
+grown in vacuum arc discharge [11] and underwater-submerged arc 
+discharge [12], respectively. 
+From a technical point of view, many different methods, such as 
+spectroscopy (visible, UV, X-ray), probing, magnetics, laser-aided di-
+agnostics, particle diagnostics, and fusion product diagnostics, have 
+been employed to measure the spatial profile and evolution of various 
+plasma parameters. Such parameters include the following: atomic 
+(ionic) processes; electron temperatures; plasma currents; plasma posi-
+tion, shape, and instability; excited states of specific ion species; energy 
+* Corresponding author. 
+E-mail address: miftahwar@ft.uns.ac.id (M. Anwar).  
+Contents lists available at ScienceDirect 
+Micro and Nano Engineering 
+journal homepage: www.sciencedirect.com/journal/micro-and-nano-engineering 
+https://doi.org/10.1016/j.mne.2021.100099 
+Received 12 July 2021; Received in revised form 7 November 2021; Accepted 8 December 2021   
+Micro and Nano Engineering 14 (2022) 100099
+2
+spectrums of neutral particles escaping from plasma; and fusion re-
+actions of specific atoms or particles [13]. Although most of these 
+techniques are well established, plasma diagnostics remains a chal-
+lenging and vivid discipline in which researchers are constantly striving 
+for ways to perform measurements with greater accuracy. 
+Diagnostics for plasma arc discharge generally use optical emission 
+spectroscopy (OES), which detects ionized emission species [14]. 
+However, the Langmuir probe can also be used to determine the density 
+of ions that occur, as well as plasma and electron temperatures (in en-
+ergy) [15]. Thus far, some researchers have applied simultaneous cur-
+rent and voltage vs. time (I-t and V-t) data from the arc discharge to 
+determine the current and voltage conditions when plasma ionization 
+occurs [16–18], including investigating pressure wave propagation 
+characteristics [19] and bubble expansion in water [20]. Nevertheless, 
+the utilization of simultaneous I-t and V-t measurements as a probing 
+method for the ionization energy of plasma arc discharge, which is 
+crucial for understanding the arc shapes and ionization processes of 
+plasma, has never been achieved. 
+We recently explored the effect of current source variation on the 
+growth of carbon nanoparticles in the underwater-submerged arc 
+discharge [21] and on the energy needed during the first peak of the 
+current [22]. In this paper, for the diagnostics of carbon nanoparticle 
+synthesis, the ionization characteristics of the arc discharge phenome-
+non underwater using simultaneous I-t and V-t measurements are dis-
+cussed. Changes in current, voltage, and photographic data on arc 
+shapes during arc discharge are also investigated. Afterward, a numer-
+ical analysis of single discharge energy is calculated from the I-t and V-t 
+measurement results to obtain the plasma arc discharge parameters i.e., 
+ionic excitation and recombination process. In addition, this I-t and V-t 
+measurement is compared to the OES data to carry out the ionization 
+energy of plasma arc discharge. 
+2. Measurements and setup 
+The experiments were conducted using a carbon arc setup, as shown 
+in Fig. 1. This setup consisted of two graphite (99%) electrodes, with a 
+diameter of 1 cm, connected to metal handles, which were dipped in de- 
+ionized water (⁓30 cm from the surface) with a resistance of ⁓1 MΩ. 
+The negative electrode (cathode) was deliberately formed with a 
+conical-shaped tip so that the discharged electrons were concentrated at 
+one point. As expected, the potential energy led to an increase in the 
+erosion of and the gap between the electrodes [23] resulting carbon 
+nanoparticles. At that point, a discharge current (i.e., the current be-
+tween two electrodes) of 40 A was maintained. A current ranging from 
+30 to 50A is known to be an effective value for growing nano-onions 
+[24]. Depending on the electrodes gap and the anode diameter, the 
+discharge voltage is in the range of 0–30 V. This voltage includes the 
+voltage drop across the electrodes. In the present study, the arc was 
+operated in de-ionized water at atmospheric pressure. 
+The arc was initiated when the electrodes came close to each other by 
+manually moving the cathode. The distance between the electrodes was 
+kept constant (at around 0.4 mm [20]) as long as the arc discharge 
+continues until it stops naturally due to erosion at the anode to be 
+nanoparticles. To minimize the effect of water flow caused by electrode 
+movement, a mechanical gear was connected to the electrode handle to 
+smoothly move the electrode forward and backward. Next, the current 
+was controlled by maintaining the external DC current source. During 
+arc operation, carbon nanoparticles were formed, which were then 
+collected by filtering. The remaining water was removed using a heater 
+at 200 ◦C and separated via centrifugation at 4000 rpm (5 min). The 
+dried carbon deposit was further characterized using scanning electron 
+microscopy (SEM, FEI ISPECT-S50, acceleration voltage of 25 kV) and 
+transmission electron microscopy (TEM, JEOL JEM-1400, an acceler-
+ating voltage of 120 kV). 
+The applied voltage was measured using a 1:100 differential probe 
+Fig. 1. A schematic of the experimental setup consisting of a water-filled chamber, carbon electrodes, a current sensor, voltage sensors, a data acquisition system, a 
+spectrometer, and a computer. 
+M. Anwar et al.                                                                                                                                                                                                                                 
+Micro and Nano Engineering 14 (2022) 100099
+3
+(ISDS205) voltage sensor that was connected in parallel to the electrode 
+gap. The current measurements were carried out using the WCS1500 
+Hall effect current sensor. The voltage and current values were con-
+nected to CH1 and CH2 of the data acquisition system, respectively, and 
+then presented in real time to the order of milliseconds. Moreover, OES 
+measurement was also performed to investigate the arc emission char-
+acteristics. The spectra were measured using an Ocean Optics Maya 
+2000 spectrophotometer with an exposure of 1 ms and a repetition rate 
+of 1000 Hz. To investigate the condition when plasma occurred, a digital 
+camera with a speed of 30 frames/s was utilized. With this camera, we 
+were able to record plasma arc states (size and shape). In order to obtain 
+the energy parameter of arc discharge plasma i.e., ionic excitation and 
+recombination process, the energy calculation was then performed to 
+compare single discharge energy, derived from I-t and V-t data, and 
+single photon energy taken from OES data. 
+3. Results and discussion 
+Carbon powder produced by arc discharge was characterized using 
+SEM and TEM, as shown in Fig. 2(a) and (b), respectively. The carbon 
+nanoparticles observed in the SEM image had a spherical shape with a 
+diameter of 10–50 nm. Using TEM, the structures of the carbon nano-
+particles were confirmed to be carbon onions—i.e., spherical carbon 
+nanoparticles consisting of many layers, as shown in the inset of Fig. 2 
+(b). 
+The current and voltage versus time characteristics of submerged arc 
+discharge were measured at a steady current of 40 A in real time, as 
+shown in Fig. 3. The ON-state in current and voltage characteristics 
+indicated the existence of arc discharge events, while the OFF-state 
+indicated no arc events (I = 0 A; V = ⁓ 42 V) during measurement. 
+The initial current of the ON-state was always high (more than 100 A), 
+which indicated that the number of charges flowing between electrodes 
+reached a maximum level due to the high capacitance value that 
+occurred between the two electrodes. According to our recent study 
+[22], when the electrodes were close enough (⁓0.4 mm), the potential 
+energy was able to break down the dielectric of water, and the arc was 
+naturally initiated. On the other hand, the current value was in a steady 
+state (40 A) when the arc events were maintained. However, at this 
+point, the voltage level fluctuated (0 to 30 V), which was likely due to 
+plasma ionization between the two electrodes. During the 5.5 s range of 
+Fig. 2. (a) SEM and (b) TEM images of carbon nanoparticles. (b) TEM observation confirms the carbon onion structures, which consist of many layers.  
+Fig. 3. I-t and V-t characteristics of arc discharge. ON/OFF states on I-t (bottom) and V-t (top) graphs indicate that arc discharge appears/disappears sequentially. 
+The anode-cathode distance is ⁓0.4 mm. 
+M. Anwar et al.                                                                                                                                                                                                                                 
+Micro and Nano Engineering 14 (2022) 100099
+4
+measurement, three initiated arc discharges occurred. A longer time 
+range of arc discharge data is also shown in the supplementary data of 
+Fig. S1. 
+To understand the ionization characteristics of plasma at arc 
+discharge, an enlarged image of the I-t and V-t of Fig. 3 at 7–8.5 s is 
+shown in Fig. 4(a). In the current graph, after the first peak (state I), the 
+current was stable at 40 A. On the other hand, the voltage graph shows a 
+significant change in the range of 7.05 to 8.45 s before the arc dis-
+appeared or turned OFF. Regarding the voltage characteristic in the 
+voltage graph, there were three states (except for the initial peak at the 
+beginning of the ON-state)—i.e., state II, state III, and state IV. State II 
+was a state in which the voltage oscillated at a value of 0 to 20 V. In state 
+III, the voltage was stable at approximately 20 V. However, in state IV, 
+the voltage returned to oscillating at a value between 12 and 30 V, while 
+the current was still maintained at 40 A. Supplementary data shown in 
+Fig. S2 also indicates the same characteristics for a longer discharge time 
+range (5 s range). 
+Fig. 4(b–e) show photographs of the arc discharge in states I, II, III, 
+and IV, which explain the arc state in real time. In state I (in Fig. 4(a)), 
+the measured current had the highest value correlated to the arc 
+condition, which is shown in Fig. 4(b). This has a broad arc shape, 
+resulting in the brightest light illumination. In states II, III, and IV, as 
+shown in Fig. 4(c–e), the light illumination produced by the arc weak-
+ened with a smaller arc shape. Such differences in arc shape are possible 
+because arch shapes vary with different plasma ionization characteris-
+tics of arc discharge. 
+In Fig. 4(c), which correlates with state II in Fig. 4(a), the voltage is 
+shown oscillating from 0 V to ~20 V, indicating that the electrodes in 
+this state were frequently connected (short circuit), thereby producing a 
+drop in voltage oscillation. Thus, the represented arc light illumination 
+was the dimmest compared to the others (see the magnified image in 
+Fig. 4(c)). However, the arc light illumination of states III and IV, as 
+shown in Fig. 4(d) and (e), respectively, were brighter than that of state 
+II. Moreover, the arc shape had a typical irregular form of ionized arc 
+plasma [25–27], as shown in the enlarged image. According to the 
+current continuity at the cathode, the arc current was a combination of 
+electron current and ion current [28,29], as indicated in Eq. (1). 
+Iarc = Ielectrons + Iions (1) 
+Therefore, it is understandable that state I had the high-density arc 
+Fig. 4. (a) I-t and V-t characteristics at 7 to 8.5 s, which show current and voltage oscillation of states I, II, III, and IV, and (b–e) corresponding photographs of the arc 
+event underwater for each state. The anode-cathode distance is ⁓0.4 mm. 
+M. Anwar et al.                                                                                                                                                                                                                                 
+Micro and Nano Engineering 14 (2022) 100099
+5
+current Iarc (for constant electrode area) due to the high potential energy 
+dissipation of a capacitor between the two electrodes with the maximum 
+charge density. State II mainly consisted of the electron current Ielectrons, 
+which was indicated by the oscillation of the voltage drop, while state III 
+was a mixture of Iions and Ielecrtrons (low density of Iarc), with a small 
+average oscillation of the voltage profile. State IV, in contrast, primarily 
+consisted of ion current Iions, as indicated by voltage oscillations from 
+approximately 12 to 30 V. Oscillation to a higher voltage (to 30 V) 
+showed that the electrons that flowed from the anode were suppressed 
+by the potential of the excitation and recombination events of plasma 
+ions that occurred between the two electrodes. 
+Moreover, the intensity and wavelength values of light produced by 
+plasma arc discharge have also been measured using OES, as shown in 
+Fig. 5. Variations in light intensity at areas I, II, III, and IV in Fig. 5 are in 
+accordance with the photographic data shown in Fig. 4(b–e), respec-
+tively, which also corresponds to a different state as shown in Fig. 4(a). 
+In general, the wavelength peaks observed in the OES data had the same 
+pattern for all intensity variations. The emission peaks observed at 
+wavelengths 351, 467, and 516 nm represented the emission of C ions 
+vaporized from the electrodes. Furthermore, the peaks of 436, 486, and 
+636 nm were the emission of H ions, and the peaks of 777 nm and 907 
+Fig. 5. OES spectra of light-emitted arc for different intensities correspond to 
+state I through state IV in I-t and V-t measurements. 
+Fig. 6. (a) The power graph of the result of multiplying V and I vs. time data with the inset graph of the power oscillation with the area ΔP (height of the peak) and Δt 
+(time resolution for one peak) as energy for one discharge event. (b) Derived energy from I-t and V-t measurement E1 (bar chart) and photon energy E2 from OES with 
+the illustration of charge elementary reaction mechanisms for the formation of nanoparticles and air bubbles in the inset. 
+M. Anwar et al.                                                                                                                                                                                                                                 
+Micro and Nano Engineering 14 (2022) 100099
+6
+nm were the emission of oxygen (O) ions [30]. 
+For further analysis, the energy E1 was calculated from the data of I-t 
+and V-t of Fig. 4(a), which was be compared to the energy E2 from the 
+OES data in Fig. 5. To calculate E1 and E2, Eqs. (2) and (3) were 
+employed. Fig. 6 shows the results of the power vs. time (Fig. 6(a)) and 
+the energy comparison (Fig. 6(b)) between the single discharge energy 
+E1 from Eq. (2) (bar chart) and the photon energy E2 from Eq. (3). 
+E1 =
+Edisc
+N
+=
+∫
+P(t)dt
+N
+(2)  
+E2 =
+hc
+λ
+(3) 
+Where E1 is the energy of a single discharge event of the arc plasma, 
+and Edisc corresponds to the discharge energy or area of power oscillation 
+changes with time caused by the discharge current. P(t) is the power 
+obtained by multiplying V(t) and I(t) (Fig. 6(a)), dt is the time range of 
+one peak (see inset of Fig. 6(a)) and N is the number of charges obtained 
+from current I(t) data in Fig. 4(a), which is derived from N =
+∫
+I(t)dt
+e ; e is 
+the charge of electron 1.6 × 10− 19C. On the other hand, E2 in Eq. (3) 
+corresponds to the photon energy detected by OES, where h, c, and λ are 
+the Planck constant (6.62607004 × 10− 34 m2.kg/s), speed of light (3 ×
+108 m/s), and electromagnetic wavelength in nm (obtained from OES 
+data in Fig. 5), respectively. 
+As shown in Fig. 6(b), the results showed similar features between E1 
+(bar chart) and E2 (line spectra) at approximately 1–4 eV, which cor-
+responds to the energy of visible light (at λ ≈ 400–750 nm shown in 
+Fig. 4). However, significant differences in energy E1 data—i.e., peak 
+appearance at a smaller energy value (< 1 eV) and a larger energy value 
+(> 4 eV) were observed. This result was similar to the result obtained 
+and shown in Fig. S3 (supplementary graph). 
+The charge elementary reaction mechanism in the arc discharge 
+system is explained in more detail in the inset of Fig. 6(b). Initially, the 
+electrons leave the anode and hit the water molecules (1) when external 
+DC voltage was applied. Water molecules that are hit by electrons are 
+then excited (taken from the electron's kinetic energy) by releasing one 
+of its charges (negative or positive charge) and transforming into several 
+ionic forms (dashed blue arrows) (2). Negative ions and electrons move 
+toward the anode (3), while positive ions move toward the cathode (4) 
+due to the direction of the electric field between the two electrodes, 
+indicated by the low-density Iarcs of state III (Fig. 4). The discharged 
+electrons from the cathode may also go directly to the anode (5) in short 
+circuit events, emphasizing the explanation of voltage drop oscillation in 
+state II in Fig. 4. Moreover, some ions (such as carbon ions released from 
+the anode, H ions, and O ions) move out of the hot zone [21] and form 
+carbon nanoparticles and air bubbles (6), which causes voltage oscilla-
+tion in state IV (Fig. 4(a)). The formation of nanoparticles and bubbles 
+release energy in the form of light with different wavelengths (7), as 
+detected in OES shown in Fig. 5. 
+The fundamental difference between the two methods, including I-t 
+and V-t measurement and OES, is that the I-t and V-t measurement 
+methods can measure not only excitation but also the recombination 
+energy due to nanoparticle and bubble formation, which is indicated by 
+voltage oscillation at state IV (in Fig. 4(a)). Therefore, it can be under-
+stood that the results of the I-t and V-t energy E1 can be defined as the 
+energy required by the arc discharge system to carry out the ionization 
+process and carbon nanoparticle formation. On the other hand, the OES 
+method measures only the emission energy of the ion recombination 
+process during nanoparticle and bubble formation, typically in the range 
+200–1100 nm for a common spectrophotometer. The energy in the lower 
+area beyond visible light (infrared areas) is most likely energy that is 
+transferred to the water and electrodes in the form of phonon energy 
+(heat). Conversely, the phenomenon with energy higher than 4 eV is 
+detectable by I-t and V-t measurements corresponding to the higher 
+voltage oscillation (states II and IV) shown in Fig. 4(a), which is highly 
+possible coming from the higher excitation energy of arc plasma 
+ionization. 
+4. Conclusion 
+Simultaneous I-t and V-t measurement methods have been demon-
+strated to be effective methods for observing the characteristics of 
+plasma arc discharge for diagnostics of nanoparticle synthesis. The re-
+sults of this I-t and V-t measurement proved to be accurate as a probing 
+method for the ionization of plasma arc discharge that can amplify OES 
+measurements, which are limited to visible light measurements. These 
+results show that I-t and V-t measurements can measure the ionization of 
+plasma in a wide range, from smaller energy values (infrared wave-
+length) to higher energy values (ultraviolet wavelength), which opens 
+up new possibilities of plasma diagnostics for understanding both 
+fundamental plasma sciences and applications. 
+Declaration of Competing Interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgment 
+We thank Y. Mahardhika and R. Fadhilah for their support in the 
+experiment and discussions. All authors contributed to analyzing the 
+results and reviewing the manuscript. This work was partially supported 
+by Grants-in-Aid for International Collaboration (No: 452/UN27.21/ 
+PN/2020), (No: 260/UN27.22/HK.07.00/2021) from Sebelas Maret 
+University, and Grants-in-Aid (Hibah PPI Q1 No: NKB-601/UN2.RST/ 
+HKP.05.00/2021) from University of Indonesia. 
+Appendix A. Supplementary data 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.mne.2021.100099. 

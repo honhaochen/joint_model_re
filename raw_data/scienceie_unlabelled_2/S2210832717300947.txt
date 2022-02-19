@@ -1,0 +1,1026 @@
+Cortical algorithmsThe failure of shallow neural network architectures in replicating human intelligence led the machine
+learning community to focus on deep learning, to computationally match human intelligence. The wide
+availability of increasing computing power coupled with the development of more efficient training algo-
+rithms have allowed the implementation of deep learning principles in a manner and span that had not
+been previously possible. This has led to the inception of deep architectures that capitalize on recent
+advances in artificial intelligence and insights from cognitive neuroscience to provide better learning
+solutions. In this paper, we discuss two such algorithms that represent different approaches to deep
+learning with varied levels of maturity. The more mature but less biologically inspired Deep Belief
+Network (DBN) and the more biologically grounded Cortical Algorithms (CA) are first introduced to give
+readers a bird’s eye view of the higher-level concepts that make up these algorithms, as well as some of
+their technical underpinnings and applications. Their theoretical computational complexity is then
+derived before comparing their empirical performance on some publicly available classification datasets.
+Multiple network architectures were compared and showed that CA outperformed DBN on most datasets,
+with the best network architecture consisting of six hidden layers.
+In an endeavor to replicate human level intelligence, artificial
+intelligence (AI) research has fused insights from the fields of com-
+puter science, cognitive neuroscience, computational science, and a
+litany of others to produce algorithms that performwith increasing
+efficacy on what is arguably the core element of intelligence:
+learning.
+Notable among the many learning algorithms in AI are artificial
+neural networks (ANN) and their many variants. ANN are collec-
+tions of interconnected artificial neurons that incrementally learn
+from their environment and attempt to mimic some of the basic
+information processing processes in the brain. Their function is
+defined by the processing performed at the neuron level, the con-
+nection strengths between neurons (synaptic weights), and net-
+work structure (organization and linkage of neurons) [1]. It is the
+latter that resides at the core of the discussion presented herein.
+Throughout their evolution, discussed in more details in the
+next section, shallow ANN still suffer from multiple issues in the
+context of complex applications requiring a higher level of abstrac-
+tion. However, with the rapid increase in processing power, the
+opportunity to successfully implement the computationally
+demanding designs of deeper architectures has recently emerged.
+The development of efficient training algorithm such as Hinton
+et al.’s greedy algorithm [2] has also helped ANN’s resurgence.
+Furthermore, findings in computational neuroscience have led to
+increased interest in deep, biologically inspired architectures
+[3–5] which adhere more faithfully to neuro-scientific theories of
+the human brain’s topology.
+In this paper, we limit the scope of our comparative study to
+two - nowadays popular - algorithms: Hinton et al.’s Deep Belief
+Networks (DBN) [2], and Cortical Algorithms (CA) [6]. While many
+other deep architectures have been developed, including long
+short-term memory for sequential data processing and convolu-
+tional neural networks for image processing, this comparative
+study compares feedforward architectures. Specifically, DBN, one
+of the more efficient deep architecture training algorithms is com-
+pared to CA, a feedforward architecture with more biologically
+faithful properties. Deep neural networks (DNN), specificallyDBN, is presented as the state of the art of ANN in their traditional
+forms with network topologies built from layers of neuron models
+but with more advanced learning mechanics and deeper architec-
+ture, without modeling the detailed biological phenomena consti-
+tuting human intelligence. Maintaining a high-level abstraction of
+the biological modeling, results in simpler mathematical models
+for DBN compared to CA. On the other hand, CA represents the shift
+towards incorporating more biologically inspired structures than
+DBN, like cortical columns and inhibiting and strengthening learn-
+ing rules, as outlined by Edelman and Mountcastle’s work [7].
+The structure of the paper is such that Section 2 summarizes the
+history of ANN while Sections 3 and 4 review the fundamental con-
+cepts and learning schemes of DBN and CA, respectively. Section 5
+derives both algorithms’ theoretical computational complexity.
+Finally, Section 6 presents an empirical comparison on classifica-
+tion tasks before concluding with closing remarks in Section 7.2. Artificial neural networks history
+Before delving into the deeper network structures presented in
+this paper, we will go over the evolution of neural networks from
+their shallow beginnings to the complex structures that have
+recently become popular.
+2.1. Concepts from neuroscience
+Despite the advances in neuroscience and technology that have
+allowed for a detailed description of the structure of the brain, the
+learning process in the brain is yet to be completely understood.
+Biologically, the brain mainly consists of the cerebrum, the cerebel-
+lum, and the brain stem [8].
+The cerebral cortex, biologically defined as the outer layer of tis-
+sue in the cerebrum and believed to be responsible for higher order
+functioning, is an association of an estimated 25 billion neurons
+interconnected through thousands of kilometers of axons propa-
+gating and spreading about 1014 synapses simultaneously [9],
+arranged in six layers and divided into regions, each performing
+a specific task [10].
+Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93 83Though it is not very clear how certain areas in the brain
+become specialized, it is known that multiple factors affect the
+functional specialization of the brain areas such as structure, con-
+nectivity, physiology, development and evolution [11]. Neurons,
+considered the basic element in the brain, have different shapes
+and sizes but are all variations of the same underlying scheme,
+i.e. they start the same general-purpose function but become spe-
+cialized with training [12]. While dendrites are the site of reception
+of synaptic inputs, axons convey electrical signals over long dis-
+tances. Inputs to neurons cause a slow potential change in the state
+of the neuron; its characteristics are determined by the membrane
+capacitance and resistance allowing temporal summation [13].
+Studies showed that the organization of the cortex can be
+regarded as an association of columnar units [14,15], each column
+being a group of nodes sharing the same properties. Learning in the
+human brain is mainly performed using plastic connections,
+repeated exposures and firing and inhibition of neurons. In a sim-
+plified manner, information flowing in the cortex causes connec-
+tions in the brain to become active, over time, with repeated
+exposures these connections are strengthened creating a represen-
+tation of the information processed in the brain. Moreover, inhibi-
+tion of neurons - physically defined as prohibiting neurons from
+firing - partly account for the forgetting process [16].
+2.2. Shallow beginnings
+At a nodal level, ANN started with the simplified McCulloch-
+Pitts neural model (1943) [17], which was composed of a basic
+summation unit with a deterministic binary activation function.
+Successors added complexity with every iteration. At the level of
+activation functions, linear, sigmoid, and Gaussian functions came
+into use. Outputs were no longer restricted to real values and
+extended to the complex domain. Deterministic models gave way
+to stochastic neurons and spiking neurons which simulated ionic
+exchanges. All these additions were made to achieve more sophis-
+ticated learning models.
+At the network level, topologies started out with single layered
+architectures such as Rosenblatt’s perceptron (1957) [18], Widrow
+and Hoff’s ADALINE network (1960) [19] and Aizerman’s kernel
+perceptron (1964) [20]. These architectures suffered from poor
+performance and could not learn the XOR problem, a simple but
+non-linear binary classification problem. This led to the introduc-
+tion of more complex networks starting with the multilayer per-
+ceptron (Rumelhart, 1986) [21], self-recurrent Hopfield networks
+(1986) [22], self-organizing maps (SOM or Kohonen networks,
+1986) [23], adaptive resonance theory (ART) networks (1980s)
+[24] and various others which are considered shallow architectures
+due to the small number of hidden layers.
+Successive iterations incrementally improved on their prede-
+cessors’ shortcomings and promised higher levels of intelligence,
+a claim that was made partially feasible due to the hardware’s
+improved computational capabilities [25] and due to the develop-
+ment of faster and more efficient training and learning algorithms.
+Learning mechanics, whether supervised (back propagation) or
+unsupervised (feed forward algorithms), matured in parallel and
+allowed for better performance in a varied set of specific tasks.
+Nonetheless, the compound effect of the innovation targeting all
+aspects of these shallow networks was not enough to capture true
+human intelligence while large computational needs throttled the
+progress of deeper networks.
+2.3. Shallow networks’ limitations
+Supervised learning presents many challenges including
+the curse of dimensionality [26] where the increase in the number
+of features and training samples makes learning morecomputationally demanding. Furthermore, non-linear data is more
+difficult to divide into classes due to the inherent feature overlap.
+Unable to position themselves as strong AI models - general intel-
+ligent acts as defined by Kurzweil - which can faithfully emulate
+human intelligence, ANN lagged Support Vector Machines (SVM)
+[27] in the 1990–2000s.
+2.4. Deep architectures
+The early 2000s saw a resurgence in ANN research due to
+increased processing power and the introduction of more effi-
+cient training algorithms which made training deep architec-
+tures feasible. Hinton et al.’s greedy training algorithm [2]
+simplified the training procedure of Boltzmann machines while
+deep stacking networks broke down training to the constitut-
+ing blocks of the deep network to reduce the computational
+burden. Furthermore, Schmidhuber’s long short-term memory
+architecture [28] allowed the training of deeper recurrent neu-
+ral networks. While these architectures do not borrow biologi-
+cal properties from the brain beyond the neuron, deep
+architectures with neural network topologies that adhere more
+faithfully to neuro-scientific theories of the human brain’s
+topology are gaining traction in the connectionist community
+due in part to the momentum achieved in computational
+neuroscience.
+One of the major and most relevant contributions in that field
+was made by Edelman and Mountcastle [7]. Their findings lead
+to a shift from positioning simplified neuron models as fundamen-
+tal functional units of an architecture to elevating that role to cor-
+tical columns, collections of cells characterized by common feed-
+forward connections and strong inhibitory inter connections. This
+provided a biologically feasible mechanism for learning and form-
+ing invariant representations of sensory patterns that earlier ANN
+did not.
+Additionally, two supplementary discoveries were believed to
+be key in emulating human intelligence. The first was the sus-
+pected existence of a common computational algorithm in the
+neocortex [12]. This algorithm is pervasive throughout these
+regions irrespective of the underlying mental faculty. Whether
+the task is visual, auditory, olfactory, or other, the brain seems
+to deal with sensory information in very similar ways. The sec-
+ond was the hierarchical structure of the human neocortex
+[12]. The brain’s regions are hierarchically connected so that
+the bidirectional flow of information merges into more complex
+representations with every layer, further abstracting the sensory
+stimuli.
+The combination of these two findings forms potential
+grounds for building a framework that replicates human intelli-
+gence; a hierarchy of biologically inspired functional units that
+implement a common algorithm. These novel insights from neu-
+roscience have been reflected in the machine learning (ML) and
+AI fields and have been implemented to varying layers in several
+algorithms.
+While CA restructured the neurons and their connections
+as well as the learning algorithm [6] based on Edelman
+and Mountcastle’s finding [7], other algorithms modeled other
+biological theories of the brain’s workings. Symbolic architec-
+tures such as Adaptive Character of Thought (ACT-R) [29]
+modeled working memory coupled with centralized control
+that refers to long term memory when needed. Emergentist
+architectures such as Hierarchical Temporal Memory (HTM)
+[30] are based on globalist memory models and use rein-
+forcement or competitive learning schemes to generate their
+models. Integrating both classes of architectures to form
+hybrid architectures also exist and include Learning Intelligent
+Distribution Agent (LIDA) [31].
+Table 1
+DBN nomenclature.
+n‘n;m Weight of the edge connecting the nth neuron in the ‘th layer to the
+mth neuron in the ‘thþ 1 layer; ‘ is suppressed when there are only 2
+layers in the network
+nrn Vector of connection weights leaving the nth neuron in the ‘th layer
+n‘ Matrix of weights connecting the ‘th layer to the ‘thþ 1 layer
+l Learning rate
+j Number of Gibbs sampling steps performed during CD
+N Hidden-layer neuron cardinality
+M Input-layer neuron cardinality
+L Number of hidden layers
+t Sampling step
+Qð:j:Þ Conditional probability distribution
+h‘ Binary configuration of the ‘th layer
+pðh‘Þ Prior probability of h‘ the current weight values
+x0 Input layer data point
+xðtÞm
+Binary configuration of mth input-layer neuron at sampling step t
+X Set of training points
+Hn Binary configuration variable of neuron n in the hidden layer at
+sampling step t
+hðtÞ
+n
+Binary configuration value of neuron n in the hidden layer at sampling
+step t
+bm mth input-layer neuron bias
+cn nth hidden-layer neuron bias
+84 Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–933. Deep belief networks
+3.1. Overview
+DNN are deeper extensions of shallow ANN architectures that
+are composed of a simplified mathematical model of the biological
+neuron but do not aim to faithfully model the human brain as do
+CA or some other ML approaches. DNN are based on the Neocogni-
+tron, a biologically inspired image processing model [32], that
+attempt to realize strong AI models through hierarchical abstrac-
+tion of knowledge. Information representation is learned as data
+propagates through the network, shallower layers learn low-level
+statistical features while deeper layers build on these features to
+learn more abstract and complex representations. Lacking clear
+skills for logical inferences, DNN need more morphing to be able
+to integrate abstract knowledge in a human manner. Recurrent
+and convolutional neural networks, first introduced in the 1980s,
+can be considered predecessors of DNN and were trained using
+back-propagation which has been available since 1974.
+ANN were first trained using back-propagation, an algorithm
+that updates the network weights by propagating the output error
+backwards through the network [33]. However, the propagated
+error vanishes to zero as the network depth increases, preventing
+early-layer weights from updating and significantly reducing the
+performance of the network [34–37]. Thus, other training algo-
+rithms for DNN were investigated. In 1992, Schmidhuber proposed
+to train recurrent neural networks by pre-training layers in an
+unsupervised fashion then fine-tuning the network weights using
+back-propagation [28]. Momentum further picked up in 2006
+when Hinton et al. proposed a greedy training algorithm for DBN
+specifically. In what follows, we restrict our discussion of DNN to
+DBN, a popular and widely used deep architecture, trained using
+Hinton et al.’s algorithm.
+While DBN is a type of deep ANN, back-propagation fails to pro-
+duce a suitable model that performs well on training and testing
+data due to DBN’s architectural characteristics [2]. This has been
+attributed to the ‘‘explaining away” phenomenon. Explaining
+away, also known as Berkson’s paradox or selection bias, renders
+the commonly held assumption of layer independence invalid
+and consequently adds complexity to the inference process. The
+hidden nodes become anti-correlated because their extremely
+low probabilities make the chances of both firing simultaneously
+impossible.
+To remedy this issue, Hinton et al. proposed a training algo-
+rithm based on the observation that DBN can be broken down to
+sequentially stacked restricted Boltzmann machines (RBM), a
+two-layer network inter-layer neuron connections only. This novel
+approach rekindled the interest in these deep architectures and
+saw DBN applied to many problems from image processingFig. 1. DBN archi[38,39], natural language processing [40–42], automatic speech
+recognition [43–46] and feature extraction and reduction [47–
+49], to name a few.
+3.2. Network structure
+3.2.1. Restricted Boltzmann machines
+RBM, first known as Harmonium by [50], are two-layer net-
+works where only inter-layer neuron connections are allowed.
+They are a special case of Boltzmann machines (BM) which allow
+both inter and intra-layer connections. RBM’s neurons form two
+disjoint sets (as indicated in Fig. 1 by the black boxes), satisfying
+the definition of bipartite graphs. Thus, training RBM is less com-
+plex and faster. The neuron connections in RBM may be directed
+or undirected; in the latter case, the network forms an auto-
+associative memory which is characterized by bi-directional infor-
+mation flow due to feedback connections [2].
+3.2.2. Deep belief networks
+DBN are stacked directed RBMs, except for the first RBM which
+contains undirected connections, as shown in Fig. 1. This network
+architecture significantly reduces the training complexity and
+makes deep learning feasible. Focusing on two layers of the net-
+work, the weighted edges connecting the various neurons are
+annotated using the variable notation n‘n;m which implies thattecture [51].
+Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93 85neuron n in layer ‘ is connected to neuron m in layer ‘þ 1. An
+exhaustive list of the entire nomenclature adopted in this section
+is included in Table 1.
+3.3. Training algorithm
+3.3.1. Restricted Boltzmann machines
+Hinton et al. proposed the contrastive divergence (CD) algo-
+rithm to train RBM in both supervised and unsupervised scenarios.
+CD estimates the log-likelihood gradient using a j Gibbs sampling
+steps which is typically set to 1. The optimal weight vector is
+obtained by maximizing the objective function in (1) through gra-
+dient descent [52]. CD’s pseudo-code is summarized in Table 2.
+Gibbs sampling is a randomized MCMC algorithm that allows
+the sampling of approximate samples from a multivariate proba-
+bility distribution [53]. The generated samples are correlated and
+form a Markov chain. Eq. (2) describes the energy function that
+represents the joint probability distribution, derived from Gibbs
+distribution and calculated using (3). nn;m, bm and cn are real valued
+weights; hn and xm can take values in the set f0;1g [54].
+maxnPx2XPðxÞ ð1Þ
+Eðx; hÞ ¼ 
+XN
+n¼1
+XM
+m¼1
+nn;mhnxm 
+XM
+m¼1
+bmxm 
+XN
+n¼1
+cnhn ð2Þ
+pðx;hÞ ¼ 1P
+x
+P
+heEðx;hÞ e
+Eðx;hÞ ð3Þ3.3.2. Deep belief networks
+A simple and efficient layer-wise training algorithm was pro-
+posed for DBN by Hinton et al. in 2006 [2]. It trains the layers
+sequentially and greedily by tying the weights of unlearned layers,
+using CD to learn the weights of a single layer and iterating until all
+layers are trained. Tying the weights not only allows us to use
+RBM’s training algorithm but also eliminates the ‘‘explaining
+away” phenomenon. Then, the network weights are fine-tuned
+using a two-pass ‘‘up-down” algorithm.
+In general, deep networks are pre-trained using unsupervised
+learning before using labeled data to improve the model with
+supervised learning. This scheme almost always outperforms net-
+works learned without pre-training [56] since this phase acts as
+a regularizer [57,58] and aid [59] for the supervised optimization
+problem.
+The energy contained in the directed model can be calculated
+using (4) where the maximum energy is upper bounded by (5)
+and achieves equality when the network weights are tied. At
+equality, the derivative is equal to (6) and is used to solve the
+now simpler maximization problem.
+Eðx0;h0Þ ¼ ðlogpðh0Þ þ log pðx0jh0ÞÞ ð4ÞTable 2
+Contrastive divergence workflow used in training RBM [55].
+1. Set the weights to zero: n‘ ¼ 0; ‘ ¼ 1 . . . L
+2. 8x 2 X
+a. Propagate training instance through the network
+b. For j sampling steps
+i. Loop over N hidden-layer neurons and sample hðtÞ
+n  pðhnjxðtÞÞ
+ii. Loop over M input-layer neurons and sample xðtÞm  pðxmjhðtÞÞ
+c. Loop over input and hidden-layer neurons and compute
+i. Dnn;m ¼ Dnn;m þ pðHn ¼ 1jxð0ÞÞxð0Þm  pðHn ¼ 1jxðjÞÞxðjÞm
+ii. Dbm ¼ Dbm þ xð0Þm  xðjÞm
+iii. Dcn ¼ Dcn þ pðHn ¼ 1jxð0ÞÞ  pðHn ¼ 1jxðjÞÞlogpðx0Þ P
+X
+8h0
+Qðh0jx0Þðlogpðh0Þ þ log pðx0jh0ÞÞ
+
+X
+8h0
+Qðh0jx0Þ logQðh0jx0Þ
+ð5Þ@ log pðx0Þ
+@nn;m
+¼
+X
+8h0
+Qðh0jx0Þ logpðh0Þ ð6Þ
+After iteratively learning the weights of the network, the up-
+down algorithm [2] fine-tunes the network weights. This algorithm
+is a supervised variant of the wake-sleep algorithm that uses CD to
+modify the network weights. The wake-sleep algorithm [60] is an
+unsupervised algorithm used to train neural networks in two
+phases: the ‘‘wake” phase is applied on the feed-forward path to
+compute the weights and the ‘‘sleep” phase is applied on the feed-
+back path. The up-down algorithm, described in Table 3, is applied
+to network to reduce under-fitting which is commonly observed in
+greedily-trained networks.
+Specifically, in the first phase (up-pass) of the algorithm, the
+weights on the directed connections, termed generative weights
+or parameters, are modified by calculating the wake-phase proba-
+bilities, sampling the states, and updating the weights using CD. On
+the other hand, the second phase (down-pass) stochastically acti-
+vates earlier layers through the top-down links, termed inference
+weights or parameters. The sleep-phase probabilities are calcu-
+lated, the states are sampled and the output is estimated.4. Cortical algorithms
+4.1. Overview
+CA are a deep artificial neural network model, which borrows
+several concepts and aspects from the human brain. The main
+inspiration is drawn from the findings of Edelman and Mountcastle
+[15,7], which state that the brain is composed of cortical columns
+arranged in six layers. He also uses the concept of strengthening
+and inhibiting to build a computational training algorithm capable
+of extracting meaningful information from the sensory input and
+creating invariant representations of patterns. Further description
+of the CA model and its biologically plausible aspects can be found
+in [61,51,62].4.2. Network structure
+A typical CA network consists of an association of columns
+grouped in layers or levels. A column is a collection of neurons
+associated with the same stimulus, as shown in Fig. 2. Hence, CA
+can be considered as a three-level hierarchy structure. The neu-
+rons, like in other neural network architectures, use an activationTable 3
+Up-Down training algorithm workflow [2].
+1. Bottom-up phase
+a. Calculate wake-phase probabilities
+b. Sample network states
+c. Using wake-phase probabilities, calculate CD statistics
+d. Perform Gibbs sampling for j iterations
+e. Using (1.d), calculate sleep-phase CD statistics
+2. Down-pass phase
+a. Compute sleep-phase probabilities through top-down pass
+b. Sample network states
+c. Estimate network output
+3. Re-compute generative weights
+4. Re-compute network’s directed sub-graph weights
+5. Re-compute inference weights
+Fig. 2. Illustration of a cortical network.
+86 Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93function f ð:Þ to compute their output from their input. This activa-
+tion function is common for all neurons in the architecture.
+Columns in a layer connect to those in the subsequent level:
+these connections are referred to as vertical connections and exist
+only between consecutive levels. A synaptic input terminating at a
+column’s input is shared within neurons constituting said column,
+however, the learned weights of the connections are different lead-
+ing to distinct neuronal outputs. The latter are summed to form the
+column’s output being forwarded to the next layer. Such configura-
+tion permits the column to act as a basic computational structure
+in CA as opposed to neurons in DBN and other neural network
+architectures.
+Furthermore, lateral connections or intra-level connections, are
+‘‘communication means” employed to deliver inhibiting signals
+that modify a column’s weights based on the activity of other col-
+umns during training. Contrarily to their vertical counterpart, these
+connections do not transmit data and are hence are not explicitly
+shown in Fig. 2. Data can only flow in a bottom-up direction, from
+level to level, through vertical connections.
+4.3. Mathematical model
+The complete mathematical description based on the model of
+[6,63] can be found in [62,61], and is summarized below based
+on the adopted nomenclature in Table 4.
+A column of N neurons receives connections from the output of
+columns in the previous layer and hence is represented by a 2D
+matrix concatenating vectors of weights of incoming connectionsTable 4
+CA nomenclature.
+c Destination column index
+n Destination neuron index
+l Destination level index
+s Origin column index
+e Training epoch
+N Number of nodes in a column
+Cl Number of columns in level l
+T Tolerance
+nl;ec;n;s Weight of connection between neuron n, column c, level l, and column
+s in previous level, during epoch e
+Nl;e
+c;n
+Vector of connection weights entering neuron n, of column c, level l
+Nl;e
+c
+Matrix of weights entering column c, level l
+!l;e Output vector of level l
+tl;ec Output of column c
+zl;ec;n Output of neuron n, column c of level lsynapsing at each of its neurons as shown in Eq. (7). Epoch number
+is denoted by e, layer number by l, the receiving column index by c,
+the receiving neuron n and the sending column by s.
+Defining !l;e as the output vector of level l for epoch e and tl;ec
+the output of column c, within the same level; for the same train-
+ing epoch, we can write (8). The output of a neuron, zl;ec;n defined by
+(9) is the result of the nonlinear activation function f ð:Þ in (10) in
+response to the weighted sum of the input connections while the
+output of the column is the sum of the outputs of the column’s
+neurons. T is a constant (across layers) tolerance parameter empir-
+ically selected and the nonlinear activation function emulates the
+brain’s observed nonlinear activity.
+4.4. Training algorithm
+4.4.1. Random initialization
+The network is assumed to be initially fully connected with ran-
+dom weak weights (with absolute values less than 0.1). This is a
+common ‘‘blank slate” approach to ensure that the network is
+not initially biased to any specific pattern. As learning proceeds,
+these weights are incrementally updated so that the connectivity
+of the network is modified. All weights that fall to zero represent
+disabled connections. Therefore, an initially fully connected net-
+work is not necessarily preserved.
+4.4.2. Unsupervised feed-forward learning
+The first stage in training a cortical network aims at creating
+input-specific representations via random firing and repeated
+exposure. An input propagating through the levels of the network
+causes certain columns to fire (i.e. generate a threshold crossing
+response) based on initially random weights. This activation is
+then reinforced by strengthening the active columns’ weights
+and inhibiting neighboring ones. Repeated exposure or batch
+learning trains columns to identify (via activation) particular
+aspects or patterns of the training data, extracting discriminatory
+features with increasing complexity through levels (lower levels
+recognize basic elements, higher levels in the hierarchy learn
+higher order concepts and reasoning). The strengthening process
+increases a column’s weights rendering it more receptive to
+stimulation, while inhibition weakens the weights diminishing
+activity of a certain column. Connections formed or weakened
+Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93 87are plastic, i.e. can be altered during the feedback learning phase
+and vice versa. Strengthening and inhibition rules are shown in
+Eqs. (11)–(13).
+4.4.3. Supervised feedback learning
+The feed-forward learning phase relies only on aspects of the
+given data to train columns that identify significant features with
+no error propagation or label information. The supervised feedfor-
+ward stage aims at correcting misclassifications occurring when
+the network is exposed to variations of the same patterns (more
+accurately training class) which may result due to the absence of
+label information in the previous phase.
+Following the unsupervised phase, a ‘‘unique representation”
+based on the average firing scheme observed for a particular pat-
+tern is stored, the feedforward learning fine-tunes the network’s
+weights to achieve this scheme (within certain bounds to avoid
+overfitting) for all instances of a known class. A misclassification
+hence triggers an error signal at the top-most or output layer
+(where the final output is produced) correcting misfiring columns
+(through inhibition) and strengthening weakened columns firing
+for the original pattern forcing the column firing for the originalTable 5
+CA generic training workflow.
+1. Random initialization
+whipattern (strengthening and inhibition are the only weight update
+rules adopted in opposition to gradient descent employed in the
+backpropagation learning of traditional artificial neural networks).
+After multiple exposures, the top level attains a stable state also
+known as a ‘‘stable activation” in which columns are able to cor-
+rectly generate the desired firing scheme. The term ‘‘firing scheme”
+refers to the firing pattern of neurons for a given input.
+After stabilizing the top layer, the error signal is propagated
+back to the previous level which in turn executes a series of
+inhibition and strengthening to achieve the desired firing
+scheme. The same process in repeated for each of the layers
+until a convergence condition (expressed as a discrepancy
+between the desired and actual activation) is met. The training
+exits when all layers are stable and the network can recognize
+all variations of the same pattern in the training data (within a
+certain tolerance).
+A pseudo-code showing the implementation of the training
+algorithm is shown in Table 5. An illustration of the feedback train-
+ing process is shown in Fig. 3. The top row shows the firing scheme
+(blue squares represent active columns) obtained after the feedfor-
+ward propagation of two variations of the same pattern as well as
+the desired firing scheme (average activation obtained based on all
+variations of this pattern in the training set). The middle and bot-
+tom rows show a succession of training epochs (for pattern 1 and 2
+respectively) in which the error signal is generated at the top level
+and stable activations are formed from top to bottom. One can see
+that at convergence both instances are represented with the same
+firing scheme in the network.5. Theoretical computational complexity
+In this section, we derive the theoretical computational com-
+plexity of each algorithm to assess the required resources when
+deploying such a network for real world problems. We investigatepute
+Fig. 3. An example of the feedback process.
+88 Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93two aspects of the computational complexity: memory and com-
+putations. While the required memory storage depends on the
+number of non-zero weights in the network, the number of com-
+putations depends on the non-zero weights and the adopted acti-
+vation function. Comparing CA to DBN, the more computationally
+demanding network is data specific since each problem would
+result in a different number of non-zero weights. We empirically
+compare the network sizes in the next section.5.1. Number of non-zero weights
+5.1.1. DBN
+DBN is formed of R layers with Mr neurons in layer r. During
+training, the network starts out fully connected leading to a total
+number of weights equal to Nw ¼PR
+r¼1Mr Mr1. Assuming not all
+weights are non-zero when training is complete, with c 2 ½0;1 is
+the fraction of non-zero weights or firing rate, the number of
+non-zero weights is equal to NNZW ¼PR
+r¼1c Mr Mr1. Empirical
+results in Section 6 reveal that c is usually greater than 90%. Know-
+ing that the weights are double precision floating point numbers
+which require 8 bytes of storage, an upper bound on the memory
+requirements during training are
+PR
+r¼18 Mr Mr1. During testing,
+the number of bytes is equal to
+PR
+r¼18  c Mr Mr1.Table 6
+Computational complexity of some activation functions
+Activation function Equation Computations (per neuron)
+Hard limit (14) Oð1Þ
+Linear (15) Oð2Þ
+Piecewise linear (16) Oð4Þ
+Gaussian (17) Oðm3Þ
+Sigmoid, Tangent (18) Oð165Þ
+Sigmoid, Logarithm (19) Oð83Þ
+Softmax (20) Oð83MRÞ5.1.2. CA
+CA is formed of R ¼ 6 levels; the first level contains L1 ¼ I col-
+umns with M neurons per column. We assume, without loss of
+generality, the number of columns is cut in half in each subsequent
+level, as used in [6,63,64] i.e. level r contains Lr ¼ I
+2r1. Each level has
+a weight matrix with dimensions Lr M. Therefore, the total num-
+ber of weights is equal to Nw ¼PR
+r¼1Lr M  Lr1. However, some of
+these weights could be equal to zero. Therefore, we denote by
+c 2 ½0;1 the firing rate of the network, the fraction of neurons that
+are non-zero, which leads to the number of firing neurons equal to
+NFC ¼ c
+PR
+r¼1Lr . To simplify the computations, a uniform distribu-
+tion of firing columns across levels will be assumed. Therefore,
+the number of firing columns per level is NFC=L ¼ NFC
+R . Finally, the
+total number of non-zero weights can be approximated by
+NNZW ¼PR
+r¼1M  Lr  NFC=L. Empirical results in Section 6 reveal that
+c does not usually exceed 50%. Knowing that the weights are dou-
+ble precision floating point numbers which require 8 bytes of stor-
+age, an upper bound on the memory requirements during training
+are
+PR
+r¼18  Lr M  Lr1. During testing, the number of bytes is equal
+to
+PR
+r¼18  c M  Lr 
+PR
+r¼1
+Lr
+R .5.2. Number of operations per neuron
+Since a neuron is composed of a summation and an activation
+function, the number of operations performed to obtain the output
+of each neuron can be divided into the operations to compute the
+sum and the activation function computational complexity.
+5.2.1. Summation
+The number of floating point operations required to compute
+the summation depends on the number of input connections of a
+neuron. Assuming there are m connections, m multiplications
+and m additions (including the bias term) are required, which is
+of the order of Oðm2Þ. For an input layer neuron, m is equal to
+the number of features in the input vector. For a hidden layer neu-
+ron, m is at most equal to the number of neurons in the previous
+layer.
+5.2.2. Activation function
+Depending on the activation function, the computation of each
+neuron output will require a certain number of floating point and
+comparison operations. Some of popular activation functions and
+their computational complexity are summarized in Table 6.
+The hard limit activation function, described by (14), requires
+one comparison. The linear function in (15) requires one multipli-
+cation and one addition whereas the piece-wise linear function in
+(16) requires two comparisons and at most one multiplication and
+addition operation.
+/ðxiÞ ¼
+1 if xi P 0
+0 otherwise
+
+ð14Þ
+/ðxiÞ ¼ axi þ b ð15Þ
+/ðxiÞ ¼
+b if xi P b
+axi þ b if  b 6 xi < b
+b if xi < b
+8><
+>: ð16Þ
+Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93 89Computing the Gaussian activation function, described by
+(17), requires m multiplications and mðm 1Þ additions to
+compute the magnitude term, where m represents the dimen-
+sionality of the vector xi and is equivalent to the number of
+input connections of a neuron. Dividing by the standard devi-
+ation requires 3 additional multiplication operations. In addi-
+tion, the calculation of an exponential, estimated using the
+Taylor series expansion with approximately 10 terms, requires
+approximately 81 operations. In total, m2ðm 1Þ þ 81 opera-
+tions are required.
+/ðxiÞ ¼ exp
+kxi  lik2
+2r2
+ !
+ð17Þ
+The tangent sigmoid function in (18) has two exponential
+terms, each requiring approximately 81 operations, in addition
+to two additions and one multiplication operations which
+leads to a total of approximately 165 operations. On the other
+hand, the logarithmic sigmoid in (19) has one exponential
+term and one addition and multiplication for a total of 83
+operations.
+/ðxiÞ ¼ tanhðxiÞ ¼ 1 e2xi
+1þ e2xi
+ð18Þ
+/ðxiÞ ¼ 1
+1þ exi
+ð19Þ
+Each exponential term in the softmax activation function,
+described by (20), requires approximately 81 operations. The
+numerator has one exponential term while the denominator has
+MR terms. In total, 81ðMR þ 1Þ þ 1 operations are required.
+/ðxiÞ ¼ exiP
+j2MR
+exj
+ð20ÞTable 7
+UCI dataset characteristics.
+Dataset Number of
+instances
+Number of
+features
+Number of
+classes
+Planning relax 182 12 2
+Breast cancer diagnostic
+Wisconsin
+569 32 2
+Tic Tac Toe 958 9 2
+Spambase 4601 57 2
+Wilt 4889 5 2
+White wine 4898 11 2
+MNIST 70,000 784 10
+Skin segmentation 245,057 3 2
+Table 8
+Nomenclature adopted for network architectures.
+Network name Network architecture (hidden layers)
+N1 [5, 5]
+N2 [50, 50]
+N3 [50, 50, 50]
+N4 [500, 500, 500]
+N5 [500, 500, 2000]
+N6 [1000, 1000, 2000]
+N7 [2000, 1000, 500, 250, 125, 62]5.3. Pruning
+The term synaptic pruning refers to the procedure by which
+synaptic connections are terminated during the early ages of
+mammals’ lives [65]. Starting with approximately 86 8 billion
+neurons at birth, the human brain quintuples its size until adoles-
+cence after which the volume of synaptic connection decreases
+again [66]. This process of pruning is mainly thought of as the
+byproduct of learning. While the total number of neurons
+remains roughly unaltered, the distribution and number of con-
+nections are tailored by learning [67,68]: the structure of the
+brain moves from a stage where its primary function falls under
+perception–action due to disconnected cortical hubs [69,70] to
+distributed networks spanning the brain performing a variety of
+complex cognitive tasks [71].
+The training of a cortical network bears several resemblances to
+the synaptic pruning procedure: starting with a fully connected
+structure, the network goes through an unsupervised phase where
+connections are pruned through inhibition leaving only ‘‘signifi-
+cant” ones. In more accurate terms, the strengthening of firing col-
+umns ensures the establishment of selective connections while
+inhibition prunes irrelevant connections. This process plays a cru-
+cial role not only in extracting meaningful characteristics of the
+input stimuli but also in avoiding overfitting due to the especially
+complex structure of a cortical network. This is further demon-
+strated in the number of non-zero weights in different network
+architectures as shown in our theoretical and empirical analysis:
+the number of ‘‘alive” connections decreases with the increase of
+parameters, hence a minimal effect on performance as shown in
+our experiments. This property of CA’s structure and training is
+not shared with DBN.5.4. Overall computational complexity
+In summary, the overall computational cost of DBN and CA
+depends on the architecture of the network: the number of layers
+and the number of neurons per layer which affect the number of
+connections. The activation function can be fixed for both DBN
+and CA. Sigmoid is a common activation function used in both
+algorithms. After training, some of these connections will have a
+weight of zero. Based on the previous sections, we notice that for
+a fixed network architecture, CA will have less non-zero weights
+due to the pruning algorithm. However, the depth of the best net-
+works for each algorithm vary based on the data. six-layer archi-
+tectures are commonly used in the literature for CA while DBN
+depth’s varied from 3 to 5 hidden layers.
+6. Empirical comparison
+In this section, we report on the experimental results of DBN
+and CA on multiple databases from the UCI ML repository [72].
+We compare the classification accuracy, network complexity and
+computational complexity of both algorithms.
+6.1. Experimental setup
+CA and DBN were empirically compared on classification prob-
+lems using datasets from the UCI machine learning repository,
+described in Table 7. The datasets contained real-valued features.
+A 4-fold cross validation was adopted, i.e. each database is ran-
+domly divided into 4 sets where 3 sets (or 75% of the data samples)
+are used in training and 1 set is used in testing. The results are
+averaged over four runs where each set is used for testing once
+and the remaining for training. The CA library is a set of Matlab
+functions obtained from [73,74]; it was run on a Windows 7
+machine with Intel Core i5. The DBN library is a set of Matlab func-
+tions modified from [75]; it was run on an Intel Core i7 processor
+machine. Multiple network architectures, summarized in Table 8,
+were tested on the datasets. The number of neurons for the hidden
+layers are displayed only. The input layer’s neurons are equal to the
+number of features and the output layer’s neurons are equal to the
+number of classes. The chosen architectures can be grouped into
+90 Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93one of three sets based on the pattern of hidden layer neurons: net-
+works with an equal number of neurons in all hidden layers, net-
+works with an increasing (doubling) number of neurons as the
+layer depth increases and networks with a decreasing (halving)
+number of neurons as the layer depth increases. Furthermore, the
+number of hidden layers is increased from 2 to 6 hidden layers. For
+the results reported in Table 9, DBN’s unsupervised training and
+fine-tuning algorithms were each run for 50 epochs and the batch
+size was set to 10. The second column indicates the number of col-
+umns per layer for CA (there were 20 neurons per column) and theTable 9
+Classification results.
+DB
+Dataset Net. size Acc. (%)
+Planning N1 69.4
+relax N2 68.8
+N3 69.4
+N4 70.6
+N5 68.8
+N6 68.1
+N7 66.3
+Breast N1 62.1
+cancer N2 88.4
+diagnostic N3 88.4
+Wisconsin N4 87.5
+N5 87.5
+N6 87.0
+N7 67.9
+Tic N1 65.1
+tac N2 65.1
+toe N3 65.1
+N4 65.1
+N5 65.1
+N6 65.1
+N7 65.1
+Spambase N1 89.9
+N2 90.5
+N3 91.4
+N4 92.2
+N5 91.3
+N6 91.8
+N7 88.5
+Wilt N1 94.6
+N2 94.6
+N3 94.6
+N4 94.6
+N5 94.6
+N6 94.6
+N7 94.6
+White N1 96.4
+wine N2 96.4
+N3 96.4
+N4 96.4
+N5 96.1
+N6 96.3
+N7 96.4
+MNIST N1 38.8
+N2 84.1
+N3 84.2
+N4 89.0
+N5 88.3
+N6 89.4
+N7 86.5
+Skin N1 79.6
+segmentation N2 79.6
+N3 79.6
+N4 79.6
+N5 79.6
+N6 79.6
+N7 79.6
+The bold values refer to the best accuracy obtained per dataset.number of neurons per column for DBN. The connectivity of a net-
+work is computed by taking the ratio of weights greater than 5% of
+the average value of weights to the total number of weights in the
+network. The threshold is not set to a fixed value since the weights
+range of weights varies based on the input data, i.e. for some data-
+sets all the weights might be less than this set threshold even
+though this threshold might be very small. Furthermore, the
+threshold is not set to zero since some weights will not exactly
+zero but significantly smaller than the other weights in the net-
+work and their contribution is insignificant. The classificationN CA
+Connec. (%) Acc. (%) Connec. (%)
+91.1 71.4 86.4
+49.6 65.2 72.5
+55.0 70.8 68.7
+9.1 75.6 55.1
+3.8 80.8 43.4
+3.2 82.5 30.9
+6.0 86.1 29.1
+99.1 97.0 95.8
+98.7 97.1 90.7
+98.5 96.8 86.4
+97.3 97.5 77.1
+97.3 98.2 68.3
+97.2 98.2 56.5
+96.9 99.0 35.6
+100.0 67.0 86.3
+94.9 79.3 83.5
+97.0 80.1 79.8
+99.4 89.4 68.1
+99.4 90.5 56.4
+98.9 92.7 45.9
+99.1 93.1 34.7
+98.1 90.5 89.7
+98.7 91.8 87.6
+98.9 92.8 79.9
+96.7 93.7 66.4
+96.1 94.3 58.1
+95.3 95.6 46.8
+93.5 97.5 36.3
+100.0 94.6 88.4
+99.9 95.5 80.7
+99.9 96.5 77.5
+99.9 97.8 66.9
+99.4 98.2 55.3
+99.2 98.0 45.5
+97.8 98.2 35.8
+94.1 95.1 81.7
+99.7 96.0 80.3
+98.6 97.5 73.2
+70.1 98.1 67.9
+73.0 98.9 47.3
+60.0 99.5 36.8
+62.8 99.7 26.1
+88.1 96.2 89.8
+91.8 97.1 85.2
+98.8 98.5 79.1
+47.2 98.5 58.7
+54.9 99.2 43.5
+53.9 99.8 37.6
+40.8 99.8 28.5
+80.6 94.5 83.2
+94.4 94.8 79.5
+95.8 94.8 75.3
+97.2 95.7 64.3
+97.1 97.8 53.8
+97.1 97.8 50.1
+97.3 99.9 33.5
+Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93 91accuracy simply reports the percentage of correctly classified
+instances in the test set. Running time is not compared since each
+algorithm is written and run in a different environment.6.2. Classification results
+First, we compare the performance of DBN when varying the
+network architecture. For some databases, such as White wine,
+the performance does not significantly vary as the network archi-
+tecture varies, achieving approximately 96.4% accuracy. On the
+other hand, performance varied significantly across architectures
+for MNIST, ranging from 38.8% to 89.47%. Hence, DBN is either able
+to achieve good accuracy or bad accuracy on a specific database.
+This is mainly due to the lack of enough training points to allow
+DBN to learn a good model of the data. However, for other datasets
+such as Breast cancer diagnostic Wisconsin, the classification accu-
+racy varied significantly as the network architecture varied. Next,
+considering CA’s performance on the various datasets when vary-
+ing the network size, we notice that the six-layered network
+always outperforms other network sizes on all datasets, although
+it occasionally marginally outperforms some networks. For exam-
+ple, CA achieved 99.9% accuracy for N7 on skin segmentation com-
+pared to 94.5% for N1 (2 layers). Comparing CA to DBN, we notice
+that CA outperforms DBN on almost all datasets. In addition, a six-
+layered architecture seemed to always perform better than other
+architectures, reducing the burden of searching for the optimal
+network architecture by training multiple networks.6.3. Network connectivity
+DBN exhibit high connectivity for most datasets on various net-
+work sizes. Therefore, Hinton et al.’s greedy training algorithm
+does not eliminate a large number of connections resulting in an
+almost fully connected graph. This is evident in the experimental
+results reported in Table 9 which reports the percentage of non-Statistical significance tests.
+Fig. 4. CA vs. DBN ranking basedzero weights in a DBN network to be around 90%. Unlike DBN,
+CA generally results in a sparsely connected network, evident by
+the low percentage of non-zero weights obtained after training;
+CA networks had less than 50% of their connections in tact com-
+pared to almost 90% for DBN. Furthermore, we notice that CA’s
+connectivity tends to decrease as the network size increases which
+implies that if certain data does not require a large network, CA’s
+training algorithm will reduce the number of connections to pro-
+duce a sparsely connected network. For example, connectivity per-
+centage decreases from 98.7% to 40.8% for MNIST when increasing
+the network architecture from a two-hidden layer network to a
+six-layer architecture.6.4. Effect of batch size
+The DBN code randomly reorders and divides the data into mini
+batches. While training, each mini batch is loaded into memory
+and used to update the weights of the network connections.
+Increasing the size of a batch meant loading a larger chunk of data
+into memory. This renders training slower if the chunk was too
+large to fit into memory. However, decreasing the batch size meant
+more memory transfers per epoch and therefore, increasing train-
+ing time. On the other hand, CA does not randomly reorder and
+divide the data into mini batches. Therefore, the network is
+exposed to the data in the order it was presented. Theoretically,
+reordering or dividing the data has no effect on the performance
+of the algorithm as all patterns are employed and must achieve a
+stable activation.6.5. Statistical analysis
+Next, we perform the pairwise t-test [76] and Friedman test
+[77] to gain further insight into the differences between CA and
+DBN. The N7 architecture is trained on the various databases.
+Table 10 summarizes the p-values of both tests and show thatFriedman test
+p-value Statistically significant Nemenyi critical distance
+on Nemenyi post hoc test.
+92 Y. Rizk et al. / Applied Computing and Informatics 15 (2019) 81–93there is a statistical significance between CA and DBN on all data-
+bases; the p-value was less than 5%. Furthermore, the Nemenyi
+post hoc [78] was performed once a significant difference was
+observed, to rank the algorithms. The rankings revealed that CA
+outperformed DBN on most databases except for Skin Segmenta-
+tion, as shown in Fig. 4. The critical distance is summarized in
+Table 10.7. Conclusion
+In this work, we compared two DNN architectures on super-
+vised classification problems. While DBN can be easily seen as an
+established technique developed from within a traditional AI per-
+spective, CA are more biologically inspired and can be classified
+as theories in the making, solidly rooted in principles inherited
+from neuroscience research. A theoretical computational complex-
+ity analysis for both algorithms was presented before empirically
+comparing CA and DBN. Experiments were run on eight publicly
+available classification databases. Multiple CA and DBN network
+architectures were compared based on their classification accuracy
+and resulting network connectivity. CA achieved the best perfor-
+mance on most databases using a six-layer architecture with
+decreasing number of hidden neurons for deeper layers. Results
+showed that deeper CA networks had lower connectivity than shal-
+lower CA networks. Furthermore, DBN did not prune as many con-
+nections as CA’s training algorithm. On the tested databases, CA
+generally had a higher classification accuracy than DBN. In the
+span of this work, we attempted to provide the reader with enough
+background and technical details for each of the algorithms while
+understanding that the breadth of the topic necessitates the inclu-
+sion of more involved insights. We therefore urge the interested
+reader to use this paper as a foundation for further exploration of
+the rapidly expanding sub-field of deep learning.

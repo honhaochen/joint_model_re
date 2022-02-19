@@ -1,0 +1,527 @@
+Strong laser radiation, with intensity over 1020 W/cm2, can
+nowadays be used to produce bright X/g-ray radiation through
+the interaction with high-Z solid. The bright X/g-ray radiation
+sources have many applications in several research areas
+[1e4]. For example, the bright X-ray burst can be used for
+high sensitivity imaging by Thomson scattering. Such g-ray
+sources can also be used to the transmutation of nuclear waste
+through the (g, n) reactions [5,6]. In addition, ultra bright g-* Corresponding author. State Key Laboratory of High Field Laser Physics,
+Shanghai Institute of Optics and Fine Mechanics, 201800 Shanghai, China.
+E-mail address: wudong@siom.ac.cn (D. Wu).
+https://doi.org/10.1016/j.mre.2018.06.002
+2468-080X/© 2018 Science and Technology Information Center, China Academy
+access article under the CC BY-NC-ND license (http://creativecommons.org/licensray sources may help developing future geg colliders [7],
+which are of fundamental importance for basic sciences.
+When an intense laser beam irradiates a solid composed of
+high-Z materials, relativistic electrons can be produced in
+front of the target through the direct-laser-heating/acceleration
+mechanism [8e14]. These energetic electrons then propagate
+through the bulk solid and may trigger efficient bremsstrah-
+lung emission. For a complete description of this electron
+transport and bremsstrahlung, different atomic and plasma
+processes need to be taken into account including ionization
+dynamics [15,16], collision dynamics [17e19], Ohm heating
+[20], as well as self-generated electromagnetic fields [21,22].
+Until now, however, there is no comprehensive simulation
+model that can incorporate all the related physical processes.of Engineering Physics. Publishing services by Elsevier B.V. This is an open
+es/by-nc-nd/4.0/).
+294 D. Wu et al. / Matter and Radiation at Extremes 3 (2018) 293e299Recently, we have developed a particle-in-cell (PIC) code,
+which enables us to calculate coupled atomic and plasma
+processes in a more realistic way. Indeed this PIC code pro-
+vides us a good opportunity to investigate the X/g-ray radia-
+tion of solid when irradiated by intense laser pulses. The PIC
+code takes advantage of the recently developed ionization [15]
+and collision [17] dynamics models. Within the simulations,
+the ionization charge state and conductivity (or resistivity) of
+target material evolve according to the local plasma and
+electromagnetic fields conditions. Therefore, different types of
+materials, like copper (Cu), gold (Au) and plastics, can be
+modelled based on their intrinsic atomic properties.
+Bremsstrahlung is known as the dominant process in solids
+under intense laser irradiation, which typically results in a
+continuous and broad spectra. Although Ka and Kb emission
+might also appear in the radiation spectra, they are typically
+weak and of low frequencies when compared with brems-
+strahlung radiation, especially when the laser intensity is over
+1020 W/cm2 [23]. By varying the target materials and laser
+intensities moreover, we can tune the energetic electrons'
+generation in front of the target and transport within the target.
+The “generation” and “transport” of electrons would act as a
+whole and finally influence the bremsstrahlung X/g-ray
+emission. For laser intensities higher than 1023 W/cm2,
+moreover, laser-plasma non-linearity, including the nonlinear
+Compton scatterings and radiation reactions effects [24,25],
+are predicted to appear. Such non-linear effects occur when
+relativistic electrons, quivering in the ultra intense electro-
+magnetic fields, emit high frequency photons. Under such
+extreme conditions, the X/g-rays from nonlinear Compton
+scatterings can become comparable to the bremsstrahlung ra-
+diation [26]. Furthermore, the radiation reaction effects of
+electrons can significantly influence the energetic electrons'
+generation in front of the target and even the following
+transport. Little is known, so far, about the bremsstrahlung
+radiation and nonlinear Compton scatterings at extreme laser
+irradiations, and how they need to be incorporated in order to
+model the total radiation of solid is still open. Therefore, a
+quantitative evaluation of radiation characteristics of different
+high-Z solids irradiated by intense laser pulses would be of
+significant importance for both basic science and engineering
+applications.
+In this paper, the characteristics of X/g-ray radiations by
+intense laser interactions with high-Z solids are investigated
+through particle-in-cell simulations. Within the simulations,
+both bremsstrahlung and nonlinear Compton scatterings have
+been included. In particular, we here have studied the relative
+strength and angular distributions of X/g-ray productions from
+bremsstrahlung and nonlinear Compton scatterings. The
+threshold under which the nonlinear Compton scatterings
+become dominant is also outlined.
+The paper is organized as follows. Our models concerning
+bremsstrahlung and nonlinear Compton scatterings are intro-
+duced in Sec. 2. In Sec. 3, PIC simulations concerning Cu and
+Au materials with laser of intensities varying from 1020 W/cm2
+to 1024 W/cm2 are performed. The relative strength and
+angular distributions of X/g-ray productions frombremsstrahlung and nonlinear Compton scatterings under
+different materials and laser irradiations are also compared in
+Sec. 3. Summary and discussion are given in Sec. 4.
+2. Theoretical model
+When two charged particles collide, they will accelerate in
+each other's electric field and as a result, emit electromagnetic
+waves. This kind of phenomenon is typically called brems-
+strahlung radiation. Generally, the bremsstrahlung radiation
+power by an accelerated charge increases with _b
+2
+Z2. This
+value is significantly determined by acceleration _b and target
+atomic number Z. For different target materials, atomic num-
+ber Z is changed accordingly. From the relation, P  _b
+2
+Z2, it
+is apparent that high-Z material would be more preferable in
+X/g-ray production. The energetic electrons produced in front
+of the target are mainly due to direct-laser acceleration
+mechanism. At extreme intensities, laser-plasma interactions
+become strongly nonlinear, where new and exotic phenomena
+are predicted to appear. Among the features of interest at this
+exotic quantum electro-dynamical regime are the so-called
+nonlinear Compton scatterings and the accompanied radia-
+tion reaction friction effects. They occur when relativistic
+electrons, quivering in the ultra intense electromagnetic fields,
+emit high frequency photons. In this section, we will give a
+brief introduction of the bremsstrahlung and nonlinear
+Compton scattering models used in our PIC simulations.
+If we consider the energetic electron, for example Ek
+greater than MeV, projects into a high-Z solid, the brems-
+strahlung radiation would become non-ignorable. Following
+the classical text by Jackson [27], we can obtain the energy
+radiated per unit length per unit frequency as,
+d2E
+dldðZuÞ ¼
+16
+3
+ar2enA
+2 ln
+2gg
+0mec
+2
+Zu
+ ð1Þ
+where n is the ion density of the target, A is the atomic number
+of the target material, a ¼ e2=Zc is fine structure constant,
+re ¼ e2/mec
+2 is classical electron radius and g0 ¼ g Zu is the
+relativistic factor of the electron after the photon has been
+emitted. For energetic electrons, the radiation is emitted
+mainly in the forward direction, under the average angle  1=
+g between the directions of motion of the electron and the
+emitted light. In PIC simulations, therefore, the angular dis-
+tribution of emitted photons can be approximated as
+dE
+dUdðZuÞ ¼
+4
+3p
+d
+
+1 p
+jpj
+
+acr2enA
+2 ln
+2gg
+0mec
+2
+Zu
+dt; ð2Þ
+where a delta-function approximation is used in order to
+describe the direction of photon emissions.
+In PIC simulations, as the average angle between photon
+and electron can be handled by a delta-function approxima-
+tion, the Bremsstrahlung radiation do not further change the
+deflection of the electron. This approximation will signifi-
+cantly simplify the implementation of Bremsstrahlung
+correction into the binary collision models. In such model,
+295D. Wu et al. / Matter and Radiation at Extremes 3 (2018) 293e299after the ordinary binary collision calculations, the electron
+energy is further updated by including the Bremsstrahlung
+correction, i.e., gn ¼ g dg with dg representing the energy
+loss within collisions. The electron momentum is also updated
+with pn ¼ ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiðgn  1Þ=ðg 1Þp
+p, where dt is the time step of
+PIC simulations.
+When an electron encounters strong electromagnetic fields,
+it can emit high frequency photons. This is called nonlinear
+Compton scatterings. In the meanwhile, this electron will lose
+much of its kinetic energy by radiation, and to which one
+usually refers as radiation reaction effects. In order to resolve
+this interaction, here, in our model [24,25,28], electrons are
+assumed to move in two separate fields: the original Lorenz
+field and its own radiated fields, as following,
+dp
+dt
+¼ fL þ
+
+e
+c
+ðduBÞ  ug2
+c2
+ðdu,fLÞ
+
+; ð3Þ
+where fL is the Lorenz force, u ¼ p=
+ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+m2 þ p2=c2
+p
+, and du ¼
+t
+m
+fLuðu,fLÞ=c2
+1þtðu,fLÞ=mc2, in which t is a constant expressed as t ¼
+2e2=3mc3. Again, the radiation direction is confined in a
+narrow angle 1=g along the electron trajectory. In the highly
+relativistic case, it can also be approximated with the delta-
+function. The frequency spectrum can simply express as
+dI
+dUdu
+dt ¼ d
+
+U p
+jpj
+
+g2ðdu,fLÞ
+uc
+FðrÞdt; ð4Þ
+with FðrÞ ¼ 35=2
+8p r
+R∞
+r K5=3ðxÞdx, where K5=3 is the modified
+Bessel function, r ¼ u/uc, and uc ¼ 3urg
+3/2 is momentarily
+close to that from circular motion with a rotation frequency
+ur ¼ jp fLj=p2.
+Note that we have already implemented both bremsstrah-
+lung and nonlinear Compton scatterings [25] into a PIC code
+[29]. When coupled with the ionization dynamics [15], colli-
+sion dynamics [17], Ohm heating [20] as well as self-
+generated electromagnetic fields [21,22], the radiation prop-
+erties of a high-Z solid under the irradiations of intense lasers
+can therefore also be calculated quantitatively.
+3. Simulation results
+We have performed a series of 2D PIC simulations to
+investigate the emitted spectra of Cu and Au targets, when
+irradiated by intense laser beams with intensities varying from
+1020 W/cm2 to 1024 W/cm2. Here, Cu (density of 8.9 g/cm3)
+and Au (density of 19.32 g/cm3) targets with the same thick-
+ness 2 mm are used to analyse the effects of target material on
+radiation properties. The initial temperature of Cu and Au
+solid is chosen to be 0.01 eV. The initial ionization degrees of
+Cu and Au are Z ¼ 4 and 5, respectively. We here take
+advantage of the recently developed ionization and collision
+dynamics models, which help calculate the ionization charge
+state and conductivity of target quite precisely according to the
+local plasma and electromagnetic fields conditions within the
+simulations. The simulations were carried out in the X-Y
+Cartesian geometry with laser propagation in the X direction.The size of the simulation box is chosen to be X (8 mm)  Y
+(20 mm), which is divided into 400  1000 uniform grids. The
+laser pulse has a predefined profile of form
+er2=r20 sin2ðpt=2t0Þ, with r0 ¼ 3l0, t0 ¼ 10T0 where T0 is the
+laser cycle. The central wavelength of the laser is 1 mm. The
+laser pulse is normally incident on the target. In the X and Y
+directions, absorbing boundary conditions are applied for both
+particles and laser field. In order to quantitatively evaluate the
+radiation contributions from bremsstrahlung and nonlinear
+Compton scatterings, two separate simulation groups are
+performed: (a) taking into account the bremsstrahlung radia-
+tion only; (b) taking into account both bremsstrahlung radia-
+tion and nonlinear Compton scatterings.
+Fig. 1 (a)e(c) shows the electron density profiles of Cu
+targets when irradiated by a laser pulse with intensity 1020 W/
+cm2, 1023 W/cm2 and 1024 W/cm2, respectively. Here, snap-
+shots of these densities are taken at the end of the laser pulses.
+Within these simulations (Fig. 1 (a)e(c)), only bremsstrahlung
+radiations are taken into account. In contrast, Fig. 1 (d)e(f) are
+the results when both bremsstrahlung and nonlinear Compton
+scatterings are involved. Fig. 2 shows that same for analogue
+parameters, but the Au targets are used instead of Cu. As seen
+from Fig. 1 (a), the laser beams cannot penetrate through the
+target with a laser of intensity 1020 W/cm2, which are reflected
+back when reaching the critical density surfaces. The ioniza-
+tion channel inside the target is induced by energetic electrons,
+which are typically generated at the critical density surfaces
+and then propagate forward. From Figs. 1(a) and 2(a), we can
+see that the transport of energetic electrons is well guided
+inside both Cu and Au targets. The guiding of energetic
+electrons is proved to be the action of resistive magnetic fields
+[20e22], which are induced by Faraday's law vB=vt ¼ V
+E and Ohm's law E ¼ hJe, where h is the resistivity of the
+bulk target and Je is the current density of slow moving
+backward electrons. The resistive magnetic fields will trend to
+collimate energetic electrons. This collimation counteracts the
+dispersion of electrons by collisions and other effects, like
+Weible and two-stream instabilities [30,31], within the trans-
+port. To evaluate the contribution of radiation reactions to
+electron dynamics, for intensity of 1020 W/cm2, no significant
+contributions from radiation reactions have been seen from
+Figs. 1 and 2. These effects start to rise when laser intensity is
+increasing. When laser intensity reaches 1024 W/cm2, the light
+pressure can penetrate through the whole solid target as in the
+hole-boring [32,33] regime. As seen from the comparison of
+Fig. 1 (c) and (f), the radiation reaction effects trend to prevent
+the target from breaking through.
+In Fig. 3, we have summarized the totally emitted energy as
+a function of incident laser intensities. In general, the total
+emission energy increases monotonically with the laser in-
+tensity. For a Cu target, Fig. 3 (a) compares this total energy
+for two computations with and without nonlinear Compton
+scatterings. We can see that the contributions from nonlinear
+Compton scatterings appearing when laser intensities are
+larger than 1023 W/cm2. At 1024 W/cm2, nonlinear Compton
+scatterings can even become dominant over bremsstrahlung
+radiation. In contrast, in Fig. 3 (b), also at the laser intensity
+Fig. 1. The electron density profiles of copper (Cu) target when irradiated by intense laser pulses. The snapshots are taken at the end of laser pulses. (a)e(c) are the
+cases with laser of intensity 1020 W/cm2, 1023 W/cm2 and 1024 W/cm2 if only the bremsstrahlung is included. (d)e(f) are the corresponding cases taken into
+account both bremsstrahlung and radiation reactions.
+10 10 10
+10 1010
+5 5 5
+5 55
+0 0 0
+0 00
+5 5 5
+5 55
+10 10 10
+10 1010
+y
+μ
+)
+m
+(
+x μ )m(
+x μ )m(
+x μ )m(
+x μ )m(
+x μ )m(
+x μ )m(
+y
+μ
+)
+m
+(
+y
+μ
+)
+m
+(
+y
+μ
+)
+m
+(
+y
+μ
+)
+m
+(
+y
+μ
+)
+m
+(
+0
+0
+0
+0
+0
+0
+2
+2
+2
+2
+2
+2
+4
+4
+4
+4
+4
+4
+6
+6
+6
+6
+6
+6
+8
+8
+8
+8
+8
+8
+10 W/cm20 2
+10 W/cm23 2 10 W/cm24 2
+w/o RR
+with Br.
+w/o RR
+with Br.
+w/o RR
+with Br.
+with RR
+with Br.
+with RR
+with Br.
+with RR
+with Br.
+Density( )nc Density( )nc Density( )nc
+Density( )nc Density( )nc Density( )nc
+1000 6000 8000
+1000 6000 8000
+500 3000 4000
+500 3000 4000
+0 0 0
+0 0 0
+(a) (b) (c)
+(d) (e) (f)
+Fig. 2. The electron density profiles of gold (Au) target when irradiated by intense laser pulses. The snapshots are taken at the end of laser pulses. (a)e(c) are the
+cases with laser of intensity 1020 W/cm2, 1023 W/cm2 and 1024 W/cm2 if only the bremsstrahlung is included. (def) are the corresponding cases when taken into
+account both bremsstrahlung and radiation reactions.
+296 D. Wu et al. / Matter and Radiation at Extremes 3 (2018) 293e2991024 W/cm2, emitted energy from Au targets are presented.
+Even though the nonlinear Compton scattering plays important
+roles in the total radiations, it is still not dominant over
+bremsstrahlung. To be more specific, under laser irradiations
+with intensity 1024 W/cm2, the total emitted energy from Cu
+targets when taking into account nonlinear Compton scatter-
+ings is increased from 0.3 unit to 0.7 unit. The net contribution
+from nonlinear Compton scatterings is 0.4 unit. While for the
+Au cases, it is increased from 0.8 unit to 0.9 unit. Here, the net
+contribution from nonlinear Compton scatterings is only 0.1
+unit. Let us recall here that at laser intensity of 1024 W/cm2,
+the Cu target is close to be broken through, while this is not at
+all the case for Au target. We can therefore conclude empiri-
+cally the condition under which nonlinear Compton scatterings
+become dominant over bremsstrahlungethe laser intensityshould be higher than 1023 W/cm2 and simultaneously the
+laser beam should break through the target.
+Fig. 4 displays the radiation spectra of Cu and Au targets
+when irradiated by intense laser beams with varying in-
+tensities. Here, dashed lines refer to the spectra in which only
+the bremsstrahlung is taken into account and show a broad
+distribution from 0 to a cut-off frequency. The cut-off fre-
+quency of bremsstrahlung is exactly the maximum kinetic
+energy of colliding electrons. While the radiation from
+nonlinear Compton scatterings are well peaked. The total ra-
+diation spectra are shown by solid lines, which taking into
+account both bremsstrahlung radiations and nonlinear Comp-
+ton scatterings. As seen from Fig. 4 (a), at the laser intensity of
+1023 W/cm2, the peak spectra are relatively small compared
+with the broad bremsstrahlung spectra. While at laser intensity
+Fig. 3. The total energy of emitted photons as a function of laser intensities for
+(a) a copper and (b) gold target, respectively. Results are compared for only the
+bremsstrahlung (dashed line) and both the bremsstrahlung and nonlinear
+Compton scatterings (solid line) are taken into account.
+Fig. 4. The photon spectrum emitted from (a) Cu and (b) Au targets when
+irradiated by intense laser pulses with varying laser intensities. Here black
+lines correspond to laser intensity 1023 W/cm2, and red lines are the cases of
+1024 W/cm2. While the dashed lines refer to simulations only taking into
+account the bremsstrahlung, and the solid lines describe simulations taking
+into account both the bremsstrahlung and nonlinear Compton scattering. Here,
+1u0 ¼ 1.24 eV.
+Fig. 5. The angular distribution of the emitted photons from (a) Cu and (b) Au
+targets irradiated by intense laser pulses with varying laser intensities. Here
+black lines correspond to laser intensity 1023 W/cm2, red lines are the cases of
+1024 W/cm2 and blue lines are the cases of 1020 W/cm2. The dashed and solid
+lines refer to the same computational model as in Fig. 4. For laser intensity
+1020 W/cm2, as the contribution of nonlinear Compton scattering is extremely
+small, the dashed and solid lines are merged as single solid lines. The inset of
+(b) is the magnified comparison when including and excluding nonlinear
+Compton scatterings, for laser intensity 1023 W/cm2.
+297D. Wu et al. / Matter and Radiation at Extremes 3 (2018) 293e2991024 W/cm2, the peak spectra is significantly dominant over
+the broad bremsstrahlung spectra. This behaviour is similar to
+the emitted radiation shown in Fig. 3. In contrast, in Fig. 4 (b),
+even at laser intensity 1024 W/cm2, the contributions fromnonlinear Compton scatterings is still not dominant over
+bremsstrahlung radiations. This is because, as shown in Fig. 2
+(f), under these conditions, the Au target is not broken
+through.
+Finally, Fig. 5 presents the angular distributions of emitted
+photons, where f is defined as the angle between the X-axis
+and the photon propagation direction. Data from Cu and Au
+targets are shown in Fig. 5 (a) and (b), respectively. At laser
+intensity 1020 W/cm2, the emission angular distributions of Cu
+shows two peaks, as seen from the blue line in Fig. 5 (a). One
+is located at 10, the other at 160. From these peaks, we find
+that most of the radiation is in the forward direction. The
+backward emission is due to the reflux of energetic electrons,
+which are drawn back by the sheath fields on the backside of
+the targets. The pretty good collimation of radiation can also
+be well explained by the guiding of resistive magnetic fields,
+as shown in Fig. 1 (a), where the photon and electron propa-
+gation directions almost coincide. In contrast, as shown in
+Fig. 5 (b), also under laser irradiation intensity 1020 W/cm2, no
+significant collimation of radiation is found for Au targets.
+When referring to Fig. 2 (a), we find the reason. Although the
+resistive magnetic fields also play roles in the transport pro-
+cesses, in the Au cases, it is several times higher. This is
+because the resistive magnetic field is significantly determined
+by resistivity, which is proportional to the average charge state
+Z. A large resistive magnetic field will first collimate the
+298 D. Wu et al. / Matter and Radiation at Extremes 3 (2018) 293e299energetic electrons and later diverge them. These two counter-
+interacting effects will finally lead to larger emission angles.
+When laser intensity becomes higher, the angular distributions
+of emitted photons become much complicated. Even though,
+we still notice some quantitative features of angular distribu-
+tions from bremsstrahlung and nonlinear Compton scatterings.
+From the comparison of the solid red line and dashed red line
+in Fig. 5 (a), we therefore see the direction of bremsstrahlung
+radiation to be forward, while the direction of nonlinear
+Compton scatterings to be along the laser polarization di-
+rections, i.e. 90.
+4. Discussion and conclusions
+Note that when the laser pulses are obliquely incident to
+solid targets [34], the interaction will present further
+complexity. Although such cases are closely related to real
+experiments, they are, at present, out of the contents of this
+work, and might be addressed somewhere else in the near
+future.
+To summarize, characteristics of X/g-ray radiations by
+intense laser interactions with high-Z solids have been inves-
+tigated by means of our recently developed PIC simulation
+code. This PIC code takes advantage of the newly developed
+ionization and collision dynamics models. Within the simu-
+lations, the ionization charge state and conductivity of target
+can therefore evolve quite precisely according to the local
+plasma and electromagnetic fields conditions. Different types
+of materials can be modelled due to their intrinsic atomic
+properties. Along with ionization and collision dynamics,
+bremsstrahlung and nonlinear Compton scatterings have also
+been included in the simulations. In this work, simulations
+with different target materials (Cu vs. Au) and varying laser
+intensities are performed to study the parameter-dependent
+features of X/g-ray radiations. The relative strength and
+angular distributions of X/g-ray production from bremsstrah-
+lung and nonlinear Compton scatterings are compared to each
+other, and a threshold is determined under which the nonlinear
+Compton scattering is dominant.
+Conflict of interest
+There are no conflicts of interest.
+Acknowledgments
+This work was supported by Science Challenge Project
+(No. TZ2016005), National Natural Science Foundation of
+China (No. 11605269, 11674341 and 11675245) and National
+Basic Research Program of China (Grant No.
+2013CBA01504).

@@ -1,0 +1,147 @@
+We are all familiar with the word “integrity” and have some common
+understanding of it. It is generally accepted that honesty and reliability
+are two important aspects of integrity. Specific to scientific research,
+what is research integrity?Why does it matter? Is it just the responsibility
+of researchers themselves or a shared responsibility of the entire research
+community?
+Clarification of the concept can give us a clearer understanding of
+how research integrity comes about and help us to have a better idea of
+the ways in which it can be fostered. “‘Research integrity’ refers to the
+principles and standards that have the purpose to ensure validity and
+trustworthiness of research [1].” It is not just about avoidance of
+misconduct, but interlinked with morality [2]. TheWorld Conferences on
+Research Integrity Foundation (WCRIF) proposed that honesty,
+accountability, professional courtesy, fairness, and good stewardship are
+the hallmarks of research integrity [1]. The Singapore Statement on
+Research Integrity presented four principles and 14 responsibilities as a
+global guide to the responsible conduct of research in 2010. The state-
+ment emphasizes that honesty, accountability, professional courtesy and
+fairness, and good stewardship are fundamental to the integrity of
+research wherever it is undertaken [3]. The Montreal Statement on
+Research Integrity in Cross-Boundary Research Collaborations in 2013
+elaborated four general collaborative responsibilities, seven re-
+sponsibilities in managing the collaboration, four responsibilities in
+collaborative relationships, and five responsibilities for outcomes of
+research [4]. In the 5th World Conference on Research Integrity in
+Amsterdam, 2017, four agenda items were proposed to assure that
+research is undertaken in accordance with the Singapore Statement [5].
+Five principles were presented in the Hong Kong Principles (2019),
+which show “a specific focus on the need to drive research improvement
+through ensuring that researchers are explicitly recognized and rewarded
+for behaviors that strengthen research integrity [6].”
+Science is a basic component of human knowledge infrastructure and
+its foundation is publication. The International Science Council (ISC)
+proposed that modern systems of scientific and scholarly publishing
+serve “the interests of science [7].” According to the theory of interest,
+the interests of science can be divided into subjective and objective as-
+pects. The subjective aspect is its satisfaction to the subject, and the
+objective aspect is the scientific interest itself. ISC takes science as a
+global public good. “The knowledge that has been accumulated since the
+earliest days of scientific practice is continually refreshed, renewed and
+re-evaluated by new experiments, new observations and new theoretical
+insights, and publicly communicated in the published record of science
+[7].” We lay great stress on research integrity because validity andhttps://doi.org/10.1016/j.nanoms.2021.11.005
+Available online 6 December 2021
+2589-9651/© 2021 Chongqing University. Publishing services by Elsevier B.V. on bcredibility of research show significant importance to the interests of
+science. “If one falsifies data one not only harms scientific truth but also
+treats other researchers unfairly [8].” That is why we need honesty and
+trustworthiness in research. It is the way to ensure scientific continuity
+and sustainable development. In other words, to advance the research
+integrity is to advance the interests of science.
+Literature discusses research integrity from various perspectives,
+including but not limited to the concept of research integrity [2,8], the
+relationship between research integrity and research supervision and
+education [9], and strategies to promote research integrity [2,10]. Most
+literature shows a consensus that scientific integrity is a shared re-
+sponsibility of all parties in the research community. Different opinions
+exist over who should shoulder the main responsibility. Abdulghani
+Muthanna and Ahmed Alduais assert that more responsibility falls onto
+the shoulders of instructors and supervisors [9]. According to The World
+Conference on Research Integrity Foundation, “While research integrity
+applies to all parties in the research endeavour, it most importantly relies
+on the conduct of researchers [1].” The latter is aligned with our belief
+that researchers play a central role in maintaining research integrity,
+while other parties of the research community play important roles of
+education and supervision in their respective fields. The former is
+self-discipline that requires researchers to obey their inner moral law,
+and the latter is heteronomy constructed by institutional norms. We
+argue that the unity of self-discipline and heteronomy can better foster
+research integrity.2. Discussion
+2.1. First CQU Webinar on Research Integrity
+Universities play an important role in cultivating students and junior
+researchers. In order to implement the spirit of the Central Government's
+“Several Opinions on Further Strengthening the Construction of Scien-
+tific Research Integrity” and other related documents, to create a good
+research environment conducive to innovation and creativity, and build a
+healthy academic ecology of honesty and trustworthiness, Chongqing
+University held the first International Seminar on Research Integrity in
+the afternoon of September 7, 2021. This was also broadcast live
+worldwide in both Chinese and English.
+The seminar focused on “Research Education: Tying the First Button
+for Students’ Research”, aiming to integrate the frontier of research
+integrity in the world to strengthen education and publicity on research
+integrity. It will help teachers, students and researchers in colleges and
+universities familiarize themselves with the specific requirements for
+research integrity, provide guidance to consciously resist academicehalf of KeAi Communications Co. Ltd.
+J. Y. Xue et al. Nano Materials Science 3 (2021) 319–320misconduct and carry out responsible scientific research. In the future,
+Chongqing University will continue to hold more international seminars
+on research integrity, strengthen research integrity education and pub-
+licity, cooperate to carry out research on new issues in building research
+integrity and contribute to building a healthy and sustainable academic
+ecology.
+2.2. Views from researchers and editors
+Prof. Yuehong (Helen) Zhang, Dr. Nandita Quaderi and Dr. Elisabeth
+Bik were invited to give academic talks in the First CQU Webinar on
+Research Integrity. From the perspectives of scientists and journal edi-
+tors, they discussed open science and research integrity, shared thoughts
+on creating an academic ecology to identify misconduct in research
+integrity, proposed initiatives to deal with academic misconduct and
+called on the whole community to fulfill their responsibilities and play a
+more active role in building research integrity.
+Prof. Zhang issued a report entitled “What should be our next steps to
+move forward in support of truth and integrity?“. She presented that
+open science brings greater transparency, which can promote research
+integrity. She shared steps and practices carried out worldwide. As a
+senior editor, she supported a journal's publication of identification of
+mistakes and errors. Her research team proposed a new index, the “Ac-
+ademic Integrity Awareness Index” for future discussions across the
+linked spheres of publishing and research [11].
+Dr. Quaderi is Editor-in-Chief and Editorial VP of Web of Science. She
+believed that research integrity is a shared responsibility and gave a
+report on “Research Integrity: Understanding our shared responsibility
+for a sustainable scholarly ecosystem” to stress the role Web of Science
+plays in the process. According to the ISI research integrity report,
+research should be conducted with integrity, meaning that it is trust-
+worthy, honest and ethical. The report explains that research integrity
+can be undermined in different stages of the research process. “There are
+many stakeholders responsible for upholding research integrity and there
+is no single group that can fix failures in research integrity.” Dr. Quaderi
+called on all parties, including researchers, publishers, institutions, fun-
+ders, database and metrics providers, to take different countermeasures
+to identify and tackle problems of misconduct. The Web of Science has
+been committed to maintaining research integrity and providing data
+and metrics you can trust by strictly selecting high quality journals,
+increasing diligence against “hijacked” journals, and flagging journals
+under investigation for quality concerns. It launched Web of Science
+Academy in March 2021, providing free, online training for the research
+community [12].
+Dr. Bik focused on “The Dark Side of Science: Misconduct in Scientific
+Research”. She emphasized that science publications are like bricks in a
+wall to build the science building. Papers containing errors or fraudulent
+data might cause a waste of time and money because of failures in
+replicating those results. She detected misconduct in papers from the
+perspective of research images that are unique and classified image
+duplication into three types: simple, repositioned, and altered. 800 of32020,621 papers (4%) with duplicated figures were found. Even though
+some of them are honest errors, 2% are intentional. “Science misconduct
+is damaging for scientists, but also for science itself.” Dr. Bik gave sug-
+gestions on how to avoid misconduct for professors and group leaders
+from the perspective of research education, and for journal editors and
+publishers being the gate-keepers of science publications [13].
+3. Conclusion
+In the words of Immanuel Kant, “Two things fill the mind with ever
+new and increasing admiration and awe, the oftener and the more
+steadily we reflect on them: the starry heavens above and the moral law
+within [14].” We believe that reflection on the moral law in mind will
+guide all parties to take responsibilities and take actions to uphold
+research integrity. All parties should always on the path of maintaining
+the interests of science.

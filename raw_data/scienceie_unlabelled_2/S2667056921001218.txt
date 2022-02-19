@@ -1,0 +1,292 @@
+The present work includes the fabrication and electrochemical characterization of cobalt oxide 
+(Co 3 O 4 )/graphene nanosheets nanocomposite as efficient electrode for supercapacitor application. The 
+characterization techniques involved in this work are scanning electron microscopy and transmission 
+electron microscopy for surface morphology, Raman spectroscopy and X-Ray diffraction for structural 
+analysis. The specific capacitance of Co 3 O 4 with multilayer graphene nanocomposite was determined to 
+be 140 F/g (28 mF/cm 
+2 ) at scan rate of 20 mV/s. The composite electrode can deliver a power density of 
+856 W/kg with maintaining energy density of 2.38 Wh/kg. The better performance is due to the syner- 
+gistic effect of graphene and Co 3 O 4 in the composite. 
+The growing demand of energy requires new energy sources 
+nd their storage devices. Battery is being considered as a poten- 
+ial candidate as it can store large amount of energy. However, the 
+hort life, low power density and maintenance cost are the draw- 
+acks associated with a battery. In this context, supercapacitor has 
+ecome a promising candidate as an energy storage device because 
+f its high power density, fast charge- discharge, excellent cyclic 
+fficiency and lower maintenance [1–5] . The properties of superca- 
+acitor depend on electrode materials, so finding or synthesizing 
+lectrode material with advanced properties has become a chal- 
+enge to make an advanced supercapacitor to fulfil the present and 
+uture requirements [5–10] . Supercapacitor can be categorized in 
+wo types based on its energy storage working principles; they are 
+lectric double layer capacitor (EDLC) and pseudo-capacitor [ 3 , 4 , 6 ]. 
+ifferent types of carbon materials are used in EDLCs, while in 
+seudocapacitor the metal oxides are used as electrodes. 
+Different metal oxide nanoparticles have been synthesized with 
+ramatic characteristics [7–10] . Published by Elsevier Ltd. This is an open access article
+ http://creativecommons.org/licenses/by-nc-nd/4.0/ ) ombination of metal oxide and carbon have been fabricated by 
+ifferent methods in order to get optimum performance from the 
+upercapacitor [7–15] . This is an attempt to make an electrode of 
+ultilayer graphene nanosheet nanocomposite with bismuth iron 
+xide for supercapacitor application to improve the capacitance 
+alue as well as other electrochemical properties [5] . The compos- 
+tes have been a preferential choice for any device to improve the 
+erformance [16–20] . As graphene has larger surface area and elec- 
+rical conductivity, the graphene sheets improve the electrochemi- 
+al properties of the composite electrode. L. Tao et al. [4] have used 
+obalt oxide (Co 3 O 4 )/graphene nanotube in battery to improve the 
+eversible capacity and cyclic stability. There have been many at- 
+empts made to enhance electrochemical properties and energy 
+fCo 3 O 4 based supercapacitor [11–17] . 
+Co 3 O 4 with low cost, non-toxic, easy synthesis and environ- 
+ental friendly nature is being considered as promising material 
+o be used in supercapacitor application. In this manner, Co 3 O 4 
+as been mixed with carbon nanotubes in order to prepare hy- 
+rid nanocomposite as electrode with improving the capacitance 
+f the electrode [21–22] . It is required to fabricate a supercapacitor 
+ith high power and energy density for practical applications. This 
+ould be achieved from a nanocomposite consisting of the materi- 
+ls which are used in EDL and pseudocapacitors. A composite elec- 
+rode was designed by depositing Co O on multiwall carbon nan- 3 4 
+under the CC BY-NC-ND license 
+In that electrode, 
+arbon nanotubes with excellent mechanical flexibility and high 
+lectrical conductivity can work as matrices for structural stability 
+nd electron transfer. 
+Co 3 O 4 has been extensively investigated in order to obtain 
+he excellent properties of electrode. Co 3 O 4 nanocomposites have 
+een fabricated with graphene [24] , nickel foam [25–26] , carbon 
+anotubes [21–22] and ITO films [27] to improve the electro- 
+hemical properties of supercapacitor. Nickel foam was utilized 
+o prepare freely standing Co 3 O 4 nanowire arrays via template- 
+ree growth followed by thermal treatment [26] . A flexible and 
+ransparent supercapacitor has been demonstrated using ultrafine 
+o 3 O 4 nanocrystals [27] . The fabricated transparent pseudocapaci- 
+or exhibited a capacitance of 177 F/g (6.03 mF/cm 
+2 ) at a scan rate 
+f 1 mV/s, as well as long cycling stability with 100% retention af- 
+er 20,0 0 0 cycles. However, there are still some problems associ- 
+ted with the Co 3 O 4 based electrode, such as poor electrical con- 
+uctivity which decreases the rate capability of adevice [16] . 
+Therefore, in the present work an attempt has been made to 
+et the advantages of both the EDLC and the pseudocapacitor. 
+raphene nanosheets have been mixed to Co 3 O 4 and a hybrid elec- 
+rode of Co 3 O 4 /graphene nanosheets has been developed by a sim- 
+le solution based approach. Co 3 O 4 has been chosen because of its 
+imple preparation, excellent electrochemical behaviour in alkaline 
+s well as organic electrolyte. The morphology, structures, and di- 
+ension of Co 3 O 4 can be easily controlled by adjusting the pro- 
+ess parameters [ 28 , 29 ]. Graphene with 2D structure may provide 
+tructural stability and electron transfer [ 5 , 6 ] to Co 3 O 4 and hence
+an improve the capacitance of the device. Co 3 O 4 nanoparticles can 
+e tightly attached on the surface of graphene nanosheets. 
+. Experimental details 
+.1. Synthesis of Co 3 O 4 nanoparticles and graphene nanocomposite 
+Graphene and Co 3 O 4 nanoparticles were used to make 
+anocomposite. The chemicals, cobalt nitrate and ammonium ox- 
+late were used to synthesize Co 3 O 4 . Co 3 O 4 nanoparticles were 
+repared by solution based approach and the details can be found 
+n the literature [30–35] . The composition of these powders were 
+:1 mass ratio that is 20% graphene was added to 80% Co 3 O 4 to 
+ake the nanocomposite electrode. Fig. 1 shows the systematic 
+rocedure to prepare Co 3 O 4 –graphene nanocomposite electrode. 
+nitially, Co 3 O 4 nanoparticles were dispersed in DI water (20 ml) 
+ith polyvinyl alcohol (PVA) which is used as binder between 
+raphene sheets and Co 3 O 4 nanoparticles. The solution was kept 
+n a hot plate at 60 °C under magnetic stirring. The graphene 
+anosheets were then added to the Co 3 O 4 solution. This prepared 
+lurry of Co 3 O 4 and graphene was deposited on two stainless steel 
+ubstrates of size 0.5 cm × 0.5 cm each by drop-casting approach 
+ Fig. 1 ). The synthesized electrodes were annealed at a 100 °C 
+or 1 h. The crystal structure of the nanocomposite electrode was 
+tudied by X-ray diffraction (XRD) with CuK α radiations. Scanning 
+lectron microscopy (SEM) and transmission electron microscopy 
+TEM) were employed in order to study the surface morphology of 
+he electrode. Further, Raman spectroscopy (Horiba, HR 80 0 0, Ar- 
+on laser 514.5 nm) was also used to study the present phases in 
+he electrode. 
+.2. Electrochemical measurements 
+The cyclic voltammetry (CV) and galvanostatic charge–discharge 
+GCD) measurements were performed for electrochemical mea- 
+urements of the Co 3 O 4 and graphene nanocomposite. All electro- 
+hemical measurements were performed in a two-electrode sym- 
+etric cell configuration. A tea-bag cloth soaked in 1 M KOH was 2 laced between the electrodes. CV and GCD measurements were 
+arried out using a biologic Potentiostat SP-300 instrument. The 
+V measurements were performed at different scan rates of 10, 
+0, 50, and 100 mV/s. The voltage window was fixed in the po- 
+ential range of −0.5 to + 0.5 V. Charging/discharging curves were 
+btained in the same voltage window and at different currents. 
+lectrochemical impedance spectroscopy (EIS) was also employed 
+o study the electrochemical properties of the electrode in details. 
+. Results and discussion 
+XRD pattern of the prepared nanocomposite is illustrated in 
+ig. 2 (a). The XRD pattern showed the peaks at position of 
+ θ = 19.02 °, 27 °, 31.3 °, 36.87 °, 38.62 °, 44.85 °, 55.73, 59.35 ° and
+5.24 °. All peaks, except one at ~27 °, belong to the cubic phase 
+tructure of Co 3 O 4 . The obtained spectrum match with the JCPDS 
+ard No: 073–1701 file with lattice constant a = 8.08 Å. In addi- 
+ion to the peaks of Co 3 O 4 , a different peak at ∼27 ° corresponds 
+o the interplanar stacking of the graphene sheets. No other peaks 
+re seen in the XRD spectrum. Therefore, XRD confirms the forma- 
+ion of nanocomposite consisting of Co 3 O 4 and highly conducting 
+raphene nanosheets. 
+Further investigation for the structure properties of the 
+o 3 O 4 and graphene composite electrode was carried out by Raman 
+pectroscopy. Fig. 2 (b) depicts the obtained Raman spectrum of the 
+anocomposite electrode, which has all the expected characteris- 
+ics, Raman peaks of pure phase Co 3 O 4 and multilayer graphene 
+anosheets. The peaks which are between 400 and 700 cm 
+−1 are 
+ttributed to the crystalline structure of Co 3 O 4 . Among them D 
+nd G-bands are also observed which suggests the presence of 
+raphene nanosheets in the composite [ 36 , 37 ]. Hence, Raman anal- 
+sis also indicates the formation of Co 3 O 4 /graphene nanocompos- 
+te based electrode. 
+Fig. 3 ( a)-(c) shows the SEM micrographs of prepared sample 
+f Co 3 O 4 /graphene nanocomposite. The micrographs are recorded 
+t different magnifications and at different places. Here in these 
+icrograph images it can be noticed that there are two types of 
+icrostructure namely sheets and particles. From the magnified 
+EM images, it is visible that the creases and crinkles are formed 
+ue to the 2D structure of graphene nanosheets [28] . Graphene 
+anosheets with 2D structure are also expected to offer larger 
+urface to volume ratio for electrolyte ions [28] . It is also visi- 
+le that the graphene sheets and Co 3 O 4 are independently present 
+nd formed the nanocomposite. The higher surface to volume ratio 
+ould increase the electrochemical properties of the nanocompos- 
+te electrode [3] . In Fig. 3 (a) it is visible that the Co 3 O 4 is densely
+resent and mechanically attached to the graphene sheet. The role 
+f graphene sheet is to improve the electrical conductivity of the 
+lectrode and ions mobility over the electrode surface [ 38 , 39 ]. A 
+arge numbers of void can also be seen on the electrodes, which is 
+eneficially for large power density of a supercapacitor. 
+The adhering property of Co 3 O 4 with graphene sheets was con- 
+rmed with TEM ( Fig. 3 (d)) . For TEM, the sample was removed 
+rom the current collector and placed on a Cu grid. The graphene 
+heets and Co 3 O 4 nanoparticles can be seen in the TEM image 
+ Fig. 3 (d)) . The nanoparticles are found to be adhered with the 
+raphene sheets. No separate graphene sheets or nanoparticles are 
+bserved, which indicates that the nanoparticles remain attached 
+o the graphene sheets and making good electrical contact for su- 
+ercapacitor application. Crystallinity of the Co 3 O 4 particle can be 
+onfirmed in HRTEM image ( Fig. 3 (e) ). The lattice fringes belong 
+o the plane (220) (0.285 nm) of Co 3 O 4 . 
+Electrochemical properties of the synthesized Co 3 O 4 /graphene 
+anocomposite electrode were determined in two electrode con- 
+guration by CV and GCD. Fig. 4 (a) depicts the CV curve recorded 
+n the voltage window of −0.5 to + 0.5 at different scan rates. 
+R. Lakra, R. Kumar, P.K. Sahoo et al. Carbon Trends 7 (2022) 100144 
+Fig. 1. systematic procedure to prepare cobalt oxide–graphene nanocomposite electrode. 
+Fig. 2. (a) XRD spectrum of Co 3 O 4 /graphene nanocomposite electrode and (b) Raman spectrum obtained from the nanocomposite.
+This measurement gives the specific capacitance value of particular 
+lectrode at different voltage and scan rate. In this method of char- 
+cterization, the voltage is changed on the device at a constant rate 
+nd the resulted current is recorded. An ideal capacitor exhibited 
+ rectangular shaped CV curve [40–42] . In our case, a little distor- 
+ion in the CV curve is observed for the Co 3 O 4 /graphene nanocom- 
+osite. It is basically due to the pseudocapacitive nature of Co 3 O 4 
+40–44] . The redox behaviour seen in the CV curve clears the pres- 
+nce of pseudocapacitive behaviour thus confirms the contribution 
+f Co 3 O 4 to the overall capacitance. The charge-storage mechanism 
+f the Co 3 O 4 /graphene nanocomposite electrode in KOH solution is 
+s follows [45] . 
+o 3 O 4 + OH 
+− + H 2 O ↔ 3CoOOH + e −…………… (1) 
+oOOH + OH 
+− ↔ CoO 2 + H 2 O + e −……………. (2) 3 The resulted CV has two signatures, electric double layer capac- 
+tance from the graphene and pseudocapacitance from the Co 3 O 4 . 
+urther, the scan rate was increased in order to check the sta- 
+le performance from the composite electrode ( Fig. 4 (a) ). There 
+s an increased in CV current with the increase in scan rate. The 
+apacitive current is proportional to the scan rate hence high- 
+st scanning rate has the highest increase in the current [29–31] . 
+he CV curves could retain the quasi-rectangular shape at all scan 
+ates, suggesting stable electrochemical performance at high charg- 
+ng/discharging rates. But here it is observed that there are little 
+egligible bent in the CV curve because of the series resistance of 
+he device. 
+The capacitance of the electrode was determined using the fol- 
+owing equation; 
+ = 2I / v . A (3) 
+R. Lakra, R. Kumar, P.K. Sahoo et al. Carbon Trends 7 (2022) 100144 
+Fig. 3. (a)-(c) SEM, (d) TEM micrographs of Co 3 O 4 / graphene nanocomposite electrode and (e) HRTEM image captured on the surface of a Co 3 O 4 nanoparticle. 
+Table 1 
+Comparison of specific capacitances of Co 3 O 4 based electrodes reported in literature and this work. 
+Electrode Capacitance Ref. 
+Ultrafine Co 3 O 4 nanocrystal 177 F/g at 1 mV/s [27] 
+Co 3 O 4 thin film 74 F/g at 5 mV/s [52] 
+Co 3 O 4 -coated multiwalled carbon nanotube 273 F/g at 0.5 A/g [53] 
+Co 3 O 4 nanosphere 128 F/g at 10 mV/s [54] 
+Activated carbon and cobalt oxide (Co 3 O 4 ) nanocomposite 94 F/g at 1 A/g [55] 
+Co 3 O 4 and graphene nanocomposite 140 F/g at 20 mV/s Present work 
+I is the average of charging and 
+ischarging current in the CV, v is the scan rate and A is the area
+f the electrode. 
+The composite electrode showed specific capacitance of 28 
+F/cm 
+2 determined at scan rate of 20 mV/s. The areal capaci- 
+ance is equivalent to 140 F/g, which is comparable to the other 
+lectrodes reported in literature [46–56] . The specific capacitance 
+btained in the present work is compared with the reported val- 
+es for Co 3 O 4 in Table 1 . The capacitance calculated at different 
+can rate is depicted in Fig. 4 (b) . The capacitance decreased to 4 .8 mF/cm 
+2 at scan rate of 100 mV/s. Further, the charge storage 
+apability of the electrode was verified by performing GCD mea- 
+urement. A constant current was applied and the voltage was 
+onitored. The device was charged and discharged at two cur- 
+ents 20 mA and 32 mA (Fig. 4 (c)). The linear change in the volt- 
+ge during charging and discharging is typical characteristic of an 
+DL capacitor. However, there is observed deviation in the shape 
+f charging/discharging curves from a straight line. It could be as- 
+ribed to the feature of pseudocapacitance from Co 3 O 4 . Moreover, 
+he charging/discharging curves at two different currents are able 
+R. Lakra, R. Kumar, P.K. Sahoo et al. Carbon Trends 7 (2022) 100144 
+Fig. 4. (a) CV curves recorded at different scan rates and (b) specific capacitance of nanocomposite based supercapacitor as a function of scan rate. (c) GCD curves of the 
+supercapacitor recorded with currents of 20 mA and 32 mA. (d) Ragone plot for energy density and power density of the device. (e) cycle stability of the device and (f) 
+Nyquist plot. 
+Columbic efficiency was also determined to be 97.62%. 
+Ragone plot which is the relation between energy and power 
+ensity is presented in Fig. 4 (d) for Co O /graphene based super- 3 4 
+5 apacitor. The values of the energy and power density were de- 
+ermined by charging and discharging the supercapacitor at dif- 
+erent rates. Energy density was observed in the range of 2.4 to 
+.8 Wh/kg and power density from 0.3 to 0.8 kW/kg. The cycle life 
+s an important parameter for any kind of energy storage device. 
+Therefore, to determine the stability of the electrode, the device 
+has charged and discharged for 10 0 0 cycles. The capacitance re- 
+ention for every cycle is plotted in Fig. 4 (e) as a function of cycle
+number. The electrode can retain the capacitance about 95% after 
+0 0 0 cycles, indicating its suitability for long-term supercapacitor. 
+Furthermore, EIS was performed in order to get the idea 
+bout change in series and charge transfer resistance after addi- 
+ion of graphene to Co 3 O 4 . It can be seen in the Nyquist plots
+ Fig. 4 (f) ) that the charge transfer resistance of the electrode is de- 
+reasing with graphene sheets. The series resistance of Co 3 O 4 and 
+o 3 O 4 /graphene was determined to be 0.64 and 0.17 Ohm, respec- 
+ively. As compared with Co 3 O 4 , Co 3 O 4 /graphene nanocomposite 
+hows lower series resistance, more vertical line and lower charge 
+ransfer resistance thus exhibiting better electrochemical perfor- 
+ance [56,57] . 
+. Conclusions 
+Co 3 O 4 /graphene nanocomposite has been synthesized by so- 
+ution based process and tested for supercapacitor application as 
+lectrode. The electrochemical properties were evaluated in two 
+lectrode system in aqueous electrolyte. The electrode exhibited 
+pecific capacitance of 28 mF/cm 
+2 at scan rate of 20 mV/s. The 
+ymmetric supercapacitor can deliver power density in the range 
+f 0.3 - 0.8 kW/kg with energy density of 2.4 to 9.8 Wh/kg. The 
+erformance of the device can further be improved by optimizing 
+ppropriate concentration of Co 3 O 4 and graphene in the nanocom- 
+osite. The fabricated device has shown good electrochemical sta- 
+ility with a loss of 5% in capacitance after 10 0 0 cycles. This 
+ork suggested that the Co 3 O 4 /graphene nanocomposite may be 
+ promising electrode in the application of energy storage devices. 
+eclaration of Competing Interest 
+The authors declare no conflict of interest. 
+cknowledgments 
+We would like to thank Prof. V. S. Raja, Dept. of ME and MS, IIT
+ombay, for providing the electrochemical characterization facility. 
+ribal affair/UGC New Delhi, Govt. Of India is gratefully acknowl- 
+dged for providing financial support to Rajan Lakra.

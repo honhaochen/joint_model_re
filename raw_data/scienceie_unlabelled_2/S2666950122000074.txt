@@ -1,0 +1,574 @@
+ This research presents a highly sensitive surface plasmon resonance (SPR) optical salinity sensor based on 
+angular interrogation method for the quantification of salinity and desalination of sea water. The proposed 
+salinity sensor structure composed of prism-silver (Ag)-silicon (Si)-Franckeite-sensing medium. To achieve the 
+best possible performance i. e. sensitivity, detection accuracy, and quality factor, the sensor is designed and 
+simulated at different wavelengths of 633 nm, 643.8 nm, 690 nm, 700 nm, and 720 nm. The performance of the 
+sensor has also been optimized for different thickness of Ag layer, Si layer, and no. of layer of 2D franckeite. An 
+enhanced maximum sensitivity of 305 deg./RIU is obtained with detection accuracy 0.41 deg.− 1 and quality 
+factor 63.92 RIU− 1. As the sensor provides high grade of performance, this can be used as a salinity sensor for the 
+desalination of seawater.   
+1. Introduction 
+Water salinity plays an important role in scientific research, 
+including chemical and biological analysis, human lives, marine 
+ecosystem protection, mineral prospecting, concrete structures health 
+monitoring, etc. So, the level of salt in seawater must be measured since 
+it has a significant impact on seawater organisms and under sea activ-
+ities. In the traditional method, water salinity is determined by the 
+electrical conductivity of chloride ions as the conductivity depends on 
+the concentration of chloride ions. Interferences from other contami-
+nating ions, however, impair this measuring procedure (Qian et al., 
+2018). Due to electrolysis, this method is subjected to corrosion and 
+current instability. In recent years, new salinity characterization 
+methods based on ultrasonography or chemical reactions have been 
+developed. Optical methods are based on the dependence of the 
+refractive index on the concentration of salts in seawater. Nowadays, 
+surface plasmon resonance (SPR) based salinity sensors have piqued 
+researchers’ attention in this respect due to several benefits such as 
+compactness, high sensitivity, lightweight, remote sensing, and so forth 
+(Xia et al., 2011). 
+SPR sensor operates on the basis of the attenuated total reflection 
+(ATR) method. The ATR method uses a total internal reflection (TIR) 
+mechanism, which causes a momentary wave known as surface plasmon 
+wave (SPW). The incident light is guided through the ATR crystal to 
+reflect at least off the internal surface in contact with the sensing sample. 
+This reflection of the incident light beam forms the momentary wave 
+extending into the sensing sample (Pumera, 2011). So, SPR is an optical 
+excitation that produces a momentary electromagnetic wave that 
+propagates along with the metal and dielectric material interface. It can 
+be seen as an electron cloud wave that propagates along the direction of 
+the metal-dielectric interface, through the contact of the freely oscil-
+lating photons of the incident light with the electrons on the metal 
+surface (Sharma and Pandey, 2018; Pal et al., 2021); with exponentially 
+decaying electric field in metals and dielectrics. Propagation of the 
+electric field and the metal-dielectric interface highly depend on the 
+dielectric refractive index, thus providing high sensitivity to infinites-
+imal changes in analyte refractive index. Changes in the concentration of 
+biomolecules caused by chemical reactions cause changes in the 
+refractive index near the sensor surface, which leads to a change in the 
+propagation constant of SPW, thus, a change in SPR frequency (SPRF) 
+and SPR angle take place (Homola et al., 1999). In designing SPR sen-
+sors, different plasmonic materials can be used, and some suitable ap-
+plicants are copper (Cu), Ag, gold (Au), etc. Among those plasmonics 
+materials, Ag has outstanding optical properties, like, small optical 
+* Corresponding author. 
+E-mail address: belal@eee.ruet.ac.bd (B. Hossain).  
+Contents lists available at ScienceDirect 
+Results in Optics 
+journal homepage: www.sciencedirect.com/journal/results-in-optics 
+https://doi.org/10.1016/j.rio.2022.100217 
+Received 24 October 2021; Received in revised form 3 January 2022; Accepted 31 January 2022   
+Results in Optics 7 (2022) 100217
+2
+damping, no interband transfer at visible light frequency, sharper 
+resonance peak, less broad SPR curve, etc. For this reason, it can be a 
+material of choice in designing SPR sensors (Hossain et al., 2022). So, 
+better sensitivity can be achieved through the use of silver as plasmonic 
+material. Au is a preferred material but, it reduces detection accuracy 
+due to its broader resonance curve (Kumar et al., 2020). The high 
+refractive index of Si plays an important role in enhancing sensitivity; 
+Transition Metal Dichalcogenide (TMD) and Si based SPR sensors show 
+the highest sensitivity of 147.88 deg./RIU for the WS2 layer at 633 nm 
+wavelength (Ouyang et al., 2016). In 2019, Gan et al. proposed a SPR 
+sensor using three layers (about 5.4 nm) of franckeite, the sensitivity 
+obtained as high as 196 deg/RIU, and the corresponding figure of merit 
+(FOM) is 40.29 RIU− 1 (Gan et al., 2019). Later, Srivastava et al. obtained 
+a sensitivity of 208 deg/RIU, FWHM of 12 deg, quality factor (QF) of 
+17.33 RIU− 1 (Srivastava and Prajapati, 2020). In 2020, Raikar et al. 
+proposed a salinity sensor to measure salinity in sea water and the sensor 
+provides a maximum sensitivity of 145 deg./RIU, with detection accu-
+racy (DA) of 0.162 deg.− 1, and QF of 23.56 RIU− 1 (Raikwar et al., 2020). 
+Rahman et al. have proposed a SPR biosensor with a sensitivity of 194 
+deg./RIU with QF is calculated as 34.22 RIU− 1 for Ag based sensor and 
+for Au coated sensor it is 29.39 RIU− 1 (Rahman et al., 2020). In 2020, Jia 
+et al, proposed a biosensor with PtSe2 coating of 16 nm having a 
+maximum sensitivity of 165 deg./RIU (Jia et al., 2020). In 2021, Rikta 
+et al. proposed a biosensor having a sensitivity of 96.43 deg./RIU and QF 
+of 12.36 RIU-1 (Rikta et al., 2021). Though many materials have been 
+used to model SPR sensors, the recent advancement of two dimensional 
+(2D) nanomaterials has taken great attention. Because of the very 
+unique electronic, optical, and catalytic properties, 2D nanomaterials 
+have been used extensively in sensing applications (Pal et al., 2020). 
+Layered 2D materials such as graphene, blue phosphorene, and Transi-
+tion metal di-chalcogenides and their heterostructures have been 
+explored by the scientific community to enhance the SPR sensor per-
+formance for gas and bio sensing application (Srivastava and Prajapati, 
+2020; Pal et al., 2020). Recently, various artificial stacking hetero-
+structures like graphene based heterostructure, BlueP/MoS2 have been 
+reported for SPR based sensing and significant enhancement observed in 
+sensitivity (Hossain et al., 2022; Srivastava and Prajapati, 2019, 2020). 
+The idea of forming van der Waals (vdW) heterostructures (Peng et al., 
+2016) by integrating various two-dimensional materials breaks the 
+limitation of the restricted properties of single material systems. One 
+approach to produce such heterostructures is to use epitaxially grown 
+materials assembled sheet by sheet (Bae et al., 2010). This method, 
+however, remains challenging and has only been demonstrated for a few 
+van der Waals heterostructures so far (Zhang et al., 2014). Another 
+approach is the manual assembly of individual layers obtained by me-
+chanical exfoliation from bulk and the deterministic placement of one 
+layer on top of another. While the sensitivity of the biosensor based on 
+these artificially designed heterostructure(s) can be high, it is not easy to 
+control the lattice orientations. Consequently, undesired atmospheric 
+adsorbates between the layers occur (Molina-Mendoza et al., 2017). On 
+the other hand, naturally occurring layered minerals such as Franckeite 
+(member of the sulfosalt family), which is alternating stacks of PbS-like 
+pseudotetragonal (Q) layer and SnSe-like pseudohexagonal (H) layer, 
+are found to possess naturally VDW superlattices, and it is free from 
+surface contaminations in contrast to the artificially designed hetero-
+structure(s). In recently, Velický et al. obtained the single layer heter-
+ostructure (thickness about 1.8 nm) by mechanical and liquid-phase 
+exfoliation of franckeite (Zhu et al., 2013). Franckeite is a 2-dimensional 
+p-type, air stable material which is a very rare feature in 2D semi-
+conductors, and it can be exfoliated into layers mechanically (Zhu et al., 
+2013); also it is free from surface contaminations in contrast to the 
+artificially designed heterostructure(s). It has a very narrow band gap of 
+less than 0.7 eV. Due to its narrow band gap and its naturally occurring 
+Vander walls heterostucture, it enhances electric field in its interfaces 
+and increases sensitivity. That is why we have used this 2D Franckeite as 
+a guiding layer. 
+One of the most challenging global issues in the 21st century is the 
+scarcity of clean water. Climate change, rapid population growth, and 
+rapid urbanization, directly account for freshwater inadequacy on our 
+planet (Lee et al., 2016). Around half of the world’s population lives 
+close to oceans that cover 80% of the earth’s water supply. Desalination 
+of seawater seems to unravel the world’s water shortage issues, partic-
+ularly within the zones where ground or spring water isn’t accessible 
+(Dutta et al., 2016; Oki and Kanae, 2006; Wang et al., 2017). The ocean 
+provides water, which is about 96.5% of all the earth’s water is natural, 
+but not potable due to salinity (Xu et al., 2019). Salinity is defined as the 
+concentration of dissolved mineral salts present in waters and soils. 
+Salinity also affects coping agriculture (Elimelech, 2006). The average 
+salinity of standard seawater is 35% at 0 ◦C (Etesami et al., 2019; Adamo 
+et al., 2015). For water to be taken as a drink, its salinity must be 
+reduced because high salinity has an adverse effect on all living organ-
+isms. For measuring the salinity of seawater, different methods are used 
+like conductivity sensor, refractometry sensor. Based on the measure-
+ment of the refractive index of seawater (Shannon et al., 2009); it has 
+been shown that the absolute salinity can be accurately assessed because 
+the refractive index of seawater is directly related to the medium density 
+(ρ). In point of the fact that all the physical properties of seawater are 
+derived from salinity (S), pressure (P) and temperature (T) (Shannon 
+et al., 2009). These can be applied to density with the following equation 
+of International State of Seawater, density, ρ = f(S,T,P) (SCOR/IAPSO, 
+2007). 
+As in the SPR sensor, a change in analyte refractive index results in a 
+change of the local refractive index of the sensor surface; this change 
+will eventually change the propagation constant of the SPW, resulting in 
+a shift in the SPR angle. Changing in this parameter (SPR angle) can be 
+used to sense the degree of salinity of seawater. In (Raikwar et al., 2020), 
+Surjeet Raikwar et al. measured the seawater concentration using SPR 
+based salinity sensor. They obtained impressive results. But this can be 
+improved further by incorporating the advancement of 2D materials in 
+bimolecular and environmental element sensing, so the design of highly 
+sensitive sensors becomes easier. Franckeite is a newly synthesized 2D 
+material and can be peeled off into layers (Velický et al., 2017). It is an 
+air-stable material, thus less vulnerable to oxidation, and has a crystal-
+line structure. The energy band gap for franckeite is less than 0.7 eV. 
+These features make it an alternative material for black phosphorous 
+(BP) and graphene. The use of franckeite nanosheet in optoelectronic 
+devices has a pronounced prospective (Velický et al., 2017; Ray et al., 
+2017). 
+This research work aims to design an SPR based optical sensor that 
+Fig. 1. Schematic design of the proposed sensor with detected light road 
+arrangement. 
+B. Hossain et al.                                                                                                                                                                                                                                 
+Results in Optics 7 (2022) 100217
+3
+can be used as a salinity sensor to sense sea water salinity with a high 
+degree of sensitivity. As temperature and pressure change, the refractive 
+index of seawater also changes (Baker, 2012; Rosen, 1947). This study is 
+done by considering a constant temperature of 20 ◦C and pressure at 0 
+kg/cm2 (Elimelech, 2006). 
+2. Methodology 
+2.1. Design consideration and theoretical modeling 
+Fig. 1 depicts our designed five-layer SPR sensor based on typical 
+Kretschmann configuration. This proposed sensor is prism coupled and 
+uses angular interrogation techniques (Homola et al., 1999). The 
+transverse magnetic (TM) polarized light of different wavelengths inci-
+dent at one end of the prism and an optical detector receives the re-
+flected optical signal. 
+Prism is responsible for wave vector matching, which is important 
+for SPR condition to occur. BK7 prism has a low refractive index and, 
+easier to manufacture (Kusko, 2012). Here, prism acts as a base layer. 
+The prism is coated with Ag having a layer thickness, dAg = 50 nm, 
+which in turn covered by a Si layer of thickness, dsi = 5 nm, and then by 
+a layer of 2D franckeite nanosheet having a thickness, df = L ∗ 1.8 nm 
+where L represents number of franckeite layers and takes integer values 
+of 0,1,2,3, etc. The refractive indices of different layers are considered as 
+follows. The first layer is BK7 prism, its refractive index can be calcu-
+lated using Eq. (1). 
+nBK7 =
+̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅
+1 +
+α1λ2
+λ2 − β1
++
+α2λ2
+λ2 − β2
++
+α3λ2
+λ2 − β3
+√
+(1)  
+where λ is the wavelength of incident light. The values of the constants, 
+α1, α2, α3,β1 ,β2 and β3 are 1.0396121, 0.231792344, 1.0104694, 
+0.0060006986, 0.020017914, and 103.56065 respectively (Karki et al., 
+2021). The complex refractive index of Ag layer can be expressed using 
+Drude model, nAg =
+̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅
+1 − λ2λc/
+[
+λ2
+p(λc + iλ)
+]√
+, where collision wave-
+length, λc = 17.614 μm and plasma wavelength, λp = 0.14541μm 
+(Brahmachari and Ray, 2013). Similarly, the refractive index for Si is 
+taken from this work (Ghosh and Ray, 2015). The complex refractive 
+index of franckeite with L*1.8 nm thickness has been taken from the 
+experimental measurement (Gant et al., 2017). The refractive index of 
+the sensing medium is considered as ns = 1.33 + Δns; where Δns in-
+dicates the change in the refractive index of the sensing medium caused 
+by biochemical or bimolecular interaction (Jia et al., 2020). 
+In this proposed design, using the Si layer between Ag and franckeite 
+enhances sensitivity as it accelerates the mobility of electrons in 
+franckeite responsible for efficient sensing of analytes at the sensor 
+surface (Kumar et al., 2020). 
+In our work, saline water with a salinity of 1% to 30% and pure water 
+are considered as analytes in the sensing layer. Refractive indices of 
+saline water correspond to different salinity are taken from (Austin and 
+Halikas, 1976). To simulate our proposed sensor and to evaluate its 
+performance, “COMSOL multiphysics” platform is used with a maximum 
+mesh element size of 0.0581 μm and that of minimum mesh element size 
+of 2.18× 10− 4μm. Fig. 2 shows that an excitation of TM polarized light is 
+provided on the BK7 prism. We have used a parametric sweep for 
+angular interrogation of the incident light from 60⁰ to 89.98⁰ with an 
+increment of 0.02⁰. Propagation of z component of surface magnetic 
+field is shown in Fig. 3 at SPR angle of 82.86◦ (resonance condition) for 
+sample refractive index of 1.33175 and Fig. 4 shows propagation of z 
+component of surface magnetic field at non SPR angle 64.5◦ (non- 
+resonance condition) for sample refractive index of 1.33175. It is clearly 
+observed from both figures that the distribution of magnetic field is 
+maximum at SPR angle and SPW propagates along metal dielectric 
+interface. 
+Further, the possibility of practical implementation of the designed 
+Fig. 2. Generalized configuration of the designed sensor for simulation in 
+COMSOL multiphysics. 
+Fig. 3. Propagation of surface magnetic field z component at SPR angle 82.86◦
+(resonance condition) for sample refractive index of 1.33175. 
+Fig. 4. Propagation of surface magnetic field z component at SPR angle 64.5◦ ( 
+non-resonance condition) for sample refractive index of 1.33175. 
+B. Hossain et al.
+Results in Optics 7 (2022) 100217
+4
+sensor and its deposition techniques are discussed. Ag can be deposited 
+on BK7 substrate using the chemical vapor deposition (CVD) method 
+(Boehm et al., 2011). Si can be deposited on top of the Ag layer by the 
+CVD method (Matsumura and Tachibana, 1985). Spin coating deposi-
+tion technique can be used for franckeite deposition on top of Si layer 
+(Garcia-Basabe et al., 2021). A cuvette can be mounted on the sensor 
+chip to provide a passage for seawater to detect its concentration. The 
+salinity level of seawater can be varied from 1% to 30% at a constant 
+temperature of 20◦C, poured into the cuvette, for loading next salinity 
+seawater, the previous concentration was denaturized (Raikwar et al., 
+2020). 
+2.2. Mathematical modeling for reflectivity 
+The measurement of reflected light intensity at the prism side is 
+required for the sensing purpose of this SPR sensor, and the intensity of 
+reflection of TM polarized light can be expressed as follows (Hossain 
+et al., 2022; Maurya et al., 2015) 
+Rp =
+⃒
+⃒
+⃒r2
+p
+⃒
+⃒
+⃒ (2)  
+rp =
+(M11 +M12qN)n1 − (M21 +M22qN)
+(M11 +M12qN)n1 + (M21 +M22qN)
+(3) 
+Here, rp represents the reflection coefficient for TM polarized inci-
+dent light. 
+For a multilayer structure, the transfer matrix function, Mij is given as 
+follows (Maurya et al., 2015) 
+Mij =
+(
+∏N− 1
+k=2
+Mk
+)
+ij
+=
+(
+M11 M12
+M21 M22
+)
+(4) 
+Fig. 5. SPR curves for the proposed sensor at (a) 633 nm, (b) 643.8 nm, (c) 690 nm, (d) 700 nm, and e) 720 nm wavelengths.  
+B. Hossain et al.                                                                                                                                                                                                                                 
+Results in Optics 7 (2022) 100217
+5
+with, Mk =
+[
+cosβk − (isinβk)/qk
+− iqksinβk cosβk
+]
+where, qk =
+(
+μk
+εk
+)1/2
+cosθk =
+(
+εk − n2
+1sin2θ1
+)1/2
+εk
+(6)  
+βk =
+2π
+λ
+nkcosθk(zk − zk− 1) =
+2πdk
+λ
+(εk − n2
+1sin
+2θ1)
+1/2 (7)  
+2.3. Mathematical modeling of the performance parameters 
+The performance parameter of the proposed sensor is characterized 
+on the basis of its sensitivity, quality factor, and detection accuracy . A 
+good sensor is one that shows high sensitivity, high detection accuracy, 
+and quality factor simultaneously (). The sensitivity of the sensor is 
+defined as the shift of SPR angle (ΔθSPR) to the change in refractive index 
+(RI) of the sensing medium (Δns) and its unit is deg./RIU. 
+Mathematically sensitivity (S) can be given by (Verma et al., 2015), 
+S =
+ΔθSPR
+Δns
+(deg./RIU) (8) 
+Detection accuracy (DA) can be determined for each refractive index 
+of the sensing analyte and is given by (Verma et al., 2015); 
+DA =
+1
+Δθ0.5
+(
+deg.− 1) (9)  
+where Δθ0.5 is the spectral width of reflectance curve that’s corresponds 
+to 50% reflectivity. It is also known as full-width half maxima (FWHM). 
+Quality factor (QF) depends on the sensitivity (S) and Δθ0.5 of reflec-
+tance curve, is given by (Verma et al., 2015), 
+QF =
+S
+Δθ0.5
+(
+RIU− 1) (10)  
+3. Results and discussions 
+The performance of the proposed sensor is evaluated and compared 
+these evaluating parameters with the earlier reported works. The per-
+formance parameters are analyzed at different wavelength of the inci-
+dent light. Reflectivity curves are plotted in Fig. 5 for wavelengths of 
+633 nm, 643.8 nm, 690 nm, 700 nm, and 720 nm. It is seen from the 
+figures that maximum sensitivity is obtained at 633 nm wavelength. 
+During the simulation, the RI of the sensing medium is taken from pure 
+water (RI 1.330) to a change in salinity from 1% to 30%. For each 
+wavelength and RI of the sensing medium, a dip of SPR curve occurs, 
+and the reflectance intensity becomes minimum, the angle of incident 
+light for which the reflectance intensity dip takes place is known as the 
+SPR angle. Performance parameters at different wavelengths using the 
+SPR curve are tabulated in Table 1. It’s been observed in Table 1 that the 
+maximum sensitivity obtained at 633 nm wavelength is 305 deg./RIU 
+and minimum sensitivity is 298 deg./RIU, for 643.8 nm wavelength, 
+280 deg./RIU and 269 deg./RIU, for 690 nm wavelength 174.88 deg./ 
+RIU and 150.37 deg./RIU, for 700 nm wavelength, 171 deg./RIU and 
+168 deg./RIU, and for 720 nm wavelength, 158.31 deg./RIU and 148.57 
+deg./RIU respectively. It is also observed from Table 1 that sensitivity 
+increases from 298 to 305 deg./RIU for 633 nm, 269 to 281 deg./RIU for 
+643.8 nm, 150.37 deg./RIU to 171.67 deg./RIU,168 to 171 deg./RIU for 
+700 nm, and 144.9 to 158.31 deg./RIU for 720 nm wavelength. Sensi-
+tivity increases beacuase a small change in salinity of seawater causes 
+the position of resonance angle to shift to a higher value. In our work, 
+maximum sensitivity of 305 deg./RIU is obtained at 633 nm wavelength, 
+and sensitivity becomes minimum, 144.9 deg./RIU at 720 nm; this is due 
+to the fact that change in SPR angle, ΔθSPR is maximum 2.1◦ for 633 nm 
+wavelength, and minimum 0.78◦ at 720 nm wavelength. The reduced 
+effective light coupling to SPW results in low sensitivity at higher 
+wavelengths (Qian et al., 2018). Fig. 6 displays the variation of sensi-
+tivity and DA with the change in RI of seawater. It can be observed from 
+Fig. 6 that DA increases with the increasing of wavelength from 0.186 
+deg.− 1 at 633 nm to 0.41 deg.− 1 at 720 nm wavelength. At a higher 
+wavelength, ohmic loss reduces, and thus detection accuracy improves 
+as SPR curves become less broad (Nelson et al., 1999). The broadening of 
+SPR curve is connected to the franckeite band gap which is less than 0.7 
+eV, and ohmic loss associated with metal (Ag). Refractive index of 
+metals and dielectrics are connected to the wavelength of incident light. 
+With an increase in wavelength, the real part of the complex refractive 
+index of franckeite increases and imaginary part decreases, this 
+decreasing imaginary part i.e. extinction coefficient causes smaller 
+damping to the SPR curve and the curves become sharper for 700 nm 
+wavelength as compared to 633 nm wavelength. In the SPR measure-
+ments, broadening of reflectivity curves is generally caused either by 
+absorption at the used wavelength or by the roughness of the deposited 
+film. The broadness of the SPR curves at 633 nm wavelength originates 
+from the strong absorption of light at this wavelength. The less widening 
+of SPR curve is attributed to the low absorption of light at 700 nm 
+wavelength. Ohmic loss associated with metals depends on the wave-
+length of incident light. The reason of SPR curve being less widen, is 
+attributed to the fact that at the higher wavelength, the ohmic loss in the 
+metals is relatively low, thereby exhibiting sharper SPR curves (Pumera, 
+2011). The proposed sensor has been simulated for different wavelength 
+of light i.e. 633 nm, 643.8 nm, 690 nm, 700 nm, and 720 nm and the 
+simulated data are tabulated in Table 1. From Table 1, it is seen that with 
+an increasing operating wavelength, DA, and QF increase, and it’s been 
+Table 1 
+Performance parameters of the proposed sensor at different wavelengths  
+RI Salinity 
+(%) 
+Sensitivity (deg./RIU) Detection accuracy (deg.− 1) Quality factor (RIU− 1) 
+633 
+nm 
+643.8 
+nm 
+690 
+nm 
+700 
+nm 
+720 
+nm 
+633 
+nm 
+643.8 
+nm 
+690 
+nm 
+700 
+nm 
+720 
+nm 
+633 
+nm 
+643.8 
+nm 
+690 
+nm 
+700 
+nm 
+720 
+nm 
+1.330 (0%) – –  – –  –  –  –  –  –  – –  – –  
+1.33175 
+(1%) 
+298 269  171.42 171  148.57  0.15  0.16  0.31  0.34  0.41 47 45  54.72 60  61.14 
+1.33266 
+(5%) 
+300 271  150.37 169  157.89  0.15  0.16  0.30  0.34  0.40 48 45  45.69 58  63.92 
+1.33357 
+(10%) 
+303 275  168.06 168  156.86  0.16  0.16  0.29  0.34  0.40 49 45  50.24 57  62.74 
+1.33447 
+(15%) 
+304 277  156.59 170  156.60  0.16  0.16  0.30  0.33  0.39 50 45  47.44 57  62.39 
+1.33538 
+(20%) 
+305 279  167.28 171  144.9  0.17  0.16  0.29  0.33  0.39 52 45  49.18 57  56.85 
+1.33629 
+(25%) 
+302 280  174.88 170  158.31  0.17  0.16  0.29  0.33  0.39 54 45  51.33 56  62.57 
+1.33699 
+(30%) 
+300 281  171.67 170  157.36  0.18  0.16  0.29  0.32  0.38 56 45  50.47 56  60.99 
+also observed that the sensitivity decreases. From Table 1, it is seen that, 
+from 700 nm to 720 nm wavelength, there is a little improvement in QF 
+and DA by sacrificing huge amount sensitivity in return of those im-
+provements. Considering all the parameters, we can choose, 700 nm as 
+an optimal wavelength of light as it provides an optimal performance. 
+Fig. 7 shows the variation of QF and sensitivity with the variation of 
+RI of seawater at wavelengths of 633 nm, 643.8 nm, 690 nm, 700 nm, 
+and 720 nm. It is observed that though the highest sensitivity of 305 
+deg./RIU is obtained at 633 nm, the highest QF is obtained at 700 nm 
+wavelength. At lower wavelength, SPR curves become broader, resulting 
+in lower QF, DA, and at higher wavelength curves becomes less broad-
+ening. For seawater RI of 1.33175–1.33699, QF varies from 47 to 52 
+RIU− 1, 45 RIU− 1, 47.44 RIU− 1 to 54.72 RIU− 1, 56 to 60 RIU− 1, and 
+56.85 RIU− 1 to 63.92 RIU − 1 for 633 nm, 643.8 nm, 690 nm, 700 nm, 
+Fig. 6. Variation of sensitivity and DA with the variation of RI of the sensing medium at wavelengths, a) 633 nm, b) 643.8 nm, c) 690 nm, d) 700 nm, and e) 720 nm.
+and 720 nm respectively. 
+Fig. 8 displays sensitivity variation to the number of franckeite 
+layers. The highest sensitivity is obtained with a single franckeite layer i. 
+e. when L = 1. Fig. 9 displays the sensitivity of the proposed sensor with 
+the variation of Si layer thickness. As shown in the figure, the optimized 
+thickness for Si is 5 nm. With Si layer, maximum sensitivity obtained is 
+305 deg./RIU for 5 nm thickness of Si layer. Without Si layer, maximum 
+sensitivity becomes 172 deg./RIU. Si layer enhances sensitivity as it 
+increases the mobility of electrons in franckeite responsible for sensing 
+analytes efficiently at its surface (Karki et al., 2021). 
+From Table 2, it is seen that a maximum sensitivity of 298 deg./RIU 
+is obtained for 50 nm thickness of Ag layer with a reflectance intensity of 
+21.286 a.u. For a 45 nm of Ag, the sensitivity obtained is 274.28 deg./ 
+RIU and for 55 nm of Ag layer, the sensitivity obtained is 297.14 deg./ 
+RIU with a reflectance intensity of 41.9286 a.u for an analyte refractive 
+index of 1.33175. With a 55 nm thickness of the Ag layer, the reflectance 
+intensity becomes 55.59 a.u for an analyte refractive index of 1.33699. 
+So, considering all this, we have chosen an optimized Ag layer thickness 
+Fig. 7. Variation of sensitivity and QF with the variation of RI of sensing medium at wavelength f) 633 nm, g) 643.8 nm, h) 690 nm, i) 700 nm, and j) 720 nm.  
+of 50 nm as it provides optimized performance. In Fig. 10, we have 
+shown sensitivity versus thickness curves for the Ag layer. 
+In the proposed work, performance parameters are calculated using 
+simulation data obtained from FEM based ‘COMSOL MULTIPHYSICS’ 
+platform. The performance parameters can also be calculated using 
+transfer matrix method (TMM). In Table 3, a comparison of performance 
+parameters using FEM, and TMM is provided. 
+Table 4 shows the comparison of the proposed work with the earlier 
+reported works. From the table it is seen that on the basis of perfor-
+mance, the designed sensors outperforms previously reported works. 
+4. Conclusion 
+This work describes a highly sensitive prism-coupled SPR based 
+optical salinity sensor that is simulated and analyzed theoretically uti-
+lizing franckeite nanosheets, a newly developed 2D material. The 
+designed sensor has been optimized in terms of thicknesses of franck-
+neite, Ag, and Si layer. To achieve the best possible performance i. e. 
+sensitivity, detection accuracy, and quality factor, the sensor is designed 
+and simulated at different wavelengths of 633 nm, 643.8 nm, 640 nm, 
+700 nm, and 720 nm. Here, the sensor is designed to measure the salinity 
+of seawater. The proposed sensor exhibits enhanced sensitivity, quality 
+factor, and detection accuracy than the previously reported works. The 
+sensitivity of the conventional SPR sensor enhances with the addition of 
+Si and franckeite layer as the absorption efficiency of franckeite is 
+higher, and the Si enhances the mobility of the electrons in franckeite 
+responsible for efficient sensing of analytes in the sensing medium. The 
+optimized sensor provides a maximum sensitivity of 305 deg./RIU, 
+detection accuracy of 0.41 deg.− 1, and quality facor of 63.92 RIU− 1. 
+Performance parameters i.e. sensitivity, detection accuracy, and quality 
+factor are enhanced to a great extent in comparison with the earlier 
+reported works. The raised sensor could be accomplished by utilizing the 
+available fabrication technologies. As the proposed sensor provides 
+promising results, this could be applied to measure the salinity of 
+seawater. 
+Fig. 8. Variation of sensitivity with the variation of no. of franckeite layer at 
+633 nm wavelength. 
+Fig. 9. Variation of sensitivity with the variation of thickness of Si layer at 633 
+nm wavelength. 
+Table 2 
+Optimization of Ag layer thickness.  
+Thickness Sensitivity Min. reflectacne (%) (a.u) 
+45 274.2857 3.4851 
+50 298 21.2860 
+55 297.14 41.9238  
+Fig. 10. Sensitivity with the variation of Ag layer.  
+Table 3 
+Comparison of the performance parameters using different numerical methods.  
+SL 
+no. 
+Methods Parameters Ref. 
+S (deg./ 
+RIU) 
+DA 
+(deg.− 1) 
+QF 
+(RIU− 1) 
+1 TMM 194  0.091  34.22 (Rahman et al., 2020) 
+2 TMM 208  –  17.33 (Srivastava and 
+Prajapati, 2020) 
+3 TMM 143.08  0.165  23.72 (Raikwar et al., 2020) 
+4 FEM 305  0.410  63.92 In this work

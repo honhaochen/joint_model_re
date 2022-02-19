@@ -1,0 +1,662 @@
+Histological images can reveal rich cellular information of tissue sections, which are widely used by pathologists 
+in disease diagnosis. However, the gold standard for histopathological examination is based on thin sections on 
+slides, which involves inevitable time-consuming and labor-intensive tissue processing steps, hindering the 
+possibility of intraoperative pathological assessment of the precious patient specimens. Here, by incorporating 
+ultraviolet photoacoustic microscopy (UV-PAM) with deep learning, we show a rapid and label-free histological 
+imaging method that can generate virtually stained histological images (termed Deep-PAM) for both thin sections 
+and thick fresh tissue specimens. With the tissue non-destructive nature of UV-PAM, the imaged intact specimens 
+can be reused for other ancillary tests. We demonstrated Deep-PAM on various tissue preparation protocols, 
+including formalin-fixation and paraffin-embedding sections (7-µm thick) and frozen sections (7-µm thick) in 
+traditional histology, and rapid assessment of intact fresh tissue (~ 2-mm thick, within 15 min for a tissue with a 
+surface area of 5 mm × 5 mm). Deep-PAM potentially serves as a comprehensive histological imaging method 
+that can be simultaneously applied in preoperative, intraoperative, and postoperative disease diagnosis.   
+1. Introduction 
+Histopathology is a histology branch that includes detailed micro-
+scopic observations and study of diseased tissues [1], which plays a 
+significant role in accurate cancer diagnosis and identification of dis-
+eases as histological images provide rich information about the tissue 
+sections, such as the cell distribution and cellular components [2]. In 
+conventional histology, formalin-fixation and paraffin-embedding 
+(FFPE) is the most commonly used method as the resulting histologi-
+cal images are with high quality, and it allows permanent tissue pres-
+ervation. However, the sample preparation procedure involves a series 
+of laborious and costly procedures, including FFPE, high-quality 
+sectioning (typically 2–7 µm), specimen mounting, and subsequent 
+histological staining, causing a delay of the generation of histological 
+images ranging from days to weeks [3] (Fig. 1), hence, limiting its 
+application to only pre or post-operative situations. To simplify the 
+sample preparation procedures, deep-learning-based virtual staining 
+methods [4,5] have been applied to substitute the histological staining 
+step, eliminating the time and chemical cost needed for staining. How-
+ever, most of the previously reported virtual staining neural networks 
+have to be trained on unstained and stained histological image pairs, 
+which are difficult to acquire and require a complicated image regis-
+tration process before feeding into the networks. Moreover, compared 
+with the total time of histological sample preparation (days), the 
+staining time accounts for a relatively minor part only (minutes to 
+hours), while most times are spent on tissue processing for high-quality 
+sectioning. Consequently, conventional histology incorporated with 
+deep-learning virtual staining still requires several days to obtain his-
+tological images, hindering its usage in time-sensitive clinical applica-
+tions, such as intraoperative diagnosis. 
+Frozen section offers a rapid alternative to FFPE histology by 
+freezing the tissue before sectioning, which takes around 20–30 min for 
+preparation and turnaround time [6], allowing intraoperative diagnosis 
+for breast-conserving surgery (BCS) [7] and surgical management of 
+brain tumors [8]. However, the fundamental limitations of frozen sec-
+tion create hurdles to use it in more applications, e.g., inherent freezing 
+artifacts, especially when dealing with lipid-rich tissues [9]. The crystal 
+formed in the tissue can cause a false sense of a minimal increase in 
+cellularity [10], leading to misinterpretations and diagnostic pitfalls. 
+Given the limitations of frozen section and FFPE section, novel im-
+aging approaches have been developed to acquire histological images of 
+unsectioned fresh tissue directly. According to the imaging modalities’ 
+* Corresponding author. 
+E-mail addresses: lkangaa@connect.ust.hk (L. Kang), xlies@connect.ust.hk (X. Li), yzhangid@connect.ust.hk (Y. Zhang), ttwwong@ust.hk (T.T.W. Wong).  
+Contents lists available at ScienceDirect 
+Photoacoustics 
+journal homepage: www.elsevier.com/locate/pacs 
+https://doi.org/10.1016/j.pacs.2021.100308 
+Received 26 August 2021; Received in revised form 27 September 2021; Accepted 29 September 2021   
+Photoacoustics 25 (2022) 100308
+2
+contrast, these methods can be divided into (i) label-free methods using 
+endogenous contrasts provided by the intrinsic biomolecules, and (ii) 
+labeling methods relying on the exogenous contrast agents such as 
+fluorescent dyes. Taking the advantage of fluorescent dyes, confocal 
+microscopy [11,12], nonlinear (two photon [13] and second harmonic 
+[14]) microscopy, structure illumination microscopy (SIM) [15], mi-
+croscopy with ultraviolet surface excitation (MUSE) [16,17] and 
+light-sheet microscopy [18] have been proven as powerful techniques to 
+acquire molecular-specific images of unsectioned fresh tissue. Subse-
+quently, a model-based pixel value mapping can produce pseudo his-
+tological images from fluorescence signals to hematoxylin and eosin 
+(H&E) staining [19]. Among these imaging methods, confocal and 
+nonlinear microscopy can provide superior image resolution and 
+contrast, as they only detect fluorescence signals emitted from the 
+tightly focused focal volume. SIM, MUSE, and light-sheet microscopy are 
+alternative methods that employ wide-field illumination, improving the 
+imaging speed significantly. SIM relies on the defined spatial illumina-
+tion pattern to provide optical sectioning ability while MUSE relies on 
+the limited penetration depth of ultraviolet (UV) light. The sectioning 
+ability of light-sheet microscopy comes from the decoupling of the 
+illumination light sheet and the detection optics [20]. The unique 
+decoupled optical setup in light-sheet microscopy also minimizes the 
+effect of the photo-bleaching, a common disadvantage of fluorescence 
+microscopy. However, the photo-bleaching effect is still inevitable in the 
+focal plane. Consequently, although fluorescence imaging is powerful 
+for providing information on the morphology of different biomolecules 
+in cells, the photo-toxicity to cells and the photo-bleaching problems 
+will downgrade the image quality. Moreover, exogenous labels may 
+interfere with cell metabolism and adversely affect subsequent clinical 
+implementations. It is also worth noting that the fluorescence dyes are 
+potentially toxic [21] and may cause potential side effects, which could 
+impede their use in operating rooms. 
+Given this, label-free imaging modality is highly desirable in modern 
+clinical settings. Stimulated Raman scattering (SRS) [22] and coherent 
+anti-Stokes Raman scattering [23], where image features are charac-
+terized by intrinsic molecular vibration, have been proven as a label-free 
+imaging modality for unsectioned fresh tissue. Moreover, non-linear 
+processes originated from a non-centrosymmetric interface, including 
+second-harmonic generation [24], third-harmonic generation [25], and 
+their compound modalities (SLAM) [26] have demonstrated their 
+capability to visualize various cellular components. However, a 
+high-power ultrafast laser is essential to implement these imaging 
+methods to sustain high detection sensitivity and provide high molec-
+ular contrast, which is not readily available in most clinical settings. 
+Besides, reflectance-based methods such as optical coherence tomogra-
+phy have been successfully applied in clinical trials for label-free im-
+aging of human breast tissue [27]. However, it is not designed to acquire 
+images at subcellular resolution as required in standard-of-care clinical 
+histopathology. 
+Ultraviolet photoacoustic microscopy (UV-PAM) is a label-free im-
+aging modality that can generate histological images of biological tissue 
+surface without physical sectioning [28]. By the intrinsic optical ab-
+sorption contrast, UV laser illumination has the advantage of high-
+lighting cell nuclei with cytoplasm serving as the background, thus 
+providing a similar contrast as H&E labeling used in conventional his-
+tology [29]. Unlike nonlinear microscopy, UV-PAM is not demanding in 
+the system configuration while providing subcellular resolution. 
+Recently, our group has developed a galvanometer mirror-based 
+UV-PAM (GM-UV-PAM) system to further improve the imaging speed, 
+thus, promoting its applications in intraoperative surgical margin 
+Fig. 1. Illustration of the workflow to obtain histological images in traditional histopathology and Deep-PAM. Biological tissue (e.g., a mouse brain) is harvested and 
+cut by hand. The top pathway shows the two traditional methods to obtain H&E-stained histological images of thin sections from FFPE and frozen section, 
+respectively. The bottom pathway illustrates our proposed method using UV-PAM imaging and deep-learning-based virtual staining that can directly and rapidly get 
+virtual H&E-stained histological images (i.e., Deep-PAM) of fresh thick tissue. 
+L. Kang et al.                                                                                                                                                                                                                                    
+Photoacoustics 25 (2022) 100308
+3
+analysis [30]. 
+To build upon the strength of GM-UV-PAM, here, we propose to 
+apply an unpaired image-to-image translation network (e.g., cycle- 
+consistent adversarial network (CycleGAN)) to GM-UV-PAM images, 
+instantly generating H&E equivalent images of unprocessed tissues. 
+Unlike conventional histological methods based on thin slides, which 
+involve slice preparation and chemical staining, our method does not 
+require any sample preparation after tissue excision. GM-UV-PAM is 
+used to image an unprocessed specimen to get histological images. Then, 
+a CycleGAN network is applied to transform the GM-UV-PAM histo-
+logical images to virtual H&E-stained images (termed Deep-PAM here-
+after) that pathologists are familiar with (Fig. 1). In the following, we 
+show that our approach can produce high-quality histological images 
+that are comparable to conventional histological images obtained in 
+traditional histopathology using thin FFPE sections (Fig. 4). Then, we 
+demonstrate that our approach can provide better histological images 
+than that of frozen section using thin frozen tissue sections (Fig. 5). 
+Finally, the ability of GM-UV-PAM to rapidly image a hand-cut fresh 
+thick tissue surface is also demonstrated and verified by providing the 
+FFPE-based histological images of the adjacent layer of the imaged tissue 
+surface (Fig. 6). 
+The utilization of CycleGAN removes the need for the histological 
+staining process, promisingly providing a simplified alternative for 
+preoperative and postoperative pathological examinations. More 
+importantly, GM-UV-PAM allows high-speed histological imaging of 
+fresh and unsectioned tissue, which eliminates all the sample prepara-
+tion steps, making Deep-PAM highly favorable for intraoperative 
+diagnosis. 
+2. Methods 
+2.1. GM-UV-PAM system 
+The GM-UV-PAM system (Fig. 2a) acquires UV-PAM images of thin 
+FFPE sections, frozen sections, and thick fresh brain specimens. The 
+entire system is governed by a controller (MyRIO-1900, National In-
+struments Corp.) that integrates an onboard field-programmable gate 
+array (FPGA) and a Xilinx-Z microprocessor. The controller dispatches 
+three-way synchronized signals through its FPGA pinouts to coordinate 
+the laser, data acquisition card, and scanning system. Once the UV 
+pulsed laser (266 nm wavelength, WEDGE HF 266 nm, Bright Solution 
+Srl.) receives a trigger from the controller, a laser pulse will be gener-
+ated, expanded by a pair of plano-convex lenses (LA-4600-UV, LA-4633- 
+UV, Thorlabs Inc.) and then focused on the tissue by an objective lens 
+(LMU-20X-UVB, Thorlabs Inc.), after which the tissue will absorb the 
+energy of the laser pulse and emit PA signals. The PA signals are focused 
+and detected by an ultrasonic transducer (V324-SU, 25 MHz, Olympus 
+NDT Inc.), amplified by amplifiers (56 dB, two ZFL-500LN-BNC+, Mini- 
+circuits Inc.), and recorded by a data acquisition card (ATS9350, Alazar 
+Technologies Inc.). With the help of the scanning system—a single-axis 
+galvo mirror (GVS411, Thorlabs Inc.) and two motorized translation 
+stages (L-509.10SD00, Physik Instruments (PI) GmbH & Co.KG), the PA 
+signals of the whole tissue can be acquired point-by-point with a pixel 
+scanning rate up to 55k (determined by the laser repetition rate). The 
+recorded data will be mapped to a UV-PAM image on the desktop 
+through a customized Labview (National Instruments.) interface. 
+The deparaffinized brain sections prepared by FFPE sectioning, and 
+the brain sections produced by frozen sectioning, were imaged by the 
+GM-UV-PAM system to obtain their UV-PAM images. After imaging, 
+these brain slices were stained by H&E, and then captured by a bright- 
+field whole sliding imaging machine (Nanozoomer-SQ C13140, Hama-
+matsu Photonics K.K.) with a focusing objective lens (20X, NA = 0.75, 
+CFI Plan Apo Lambda 20x) to acquire their corresponding BF-H&E im-
+ages. For the hand-cut thick and fresh brain specimen, it was directly 
+imaged by the GM-UV-PAM system without any other tissue processing 
+steps. The specimen was then sent for conventional FFPE sample prep-
+aration to get the BF-H&E histological image of the layer next to the 
+imaged surface. 
+2.2. Deep-learning virtual staining 
+The GM-UV-PAM can produce histological images (i.e., UV-PAM 
+images) that share similar imaging contrast as H&E, while the Cycle-
+GAN neural network is able to digitally stain the UV-PAM images to BF- 
+H&E stained images (i.e., Deep-PAM images). We adopted the CycleGAN 
+architecture from Zhu et al. [31] and improve it to fit in our application. 
+The CycleGAN is composed of four deep neural networks, two genera-
+tors (G, F), and two discriminators (X, Y). The detailed structures of the 
+generator networks and discriminator networks are shown in Supple-
+mentary Fig. S1. In Fig. 2b, generator G learns to transform UV-PAM 
+Fig. 2. Illustration of the GM-UV-PAM system and CycleGAN virtual staining framework. a, The schematic of the GM-UV-PAM system that generates high-quality 
+UV-PAM images of biological tissues. b, Detailed workflow of the transformation between UV-PAM and BF-H&E images using CycleGAN architecture. The generator 
+G transforms the UV-PAM to BF-H&E images, while the generator F translates the BF-H&E to UV-PAM images. The SSIM loss is calculated between input and 
+generated images. The discriminator X (DX) distinguishes the real UV-PAM from the generated UV-PAM images (Gen PAM), whereas the discriminator Y (DY) 
+distinguishes the real BF-H&E from the generated BF-H&E images (Gen H&E) images. The outputs of discriminators are used to calculate the adversarial loss. The 
+generator F also transforms the generated BF-H&E images back to UV-PAM images (Rec UV-PAM), which will be used to compare with the original UV-PAM images 
+to calculate the cycle-consistency loss. The generator G works similarly to the generator F. 
+L. Kang et al.                                                                                                                                                                                                                                    
+Photoacoustics 25 (2022) 100308
+4
+images to BF-H&E images, while generator F transforms BF-H&E images 
+back to UV-PAM images. Discriminator X (DX) aims to distinguish the 
+real UV-PAM images from the generated UV-PAM images produced by 
+the generator F, whereas, discriminator Y (DY) aims to distinguish the 
+real BF-H&E images from the generated H&E images produced by the 
+generator G. Once the generator G can produce H&E images that DY 
+cannot distinguish from the real BF-H&E images, it means the generator 
+G has learned the transformation from UV-PAM to H&E images. And this 
+is also applicable to generator F and DX. 
+In Fig. 2b, after inputting a UV-PAM image to generator G, it will 
+output a generated BF-H&E image. DY will determine if this generated 
+BF-H&E image is real or fake, and this generated BF-H&E image goes 
+through the generator F to be transformed back to a UV-PAM image 
+called recovered UV-PAM image. The mean absolute error between the 
+input UV-PAM and recovered UV-PAM images is called cycle- 
+consistency loss. Similarly, begin from the BF-H&E image, generator F 
+learns to transform BF-H&E images to UV-PAM images, DX will deter-
+mine if the generated UV-PAM image is real or fake, and the generated 
+UV-PAM image will be transformed back to an H&E image by generator 
+G. Besides, DX and DY will also determine the truthfulness of real BF- 
+H&E and UV-PAM images. These four discriminator losses compose the 
+adversarial loss. 
+The objective of the original CycleGAN contains three types of losses, 
+adversarial loss [32], cycle-consistency loss [31], and identity loss. 
+Following the original CycleGAN losses, we add structure similarity 
+index measure (SSIM) loss [33] in the objective. 
+l ssim(G,F) = 1 − Ex∼pdata(x)[SSIM(x,G(x) ) ] +
+(
+1 − Ey∼pdata(y)[SSIM(y,F(y) ) ]
+)
+(1) 
+Therefore, the improved CycleGAN objective in our application is: 
+l (G,F,DX ,DY) = l GAN(G,DY ,X, Y)+ l GAN(F,DX ,Y,X) (2)  
++ηl cyc(G,F)
++ γl identity(G,F)+ κl ssim(G,F)
+where η = 10, γ = 1, κ = 2 in our experiments. The numbers of η, γ are 
+adopted from the original paper of CycleGAN [31]. We choose a κ value 
+that minimizes the SSIM loss. 
+The SSIM loss imposes restrictions on the transformation between 
+UV-PAM image and the corresponding Deep-PAM image, making sure 
+that the generated detailed features are strictly from the UV-PAM image, 
+not a random structure. Consequently, the CycleGAN model trained with 
+SSIM loss tends to output more authentic and reliable Deep-PAM images, 
+which can be validated in Supplementary Fig. S2. 
+2.3. Network training and evaluation 
+In the CycleGAN training experiments, we flipped the amplitude of 
+the UV-PAM images, so the color of nuclei turns black. While training 
+with flipped UV-PAM images, we found that the network training pro-
+cess gets more stable and the generator G can generate desired BF-H&E 
+images with less training time. The flipped UV-PAM image was then cut 
+into small tiles (256 × 256) by a sliding window with a moving step of 
+150 pixels. As the magnifications of the UV-PAM image and BF-H&E 
+image were different, the BF-H&E image was first downsampled to map 
+the UV-PAM image and then cropped by the same algorithm. The 
+downsampling ratio is determined by the ratio of measured pixel 
+numbers of the same structure in UV-PAM image and BF-H&E image, 
+which is around 2.2 for our case. 
+Two CycleGAN neural networks were respectively trained for virtual 
+staining of thin brain sections and a thick fresh brain. As the CycleGAN 
+network can virtually stain both FFPE and frozen thin sections, it was 
+trained on a dataset composed of UV-PAM and BF-H&E images of 7-µm 
+thick FFPE thin sections only. It should be noticed that the UV-PAM 
+images and BF-H&E images were generated from different FFPE 
+mouse brain sections since we took advantage of the unpaired training 
+superiority of the CycleGAN architecture. As for the CycleGAN network 
+that can digitally stain the thick fresh tissue, it is trained on a dataset 
+composed of UV-PAM and BF-H&E images, where the UV-PAM images 
+were acquired from fresh tissue, and the BF-H&E images were cropped 
+from BF-H&E images of 7-µm thick FFPE brain sections. The training 
+details of these two networks are listed in Table 1. 
+Even though the generative adversarial loss in the GAN network is 
+not the main indicator of the performance of the training, the cycle- 
+consistency loss is highly reliable as it reflects the networks’ ability to 
+recover the original image. Fig. 3a and b show the cycle-consistency loss 
+of UV-PAM images during different epochs. As the training epoch in-
+creases, the loss gradually decreases and finally oscillates around a 
+stable value, showing that the output Deep-PAM images are highly 
+stable and consistent. Hence, this loss indicates that it can be served as a 
+reference to terminate the training. 
+The network was implemented using Python version 3.7.3, with 
+Pytorch version 1.0.1. The software was implemented on a desktop 
+computer with a Core i7-9700K CPU@3.6 GHz and 64 GB RAM, running 
+an Ubuntu 18.04.2 LTS operation system. The CycleGAN neural net-
+works’ training and testing were performed using a NVIDIA Titan RTX 
+GPU with 24 GB RAM. 
+2.4. Animal organ extraction and tissue processing 
+The organs were extracted from C57BL/6 mouse. After the eutha-
+nasia with the inhalation of carbon dioxide, the mouse brains were 
+harvested immediately. The protocols for the FFPE section and the 
+frozen section are different, and we followed the standard protocols 
+from the IHC World. All experiments were carried out in conformity 
+with a laboratory animal protocol approved by the Health, Safety and 
+Environment Office of The Hong Kong University of Science and 
+Technology. 
+As for the preparation of FFPE tissue sections, the extracted fresh 
+brain from the mouse was firstly fixed with 10% formalin for 24 h and 
+then undertook a series of operations including dehydration, clearing, 
+and paraffin infiltration within a Revos Tissue Processor (ThermoFisher 
+Scientific Inc.), which take ~ 13 h. Subsequently, the brain was trimmed 
+and embedded into a paraffin block using a HistoStar Embedding 
+Workstation (ThermoFisher Scientific Inc.) before sectioned into 7-µm 
+thin sections by a microtome. These brain sections were mounted on 
+quartz slides followed by a 30-min air drying and 60-min baking in a 
+60 ◦C incubator before they were deparaffinized with xylene. The 
+deparaffinized brain slides were preserved in distilled water and ready 
+for GM-UV-PAM imaging or H&E staining. 
+Following the IHC World’s protocol for fixed frozen tissues, the fresh 
+mouse brain was fixed in 10% neutral buffered formalin for 8 h. The 
+fixed brain was immersed with 15% sucrose in phosphate-buffered sa-
+line (PBS) until it was sunk and then in 30% sucrose in PBS overnight 
+before embedded in optimal cutting temperature (OCT) compound for 
+freezing. The perfusion of sucrose solution is able to help to reduce the 
+formation of ice crystals that break cell membranes and produce holes 
+within cells during tissue freezing. The OCT embedded brain is cut to 7- 
+µm thin sections by a cryostat—Cryostar NX70 (ThermoFisher Scientific 
+Table 1 
+Training details of the CycleGAN networks which can stain thin FFPE sections 
+and the surface of thick and fresh tissue.  
+Networks # of 
+patches 
+# of 
+iterations 
+# of 
+epochs 
+Training 
+Time (h) 
+Staining for thin 
+sections  
+400  40,000  100  3 
+Staining for thick and 
+fresh tissue  
+800  80,000  100  6  
+L. Kang et al.                                                                                                                                                                                                                                    
+Photoacoustics 25 (2022) 100308
+5
+Inc.). The thin brain sections were mounted on quartz slides and air- 
+dried for 30 min before imaged by UV-PAM or stained by H&E. 
+As for the preparation of the thick and fresh brain specimen, the 
+dissected fresh brain was first embedded in agarose for immobilization 
+and then cut to 2–4 mm thick blocks by hand. After imaged by the GM- 
+UV-PAM system, the imaged fresh brain specimen went through the 
+FFPE tissue processing procedure mentioned above to cut out the layer 
+next to the imaged surface. The 7-µm thick layer, which is adjacent to 
+the imaged fresh brain surface, was stained by H&E get the ground truth 
+H&E-stained image. 
+3. Results 
+We initially demonstrated the effectiveness of our UV-PAM-based 
+Fig. 3. CycleGAN training losses. a, The cycle-consistency loss of UV-PAM images in the CycleGAN training (for thin section virtual staining). b, The cycle-con-
+sistency loss of UV-PAM images in the CycleGAN training (for thick and fresh tissue surface virtual staining). 
+Fig. 4. UV-PAM and Deep-PAM validation using a 7-µm deparaffinized FFPE mouse brain section. a and b, UV-PAM and its corresponding Deep-PAM images of a 7- 
+µm thick whole mouse brain section. c, The corresponding BF-H&E image of the same brain section after H&E staining, alcohol dehydration, and xylene clearing, 
+serving as the ground truth for comparison. d–f, Zoomed-in UV-PAM, Deep-PAM, and BF-H&E images of the green regions in a–c, respectively. g–i, Zoomed-in UV- 
+PAM, Deep-PAM, and BF-H&E images of the red dashed regions in d,e,f, respectively. The images are used for cellularity analysis. j–l, Zoomed-in UV-PAM, Deep- 
+PAM, and BF-H&E images of the blue regions in a,b,c, respectively. Crumbling artifacts caused by xylene treatment in the clearing are shown in l. (For interpre-
+tation of the references to color in this figure legend, the reader is referred to the web version of this article.) 
+L. Kang et al.                                                                                                                                                                                                                                    
+Photoacoustics 25 (2022) 100308
+6
+histological imaging method on thin FFPE brain sections. A 7-µm thick 
+deparaffinized FFPE section was firstly imaged by the GM-UV-PAM 
+system to acquire a UV-PAM image (Fig. 4a) and then stained by H&E 
+to get the corresponding H&E-stained image (Fig. 4c) under a bright- 
+field (BF) microscope. A pre-trained CycleGAN neural network trans-
+formed the UV-PAM image to a virtual H&E-stained image (i.e., Deep- 
+PAM) (Fig. 4b), and the BF-H&E image (Fig. 4c) served as ground 
+truth for comparison. According to the tissue absorption spectrum under 
+the wavelength of 266 nm, the nucleus has high absorption, thus emit-
+ting strong PA signals, which explains the bright color of the nuclei in 
+the UV-PAM image (Fig. 4a) or its zoomed-in images (Fig. 4d, g, and j). 
+The gray color parts show the cytoplasm structures since the cytoplasm’s 
+absorption is relatively weak, leading to weak PA signals. Due to the 
+positive contrast of the nucleus in the UV-PAM image, the cell 
+morphology and distribution can be clearly observed. For example, the 
+mouse brain’s white hippocampus structure can be easily observed in 
+Fig. 4a. For the BF-H&E image (Fig. 4c), the nuclei and cytoplasm are 
+purple and pink, respectively. Obviously, the purple hippocampus 
+structure has a high similarity with the white hippocampus structure in 
+the UV-PAM image (Fig. 4a), with the difference in color and texture. 
+The CycleGAN network has bridged the gap between these two sets of 
+images by producing a Deep-PAM image (Fig. 4b) that provides almost 
+the same textural and structural information as the corresponding BF- 
+H&E image (Fig. 4c). It can be observed that the color and shape of the 
+features in Fig. 4b and c are similar, which can be validated further by 
+the zoomed-in green regions where individual cell nuclear can be 
+distinguished (Fig. 4e and f) with high correspondence, which sub-
+stantiates our deep-learning staining method’s potency. We further 
+zoomed in the red regions of Fig. 4e and f at a subcellular resolution for 
+qualitative and quantitative cellularity analysis (Fig. 4h and i), which 
+will be shown in Fig. 7. 
+Apart from providing almost the same information as the BF-H&E 
+image, we also found that a Deep-PAM image can avoid some artifacts in 
+conventional BF-H&E image. It can be seen that a fair number of cracks 
+appear in the BF-H&E image (Fig. 4l). As there is a high density of nuclei, 
+a significant amount of information has been lost. However, in the Deep- 
+PAM image (Fig. 4k), the section’s morphology is intact, and there are 
+no cracks artifacts. The crack artifacts are caused by the tissue clearing 
+step in the H&E staining procedure. The need to better clear the tissue 
+for BF imaging poses a threat of prolonged treatment of xylene, which 
+leads to the generation of cracks in the tissue slice [34]. In contrast, as 
+the tissue clearing step is not required in GM-UV-PAM imaging, both the 
+UV-PAM and Deep-PAM images (Fig. 4j,k) of this region are intact. 
+In addition to histological imaging of FFPE sections, we applied our 
+method to image frozen sections. Fig. 5a shows a UV-PAM image of a 7- 
+µm thick frozen mouse brain section. Similar to the UV-PAM image of 
+FFPE sections, the cells and cytoplasm are bright and gray, respectively. 
+The trained neural network using FFPE sections can transform the UV- 
+PAM image (Fig. 5a) to a virtual H&E-stained Deep-PAM image 
+(Fig. 5b). Fig. 5c is the ground truth BF-H&E image for comparison. It 
+can be observed that the BF-H&E image of frozen section (Fig. 5c) has 
+significant artifacts and its quality is not comparable to the BF-H&E 
+image of FFPE section (Fig. 4c). Despite the poor staining quality of the 
+frozen section’s BF-H&E image (Fig. 5c), the general structure of the 
+tissue can still be recognized, such as the hippocampi (marked by the 
+green solid boxes). However, the same hippocampi can be obviously 
+observed in both the UV-PAM and virtually stained images (Fig. 5a and 
+b), which are further zoomed in for comparison (Fig. 5d–f). Compared 
+with the frozen section’s BF-H&E image (Fig. 5f), the hippocampus and 
+the individual cells surrounded the top of the hippocampus are clearer in 
+the UV-PAM and its virtually stained Deep-PAM images (Fig. 5d and e) 
+as they do not suffer from the poor staining. Another red regions in the 
+brain cortex (marked in Fig. 5b and c) are also selected to show the 
+superior performance of Deep-PAM over frozen section (Fig. 5h and i). 
+However, it can be found that many nuclei are hollow in the BF-H&E 
+image (Fig. 5i). This artifact is caused by ice crystals formed inside the 
+Fig. 5. UV-PAM and Deep-PAM validation using a 7-µm thick frozen section of a mouse brain. a–c, UV-PAM, Deep-PAM, and traditional H&E-stained image of a 
+frozen sectioned slice. d–f, Zoomed-in UV-PAM, Deep-PAM, and BF-H&E images of the green regions in a–c, respectively, showing the ability of Deep-PAM to reveal 
+individual cell nuclei. g–i, Zoomed-in UV-PAM, Deep-PAM, and BF-H&E images of the red regions in a–c, respectively, showing the ice crystal pitfalls. j–l, Zoomed-in 
+UV-PAM, Deep-PAM, and BF-H&E images of the orange regions in a–c, respectively, showing the over-staining problem of hematoxylin in frozen section. m–o, 
+Zoomed-in UV-PAM, Deep-PAM, and BF-H&E images of the blue regions in a–c, respectively, showing the under-staining problem of hematoxylin in frozen section. 
+(For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.) 
+L. Kang et al.                                                                                                                                                                                                                                    
+Photoacoustics 25 (2022) 100308
+7
+nucleus during tissue freezing, a typical pitfall of the frozen section 
+approach [35]. In contrast, the UV-PAM image (Fig. 5g) and Deep-PAM 
+image (Fig. 5h) still get an intact nuclear shape. Furthermore, Fig. 5j–l, 
+m–o manifest the inconsistent H&E staining quality of the frozen sec-
+tion. The entire brain frozen section slice undertook the same staining 
+process while some parts are over-stained, but others are under-stained. 
+In Fig. 5l, the hippocampus is nearly not able to be distinguished due to 
+the over-staining of hematoxylin, while in Fig. 5o, the individual nuclei 
+are not obvious because of the under-staining of hematoxylin. However, 
+this staining artifact will not appear in virtual staining images (Fig. 5k 
+and n), as no staining chemicals are involved in our deep-learning 
+staining method, which could unify the color tune and improve the 
+diagnostic accuracy. It is obvious that our virtual staining method can 
+not only successfully stain the frozen sectioned thin slice but also attain a 
+better staining result than that of traditional staining. 
+The feasibility and reliability of Deep-PAM have been validated on 
+both FFPE and frozen thin sections. We have further applied Deep-PAM 
+to image a hand-cut and fresh brain tissue, with a thickness of around 
+2 mm. Fig. 6a and b are the UV-PAM and Deep-PAM images of the 
+surface of the fresh brain specimen due to the limited penetration depth 
+of UV excitation light. The imaged thick and fresh tissue was then 
+processed following the FFPE sample preparation protocol, and the top 
+layer of the tissue surface is sectioned out for H&E staining and viewed 
+under a microscope (Fig. 6c) to get an approximate ground truth his-
+tological image. The sectioned adjacent layer is slightly different from 
+the surface layer imaged by UV-PAM due to the following two aspects: 
+On the one hand, the fresh brain surface was warped once it is fixed in 
+formalin during FFPE tissue processing. On the other hand, the 
+sectioning process by a microtome may also lead to an orientation 
+mismatch. However, it can be seen from Fig. 6b and c that the brain 
+shows similar structures such as the cortex, corpus callosum, and cau-
+doputamen. Note that the scale bars of Fig. 6b and c are different 
+because of tissue shrinkage arising from the FFPE sample processing. 
+The tissue can shrink around 60–70% after the FFPE processing [36]. 
+The cortex regions next to the corpus callosum are zoomed-in, showing 
+the performance of UV-PAM and Deep-PAM to reveal individual cell 
+nuclei (Fig. 6d and e). A reference BF-H&E image (Fig. 6f) shows a 
+similar cortex region in the adjacent layer. In addition, the cortex re-
+gions alongside the brain margin are also magnified for staining quality 
+check (Fig. 6g–i). According to these zoomed-in cortex images, it can be 
+noticed that the deep-learning staining can provide similar information 
+as chemical staining even for thick and fresh tissue. Fig. 6j–l show the 
+Fig. 6. UV-PAM and Deep-PAM validation by capturing the surface of a hand-cut 2-mm thick and fresh mouse brain. a and b, UV-PAM and Deep-PAM images of the 
+thick and fresh mouse brain’s surface. c, BF-H&E image of the layer next to the fresh mouse brain’s surface for ground truth comparison. d and e, UV-PAM and Deep- 
+PAM images of the cortex region (green regions in a and b) close to the corpus callosum in the fresh brain. f, BF-H&E image of the cortex region (green region in c) 
+next to corpus callosum in the adjacent layer. g and h, UV-PAM and Deep-PAM images of the cortex region (red regions in a,b) in the fresh brain. i, BF-H&E image of 
+the cortex region (red region in c) in the adjacent layer. j,k, UV-PAM and Deep-PAM images of the canduputamen region (blue regions in a and b) in the fresh brain. l, 
+BF-H&E image of the canduputamen region (blue region in c) in the adjacent layer. (For interpretation of the references to color in this figure legend, the reader is 
+referred to the web version of this article.) 
+L. Kang et al.                                                                                                                                                                                                                                    
+Photoacoustics 25 (2022) 100308
+8
+related UV-PAM, Deep-PAM, and BF-H&E images of a region in the 
+caudoputamen. The striatum structure can also be observed in our 
+virtually stained image (Fig. 6k). To demonstrate the repeatability of the 
+UV-PAM and its associated Deep-PAM for thick and fresh brain histo-
+logical imaging, another fresh brain specimen with different brain 
+structures (hippocampus) is imaged (shown in Supplementary Fig. S3). 
+Qualitatively, the UV-PAM image quality for FFPE or frozen section 
+samples is similar, as indicated by Figs. 4a and 5a. However, the BF-H&E 
+images are not highly consistent, where the BF-H&E image of the FFPE 
+section (Fig. 4c) looks better than that of the frozen section (Fig. 5c) in 
+terms of staining quality. FFPE-based sample preparation method pro-
+vides more uniform and higher contrast histological images when 
+compared with frozen section at the cost of long tissue processing time 
+for sample processing and sectioning. Nevertheless, the quality of our 
+Deep-PAM images is consistent for these two sample preparation pro-
+tocols (Figs. 4b and 5b), which serves as a rapid imaging tool to provide 
+stable and high-quality histological images for FFPE and frozen sections. 
+The UV-PAM image quality of fresh tissue is better than FFPE section 
+samples as there is no paraffin in fresh tissue affecting the UV-PAM 
+imaging, leading to a better signal-to-noise ratio, thus improving the 
+quality of Deep-PAM imaging of fresh tissue. 
+To evaluate the staining accuracy of our method, we first qualita-
+tively visualize the similarity or distance among UV-PAM, Deep-PAM, 
+and ground truth BF-H&E images of an FFPE section. The UV-PAM, 
+Deep-PAM, and BF-H&E images (Fig. 4g–i) are cropped into small 
+patches as three types of data points. The multidimensional scaling 
+(MDS) algorithm is then implemented to visualize the similarity or 
+distance among these three types of image data points (Fig. 7a). After the 
+CycleGAN transformation, the UV-PAM images were turned into Deep- 
+PAM images, with the resulting image data points closer to the BF- 
+H&E images’ data points. A further quantitative cellularity analysis 
+about the number of cells (cell count) and their cross-sectional areas are 
+made on the same Deep-PAM and BF-H&E images (Fig. 4h and i). The 
+number of cells and average nuclear cross-sectional area are listed in  
+Table 2. Besides, the cross-sectional area distributions are plotted in 
+Fig. 7b. 
+Table 2 suggests that the number of cells from the Deep-PAM image 
+is slightly lower than that of the ground truth BF-H&E image of FFPE 
+sections and the average nuclear cross-sectional area of the Deep-PAM 
+image is slightly larger than that of the BF-H&E image. The subtle dif-
+ferences for the cell counts and average nuclear cross-sectional area are 
+believed to be mainly caused by the remaining paraffin that cannot be 
+totally removed from the deparaffinized FFPE section. The residual 
+paraffin will decrease the signal-to-noise ratio of the UV-PAM image, 
+lower the contrast of the nuclei, thus leading to a minor difference in the 
+subsequent deep-learning histological staining. This imperfection will 
+be minimized in fresh specimen imaging since no paraffin is used in fresh 
+tissue. 
+4. Discussion 
+In contrast to the fluorescence-based histological imaging, our 
+method totally relies on intrinsic biomolecular contrast, producing more 
+consistent images. For example, in fluorescence imaging, various factors 
+will affect the final imaging results, including the concentration of the 
+dyes, the labeling time, micro-environments of tissue, and various tissue 
+types. Moreover, GM-UV-PAM as a label-free imaging technique, we 
+avoid the common photo-bleaching problem in fluorescence imaging. 
+Compared with other label-free imaging modalities, such as SRS [22] 
+and SLAM [26], which have been demonstrated to be able to generate 
+histological images of un-sectioned fresh tissue, our GM-UV-PAM im-
+aging system generates images with a higher speed [30]. Furthermore, 
+our GM-UV-PAM imaging system is more cost-effective and compact, 
+which only requires a solid-state laser with a size around 
+20 × 10 × 10 cm3. The entire imaging system has the potential to be 
+built on a small movable table that can be directly put inside an oper-
+ating room, saving the turnaround time for intraoperative analysis. 
+As for the generation of virtually stained images, unlike the previous 
+methods that applied a model-based mapping algorithm [22,37] to 
+transform fluorescence or label-free images to virtual H&E-stained im-
+ages pixel by pixel, which ignores the texture information [38], we 
+adopted the emerging deep-learning methods that can produce 
+high-quality virtually stained histological images together with the 
+mapping of texture. Existing deep-learning-based transformation 
+methods [4,5] have demonstrated their success in generating realistic 
+histological images on thin microscopic sections. However, since these 
+methods are supervised machine learning algorithms, which require 
+input-output pairs, paired images are necessary for network training, 
+involving complex image registration steps in data pre-processing. 
+Hence, we employed an unsupervised learning method (CycleGAN) 
+where unpaired data is already sufficient for network training. By 
+Fig. 7. Qualitative and quantitative analysis of Deep-PAM versus FFPE-based BF-H&E images from Fig. 4g–i. a, MDS plot showing the similarity or distance among 
+UV-PAM, Deep-PAM, and ground truth BF-H&E images. b, Cross-sectional area distributions of the Deep-PAM and ground truth BF-H&E images. 
+Table 2 
+Counts (i.e., number of cells) and the average nuclear cross-sectional area of 
+Deep-PAM and BF-H&E images (Fig. 4h and i).   
+Counts Average nuclear cross-sectional area (μm2) 
+Deep-PAM  283  72.75 
+BF-H&E  289  70.66  
+L. Kang et al.                                                                                                                                                                                                                                    
+Photoacoustics 25 (2022) 100308
+9
+utilizing CycleGAN, we achieved the high-quality style transformation 
+between UV-PAM image and BF-H&E image using unpaired images, 
+eliminating the need for the complicated image registration procedure. 
+In addition, in the situations where paired data is not available, existing 
+supervised methods cannot be trained, limiting its use in the staining of 
+thick samples. However, CycleGAN can be directly trained with un-
+paired UV-PAM images of thick and fresh tissue and BF-H&E images of 
+thin FFPE sections, achieving deep-learning virtual histological staining 
+of thick samples (i.e., Deep-PAM images). 
+We demonstrated our Deep-PAM with H&E virtual staining because 
+H&E staining is the most used staining method for pathological exami-
+nation. Some other special stains, such as toluidine blue, a dye used by 
+surgeons to highlight abnormal areas in premalignant legions [39], can 
+also be virtually stained with sufficient training data. The speed of 
+Deep-PAM can be further improved by utilizing a UV pulse laser with a 
+higher repetition rate. Furthermore, if the GM-UV-PAM system is 
+implemented in a reflection mode, we can reduce the signal attenuation 
+that the PA waves propagate through the thick tissue, further improving 
+the signal-to-noise ratio and accommodating tissue with different 
+thicknesses. In the future, by this virtual staining procedure, automated 
+diagnosis implemented in many open-source whole slide imaging plat-
+forms can be integrated with transfer learning, further assisting pa-
+thologists for disease classification. With the intrinsic molecular imaging 
+contrast, our Deep-PAM is expected to be applicable to various human 
+organs, serving as a promising intraoperative and postoperative imaging 
+tool for the medical community. 
+5. Conclusion 
+In this manuscript, by combining an unpaired image to image 
+translation network (CycleGAN) with UV-PAM, we developed a high- 
+speed histological imaging method that can not only get the virtual 
+H&E-stained images of thin brain sections (both FFPE and frozen sec-
+tions), but also be able to obtain virtual H&E-stained images of the 
+surface of thick and fresh label-free specimens. This Deep-PAM imaging 
+and virtual staining approach can be used in conventional histology to 
+substitute the histochemical H&E staining process, thus saving time on 
+human staining, bypassing chemical staining artifacts, or applied in the 
+frozen section to get virtual histological images with high staining 
+quality, eliminating the need to stain frozen sectioned slices. More 
+importantly, it offers a new alternative for intraoperative analysis as it 
+can acquire H&E histological images of a fresh tissue surface with a 
+shorter time than that of frozen section (~ 20 min) [6]. To image a 
+typical surface area of 5 mm × 5 mm for brain biopsy [40], the 
+GM-UV-PAM takes less than 15 min [30], and the CycleGAN only needs 
+~ 10 s to transfer the captured UV-PAM image to its corresponding 
+Deep-PAM image. Also, as the fresh tissue is directly imaged, no tissue 
+processing and chemical staining is needed, saving lots of costs, such as 
+the expenditure on the tissue processing machine, labor, and reagents. 
+Simultaneously, the tissue shrinkage problem in traditional histology 
+and freezing artifacts in the frozen section can also be avoided, probably 
+providing more accurate information of the specimen. Finally, 
+GM-UV-PAM imaging is a non-destructive process. Therefore, the 
+imaged fresh tissue can be sent for conventional histology or other 
+ancillary tests, preventing the need of harvesting additional tissue from 
+patients for other testing. 
+Author contributions 
+L.K. and T.T.W.W. conceived of the study. L.K. and X.L. built the GM- 
+UV-PAM imaging system and conducted the imaging experiments. L.K. 
+and Y.Z. prepared the specimens involved in this study. L.K processed 
+and analyzed the data. L.K. and T. T. W. W. wrote the manuscript, which 
+was approved by all authors. T.T.W.W. supervised the whole study. 
+Declaration of Competing Interest 
+T. T. W. W. has a financial interest in PhoMedics Limited, which, 
+however, did not support this work. The authors declare no conflicts of 
+interest. 
+Acknowledgements 
+The Translational and Advanced Bioimaging Laboratory (TAB-Lab) 
+at HKUST acknowledges the support of the Hong Kong Innovation and 
+Technology Commission (ITS/036/19); Research Grants Council of the 
+Hong Kong Special Administrative Region (26203619); The Hong Kong 
+University of Science and Technology startup grant (R9421). 
+Appendix A. Supporting information 
+Supplementary data associated with this article can be found in the 
+online version at doi:10.1016/j.pacs.2021.100308. 

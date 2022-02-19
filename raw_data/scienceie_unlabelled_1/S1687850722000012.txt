@@ -1,0 +1,535 @@
+Technological advances in healthcare have increased the 
+use of ionizing radiation in diagnostics and treatment. 
+Although the total radiation dose received by the US 
+population between 2006 and 2016 decreased by 
+15–20%, the number of computed tomographic imaging 
+procedures using X-rays has been reported to increase by 
+13% (NCRP, 2019). While all processes using ionizing 
+radiation cause the patients and the society to receive 
+more radiation compared to the past 30 years, it also 
+causes an increase in the dose of the healthcare profes-
+sionals who carry out the processes (Cornacchia et al., 
+2019; Stewart et al., 2012). It is stated that there is a link 
+between the increase in the amount of radiation received 
+from man-made ionizing radiation sources and the devel-
+opment of cancer for life (Guleria et al., 2019; Haylock 
+et al., 2018; IAEA, 2018; Schauer & Linton, 2009; Tang & 
+Loganovsky, 2018). With this increase, radiation safety has 
+become more important compared to previous years in 
+order to protect the health and wellbeing of healthcare 
+professionals, patients and society. Recent studies have 
+attempted to draw attention to the potential risks and 
+awareness of doctors about occupational radiation expo-
+sure (Wakeford, 2018). However, despite the positive 
+health effects of applications, the harmful implications 
+of ionizing radiation on human health cannot be 
+overlooked (European Society of Radiology, 2011; 
+Stewart et al., 2012). Therefore, imaging, interventional 
+procedures and therapeutic applications should be con-
+ducted in line with certain principles that minimize the 
+potential risks for patients, healthcare professionals and 
+society.
+The general principles of radiation protection are 
+justification, improving protection and safety, and 
+applying dose limits. In any medical application 
+that involves ionizing radiation, obtaining the most 
+accurate and reliable result with the lowest possible 
+dose is only possible if these main principles are 
+followed. This is directly related to the level of 
+knowledge about the negative effects of radiation 
+on human health among healthcare professionals. 
+Sufficient knowledge allows healthcare professionals 
+to conduct the risk-benefit analysis of a given pro-
+cedure to be performed for their patients, thereby 
+protecting themselves and the patients from unne-
+cessary radiation.
+Studies evaluating the level of knowledge and aware-
+ness on radiation safety practices in healthcare profes-
+sionals indicate knowledge gaps about the biological 
+effects of radiation, even in groups who continuously 
+work with radiation (C. I. Lee et al., 2004). Several health-
+care professionals exhibit an insufficient level of knowl-
+edge concerning the doses utilized in certain radiological
+imaging procedures, including those who actually under-
+estimate these doses (Faggioni et al., 2017; Yurt et al., 
+2014). Furthermore, healthcare professionals who con-
+tinuously work with ionizing radiation appear to have 
+doubts about which radiological procedures involve 
+ionizing radiation and which are truly radiation-free 
+(Saeed et al., 2018). Taken together, the basic training 
+on radiation safety provided for the personnel who 
+work with radiation proves to be insufficient for their 
+entire working period; therefore, they should receive 
+additional training on specific topics at regular intervals 
+(European Commission, 2014; Paolicchi et al., 2016). 
+Healthcare professionals who do not have sufficient 
+knowledge concerning these topics may not be able to 
+perform the risk-benefit analysis in clinical practice and 
+thereby may expose themselves and their patients to the 
+harmful effects of radiation.
+The primary aim of the present study is to investi-
+gate the awareness and knowledge level concerning 
+radiation safety among healthcare professionals who 
+work in a radiation environment. In addition, the 
+planned study aims to provide clear results about 
+radiation safety from the personnel in question, and 
+guide the relevant measures that can be taken in the 
+long term.
+There are a state, a university and a private hospital in 
+the city where the research is carried out. The study 
+was included in all three institutions. The study popu-
+lation consisted of healthcare professionals who work 
+in a radiation environment. The departments 
+included in this study were Cardiology, Radiology, 
+Nuclear Medicine and Radiation Oncology. 123 health 
+professionals in the university hospital (Radiology: 56; 
+Cardiology: 23; Radiation Oncology: 26; Nuclear 
+Medicine: 20), 47 in the state hospital (Radiology: 30; 
+Cardiology: 13; Nuclear Medicine: 4; no radiation 
+oncology unit), and 4 in the private hospital 
+(Radiology: 4; no Cardiology, Nuclear Medicine and 
+radiation oncology unit) work in radiation areas 
+where the study is carried out. In the study, the sam-
+ple was not selected and the entire universe was tried 
+to be reached. Across the three hospitals, the total 
+number of healthcare professionals working in radia-
+tion fields was 174, 144 of whom participated in the 
+survey on a voluntary basis. As the working conditions 
+(number of patient, number of imaging, physical con-
+ditions, frequency of on duty etc.) are different in 
+public and private health sector, all hospitals were 
+included in the study. Ethics Committee approval 
+was obtained prior to initiation of the study, and the 
+survey was started only after obtaining separate per-
+missions for each hospital.
+The survey used in this study was prepared by the 
+investigators after reviewing previous studies on simi-
+lar subjects, and opinions were sought from experts in 
+relevant fields. The survey consists of two parts and 
+a total of 28 questions. The first part contains questions 
+related to the demographics of healthcare profes-
+sionals participating in the present study. The second 
+part contains questions related to main principles and 
+trainings concerning radiation safety. Questions in this 
+part are particularly focused on basic information and 
+trainings about radiation, tools used for the purpose of 
+radioprotection in working environment, dosimeter 
+usage and risk assessment. Furthermore, questions 
+on patient safety, including special measures to be 
+taken for women of child-bearing potential during 
+procedures that involve radiation have been included 
+in this part. For questions on radiation safety training, 
+dosimeter usage and risk analysis, evaluation was 
+based on options of either yes or no, and the reasons 
+were probed in participants who indicated not using 
+a dosimeter. Additionally, the participants were asked 
+a question as to which procedures involve radiation in 
+order to assess their level of awareness. Multiple- 
+choice answers and single correct answers were used 
+in questions on staff safety and patient safety.
+SPSS.23 program was used for the data analysis. 
+Frequency and percentage were calculated for the ana-
+lysis of demographic data. For the 10 questions on 
+knowledge level concerning radiation safety, each cor-
+rect answer was scored as 1 and each incorrect answer 
+as 0 to calculate the mean values and standard devia-
+tion. The highest possible score in these questions was 
+10. The differences in the level of knowledge about 
+radiation safety between the groups according to 
+experience, occupation and type of hospital were ana-
+lyzed with one-way ANOVA. A minimum significance 
+level of 0.05 was utilized during the analyzes.
+Demographics obtained in the survey conducted 
+among healthcare professionals who work in 
+a radiation environment are listed in Table 1. 
+According to the results, 72.9% of the participating 
+healthcare professionals were employed in a university 
+hospital, with 24.3% employed in a state hospital and 
+2.8% in a private hospital while education status was 
+high school in 3.5%, undergraduate/university in 70.8%, 
+postgraduate in 6.9% and PhD in 18.8%. Occupational 
+groups of the participants included doctors (18.8%), 
+technicians (66.0%), nurses (10.4%),radiation physicists 
+(4.2%) and other (0.7%). Of all the participants, 45.8% 
+2 A. ZEKIOĞLU AND Ş. PARLAR
+were healthcare professionals work in radiology, 19.4% 
+in cardiology, 20.1% in radiation oncology and 14.6% in 
+nuclear medicine. In terms of occupational experience, 
+the participants were stratified as those with experience 
+of less than 3 years (29.2%), 4–10 years (25.0%) and more 
+than 10 years (45.8%).
+Of the participants, 98.6% reported having 
+knowledge of radiation protection. Among these, the 
+knowledge was a result of their specialty training in 
+61.8%, the training provided at the hospital they 
+worked in 31.3%, the training provided at the time of 
+medical equipment installation in 0.7%, personal web- 
+based research in 1.4%, and interaction with fellow 
+colleagues in 3.5%. Moreover, level of knowledge 
+about the risks of ionizing radiation was self-rated as 
+excellent by 13.2% of the participants, good by 30.6%, 
+adequate by 36.1% and insufficient by 20.1%.
+According to the legislation in Turkey (Ministry of 
+Health, 2012; Turkey Atomic Energy Agency, 2015), 
+The Radiation Safety Committee must be established 
+in hospitals. These committees have duties such as 
+providing radiation safety, regular training in hospi-
+tals and preparing radiation safety handbook. When 
+the answers to the questions on this subject are 
+examined, 85.4% of the participants indicated the 
+presence of a radiation safety committee at the 
+hospital where they worked, 56.9% stated having 
+knowledge of the scope and responsibilities of the 
+committee. On the other hand, 54.2% of the partici-
+pants reported the presence of a document on radia-
+tion safety. Of the participants, 60.4% indicated the 
+presence of periodic training on radiation safety in 
+place at the hospital where they work and 63.9% 
+stated that these trainings raise awareness on radia-
+tion safety while 36.1% found the trainings inefficient 
+in this regard (Table 2).
+According to the legislation in Turkey (Ministry of 
+Health, 2012), the use of a dosimeter is mandatory in 
+radiation areas, and the principles of use are detailed in 
+the legislation. For this reason, questions regarding 
+dosimeter use and safety measures were asked. 
+Regular usage of pocket dosimeter was reported by 
+89.6% of the participants while 10.4% stated not using 
+a pocket dosimeter. Of the 15 participants reporting 
+non-usage of dosimeter, the reason was stated as not 
+having a dosimeter (20%), forgetting to wear the dosi-
+meter (60%) and the perception of inaccurate measure-
+ments obtained with the dosimeter (20%) (Table 3). In 
+addition to the dosimeter, use of lead apron was 
+reported by 21.4% of the participants, with lead glass 
+usage in 19.4 thyroid collar in 18.9%, lead shielding 
+barriers in 17.4%, lead glasses in 8.2%, lead gloves in 
+5.1% and gonad protection in 4.9% while 4.7% reported 
+not using any additional protection.
+In this survey study, 81.8% of 54 participants work-
+ing in the radiology unit, 79.3% of the 23 participants 
+working in the radiation oncology unit, 95.2% of the 20 
+participants working in nuclear medicine and 27 parti-
+cipants working in the cardiology unit 96.4% stated 
+that they think that the risk levels of exposure to 
+harmful effects of radiation in their unit are higher 
+than other departments (Table 4). These results may 
+be interpreted as subjective opinions provided by the 
+participants with regard to the perception that the 
+departments they work lead to more exposure to 
+radiation than that in other departments.
+Some of the participants stated that procedures 
+that involve ionizing radiation, namely chest X-ray, 
+mammography, PET, fluoroscopy, radiological proce-
+dures, angiography, radiotherapy, bone densitometer, 
+CT, scintigraphy and iodine-131 treatment do not 
+Table 1. Demographic characteristics of the healthcare profes-
+sionals who participated in the study.
+JOURNAL OF RADIATION RESEARCH AND APPLIED SCIENCES 3
+involve radiation and that procedures that do not in 
+fact involve radiation, namely MRI and USG involve 
+radiation (Figure 1).
+Of the participants, 20.8% did not know that the 
+ALARA (‘as low as reasonably achievable’) principle 
+meant the lowest possible radiation dose. Similarly, 
+those with incorrect answers to questions on main 
+methods of radiation protection comprised 35.4% of 
+the study population while 41.7% of the participants 
+provided incorrect answers concerning the use of dosi-
+meter with lead shielding. The rate of incorrect answers 
+about the mean dose limit over five years and one year 
+among radiation staff was 35.4% and 44.4%, respec-
+tively. The rate of respondents who gave incorrect 
+answers regarding the frequency of annual health 
+checks required for radiation staff was 33.3%. 
+According to the legislation, radiation workers should 
+have a health check once a year (Ministry of Health, 
+2012). As for questions on patient safety, approximately 
+one out of three participants (29.2%) provided negative 
+answers about informing patients concerning applica-
+tions that involve radiation. For applications involving 
+radiation to be performed in women of child-bearing 
+potential, the rate of correct answers on questioning of 
+pregnancy were considerably high. Similarly, the rate of 
+knowing the most appropriate time for test for women 
+of child-bearing potential was 67.4% (Table 5).
+The arithmetic mean and standard deviation values 
+of the scores of the participants in 10 questions related 
+to radiation safety were calculated and given in Table 6. 
+When all questions related to the subject were evalu-
+ated, the average score of the participants in the ques-
+tions on information level of radiation safety was 6.86 
+(±1.88). In other words, considering that the possible 
+highest total score was 10, the success rate was found to 
+be 68.6%. Furthermore, the differences in the level of 
+knowledge on radiation safety was investigated statisti-
+cally between groups by occupation, experience and 
+type of hospital, and no significant difference was 
+seen with regard to knowledge level based on years of 
+experience and type of hospital. On the other hand, the 
+evaluation based on occupational groups revealed that 
+radiation physicists had a significantly (p < 0.05) higher 
+level of knowledge compared to other healthcare pro-
+fessionals. While radiation physicists had the highest 
+score with 8.16 on average, the groups of professionals 
+that followed were technicians, doctor and nurses, 
+respectively. Other healthcare professionals were the 
+group of those with the lowest score of 4.00 on average.
+The technological advances in recent years have 
+increased the use of medical applications that involve 
+radiation; and consequently, both patients and healthcare 
+professionals are known to be exposed to higher doses of 
+radiation (Schauer & Linton, 2009). The awareness and 
+level of knowledge of radiation among healthcare 
+Table 4. Assessment of risk levels of radiation exposure by 
+department.
+Figure 1. Which of the following are applications that involve ionizing radiation?
+4 A. ZEKIOĞLU AND Ş. PARLAR
+professionals directly involved in radiation-containing 
+applications is highly important and effective in terms of 
+risks that may arise for both the patients and themselves 
+due to excess radiation during the tests (European Society 
+of Radiology, 2011). The present study aimed to investi-
+gate the awareness and level of knowledge of applica-
+tions that involve radiation and radiation safety among 
+healthcare professionals who work in a radiation environ-
+ment with radiation exposure.
+Results of this study revealed that the rate of 
+correct answers was 68.6% (6.86 correct answers 
+on average in 10 questions) for questions on radia-
+tion safety among all healthcare professionals. 
+A study conducted in healthcare professionals who 
+are continuously involved in radiation-containing 
+applications showed a success rate of 66.14% in 
+theoretical knowledge across participants (4.63 cor-
+rect answers on average in 7 questions) (Borgen & 
+Stranden, 2014). The success rate in the present 
+study was higher than that in comparative studies 
+performed with other healthcare professionals 
+(Khan et al., 2018). Nearly all of the participants in 
+this study (98.6%) stated that they had knowledge 
+of radiation protection and that they mostly (61.8%) 
+gained this knowledge during training. Taking into 
+account that the target audience is the group of 
+healthcare professionals who actively perform appli-
+cations that involve radiation, the knowledge of 
+radiation safety provided during occupational 
+training may be predicted to contribute to the suc-
+cess rate. According to the legislation in Turkey 
+(Ministry of Health, 2012; Turkey Atomic Energy 
+Agency, 2015), radiation safety committees are 
+responsible for radiation safety in hospitals. In-ser-
+vice training are given to physicians, nurses and 
+technicians. Training generally organized once 
+a year by radiation committees. (Ministry of Health, 
+2012). However, there is no information about 
+whether any tests or examinations have been car-
+ried out to assess the knowledge level of health 
+professionals on radiation safety during training. 
+Based on this situation, most of the participants 
+who took place in this survey reported the presence 
+of a radiation safety committee at the hospital 
+where they worked (85.4%), that periodic training 
+were in place (60.4%) and that training was effec-
+tive in raising awareness on radiation safety (63.4%). 
+It may be said that periodic training conducted for 
+healthcare professionals working with radiation 
+increases their knowledge level about radiation 
+safety. Additionally, interactive and case-based 
+training modalities are stated to be more effective 
+in terms of raising awareness (Sheng et al., 2016).
+In applications that involve radiation, the protection 
+of both the personnel and patients from radiation is 
+directly related to the level of awareness. In the present 
+study, healthcare professionals in cardiology and 
+nuclear medicine units stated that their risk of radia-
+tion exposure was higher than that of those in other 
+units. The other group who reported a perception of 
+higher risk of exposure to radiation was those who 
+work in the radiology department. The radioactive 
+sources utilized in nuclear medicine and the interven-
+tional procedures performed more frequently in cardi-
+ology and radiology departments result in increased 
+radiation exposure for the staff. Therefore, healthcare 
+professionals who work in these departments use pro-
+tective apparatuses such as lead shielding, lead glass 
+and thyroid protection. However, 10.4% of the partici-
+pants in the present study reported mostly forgetting 
+to use a dosimeter. This translates into the presence of 
+Table 6. Comparison of knowledge level by occupation, 
+experience and type of hospital.
+JOURNAL OF RADIATION RESEARCH AND APPLIED SCIENCES 5
+a group -although a small one- that does not show the 
+necessary caution/importance in this regard among 
+healthcare professionals who work in a radiation 
+environment.
+Both the types and numbers of procedures that 
+involve radiation used in diagnosis and treatment 
+have increased considerably with the advances in tech-
+nology (UNSCEAR, 2000). Ensuring that healthcare pro-
+fessionals have knowledge of all applications that 
+involve radiation is effective in preventing the excess 
+radiation that may result from unnecessary examina-
+tions both for themselves and their patients. Almost all 
+of the healthcare professionals who participated in the 
+present study answered correctly that MRI and ultra-
+sound are among the non-radiation procedures per-
+formed for diagnostic-therapeutic purposes. However, 
+the rate of those answering incorrectly that nuclear 
+radiation tests such as PET, bone densitometry and 
+iodine-131 treatment are non-radiation procedures 
+was considerably high. Of the participants, 29.2% sta-
+ted PET as a non-radiation procedure while this rate 
+was 45.8% for bone densitometry and 45.8% for 
+iodine-131 treatment. Bone densitometry is performed 
+to assess bone density using very low energy X-rays. 
+However, in both PET scan and iodine-131 treatment, 
+the patient continues to emit radiation to their sur-
+rounding after the procedure due to the radioactive 
+material administered during the application. Since 
+nearly all of the participants stated that they have 
+knowledge of radiation protection, it is an unexpected 
+result to obtain a high rate of incorrect answers con-
+cerning such tests.
+Most of the studies investigating the level of knowl-
+edge and awareness about radiation safety are conducted 
+among doctors, students and patients, who do not work 
+continuously in a radiation environment. In particular, the 
+awareness and knowledge level of doctors who request 
+patients to undergo procedures that involve radiation 
+have been shown to be extremely important in terms of 
+patient safety and reducing the dose exposure of patients 
+(Campanella et al., 2017; Chun-sing et al., 2012). The 
+questions asked in these studies are mostly about the 
+dose of the requested radiological imaging procedure 
+(e.g., tomography/CT), the risk of cancer or side effects 
+that may occur (Campanella et al., 2017; Chun-sing et al., 
+2012; Ramanathan & Ryan, 2015; Senemtaşi Ünal et al., 
+2018). In the present study, knowledge-based questions 
+were asked about radiation safety, such as those on 
+ALARA principle, main methods of radiation protection 
+and dose limits. Questions about the necessity of inform-
+ing patients in the event of an imaging test involving 
+radiation and the procedures to be performed for patients 
+who are likely to become pregnant were also included. 
+Taking into account the fact that the target audience 
+herein was a group of healthcare professionals who con-
+tinuously work in a radiation environment, questions on 
+protecting themselves and patients from the radiation 
+arising from relevant procedures were designed as well. 
+According to the results, one fifth of the participants gave 
+incorrect answers concerning the ALARA principle and 
+approximately one in three participants did not know 
+the main methods of radiation protection. The rate of 
+those who provided incorrect answers about the use of 
+dosimeter with lead shielding and about the mean dose 
+limit over five years and one year were found to be quite 
+high. Almost all of our participants stated having received 
+training on radiation safety and most reported atten-
+dance at regular trainings. Although it is compulsory to 
+inform the patient about harmful effects of radiation 
+related to the procedure to be performed in our country, 
+it was observed that some considered this unnecessary. 
+While it is mostly stated that ‘pregnancy interrogation 
+should take place when performing the necessary radi-
+ological procedures for pregnant patients or those with 
+child-bearing potential’, one in three participants pro-
+vided an incorrect answer about who should do this 
+and how. Information on precautions to be taken during 
+radiological procedures conducted for pregnant patients 
+or those with child-bearing potential have been described 
+in several publications and guidelines (American College 
+of Radiology, 2018).
+With regard to answers on radiation protection of the 
+staff and patients, knowledge gaps were noted, even in 
+those who had received and continued to receive training 
+on radiation safety. Studies have revealed that healthcare 
+professionals who continuously work in a radiation envir-
+onment have a higher level of knowledge of radiation 
+safety compared to others, although insufficient training 
+is observed even in these groups, highlighting the fact 
+that such training should be provided not only through 
+working life but also during specialty training (Borgen & 
+Stranden, 2014; R. K. Lee et al., 2012; Paolicchi et al., 2016). 
+In the present study, level of knowledge about radiation 
+safety was evaluated by experience level, occupation and 
+type of hospital, and no significant difference was found 
+(p > 0.05) for experience and type of hospital. Several 
+studies have shown that occupational experience 
+increases knowledge level, in other words, further training 
+contributes to level of knowledge favorably 
+(Macía-Suárez & Sánchez-Rodríguez, 2018; Senemtaşi 
+Ünal et al., 2018). In the present study, the rates of correct 
+answers were similar in the groups with less than three 
+years of experience and more than 10 years of experience, 
+and no significant difference was observed between 
+these groups. While the unwillingness of senior employ-
+ees to change their habits and update their knowledge is 
+expected (Szarmach et al., 2015) to make a difference 
+between the level of knowledge, a different result was 
+obtained in this study. It is considered that not being able 
+to make radiation safety training systematic, not attend-
+ing to training due to work intensity, and not evaluating 
+the training with objective measurement tools (pre-test, 
+post-test, scale etc.), may cause lack of awareness and 
+level of knowledge of the participants to be similar.
+6 A. ZEKIOĞLU AND Ş. PARLAR
+In the evaluation based on occupational groups, 
+radiation physicists were associated with a significantly 
+higher level of knowledge about radiation safety com-
+pared to other healthcare professionals (p < 0.05). The 
+other groups with correct answers to relevant questions 
+were technicians, doctors, nurses, and other healthcare 
+professionals, in this respective order. A study investi-
+gating the awareness on radiation safety among nurses 
+who work in the same department with radiology tech-
+nicians did not reveal a significant difference between 
+these two occupational groups (Senemtaşi Ünal et al., 
+2018). In the study presented herein, the finding that 
+radiation physicists were those with the highest level of 
+knowledge was not unexpected taking into account 
+that they are in charge of taking necessary precautions 
+for radiation protection who may also provide training 
+on this subject matter. The lowest level of knowledge 
+noted in nurses and other healthcare professionals is 
+likely to result from the lack of training in this regard 
+during their basic training and knowledge gained only 
+through periodic trainings.
+In conclusion, insufficient level of knowledge about 
+applications that involve radiation is a highly important 
+parameter in radiation protection both for healthcare 
+professionals and patients. The present study demon-
+strated an insufficient level of knowledge and aware-
+ness on radiation safety, even in the occupational 
+groups that continuously work in a radiation environ-
+ment. In order for all hospital personnel to work safely in 
+applications that involve radiation, all of the necessary 
+conditions need to be fulfilled. This may ensure that 
+both the staff and patients and their relatives are 
+exposed to the lowest possible radiation dose. For this; 
+periodic trainings should be conducted in hospitals and 
+training content should include all applications that 
+involve radiation and be specific to the relevant clinic. 
+Regular training programs should also be provided for 
+other healthcare professionals who do not continuously 
+work in a radiation environment but are still subject to 
+radiation exposure. Pre-test and post-test exercises 
+should be performed in order to increase the effective-
+ness of the trainings, and interactive case studies speci-
+fic to the clinic should be included in the program. With 
+the establishment of radiation safety committees in all 
+hospitals, it would be possible to monitor and conduct 
+regular trainings. And finally, with electronic learning 
+programs which may be implemented at national 
+level, all relevant persons would have access to these 
+programs.
+Due to ethical factors, identity information was not 
+obtained from healthcare professionals who participated 
+in the study. Furthermore, the responses were not shared 
+with third parties (such as hospital management). Based 
+on this, the answers are thought to reflect the actual 
+situations. In the study, using only a questionnaire is 
+a limitation. In future studies, besides the questionnaire, 
+in-depth interviews with healthcare professionals can be 
+used to determine the main causes of situations objec-
+tively, such as lack of information, lack of awareness.

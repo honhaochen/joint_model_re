@@ -1,0 +1,826 @@
+The existence of continually increasing concentrations of antibiotics in the environment is a serious
+potential hazard due to their toxicity and persistence. Unfortunately, conventional treatment techniques,
+such as those utilized in wastewater treatment plants, are not efficient for the treatment of wastewater
+containing antibiotic. Recently, algae-based technologies have been found to be a sustainable and
+promising technique for antibiotic removal. Therefore, this review aims to provide a critical summary of
+algae-based technologies and their important role in antibiotic wastewater treatment. Algal removal
+mechanisms including bioadsorption, bioaccumulation, and biodegradation are discussed in detail, with
+using algae-bacteria consortia for antibiotic treatment, integration of algae with other microorganisms
+(fungi and multiple algal species), hybrid algae-based treatment and constructed wetlands, and the
+factors affecting algal antibiotic degradation comprehensively described and assessed. In addition, the
+use of algae as a precursor for the production of biochar is highlighted, along with the modification of
+biochar with other materials to improve its antibiotic removal capacity and hybrid algae-based treatment
+with advanced oxidation processes. Furthermore, recent novel approaches for enhancing antibiotic
+removal, such as the use of genetic engineering to enhance the antibiotic degradation capacity of algae
+and the integration of algal antibiotic removal with bioelectrochemical systems are discussed. Finally,
+some based on the critical review, key future research perspectives are proposed. Overall, this review
+systematically presents the current progress in algae-mediated antibiotic removal technologies,
+providing some novel insights for improved alleviation of antibiotic pollution in aquatic environments.
+Recently, residual pharmaceuticals and personal care products
+(PPCPs) have been widely identified in aquatic environments [1].
+Antibiotics are a typical category of PPCPs which are increasingly
+being detected in the natural environment and associated with
+ecotoxic effects [2]. The increased concentration of antibiotics in
+the aquatic environment (concentrations of antibiotics rarely
+exceed 1 mg L1, but are more commonly in the low ng L1 range)
+presents a major hazard due to their toxicity and long-term
+persistence [3,4]. In particular, exposure to residues of antibiotics).
+half of Chinese Society for Enviro
+under the CC BY-NC-ND license (has attracted significant attention because of the increase in anti-
+biotic resistance genes (ARGs) and antibiotic resistant bacteria
+(ARB) [5]. In 2019, in the US alone, antibiotic-resistant bacteria and
+fungus caused more than 2.8 million infections and 35,000 deaths
+[6]. Currently, ARB have been extensively detected in most aquatic
+environments surrounding point-sources, such as pharmaceutical
+companies, hospitals, livestock farms, and wastewater treatment
+plants (WWTPs), leading to a high risk of transformation and
+migration of ARB and ARGs throughout the aquatic environment
+[3]. Furthermore, it has beenwidely demonstrated that WWTPs are
+not effective at removing ARBs, ARGs, or antibiotics from contam-
+inated wastewater. It has been reported that in the absence of
+policy interventions, the global consumption of antibiotics in 2030
+could increase by 200% relative to their use in 2015 [7]. Accordingly,
+reducing the release and dispersion of antibiotics throughout then
+Currently, various technologies have been applied for the
+removal of antibiotics in the aquatic environment, including bio-
+logical, physical and chemical methods [8]. Advanced treatment
+technologies such as adsorption, chlorination, activated carbon
+filtration, membrane processes, advanced oxidation processes
+(AOPs), photocatalysis, and the use of nanomaterials and ferrate
+treatment have been introduced [9e11]. For example, Du et al. [9]
+reviewed that metaleorganic frameworks (MOFs) have excellent
+photodegradation and adsorption efficiency for antibiotics. Li et al.
+[12] reported that tetracycline removal efficiency was more than
+95% via Fe-based MOF. However, these methods have some notable
+limitations, for example, the antibiotic removal efficiency of
+adsorption is extremely adsorbent-dependent, with adsorbents
+usually being at a high cost [13], while AOPs and photocatalysis are
+typically efficient but require costly chemical reagents or catalysts
+[14], while potentially generating secondary pollutants [15], such as
+large quantities of metal sludge.
+Compared to physical and chemical methods, biological treat-
+ments provide some unique benefits, such as being
+environmentally-friendly and having low economic costs [16].
+Algae are primary produced in aquatic ecosystems. They can be
+used as ecological indicators and remove contaminants, due to
+their short growth cycle, high sensitivity to aquatic pollutants, and
+initiate stress response mechanisms [17]. Algae-based remediation
+techniques were first conducted in the 1950's to remove nutrients
+and dissolved carbon from sewage. The main advantage of algae-
+based technologies is that they do not need additional energy to
+effectively remove pollutants [18,19], unlike the conventional ap-
+proaches, such as micro-filtration and sludge activation, which
+require significant energy inputs [20]. Recently, algae-based tech-
+niques have been wildly utilized for the treatment of wastewater
+containing antibiotics, providing numerous benefits including
+efficient fixation of CO2, low-environmental impact, solar energy
+driven activity, and providing a potential raw material for the
+generation of biofuel or other high-value by-products [21,22]. For
+example, triclosan can be completely removed from water by
+Nannochloris after 7 days of cultivation [23] and diphenhydramine,
+memantine and trihexyphenidyl can be efficiently degraded by
+algae, with average degradation rates of 88%, 59% and 83%,
+respectively [24]. Microalgae-mediated technology could removal
+groundwater pollution by organic microcontaminants such as
+pesticides and antibiotics (up to 65%) [25].
+Antibiotic degradation and removal methods have been
+reviewed elsewhere, for example, Peiris et al. [26] and Yan et al. [27]
+summarized the potential utilization of biochar and bio-
+electrochemical system to degrade antibiotics. However, in-
+vestigations into the performance and mechanisms of algae-
+mediated antibiotic wastewater treatment have not been compre-
+hensively reviewed. This review aims to supplement the emerging
+literature on algae-based technologies and identify the key chal-
+lenges and knowledge gaps. Firstly, microalgal removal mecha-
+nisms (bioadsorption, bioaccumulation, and biodegradation) as
+well as the factors affecting antibiotic degradation by algae are
+introduced. After which the use of algae as a biotemplate for the
+production of photocatalysts is discussed. Furthermore, the use of
+materials to improve algal photosynthetic activity is reviewed and
+the recent novel approaches for enhancing antibiotic removal are
+summarized and compared, including the potential use of genetic
+engineering to improve antibiotic degradation and the use of
+microalgal-bacterial consortia for antibiotic treatment. In addition,
+microalgal antibiotic degradation can be integrated with other
+advanced techniques, such as AOPs, ultraviolet (UV) irradiation,
+integration with other microbial species, hybrid algae-based
+treatment-constructed wetland systems, and bioelectrochemical2
+systems. Finally, the main research challenges and future prospects
+are discussed.
+2. Perspective #1: biological treatment for antibiotic based
+on algae
+2.1. Algal removal mechanisms: bioadsorption, bioaccumulation,
+and biodegradation
+When exposed to antibiotics, algae initiate stress response
+mechanisms that degrade toxic antibiotics and assist algal survival
+[15]. Table 1 summarizes the removal efficiency of different anti-
+biotics by algae-based techniques and the involved mechanisms.
+Currently, bioadsorption, biodegradation, bioaccumulation, photo-
+degradation, volatilization, and hydrolysis are the main pathways
+of antibiotic removal that have been identified in algae [28]. As
+reported by Hena et al. [29], the specific physicochemical proper-
+ties of PPCPs are the major factor affecting which mechanism algae
+use to degrade antibiotics in wastewater. Theoretically, algae
+remove organic contaminants primarily by absorption, due to the
+physio-chemical characteristics of organic contaminants [30]. Ac-
+cording to Nguyen et al. [31] and Xiong et al. [21], photo-
+degradation, volatilization and hydrolysis pathways not being
+universal and only occur under particular conditions, generally
+providing a minor contribution to removal. Therefore, this review
+mainly focuses on bioadsorption, bioaccumulation and biodegra-
+dation (Fig. 1).
+Bioadsorption is a physico-chemical procedure in which anti-
+biotics are directly removed from wastewater using the adsorptive
+capacity of biological materials [31]. Biomaterials are structurally
+complex and diverse due to the wide range of components present
+in biomass and the variation in functional groups, such as phos-
+phate, thiol, carboxyl, hydroxyl, and amino groups, which are
+affected by physico-chemical processes to varying degrees [32].
+Bioadsorption by algal cells occurs when antibiotics are either
+adsorbed to components of their cell wall, or onto organic sub-
+stances (e.g., extracellular polymetric substances (EPS)) that are
+discharged by algal cells into the surrounding aquatic environment
+[33]. EPS are a combination of various biopolymers formed by
+microorganisms which may consist of up to 90% organic matter,
+such as protein, polysaccharides, enzymes, lipids, and substituents.
+EPS have various structural and functional roles, such as the
+enhancement of cell adsorption capacity, surface characteristics,
+enzyme retention, mass transfer stability, structural stability, and
+digestive functions [34,35]. Interactions between negatively
+charged microalgal cell walls or secretions (both collectively
+termed the cell surface) and antibiotics, occurs via a passive and
+non-metabolic process [21]. For example, metronidazole (initial
+concentration was 5 mM) can be removed by Chlorella vulgaris via
+bioadsorption and the removal efficiency can reach 100% [36].
+Furthermore, the biomass of nonliving microalgae has also been
+demonstrated as a promising biosorbent material for the removal
+of antibiotics. For instance, the residual biomass of the lipid-
+extracted Chlorella sp. has been shown to have a high capability
+for cephalexin adsorption and removal [37]. Furthermore, after
+lipid extraction, Daneshvar et al. [38] assessed tetracycline removal
+from wastewater using microalgal biomass, showing that the
+maximum adsorption capabilities of Tetraselmis suecica and Sce-
+nedesmus quadricaudawere 56.25 and 295.34 mg g1, respectively.
+Bioaccumulation is an active metabolic process for antibiotic up-
+take, noting that it is a key function of livemicrobial cells, relying on
+different chemical, physical, and biological mechanisms that
+include both intra- and extracellular processes. In bioaccumulation,
+passive diffusion is a poorly defined process with a limited
+contribution to antibiotic removal, while energy-dependent uptake
+Table 1
+Algae reported as biological techniques for the removal of different antibiotics and the mechanisms involved.
+Antibiotic Algae Mechanisms Removal Ref.
+Tetracycline Chlamydomonas sp. Tai-03 Biodegradation, photolysis, and hydrolysis 100% [43]
+Tetracycline Spyrogira sp. Photodegradation 89% [47]
+Tetracycline a Biosorption 295.34 mg g1 [38]
+Tetracycline b Biosorption 56.25 mg g1 [38]
+Sulfamethoxazole Chlamydomonas sp. Tai-03 Biodegradation ~20% [43]
+Sulfadiazine Chlamydomonas sp. Tai-03 Biodegradation, biosorption, photolysis, and hydrolysis 54.53% [28]
+Sulfathiazole Spyrogira sp. Biodegradation and indirect photodegradation 36% [47]
+Ciprofloxacin Chlamydomonas sp. Tai-03 Biodegradation, biosorption, photolysis, and hydrolysis 100% [28]
+Ciprofloxacin Scenedesmus dimorphus Bioadsorption and biotransformation 93% [48]
+Erythromycin Scenedesmus obliquus Biodegradation, hydrolysis, and photolysis 97%c [45]
+Norfloxacin Chlorella vulgaris Photodegradation 36.9% [49]
+Levofloxacin Chlorella vulgaris Biodegradation and bioaccumulation 82.35% [44]
+Azithromycin Chlorella vulgaris Biodegradation 92.77% [44]
+Azithromycin Haematococcus pluvialis Biodegradation 78% [44]
+Amoxicillin Microcystis aeruginosa Biodegradation 30.5e33.6% [50]
+Amoxicillin Microcystis aeruginosa Biodegradation 18.5e30.5% [51]
+Spiramycin Microcystis aeruginosa Biodegradation 12.5e32.9% [50]
+Cefradine Chlorella pyrenoidosa Biodegradation 41.47 ± 0.62% [52]
+Cephalexin d Biosorption 63.29 mg g1 [37]
+Ceftazidime Chlorella pyrenoidosa Bioadsorption and biodegradation 93% [21]
+Ceftazidime Chlorella pyrenoidosa Bioadsorption and biodegradation 92.70% [46]
+7-amino cephalosporanic acid Chlorella pyrenoidosa Bioadsorption and biodegradation 96.07% [46]
+7-amino cephalosporanic acid e Bioadsorption, hydrolysis and photolysis. 100% [53]
+a Dry biomass of lipid-extracted Scenedesmus quadricauda
+b Dry biomass of lipid-extracted Tetraselmis suecica
+c Calculated based on the literature.
+d Dry biomass of lipid-extracted Chlorella sp.
+e Chlorella sp. Cha-01, Chlamydomonas sp. Tai-03, Mychonastes sp. YL-02.
+Fig. 1. Mechanisms involved in the removal of antibiotics by algae. Reprinted with permission from Xiong et al. [21], copyright (2021) Elsevier.
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145is an active transport step driven by energy [32]. For example,
+bioaccumulation has been observed during the removal of
+trimethoprim, sulfamethoxazole, florfenicol [39], and carbamaze-
+pine [40], in which antibiotics enter algal cells through passive
+diffusion.
+Biodegradation includes the transformation of complicated
+compounds into simpler small-molecules through catalytic meta-
+bolic degradation [41]. According to Tiwari et al. [42], microalgal
+biodegradation can occur via two major mechanisms: firstly, by3
+metabolic degradation where antibiotics provide a carbon source
+and serve as electron donors or acceptors for microalgae; and
+secondly, by co-metabolism where the antibiotics are reduced by
+enzymes, causing the formation of non-toxic product compounds.
+Biodegradation has been demonstrated to be the most efficient
+mechanism for the removal of antibiotics by algae-mediated tech-
+nologies [43]. For example, Kiki et al. [44] investigated the degra-
+dation potential of different algae including C. vulgaris, Selenastrum
+capricornutum, Haematococcus pluvialis, and S. Quadricauda for ten
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145antibiotics, finding that biodegradation was the main mechanism
+for antibiotics removal, while bioaccumulation, bioadsorption and
+abiotic factors accounted for relatively smaller contributions.
+Similarly, Wang et al. [45] inoculated S. obliquus into wastewater to
+determine the erythromycin degradation pathways. Results
+showed that after 5 days of cultivation, biodegradation (including
+bioadsorption), hydrolysis and photolysis were the main mecha-
+nisms of erythromycin degradation in the microalgae-mediated
+system, with biodegradation (including bioadsorption) respon-
+sible for the highest proportion of removal (57.87%), followed by
+hydrolysis (<34.13%) and photolysis (<5%). It has previously been
+reported that ciprofloxacin can be completely removed by Chla-
+mydomonas sp. Tai-03, with biodegradation accounting for up to
+65.05% of removal [28]. In summary, the degradation of antibiotic
+by algae-based technologies, can be divided into 3 distinct pro-
+cesses: 1) fast adsorption due to physicochemical interactions be-
+tween the antibiotics and algal cell walls, 2) the relatively slow
+transference of molecules through algal cell walls, and 3) biodeg-
+radation, bioaccumulation, or both [46].
+2.2. Using algae-bacteria consortia for antibiotic treatment
+As discussed, algae have the capacity to directly remove anti-
+biotics using extracellular enzymes or heterotrophicmetabolism. In
+addition, the biodegradation capabilities of algae may also be
+improved indirectly by symbiotic communication with bacteria
+[54], photosynthetically altering pH conditions, or due to large
+amounts of oxygen formation [55]. As depicted in Fig. 2a, algae-
+bacteria consortium techniques can degrade antibiotics in waste-
+water via mechanisms such as biodegradation, volatilization,
+photodegradation, and sorption. In algae-bacteria consortia, both
+bacteria and algae can serve as biosorbents, with EPS formed by
+bacteria and algae also supply crucial sites for the biosorption of
+antibiotics [56]. Ismail et al. [57] found that combining Chlorella sp.
+and isolated bacterial strains achieved highly efficient ketoprofen
+biodegradation and tolerance. Guo et al. [21] developed a novel
+algae-activated sludge mixed system for the degradation of ceph-
+alosporins, which achieved a higher total removal efficiency of
+97.91% with green algae shown to have an outstanding cefradine
+removal rate.Fig. 2. (a) Processes included in the removal of PPCPs using algae-based techniques,
+modified from Ref. [56]. (b) Sorption and photodegradation based tetracycline removal
+during wastewater treatment using algal ponds [60].
+4
+High rate algal ponds (HRAPs) have been applied as bioreactors
+for wastewater treatment since the 1950's [58], effectively utilizing
+mixed algae-bacteria cultures to achieve energy efficient antibiotic
+degradation [59]. For example, >93% removal of 100 mg L1 tetra-
+cycline from wastewater was achieved mainly via indirect photo-
+degradation, when the HRAP was conducted at a hydraulic
+retention time (HRT) of 4 days [60] (Fig. 2b). Moreover, de Godos
+et al. [61] reported effective tetracycline removal in lab-scale
+HRAPs, demonstrating that sorption and photodegradation were
+the major removal mechanisms. However, few studies have
+investigated the fate of antibiotics in HRAP treatment systems. In
+summary, the results presented above suggest that the feasibility of
+using algae-bacteria consortia to treat antibiotic containing
+wastewater is promising in terms of the effectiveness and opera-
+tional costs, providing a safe and sustainable approach for antibiotic
+wastewater treatment.
+2.3. Integration of algae with other microorganisms (fungi and
+multiple algal species)
+Apart from the aforementioned bacteria, fungi are another
+important type of microbe that is able to facilitate antibiotic
+removal by algae. Using fungi to treat high-strengthwastewater has
+shown promising results, providing numerous benefits compared
+with bacteria in biological wastewater purification. According to
+Sankaran et al. [62], fungal wastewater remediation not only
+transforms organic matter into high-value fungal proteins and
+useful biochemicals (such as amylase, chitin and lactic acids), but it
+also forms large dewaterable fungal biomass, which can be utilized
+as an animal feed source and may even be consumed in human
+diets. Additionally, fungi have high resistance to inhibitory sub-
+stances and an abundance of extracellular enzymes that promote
+the bioremediation of recalcitrant compounds. According to Silva
+et al. [63], pollutant biodegradation by fungi includes either an
+extracellular enzymatic system (i.e., manganese peroxidase, ver-
+satile peroxidase, laccase, and lignin peroxidase) or an intracellular
+enzymatic system (mainly the cytochrome P450 system). Some
+filamentous fungi can pelletize, further involving microalgal cells.
+Contaminant removal mechanisms of algae-fungi consortia are
+shown in Fig. 3. Algae-fungi consortia have been shown to be
+capable of treating antibiotic wastewater. For instance, biopellets
+composed of C. vulgaris and Aspergillus niger have exhibited sig-
+nificant removal capability for ranitidine [64]. Furthermore, fungi-
+assisted harvesting of algae has been found to enhance the removal
+range pharmaceuticals from wastewater [65]. In addition to the
+potentially high removal rate, biopellets allow harvesting by sedi-
+mentation or sieve filtration, leading to significantly reduced
+treatment costs. Co-pelletization through the addition of fungi and
+algae does not need extra chemical or energy inputs and may be a
+promising treatment solution.
+Algae are non-target microorganisms for antibiotics and there-
+fore, the disturbance of algae by antibiotics is limited, with no
+resistant species or resistant genes known to be formed during the
+procedure of antibiotic treatment [66]. Thus, a combination of
+multiple algae has been found to be beneficial to the removal of
+antibiotics. In this regard, the cefradine removal efficiency of
+C. pyrenoidosa cultured in filtered M. aeruginosa culture fluid was
+75.48 ± 0.29%, which was significantly higher than using
+C. pyrenoidosa alone [52]. These findings suggest that the combi-
+nation of multiple algal strains is a promising strategy for the
+treatment of antibiotics in wastewater.
+2.4. Hybrid algae-based treatment and constructed wetlands
+Constructed wetlands (CWs) have the advantages of being
+Fig. 3. Contaminant removal mechanisms using the algae-fungi consortia. (a) Algae
+and fungi work together to degrade wastewater: I. Capture or adsorption of suspended
+solids; II. Reduction by extracellular enzymes secreted by fungi; III. Assimilation of
+soluble nutrients by algae and fungi. (b) Detailed description of the assimilation of
+soluble nutrients via microalgae and fungi. Note: Glu indicates glucose; CBB cycle
+indicates the Calvin-Benson-Bassham cycle. Modified from Ref. [67].
+Fig. 4. Factors affecting antibiotic degradation by algae.
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145sustainable, with easy, low-cost and energy-efficient operation,
+while also having high efficiency for antibiotics removal due to
+substrate absorption, biodegradation and plant uptake [68]. Huang
+et al. [69] reported that more than 84% of oxytetracycline and
+difloxacin could be removed by vertical flow CWs. CWs can be
+easily influenced by many factors, such as CW type, plant species,
+HRT, hydraulic loading rate, pH, substrate type, temperature, and
+dissolved oxygen content, resulting in a complex range of differ-
+ences in the mechanisms and removal rates of antibiotics [70].
+Algae associated with CW systems have been considered as an
+outstanding substitute for wastewater treatment and have been
+developed to a reasonably mature level [71]. For instance, HRAPs
+were combined with CWs to treat wastewater, with algal biomass
+enhanced in the HRAP, while the concentration of dissolved oxygen
+was improved by photosynthesis, resulting in hybrid system
+removal capacity being significantly higher than CW-only systems
+[72]. Similarly, Silveira et al. [73] used an integrated system with
+algae and CWs to degrade wastewater, with results suggesting that
+the combined system had excellent chemical oxygen demand
+(COD) and 5-day biochemical oxygen demand (BOD5) reductions as
+well as removal efficiency of nearly 98% for NeNH3. Rabello et al.
+[74] provided a review of the relationship between the presence of
+the most broadly explored PPCPs in wastewater and the configu-
+ration of CWs and algae tanks designed to reduce them, proposing
+that integration of CW systems and algae tanks could be a prom-
+ising method for PPCPs removal from domestic wastewater.
+2.5. Factors affecting antibiotic degradation by algae
+2.5.1. Effects of algal culture conditions and antibiotic concentrations
+Antibiotic degradation by algae is influenced by many factors,
+such as the pH, temperature, level of CO2 enrichment, light in-
+tensity, HRT and antibiotic concentrations (Fig. 4). The solution pH
+is a key factor affecting the interactions between the adsorbent and5
+adsorbate [75], not only influencing the charge of algal cell surfaces
+but also the degree of speciation and ionization of antibiotics. It has
+previously been reported by de Godos et al. [61] that a cultivation
+pH ranging from 7.5 to 8, supports tetracycline zwitterion forma-
+tion, which facilitates adsorption onto the algal surfaces. Temper-
+ature affects the metabolic processes of algal cells and enzyme
+activity with the optimum temperature for microalgae demon-
+strated to be 25e30 C [76]. Temperature extremes could disturb
+kinetic rates and although higher temperatures generally improve
+kinetics, they can negatively affect other aspects such as enzyme
+function and cell activity. For example, Rico et al. [77] found that the
+PSII and growth rates for S. obliquuswere similar at 30 C and 20 C,
+but the growth rate based on the determined concentration of
+chlorophyll-a was found to be lower at 30 C than at 20 C. In
+addition, many studies have reported that CO2 concentrations in
+the range of 6e15% support the accumulation of S. obliquus,
+Chlorella sp., N. oculata, and Spirulina sp [78,79]. Furthermore, the
+accessibility and availability of light is an important factor due to
+the reliance of microalgae on light energy. Light wavelength, in-
+tensity, and duration (light/dark cycle) are crucial factors that
+should be considered to ensure efficient degradation of antibiotics
+by algae. Furthermore, in order to optimize the operational pa-
+rameters of photobioreactors for maximum antibiotic removal ef-
+ficiency by algae, the HRT is a crucial element that requires careful
+control. Generally, the HRT utilized for wastewater treatment in
+photobioreactors varies in the range of 2e10 days. Shorter HRT
+conditions improve nutrient loading and could enhance algae
+growth, while longer HRT conditions could increase the nutrient
+removal performance [80].2.5.2. Effects of algae species and antibiotic structures
+The removal of antibiotics using algae as biological methods has
+been achieved with varying removal efficiencies (%) depending on
+the species of algae and the structure of antibiotics (e.g., the hy-
+drophobicity of the antibiotic and the functional groups accessible
+for adsorption) [44]. All algal species are not universally able to
+remove all types of antibiotics from wastewater and therefore, the
+choice of species is a crucial step. As reported by Sutherland and
+Ralph [81], algae from the genera Scenedesmus, Chlorella, and
+Chlamydomonas are the species most thoroughly investigated and
+Fig. 5. (a) N-doped graphite biochar generated from C-phycocyanin extracted from
+Spirulina residues for catalytic persulfate activation, organic oxidation and nonradical
+disinfection, reprinted with permission from Ref. [82], copyright (2019) Elsevier. (b)
+Potassium hydroxide-modified algae-based biochar for sulfamethoxazole removal,
+reprinted with permission from Ref. [95], copyright (2021) Elsevier.
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145commonly utilized for antibiotic bioremediation because of their
+high potential and widespread availability. Moreover, hydrophilic
+substrates are anionic (negatively charged) and have low bio-
+adsorption affinities with microalgal cells, due to cells also being
+negatively charged. Comparatively, lipophilic cationic compounds
+have high bioadsorption affinities with microalgae [81]. For
+example, 68% and 100% of the hydrophilic antibiotics sulfameth-
+oxazole and trimethoprim remained in algal culture after 14 days of
+cultivation, respectively, exhibiting a low level of removal from the
+culture [23]. However, the lipophilic antimicrobial triclosan was
+obviously removed from the culture with 100% triclosan degrada-
+tion observed after 7 days of cultivation [23].
+3. Perspective #2: physico-chemical treatment for antibiotic
+based on algae
+3.1. Modification of algal biochar
+Biochar has been considered as a sorbent with high potential for
+the elimination of antibiotics from aqueous solution [82]. Recently,
+algal biochar, especially macroalgal biochar, has been utilized for
+the fabrication and design of various nanocomposite materials for
+the bioremediation of antibiotics from wastewater [83]. For
+example, mesoporous biochar derived from Chlorella has a large
+specific surface area of 126.4 m2 g1, a mean pore diameter of
+11.62 nm and an overall pore volume of 0.55 cm3 g1, effectively
+separating tetracycline from aqueous solution [84]. In general, the
+biochar production processes and its formation parameters (e.g.,
+heating rate, stay time, pressure, and final temperature) have a
+major impact on the quality, yield and properties (e.g., crystalline,
+porous, or amorphous) of biochar (chemical composition, shape,
+and size) [85]. The heterogeneous chemical composition can be
+effective to determine the surface properties [86]. While, shape and
+size of biochar could affect the large specific surface area, which can
+make it more easily for antibiotic molecules to spread to the
+interact of the biochar and surface [87]. Furthermore, the compo-
+sition and proportion of nutrients in algae-derived biochar is
+probably affected by many abiotic and biotic elements, such as the
+algal species and culture environment (e.g., saline, brackish, or
+fresh) [85]. Algal biochar has a smaller carbon component, while it
+contains more ash, minerals and nitrogen, compared to biochar
+derived from lignocellulosic biomass [88]. Interestingly, algae rich
+in a large abundance of proteins and can be directly converted into
+natural nitrogen-doped biochar in situwithout the requirement for
+any additional modification [89]. According to Wan et al. [90], a
+high content of nitrogen could facilitate the production of p-p
+bonds and further reinforce the ion adsorption of antibiotics,
+improving the antibiotic removal efficiency. In general, algal bio-
+char seems to be a promising procedure for antibiotic removal due
+to the renewable nature of feedstock, high contents of nitrogen,
+high thermal stability, and highly porous structure [91]. How to use
+algal biochar more efficiently remains a challenge.
+Improving pyrolysis temperatures increase the hydrophobicity,
+aromaticity, and specific surface area of biochar [91]. Choi et al. [92]
+evaluated the formation of Spirulina sp.ederived biochar at various
+pyrolysis temperatures for tetracycline removal, with results
+showing that biochar achieved maximum tetracycline adsorption
+efficiency (132.8 mg tetracycline per g biochar) due to p-p and
+hydrophobic interactions, metal complexation and functional
+groups bindings when the pyrolysis temperature was 750 C. It has
+also been reported that the ID/IG (intensity ratio of D band and G
+band) values of biochar decreased from 0.91 to 0.79 with an in-
+crease in pyrolysis temperature from 400 to 900 C, indicating that
+effective thermal pyrolysis conditions could lead to the formation
+of an abundance of well-ordered graphitic carbons [82]. The6
+biochar obtained at 900 C served various roles in organic accu-
+mulation and peroxydisulfate activation, as well as the electron
+shuttle process from sulfamethoxazole to peroxydisulfate (Fig. 5a).
+However, the antibiotics present in wastewater cannot usually
+associate with algal biochar, significantly limiting its functional
+applications. To overcome this limitation and acquire the desired
+properties, biochar has been combined with trimetallic nano-
+particles. For instance, algal biochar reinforced trimetallic nano-
+composite (algal biochar@La/Cu/Zr) was successfully fabricated for
+wastewater remediation due to its promising adsorption/photo-
+catalytic potential [93]. In addition, research has also shown that
+acid-mediated biochar exhibits an increased adsorption efficiency
+for sulfadiazine due to the increased specific surface area of biochar
+[94]. Furthermore, to enhance the sorption efficiency of antibiotics,
+the properties and structure of Enteromorpha prolifera biochar were
+enhanced by modification with potassium hydroxide under high
+temperature conditions, achieving the formation of a highly effec-
+tive sorbent for the removal of antibiotics from wastewater [95]
+(Fig. 5b).
+3.2. The addition of materials to improve the antibiotic removal
+capacity of algae
+3.2.1. Iron (Fe) salts
+Iron is considered to be the most abundant transition metal in
+the natural aquatic environment. Iron (III) salts dissolved in liquid
+undergoes hydrolysis, forming diverse oligomeric species and
+hydroxo substances. Therefore, the photochemical properties of Fe
+(III) salts could be used to form hydroxyl radicals in aquatic envi-
+ronments. It has been well established that hydroxyl radicals are
+one of the most effective oxidizing agents. Algae can release acidic
+dissolved organic compounds, such as fulvic acid and humic acid
+and matter containing carboxyl structures could react with ferric
+ion to enhance the photolysis rate of antibiotics [96]. For example,
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145Ge and Deng [97] reported that the simultaneous photocatalytic
+reduction of two fluoroquinolone antibiotics using an Fe (III)-algae
+system. However, results showed that the efficiency of photo-
+degradation of the two fluoroquinolone antibiotics was better at
+lower antibiotic concentrations in the Fe (III)-algae system [97]. In
+another study, Zhang et al. [49] also reported that the cooperative
+action of algae and Fe (III) could be beneficial to the photo-
+degradation of Norfloxacin. The mechanism of photocatalytic
+degradation of Norfloxacin shown in Fig. 6a.3.2.2. Nutrients
+The addition of suitable nutrients can effectively improve the
+removal rate of antibiotics. It has been reported that the addition of
+glucose and sodium acetate significantly enhanced the antibiotic
+removal capacity of algae [98]. In addition, HCO3
+ and CO2 are
+inorganic carbon species that are used by microalgae for autotro-
+phic growth [99]. Notable improvement was observed in the
+cefradine removal efficiency when CO2 was added into the process
+[100]. Moreover, Zhang et al. [101] revealed that NaHCO3 did notFig. 6. (a) Photodegradation pathway of norfloxacin in water containing both algae and Fe(II
+microalgae and monoclinic BiVO4 under visible-light irradiation, modified from Ref. [106].
+7
+promote self-decomposition of the target antibiotic, instead
+increasing the removal efficiency and total removal capacity of algal
+cells. Specifically, results showed that the target antibiotic removal
+rate could be improved from 10.21% to 92.89% when NaHCO3 was
+added. Furthermore, the addition of sodium acetate as a source of
+organic carbon for algae, has been demonstrated to significantly
+increase the ciprofloxacin removal rate (56%) as compared to the
+system without sodium acetate (13%) [102]. In another study, the
+bioremediation of levofloxacin by C. vulgaris increased following
+the addition of NaCl, with the improvement in levofloxacin removal
+linked to salinity enhanced bioaccumulation and intracellular
+biodegradation [103].3.2.3. Photocatalysts
+Both algae and photocatalysts depend on the availability of light
+resources and therefore, the inclusion of photocatalytic reduction
+in antibiotic removal may produce interesting results and deserves
+further research [104,105]. Recently, the photosynergistic perfor-
+mance of bismuth vanadate (BiVO4) combined with the microalgaeI), modified from Ref. [49]. (b) Mechanism of catalytic degradation of sulfamethazine by
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145Dictyosphaerium sp., was tested under visible-light irradiation for
+the first time (Fig. 6b) [106], achieving 83% antibiotic removal ef-
+ficiency via the BiVO4-microalgae system, which was higher than
+the microalgae only group (41% removal efficiency) [106]. In order
+to identify the photocatalytic degradation mechanism, metab-
+olomic analysis was performed [106], with results showing that the
+tricarboxylic acid cycle was activated and glycometabolic pathways
+were improved when BiVO4 was present. Overall, it is feasible that
+the addition of specific materials can improve the removal capacity
+of algae for antibiotics. However, based on the current research
+status, apart from photocatalytic reactions may inhibit the growth
+of algae [107], the higher costs will prevent it from being using in a
+real-world large-scale application.
+3.3. Hybrid algae-based treatment with advanced oxidation
+processes (AOPs)
+To reduce the bio-recalcitrance of pollutants in wastewater, a
+combination of chemical-biological technologies is an emerging
+method, allowing the removal of inhibitory organics or strongly
+recalcitrant pollutants. AOPs are efficient and powerful techniques
+for wastewater treatment [108], such as ozonation, ultrasonication,
+photocatalysis, UV radiation, and Fenton/photo-Fenton treatment.
+However, AOP technologies are high-cost and require large energy
+inputs, especially when complete mineralization of target organic
+pollutants is required [3]. In general, AOP technologies consist of
+the production of hydroxyl radicals which serve as a powerful
+oxidant with these oxidative radicals acting on the targetmolecules
+[109]. Recently, AOPs have been increasingly used as a pretreat-
+ment process to increase the algal-degradability of antibiotic
+wastewater, particularly when the resulting intermediates are
+easily removed by subsequent biological treatment processes
+(Fig. 7a) [110]. For instance, when the antibiotic concentration was
+1000 mg L1, 97.63% of amoxicillin and 91.08% cefradine were
+removed, after 12 h of C. pyrenoidosa treatment combined with the
+Fenton process (Fig. 7b and c) [111]. Moreover, a reduction in the
+amount of Fenton reagents (H2O2 and Fe(II)) has been shown not to
+affect the Fenton treatment contribution, while the overall removal
+efficiency of the target antibiotic was enhanced [111]. Nevertheless,Fig. 7. (a) Advanced oxidation processes combined with microalgae for the treatment of rec
+and (c) cefradine, via a combined Fenton-algal treatment process, modified from Ref. [111]
+8
+to date, the number of studies assessing combinations of AOPs and
+microalgal treatment remain very limited.
+In addition, UV light sources can be utilized in combinationwith
+bio-treatment [112]. Peng et al. [113] found that algae can improve
+the photodegradation of pollutants under UV light exposed con-
+ditions, speculating that rapid degradation may occur due to hy-
+droxyl radical formation by algae. In order to explore the role of
+algae in the degradation of cefradine using a combined UV-algae
+method, Du et al. [114] assessed the removal efficiency of individ-
+ual C. pyrenoidosa, UV activated, and combined UV-C. pyrenoidosa
+treatments, with results showing that reduced effluent toxicity and
+a relatively high removal rate (22.01% residue) were acquired after
+the UV-algae process, with the algae treatment being vital for the
+reduction of effluent toxicity. Subsequently, green algae have been
+shown to play an important role in the removal of antibiotics, with
+UV irradiation serving as a trigger for algal treatment. This mech-
+anism was demonstrated by Yang et al. [115], with an excellent
+removal efficiency (99.84%) obtained when UV-irradiation was
+applied at 365 nm in combination with S. obliquus [115]. Compar-
+atively, Liu et al. [112] established that exposure to UV at shorter
+wavelengths was crucial for ceftazidime degradation, with wave-
+lengths of 185 nm achieving a removal efficiency of up to 97.26%,
+while wavelengths >280 nm had a removal efficiency of up to
+97.15% and >365 nm achieved a low removal efficiency of only
+8.52% (Fig. 7d). However, although UV irradiation has generally
+been combined with biological approaches for wastewater treat-
+ment [116], the research on the capability of algae combined with
+UV irradiation to remove antibiotics was not sufficient.
+4. Perspective #3: novel approaches for enhancing antibiotic
+removal
+4.1. Potential use of genetic engineering to increase algal
+degradation of antibiotics
+Genetic engineering can be used to add a desired characteristic
+into the target organism. This approach previously used to generate
+engineered algae, with the aim of developing algae with specific
+functionality and enhanced metabolic activities [21]. For example,alcitrant wastewater, modified from Ref. [110]. The removal efficiency of (b) amoxicillin
+. (d) UV/algal treatments, modified from Ref. [112].
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145algal clones have been engineered with functional enzyme genes,
+such as for laccase enzymes, which have been demonstrated to
+increase the stability of oxidoreductases, ensuring efficient
+biodegradation of pollutants [117]. According to Xiong et al. [21],
+laccases are extracellular oxidoreductases that are abundant in
+plants and bacteria. Novel contamination removal genes from
+bacteria have been effectively transferred into mixotrophic algae
+for efficient expression, rather than photoautotrophs [117]. For
+example, the linA gene of P. paucimobilis UT26 was transferred into
+Anabaena sp. PCC7120, resulting in an increase in the lindane
+removal efficiency of this cyanobacterium, even in the absence of
+nitrate [118].
+Microalgal genetic engineering still faces some key challenges,
+including 1) the structure and composition of cell walls, 2) selection
+agent sensitivity 3) and genomic ploidy [119]. More specifically, the
+resilient and complex nature of cell walls presents a main chal-
+lenge. Algae cell walls are a complicated heteropolymer incorpo-
+rating carbohydrates, lipids, hydrocarbons, carotenoids, tannins,
+proteins, and lignin, making them highly resistant to infiltration
+[120]. The selection of a suitable agent plays a crucial role in the
+effectiveness and efficiency of algal conversion and is dictated by
+the species present and the antibiotics native resistance [119].
+While, in terms of ploidy, which is the number of homologous sets
+of chromosomes in a biological cell and could play an important
+role in the efficiency and success of transformation. The main
+characteristics of different transformation approaches utilized in
+algae genetic engineering studies are summarized in Table 2.
+4.2. Integration of algal antibiotic removal with bioelectrochemical
+systems
+Electricity production from microbes (bioelectricity) has
+recently attracted increasing attention as a source of sustainable
+energy as a fourth-generation fuel [122]. Bioelectrochemical sys-
+tems (BESs) have progressed significantly in the past two decades
+[123]. In general, microbial electrolysis cells (MECs) and microbial
+fuel cells (MFCs) are the major applications of BESs, and when
+coupled with electrochemical redox reactions and microbial me-
+tabolisms, provide an excellent option for antibiotics removal [124].
+Recently, photosynthetic microbial fuel cells (PMFCs) have been
+developed as novel BESs, in which photosynthetic organisms act as
+electron donors in the anode chamber or metabolize and grow to
+form electron donors in the cathode chamber (Fig. 8a, b, c) [125].
+Sharma et al. [125] used C. reinhardtii in the cathode chamber of a
+PMFC, with the system achieving a Coulombic efficiency of 9.068%
+along with 73.30% COD removal. Aiyer used a co-culture ofTable 2
+Main characteristics of different transformation methods utilized in algae genetic engine
+Transformation methods Characteristics
+Electroporation Easy mode of operation. Commonly utilize
+Induced transformation and natural
+transformation
+Mostly in cyanobacteria and is currently r
+Silicon carbon whiskers method Overcomes the cell wall interference to ex
+However, strict protection against the haz
+Recombinant eukaryotic algal viruses Promising application potential in brown
+Trans-conjugation It is mostly in cyanobacteria and is curren
+Glass beads The procedures are simple and do not requ
+of immature protoplast regeneration tech
+Agrobacterium tumefaciens-mediated
+genetic transformation
+Performance is reliant on diverse factors,
+Microinjection A highly effective and expensive approach
+Artificial transposon method Exogenous genes can be directionally inte
+Biolistic transformation Exogenous DNA could be imported into n
+insufficient genetic background of substan
+equipment is required.
+9
+Escherichia coli and Pseudomonas aeruginosa as anode microbes and
+inoculated C. vulgaris in the cathode chamber, resulting in an in-
+crease in mean power density by 41.7% (Fig. 8d) [126]. Moreover, a
+new algae-bacteria powered biofuel cell was devised for antibiotic
+wastewater remediation and energy production, in which algae-
+bacteria (C. vulgaris and anaerobic sludge) cooperation was com-
+bined with a cathodic bioelectrochemical procedure for high ni-
+trogen removal, while simultaneously prompting anodic
+bioelectrochemical reduction of the antibiotic florfenicol, with
+instantaneous electron absorption from the co-substrate [127]. In
+another study, pharmaceutical wastewater was pre-treated in a
+photobioreactor utilizing S. abundans, with the effluent further
+treated in a PMFC for the generation of electricity and biomass,
+resulting in 93.71% of phosphate and 97.12% of nitrate being
+removed [128]. Although PMFCs allow sustainable energy forma-
+tion from wastewater with high removal rates, system scale-up
+remains a major challenge hindering the utilization of PMFCs in
+industrial applications. Yang et al. [129] proposed the use of a PMFC
+stack, including multiple anodic chambers installed in an algal
+raceway pond, as shown in Fig. 8e, achieving a removal of nearly
+98% of the ammonium in the aqueous media of the anode chamber.
+In summary, these studies suggested that algae-MFC systems
+seems to be a novel and sustainable alternative for antibiotic
+wastewater treatment [21].
+5. Future perspectives and research potential
+Considering the benefits of algae-based techniques in terms of
+environmental impact, sustainability, and economic viability, they
+provide alternative biological methods for the degradation of an-
+tibiotics from aquatic environments. However, these technologies
+still face some challenges that require further comprehensive
+research.
+(1) The diversity of physicochemical characteristics of antibiotics
+are a major factor for algae, requiring the selection of specific
+combinedmechanisms to degrade wastewater contaminants
+(Table 1). Moreover, apart from bioadsorption, bio-
+accumulation, biodegradation, photodegradation, volatiliza-
+tion, and hydrolysis, there may be other mechanisms active
+during the removal process and future research should focus
+on these aspects.
+(2) The potential of algae to degrade antibiotics is high. How-
+ever, each algal species can degrade different types of pol-
+lutants and thus, the development and design of new algal
+species with increased capacity, affinity, and selectivity forering [121].
+d for distinct genera but restricted on brown algae.
+arely utilized.
+ogenous DNA compared to the glass bead method and has low operational costs.
+ard of inhalation is required.
+algae. However, still requires comprehensive and extensive research.
+tly rarely used.
+ire expensive transgenic equipment. However, it is limited in macroalgae because
+nology.
+with this approach being technically challenging.
+with delicate and complicated processes.
+grated into the receptor genome.
+umerous tissues and cells. Diversified vectors could be used to overcome the
+ces. The manipulation is mature and controllable, but expensive and specialized
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145the bioremediation of antibiotics is a promising research
+focus. Genetic engineering approaches also seem to have
+high potential for enhancing antibiotic degradation.
+(3) Biochar has been regarded as a promising biosorbent for
+organic pollutant removal from aquatic environments [130].
+Algae contains an abundance of proteins and can be directly
+converted into classic nitrogen-doped biochar in situwithout
+any additional modification. However, although algal biochar
+has been applied to treat wastewater, the potential for
+treatment of antibiotics has not been clearly established to
+date.
+(4) Due to the low operational cost and high performance of
+microalgal systems, they have been utilized to degrade
+numerous antibiotics in wastewater. Unfortunately, antibi-
+otics can be bioaccumulated in living organisms (e.g., cipro-
+floxacin in green algae) leading to the potential feminization
+of male fish and decreased reproduction processes [109]. For
+this reason, algae need be associated with other treatment
+methods when bioadsorption or bioaccumulation is the
+primary mechanism of antibiotic removal.
+(5) Some fungi can form extracellular enzymes with low speci-
+ficity and are highly convenient for the reduction of some
+antibiotics, even those exhibiting low water solubility [31].
+However, as mentioned above, few studies have investigated
+the potential for their association in algae-fungi consortia.
+Therefore, further research is required as multiple algal
+strain methods have shown promising results for antibiotics
+treatment.
+(6) Some studies using algae for bioremediation have achieved
+successful operation at an industrial scale [131,132].Fig. 8. (a) Algae utilization as a source of carbon in the MFC anode for electricity production.
+(c) A dual-chamber photosynthetic microbial fuel cell configuration, modified from Ref. [1
+chambers combined an algal raceway pond to form a photosynthetic microbial fuel cell sta
+10Nevertheless, most current research has been at the
+laboratory-scale, with systems operated using synthetic
+media despite the well-known complexity of wastewater
+matrices that vary depending on the WWTPs and
+geographical regions [63]. Therefore, future work should
+focus on real polluted wastewater and industrial scale
+cultivation.
+(7) Previous research has primarily focused on enhancing
+removal efficiency of algae-based technologies for antibi-
+otics, while insight on the fate of ARB and ARGs in aqueous
+media remains limited [21]. The formation and spread of
+ARGs in the environment is increasing worldwide, posing a
+major problem that can severely affect environmental and
+human health [15]. Thus, the treatment of biomass accu-
+mulated downstream is particularly important and this
+should be considered carefully in future studies. For example,
+the biomass could be reused as functional biochar for anti-
+biotic removal.6. Conclusions
+This review highlights the application of algae-based technol-
+ogies for effective antibiotic removal. For the removal of antibiotics,
+bioadsorption, bioaccumulation, biodegradation, photo-
+degradation, volatilization, and hydrolysis are the main mecha-
+nisms that occur during the removal process by algae-based
+technology. Bioadsorption by algal cells takes place when antibi-
+otics are either adsorbed to cell wall components, or onto organic
+matter that is secreted by the cell. The bioaccumulation capacity of(b) Live algae utilized as an electron donor to the MFC anode for electricity production.
+25]. (d) Schematic representation of the microbial fuel cell [126]. (e) Multiple anodic
+ck, reprinted with permission from Ref. [129], copyright (2019) Elsevier.
+S. Li, P.L. Show, H.H. Ngo et al. Environmental Science and Ecotechnology 9 (2022) 100145living organisms is based on various chemical, physical and bio-
+logical mechanisms, containing both intra- and extracellular pro-
+cesses, whereas passive uptake plays only a minor and poorly
+defined role. Biodegradation includes the conversion of compli-
+cated substrates into simpler molecules via catalytic metabolic
+reduction. Moreover, the biodegradation capabilities of algae may
+be improved indirectly by symbiotic communication with bacteria.
+Fungi are another important type of microbe that is able to facilitate
+antibiotic removal by algae. In addition, a combination of multiple
+algae could be beneficial to the removal of antibiotics. Antibiotic
+degradation by algae is influenced by many factors, such as pH,
+temperature, CO2 enrichment levels, light intensity, HRT, algal
+species, substrate concentration, and the structure of target anti-
+biotics. Algal biochar, especially macroalgal biochar, has been uti-
+lized for the fabrication and design of various nanocomposites as a
+remediation agent for antibiotics removal from the wastewater.
+Moreover, the nitrogen content of biochar could enhance the pro-
+duction of p-p bonds and strengthen ion adsorption of antibiotics,
+improving the efficiency of antibiotics removal. The addition of
+other materials (e.g., Fe (III) salts, appropriate nutrients and pho-
+tocatalysts) can also improve the photosynthetic activity of algae,
+further enhancing the antibiotics degradation effect. AOPs could be
+used as a pretreatment process to increase the algal-degradability
+of antibiotic wastewater, particularly when the resulting in-
+termediates are easily removed by subsequent biological treatment
+processes. Furthermore, novel approaches for enhancing antibiotic
+removal based on algal treatment are also summarized in this re-
+view, including genetic engineering and PMFCs, which are
+demonstrated to be potentially valuable technologies for large-
+scale antibiotic removal applications.
+Declaration of competing interest
+No conflict of interest exits in the submission of this manuscript,
+andmanuscript is approved by all authors for publication. Thework
+has not been published previously, and not under consideration for
+publication elsewhere.

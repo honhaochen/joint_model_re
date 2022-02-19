@@ -1,0 +1,322 @@
+Immunology has come a long way, from its early religious beginnings thousands of years ago, to the explosion of 
+immunological data in the 21st century. Thanks to discoveries in immunology, our world has seen tremendous 
+progress in how we understand and treat disease. However, a lot of unmet clinical needs remain, which require 
+focused, real-time collaboration at the clinical and scientific research forefronts. Moreover, the current exponen- 
+tial growth in the generation of research data makes it impossible to handle, analyze, visualize, and interpret 
+such data without the use of advanced computational tools. We think immunoinformatics- a discipline at the 
+intersection of immunology and computer science- will greatly increase efficiency in research productivity and 
+disease treatment. 
+This perspective paper aims to emphasize the role of immunoinformatics toward pushing the boundaries 
+of immunology research. It will also illustrate its clinical applications, including disease prevention, diagnosis, 
+prognosis, treatment, monitoring, as well as in drug discovery. 
+We believe informatics approaches will be implemented increasingly more frequently in research. Thus, here 
+we also discuss a set of fundamental prerequisites to facilitate the efficient and ethical integration of informatics 
+in research and ensure immunological advancements provide maximum benefits to society.  
+Immunology, as the scientific discipline we know it today, was born
+n the beginning of the 19th century with the discoveries of phagocyto-
+is by Elie Metchnikoff, and neutralizing antibodies by Emil von Behring
+nd Paul Ehrlich [1] . Nevertheless, the roots of immunology can be
+raced back to the earliest human civilizations, intertwined with our
+nherent need to heal disease. 
+Given our primal need to heal disease, it is not surprising that
+he ancient medical systems, along with their gods, arose indepen-
+ently in various parts of the world [2–4] . In ancient Egypt we see
+ekhmet, goddess of healing and medicine [5] ; in India we see the rise
+f Ayurvedic medicine [6] . In Mesopotamia we see Ningishzida, god of
+he underworld and patron of medicine [4] ; Ixtlilton, god of medicine
+n Mesoamerica [7] ; and lastly, god Asclepius, healer of men in Ancient
+reece [3] . These deities highlight the importance of medicine in the
+ncient world, which was initially practiced using rudimentary tools
+forceps, scalpels, bone saws), endemic plants, herbs, and animal parts
+uch as brain and snakeskin [4–9] . ∗ Corresponding author at: Mount Sinai Hospital, Joseph & Wolf Lebovic Ctr., 60 M
+E-mail address: yprassas@gmail.com (I. Prassas). 
+1 These authors contributed equally to this work. 
+ttps://doi.org/10.1016/j.immuno.2021.100007 
+eceived 5 August 2021; Received in revised form 2 December 2021; Accepted 9 Dec
+667-1190/© 2021 The Author(s). Published by Elsevier B.V. This is an open access aurray St [Box32]; Flr 6 - Rm L6-201, Toronto, ON, M5T 3L9, Canada. 
+Fast forward a few millennia, advancements in the field of immunol-
+gy based on the scientific method have transformed the way we diag-
+ose, treat, and prevent disease. The 21st century has seen an exponen-
+ial growth in the generation of research data –with immunology being
+ne of the fastest growing fields in the biological sciences [10–12] . De-
+pite the high pace of scientific output however, we still fall short in our
+bility to fully exploit the data generated [13] . Nowadays, we appreci-
+te that most diseases are complex and multifactorial, and expectations
+rom research are higher and louder than ever before. For example, so-
+ial media were inundated with people’s disappointment in the lack of
+ vaccine or treatment, even at the onset of the COVID-19 pandemic.
+s unrealistic of a demand as this may sound, from a researcher’s point
+f view, the reality is that we are expected to achieve more, faster. The
+act that a variety of safe and efficacious vaccines against SARS-CoV-
+ were distributed around the world only a year after the onset of the
+andemic is both one of the proudest achievements of modern science
+nd a testament to its potential. However, we don’t have to face another
+andemic for research to function at its peak level. While there are treat-
+ents for most common conditions nowadays, patients and cliniciansember 2021 
+rticle under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ) 
+M.K. Chatanaka, A. Ulndreaj, D. Sohaei et al. ImmunoInformatics 5 (2022) 100007 
+are no longer satisfied with therapies that have serious side effects. On
+he other hand, rare diseases are left largely unaddressed in the scien-
+ific and the drug discovery process [14] , which on average has become
+ess efficient and more costly [15] . Importantly, we want to prevent the
+mergence of disease altogether, based on early risk factors [16] . These
+nmet clinical needs require us to establish “peak performance ” prac-
+ices routinely. 
+We believe that this will be achieved by better integration of infor-
+atics in immunology research. 
+. Immunoinformatics applications 
+Immunoinformatics, or computational immunology, is a field that
+onnects computer science and immunology by usage of computational
+esources and methods to handle and understand immunology data
+17] . Informatics has been incorporated in many immunological top-
+cs, from disease prevention and diagnosis to drug discovery ( Fig. 1 ).
+urrent uses rely mostly on interpretation of wet-lab immunological re-
+ults using computational methods, but many advances in the field have
+lready allowed for purely data-driven, in silico discovery to take place
+sing publicly available data, as we will highlight below. 
+.1. Disease prevention 
+One of the key capabilities of immunoinformatics in disease preven-
+ion is mapping immune epitopes, which can be used for vaccine design,
+llergy prediction, disease understanding and host-pathogen interaction
+nalyses [18] . Fig. 1. Applications of immunoinformatics in medicine, drug
+2 Advanced prediction algorithms are necessary in reverse and struc-
+ural vaccinology, in order to effectively characterize pathogenic epi-
+opes and design vaccines faster and more efficiently [19] . With the use
+rtemis Comparison Tool (ACT), comparative sequencing of viruses can
+lucidate extensive mutations, insertions and deletions. This can help
+n designing T-cell epitope-based peptide vaccines, and multi-epitope
+RNA vaccines, with the mRNA vaccine for SARS-CoV-2 [20] and Zika
+irus [21] , being two recent examples. A most recent example of reverse
+accinology using computational methods is the in silico study on the T-
+ell and B-cell epitope prediction for the SARS-CoV-2 virus [22] . Here
+hey used the screening server RANKPEP, which employs the position-
+pecific scoring matrix (PSSM) [23] , the BepiPred and Kolaskar & Ton-
+aonkar Antigenicity servers [24] , which use hidden Markov models
+nd amino acid propensity scale methods, as well as the server AllerTOP
+o compute allergenicity of the predicted vaccine-antigen [25] . 
+Adverse effects of vaccines are highly personalized, with pharmaco-
+enetic studies having identified polymorphisms in HLA and other genes
+hat lead to vaccine-induced immune responses to various diseases [26–
+8] . For example, macrophagic myofasciitis (MMF) is an intramuscular
+eaction against all vaccines containing aluminum hydroxide [29] , and
+mmunoinformatics analyses have been able to correctly classify MMF
+atients using F-FDG brain profiles [30] . Moreover, 5–10% of vaccines
+o not provide adequate long term antibody levels [31] . Machine learn-
+ng (ML) algorithms and tools will allow for personalized vaccination
+o develop, and molecular dynamics will permit theoretical epitope ex-
+erimentation through atomic motion within a molecular system, rather
+han using traditional wet lab methods [32] . 
+Additionally, phylogenetic analyses can determine the evolutionary
+elationship between viral strains, which can help in epitope prediction. discovery and research. Created with Venngage.com. 
+M.K. Chatanaka, A. Ulndreaj, D. Sohaei et al. ImmunoInformatics 5 (2022) 100007 
+For example, evidence of horizontal gene transfer of two genes ( ORF8
+nd ORF6 ) was found in the HCoV-HKU1 strain of the SARS-Cov-2 virus,
+ompared to the first Wuhan-Hu-1 strain, thus delineating the evolution-
+ry trajectory of the virus [33] . 
+.2. Disease pathogenesis and genetic predisposition 
+Understanding host-pathogen interactions can answer questions re-
+arding disease pathogenesis. Studies have indicated that Herpes sim-
+lex has gene products that are homologous to human proteins such
+s ApoE4 and Clusterin, which are implicated in Alzheimer’s disease
+AD), hinting at molecular mimicry as an underlying mechanism of
+D pathogenesis following H.simplex infection [ 34 , 35 ]. These studies
+sed resources such as the BepiPred server [36] in the Immune Epitope
+atabase [ 24 , 37 ]. Another team developed an algorithm called Com-
+ass, which uses single-cell RNA-seq and flux balance analysis to char-
+cterize cellular metabolic states and infer the pathogenic potential of
+h-17 cells based on a metabolic switch [38] . 
+Comprehending genetic predisposition to disease can direct people
+o take preventative measures, and thus reducing risk to developing the
+isease. Taking genotype datasets and using support vector machine
+SVM) learning or random forest algorithms, disease prediction mod-
+ls have been created, linking single nucleotide polymorphisms (SNPs)
+o complex disease phenotypes such as celiac disease [ 39 , 40 ]. These
+ases highlight how informatics has become the foundation of contem-
+orary omics studies, without which interpretation of data would not
+e possible. 
+.3. Biomarkers for diagnosis, prognosis and monitoring 
+Biomarkers are invaluable in the clinical setting, and application of
+mmunoinformatics on proteomic and immunomic data can accelerate
+iomarker discovery. Prognostic serum biomarkers for systemic lupus
+rythematosus (SLE) in the form of autoantibodies have been discovered
+ 41 , 42 ], but initial evaluation tests do not offer pattern information for
+iagnosis. Using k nearest neighbor (kNN), an application was devel-
+ped in order to accurately identify patients with SLE, thus benefiting
+hem from an earlier and accurate diagnosis [43] . In another example,
+alon et al . developed a methodology named Immunoscore, which al-
+ows quantification of the in situ immune infiltrate in colon cancer, a
+rognostic indicator that can be used in future clinical practice [44] .
+hen Immunoscore is coupled with Artificial Intelligence (AI) such as
+L, digital pathology-based cancer diagnostics can be accelerated, with
+ore robust results [45] . Furthermore, a new procedure called FAUST
+Full Annotation Using Shape-constrained Trees) was used to detect PD-
+ expressing CD8 + T cell populations, making prognosis in a Merkel
+ell carcinoma anti-PD-1 trial possible [46] .Moreover, with the aid of
+eep learning methods, an automated scoring of HER2 expression that
+an direct patients with breast cancer to the right targeted therapy has
+een developed, showing that computational approaches can facilitate
+linical decision making [47] . 
+Digitized whole slide imaging and AI have been used in disease di-
+gnosis, monitoring [ 48 , 49 ] and detection, such as invasive ductal car-
+inoma [50] . Additionally, convolutional neural networks (CNNs) have
+een used at chest radiography, accurately identifying and classifying
+ulmonary tuberculosis [51] . A different representation learning ap-
+roach, CellCnn, was used to reconstruct cell type-specific signaling re-
+ponses and to identify diseased cell populations with HIV infection,
+s well as rare leukemic blast populations [52] . Lastly, imaging has
+een applied in predicting clinical outcomes of patients treated with
+mmunotherapy [53] . 
+Notably, a handful of diagnostic biomarkers have been developed
+nd approved for diseases such as SLE and AD. However, most of them
+re not used clinically, because we do not understand their role in dis-
+ase pathogenesis [ 54 , 55 ]. With ML tools and with precision medicine
+rowing traction, it may be possible to salvage many of them [54] . 3 .4. Disease treatment 
+Autologous hematopoietic stem cell transplantation (AHSCT) replen-
+shes the healthy immune cells pool following depletion of malignant
+r autoreactive immune cells [ 56 , 57 ]. Through clinical trials, AHSCT
+as demonstrated to effectively induce long-term remission in multi-
+le sclerosis [58] , type 1 diabetes [59] , and other autoimmune diseases
+ 58 , 60 , 61 ]. 
+AHSCT, however, is a technology that is prone to failures, with cases
+f sepsis and viral reactivations [62] . For example, in rheumatoid arthri-
+is, there is a gap between patient treatment with AHSCT and the posi-
+ive response [63] . Discovery of robust and reproducible biomarkers, as
+ell as adequately collecting, storing and assessing pre- and post AHSCT
+atient blood and bone marrow samples, will assist in immune moni-
+oring [64] . In other words, biobanking will become crucial, assisting
+n AHSCT optimization, by enabling personalized treatment, depending
+n patient genetic and environmental background, thereby increasing
+HSCT’s utility. To this end, the integration of immunoinformatics in
+he analytical process is crucial. 
+Lastly, in silico research for epitope prediction in identification of
+ancer-specific neoantigens will assist in cancer therapeutics and im-
+unotherapy. Efforts to create pipelines for this purpose have already
+een successful, with programs such as ProTECT that allow identifica-
+ion and ranking of tumor neoepitopes from patient data [65] . Predic-
+ion of tumor-associated neoantigens is another strategy for cancer ther-
+peutics, with computational pipelines for somatic mutation calling and
+LA-allele typing already established [66] . 
+.5. Drug discovery 
+Bringing a new therapeutic to market takes on average a decade and
+osts $2.5B [67] , with cost of failure dominating the expenses [15] . This,
+oupled with a significant decline in drug discovery efficiency in the last
+0 years [15] , creates grand opportunities for informatics to improve the
+rug discovery pipeline. Advancements in computational methods along
+ith ever-expanding databases for drug compounds, clinical records,
+nd biomedical data [ 68 , 69 ] promise to enhance efficiency of drug dis-
+overy and development, and reduce risk of failure. 
+AI has been used in various phases of the pipeline, such as drug
+esign [70–72] side effects identification in monotherapy or polyphar-
+acy [ 73 , 74 ], and even excipient selection [75] . Furthermore, infor-
+atics can help identify the most appropriate participants in clinical
+rials, which is the costliest and most time-consuming part of the process
+ 67 , 76 ]. For example, in some cases, exclusion rates of eligible patients
+ho have comorbidities and use multiple medications can be as high
+s 80% [77] . Thus, matching most appropriate patients with a clinical
+rial using informatics will not only accelerate the testing process, but it
+ill also enhance its success rate, by favoring an improved risk-benefit
+rofile for the tested therapies. Ultimately, these informatics-aided ap-
+roaches will lower the cost of drug discovery, while increasing the
+peed from inception to market, ensuring that more people have timely
+ccess to effective treatments at a potentially lower cost. 
+. Future perspective 
+We are rapidly moving toward a world where immunology research
+s highly efficient, interconnected and democratized. At the center of
+his reality is the integration of informatics in every aspect of immunol-
+gy. Based on current trends, we anticipate that in the future researchers
+round the world will routinely mine open access databases to test their
+ypotheses and use sophisticated, user-friendly tools, to design their
+ench experiments most effectively. Using informatics tools, the gen-
+rated data will quickly turn into useful insights and effortlessly be de-
+osited in the public repository for future use. In this paradigm, answer-
+ng interesting immunology-related questions will no longer be a priv-
+lege of a few well-funded institutions, but a pursuit for anyone with
+M.K. Chatanaka, A. Ulndreaj, D. Sohaei et al. ImmunoInformatics 5 (2022) 100007 
+Fig. 2. Gearing toward an interconnected future of immunology research using informatics and enabled by five important elements; data-driven science, real time 
+collaboration, data governance, data literacy and global infrastructure.
+computer and an internet connection [13] . As a result, immunology
+ill be a familiar concept to the layperson, who will be open to rou-
+inely monitoring their immune system from personal data collected via
+earable devices and personalized laboratory tests, which in turn will
+reate more data for further research. 
+This real-time and democratized pursuit of immunology research
+round the globe, will propel biomarker discovery and the development
+f personalized vaccines, therapeutics, and disease management modal-
+ties at an unprecedented speed, at a much lower cost. 
+These are not exaggerated predictions of what immunology could
+ecome one day. In some sense, we are already there, as seen by the
+mergence of direct-to-consumer products and services that use AI and
+ur biological data to improve our health. For example, in China, AI
+n health platforms are helping users manage their lifestyle to reduce
+hronic disease burden [78] . The company 23andMe estimates genetic
+redisposition to various diseases, based on one’s DNA [79] . Similarly,
+n American company’s mission “to make chronic illness optional ”, by
+ecommending dietary supplements based on one’s microbiome signa-
+ure, is telling of the era we are headed toward [80] . To accelerate our
+rogress toward this reality, we need to establish the five fundamental
+illars below ( Fig. 2 ): 
+1. Data-driven science . Currently, research is hypothesis-driven, which
+is limited by the deductive thinking of the human mind. Thanks to
+the abundance of research data, data-driven research will be pos-
+sible, leading to the discovery of biological truths that would oth-
+erwise be unnoticed by the human eye. This data-driven approach
+better reflects the complexity of health and biological phenomena
+and could therefore be more relevant to discovery and clinical prac-
+tice [13] . However, it requires a radical shift in the way we con-
+duct basic research, from the established paradigm of: hypothesis–
+> wet lab experiment–> clinical translation, to: data analysis–> wet
+lab experiment–> clinical translation and potentially to: data analy-
+sis –> clinical translation [13] . Also, given the fundamental role of
+research data in the sustainability of data-driven science, we believe
+the mere generation of scientific data will be recognized as a worthy
+scientific achievement, thus broadening the definition of academic
+productivity and achievement. Indeed, the establishment of dataset
+journals, such as Scientific Data (Nature) and Data in Brief (Elsevier) ,
+are a testament to these trends. 
+2. Real-time interdisciplinary collaboration . Scientific questions will be
+tackled simultaneously by several experts, resulting in efficient and
+clinically meaningful research output. Immunology researchers who
+are interested in understanding disease pathophysiology for exam-
+ple, will work in tandem with clinicians, statisticians, data scientists,4 and medical chemists at the same time. Thus, research will be con-
+ducted in large networks at improved efficiency and quality. Such
+large collaborations have already emerged in the form of interdisci-
+plinary international consortia [ 81 , 82 ]. 
+3. Data governance . Policies and principles adopted at the international
+level will provide a common framework for data labeling, storage,
+sharing, and mining, enabling full access and use of biomedical re-
+search data. An exciting initiative to this end is that of the Na-
+tional Institutes of Health (NIH), which guides and incentivizes re-
+searchers to produce datasets following principles that are FAIR (i.e.
+Findable, Accessible, Intraoperative, Reusable) [83] . We believe all
+countries should provide clear guidelines to standardize and stream-
+line the lifecycle of research data and ensure that researchers ad-
+here to ethical practices while making the most of the generated
+data. 
+4. Data literacy . Computational methods will be an integral part of im-
+munology research; thus, everyone involved in a research network
+will sufficiently understand the fundamentals of data science and be
+kept abreast with computational tools and advancements that are
+relevant to their line of work. To this end, continuous improvement
+of data-relevant skills should be encouraged. 
+5. Global infrastructure . A large, networked community of researchers
+exchanging data in real-time requires the creation of a global public
+infrastructure that enables the storage, curation and mining of data
+for a wide range of users [ 13 , 84 ]. To prepare for this reality, research
+institutions and governments need to invest in the integration of ad-
+vanced computational tools in biomedical research such as cloud
+and quantum computing, worldwide access to high-speed internet,
+and incentivize researchers to adopt new computational technolo-
+gies that improve discovery efficiency. 
+. Conclusions 
+With the exponential growth in immunology research and the ad-
+ances in high-throughput technologies, we are faced with two contra-
+ictory challenges: On the one hand, the data deluge challenges our
+apacity to handle and capture value from data, thus necessitating the
+se of informatics in research. On the other hand, comprehensive, high-
+imensional research data still need to be generated to improve existing
+omputational tools [85] . Therefore, we believe the future of immunol-
+gy is not a world where informatics overtakes bench work, but one
+here both disciplines are integrated ( Fig. 2 ). We anticipate that this
+erspective will facilitate a growing dialog about the integration of in-
+ormatics in immunology research to ultimately accelerate our progress
+oward disease prevention and medical care.

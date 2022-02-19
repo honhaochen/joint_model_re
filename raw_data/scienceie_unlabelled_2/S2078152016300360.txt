@@ -1,0 +1,286 @@
+Blebs are spherical plasma membrane protrusions formed when the membrane detaches
+from the underlying cortex as a result of actomyosin contractility-powered increase of hy-
+drostatic pressure in the cytoplasm. Different tumour cells metastasize using blebbing as
+alternative mode of migration by squeezing through pre-existing pores in the extracellular
+matrix (ECM). This study investigated the role of the lipid signalling phospholipases D1
+and D2 (PLD1/PLD2) in bleb formation in human fibrosarcoma HT1080 cell line in the ex-
+tracellular matrix, and reports that pharmacological inhibition of PLD1 and PLD2 with a
+potent universal PLD inhibitor potently inhibited bleb formation in HT1080 cells embed-
+ded in three-dimensional (3D) matrigel matrix. Use of smartpool small interfering RNAs
+(siRNAs) that target PLD1 and PLD2 isoforms at four different sequences revealed that
+PLD2, but not PLD1 is involved in blebbing of HT1080 cells. Furthermore, we demonstrate
+that PLD2-mediated bleb formation is via the PA-LPAR-Rho-ROCK signalling pathway.
+Thus, PLD2 is a promising therapeutic target in combating metastasis of cancers of fibrous
+connective tissues.
+Introduction
+Blebs are spherical, blister-like plasma membrane protrusions which are formed by actomyosin-propelled cortex contractility
+thereby detaching the membrane from the underlying cortex which is under constant strain due to the sliding activity of myosin
+motors with actin filaments (Tinevez et al., 2009). These blister-like protrusions which appear and disappear within short interval
+of time are also caused by local breakage of the cortex itself (Charras and Paluch, 2008). Although observed for a very long time in
+different cell types (Kubota, 1981; Trinkaus, 1973), there are now ample evidences that cancer cells metastasize through
+pre-existing pores in the extracellular matrix (ECM) using plasma membrane blebbing as an alternative mode of migration
+The life cycle of a cellular bleb is divided into three phases: nucleation, expansion (bleb growth) and retraction. Bleb nucle-
+ation is triggered by extracellular stimuli such as experimental techniques involving two-photon laser ablation of the cortex there-
+by creating a weaken cortex-membrane interaction (Goudarzi et al., 2012) and this subsequently bulges the membrane from the
+cortex. The growth phase which lasts between 5 and 30 s, is caused by the generation of hydrostatic pressure in the cytoplasm by
+actomyosin contractility. The bleb becomes enlarged in volume as cytosolic fluid and lipid flow through the bleb neck into the
+bleb resulting in an increase in the surface area of the bleb (Charras and Paluch, 2008). Bleb expansion gradually subsides as
+the rate of actomyosin contractility-dependent fluid and lipid influx becomes inadequate to sustain a continuous growth
+(Charras et al., 2006). Thus, an expanding bleb attains a brief steady state (bleb stabilization) before retraction begins. Retraction
+is the longest phase and can last up to 2 min (Charras et al., 2008). It is accompanied first by recruitment of membrane-cortex
+linker proteins (ezrin, radixin and moesin) within the bleb membrane before reassembling of actin filaments at the bleb mem-
+brane. This is followed by recruitment of motor proteins, especially myosin II (Charras et al., 2006). The bleb is then retracted
+by the newly formed cortex towards the cell body (Norman et al., 2010).
+The lipid signalling phospholipase D (PLD) exists in two isomeric forms as PLD1 and PLD2, and catalyses the hydrolysis of the
+phosphodiester bond of membrane phospholipid phosphatidylcholine (PC) to yield phosphatidic acid (PA) and free choline (Su
+et al., 2009a). Whereas the free choline diffuse away from the membrane, the versatile lipid second messenger PA remains in
+the membrane to mediate biological processes such as signal transduction (Zhao et al., 2007), cell proliferation (Oude
+Weernink et al., 2007), membrane vesicle trafficking (Shen et al., 2001), lipid metabolism (Wagner and Brezesinski, 2007),
+actin cytoskeletal reorganization (Du and Frohman, 2009), phagocytosis and exocytosis (Corrotte et al., 2006; Shen et al.,
+2001), cell survival (Foster, 2009), and cell migration (Scott et al., 2009; Su et al., 2009b). Thus, impairment of PLD activity has
+been correlated with pathological conditions such as cancer, neurodegeneration, diabetes and inflammation (Selvy et al., 2011).
+In this study, we investigated the role of PLD in formation of membrane blebs in human fibrosarcoma HT1080 cell line, a cell
+line which has been previously reported to profusely bleb upon inhibition of proteolysis and matrix degradation (Wolf et al.,
+2003). This makes the HT1080 cell line an excellent model in studying membrane bleb formation in an in vitro setting, and
+this informed our choice of this cell line for this study. We demonstrate that in HT1080 cells cultured in 3D matrigel matrix,
+PLD2, but not PLD1 signals through PA to mediate bleb formation in a mechanism that requires the LPA-LPAR-ROCK
+(lysophosphatidic acid/lysophosphatidic acid receptor/Rho-associated kinase) signalling pathway. Thus, development of novel
+PLD2-specific inhibitors is a promising therapeutic strategy in fighting cancer.
+Material and Methods
+Cell Culture and Reagents
+Human fibrosarcoma HT1080 cell line was obtained from HPA culture collections, Salisbury, UK. Cells were cultured in
+Dulbecco's modified Eagle's medium (DMEM) supplemented with 10% (v/v) foetal bovine serum, 1% (2 mM) L-glutamine, 1%
+(100 μg/ml) streptomycin, and 1% (100 units/ml) penicillin at 37 °C in humidified 5% (v/v) CO2 atmospheric air. Cells were main-
+tained and passaged every 48 h. Smartpool human PLD1 and PLD2 siRNAs were purchased from Fisher Scientific, Loughborough,
+UK. Antibodies against PLD1 and PLD2 were obtained from Abcam Plc, Cambridge, UK. Batimastat (BB-94), FIPI (5-fluoro-2-
+Indolyly des-chlorohalopemide), Go6976, LY294002, PIC set VI (protease inhibitor cocktail VI), U73122, and Y27632 were
+purchased from Calbiochem, Nottingham, UK. VPC-32138 was a kind gift from Prof Ketan Patel (University of Reading, UK). All
+inhibitors except PIC which was reconstituted in dH2O, were dissolved in DMSO.
+siRNA Transfection
+The transfection of HT1080 cell lines was performed using DharmaFECT transfection reagent set 4 (T-2004-02) according to
+the manufacturer's instruction. Briefly, cells were seeded on 6-well plate at a density of 2 × 105 cells/well and incubated at
+37 °C with 5% CO2 for 24 h before transfection. From a 20 μM stock siRNA, 5 μM siRNA solution was prepared in 1× siRNA buffer
+(20 mM KCl, 6 mM HEPES (pH 7.5), and 0.2 mM MgCl2), which itself was prepared from 5× siRNA buffer (300 mM KCl, 30 mM
+HEPES (pH 7.5), 1.0 mM MgCl2) and RNase-free water at a ratio of 1:4. Two tubes were set up. To the first and second tubes, an
+appropriate volume of the 5 μM siRNA solution and DharmaFECT transfection reagent were respectively introduced. Media
+supplemented with only L-glutamine (antibiotic- and serum-free media) was introduced into each tube and both tubes were
+incubated for 5 min in the hood. After incubation, the content of the first tube was added to the second and the resulting mixture
+was resuspended and allowed to complex for 20 min before adding antibiotic-free media to the mixture. Culture media from cells
+in 6-well plate was replaced with 2 ml of the total transfection medium before incubating for 24 and 48 h. The final siRNA
+concentration used was 25 nM, and knockdown of proteins was confirmed by Western blotting.
+Blebbing Assay
+The blebbing assay was a modification of a 3D cell migration assay previously designed (Wolf et al., 2003). In that study, Wolf
+and colleagues reported that the human HT1080 cell line not only exhibited plasticity, that is, an interconversion from elongated
+mesenchymal form into a rounded amoeboid mode of migration, a process referred to as mesenchymal amoeboid transition
+(MAT), but that the cells do profusely form membrane blebs upon inhibition of proteolytic activities of matrix metalloproteinases
+127G.A. Ponuwei, P.R. Dash / Achievements in the Life Sciences 10 (2016) 125–135(MMPs) and other proteases (Wolf et al., 2003). Thus, the cell line is a good model for studying membrane bleb formation. Briefly,
+growth factor-reduced matrigel (BD Biosciences, UK) was thawed overnight at 4 °C and kept on ice. Tips, pipettes, plates, glass
+coverslips, μ-dishes and tubes were chilled at −20 °C for 1 h. Confluent cells were rinsed with phosphate buffered saline
+(PBS), trypsinized and then resuspended in cold serum-free media. Cell suspension was carefully added on ice to matrigel in
+an equivalent ratio and mixed properly. 200 μl of cell-matrigel suspension was plated on glass coverslips in 6-well plates, and
+on 35 mm glass-bottomed dishes and then incubated at 37 °C for 30 min for matrigel to set. Complete cell culture media was
+added and cells were induced to bleb by blocking proteolytic activities of (MMPs) and surface proteases with batimastat, BB-94
+(1 μM) and protease inhibitor cocktail, PIC (1:100) respectively in the presence of caspase inhibitor set VI (10 μM) which inhibits
+apoptotic bleb formation. Plates were then incubated at 37 °C for 18 h.
+Fixation of Cells and Phase Contrast Microscopy
+After bleb induction with BB-94 and PIC, media was aspirated and cells were rinsed twice with pre-chilled PBS and then fixed
+for 30 min with 2.5% (v/v) glutaraldehyde. Fixative was removed and cells permeabilized with 0.2% (v/v) triton X-100 for 30 min.
+Images were acquired using a 40× phase-contrast objective lens of a Zeiss A1 inverted microscope.
+Determination of Bleb Size
+The sizes (circumference) of blebs in each individual cell weremeasured bymanually drawing a thin circular line round the entire
+circumferencewith the ‘polygon tool’ of ImageJ. This was followed by ‘analyze N measure’, and from the dropdown result list, the pe-
+rimeter values in pixel were recorded. Values in pixelwere normalized bymultiplyingwith a pre-calibrated factor of 0.11 μm(a factor
+which corresponds to 1 pixel, and which was obtained when 40× objective lens was calibrated with a graticule).
+Quantification of Percentage Blebbing Cells
+For quantification of the percentage of blebbing cells, plates and μ-dishes were properly fitted on the stages of a phase contrast
+Zeiss A1 inverted microscope, and the total number of cells (blebbing and non blebbing cells) were visualized using 40× objective
+lens, and manually counted. The percentage of blebbing cells was obtained by dividing the number of blebbing cells by the sum of
+blebbing and non blebbing cells, and then multiplying the result by 100 as shown below:% Blebbing cells ¼ No blebbing cells
+Total No cell
+Western Blotting
+HT1080 cells were seeded on 6-well plate overnight and treated with PLD1 and PLD2 siRNAs. Cells were harvested and lysed
+in radioimmunoprecipitation assay (RIPA) buffer in the presence of protease inhibitor cocktail (1:100). Proteins were electropho-
+resed on 10% polyacrylamide gels before transferring to PVDF membranes and blocked with 5% non-fat milk in 0.1% TBS-tween.
+Membranes were incubated overnight at 4 °C with human anti-PLD1 and PLD2 antibodies (Abcam, ab10583 and ab123663)
+(1:1000). Anti-tubulin antibody (Sigma; T9026) was used as a loading control. Secondary antibodies used were anti-rabbit and
+anti-mouse IgG-HRP (1:2000). Membranes were treated with enhance chemiluminescence (ECL) reagents A and B, and then
+developed with ImageQuant LAS 4000 machine (GE Healthcare Life Sciences).
+Statistical Analysis
+Statistical significance was performed by one-way analysis of variance after Tukey's post-hoc multiple comparison for three or
+more variables, while unpaired, two-tailed Student's t test was performed for two variables. GraphPad prism 5 software
+(GraphPad software, San Diego, CA) was used to perform all comparisons. All data were generated from at least three indepen-
+dent experiments in triplicate (n = 3), and P values b 0.05 were considered statistically significant.
+Results
+Pharmacological Inhibition of Phospholipase D (PLD) Activity
+To investigate the role of lipid signalling mediated by PLD1 and PLD2 in blebbing of HT1080 cells in the extracellular matrix
+(ECM), cells were first induced to bleb by blocking the activities of MMPs and proteases with BB-94 (1 μM) and protease inhibitor
+cocktail PIC (1:100) respectively in the presence of caspase inhibitor (10 μM). The activity of PLD1 and PLD2 was then inhibited
+with 5-fluoro-2-indolyl des-chlorohalopemide (FIPI), a potent universal inhibitor of the two PLD isoforms both in vitro and in vivo
+(Su et al., 2009b). As shown in Fig. 1A (top panel), inhibition of matrix proteolysis with PIC and BB-94 effectively converted
+cells from elongated mesenchymal mode into a rounded amoeboid mode filled with membrane blebs (middle panel). However,
+Fig. 1. Pharmacological inhibition of phospholipase D (PLD) activity. A: HT1080 cells cultured in 3D matrigel without inhibition of matrix proteolysis degrade in
+spindle-shaped elongated, mesenchymal mode (upper panel). Inhibition of matrix degradation with BB-94 (1 μM) and PIC (1:100) in the presence of caspase in-
+hibitor set VI converts cells into rounded blebbing mode (middle panel). Pre-treatment of cells with 750 nM PLD universal inhibitor, FIPI suppressed bleb forma-
+tion (bottom panel). Data is a representative of three separate experiments done in triplicate in which 75 cells were scored; B: Quantification of percentage of
+HT1080 cells treated with bleb-inducing agents (PIC and BB94) and FIPI-treatment; C: Analysis of numbers of blebs in each of PIC/BB94- and FIPI-treated
+HT1080 cells; D: Size of blebs in PIC/BB94- and FIPI-treated HT1080 cells. Data are the mean ± SEM for three separate experiments. ***: P b 0.001, using two-tailed
+unpaired Students' t test.
+128 G.A. Ponuwei, P.R. Dash / Achievements in the Life Sciences 10 (2016) 125–135pre-treatment of cells with 750 nM FIPI for 30 min sufficiently suppressed bleb formation in HT1080 cells (bottom panel), sug-
+gesting that either PLD1 or PLD2 or both mediate bleb formation in this cell line. Upon quantification it was revealed that FIPI
+treatment significantly reduced the percentage of blebbing cells from 83% to 12% (Fig. 1B). Treatment of cells with the PLD inhib-
+itor also drastically reduced the number of blebs per cell (Fig. 1C) as well as the sizes of blebs (Fig. 1D).
+siRNA-mediated Impairment of PLD2, but not PLD1 Inhibited Bleb Formation
+To investigate whether inhibition of blebbing by FIPI was due to inhibition of PLD1 or PLD2, we used specific smartpool siRNAs
+that target PLD1 and PLD2 at four different sequences. Knockdown of PLD1 and PLD2 was observed 24 h post-siRNA transfection
+as confirmed by Western blotting (Fig. 2A and B). PLD1 and PLD2 knocked down cells as well as scrambled siRNA-treated cells
+were then cultured in 3D matrigel matrix and challenged with BB-94 (1 μM) and PIC (1:100) in the presence of caspase inhibitor
+(10 μM). As shown in Fig. 2E, knockdown of PLD1 had no effect on bleb formation, whereas in a manner similar to FIPI treatment,
+PLD2 RNA interference inhibited formation of blebs in HT1080 cells (Fig. 2F). Analysis of bleb numbers and size revealed that
+PLD2 siRNA significantly reduced both bleb number and size, while PLD1 siRNA showed no difference in both bleb numbers
+and size when compared to original blebbing cells (Fig. 2G and H).
+Isoform Specificity of PLD1 and PLD2 siRNAs
+As siRNAs could have off-target effects thereby negatively impacting on the other isoform, we tested the specificity of each
+siRNA by first probing PLD1 knocked down cell lysates with anti-PLD2 antibody, while PLD2 siRNA cell lysates were
+immunoblotted with anti-PLD1 antibody. As shown in Fig. 3A and B, PLD1 siRNA had no effect on PLD2. Similarly, PLD2 siRNA
+did not negatively impact on PLD1 activity (Fig. 3C and D), suggesting that the siRNAs used were specific to their target. This fur-
+ther confirms that PLD2, but not PLD1 positively regulates bleb formation in HT1080 cells.
+PLD2 Signals through Phosphatidic Acid (PA) to Promote Bleb Formation
+As most biological processes by the PLD enzymes are mediated by the lipid second messenger, phosphatidic acid (PA), it be-
+came imperative to investigate whether PLD2-mediated cell blebbing was via PA production. The involvement of PLD in most
+Fig. 2. PLD2, but not PLD1 mediates bleb formation in HT1080 cells. A and B: HT1080 cells were grown to confluent on 6 well plate and transfected with smartpool siRNAs that target PLD1 and PLD2 respectively at four
+different sequences using Dharmafect transfection reagent (set 4). Cells were lysed using RIPA buffer in the presence of PIC (1:100). Proteins were resolved on a 10% SDS gel and immunoblotted with human anti-PLD1 and
+PLD2 antibodies (1:1000). Tubulin was used as a loading control; C and D: Densitometric quantification of PLD1 and PLD2 levels respectively in HT1080 cells after normalization to tubulin loading control; E: PLD1 knock-
+down by siRNA has no effect on bleb formation; F: siRNA-mediated knockdown of PLD2 inhibited bleb formation; G: Analysis of bleb numbers/cell in scramble, PLD1 and PLD2 knocked down cells; H: Analysis of bleb size in
+scramble, PLD1 and PLD2 knocked down cells. 150 cells were quantified for each case. Data is themean± SEM for three separate experiments; ***: P b 0.001, using two-tailed unpaired Students' t test (for figures C and D) and one-way
+ANOVA followed by Tukey's multiple comparison test (for figures G and H).
+Fig. 3. Specificity of PLD1 and PLD2 siRNAs. A and C: HT1080 cell lysates transfected with human PLD1 and PLD2 siRNAs were respectively probed with human
+anti-PLD2 and PLD1 antibodies; B: Densitometric quantification of PLD2 levels in PLD1 knocked down HT1080 cell lysates after normalization to tubulin loading
+control; D: Densitometric quantification of PLD1 levels in PLD2 knocked down HT1080 cell lysates after normalization to tubulin loading control. Data represent
+the mean ± SEM for three independent experiments; ***: P b 0.001, using two-tailed unpaired Students' t test.
+130 G.A. Ponuwei, P.R. Dash / Achievements in the Life Sciences 10 (2016) 125–135biological processes is tested for by using primary alcohols which are capable of undergoing transphosphatidylation reaction to
+block PA formation (Zouwail et al., 2005). Indeed, addition of 1% butan-1-ol to blebbing HT1080 cells for 5 min almost completely
+abolished bleb formation (Fig. 4A, lower middle panel), whereas addition of 1% tertiary butanol had no significant effects (Fig. 4A,
+bottom panel). Treatment with butan-1-ol drastically reduced percentage of blebbing cells to 5%, and number of blebs per cell to 1
+(Fig. 4B and C).
+PA Signals through Lysophosphatidic Acid (LPA) to Activate LPAR-Rho-ROCK Pathway
+To further unravel the mechanism by which PA signals to mediate bleb formation, it was anticipated that PA could possibly
+promote bleb formation through its product lysophosphatidic acid (LPA) which usually binds its receptors (LPAR) at the plasma
+membrane. LPAR has been previously reported to function upstream of Rho-ROCK pathway to regulate blebbing in osteoclasts
+(Panupinthu et al., 2007), and in general, blebbing of cells is reported to be due to contraction of cortical actin mediated by
+ROCK signalling (Charras et al., 2008; Paluch and Raz, 2013). Indeed, inhibition of LPAR and ROCK with 1 μM VPC-32183 and
+5 μM Y27632 respectively, inhibited bleb formation (Fig. 5B and C). A detailed analysis of number of blebs per cell revealed
+that LPAR and ROCK inhibition significantly decreased bleb numbers to 3 and 1 respectively, suggesting involvement of the PA-
+LPAR-Rho-ROCK signalling axis in blebbing of HT1080 cells.
+Effect of Inhibition of Key Signalling Pathways on Bleb Formation
+We further ascertained the contribution of key lipid signalling pathways in blebbing of HT1080 cells by using different phar-
+macological agents known to inhibit them. The involvement of phospholipase C (PLC) was tested using U73122, a drug reported
+to inhibit PLC activities in different cell lines (Ward et al., 2003). Use of 20 μM of U73122 significantly reduced the size of blebs
+without any significant change in bleb numbers (Fig. 6B). The involvement of PLC led to the analysis of protein kinase C (PKC)
+which is stimulated by PLC-generated diacylglycerol (DAG). Thus, use of 5 μM of the PKC inhibitor, Go6976 also resulted in sig-
+nificantly diminished bleb size (Fig. 6C and E) without effect on the number of blebs (Fig. 6F). The phosphatidylinositol 3-kinase
+(PI3K) inhibitor, LY294002 was used to test for the requirement of this pathway in blebbing of HT1080 cells. Again, use of 5 μM of
+the PI3K inhibitor suppressed bleb formation (Fig. 6D) with no significant difference in bleb numbers (Fig. 6F) when compared to
+original blebbing cells.
+Discussion
+In different cell lines, lipid signalling phospholipase D (PLD) enzymes are known not only to preserve the architectural integ-
+rity of cellular or intracellular membranes, but mediate a plethora of biological processes through one of three mechanisms:
+Fig. 4. PLD2 signals through phosphatidic acid (PA) to promote bleb formation. A. Uninhibited HT1080 cells (top panel). Inhibition of matrix proteolysis with PIC
+and BB94 convert cells into rounded blebbing mode (upper middle panel). Incubation of cells with 1% butan-1-ol abrogated bleb formation (bottom middle panel).
+Incubationwith tert-butanol (bottompane) for 5min; B. Quantification of percentage of blebbing cells in PIC/BB94-treated cells, butan-1-ol and tert-butanol-treatedHT1080
+cells; C. Number of blebs/cell in PIC/BB94 treated-, butan-1-ol and tert-butanol treated cells. Data are the mean ± SEM for three independent experiments. ***: P b 0.001,
+using one-way ANOVA after Tukey's multiple comparison test.
+131G.A. Ponuwei, P.R. Dash / Achievements in the Life Sciences 10 (2016) 125–135through their lipid-hydrolyzing lipase activity mediated through phosphatidic acid (PA); through protein–protein interaction, or
+through their guanine nucleotide exchange factor (GEF) activity in case of PLD2 (Gomez-Cambronero, 2014). For instance, actin
+reorganization, membrane trafficking, cell adhesion, tumour growth and metastasis have been attributed to the activities of the
+mammalian PLD1 (Chen et al., 2012; Selvy et al., 2011; Zouwail et al., 2005), whereas PLD2 has been shown to mediate cell
+spreading, endocytosis, cell growth, cell migration by acting as GEF to RhoA and Rac1, invasion and metastasis in lymphoma
+cells (Du et al., 2004; Henkels et al., 2013; Jeon et al., 2011; Mahankali et al., 2011b; Zheng et al., 2006). Whereas PLD1 is
+known to have low basal activity which increases upon external stimulation, and localizes to perinuclear structures, Golgi appa-
+ratus and endoplasmic reticulum, PLD2 has a higher basal activity and exclusively localizes to plasma membranes (Chen and
+Exton, 2004).
+In the present study, the role of the PLDs in blebbing of human fibrosarcoma HT1080 cell line in extracellular matrix (ECM)
+was investigated. This cell line was previously reported to exhibit plasticity which makes them interconvert from elongated mes-
+enchymal mode of migration into a rounded amoeboid mode associated with profuse plasma membrane blebs with which they
+metastasize by squeezing through pre-existing pores in three dimensional (3D) structures upon inhibition of matrix degradation
+(Wolf et al., 2003). This makes this cell line the preferred choice for this study. Indeed, inhibition of matrix proteolysis with a
+combination of batimastat (BB-94), a broad spectrum matrix metalloproteinases (MMP) inhibitor and a cocktail of protease inhib-
+itor (PIC) sufficiently induced bleb formation (Figs. 1A, 4A, 5A and 6A). An investigation of the involvement of PLD in blebbing of
+HT080 cells by first blocking the activities of both isoforms of mammalian phospholipase D, PLD1 and PLD2 using a small
+molecule inhibitor, 5-fluoro-2-indolyl des-chlorohalopemide (FIPI) which was previously shown to inhibit the activity of PLD1
+and PLD2 both in vitro and in vivo (Zouwail et al., 2005), sufficiently suppressed bleb formation, drastically reducing bleb
+numbers and size, and plummeting the percentage of blebbing cells to 12% as against original bleb-induced cells which had
+Fig. 5. PA signals through lysophosphatidic acid (LPA) to activate LPAR-Rho-ROCK. A. HT1080 cells were cultured in 3D matrigel without inhibition of matrix deg-
+radation (top panel), and with inhibition of matrix degradation using PIC and BB94 induced cell blebbing (bottom panel); B. Pre-treatment of bleb-induced cells
+with LPAR inhibitor, VPC-32183 for 30 min; C. Pre-treatment with ROCK inhibitor, Y27632 for 30 min at 37 °C; D. Quantification of bleb numbers/cell in HT1080
+cell line upon LPAR and ROCK inhibition. Data is a representative of the mean ± SEM of three independent experiments performed in triplicate. ***: P b 0.001,
+using one-way ANOVA after Tukey's multiple comparison test.
+132 G.A. Ponuwei, P.R. Dash / Achievements in the Life Sciences 10 (2016) 125–13583% (Fig. 1B). This suggests that either PLD1 or PLD2, or both isoforms promote bleb formation in HT1080 cells. The mechanism
+by which FIPI inhibits blebbing of cells via inhibition of PLD1 and PLD2 is not known. However, it was previously reported that the
+drug acts directly to inhibit the phosphodiesterase activity of both PLD1 and PLD2 (Su et al., 2009b).
+Since FIPI is a potent inhibitor of both PLD isoforms, we next performed knockdown experiments using RNA interference tech-
+nique. The smartpooled siRNAs employed in this study target the proteins at four different sequences thereby ensuring more ef-
+fective gene silencing with minimal or no off-target effects. In a manner similar to FIPI treatment, siRNA-mediated knockdown of
+PLD2 potently inhibited bleb formation, whereas PLD1 knockdown had no significant effect on bleb formation (Fig. 2A–H). To fur-
+ther confirm that the two PLD siRNAs did not have off-target effect by interfering with each other, we determined their specificity
+by immunoblotting PLD1 knocked down cell lysates with anti-PLD2 antibody, while the PLD2 knocked down samples were
+Western-blotted with anti-PLD1 antibody. Indeed, the siRNAs were specific to their targets as knockdown of PLD1 had no negative
+impact on PLD2 activity (Fig. 3A and B). Similarly, PLD2 knockdown did not affect PLD1 activity (Fig. 3C and D), further demon-
+strating that it was actually PLD2, and not PLD1 that is involved in bleb formation in HT1080 cells.
+Interaction of PLD2 with different adaptor proteins is known to regulate plasma membrane protrusions. For instance, PLD2
+binding to growth factor receptor-bound protein 2 (Grb2) has been implicated in formation of plasma membrane ruffles, an
+event that preceded lamellipodia formation and enhanced cell migration and chemotaxis (Gomez-Cambronero, 2011;
+Mahankali et al., 2011a). PLD2 promotes phagocytosis through an interaction in which Grb2 acts as a docking protein between
+PLD2 and Wiscott-Aldrich syndrome protein (WASP) (Kantonen et al., 2011). Similarly, in a microtubule-dependent manner,
+formation of membrane protrusions in v-Src-transformed fibroblasts has been attributed to PLD2 (Shen et al., 2002). Since bleb
+formation, unlike formation of lamellipodia, filopodia, invadopodia and other membrane protrusions is independent of actin
+polymerization, it is possible that PLD2 might be signalling to stimulate actomyosin contractility.
+Attempt to elucidate the mechanism by which PLD2 promotes bleb formation in HT1080 cells implicated phosphatidic acid
+(PA) – the catalytic product of the lipase reaction of PLD2 and which acts as an intracellular second messenger, as the signalling
+molecule through which PLD2 could be mediating cell blebbing. Usually, in most biological systems, the intracellular levels of PA is
+used as a read-out for PLD activity, and it is also known that mammalian PLD2 can exert its physiological functions by either sig-
+nalling through protein–protein interactions or through a unique GEF activity (Gomez-Cambronero, 2014). On the other hand, the
+involvement of PLD in most biological processes is detected by use of primary alcohols which are preferentially used instead of
+water by PLD to generate stable phosphatidylalcohol which unlike PA, is unable to yield diacylglycerol (DAG) and
+lysophosphatidic acid (LPA), and it is also unable to recruit and activate downstream target proteins (Oude Weernink et al.,
+2007). Thus, in the presence of primary alcohols such as butan-1-ol, PA production is not only blocked, but other downstream
+signalling events are halted. Indeed, pre-treatment of HT1080 cells with 1% (v/v) butan-1-ol resulted in a near total loss of mem-
+brane blebs (Fig. 4A, lower middle panel) with only 5% cells forming membrane blebs (Fig. 4B), whereas pre-treatment with same
+Fig. 6. Inhibition of key signalling pathways. A. HT1080 cells embedded in 3D matrigel without inhibitors (top panel), and with BB-94 and PIC in the presence of
+caspase inhibitor (bottompanel); B. Pre-treatment of blebbing cellswith 20 μMPLC inhibitor, U73122 for 30min; C. Pre-treatment of cellswith 5 μMPKC inhibitor, Go6976;
+D. Inhibition of PI3K pathwaywith 5 μMLY294002; E. Quantification of bleb size in cells treatedwith inhibitors; F. Quantification of number of blebs/cell of inhibitors-treated
+HT1080 cells. Data are mean ± SEM of three separate experiments performed in triplicate. ***: P b 0.001 using one-way ANOVA followed by Tukey's multiple comparison
+test. Comparisons are between inhibitors and PIC/BB94-treated cells.
+133G.A. Ponuwei, P.R. Dash / Achievements in the Life Sciences 10 (2016) 125–135concentration of tertiary butanol had no effect on bleb formation (Fig. 4A bottom panel, and B). Butan-1-ol-mediated depletion of
+PA also significantly suppressed the number of blebs appearing in the cell line (Fig. 4C). This suggests that PLD2-mediated cell
+blebbing is via PA, which interestingly, has been previously linked to leucocyte cells migration through regulation of lamellipodia
+structures and membrane ruffles (Gomez-Cambronero, 2014).
+Furthermore, the mechanism as well as the downstream signalling pathway by which PLD2-derived PA promotes cell blebbing
+was investigated. One possible mechanism could be via the hydrolytic activity of phospholipase A1 or A2 (PLA1/PLA2) on PA to
+produce the ubiquitously expressed lysophosphatidic acid (LPA) which binds its receptors (LPAR) at the plasma membrane to
+trigger downstream effectors (Stoddard and Chun, 2015). LPAR has been reported to be involved in matrix degradation by upreg-
+ulating MMP activities, cell proliferation, tumour progression and metastasis of different cancers via stimulation of Rho activity to
+activate ROCK (Gotoh et al., 2012; Jeong et al., 2012, 2013). Importantly, LPAR has been shown to induce membrane blebbing in
+osteoclast via the ROCK signalling pathway (Panupinthu et al., 2007). Indeed, inhibition of LPAR with VPC-32183, a potent LPAR
+inhibitor abrogated bleb formation in HT1080 cell line (Fig. 5B). It is worth mentioning that LPA can also be produced by the ac-
+tion of lysophospholipase D (autotaxin) on lysophosphatidylcholine (LPC) which itself is produced from phosphatidylcholine (PC)
+by PLA2. Whether this pathway is involved in blebbing of HT1080 cells was not confirmed, however, it was previously reported
+that the pathway was unlikely to be involved in ATP-induced blebbing of osteoclast as autotaxin is not inhibited by butan-1-ol
+(Panupinthu et al., 2007).
+The contribution of lipid signalling to blebbing of HT1080 cells was further assessed by probing key lipid signalling molecules.
+Cellular phosphatidylinositol 4,5-bisphosphate (PIP2) pool is regulated by phospholipase C (PLC) to yield diacylglycerol (DAG) and
+inositol 1,4,5-triphosphate (IP3) which activates protein kinase C (PKC) and intracellular Ca2+ release respectively. Similarly, PIP2
+can also be regulated by the activity of phosphatidylinositide 3-kinase (PI3K) to generate PIP3. PIP2 levels usually bolster the in-
+teraction between the plasma membrane and the cytoskeleton, and it also strengthens the activity of the ERM (ezrin, radixin,
+moesin) proteins (Zhao et al., 2014). Consistent with this, depletion of PIP2 levels enhanced fixation-induced blebbing of
+human umbilical vein endothelial cells (HUVEC) (Zhao et al., 2014). In the present study, accumulation of cellular PIP2 levels
+by using U73122 and LY294002 to inhibit PLC and PI3K activities respectively, significantly suppressed he sizes of blebs formed
+in HT1080 cells, but without any significant effect on bleb numbers. Inhibition of PKC with its known inhibitor Go6976 had similar
+effect as use of U73122 and LY294002, suggesting that cell blebbing involves a complex cascade of events regulated by most of
+the numerous plasma membrane lipids and signalling pathways that maintain the architectural integrity of the cell.
+134 G.A. Ponuwei, P.R. Dash / Achievements in the Life Sciences 10 (2016) 125–135Conclusions
+In conclusion, this study has demonstrated for the first time the novel role of PLD2 in the regulation of plasma membrane
+blebs in human fibrosarcoma HT1080 cell lines. Specifically, we demonstrated that PLD2, but not PLD1 is involved in bleb forma-
+tion in HT1080 cell line in a mechanism that requires the PA-LPAR-Rho-ROCK signalling pathway. This could be exploited in the
+development of specific therapeutic agents to curb metastasis of different cancers of connective tissues. Similarly, a combination
+therapeutic approach targeting PLD2 and other lipid signalling molecules in the cell membrane would yield more effective results
+in the fight against fibrosarcoma and perhaps other human cancers.

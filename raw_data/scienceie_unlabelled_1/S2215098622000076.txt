@@ -1,0 +1,704 @@
+Ad-hoc networks are the wireless networks dedicated for a
+specific function. Mobile Ad-hoc Network (MANET) architecture
+is imperative for any critical communication scenario especially
+in the context of Internet of Things (IoT) based Next Generation
+Cyber-Physical Systems (NG-CPS). It supports infrastructure less
+and highly scalable wireless sensor network. However, MANET
+architecture has many deployment challenges for resource man-
+agement to ensure the typical application specific Quality of Ser-
+vice (QoS) requirements. 5G standards given by 3GPP and next
+generation mobile communication like 6G support MANET archi-tecture with Device-to-Device (D2D) framework for many poten-
+tial IoT-based applications such as Internet of Vehicles (IoV),
+Flying ad-hoc networks (FANETs) etc. The major challenge in the
+deployment of MANET is ensuring QoS requirements. Most of the
+MENET’s TCP/IP protocol stack implementation suggests an IEEE
+standard that works on
+1) Wireless Physical layer (Layer-I)
+2) Ad-hoc communication framework of Distributed Coordi-
+nated Function (DCF) based (Layer-II) Media Access Control
+(MAC)
+3) Network layer (Layer-III) with IPv4 / IPv6 based Logical
+address and routing
+4) Transport Layer (layer-IV) supporting either TCP or UDP
+5) Application Layer (Layer-V) protocols for specific End-to-End
+service requirements.
+MANET is the combination of a group of self-organized nodes.
+There is no central management between the nodes. Each node is
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099equipped with a transceiver which enables it to act as a router as
+well as a host. Each node supports variety of applications. These
+nodes enjoy the advantage of adaptability that makes MANET a
+multi-functional network. MANET is suggested strongly for IoT
+applications as the conventional networks can’t provide its services
+[1,22]. Scarcity of bandwidth, constrained power resources, limited
+transmission range, mobility of the nodes and storage imitation are
+considered as weakness of MANET. These weaknesses are impor-
+tant aspects to support QoS. Clustering the network provide a solu-
+tion to enhance QoS [3]. However, clustering the network increases
+the complexity of its working mechanism.
+Cross-layer can be defined as the infrastructural layer of the
+TCP/IP stack that optimizes different parameters across the five
+layers. It is one of the proposed solutions in MANET for its develop-
+ing requirements, addressing the shortcomings and coping with
+the resources. It is the strict and fixed design of the TCP/IP stack
+that cannot cope with the dynamic structure of MANET. It is not
+just any one layer of TCP/IP stack which is sufficient to address
+the challenges of performance optimization of MANETs strictly as
+per the QoS requirements of the scenario specific applications.
+However, a Cross-layer design will provide the best results in
+terms of performance enhancement as we are tuning relevant net-
+work parameters associated with multiple layers of TCP/IP stack.
+Cross-layer provides solutions for the difficulty in MANET design
+by minimizing the energy consumption and makes enhancements
+in QoS [2,4,5].
+Due to random access MAC and other stochastic components of
+MANET, it is not viable to model the overall QoS requirements with
+help of deterministic modeling to ensure network performance.
+The research question then is: How to address this challenge of
+uncertainty in designing the cross layer? Under this circumstance,
+it is evident to use soft-computing techniques to model the MANET
+as a Cross-layer design problem. Recently there have been tremen-
+dous development in the field of Artificial Intelligence (AI) and
+Machine Learning (ML) due to more computational resources of
+recent processors (CPU/GPU). However, these AI and ML based
+techniques depends on huge data-sets and are processor as well
+storage hungry applications. Without large amount of training data
+these techniques do trade-off with accuracy. However, Fuzzy Logic
+System (FLS) is simple to implement as compared to AI and ML
+based techniques. Fuzzy logic is based on formulation of fuzzy
+set and a rule-based inference model with the help of linguistic
+variables and Membership function (MF). FLS uses antecedent
+and consequent variables and those are relatively easier to model
+especially for constraint power mobile computational units like
+MANET nodes. In this paper, we have considered FLS for modeling
+our Cross-layer design of MANET for improvements in QoS param-
+eters like Throughput, Packet Delivery Ratio (PDR) and End-to-End
+(E2E) delay. We have included many parameters across the TCP/IP
+stack. Different parameters are considered from all the five layers
+of TCP/IP stack implementation. These parameters are used to
+model the fuzzy logic system to enhance the overall network per-
+formance. Fig. 1 shows Fuzzy Logic System based cross-layer
+design approach in MANET for QoS sensitive IoT-based applica-
+tions for Next-generation Cyber Physical System (NG-CPS).
+This paper introduces a Fuzzy Logic System based cross layer
+(FLS-CL) for MANET. Further, we have implemented part of our
+proposed system using Fuzzy logic toolbox in MATLAB. The results
+of the FLS-CL system are used on a QualNet network simulator
+environment for testing, validation and evaluation of network per-
+formance. The results of our proposed FLS-CL design for MANET
+shows major QoS improvements and results are quite promising.
+MANET performance after cross layer optimization has been
+enhanced remarkably as compared with its performance without
+cross layer. The performance was tested using PDR, throughput
+and end to end delay.2
+The rest of this paper is organized as follows. Section 1 includes
+the introduction. Section 2 presents the related work. Section 3 dis-
+cusses proposed FLS-CL System model. Section 4 presents simula-
+tion study. Section 5 presents results and analysis of results
+obtained is inferred with discussion in section 6. Finally, section
+7 concludes the paper with future research directions.2. Related work
+MANET captures the interest of many researchers due to its
+suitability in many applications. Many researchers have discussed
+different methodologies for QoS performance enhancement of
+MANET [6,7]. One of these methodologies is the cross-layer design.
+Anish et al. proposed a cross-layer scheme that links the phys-
+ical and MAC layer to optimize the power consumption through
+controlling packets (RTS/CTS) [8]. When the transmitter senses
+the failure of RTS, it changes the minimum transmitting power.
+Optimization of energy consumption and enhancement in QoS
+are the target of this work. Asha et al. proposed a cross-layer
+scheme for efficient frequency selection. Channel modeling helps
+to estimate radio resource allocation [11]. A node selects a channel
+to transmit the data depending on channel frequency, path loss,
+channel gain, and PDF of each flow. This approach provides an
+enhancement of throughput and minimizing end to end delay for
+video transmission. Dhakad et al. proposed a fuzzy logic system
+(FLS) to enhance Ad-hoc On-demand Distance Vector (AODV) per-
+formance in MANET [9]. The rules of the FLS were set to optimize
+End-to-End Delay, throughput, and Packet Delivery Ratio concern-
+ing network size. They have obtained promising results with Qual-
+Net 6.1. Sarao et al. proposed an ANFIS system for optimizing
+packet size [10]. The fuzzy logic system of 4  1 interfaces used
+throughput, normalized routing load, the data packet received,
+and end-to-end delay as antecedent variables with packet size as
+consequent variable. A new model for QoS calculation was pro-
+posed considering Stable Energy Aware Ad hoc Routing protocol
+(QSEAAR) [12]. They have used Fuzzy Logic system tool box in
+MATLAB and NS-2 for their work.
+Recent state-of-the-art in MANET research is QoS-aware rout-
+ing protocol presented by Singal et al. [45]. Some QoS enhance-
+ment research suggest techniques like Deep/Machine Learning
+schemes. Cross-layer design based Deep reinforcement learning
+is proposed by Nguyen et al. in 2021 [44]. Cognitive Radio MANETs
+Deep Q-Network design for QoS improvements proposed by Tran
+et al. in 2021 [43]. Hasan et al. in 2022 have proposed cross-
+layer optimization aspects of MANETs for QoS sensitive IoT appli-
+cations [46]. Table 1 provides a comparison between some cross-
+layer models.3. Proposed fuzzy logic based cross-layer (FLS-CL) design:
+System model
+MANET is a wireless ad-hoc network comprising of mobile
+nodes. MANET works on a non-infrastructure, decentralized net-
+work architecture. Each node has the ability to control and adjust
+data transmission to work as a router or relaying node or as an
+end node. When a node is added to the ad-hoc network, the node
+needs to establish a route dynamically with the other adjacent
+nodes. Contribution in the transmission process is affected by the
+degree of closeness to the destination and depending on the uti-
+lized routing algorithm. The dynamic network condition in MANET
+has many technical challenges especially the resource allocation
+due to ad-hoc and infrastructure-less operation hence conven-
+tional TCP/IP stack implementation becomes much difficult and
+may not provide optimized QoS. Providing a good QoS is a big chal-
+lenge in MANET regarding the type of application like on demand
+Fig. 1. Fuzzy Logic System based Cross-Layer design for Next-gen Cyber Physical System.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099applications [18]. The mobility of the nodes gives the link non-
+stability with time, which requires more tracking of the adjacent
+nodes and periodic update of the available routes [19]. The wire-
+less medium shared between the nodes increases the challenges
+through contention and congestion issues as it used contention-
+based media access control schemes due to ad-hoc network. The
+limited resources contribute in reducing network life span and
+degrading the performance of MANET. All these factors together
+affect the QoS parameters, End to End (E2E) delay, Packet Delivery3
+Ratio (PDR), and Throughput. Cross layer provides a vital solution
+that MANET needs to for its stable performance. Cross-Layer design
+is motivated for considering parameters across many layers of TCP/
+IP reference model.3.1. Cross-layer design approach in MANET
+The layered scheme of TCP/IP stack isn’t flexible for MANET
+design, and may weaken its performance. Each layer has a bidirec-
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099tional inter-layer communication with the adjacent layers. Non-
+adjacent layers don’t interfere with the other layers’ processes
+[20]. The need for adaptation of each layer to cope with the varia-
+tions in MANET nature based on a time scale is a big necessity that
+suggests cross layer. What can come as an emergent solution to
+makes TCP/IP stack supports MANET design. Cross layer enables
+lower layers to control the parameters of the higher layers and
+adapt them with the changes in the network (Mobility, signal
+strength, channel characteristics etc.) [21]. Cross layer is designed
+to meet QoS requirements and improve the network performance.
+It enables non-adjacent layers to adjust their parameters using
+adaptive methodologies. The Cross-layer design proposed in this
+paper, is following the adaption required between the layers of
+TCP/IP stack with some network parameters like mobility, data
+rates and no. of nodes to provide an optimal value that may adapt
+to the dynamic deployment scenario of MANET. Generally, cross-
+layer combines two or more than two layers. The cross-layer
+design proposed in this paper involves five layers of the TCP/IP pro-
+tocol stack. Table 2 provides the parameters utilized by our cross-
+layer model.3.2. Fuzzy logic system based cross-layer design
+Mobile ad hoc networks are automated networks that are
+designed to support variety of application. As MANET is a battery
+constrained depending nodes, it’s basic matter to have a control
+scheme for power resource [30]. Hop count affects the end to
+end delay as MANET has no fixed infrastructure [31]. Performance
+of MANET depends highly on the routing protocol utilized, with the
+increase of network size [32]. Application rate has its effect on the
+performance of the routing protocol and QoS parameters [33].
+Retransmission times compensate the enormous received frames
+at MAC layer cased by wireless links or mobility of the nodes
+[34]. Selecting the physical layer standard (IEEE802.11b,
+IEEE802.11a) has its role on transmission process like optimization
+of energy consumption, error correction, reducing interference and
+jamming [35]. Fuzzy logic approach is a part of soft computing that
+interacts with the imprecision and approximate reasoning. It’s the
+formalization of the capability to reason and make rational deci-
+sions in an environment of non-precise data with uncertainty,
+incompleteness, conflicting of its information [36]. Complexities
+mean that the knowledge about the environment and the deci-
+sions’ consequences aren’t constant and modality. Uncertainty is
+the concept of non-precise value that may class a type of data in
+order to satisfy human requirements for some control systems.
+The fuzzy logic and fuzzy decisions are tools that help taking deci-
+sions under the concepts of uncertainty and complexity [37]. The
+uncertain rule base, is used by our model, forms the controller ofTable 2
+Cross-layer Parameters considered for Fuzzy Logic System Implementation.
+Layer Parameters Discussion
+Cross Layer Application
+Layer
+Application rate (Packets/
+sec.)
+Application rate affects the
+and power consumption.
+Transport
+Layer
+TCP/UDP Determining the relation of
+protocols on the performanc
+Network
+Layer
+Hop Count (No, of hops) Hop count determines path
+This affects the overall delay
+Data-Link
+Layer
+Number of
+Retransmission
+Retransmission times affect
+since the packet will be drop
+Physical
+Layer
+Transmission Power
+(mW)
+MANET is a constraint powe
+consumption are one of the
+Adaptive Modulation and
+Coding (AMC)
+The utilization of IEEE 802.1
+utilizing OFDM
+Mobility -Node speed To adjust the overall connec
+4
+the cross layer to adjust the parameters from each layer and to
+get the optimal value that contribute in enhancing QoS to improve
+MANET performance. We conclude that the flexibility of fuzzy logic
+system enables providing cross-layer design for adapting MANET
+nature. Fuzzy logic system has its efficiency in MANET concerning
+QoS enhancement, improving the performance of routing proto-
+cols, and controlling different parameters of the protocol stack
+[38,39].
+Fig. 2 provides the systemmodel for cross layer (FLS-CL) design.
+Studying the effects of each parameter on network performance
+literately and through simulation is represented the first step in
+this work. In this first stage, we set the network characteristics,
+the parameters of each layer and the environment to be studied.
+This stage helped in inferring the rules for fuzzy logic system,
+and it is done using QualNet simulator. Next stage included the
+design of fuzzy logic system (membership function, rule set, ranges
+of the parameters) for cross layer (FLS-CL) test and implementa-
+tion. Final stage is the implementation of cross layer based on
+fuzzy logic by simulating different scenarios of MANET using Qual-
+Net, and applying the values of antecedence to get the optimal
+values of the consequents and apply it to these scenarios. Finally,
+a comparative study has been done between with and without pro-
+posed FLS-CL for evaluation of MANET performance in the first
+stage and after applying our proposed FLS based cross layer design.
+Fig. 3 provides the block diagram of proposed Fuzzy Logic Sys-
+tem based Cross-Layer (FLS-CL) design. Fuzzy logic system pro-
+vides the adjusting factor to get the optimal value of the
+consequents depending on the crisp inputs of the antecedents.
+The fuzzification process converts the crisp inputs to the corre-
+sponding fuzzy set. Our cross-layer design is based on Fuzzy logic
+system. Fuzzification, rule designing, aggregation, and defuzzifica-
+tion are the fuzzy logic processes. In our proposed model we are
+considering three paraments as our antecedent fuzzy variables 1.
+Node speed (m/s), 2. End-to-End delay (ms) and, 3. Packet Delivery
+Ratio (PDR) in %. Similarly, we are considering five consequent
+variables as: 1. Transmission Power (mW) and 2. Adaptive Modu-
+lation and Coding (AMC) form physical layer of TCP/IP layer archi-
+tecture. 3. Number of Retransmission from data-link layer of TCP/IP
+layer architecture. 4. Hop count (Number of hops: since it’s an ad-
+hoc network) from network layer of TCP/IP stack and 5. Application
+rate (packets/sec.) as a parameter from application layer of TCP/IP
+stack.
+In our FLS-CL system modeling we have considered three ante-
+cedent fuzzy variables from physical, transport and application
+layer of TCP/IP stack and five consequent variables from physical,
+data-link, network and application layer of TCP/IP stack. As multi-
+ple layers of TCP/IP stacks are involved in modeling the Fuzzy logic
+system to enhance the overall QoS performance of the MANET weMajor work
+transmission process regarding queuing, storage Sadagopan et al.
+[23]
+connection-less UDP and connection-oriented TCP
+e
+V. Sharma et al.
+[24]
+links that the packet needs to transient through.
+in the network.
+Sahu1 et al. [25]
+s the probability of receiving the packets,
+ped after limit number of retransmissions
+Jabbar et al. [26]
+r resource network, enhancements of energy
+goals of the cross layer
+Li et al. [27]
+1a comes to provide higher transmission rates Daisuke Takedal
+et al. [28]
+tion session with the mobility of the nodes B. Divecha et al.
+[29]
+Fig. 2. System model for Fuzzy Logic System based Cross-Layer (FLS-CL) design for QoS improvement in MANET.
+Fig. 3. Proposed Fuzzy Logic System based Cross-Layer (FLS-CL) design.
+may term it as a fuzzy logic system based cross-layer design to
+improve QoS in MANET. Fig. 4 shows Block diagram of fuzzy logic
+design used for cross layer.
+The proposed FLS-CL model adjusts the consequents based on
+Node speed, End to End delay (latency) and Packet Delivery Ratio
+(PDR) as they are influencing the QoS evaluation of overall network
+performance. These parameters are the inputs of cross-layer model
+which we will mention as antecedents. FLS-CL adjusts transmis-
+sion power, AMC, number of retransmissions, hop count and appli-
+cation rate for a MANET which are the consequents variable
+considered in our fuzzy logic system.
+In our model, interference engine is based on the QoS parame-
+ters with three antecedent fuzzy variables and five consequents
+variable. The fuzzification process converts the crisp inputs to
+the corresponding fuzzy sets as shown in Table 3. We used triangu-
+lar and trapezoidal membership function to represent the fuzzy
+sets of antecedent variables. In the antecedent variables we have
+three fuzzy levels (Low, Moderate and High).
+Table 4. We used triangular and trapezoidal membership func-
+tion to represent the fuzzy sets of consequent variables. Here we
+have nine fuzzy levels: 1. High Increase (HI), 2. Medium Increase
+(MI), 3. Low Increase (LI), 4. Very Low Increase (VLI), 5. No Change
+(NC), 6. Very Low Decrease (VLD), 7. Low Decrease (LD), 8. Medium
+Decrease (MD) and 9. High Decrease (HD). These are considered to
+be our linguistic variables.
+Aggregation is done based on Max-min composition [40].
+Defuzzification is based on the centroid of area (COA) method. Each
+antecedent has 3 fuzzy sets that combine the fuzzy rule set of
+3  3  3 = 27 rules. The rule base is given in Table 5. For example,
+he following rules are used in the fuzzy inference system for the
+fuzzy variable ‘retransmission’. Similarly, all the rules can be writ-
+ten alike.
+Fig. 4. Fuzzy Logic System for Cross layer.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099Rule 1: If Node speed is Low, End-to-End delay is Low and PDR
+is Low then retransmission is Low increase.
+Rule 2: If Node speed is Low, End-to-end (E2E) delay is Low and
+PDR is Moderate then retransmission is Very low increase.
+The inference system and the defuzzification process is
+described as below. For ith fuzzy rule, the consequent fuzzy vari-
+able i.e. Retransmission is determined using Eqs. (1) and (2).
+lRi wð Þ ¼ Min lAi xð Þ;lBi yð Þ;lCi zð Þ 
+i ¼ 1;2; ::::;27 ð1Þ
+lRðwÞ ¼ maxflRiðwÞg ð2Þ
+Where, lAiðxÞ;lBiðyÞ;lCiðzÞ are the fuzzy sets corresponding to node
+speed, E2E delay and PDR respectively. lRiðwÞ is the fuzzy set corre-
+sponding to number of re-transmissions. The output fuzzy set after
+the inference is denoted as lRðwÞ. The de-fuzzification is obtained
+using Equation (3) as shown below to get the de-fuzzified value
+as w.
+w ¼
+R
+lR wð ÞwdwR
+lR wð Þdw ð3Þ
+The above process is repeated for the remaining output fuzzy
+variables (consequents) such as AMC, Transmission power, Appli-
+cation rate and Hop count denoted as lMðwÞ;lTðwÞ;lPðwÞ;lHðwÞ
+respectively. The defuzzified value of the output variables are used
+for the QualNet simulation of MANET.
+This work uses triangular and trapezoidal membership func-
+tion. The MFs (fuzzy sets) with its crisp range are given in Table 4.
+The ranges and the linguistic variables of each parameter are pro-
+vided in the same table. The linguistic variables of the fuzzy set for
+the cross-layer inputs are low, moderate, and high (Table 3). While
+the linguistic variables of the consequents are HI, MI, LI, VLI, NC,6
+VLD, LD, MD, HD. For data rates of AMC, we used linguistic vari-
+ables based on the order of the modulation and coding scheme.
+The linguistic variables are named: unchanged, BPSK 0.5, BPSK
+0.75, QPSK 0.5, QPSK 0.75, 16QAM 0.5, 16QAM 0.75, 64QAM 0.5,
+and 64QAM 0.75. We used triangular and trapezoidal membership
+function to represent the fuzzy sets. Fuzzification is based on AND
+operation. Aggregation is done based on Max process. Based on
+degree of the rules with membership functions of the input, output
+respectively corresponding to the rule i, x is the crisp input, ‘i’ is the
+order of the rule, and y is the crisp output then the crisp output for
+k rules can be obtained [41,42]. The crisp output can be obtained
+from all the rules of the fuzzy sets. We implemented a rule degree
+as ‘10. Different weights result that the rule with less weight will be
+neglected when firing the rules. In this model all the rules have the
+same degree of importance which is the unity. Table 5 provides the
+rule base of fuzzy logic based cross-layer model.
+Fig. 5 shows an illustration of fuzzy logic system implementa-
+tion graphically for two sample rules. The three antecedent fuzzy
+variables with membership function (MF) are shown and the firing
+x1, y1, z1 for finding the first crisp output of consequent variable
+number of re-transmissions is obtained based on one sample
+rule-1 implementation. Similarly, the second rule is implemented
+for finding another consequent variable application rate. Point to
+be noted there are total 27 rules (3  3  3 based on three antece-
+dent variables) and five consequent variables, hence there are up to
+(27  5 = 135 possible combinations or iterations based on firing).
+A crisp value can be obtained after de-fuzzification to implement
+on Network simulator QualNet to get QoS improvements. This
+design is based on the Mamdani system. This proposed FLS-CL is
+implemented based on the If-then rule base set (27 rules). Hence,
+when crisp inputs are provided the system would generate crisp
+outputs.
+Defuzzification is based on the centroid method. This method is
+based on calculating the central point of the shape obtained from
+aggregation process (combining the results in one graphical repre-
+sentation). Table 6 provides the results after fuzzy logic system
+based cross layer implementation. These results represent the
+input values to be applied in QualNet simulations of the next
+stage. At the node speed of 10 m/s and the simulation time is
+50 s, the transmission power is 774 mw, the packet rate is 11
+packet/second, the data rate is 18 MHz, the no. of retransmissions
+is 5 and the number of hop counts used is 18. The results were used
+in four MANET scenarios small, medium, and large network sizes
+with different simulation and node speeds. The same results were
+also used to compare MANET performance with/out cross layer
+concerning the studying parameters.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099The values of PDR and end to end delay were applied in a fuzzy
+logic-based cross layer for a particular speed and time. Fuzzy logic,
+then provided the optimal values of consequents. The discussion of
+the results is provided in the simulation results and discussion
+section.4. Simulation study
+In order to validate our proposed FLS-CL, we have created a
+simulation-based testbed using QualNet network simulator and
+used MATLAB for fuzzy logic system implementation. The system
+implementation using simulation can be classified into three dis-
+tinct stages. We run them sequentially to validate our design by
+showing QoS performance improvements through QualNet.
+Fig. 6 shows the flowchart of simulation study showing three
+stages and their working steps.4.1. First stage
+The first stage included MANET simulation when the number of
+nodes was 50 nodes. We used variable values of the parameters to7
+study their effect on end to end delay, PDR, throughput, and the
+transmission power. Throughput, PDR and the end to end delay,
+are calculated as the following:
+a) Throughput = Total data size received in bits/ Time spent
+between Transmission and Reception
+b) Packet Delivery Ratio (PDR) = No. of packet received/ Total
+no. of packet sent
+c) End to End Delay (Latency) represents the time that data suf-
+fers in its travel from source to destination E2E.
+We start our work by studying the effect of the selected param-
+eters on the QoS parameters. In this stage we studied the effect of
+node speed, AMC, application rate, hop count, and retransmission
+times on a given transmission power, end to end delay and the
+PDR. Fig. 7 shows the simulation environment using QualNet. This
+figure provides one of the scenarios used to evaluate MANET per-
+formance. The other scenarios differed in no. of nodes, and node
+speed, and the values of the considered parameters.
+Depending on the results obtained from this study, we set the
+rule base provided in Table 3. This study helped in selecting the
+ranges of the antecedents and consequents. Also, it provided the
+Fig. 5. Rule based Fuzzy logic system implementation in Cross-layer design for MANET.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099information on how QoS parameters and the required transmission
+power change regarding node speed, AMC, retransmission times,
+hop count and application rate. Based on the obtained data and
+the analytical study we designed our fuzzy logic system based
+cross layer (FLS-CL) design.
+4.2. Second stage
+This stage included MATLAB implementation for fuzzy logic
+design. It included opting the membership functions for both the
+antecedents and consequents, designing the rule set base, and set-
+ting the aggregation and defuzzification processes.8
+If-Then rules are applied in the fuzzy logic system to get the
+crisp values of the consequent variables. The 3-D plots of the con-
+sequent variables with respect to the antecedent variables are pro-
+vided in the Fig. 8.
+4.3. Third stage
+This stage includes MANET simulation in QualNet using the
+obtained values of the consequents. After that, we compared the
+results of PDR, end to end delay and throughput with their results
+without cross layer implementation. This comparison proved the
+capability of our cross-layer model to enhance the QoS in a very
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099interesting result. Discussion of the results is presented in the next
+section.5. Results and analysis
+This section describes results obtained from implementation of
+both cross-layer and without cross-layer system to provide a per-
+formance comparison. The implementation happens through four
+different scenarios. Each scenario involves different set of simula-
+tions as stated below:
+1. Scenario-1: MANET with varying number of nodes (Network
+Size)
+2. Scenario-2: MANET with varying node speed (Mobility)
+3. Scenario-3: MANET with varying AMC (Modulation and Data-
+rate)
+4. Scenario-4: MANET with varying number of retransmissions
+(re-transmission)
+The FLS-CL adapted the parameters to make some kind of com-
+pensating. This process adjusts the energy consumption in the
+transmission mode with the other parameters. FLS-CL provided a
+trade-off between the utilized parameters. This resulted a very
+remarkable enhancement in QoS comparing with QoS without
+cross layer. The following sections provides Simulation Results of
+Fuzzy Logic System based cross-layer optimization for MANET con-
+cerning different scenarios.
+For the above four scenarios for both connection-less User Data-
+gram Protocol (UDP) based CBR traffic as well as connection-
+oriented Transmission Control Protocol (TCP) based FTP applica-
+tion traffic have been considered for the simulation study.
+Simulation Environment: Simulation environment has been set
+using QualNet simulator. Table 7 provides simulation environ-
+ment parameters for all the four scenarios.5.1. Scenario-1: MANET with varying number of nodes (Network Size)
+Simulation Results: The obtained results for PDR, throughput,
+and end to end delay were compared with the values obtained
+when inferring simulation for fuzzy sets for cross layer design.9
+Table 8 provides the numerical results of the simulations. We
+notice an enhancement in QoS after cross layer implementation.
+The following figures provide MANET performance regarding
+PDR, throughput, and end to end delay with/out cross layer (FLS-
+CL) optimization concerning the number of nodes.
+Fig. 9 shows the impact of our novel Fuzzy Logic based cross
+layer (FLS-CL) design optimization on PDR for CBR and FTP applica-
+tions. With increasing network size, PDR increased for FTP. The
+retransmission of TCP protocol provided high PDR for FTP. For
+CBR, PDR decreased with increasing network size. For CBR, our pro-
+posed FLS-CL has improved the PDR by an average of 17.76 % with
+respect to without cross-layer case, while for FTP cross layer opti-
+mization has improved PDR by an average of 3.09 %.
+Fig. 10 shows the throughput with respect to the no. of nodes.
+For CBR application, our novel Fuzzy Logic based cross layer (FLS-
+CL) design has enhanced the throughput of the network compared
+to without FLS-CL. For FTP application, cross layer optimization has
+provided a good enhancement in the throughput while increasing
+the network size. An average of 54.4 % increase has been noticed
+for FTP with proposed FLS-CL Throughput of CBR application
+increased after applying FLS-CL. In-case of CBR an average of
+34.45 % improvement has been noticed in throughput with pro-
+posed FLS-CL.
+Fig. 11 shows the end to end (E2E) delay with respect to net-
+work size. The end to end delay increased with increasing the no.
+of nodes. The result shows a staggering improvement in case of
+CBR. The E2E delay has reduced by an average of 99.32 % after
+applying our proposed FLS-CL design with respect to default value
+without FLS-CL. However, in case of FTP the improvement is
+49.27 % overall reduction of E2E delay after applying FLS-CL.
+5.2. Scenario-2: MANET with varying node speed (Mobility)
+Simulation Results: The obtained results for PDR, and end to
+end delay were compared with the values obtained after inferring
+fuzzy sets and applying cross layer output. Table 9 provides the
+numerical results of the simulations. Cross layer implementation
+improves the PDR for both FTP and CBR. It can be remarkably
+observed that end to end delay is much less after cross layer opti-
+mization when considering node speeds. This enhancement
+includes reducing the delay for both FTP and CBR.
+Fig. 6. Flowchart of Simulation Process.
+Fig. 7. Sample MANET simulation environment using QualNet.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099Presentation of the numerical data in Table 9 is given in Figs. 12
+and 13. The figures show the effect of our proposed FLS-CL opti-
+mization on MANET performance concerning PDR and end to end
+(E2E) delay. Fig. 12 provides the PDR with respect to node speed.
+FLS-CL deployment has enhanced the PDR of both FTP and CBR
+when increasing the node speed. This is a result of cross layer pro-
+viding a degree of balance between the values of the TCP/IP stack
+parameters targeting keeping the PDR at high level. For FTP traffic,
+FLS-CL implementation has improved PDR of an average of 4.37 %.
+For CBR, FLS-CL optimization increased the PDR by 6.8 % on an
+average. The overall all performance of the network has enhanced
+after our proposed FLS-CL.
+Fig. 13 shows cross layer optimization in End-to-End delay with
+respect to varying node speed. FLS-CL optimization decreased the
+end to end delay for both types of applications. For FTP traffic,10end to end delay decreased after cross layer implementation by
+91.89 % overall. While for CBR, cross layer implementation has
+decreased the overall end to end delay by 80.69 %.
+5.3. Scenario-3: MANET with varying AMC Data-rate
+Simulation Results: The obtained results for PDR, and end to
+end delay were compared with the values obtained when inferring
+fuzzy sets and applying cross layer output. Table 10 provides the
+numerical results of the simulations. Cross layer implementation
+improves the PDR for both FTP and CBR. It can be remarkably
+observed that end to end delay decreased after cross layer opti-
+mization with respect to data rates. This enhancement includes
+reducing the delay for both FTP and CBR. The enhancements in
+PDR and delay values for both applications are summarized at
+the end of this discussion. Representation of the data provided in
+Table 10 is given in Figs. 14 and 15.
+From Fig. 14 it is evident that, FLS-CL based cross layer opti-
+mization enhanced the PDR for both FTP and CBR when increasing
+the data rates. For FTP traffic, FLS-CL implementation improved the
+average PDR by 2.05 %. However, the improvement is more in-case
+of CBR traffic, FLS-CL implementation increased the PDR by 73.04 %
+overall.
+Fig. 15 shows cross layer optimization effect on end to end
+delay with respect to the data rates. FLS-CL based Cross layer opti-
+mization decreased the end to end delay in both FTP as well as CBR
+traffic. For FTP traffic, average end to end delay decreased after
+cross layer implementation by 35.67 %. For CBR, cross layer imple-
+mentation has decreased the average end to end delay by 34.59 %.
+5.4. Scenario-4: MANET with varying number of re-transmissions
+Simulation Results: The obtained results for PDR, and end to
+end delay were compared with their values without cross layer
+implementation. Table 11 provides the numerical results of the
+simulations. Cross layer implementation improves the PDR for
+both FTP and CBR. End to end delay was decreased after cross layer
+implementation.
+Fig. 16 shows that PDR increases with increasing the number of
+retransmissions. Proposed FLS-CL based Cross layer implementa-
+tion enhanced the PDR for both FTP and CBR when increasing the
+number of retransmissions. For FTP traffic, FLS-CL implementation
+improved the PDR by an average of 3.6 %. For CBR traffic, FLS-CL
+implementation increased the PDR by an average of 12.98 %.
+Fig. 8. 3-D plot of (a) No. of retransmissions (b) AMC (c) Transmission Power (d) Application rate (e) Hop count.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099Fig. 17 shows our proposed FLS-CL based cross layer optimization effect on end to end delay with respect to the number of
+retransmissions. End to end delay decreased with increasing the
+number of transmissions. Cross layer optimization decreased the
+end to end delay. For FTP traffic, the average end to end delay
+has decreased after FLS-CL cross layer implementation by
+58.49 %. For CBR traffic, FLS-CL implementation has decreased
+the average end to end delay by 89.55 %.115.5. Result Summary: QoS performance improvements with proposed
+FLS-CL design for MANET
+Here we are summarizing our results for four scenarios for both
+connection-less User Datagram Protocol (UDP) based CBR traffic as
+well as connection-oriented Transmission Control Protocol (TCP)
+based FTP application traffic. The result shows that CBR is getting
+more QoS performance boost as compared to TCP. Table 12 shows
+the Result summary of cross layer optimization on Packet Delivery
+Ratio (PDR) and End-to-End (E2E) delay.
+Fig. 9. Packet Delivery Ratio (PDR) for different Network Size.
+Fig. 10. Throughput for different Network Size.
+Fig. 11. End-to-End Delay for different Network Size.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099
+126. Discussion
+We summarized that, our results are quite promising after
+implementation of proposed FLS-CL based cross layer design for
+all the four scenario of network deployment. This proves the effec-
+tiveness of Fuzzy-Logic based soft-computing technique for opti-
+mization of overall network performance by enhancing the QoS
+parameters. The most important outcome of this research work
+is to validate the proposed FLS-CL design for four different scenar-
+ios by taking key- network configurations as variables and validat-
+ing the impact of our proposed novel FLS-CL design.
+In a nutshell, our proposed FLS-CL has performed better for
+connection-less User Datagram Protocol (UDP) based Constant
+bit rate (CBR) traffic than the connection-oriented counterpart
+i.e. Transmission Control Protocol (TCP) with the File Transfer
+Protocol (FTP) as the test application protocol. In case of CBR
+traffic over UDP results show an improvement of 27.64 % in
+PDR on an average for all four scenarios and reduced the average
+Fig. 12. Packet Delivery Ratio (PDR) for different Node Speed.
+Fig. 13. End-to-End (E2E) Delay for different Node Speed.
+Fig. 14. Packet Delivery Ratio (PDR) for varying AMC Data rate.
+Fig. 15. End-to-End (E2E) Delay for varying AMC Data rate.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099E2E delay by 76.04 % considering all four scenarios. However, in
+case of FTP over TCP there is an average improvement of PDR by133.28 % and a reduction of average E2E delay of 58.81 % consid-
+ering all four scenarios.
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099End (E2E) delay in all the possible deployment scenarios. This
+comes from flexibility that FLS-CL provides to cope the mobility
+and the increase in network size. It performs that through utilizing
+the optimal values of the selected parameters.
+This comes from flexibility by following:141) Adjusting the ratio of the application from application layer
+2) Improving network performance by reducing the end to end
+delay in the network
+3) Managing energy consumption in the communication pro-
+cess between the nodes
+4) Controlling the number of hops in the network between
+source destination pairs
+5) Adjusting the data rates in the first layer
+6) Controlling the number of retransmissions in the MAC layer.
+Most importantly the result obtained here would be helpful in
+design and deployment of real-world MANETs with cross-layer
+design approach to enhanced QoS performance keeping in mind
+the strict QoS parametric requirements of any IoT applications
+which has Ad-hoc network requirements specifically designed for
+creating Mobile Ad-hoc communication framework support for
+Next-generation Cyber Physical System [47].7. Conclusion
+Cross-layer is the transparent layer that use the parameters
+across more than one layer (or several/multiple layers as per sce-
+nario specific network requirements) of the TCP/IP stack. Fuzzy
+logic approach is a part of soft computing that interacts with the
+imprecision and approximate reasoning. FLS adjusts the parame-
+ters of TCP/IP due to adaptive nature of MANET. The results
+N. Hasan, A. Mishra and Arun Kumar Ray Engineering Science and Technology, an International Journal 35 (2022) 101099demonstrate the effectiveness of the proposed FLS-CL design in
+improving the network performance compared with the constant
+parameters (deterministic model) of the network configurations.
+Most importantly the result obtained here will be helpful in design
+and deployment of real-world MANETs with cross-layer design
+approach specifically designed for creating Mobile Ad-hoc commu-
+nication framework support for Next-generation Cyber Physical
+System. This work can be extended by considering more complex
+and dynamic network configurations as well as parameters and
+even multi-objective functions based constrained optimization
+problem can be formulated and scope of various promising opti-
+mization techniques like Nature Inspired algorithms / evolutionary
+algorithms-based techniques can be explored for Cross-layer
+design for MANET in the context of providing mobile ad-hoc com-
+munication framework for future IoT-applications and Next-
+generation Cyber Physical Systems.Declaration of Competing Interest
+The authors declare that they have no known competing finan-
+cial interests or personal relationships that could have appeared
+to influence the work reported in this paper.Acknowledgments
+Authors do not have any funding agency to disclose. However,
+this research work has been carried out in Wireless Communica-
+tion and Networking Laboratory, School of Electronics Engineering,
+Kalinga Institute of Industrial Technology (KIIT), Deemed to be
+University, Bhubaneswar, India. The academic & research license
+used for QualNet Simulator 5.2 and MATLAB is part of KIIT labo-
+ratory facility and this research work is supported by KIIT DU.

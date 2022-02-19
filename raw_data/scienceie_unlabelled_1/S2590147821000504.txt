@@ -1,0 +1,597 @@
+In this work, Yb3+-doped Gd1.4Lu0.5Yb0.1O3 optical quality ceramics were successfully fabricated for the first 
+time, to the best of our knowledge. The absorption and emission spectra were measured, spectroscopic in-
+vestigations of 1-μm emission were carried out, and optical gain properties were analysed. The stimulated- 
+emission cross-sections were 9.7⋅10− 21 cm2 and 3.7⋅10− 21 cm2 (calculated using the Fuchtbauer-Ladenburg 
+equation) at 1031 nm and 1073 nm respectively. The calculated values were close to the estimated value of 
+emission cross-sections for other Yb-doped sesquioxides. All the results show that Yb:(Gd,Lu)2O3 ceramics can be 
+used as a potential active medium for mid-infrared high-power lasers.   
+1. Introduction 
+Due to the good thermal and mechanical properties, Yb3+-doped 
+ceramic laser materials have attracted a great deal of attention in the 
+recent decades [1,2]. For commercial high-power continuous and 
+mode-locking laser systems operating in the 1-μm-range, Yb3+-based 
+laser materials have the potential to substitute those based on Nd3+ [3, 
+4]. However, a disadvantage of Yb3+ laser systems is the operation in a 
+quasi-three- or quasi-four-level scheme at room temperature, as the 
+lower laser level belongs to the ground state manifold 2F7/2 and is 
+considerably thermally populated [5]. This leads to reabsorption of the 
+emitted laser light and, therefore, to higher lasing thresholds and 
+reduced efficiency. 
+The spectroscopic properties of the Yb3+-doped host strongly depend 
+on the properties of the matrix; therefore, this determines the laser 
+performance of these materials. The main feature of Yb3+ ions compared 
+to other rare earth ions is a strong interaction of the Yb3+ electronic 
+states with the crystal lattice which leads to homogeneous broadening of 
+the transition lines and to vibronic features [6]. For example, the glasses 
+and disordered crystals or ceramics are characterised by multiple Yb3+
+sites leading to inhomogeneous broadening of absorption and emission 
+spectra. Therefore, the shapes of the optical spectra and the values of the 
+absorption and emission cross-sections vary significantly [4]. 
+Due to its unique properties, the proposed new host for Yb3+-based 
+lasers can enhance the advantages of Yb3+ ions and eliminate the 
+disadvantages. Despite the numerous papers published in the last few 
+decades, the potential of the Yb3+-doped laser materials is currently 
+limited by the lack of knowledge of the spectroscopic properties of these 
+new Yb3+-doped laser materials [7]. Consequently, studying the spec-
+troscopic properties of the new Yb3+-doped laser matrix is an urgent 
+task. 
+Yb3+-doped laser materials can be prepared in the form of single 
+crystals [8] by melting or solution methods, in the form of glasses, and as 
+ceramics by consolidation of nanopowders [5,9]. Transparent ceramics 
+have become increasingly important for applications in which materials 
+with good optical properties and high mechanical and thermal stress 
+resistance are required [3,10–13]. Various host materials for laser ce-
+ramics have been progressively investigated [5,10,14]. Yb-doped ses-
+quioxides are the potential alternatives to Yb:YAG for power scaling 
+because of their desirable thermal properties. The thermal conductivity 
+of undoped Y2O3 ceramics is as high as 12.8 W/m⋅K at 300 K [15]. 
+However, the strong electron-phonon interaction causes characteristic 
+spectral broadening, especially in the case of Y2O3 with moderate values 
+of cross sections [14]. 
+The rapid development of ceramic technology makes it possible to 
+synthesize RE2O3 transparent ceramics based on Sc2O3, Y2O3, and Lu2O3 
+matrices [3,8,10,11,14,15]. Despite this progress, there are no published 
+works on the study of Gd2O3-based laser ceramics. The main reason for 
+this is the phase transition of cubic Gd2O3 to the monoclinic phase at 
+temperatures as low as 1200 ◦C. The phase transition provokes 
+* Corresponding author. 
+E-mail address: balabanov@ihps-nnov.ru (S. Balabanov).  
+Contents lists available at ScienceDirect 
+Optical Materials: X 
+journal homepage: www.journals.elsevier.com/optical-materials-x 
+https://doi.org/10.1016/j.omx.2021.100123 
+Received 9 September 2021; Received in revised form 23 November 2021; Accepted 23 November 2021   
+Optical Materials: X 13 (2022) 100123
+2
+accelerated grain growth, which leads to pore entrapment, and the 
+change in lattice volume causes the sample to crack. The possible so-
+lution to this problem is to enlarge the phase transition temperature by 
+the addition of cubic oxides with a higher temperature C→B transition 
+such as Lu2O3 and/or Yb2O3 and/or to decrease the sintering 
+temperature. 
+In this work, Yb3+-doped Gd1.4Lu0.5Yb0.1O3 ceramics were success-
+fully obtained for the first time, to the best of our knowledge. At a Gd2O3 
+content in the matrix of 70% mol. ceramics have a relatively high optical 
+quality. The absorption and emission spectra were measured, the spec-
+troscopic investigations of 1-μm emission were carried out, and the 
+optical gain properties were analysed. 
+2. Experimental 
+Synthesis of powders and hot pressing of ceramics was done similarly 
+to that described in Ref. [16]. Briefly, the initial oxides of ytterbium, 
+gadolinium, and lutetium were dissolved in an aqueous solution of nitric 
+acid. A sintering additive lithium fluoride (1 wt%) and an aminoacetic 
+acid in a molar fraction of 1:1.2 with respect to nitrate groups was added 
+to the solution. After drying, the precursor was heated in a muffle 
+furnace and self-propagating high-temperature synthesis began at about 
+300 ◦C. As a result of the combustion reaction, LiF:Gd1.4Lu0.5Yb0.1O3 
+nanopowders (1 wt%) were obtained. After additional calcination in air 
+at 750 ◦C for 0.5 h, the powders were pre-compacted in a steel mould 
+with a pressure of ~10 MPa, and then placed in a graphite mould, 13 
+mm in diameter. Hot pressing (P = 50 MPa) was performed using 
+home-made equipment at a maximum temperature of 1550 ◦C for 1 h in 
+a vacuum (~10 Pa). Due to the stresses caused by the phase transition 
+from the cubic to the monoclinic phase during hot pressing, the sample 
+split in half. The ceramics were annealed in air at 1100 ◦C degrees for 5 
+h, and then subjected to the standard procedure of grinding and pol-
+ishing with diamond pastes. The sintering additive was removed during 
+hot pressing and was not contained in the final sample. The thickness of 
+the sample obtained was 1.65 mm. The appearance of the ceramics is 
+shown in Fig. 1. 
+X-ray diffraction was used to identify the crystallographic structure, 
+unit cell parameters and average particle size. The X’pert PRO PAN-
+alytical powder diffractometer with the Cu lamp (λ = 0.154 nm) was 
+used as an excitation source. The use of a nickel filter provided the 
+monochromatic radiation. All the samples were measured in the range of 
+10–90◦, with 0.026◦ steps. The composition of the synthesized samples 
+was studied using SEM electron microscopy. The images were recorded 
+by a FEI NOVA NanoSEM 230 high-resolution scanning electron mi-
+croscope equipped with an EDS spectrometer EDAX Pegasus XM4 (with 
+the Apollo 40 SDD detector), with a primary beam energy of 20 keV. 
+Optimum resolutions (high vacuum) were 1.0 nm and 1.5 nm at 15 kV 
+(TLD-SE) and at 1 kV (TLD-SE), respectively. Beam landing energy was 
+50 V - 30 kV, and probe current was 0.6 pA–100 nA (continuously 
+adjustable). 
+Absorbance measurements were made using in-line transmittance 
+and a reflection technique with a Varian Cary 5E UV-VIS-NIR spectro-
+photometer equipped with an adapter for reflection measurements. 
+Deuterium (200–350 nm) and halogen lamps (350–2500 nm) were used 
+as radiation sources. For detection, a spectrophotometer equipped with 
+a Hamamatsu R928 photomultiplier tube (UV-VIS range) and a cooled 
+PbS detector for the near infrared range were used. The spectropho-
+tometer was equipped with two diffraction gratings – 1200 lines/mm 
+centred on 250 nm for the UV-VIS range and a constant grating with 300 
+lines/mm centred on 1192 nm for the visible range. 
+Photoluminescence (emission spectra, luminescence excitation 
+spectra and decay times) was recorded using an Edinburgh Instruments 
+FLS980 spectrofluorimeter equipped with two excitation sources: a 
+continuous xenon lamp with a power of 450 W and a pulse xenon lamp 
+with a power of 150 W. The single and double grating monochromators 
+used in the FLS980 are of the Czerny-Turner configuration with 300 mm 
+(or 2 × 300 mm) focal length, high optical throughput, excellent stray 
+light rejection, and low temporal dispersion. The excitation mono-
+chromator was equipped with a diffraction grating with 1800 lines/mm 
+illuminated at a wavelength of 250 nm, while the emission mono-
+chromator was equipped with a diffraction grating with 1800 lines/mm 
+illuminated at a wavelength of 500 nm for the visible range or 1200 nm 
+for the near-infrared range. The spectrofluorimeter was equipped with 
+two detectors – the Hamamatsu R928P photomultiplier for the visible 
+range and the liquid nitrogen cooled Hamamatsu R5509-72 photo-
+multiplier for the infrared range. The fluorescence spectra in the 1 μm 
+region were excited with an InGaAs laser diode (976 nm). In addition, 
+the fluorescence decay curves at 1030 nm were measured at 976 nm 
+excitation using an InGaAs laser diode. All the measurements were taken 
+at room temperature. 
+3. Results and discussion 
+3.1. Structure characteristics 
+Fig. 2 shows the X-Ray diffraction (XRD) of the Gd1.4Lu0.5Yb0.1O3 
+transparent ceramics. The XRD results indicated the presence of two 
+phases. The first had a cubic structure similar to those of pure Lu2O3 and 
+Gd2O3, and the second had a monoclinic (Lu,Gd)2O3 structure. The 
+diffraction data were refined with the cubic I213 space group for Gd2O3 
+and the C2/m space group for Gd2O3 using Rietveld analysis. The 
+structure refinements involved resorting to the FullProfSuite program 
+and using the WinPLOTR, and WinPLOTR-2006 applications. The lattice 
+parameters were: for the cubic phase a = 10.6864(4) Å; for the mono-
+clinic cell a = 3.413(1) Å, b = 7.229(2) Å, c = 8.957(3) Å, α = 98.66(2)◦, 
+β = 90◦, γ = 100.76(1)◦. It should be noted that the reflection peaks of 
+the monoclinic phase were broadened, indicating a lack of completion of 
+the phase transition from the monoclinic to the cubic phase. This fact 
+implies difficulties in the calculations of the monoclinic cell parameters, 
+as well as the weight percentage of these phases. 
+The presence of the monoclinic phases was expected in the ceramic 
+samples of such a composition. The same results were reported earlier, 
+where the Gd1.6Lu0.4O3 and Gd1.4Lu0.6O3 lutetium gadolinium oxide 
+solid solutions have both monoclinic and cubic phases [17]. The full 
+transformation from the monoclinic to the cubic phase takes place at 
+temperatures higher than 1600 ◦C for the (Lu,Gd)2O3 samples doped by 
+more than 40 at. % Lu; that is higher than in our case. It should be noted 
+that the SEM analysis revealed no secondary phases in our samples Fig. 1. Photograph of the Gd1.4Lu0.5Yb0.1O3 ceramics.  
+M. Chaika et al.                                                                                                                                                                                                                                 
+Optical Materials: X 13 (2022) 100123
+3
+(Fig. S1). The elemental mapping showed homogeneous distribution of 
+the Gd, Lu, Yb and O elements across the sample (Fig. 3). 
+3.2. Optical properties 
+The transmission spectra from 200 nm to 2500 nm of the 
+Gd1.4Lu0.5Yb0.1O3 ceramic samples are presented in Fig. 4. In-line 
+transmission at 500, 1100, and 2500 nm was 54%, 71%, and 76%, 
+respectively, which is comparable with the other RE2O3 ceramics [18, 
+19]. It should be noted that the transmittance of the mixed 
+Gd1.4Lu0.5Yb0.1O3 ceramics is comparable with Yb3+:Lu2O3 transparent 
+ceramics [20–22]. The dotted line shows the calculated in-line trans-
+mittance of the defect-free Gd1.4Lu0.5Yb0.1O3 ceramics. The theoretical 
+transmittance curve was obtained by the Lambert – Beer law: 
+k=
+1
+h
+ln
+[
+(1 − R)2
+T
+]
+, R=
+[
+n2 − n1
+n2 − n1
+]2
+(1)  
+where k is the linear optical loss coefficient, h is the ceramic sample 
+thickness, R is the wavelength-dependent reflection coefficient, and T is 
+the linear light transmission coefficient, T = (1 - R)2. 
+Prediction of the refractive index of the Gd1.4Lu0.5Yb0.1O3 solid so-
+lution at different wavelengths was performed using the Drude (or Sil-
+berstein) theory, which was developed to describe the effective 
+refractive index neff of heterogeneous media in terms of volume fractions 
+[23]: 
+n2
+eff =(1 − φ)n2
+1 + φn2
+2 (2)  
+where n1 and n2 are refractive indexes of Gd2O3 and Lu2O3 phases, 
+respectively, and φ is the volume fraction of the second phase. 
+Fig. 2. X-ray diffraction pattern of the Gd1.4Lu0.5Yb0.1O3 transparent ceramics 
+(black curve), and results of Rietveld refinement analysis (red and blue curve). 
+The M symbol indicates peaks corresponding to monoclinic phase. (For inter-
+pretation of the references to colour in this figure legend, the reader is referred 
+to the Web version of this article.) 
+Fig. 3. EDX elemental mapping in Gd1.4Lu0.5Yb0.1O3 transparent ceramics for Gd, Lu, Yb, and O. The indicated atomic symbols correspond to the EDX.  
+Fig. 4. The transmission spectrum of Gd1.4Lu0.5Yb0.1O3 ceramics at wave-
+lengths ranging from 200 nm to 2500 nm measured at room temperature. The 
+dotted line presents the theoretical transmission of the defect-free Gd2O3 matrix 
+calculated using the refractive index from eq: 2. 
+M. Chaika et al.                                                                                                                                                                                                                                 
+Optical Materials: X 13 (2022) 100123
+4
+Due to the low fraction of the Yb2O3 phase, the volume fraction of the 
+Yb2O3 phase was added to the volume fraction of Lu2O3 due to the 
+proximity of its refractive index [24]. Considering the lattice volume of 
+cubic Lu2O3 (556 Å3) and Gd2O3 (640 Å3), the volume fractions of Lu2O3 
+and Gd2O3 were 27% and 73%, respectively. Refractive indices of cubic 
+Gd2O3 and Lu2O3 phases obey the Sellmeier equation [24]: 
+1
+n2 − 1
+= −
+A
+λ2 + B (3)  
+where n is the refractive index, and λ is the wavelength, A is the slope of 
+the plot of (n2-1)− 1 vs. (λ2)− 1, which gives a measure of the dispersion, 
+and B is the intercept of the plot at λ = ∞, which gives n∞ = (1 + 1/B)1/2. 
+The calculated values of A and B are listed in Table 1. However, the 
+refractive indices of the Gd2O3 and Lu2O3 compounds can be calculated 
+accurately for any wavelength in the visible region. 
+The absorption bands in the range from 850 to 1050 nm can be 
+ascribed to 2F7/2 → 2F5/2 electronic transitions of Yb3+ ions [5]. No Yb2+
+ions were observed in the sample. The most intense absorption in the 
+range below 240 nm corresponds to interband transitions of the Gd2O3 
+matrix. The lines at 275 nm and 315 nm were attributed to the 4f-4f 
+optical transitions of Gd3+ ion from the ground 8S7/2 to the excited 6IJ 
+and 6PJ states, respectively. Selective absorption peaks of the host lattice 
+cations indicated that the electron structure of a part of the Gd3+ ions in 
+Gd2O3 was distorted [25]. We suppose that this distortion was caused by 
+incomplete transformation of the monoclinic to cubic phase in our 
+sample. The absorption cross-section of Yb3+ ions was determined ac-
+cording to the following equation: 
+σabs =H/N (4)  
+where σabs, H and N represent the absorption cross-section, absorption 
+coefficient at a certain wavelength, and concentration of Yb3+ ions, 
+respectively. 
+The cubic (Lu,Gd)2O3 phase has the cation density of 2.61 × 1022 
+cm− 3 (32 cations per 1220 Å3 unit cell volume with 24 in the C2 sites and 
+8 in the C3i sites) and, therefore, concentration of Yb3+ ions is 0.13 ×
+1022 cm− 3. The absorption coefficients of Gd3+ ions at 275 nm and 315 
+nm were 48.5 cm− 1 and 10.5 cm− 1, respectively. The absorption spec-
+trum of the sample is shown in Fig. S2. The Gd1.4Lu0.5Yb0.1O3 cubic 
+phase has two six-coordinated cation sites, with local point group 
+symmetries of C2 and C3i. According to the literature, Yb3+ ions can 
+occupy each site. The C3i contains 25%, and the C2 site 75% of all Yb ions 
+and both contribute to the total absorption and emission spectra [26]. 
+The absorption lines at 975 nm are caused by the 2F7/2-2F5/2 electron 
+transitions of Yb3+ ions. The absorption coefficient was 28.4 cm− 1 and 
+the absorption cross-section was 2.18⋅10− 20 cm2 (Fig. 6). This agrees 
+with the literature data [3,11]. 
+The laser properties of the Yb3+-doped laser materials are based on 
+the 2F7/2-2F5/2 electron transitions which caused the appearance of ab-
+sorption and emission bands in the NIR region. The electron structure of 
+Yb3+ is [Xe]4f13. So, the 4f-shell is almost complete with the exception of 
+one hole, which is responsible for the simple level structure. Two rele-
+vant Stark multiplets, 2F5/2 and 2F7/2 (Fig. 1), are separated by 
+approximately 10000 cm− 1; the next excited configuration is located at 
+≈100,000 cm− 1 [4]. In a crystal field of cubic symmetry, the six-fold 
+degenerated J = 5/2 manifold is split into a Γ7 doublet (2′) and a Γ8 
+quartet (0′, 1’), and for octahedral (six-fold) coordination the quartet 
+lies lower. The J = 7/2 manifold forms a Γ8 quartet (1, 2) and two 
+doublets (Γ6 (0) and Γ 7 (3)). 
+Room-temperature absorption and luminescence spectra corre-
+sponding to the intermanifold 2F7/2↔2F5/2 transitions of Yb3+ ions in 
+Gd1.4Lu0.5Yb0.1O3 ceramic are shown in Fig. 5. There is a broad ab-
+sorption band from 850 nm to 1050 nm, which makes temperature 
+control less critical to ensure stable absorption at 975 nm. The measured 
+luminescence lifetime of the 2F5/2 state of Yb3+ ions in the 
+Gd1.4Lu0.5Yb0.1O3 ceramic sample was found to be 1.07(1) ms (Fig. S3). 
+In the thermal equilibrium, the level populations are Boltzmann- 
+distributed. In the case of pumping and lasing, a considerable part of 
+the active ions is found in the upper manifold. Fast intraband thermal-
+ization leads to a separate distribution for each manifold, with most of 
+the excited ions being in (0′). Therefore, laser inversion is only possible 
+here and laser emission will occur from (0′) to (1), (2), or (3) leading to 
+intense emission centred at 9922 cm− 1 (1008 nm), 9712 cm− 1 (1030 
+nm), and 9341 cm− 1 (1072 nm), respectively. It is difficult to realize the 
+necessary high pump intensities and achieve inversion for the (0′)-to-(0) 
+(“zero-line”) transition, which is centred at 10244 cm− 1 (976 nm). Other 
+emission lines contribute to fluorescence. It should be noted that the 
+crystal-field splitting and the assignment of electronic transitions 
+calculation are based on a high resolution low temperature study of a Yb: 
+Lu2O3 single crystal [26]. 
+At room temperature, Yb has a “quasi-three-level” character; when 
+manifold partition functions are taken into account, at least 5.5% of all 
+Yb3+ ions must be pumped into the initial laser Stark level to achieve 
+gain material transparency [27]. In a “quasi-three-level laser scheme” 
+the Yb3+ ions are pumped into (0′). “Quasi” refers to the fact that the 
+Stark levels within a multiplet are only “quasi-separate” and are actually 
+connected by a Boltzmann distribution. Lasing occurs most readily for 
+the strong emission transitions at 1030 nm or 1072 nm between the 
+lowest Stark level of the 2F7/2 manifold at 10241 cm− 1 (0’) and the Stark 
+levels of the ground manifold at 516 cm− 1 (2) or 879 cm− 1 (3). 
+3.3. Emission cross-sections 
+Emission cross-section is an important characteristic for predicting 
+the stimulated emission for the laser active media. There are a number of 
+different ways in which emission cross-sections can be determined. The 
+three main possibilities include: 1) the reciprocity method (McCumber 
+method), 2) the Fuchtbauer-Ladenburg (F-L) equation, and 3) direct 
+measurements of small signal or saturated gain [7,28]. Each of these 
+methods introduces a distortion to the calculated value of the emission 
+cross-sections, which must be taken into account. Therefore, the emis-
+sion cross-section was calculated by two different approaches. First, the 
+Table 1 
+The dispersion parameters [24].  
+Parameter Yb2O3 Lu2O3 Gd2O3 
+A, 10− 16 m2 67.8 65.2 62.0 
+B 0.3779 0.3839 0.3104  
+Fig. 5. Room-temperature absorption and emission spectra (2F7/2↔2F5/2 tran-
+sition) in Gd1.4Lu0.5Yb0.1O3 ceramics. Inset shows the room-temperature crystal 
+field splitting of 2F5/2 and 2F7/2 manifolds in Gd1.4Lu0.5Yb0.1O3 ceramics. En-
+ergies of Stark levels are given in cm− 1. 
+M. Chaika et al.                                                                                                                                                                                                                                 
+Optical Materials: X 13 (2022) 100123
+5
+Fuchtbauer-Ladenburg equation was used [29]: 
+σem(λ)≈
+λ4
+8πcn2τrad
+×
+λI(λ)
+∫
+λI(λ)dλ
+(6)  
+where λI(λ)/
+∫
+λI(λ)dλ is the normalized lineshape function of the 
+experimental emission spectrum I(λ), n is the refractive index, c is the 
+speed of light in a vacuum, τrad is the radiative lifetime, and σem is the 
+emission cross-section. 
+The F-L methods use the emission spectral line shapes and the fluo-
+rescence lifetime. One of the main problems of this method is related to 
+the measurement errors in the emission spectra and fluorescence life-
+time. In order to determine the measured lifetime, the radiative lifetime 
+was estimated from absorption cross-sections. The calculated lifetime is 
+given by τcal =A− 1 where A is the radiative transition rate for Yb3+ given 
+by the following equation [30]: 
+Arad =
+8πcn2
+λ4
+p
+⋅
+(2Jl + 1)
+(2Ju + 1)
+∫
+σabs(λ)dλ (7)  
+where λp is the wavelength of peak absorption, Ju and Jl are the total 
+momenta for the upper and lower levels and σabs is the absorption cross- 
+section. 
+The calculated radiative transition rate was 1208 s− 1 corresponding 
+to calculated lifetime τcal ~0.83 ms. The calculated lifetime corresponds 
+well with that reported in the literature for other Yb-doped sesquioxides 
+(see Table 2). In contrast, the measured lifetime (τexp ~ 1.07 ms) is 
+higher by 23% compared to that calculated [31]. Such difference was 
+caused by the radiative trapping effect [32,33]. The difference in the 
+values of measured and calculated lifetimes is in agreement with the 
+Fig. 6. The absorption (blue dashed line) and emission cross-section spectra 
+calculated by reciprocity method (black solid line), Fuchtbauer-Ladenburg 
+(F–L) equation taking into account the experimental lifetime (red solid line) 
+and the calculated lifetime (green dashed line). (For interpretation of the ref-
+erences to colour in this figure legend, the reader is referred to the Web version 
+of this article.) 
+Table 2 
+Characteristics of Yb-doped laser materials (the current paper was marked as [C]). The star denotes single crystals.  
+Host material C(Yb), at.% Absorption Emission Thermal 
+Conductivity, (W/m⋅K) 
+Ref. 
+λabs, (nm) Δλabs, (nm) σabs, (10− 20cm2) λem, (nm) Δλem, (nm) σem, (10− 20cm2) τ (ms) 
+YAG*  941 18 0.82 1030 8.5 2.10 0.95 10.1 [8]  
+969 3 0.80      [8] 
+Y2O3*  976 2.5 2.4 1030 12.2 0.98 0.85 13.6 [8] 
+Y2O3 5 950  0.7 1030  1.1 0.78  [35] 
+976  1.7 1076  0.5 0.78  [35] 
+977 1.2 1.99 1030 14 0.9 0.797  [15] 
+Y2O3 5 978  2.23 1032  1.42   [11] 
+978  2.08 1032  1.0   [11] 
+5 978  1.15 1032  1.58   [11] 
+978  2.18 1032  1.26   [11] 
+4 976   1032  1.02 0.82  [14] 
+950   1074  0.41 0.82  [14] 
+6 951  0.74 1032 15 1.4   [3] 
+977  2.07 1076 17 0.38   [3] 
+2.5 976   1031  0.95 0.82  [10] 
+948   1076  0.50 0.82  [10] 
+Lu0.5Y1.5O3 6 950  0.71 1032 16 1.3   [3] 
+976  1.70 1077 21 0.39   [3] 
+Lu0.5Y1.5O3 5 950  0.7 1030  1.1 0.76  [36] 
+976  1.8 1076  0.5 0.76  [36] 
+Lu0.3Y1.7O3 5 950  0.7 1030  1.1 0.7  [36] 
+976  1.7 1076  0.5 0.7  [36] 
+Lu2O3 6 950  0.78 1034 16 1.37   [3] 
+976  2.32 1079 18 0.39   [3] 
+976  3.2 1032  1.1   [3] 
+948  1.1 1079  0.30   [3] 
+Lu2O3  947  0.62 1033  0.84   [18]  
+976  1.03 1080  0.21   [18] 
+Lu2O3* 6 976 2.5 0.30 1032 11.5 1.10 0.82 12.5 [8] 
+Sc2O3*  976 2.5 0.44 1040 11.5 1.30 0.80 16.5 [8] 
+Sc2O3 3    1030  1.4 0.68  [37]    
+1094  0.25 0.68  [37] 
+KYW*  981 3.5 13.3 1025 16 3 0.6 3 [8] 
+KGW*  981 3.7 12 1023 20 2.8 0.6 3.5 [8] 
+Gd1.4Lu0.5Yb0.1O3 5 953  2.2 1031  1 1.07  [C] 
+977  0.8 1073  0.4 1.07  [C]  
+M. Chaika et al.                                                                                                                                                                                                                                 
+Optical Materials: X 13 (2022) 100123
+6
+literature, where the difference between measured and real Yb3+ life-
+time was in the range of 13–21% [32]. 
+The main disadvantage of Yb-doped hosts is their quasi-three-level 
+nature caused by the thermal population of the higher Stark levels of 
+the 2F7/2 manifold. This thermal population has deleterious effects on 
+the radiation trapping of the emission by the thermally populated lower 
+Stark state, which contains roughly 5% of the 2F7/2 population at room 
+temperature [31]. In the well-known radiation trapping effect, photons 
+that are spontaneously emitted from the metastable level are trapped by 
+ions in the ground state by reabsorption. These excited ions relax by 
+spontaneously emitting more photons, which are then reabsorbed, and 
+the entire process is repeated [33]. Therefore, the measured fluores-
+cence lifetime is longer than the lifetime of a single Yb3+ ion. These 
+reabsorption and radiation trapping phenomena ultimately limit the 
+usefulness of the F-L method in obtaining accurate emission 
+cross-section values, especially from highly doped bulk samples, which 
+leads to underestimation of the stimulated emission cross-sections by as 
+much as 30% [17]. However, the absolute value for the absorption cross 
+section predicted by the FL relation is nearly accurate, and therefore it 
+remains a parameter of indicative value. 
+Fig. 6 shows the emission cross-sections obtained using measured 
+(green line) and calculated (red line) lifetime. The high-energy side of 
+the emission cross-section spectra calculated by the F-L theory was 
+affected by reabsorption phenomena which caused the lowering of the 
+high-energy part of emission spectra, especially for (2F7/2)0↔(2F5/2)0’ 
+transitions. The effect of reabsorption can be reduced by grinding the 
+sample. Fig. S4 shows the emission spectra of the powdered and bulk 
+Gd1.4Lu0.5Yb0.1O3 samples. On the other hand, the reciprocity methods 
+allow calculation of the emission cross-sections from corresponding 
+absorption spectra avoiding the effect of radiation trapping [32] by the 
+following equation: 
+σem(λ)≈ σabs(λ)⋅
+(
+Zl
+Zu
+)
+exp
+⎡
+⎢
+⎢
+⎣
+−
+(
+Ezl − hc/λ
+)
+kBT
+⎤
+⎥
+⎥
+⎦ (5)  
+where h is Planck’s constant, kB is Boltzmann’s constant, T is the tem-
+perature, Ezl is the net free energy required to excite one Yb3+ ion from 
+the lowest Stark level of the 2F7/2 state to the lowest Stark level of the 
+2F5/2 state at temperature T, and Zu and Zl are partition functions. 
+The reciprocity method allows the emission spectrum in absolute 
+cross-section units to be calculated from the corresponding absorption 
+cross-section lineshape. The required information includes the ratio of 
+the partition functions of the lower and upper states, Zl, Zu, and the zero- 
+line energy Ezl. Zl and Zu are usually obtained from the energy levels of 
+the manifolds and the Stark levels within these manifolds. Previously, 
+the values of Zl/Zu have been calculated for phosphate, germanate and 
+silicate glasses at room temperature (0.98, 0.97 and 0.83, respectively) 
+[32]. While these data are not available for Yb-doped sesquioxides, the 
+value of Zl/Zu (1) was used for calculations. Within this approximation, 
+the total uncertainty in the σem value was 15%. The calculated emission 
+cross-section for Gd1.4Lu0.5Yb0.1O3 ceramics is shown in Fig. 6 (black 
+line). The lineshape the of emission cross-section obtained corresponds 
+well with that reported in the literature for other Yb-doped materials, 
+while the strongest emission peak was found at 980 nm [32]. 
+An attractive aspect of McCumber’s theory is that its validity is based 
+on very general assumptions. One assumption, which is widely recog-
+nized, is that there is a thermal distribution of population among the 
+individual Stark components of each Stark manifold. Another assump-
+tion, not as widely recognized, is that it is strictly valid only when the 
+linewidth of each individual transition between Stark levels is less than 
+kBT [34]. At room temperature this seem to be a fairly good approxi-
+mation for the (2F7/2)0↔(2F5/2)0’ transitions, since typical homogeneous 
+and inhomogeneous components of linewidth are in the range up to 35 
+cm− 1 compared with kBT’~200 cm− 1. However, the transition between 
+(2F5/2)1’,2’ and (2F7/2)1,2,3 Stark level is comparable with kBT at room 
+temperature. Because these transitions are so strongly overlapped, it was 
+difficult to define the spectral linewidth, and the estimated values of the 
+spectral linewidths were in the range of 50–170 cm− 1. Therefore, the 
+McCumber transform introduces a distortion in the emission 
+cross-sections calculated in which the low-energy side of the spectrum is 
+increased, and the high-energy side is decreased [34]. 
+The reciprocity and F-L methods of predicting the emission cross- 
+sections is largely inaccurate (i.e., by up to 30%). Combination of 
+these two methods allows the exclusion of the uncertainty in the 
+determination of emission cross-sections in the high-energy region for 
+the F-L method caused by reabsorption and uncertainty in the low- 
+energy region for the reciprocity method caused by high spectral line-
+width for transitions between Stark levels. The stimulated-emission 
+cross-section for Gd1.4Lu0.5Yb0.1O3 ceramics was 9.7⋅10− 21 cm2 (reci-
+procity) and 8.4⋅10− 21 cm2 (F-L) at 1031 nm and 3.7⋅10− 21 cm2 (reci-
+procity) and 3.9⋅10− 21 cm2 (F-L) at 1073 nm. The calculated values were 
+close to the estimated values of the emission cross-section for other Yb- 
+doped sesquioxides (Table 2). The gain cross-section can be calculated 
+using absorption and emission cross-sections according to the following 
+equation: 
+σG(λ)=P× σem(λ) − (1 − P) × σabs(λ) (9)  
+where P is the population inversion ratio, P=Nu/N0, Nu and N0 are the 
+number of Yb3+ ions at the lasing 2F5/2 level and the total number of 
+Yb3+ ions, respectively [9]. 
+Fig. 7 shows the set of gain cross-section spectra for several P values 
+from 0 to 1. According to the data obtained, the positive gain cross- 
+section at 1030 nm and 1072 nm can be achieved when the inversion 
+ratio P is 0.1 or higher. Therefore, the low inversion ratio indicates a low 
+pumping threshold for ~1 μm laser operation of Gd1.4Lu0.5Yb0.1O3 
+ceramics. 
+4. Conclusion 
+Gd1.4Lu0.5Yb0.1O3 ceramics with good optical transparency were 
+successfully fabricated by hot pressing of nanopowders using lithium 
+fluoride as a sintering additive. The X-ray diffraction results show the 
+presence of two phases. The first with a cubic structure similar to those 
+of pure Lu2O3 and Gd2O3, and the second with a monoclinic structure 
+(Lu,Gd)2O3. The reflection peaks of the monoclinic phase were broad-
+ened, which indicates lack of ncompletion of the phase transition from 
+Fig. 7. The calculated gain cross-section of Gd1.4Lu0.5Yb0.1O3 ceramics from 
+emission cross-section calculated by Fuchtbauer-Ladenburg equation (red line 
+on Fig. 2). (For interpretation of the references to colour in this figure legend, 
+the reader is referred to the Web version of this article.) 
+M. Chaika et al.                                                                                                                                                                                                                                 
+Optical Materials: X 13 (2022) 100123
+7
+the monoclinic to the cubic phase. It should be noted that the SEM 
+analysis revealed no secondary phases in our samples. The elemental 
+mapping shows homogeneous distribution of the Gd, Lu, Yb and O ele-
+ments within the sample. 
+The absorption and emission spectra as well as decay curves were 
+measured at room temperature. In-line transmission at 500, 1100 and 
+2500 nm was 54%, 71%, and 76%, respectively. The absorption co-
+efficients of Gd3+ ions at 275 nm and 315 nm were 48.5 cm− 1 and 10.5 
+cm− 1, respectively. The absorption coefficient at 975 nm was 28.4 cm− 1 
+and the absorption cross-section was 2.18⋅10− 20 cm2. The Yb3+ emission 
+bands were in the range of 900–1150 nm with maximums of 975 nm, 
+1008 nm, 1030 nm, and 1072 nm. The measured luminescence lifetime 
+of the 2F5/2 state of Yb3+ ions in the Gd1.4Lu0.5Yb0.1O3 ceramic sample 
+was found to be 1.07(1) ms. 
+Two different approaches were used to calculate the emission cross- 
+sections, namely: (i) the reciprocity method (McCumber method), and 
+(ii) the Fuchtbauer-Ladenburg (F-L) equation. The reciprocity and F-L 
+methods’ prediction of the emission cross-section was largely inaccurate 
+(i.e., by up to 30%). The stimulated-emission cross-section for 
+Gd1.4Lu0.5Yb0.1O3 ceramics was 9.7⋅10− 21 cm2 (reciprocity) and 
+8.4⋅10− 21 cm2 (F-L) at 1031 nm and 3.7⋅10− 21 cm2 (reciprocity) and 
+3.9⋅10− 21 cm2 (F-L) at 1073 nm. The values calculated were close to the 
+estimated values of emission cross-sections for other Yb-doped sesqui-
+oxides. According to the data obtained, a positive gain cross-section at 
+1030 nm and 1072 nm can be achieved when the inversion ratio P is 0.1 
+or higher. All the results show that Gd1.4Lu0.5Yb0.1O3 transparent ce-
+ramics can be used as a potential active medium for mid-infrared high- 
+power lasers. 
+CRediT authorship contribution statement 
+Mykhailo Chaika: Conceptualization, Investigation, Project 
+administration, Resources, Supervision, Writing – original draft. Sta-
+nislav Balabanov: Investigation, Resources, Writing – review & editing. 
+Dmitry Permin: Investigation. 
+Declaration of competing interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgement 
+This work was supported by the Ministry of Science and Higher 
+Education of the Russian Federation by the State Task executed in the 
+IChHPS RAS, Project No. FFRN-2019-005. 
+Appendix A. Supplementary data 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.omx.2021.100123.

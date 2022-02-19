@@ -1,0 +1,276 @@
+Highly monodisperse nanostructures are becoming the centre of focus in the field of material science towards the 
+application of sensors, photocatalysis, gas sensing, antibacterial activity, drug delivery and energy applications. 
+Monodisperse resembles uniform nanostructures towards better device performances and applications. In order 
+to minimize the reaction time and characterization costs, an attempt has been made for development of a pre-
+diction model for the synthesis of monodisperse silica nanospheres using Adaptive Neuro-Fuzzy Inference System 
+(ANFIS) software. Experimental parameters of the Stober method such as precursor’s ratio (ethanol, water and 
+ammonia), Tetraethyl Orthosilicate (TEOS) and sphere size were predicted in the model. The results from the 
+prediction model were used for carrying out experimentation on thin films using vertical deposition technique. 
+The prepared substrates were characterized by FE-SEM & XRD analysis. Obtained Experimental results shows 
+that nanosphere with a size range of 200- 250 nm will form monodisperse layer. XRD analysis confirms the 
+amorphous nature of SiO2 film. ANFIS has predicted best suitable size of silica nanospheres and optimized 
+precursor’s ratios for attaining highly monodisperse structure. The optimized parameters predicted from the 
+ANFIS network matches well with the experimental results.   
+1. Introduction 
+Silica nanostructured have been widely used for drug applications, 
+biosensors, bioimaging, Surface Enhanced Raman spectroscopy, gas 
+sensing and acts as template for lithography techniques [1–3]. There is 
+huge demand for low-cost material for advance applications. The 
+different nanostructures of silica are rods, cubes, spheres, wires and 
+pillars. Among the all-spherical particles have been widely used for 
+above applications. Nanosphere has high surface energy because of its 
+surface tension. Nanosphere have small particle size; thus, they are 
+suitable to be administered orally, locally and systematically [4]. Silica 
+Nanospheres have been synthesised using techniques such as sol gel, 
+Coprecipitation, hydrothermal synthesis, Solvothermal method, lithog-
+raphy, chemical reduction and physical deposition techniques. Among 
+these all, Stöber [5,6] method has been widely used by most of the 
+researcher for obtaining desired spherical size by easiest way at low cost. 
+Stöber method is the extension of sol gel method, where the particles 
+undergo hydrolysis and condensation process. The particle size strongly 
+depends on the water and ammonia concentration, but also on the na-
+ture of the alcohol used as a solvent. While using alcohols of higher 
+molecular weight, the reaction is slowed down and both median particle 
+size and the spread of the size distribution increased simultaneously. The 
+increase in the size confirms that concentration of these parameters 
+(TEOS, ethanol, ammonia, water) plays an effective role in Stöber re-
+action and is so complex that each of single parameters directly brings 
+changes in resultant nanoparticles size. After synthesis, it is necessary to 
+bring synthesized silica in working field to use it for different applica-
+tions and which is only possible if it get deposited onto substrates in wet 
+form. Deposition of silica nanospheres on substrates is carried out by 
+methods such as self-assembly, atomic layer method, spin coating, 
+anisotropic etching, among above spin coating and vertical deposition 
+techniques are simplest and low cost [7]. The deposition process carried 
+out by vertical deposition method helps to get uniform monodispersed 
+structure. In vertical deposition techniques the most important param-
+eters are precursor ration and withdrawing time [8]. Using vertical 
+deposition method SiO2 nanospheres were deposited on to glass slides 
+for different dipping time. In the present work we have made an attempt 
+for minimizing experimental work using theoretical approach of Adap-
+tive Neuro Fuzzy Inference System (ANFIS). ANFIS is one of the pre-
+diction network models which connects the experimental input/output 
+* Corresponding author: 
+E-mail address: dhanpal@klu.ac.in (N.D. Jayram).  
+Contents lists available at ScienceDirect 
+Chemical Physics Impact 
+journal homepage: www.sciencedirect.com/journal/chemical-physics-impact 
+https://doi.org/10.1016/j.chphi.2021.100042 
+Received 13 October 2020; Received in revised form 29 July 2021; Accepted 18 September 2021   
+Chemical Physics Impact 4 (2022) 100042
+2
+and transforms it into a mathematical model for further prediction of 
+results [8]. 
+The main objectives of this work is to 1) Creation of a robust pre-
+diction model with Adaptive Neuro-Fuzzy Inference System (ANFIS) to 
+optimize the particle size of silica nanospheres to form monodisperse 
+thin film. 2) Examine the effect of different parameters (TEOS, ethanol, 
+ammonia, water) on particle size of silica nanospheres 3) The predicted 
+precursor ratio were chosen for further experimental validation and it 
+was concluded that 200nm size is the best one for monodisperse coating. 
+The present work will help researchers to fabricate monodispersed 
+nanospheres for various applications. As theoretical simulation well 
+matches with experimental work, the experimental data could be used 
+for device fabrication for various application such as bio sensor, gas 
+sensing and many more. Since there are multiple deposition methods 
+and available nano-structures for various applications, it becomes 
+tedious for the researchers to identify the best selection from the mul-
+tiple combinations of parameters. 
+This could save researchers time and avoid laborious calculation and 
+analysis work. The suggested parameters from the present work will 
+save money and helps them to avoid repetitive characterization of 
+samples. 
+2. Simulation and Theoretical Predication 
+For optimization of parameters and to maintain the reaction at low 
+cost we need to run simulation. Artificial Neural Network (ANN) and 
+Fuzzy Logic (FL) are the most common of soft computing methods due to 
+their acceptable accuracy within the simulation. In the present work, we 
+have optimized the condition for synthesis of nanospheres using Adap-
+tive Neuro-Fuzzy Inference System (ANFIS) [9]. The system is designed 
+as INPUT, OUTPUT and CPU. Synthesis of nanospheres requires total 
+five parameters such as TEOS, Ethanol, water and ammonia. 
+2.1. Adaptive Neuro-Fuzzy Inference System (ANFIS) 
+These parameters were taken as input data and shown in yellow 
+colour. The input data are fed and output results are confirmed as F(u). 
+The white color box indicates that the ANFIS software which works like 
+a CPU. To run the programmes, the following datas were taken from 
+literature survey and experimental work. In the below attached table the 
+following data’s are represented as stöber datas. As this whole process 
+needs iteration and minimum fixed parameters, the condition followed 
+as for iterations process. 
+2.2. Input Data for Size of Silica Nanospheres 
+The membership function plots the range of the size from minimum 
+to maximum value as shown in Fig. 1 Red color shows low input value, 
+here the value fixed as 45nm. 
+2.3. Input Data for TEOS 
+Fig. 2 shows the input data for TEOS. The data is ranging from 
+0.18ml to 18ml. 
+2.4. Input Data for Ammonia 
+The third input data is Ammonia. Ammonia acts as catalyst and plays 
+vital role for synthesis of spheres. The membership function plots the 
+range of the size ranges from 1.2 ml to 100 ml. in Fig. 3 
+2.5. Input Data for Water 
+The fourth input data is water. From the Stöber method literature 
+survey the size ranges from 1.2 ml to 53.6 ml in Fig. 4 
+2.6. Input Data for Ethanol 
+The fifth input data is ethanol. From the Stöber method literature 
+survey here the size ranges from 0.14 ml to 124 ml. 
+After fed input data, ANFIS software is running. The first hydration 
+process is in training error which minimizing the error of input values as 
+shown in Fig. 6 
+From the above five input parameters from maximum to minimum                                                                              
+Chemical Physics Impact 4 (2022) 100042
+3
+values. The following output datas correlated with the experimental 
+work. While changing the size of the sphere, TEOS, ammonia, water and 
+ethanol the output results value from 1 to 5. Here 1 to 5 indicates the 
+results as following: 1 is very bad, 2 as fair, 3 as average, 4 as good and 5 
+as very good. 
+2.7. Output data for Input size 300nm, TEOS 0.76ml, ammonia 4ml, 
+Ethanol 50ml and water 10ml respectively 
+The output result is 3.49 which indicates good results for the cor-
+responding input values. The output datas for 60, 100, 200 and 250 nm 
+sizes were found as 1.54, 2.95, 3.29, 3.32 [See supplementary datas Fig 
+S1& S2] Based on the results we have taken 200nm size as the ideal case 
+for the experimental work and further we have run the simulation to find 
+out the optimized precursor ratio values. 
+2.8. Output data for Input size 200nm, TEOS 0.2ml, ammonia 0.5ml, 
+Ethanol 10 ml and water 10ml respectively 
+The output results are 3.77 [Fig S3 supplementary] and 3.86 in-
+dicates good results for corresponding input values. As per the above 
+simulation the obtained results shows that precursors are directly pro-
+portional to the output results. As the value decreases the output 
+increases. 
+Fig. 2. Input Data of Size
+Fig. 3. Input data of TEOS  
+Fig. 4. Input Data of Ammonia
+Fig. 5. Input data of water
+2.9. Output data for the 200nm size the values changed to TEOS 0.5ml, 
+ammonia 0.5ml, Ethanol 3ml and water 3ml respectively 
+The outputs results are 4.02 [Fig S4 supplementary], 4.13 indicate 
+good results for corresponding input values. Here the out results are 
+appearing very good as the results are 4.13 the best outcome for all the 
+run profiles. 
+2.10. Output data for Input size 300nm, TEOS 0.5 ml ammonia 0.5 ml, 
+Ethanol 3ml and water 3 ml respectively 
+The outputs results are 3.41, 3.77, 3.35, 3.08 indicate good results 
+for corresponding input values. Supplementary Fig S5, and S6 shows 
+that when we change the ratio of TEOS 0.5 ammonia 0.5 ml, Ethanol 3ml 
+and water 3 ml for the size of silica nanospheres 100nm the output will 
+be 3.35 similarly when we can the ratio of TEOS 0.76, 0.28ml ammonia 
+4,0.37 ml, Ethanol 5, 12 ml and water 10,14 ml respectively the size of 
+silica will be 250 to 280 nm sizes with a output of 3.77. 
+3. Materials and Methods – Experimental Analysis 
+3.1. Materials 
+Ethanol, Ammonia, Tetra Ethyl Ortho Silicate (TEOS) all were pur-
+chased from SD fine and glass substrates from the local brands. 
+3.2. Synthesis of SiO2 Nanostructure Thin Films 
+SiO2 monodispersed nanospheres were synthesized using the stöber 
+method. Silica sol was prepared using tetraethoxyorthosilicate, ethanol, 
+ammonia and de- ionized water. As shown in Fig. 12, 50 ml of ethanol 
+and 10 ml of de -ionized water were mixed and stirred for 10 min in a 
+250 ml jar. After this, 0.05 ml of TEOS was added to the solution. After 
+20 min, ammonia was added and the reaction mixture was stirred 
+continuously for an hour. A white colour appears, confirming the for-
+mation of silica nanospheres. 
+The vertical colloidal deposition method is used to synthesize 
+nanoparticle thin films on substrates positioned vertically, relative to the 
+Fig. 6. Input data of ethanol  
+Fig. 7. Training Error  
+solution surface. As shown schematically in Fig. 13, a microscopic slide 
+was dipped vertically into the solution for different periods of time. After 
+removing from the solution, the slides are dried naturally keeping in 
+vertical position. When the solution evaporates, more substrate is 
+exposed and is coated by the nanoparticle film. The nanoparticles pre-
+sent in the suspension, within the solid-liquid-gas interface, are depos-
+ited on the substrate subject to interfacial forces. 
+3.3. Characterization 
+Analysis of samples for X-ray diffraction (XRD) patterns was 
+observed on a Panalytical. X’Pert Pro with Cu Kα radiation (1.5406 Å). 
+Field emission scanning electron microscopy (FESEM) studies were 
+performed on a FEI Quanta 200 FEG SEM.Scanning Electron Microscope 
+EVO18 (CARL ZEISS) were used for imaging deposited silica nano-
+spheres. For optimization of parameters and to maintain the reaction at 
+low-cost Adaptive Neuro- Fuzzy Inference System (ANFIS) software is 
+used. 
+4. Result and Discussion 
+4.1. XRD analysis 
+Fig. 14 shows the X-ray powder diffraction pattern of the prepared 
+SiO2 film. An amorphous peak with the equivalent Bragg angle at 
+2θ = 21.8◦ was recorded. The XRD pattern for the SiO2 film has no 
+characteristic peak indicating the amorphous nature of the deposited 
+film. 
+Fig. 9. Output results of ANFIS model  
+Fig. 8. ANFIS Model Structure 
+Fig. 11. Output results of ANFIS model  
+Fig. 10. Output results of ANFIS model  
+4.2. Morphological analysis 
+Effects of the precursor ratio and monodispersed: Different pre-
+cursor ratios were tried before withdrawing the slides from the solution. 
+While changing the ammonia ratio from 4ml to 8ml and TEOS from 0.76 
+to 1 ul and keeping other aspects same, we found huge variation in 
+formation of silica spheres. Concentration of ammonia did not allow 
+colloidal particles to form a dense monolayer because of kinetic re-
+strictions, and the silica nanospheres were deposited discretely (Fig. 15 
+(a)). Concentration of TEOS results in the formation of a multilayer 
+structure (Fig. 15 (b)). Typically, the concentration ratio of 1: 8ml, the 
+larger the number of layers of the multilayer structure formed. A lower 
+ammonia concentration and TEOS of 0.76 Fig. 15 (c)) leads to multi- 
+layered formation of silica nanospheres with small spheres coming out 
+of the boundary resulting in a packed stack of nanospheres bundle [7]. 
+The surface morphology of synthesized silica nanospheres were 
+characterized using Scanning Electron Microscope. Fig. 15 (d- e) shows 
+the morphology of as deposited silica nanospheres thin films using 
+vertical deposition technique. 
+On the whole, close-packed monolayer arrays are observed, though 
+spherical stackings and local blanks appear in certain areas, owing to the 
+relative inhomogeneous size distribution of the prepared SiO2 nano-
+spheres. Defects in the monolayer could arise not only because of im-
+purities in colloids, but also because of the presence of by-products or 
+defective particles. As a rule, small or even missed particles can cause 
+only point defects called ‘mismatches,’ whereas large or twinned par-
+ticles cause large-scale ‘cracks’ (Fig. 15). In the present work a single 
+monolayer array (Fig. 16) is obtained with ammonia ratio of 4ml, TEOS 
+0.76 and Water 10 ml and ethanol 50ml. The formation of defects 
+(nanogaps), helps in the applications such as Surface Enhanced Raman 
+spectroscopy [7]. The defects are the sources for the formation of 
+nanogaps, which in turn act as hot spots while coating silver over the 
+SiO2 layer. The red mark indicates the hexagonal ring like formation 
+throughout the substrate with some gaps, which would further help the 
+silver nanoparticle to fit inside the gaps. 
+A theoretical result around value 3.29, 3.77, 4.02 and experimental 
+Fig. 12. Output results of ANFIS model  
+Fig. 13. Schematic diagram for (a) SiO2 solution preparation (b) vertical 
+deposition technique Fig. 14. X-Ray Diffraction Pattern Silica Nanospheres  
+results value 3.29 for the precursor ratio 0.76, 4, 10, and 50ml for 200 
+nm well matches. 
+5. Conclusion 
+Silica nanospheres have been widely used as a base material for 
+many applications such as drug delivery, bio- sensors, cosmetics, bat-
+teries, anti-bacterial agent and etc. Compared to random structure, 
+uniform structures have better conductivity, thermal, mechanical and 
+optical properties. From literature survey, the Stöber method found to 
+be the easiest and low-cost method to prepare silica nanospheres. Uni-
+form size could be achieved only if the number of precursors such as 
+ammonia, water, ethanol and TEOS taken in proper ratio. An attempt 
+has been made to prepare monodisperse silica nanospheres using Stöber 
+method on thin film using vertical deposition technique. XRD results 
+show amorphous nature of SiO2 nanospheres. The SEM results show 
+monolayers of silica having gaps and cracks. While magnification at 
+higher scale the silica nanospheres shows that the individual nanometer 
+size is around 100 nm, for further optimization of parameters, Adaptive 
+Neuro- Fuzzy Inference System (ANFIS) method is used as simulation 
+tool for prediction of sizes. Based on the literature survey data and 
+experimental values results ANFIS simulation has taken 234 rules and 
+output results were analysed from 1 to 5 values. The theoretical result 
+well matches with our experimental results. The results showed that 
+minimum value of TEOS, water and ammonia will result in good 
+uniformity. 
+Acknowledgments 
+Corresponding author N.D. Jayram wants to acknowledge SERB FILE 
+NO.SRG/2019/001576 for providing Funding. 
+On behalf of all authors, the corresponding author states that there is 
+no conflict of interest.
+Fig. 15. FE-SEM images of silica nanospheres formed at Ammonia (a) 7ml TEOS 1ul (b) 5ml TEOS 1ul (c) 4ml and 0.76ul SEM images of (d) Silica nanospheres (e) 
+silica nanosphere of different sizes. 
+Fig. 16. FESEM micrographs of Monolayer array of SiO2 nanospheres.

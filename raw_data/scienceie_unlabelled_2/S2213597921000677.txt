@@ -1,0 +1,491 @@
+Matrix metalloproteinase-9 (MMP-9) plays major roles in extracellular matrix (ECM) remodeling and membrane 
+protein cleavage, suggesting a high correlation with cancer cell invasion and tumor metastasis. Here, we present 
+a contrast agent based on a DNA aptamer that can selectively target human MMP-9 in the tumor microenvi-
+ronment (TME) with high affinity and sensitivity. Surface modification of plasmonic gold nanospheres with the 
+MMP-9 aptamer and its complementary sequences allows the nanospheres to aggregate in the presence of human 
+MMP-9 through DNA displacement and hybridization. Aggregation of gold nanospheres enhances the optical 
+absorption in the first near-infrared window (NIR-I) due to the plasmon coupling effect, thereby allowing us to 
+detect the aggregated gold nanospheres within the TME via ultrasound-guided photoacoustic (US/PA) imaging. 
+Selective and sensitive detection of human MMP-9 via US/PA imaging is demonstrated in solution of nanosensors 
+with the pre-treatment of human MMP-9, in vitro in cell culture, and in vivo in a xenograft murine model of 
+human breast cancer.   
+1. Introduction 
+Matrix metalloproteinases (MMPs) are a family of zinc-dependent 
+endopeptidases, which have specific proteolytic activity towards 
+several substrates within the extracellular matrix (ECM) [1,2]. In 
+particular, MMP-9 plays significant roles in ECM remodeling and 
+membrane protein cleavage, suggesting a close association between 
+MMP-9 and cancer pathologies including cancer cell invasion and 
+metastasis [3]. Due to this relationship, MMP-9 is a good biological 
+target molecule for detection or inactivation of cancer cells [4–6]. 
+However, because of the structural and functional similarity within the 
+MMP family of proteins, it has been quite challenging to detect/target 
+MMP-9 with high selectivity and sensitivity, especially in complex in 
+vivo environments [7]. 
+Molecular photoacoustic (PA) imaging, a noninvasive imaging mo-
+dality that leverages thermoelastic expansion caused by light absorp-
+tion, has shown great potential in biomedical and clinical imaging 
+applications [8,9]. PA imaging is highly advantageous under the guid-
+ance of ultrasound (US) imaging. Ultrasound provides excellent 
+anatomical images of tissue with high spatial resolution, while com-
+plementary PA imaging can convey functional information with high 
+contrast, resolution, imaging depth, and sensitivity [10]. Although 
+endogenous contrast from tissue can produce PA signal, the use of an 
+exogenous contrast agent can significantly enhance PA signal, allowing 
+for better imaging of cellular and molecular events [11]. For example, a 
+contrast agent that changes its optical absorption in response to a spe-
+cific stimulus can be exploited as a PA-based biosensor for longitudinal 
+detection in vivo [12]. PA imaging contrast depends on having distinct 
+optical signatures between the imaging contrast agent and the back-
+ground tissue; therefore, an optimal exogenous contrast agent should 
+absorb at wavelengths where absorption of biological tissues is minimal. 
+Gold nanoparticles (AuNPs), such as gold nanospheres (AuNSs) and 
+gold nanorods (AuNRs), have been widely utilized as PA contrast agents 
+because of their strong, tunable optical absorption [13–15]. 
+Size-dependent localized surface plasmon resonance (LSPR) of AuNPs 
+has been exploited to create contrast agents with an optimal absorbance 
+range for the desired application [16–18]. The size-dependent absorp-
+tion shift occurs when the AuNPs are interacting close enough to one 
+another (within 10 nm) such that the surface electrons overlap, also 
+known as the plasmon coupling effect [19–21]. This plasmon coupling 
+opens the potential to use AuNPs as a biosensor by controlling their 
+dynamic assembly/disassembly in response to a specific 
+microenvironment or to the existence of a target biomolecule. For a 
+plasmon coupling strategy, AuNSs are advantageous over other 
+Au-based nanomaterials including AuNRs and Au nanostars. The optical 
+absorption range of 650–900 nm, known as the first near infrared 
+(NIR-I) window, is important for PA imaging as there is relatively low 
+background optical absorption from tissue and high imaging penetration 
+depth at these wavelengths. When AuNSs are singular and monodisperse 
+particles, their maximum optical absorption is around 520 nm, with very 
+low optical absorption from 650 to 900 nm. However, the optical ab-
+sorption spectrum of the AuNSs redshifts and broadens upon aggrega-
+tion. As a result, the optical absorption from 650 to 900 nm increases 
+significantly for aggregated nanospheres compared to singular AuNSs. 
+Therefore, AuNSs produce nearly on/off changes in the NIR-I window 
+upon their assembly, enabling them to serve as PA nanosensors. Re-
+searchers have leveraged various functional moieties that trigger the 
+assembly/aggregation and disassembly based on charge conversion 
+[22], changes in hydrophilicity/hydrophobicity balance [23], 
+host-guest interaction [24], and DNA hybridization [25–27]. 
+Exploiting DNA hybridization provides several advantages such as 
+programmability, predictability, and biocompatibility [28]. In partic-
+ular, oligomeric DNA sequences can be designed to transform their 
+structures in response to a specific stimulus, such as pH or biomolecules, 
+rather than forming a sequence-specific double-strand with their com-
+plementary sequence [29,30]. DNA aptamers, oligonucleotides that 
+bind to a specific target molecule, represent one class of functional 
+oligomeric DNA sequences [31]. DNA aptamers are advantageous due to 
+their ability to bind to specific target molecules with high affinity, 
+selectivity, and specificity [32]. In this regard, we can design a 
+double-strand of a DNA aptamer and its complementary sequence, 
+which forms regular hydrogen bonds (Watson-Crick base pairing) in the 
+absence of a target protein. In the presence of a target protein however, 
+the DNA aptamer releases its complementary sequence to instead bind 
+with the target protein, which is a more favorable interaction. Thus, the 
+DNA aptamer can detect and silence target biomolecules through dy-
+namic DNA displacement. 
+Here we report a PA contrast agent as a biosensor for the detection of 
+human MMP-9 (hMMP-9) by introducing programmed hybridization/ 
+dehybridization of DNA aptamers on the surface of AuNSs. To develop 
+the sensor, the surface of 15 nm-sized AuNSs was modified with two 
+different sets of DNA strands to create AuNS-1 and AuNS-2, respectively. 
+For AuNS-1, double strands of hMMP-9 aptamer and its partial com-
+plementary sequence (comp-1) were grafted on the surface of AuNSs. To 
+create AuNS-2, single stranded, full-match complementary sequences of 
+comp-1 (comp-2) were conjugated on the surface. In the absence of 
+MMP-9, the binding of comp-2 to comp-1 is blocked by pre-bound MMP- 
+9 aptamers, maintaining the LSPR of 15 nm-sized AuNSs (a mixture of 
+single nanospheres of AuNS-1 and AuNS-2). However, in the presence of 
+hMMP-9, the MMP-9 aptamer DNA strand preferentially binds to the 
+hMMP-9 protein instead of binding to the comp-1 to form the MMP- 
+9–aptamer complex. The release of the MMP-9 aptamer sequence from 
+AuNS-1 then enables the binding of comp-2 on AuNS-2 to comp-1 on 
+AuNS-1, coupling AuNS-1 and AuNS-2 (Fig. 1a). The coupling of AuNS-1 
+and AuNS-2 results in the aggregation of the AuNSs, inducing the LSPR 
+changes. The hMMP-9-responsive aggregation and consequent optical 
+absorption shift were detected by US-guided spectroscopic PA (sPA) 
+imaging. A series of proof-of-concept studies of our sensor were carried 
+out in solution of nanosensors with the pre-treatment of hMMP-9, in vitro 
+in cell culture, and in vivo in a murine xenograft model of human breast 
+cancer (Fig. 1b). 
+2. Materials and methods 
+2.1. Materials 
+Gold chloride hydrate (HAuCl4), sodium citrate tribasic dihydrate, 
+tris(2-carboxyethyl)phosphine hydrochloride (TCEP), sodium chloride 
+Fig. 1. Schematic illustration of a contrast agent for the detection of human matrix metalloproteinase-9 (hMMP-9). (a) Design of a plasmon coupling-based MMP 
+sensor induced by the DNA displacement in the presence of the MMP-9. (b) Detection of the MMP-9 in the tumor microenvironment using the ultrasound-guided 
+spectroscopic PA (US/sPA) imaging. 
+(NaCl), magnesium chloride (MgCl2), tris base, and potassium cyanide 
+(KCN) were purchased from Sigma-Aldrich (St. Louis, MO) and used as 
+received without further purification or modification. All oligonucleo-
+tide sequences were purified by standard desalting and purchased from 
+IDT Inc. (Coralville, IA). The sequences of the DNA strands are the 
+following: MMP-9 aptamer, 5′– TCG TAT GGC ACG GGG TTG GTG TTG 
+GGT TGG –3′ [33]; comp-1 of MMP-9 aptamer, 5′– GGT GTG CCA TAC 
+GAA A/3ThioMC3-D/ –3′; comp-2 of MMP-9 aptamer, 5′– TCG TAT GGC 
+ACA CCA A/3ThioMC3-D/ –3′; control aptamer, 5′– CCG GTG TTC GAG 
+ACA AGA GTC CAG GG –3′; comp-1 of control aptamer, 5′– CTC TCG 
+AAC ACC GGA A/3ThioMC3-D/ –3′; comp-2 of control aptamer, 5′– CCG 
+GTG TTC GAG AGA A/3ThioMC3-D/ –3′, where /3ThioMC3-D/ stands 
+for 3-(butyldisulfaneyl)propan-1-ol to provide a disulfide structure at 
+the 3′ end of the DNA strands. Human recombinant MMP-9 and MMP-7 
+was purchased from BioVision (Milpitas, CA). 
+2.2. Synthesis of aptamer-decorated AuNSs 
+Synthesis of 15 nm-sized, citrate-capped AuNSs was conducted ac-
+cording to the previously reported method with slight modification [34]. 
+In brief, HAuCl4 (1.47 mM, 10 mL) and sodium citrate tribasic (0.334 M, 
+200 µL) were mixed under mild stirring at 80 ◦C for 20 min to synthesize 
+AuNSs. To modify the surface of citrate-capped AuNSs and create 
+AuNS-1, the comp-1 and aptamer sequences were annealed in phosphate 
+buffer (10 mM) containing MgCl2 (1 mM) and NaCl (20 mM) to form 
+double-strands. The annealed DNA strands were incubated in acetate 
+buffer (pH = 5.2, 50 mM) with TCEP (1 mM) for 1 h to activate the thiol 
+group. The aptamer/comp-1 duplexes were then added dropwise to 
+7 nM citrate capped AuNSs with a ratio of 1:50 (AuNS:duplex), followed 
+by salt aging for 24 h. To create AuNS-2, the thiol groups in comp-2 
+single strands were activated as described for aptamer/comp-1 du-
+plexes, then added dropwise to 7 nM citrate capped AuNSs with a molar 
+ratio of 1:100 (AuNS:single strand), followed by salt aging for 24 h. The 
+final AuNS-1 and AuNS-2 were purified by centrifugation (16,100 rcf, 
+30 min) with tris-acetate buffer (pH = 8.2, 25 mM) and NaCl (0.1 M). 
+2.3. Aggregation monitoring of AuNSs with the pre-treatment of hMMP-9 
+The mixture solution of AuNS-1 and AuNS-2 (1:1 ratio, 5 nM of Au in 
+200 µL of 25 mM tris-acetate buffer) was incubated at 37 ◦C in a hu-
+midified incubator with the hMMP-9 stock solution to reach a final 
+hMMP-9 concentration of 0.04–5 µg/mL (1.03–128 nM of hMMP-9). 
+After 24 h incubation, the optical absorption spectra were measured 
+with a UV–vis spectrophotometer (Evolution 220, Thermo Scientific), 
+the hydrodynamic size was checked with a Dynamic Light Scattering 
+instrument (Zetasizer Nano ZS, Malvern Instruments Ltd.), and the size 
+and morphology were characterized with transmission electron micro-
+scopy (TEM) (HT7700, Hitachi). 
+2.4. Phantom preparation and US/sPA imaging 
+The tube phantom was prepared by adding 40 µL of the MMP sensor 
+solution (2.5 nM of AuNS-1 and AuNS-2) with MMP-9, BSA, and MMP-7 
+(2.5 µg/mL each, 64 nM of hMMP-9) into polyethylene tubes held in 3D- 
+printed housing. The prepared phantom was imaged using the 
+Vevo2100/LAZR imaging system (FujiFilm VisualSonics, Inc.). US/sPA 
+images were acquired using an LZ250 transducer, which is a 256- 
+element ultrasound transducer array operating at 18.5 MHz center fre-
+quency. The LAZR (laser source) is a Q-switched Nd:YAG pumped op-
+tical parametric oscillator (OPO) laser (pulse duration = 7 ns; frame 
+rate = 5 Hz). For spectroscopic PA analysis, the phantom was imaged 
+using wavelengths from 680 to 970 nm in 2 nm intervals. The repre-
+sentative tube phantom image was acquired at 700 nm with 3D mode, 
+followed by image reconstitution using maximum intensity projection 
+(MIP) in VevoLAB 2.2 software (FujiFilm Visualsonics, Inc.). The gelatin 
+phantom’s base consisted of 8% gelatin and 0.2% silica (0.25 µm 
+diameter). The inclusions were prepared by mixing the MMP sensor at 
+different conditions with the same volume of heated 16% gelatin solu-
+tion. The prepared inclusions were loaded on the phantom base to create 
+dome-shaped phantoms for imaging with the same Vevo2100/LAZR 
+imaging system. Each dome-shaped inclusion was imaged using wave-
+lengths from 680 to 970 nm in 2 nm intervals. All data was exported and 
+processed in VevoLAB 2.2 software and post-processed in MATLAB 
+(MathWorks, Inc.). 
+2.5. Cell culture 
+MDA-MB-231 human breast adenocarcinoma cells were cultured in 
+Dulbecco’s Modified Eagle’s Medium (DMEM, Corning) supplemented 
+with 10% fetal bovine serum (FBS, Corning), 100 I.U./mL penicillin and 
+100 µg/mL streptomycin. Cells were incubated at 37 ◦C in a 5% CO2 
+humidified incubator. 
+2.6. In vitro toxicity test 
+MDA-MB-231 cells in culture medium were seeded in a 96-well plate 
+at an initial density of 8 × 103 cells/well and incubated at 37 ◦C in a 5% 
+CO2 humidified incubator overnight. The next day, the MMP sensor was 
+added to cells to yield a final concentration of 0.3125, 0.625, 1.25, 2.5, 
+5, and 10 nM in solution. One group contained no MMP and received 
+PBS as a control. Cells were then further incubated for 24 h, followed by 
+washing with PBS three times to remove nanoparticles prior to the 
+viability assay. Culture medium with 0.5 mg/mL of 3-(4,5-Dimethylth-
+iazol-2-yl)-2,5-Diphenyltetrazolium Bromide (MTT) was added to each 
+well. After 4 h, the solution was removed and the formazan salt on the 
+bottom of the well plate was dissolved by adding 200 µL of DMSO. The 
+absorbance at 590 nm was measured using a multi-well plate reader 
+(Synergy HT, BioTek), with the cells treated with PBS considered as 
+100% viable. 
+2.7. In vitro transwell study 
+MDA-MB-231 cells were cultured in phenol red-free medium and 
+were seeded on the upper compartment of a transwell insert (12 mm 
+transwell with a polyester membrane, pore size = 0.4 µm) at an initial 
+density of 2 × 105 cells/insert and incubated at 37 ◦C in a 5% CO2 hu-
+midified incubator overnight. Then, 10 µL of 100 µg/mL phorbol 12- 
+myristate 13-acetate (PMA) in DMSO were added on the upper 
+compartment of the transwell insert and further incubated for 24 h. 
+After 24 h, the lower compartment of the 12-well plate was filled with 
+phenol red-free culture media containing 2.5 nM of MMP sensor and its 
+derivatives. The solution (100 µL) in the lower compartment was 
+collected at different time points (initial, 1, 4, 12, 24 h) and concen-
+trated to the final volume of 40 µL, followed by the preparation of dome- 
+shaped 8% gelatin inclusions as described above. The inclusions were 
+imaged using the aforementioned Vevo2100/LAZR imaging system with 
+the same protocol. 
+2.8. In vivo imaging 
+All animal procedures were approved by the Institutional Animal 
+Care and Use Committee (IACUC) at Georgia Institute of Technology and 
+were performed in accordance with the federal guidelines for the care 
+and use of laboratory animals. MDA-MB-231 cells were inoculated 
+subcutaneously (s.c.) into the flank of 6-week-old female NU/NU mice 
+(Charles River) at an initial density of 1 × 107 cells in 50% Matrigel 
+(Corning). After the average tumor volume reached over 100 mm3, 
+200 µL of 500 µg/mL PMA in 10% DMSO were injected intraperitoneally 
+48 h before imaging according to previously established methods [35]. 
+After 24 h, the MMP sensor/control sensor (same quantity of AuNS-1 
+and AuNS-2 mixture at OD = 5, 100 µL) was injected peritumorally. 
+US/sPA imaging was performed after another 24 h, where the mice were 
+J. Kim et al.                                                                                                                                                                                                                                      
+Photoacoustics 25 (2022) 100307
+4
+anesthetized and placed on a heated translational motor stage. In vivo 
+images were acquired with a 40 MHz ultrasound transducer (LZ-550) 
+coupled with a fiber optic bundle for photoacoustic imaging. All data 
+was exported using the VevoLAB 2.2 software (FujiFilm Visual Sonics, 
+Inc.) and post-processed in MATLAB (MathWorks, Inc.). Photoacoustic 
+spectra were corrected for wavelength-dependent laser energy fluctua-
+tion using local background signal outside the tissue boundary. Photo-
+acoustic images were median filtered to remove large spikes and mean 
+filtered to smooth before being spectroscopically analyzed over the 
+entire OPO wavelength range of 680–970 nm. 
+2.9. Photoacoustic tomography 
+All photoacoustic tomography images were collected using the Tri-
+Tom system (Photosound Technologies, Inc.), a photoacoustic- 
+fluorescence tomography (PAFT) 3D imaging system. The TriTom sys-
+tem was paired with the Phocus Mobile HE laser system (Opotek, Inc.) 
+for OPO operation, which produces a 690–950 nm 10 Hz pulsed output 
+pumped by a 1064 nm Nd:YAG laser. For 532 nm operation, the TriTom 
+system was paired with a Vibrant 532-I (Opotek, Inc.), another 10 Hz 
+pulsed Nd:YAG laser which produces 532 nm output from its second 
+harmonic generator. Excitation laser beams are directed to the imaging 
+chamber using multi-output randomized fiber bundles. Mice are 
+immersed in a heated water bath within a glass imaging tank, with ox-
+ygen and inhalable anesthesia available for in vivo imaging. Data is ac-
+quired by rotating the target within the FOV of a curved array 
+transducer, generating a spherical sensor map. Image reconstruction 
+was performed using Photosound software, and volume visualization 
+was performed using 3D Slicer, a free open-source image processing 
+software. 
+3. Results 
+Prior to modifying DNA sequences on the AuNSs, the hybridization 
+of each strand was confirmed by 15% polyacrylamide gel electropho-
+resis (PAGE). The addition of the comp-2 sequence to the pre-formed 
+duplex of aptamer–comp-1 did not displace the original hybridization 
+between the aptamer and comp-1. Meanwhile, the addition of comp-2 in 
+the absence of the aptamer successfully created double-stranded DNA 
+(Fig. S1). This result suggests the formation of the MMP-9–aptamer 
+complex and the exposure of the comp-1 sequence would allow the 
+aggregation of AuNS-1 and AuNS-2 via sequence-specific hybridization. 
+With that, the surface of the 15-nm AuNSs was modified with hMMP 
+aptamer–comp-1 duplexes (AuNS-1) or comp-2 single strands (AuNS-2) 
+by a salt aging process reported elsewhere [36]. AuNS-1 and AuNS-2 for 
+the MMP sensor contain ~26 double-strands and ~38 single strands, 
+respectively. The surface modification of AuNSs did not show a 
+remarkable absorption shift or aggregation in the UV–vis spectrum and 
+transmission electron microscopy (TEM) analysis (Fig. S2). Similarly, we 
+designed and characterized a control MMP sensor with random DNA 
+sequences (see experimental section for detailed DNA sequences), which 
+did not respond to hMMP-9, to compare the responsiveness to the 
+experimental MMP sensor (Fig. S3). 
+We then confirmed the assembly of the MMP sensor (5 nM of AuNS-1 
+and AuNS-2) in response to the target protein (5 µg/mL or 128 nM of 
+hMMP-9) by co-incubating them in buffer solution for 24 h. In colori-
+metric monitoring, without hMMP-9 (incubation with buffer) or with 
+the addition of random protein (bovine serum albumin, BSA), the color 
+of the sensor solution did not change, indicating there was no plasmon 
+coupling. In contrast, the solution containing both the MMP sensor and 
+hMMP-9 changed color, due to the plasmon coupling induced by the 
+MMP-9–aptamer complex formation and subsequent binding of comp-1 
+and comp-2 (Fig. 2a). The UV–vis spectra further confirmed the red-shift 
+of the MMP sensor only in the case of incubation with the target protein, 
+hMMP-9 (Fig. 2b). Furthermore, we tested the optical absorption shift as 
+the concentration of hMMP-9 ranged from 0.04 to 5 µg/mL 
+(1.03–128 nM), which demonstrated that a higher concentration of 
+hMMP-9 induced more aggregation of AuNSs (Fig. S4). In addition, the 
+Fig. 2. MMP-9-responsive aggregation of gold nanospheres (AuNSs). (a) Color changes of the MMP sensor without hMMP-9, with hMMP-9, and with bovine serum 
+albumin (BSA) before (0 h, upper image) and after 24 h (lower image). (b) UV–vis spectra and (c) hydrodynamic size of the MMP sensor without hMMP-9, with 
+hMMP-9, and with BSA after 24 h. (d) Transmission electron microscopy (TEM) images of the MMP sensor without hMMP-9 (left), with hMMP-9 (middle), and with 
+BSA (right). Scale bar = 200 nm. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.) 
+J. Kim et al.                                                                                                                                                                                                                                      
+Photoacoustics 25 (2022) 100307
+5
+selective aggregation of the MMP sensor to hMMP-9 was monitored by 
+measuring size with dynamic light scattering (DLS) and TEM. Without 
+hMMP-9 or when co-incubated with a control protein, the sensor did not 
+change in size or morphology (Fig. 2c and d). These results support our 
+sensor’s potential as a PA imaging agent. 
+To evaluate the potential of our MMP sensor in sPA imaging, we 
+prepared the MMP sensor (2.5 nM of AuNS-1 and AuNS-2) with BSA, 
+hMMP-7, and hMMP-9 (2.5 µg/mL respectively) in a polyethylene (PE) 
+tube phantom and subsequently imaged the phantom using the Vevo 
+2100/LAZR imaging system. Qualitatively, our MMP sensor pre-treated 
+with hMMP-9 showed a strong PA signal at 700 nm compared to signals 
+from the sensor incubated with BSA or hMMP-7 (Fig. 3a). The repre-
+sentative PA spectrum of the MMP sensor with hMMP-9 showed a 10- 
+fold higher PA signal at 700 nm than the MMP sensor with BSA or 
+hMMP-7 (Fig. 3b), demonstrating the selectivity of our MMP sensor 
+towards hMMP-9. We further imaged the MMP sensor with/without 
+hMMP-9 in a thin polytetrafluoroethylene (PFTE) tube phantom using a 
+photoacoustic tomography (PAT) imaging system (TriTom, PST Inc.) at 
+532 nm and from 680 to 970 nm (Fig. S5). PAT phantom studies further 
+corroborated previous UV–vis (Fig. 2b) and PA results from the Vevo 
+2100/LAZR (Fig. 3). Similarly, the MMP sensor with hMMP-9 in the PAT 
+phantom exhibited a stronger PA signal from 680 to 970 nm and a 
+weaker PA signal at 532 nm compared to controls (no hMMP-9 or with 
+control protein, BSA). It is worth noting that the wavelengths ranging 
+from 650 to 900 nm are in the NIR-I window where light has its 
+maximum penetration depth and relatively low background optical 
+absorption in tissue. Therefore, our MMP sensor, exhibiting strong PA 
+signal over the wavelength range of 680–970 nm, offers huge potential 
+for more complex in vivo detection of hMMP-9, with enhanced optical 
+absorption at ideal wavelengths in response to the target protein. 
+Next, we tested in vitro hMMP-9 detection secreted from MDA-MB- 
+231 human breast cancer cells. MDA-MB-231 cells were seeded on the 
+semi-permeable membrane of the upper insert of a transwell plate. MMP 
+sensors suspended in cell culture medium were incubated in the lower 
+compartment of the transwell to detect secreted hMMP-9. The MMP 
+sensor-containing media was collected at different time intervals and 
+embedded in a dome-shaped 8% gelatin phantom to monitor our sen-
+sor’s longitudinal behavior in US/sPA imaging (Fig. 4a). PA signals at 
+680–970 nm were gradually enhanced until 24 h as higher amounts of 
+hMMP-9 were transferred from cells to the lower compartment with 
+increasing incubation time, demonstrating the quantitative detection of 
+hMMP-9 (Fig. 4b and c). In contrast, when we replaced the MMP sensor 
+at the lower transwell compartment with the control sensor decorated 
+with random/scrambled DNA sequences (Fig. S3), the PA images at the 
+680–970 nm did not exhibit any distinct signal (Fig. S6). Furthermore, 
+the UV–vis spectrum of the MMP sensor in the culture medium or of the 
+control sensor in the medium were well-correlated with the corre-
+sponding PA spectrum (Fig. S7). In addition, MDA-MB-231 cells treated 
+with the MMP sensor did not exhibit noticeable toxicity up to 10 nM 
+while only 2.5 nM of our MMP sensor was needed for the detection of 
+hMMP-9, reducing the toxicity concerns of our MMP sensor (Fig. S8). 
+Together, these results show successful demonstration of our MMP 
+sensor for the selective detection of hMMP-9 at the cellular level by 
+leveraging hybridization of the MMP-9 aptamer and related DNA 
+sequences. 
+Finally, we detected hMMP-9 in vivo using our MMP sensor as a 
+contrast agent for US/sPA imaging and PAT in a xenograft mouse model 
+of breast cancer (MDA-MB-231). For US/sPA imaging using the Vevo 
+2100/LAZR system, mice were subcutaneously injected with MDA-MB- 
+231 cells. Tumors continued to grow over a period of 6 weeks until 
+the size was over 100 mm3. The mice were injected with the MMP sensor 
+and two controls, saline only and the control sensor, 24 h before imag-
+ing. Multiwavelength photoacoustic datasets were acquired under ul-
+trasound guidance. The saline control and control sensor showed 
+minimal PA signal. The PA spectrum of the MMP sensor in vivo closely 
+matched in vitro results. Both showed a maximum PA signal at 710 nm 
+(Fig. 4c), likely resulting from the aggregation of AuNS-1 and AuNS-2 
+upon formation of the MMP-9–aptamer complex (Fig. 5a). To visualize 
+the distribution and detectability of the MMP sensors volumetrically, the 
+TriTom system was used to perform photoacoustic tomography, gener-
+ating 3-dimensional maps of the skin and surface vasculature (532 nm, 
+yellow) and the aggregated AuNSs (710 nm, red) upon the peritumoral 
+injection of the saline only, control sensor, and MMP sensor (Fig. 5b). In 
+the mice injected with saline (Movie S1) or control sensor (Movie S2), 
+signals from surface vasculature (532 nm) were observed, while the 
+signal from aggregated AuNSs (710 nm) was not detected at the tumor 
+periphery, indicated by the light blue circle. However, the aggregated 
+MMP sensor was clearly detected using PAT, with a majority of the 
+710 nm signal distributed in the tumor (Movie S3). The results from both 
+the Vevo LAZR and TriTom imaging systems illustrates the feasibility of 
+the developed sensor as a contrast agent for detection of hMMP-9 in vivo 
+via molecular PA imaging. 
+Supplementary material related to this article can be found online at 
+doi:10.1016/j.pacs.2021.100307. 
+4. Discussion 
+In the current study, we demonstrated functional oligomeric DNA- 
+modified AuNSs for detecting hMMP-9 in vivo. The use of DNA aptam-
+ers for AuNS-based nanosensors enabled sensitive and selective detec-
+tion of hMMP-9. Controlling the assembly of AuNSs and their plasmon 
+coupling based on DNA strand displacement was a unique approach to 
+Fig. 3. Spectroscopic PA imaging of the MMP sensor 24 h after the pre-treatment with hMMP-9 and assorted controls. (a) Maximum intensity projection (MIP)- 
+reconstituted US/PA overlay image at 700 nm of PBS and the MMP sensor (2.5 nM of AuNS-2 and AuNS-2) with the hMMP-9, hMMP-7, and BSA (2.5 µg/mL) in a 
+tube phantom. (b) PA intensity of the MMP sensor at 680–970 nm. 
+J. Kim et al.                                                                                                                                                                                                                                      
+Photoacoustics 25 (2022) 100307
+6
+create distinct spectral signatures for spectroscopic PA imaging. More-
+over, the scrambled sequence-modified AuNSs (control sensor) did not 
+exhibit random aggregation in vitro or in vivo, demonstrating the sta-
+bility of oligomeric DNA-modified AuNSs in a biological microenvi-
+ronment. Furthermore, binding of the target biomolecule with the DNA 
+aptamer is highly sequence-dependent. In the future, introducing a set of 
+orthogonal aptamers that target different biomolecules can allow 
+multiplex US/PA imaging to monitor the biomolecular profile of a 
+microenvironment. Thus, programmable design of DNA sequences and 
+strategic selection of the DNA aptamer allows almost infinite combina-
+tions for biomolecule detection to develop a robust US/PA imaging 
+platform. 
+In the complex tumor microenvironment, MMP-9 is secreted from 
+multiple types of cells, including macrophages, fibroblasts, endothelial 
+cells, stromal cells, and cancer cells [3]. As a model for our 
+proof-of-concept study, we selected human breast cancer cells for the 
+source of human MMP-9 expression. MMP-9 expression is regulated by 
+cytokines and signal transduction pathways. Thus, MDA-MB-231 human 
+breast cancer cells required pre-treatment with PMA in vitro and in vivo 
+to activate the NF-κB pathway that secretes hMMP-9 as confirmed by an 
+ELISA of hMMP-9 (Fig. S9a). Without a stimulus for pathway activation, 
+MDA-MB-231 cancer cells themselves produce negligible amounts of 
+hMMP-9 in xenograft models [37]. Therefore, to validate our model 
+system, we compared the PA signal of the MMP sensor with and without 
+pre-treating MDA-MB-231 cells with PMA. Without PMA pre-treatment, 
+the PA signal from the MMP sensor was negligible over the entire OPO 
+wavelength range of 680–970 nm, confirming that PMA is required in 
+our model system (Fig. S9b–d). Moreover, this result further supports 
+our main hypothesis that the secreted hMMP-9 from the cells triggers the 
+aggregation by forming an MMP-9–aptamer complex. From a trans-
+lational perspective, pretreatment with PMA would not be required. 
+Unlike the xenograft model, the secretion of hMMP-9 in humans will be 
+orchestrated by multiple cell types, including macrophages, fibroblasts, 
+endothelial cells, stromal cells, and cancer cells at the tumor site [3]. 
+Therefore, hMMP-9 can be produced endogenously with no further 
+stimulation. 
+Previous studies of in vivo MMP or protease sensors employed the 
+catalytic activity of MMPs to cleave a specific chemical bond or degrade 
+polymer structure for detection [38–41]. In the current study, the MMP 
+sensor is based on structural one-to-one binding of the hMMP-9 protein 
+to the DNA aptamer. This protein binding to the DNA aptamer could be 
+applied not only for the detection of the target protein, as we demon-
+strated here, but also for the selective capture and deactivation of the 
+target protein. Selective capture and deactivation of disease-related 
+pathogenic proteins at the disease site can impact disease progression. 
+In this case, hMMP-9 is highly related to ECM remodeling and cancer 
+progression. Our MMP sensor can serve as a theranostic agent by 
+detecting and deactivating hMMP-9 through selective capture with DNA 
+aptamers, which may inhibit tumor growth by preventing ECM 
+remodeling. 
+5. Conclusions 
+In summary, we have developed a PA biosensor to detect hMMP-9 by 
+exploiting plasmonic AuNSs and DNA aptamers. The use of DNA 
+aptamers enabled sensitive and selective detection of hMMP-9, while the 
+plasmon coupling between AuNSs by programmable DNA hybridization 
+resulted in selective PA signal amplification in the NIR-I optical window. 
+Moreover, the versatility and customizability of oligomeric DNA se-
+quences will enable the design of other AuNS-based sensors for the 
+detection and capture of biomolecules by utilizing the corresponding 
+aptamer sequence. By incorporating multiple aptamers that target 
+different biomolecules on the nanoparticles, our approach provides 
+unlimited opportunities to develop contrast agents for multiplex imag-
+ing of biomolecules. 
+Funding 
+This work was supported by the Breast Cancer Research Foundation 
+(BCRF-20-043) and the National Institute of Health (EB015007, 
+EY030071, NS102860, NS117613). 
+Declaration of Competing Interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+Fig. 4. Time-dependent spectroscopic PA imaging in a transwell. (a) Schematic illustration of the experimental setup. (b) US, PA, and overlay image of the MMP 
+sensor in the lower compartment of the transwell at 0, 1, 4, 12, 24 h after incubation. Scale bar = 2 mm. (c) Incubation time-dependent PA intensity of the MMP 
+sensor at 680–970 nm. 
+J. Kim et al.                                                                                                                                                                                                                                      
+Photoacoustics 25 (2022) 100307
+7
+the work reported in this paper. 
+Acknowledgments 
+We acknowledge Dr. Younan Xia and Ruhui Chen of Georgia Institute 
+of Technology for assistance with UV–vis spectrophotometer measure-
+ments and Anamik Jhunjhunwala of Georgia Institute of Technology for 
+helping with tube phantom imaging. 
+Appendix A. Supporting information 
+Supplementary data associated with this article can be found in the 
+online version at doi:10.1016/j.pacs.2021.100307.

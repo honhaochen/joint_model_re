@@ -1,0 +1,717 @@
+In-orbit satellite REIMEI, developed by the Japan Aerospace Exploration Agency, has been relying on off-the- 
+shelf Li-ion batteries since its launch in 2005. The performance and durability of Li-ion batteries is impacted 
+by various degradation mechanisms, one of which is the growth of the solid-electrolyte interphase (SEI). In this 
+article, we analyse the REIMEI battery and parameterize a full-cell model with electrochemical cycling data, 
+computer tomography images, and capacity fading experiments using image processing and surrogate optimi-
+zation. We integrate a recent model for SEI growth into a full-cell model and simulate the degradation of bat-
+teries during cycling. To validate our model, we use experimental and in-flight data of the satellite batteries. Our 
+combination of SEI growth model and microstructure-resolved 3D simulation shows, for the first time, experi-
+mentally observed inhomogeneities in the SEI thickness throughout the negative electrode for the degraded cells.   
+1. Introduction 
+Lithium-ion batteries are the technology of choice for various ap-
+plications like laptops, smartphones and electric vehicles. Since the early 
+2000s they are considered applicable for space missions or more pre-
+cisely for low earth orbit (LEO) missions. The requirements for batteries 
+in a LEO mission are to be reliable for about 5 years with 30,000 cycles 
+when charged for ca. 60 min and discharged for ca. 30 min. [1–4]. 
+Battery reliability is hampered by the harsh conditions they have to 
+withstand. Already during lift-off they experience severe vibrations. In 
+space they suffer from extreme temperatures, radiation, vacuum, and 
+microgravity [5,6]. Thus, battery satellites are quite costly (for a small 
+scientific satellite: 4 million US dollar [7]). 
+Failure of battery satellites may abort the satellite mission and can 
+endanger other missions through space debris. Therefore, determination 
+and prediction of battery state-of-health during operation is necessary. 
+This is only possible by remote control of the satellite system from a 
+control station on earth. The antenna receives the telemetry data of the 
+battery and transmits operation commands, while the satellite passes the 
+ground station during a small time window [7]. 
+Typically, the cells are tested extensively prior to the mission start. 
+Cycling experiments are conducted over long periods of time, adjusted 
+to the planned mission. Additionally, the cells undergo various abuse 
+tests. This ensures safe operability during the whole mission. 
+If the mission changes for unforeseen reasons, the predictions for the 
+aging of the cells have to be adjusted. A long time might have passed, 
+however, since the start of the mission. Access to cells of the same kind 
+than those used in the mission might be difficult. For these reasons, it is 
+essential to have physics-based models available, which can predict the 
+performance and degradation of the cells for any given operation of the 
+* Corresponding author. Institute of Engineering Thermodynamics, German Aerospace Center (DLR), Pfaffenwaldring 38-40, 70 569 Stuttgart, Germany. 
+E-mail address: birger.horstmann@dlr.de (B. Horstmann).  
+Contents lists available at ScienceDirect 
+Journal of Power Sources Advances 
+journal homepage: www.sciencedirect.com/journal/journal-of-power-sources-advances 
+https://doi.org/10.1016/j.powera.2022.100083 
+Received 9 November 2021; Received in revised form 10 January 2022; Accepted 11 January 2022   
+Journal of Power Sources Advances 14 (2022) 100083
+2
+satellite. These models are based on short term experiments. This yields 
+the additional benefit of shortening the time for tests prior to the mission 
+start. 
+The major degradation process taking place in Li-ion batteries is the 
+growth of the solid-electrolyte interphase (SEI). This passivation layer 
+builds on the anode surface during the first cycles of the cell, when 
+solvents from the electrolyte react with Li-ions and electrons. This 
+process prevents the electrolyte from further reaction but does not 
+passivate the reaction completely. The SEI is growing continuously 
+during storage as well as during cycling. Thereby, Li-ions are consumed 
+irreversibly, which causes capacity loss of the cell. 
+The growth of the SEI is discussed extensively in literature, both in 
+experiment and in theory. Usually, either short-term growth, which 
+considers growth behavior during the first cycle, or long-term growth, 
+which considers continuous growth over months and years, is investi-
+gated. In this work, only long-term degradation is discussed. 
+In experiments, a square-root-of-time (
+̅̅
+t
+√
+) behavior is observed for 
+long-term growth [5,8]. Furthermore, experiments show that SEI 
+growth is accelerated during cycling compared to storage [8]. Attia et al. 
+show that the SEI is especially growing faster during charging of the cell 
+[9]. Another aspect is the inhomogeneous growth of the SEI, which is 
+investigated on nanoscale [10–12] and on cell level [13]. 
+Short-term SEI growth, i.e. the initial build-up of the SEI during the 
+first cycles, is addressed by atomistic theories like density functional 
+theory and molecular dynamic simulations [14,15]. The long-term 
+growth behavior of the SEI can be described with empirical models 
+[16,17]. But a better understanding of the internal processes is given by 
+physics-based models. For these, several transport mechanisms are 
+considered as the rate-limiting process. The most important are electron 
+conduction [18,19], electron tunneling [20,21], reaction kinetics [22, 
+23], radical diffusion [24,25], and solvent diffusion [26–29]. Single 
+et al. compared all of these transport processes to storage experiments 
+and show that the most probable mechanism for SEI growth during 
+storage is radical diffusion [24]. Das et al. model the asymmetric growth 
+behavior which was shown in Ref. [9] by coupling SEI growth to the 
+Li-ion concentration in the SEI [19]. Von Kolzenberg et al. extended the 
+model of radical diffusion in Ref. [24] by an electron migration effect 
+during cycling, which also reproduces the asymmetric growth. They 
+describe the transitions between transport- and reaction-limited growth 
+and with that give a consistent explanation for the short-term and 
+long-term growth behavior [30]. A comprehensive review of SEI models 
+is given by Horstmann et al. in Ref. [31]. 
+Until recently, electrode level continuum models had not reproduced 
+the experimentally observed SEI heterogeneity [26,32]. In his PhD 
+thesis, Schmitt implemented a preliminary version of the model of 
+Ref. [30] in the software BEST [33] and simulated the growth behavior 
+in a 3D resolved microstructure. Thereby, it was shown that the SEI is 
+growing inhomogeneously [34]. This was the first time that experi-
+mentally observed inhomogeneities in the SEI thickness could be shown 
+with a physics-based model. Considering reaction-limited growth, such 
+heterogeneous SEI growth has also been recently analyzed by Chou-
+chane et al. [23]. 
+In this article, we discuss how to incorporate the model of von Kol-
+zenberg et al. into the physics-based model for Li-ion batteries of Latz 
+et al. [35] and simulate the SEI growth in a pseudo-two-dimensional 
+(P2D) framework and in 3D. We are the first to show inhomogeneous 
+long-term growth of the SEI in microstructural-resolved simulations. To 
+validate our model, we make use of experiments and in-flight data of 
+satellite REIMEI’s battery cells. 
+REIMEI is a small scientific satellite developed by the Japanese 
+Aerospace Exploration Agency (JAXA). It was launched in 2005 with the 
+main scientific mission to observe the aurora and demonstrate advanced 
+satellite technology, one of which is Li-ion batteries that use off-the-shelf 
+pouch cells. In 2013 the aurora observation was terminated. The satel-
+lite operation was extended with the main focus shifted to the prediction 
+of performance and lifetime of the on-board Li-ion batteries [6,36]. 
+For a profound analysis of the battery state, a physics-based model 
+that describes the cell degradation is required. However, only little is 
+known about the cells parameters, as a long time has passed since the 
+start of the mission. This makes the modeling a challenging task. 
+One part of this challenge is the parameterization of the P2D model. 
+This is addressed by different optimization approaches, where the error 
+between experiment and model simulation, depending on the parame-
+ters, is to be minimized. Different approaches can be found in the 
+literature. Forman et al. use a genetic algorithm to identify the param-
+eters [37]. Rahman et al. use a particle swarm optimization algorithm 
+[38]. Here, we extract some parameters from CT images by image pro-
+cessing. The remaining parameters are determined with a surrogate 
+optimization. To the best of our knowledge, this optimization method 
+has not yet been used for battery models. 
+In sec. 2, we give a brief overview of REIMEI and its batteries. After 
+that, we describe the SEI model in detail in sec. 3, which we then use for 
+simulating the cycling and the degradation of the cells. For this purpose, 
+in sec. 4, we first determine the parameters of the fresh cell with an 
+optimization approach. Subsequently, in sec. 5 we determine the pa-
+rameters of the degradation model and discuss the results of the 
+degradation and SEI growth simulation. 
+2. Experimental data of REIMEI batteries 
+Satellite REIMEI, which flies on a polar low Earth orbit (LEO), has an 
+orbital period of 96 min. During the sunlight period, the batteries get 
+charged via the solar panels, while they discharge during the eclipse 
+period to power the loads [5]. This results in 15 cycles a day. To ensure a 
+reliable operability of 3–5 years, the temperature of the batteries is 
+maintained at 19 − 22◦C [6,7] and the depth of discharge around 20% 
+[5]. 
+Two identical batteries are connected in parallel on board of the 
+satellite REIMEI, each consisting of seven pouch cells connected in se-
+ries. The lithium-ion cells are produced by NEC-Tokin Corporation. The 
+positive active material is spinel lithium manganese oxide (LMO) and 
+the negative electrode consists of graphite. The liquid electrolyte is 1 M 
+LiPF6 in EC/DEC (3:7 by wt%) with additives [5,6]. The cells have a 
+voltage range of 3.0 V–4.1 V (4.2 V). Their nominal capacity is 3 Ah [8]. 
+The in-flight operation of the cells depend on the loads in use. Given 
+by the on-board devices, the cells reach their end of life when the end-of- 
+discharge voltage (EoDV) falls below 3.75 V [5]. 
+For the parameterization of the models, two kinds of terrestrial 
+measurements are used. The electric battery response was measured 
+after the mission began (see sec. 2.1). We identify parameters of the cell 
+microstructure from CT images (see sec. 2.2). 
+2.1. Terrestrial electrochemical measurements 
+Accompanying the REIMEI mission, Uno et al. performed terrestrial 
+cycling experiments [5] with the same kind of cells as those of the sat-
+ellite. The experiments span about 27,000 cycles, which is equivalent to 
+five years. They charged and discharged several cells with a cycling 
+protocol similar to the one of the satellite. To track the degradation of 
+the cell, they measured the remaining capacity and the EoDV of the cells. 
+In the experiments, the cells get discharged with a constant current 
+(CC) of 1 A for 35 min, which corresponds to approximately 20% DOD. 
+Then they get charged for 65 min with a constant current - constant 
+voltage (CC-CV) profile. The charging is performed at 1.5 A to the upper 
+voltage limit of 4.1 V. After each discharging, the EoDV is measured. As 
+the cells are degrading, the EoDV falls below 3.75 V after several 
+thousand cycles. At that point, the upper voltage limit for the charging 
+gets changed to 4.2 V to prolong the remaining useful life of the cells. 
+Before and during the cycling, they measure the remaining capacity of 
+the cells several times by discharging it with a CC of 1 A to 3.0 V. We use 
+these electrochemical measurements of Uno et al. in sec. 4.1 to 
+L.J. Bolay et al.                                                                                                                                                                                                                                 
+Journal of Power Sources Advances 14 (2022) 100083
+3
+parameterize the P2D model. For the model we assume constant tem-
+perature and constant pressure throughout the cell. This assumption is 
+based on the experiments in Ref. [5] and on the in-flight data as can be 
+seen in Ref. [39]. In sec. 5.1, the measurements are used to parameterize 
+the degradation. 
+In 2008, Brown et al. conducted comprehensive terrestrial experi-
+ments at JAXA. They investigated the degradation of cycled and calen-
+daric aged cells under various conditions. For the cycling, they use the 
+same cycling protocol than Uno et al. and vary it regarding temperatures 
+and discharge currents respectively the depth of discharge (DOD). They 
+examined full and half cells before, during and after the aging process. 
+Furthermore, they measured open-circuit voltage (OCV) curves for both 
+electrodes [8,40]. The OCV curve measurements of Brown et al. are used 
+in sec. 4.1 for the P2D model. Furthermore, our cycling protocols in sec. 
+5.2 are based on those of Brown et al. 
+2.2. Computer tomography 
+One of the pouch cells of the kind used in the satellite was stored by 
+JAXA. Several years after the start of the mission, CT images of the cell, 
+which was stored at room temperature, were taken in various resolu-
+tions. Examples of the CT images can be found in Fig. B.1 in the sup-
+porting information. From the CT images we extract several parameters 
+of the cell structure. These are the thicknesses and porosities of the cell 
+layers and the specific surface area of the electrodes. These values are 
+necessary to parameterize the model described in sec. 3. 
+The thickness L of the layers is determined using the CT images with 
+1 μm and 3.5 μm resolution. To separate the layers, we consider gray-
+values of voxels in the three dimensional CT image. Every type of layer 
+in the cell has a specific grayvalue distribution. We assign the median of 
+grayvalues to every voxel layer parallel to the cell layers. Hereby, we get 
+a one dimensional signal which is perpendicular to the cell layers. The 
+changes of grayvalue medians are determined by signal processing 
+methods. These represent the boundaries between cell layers. The 
+thickness is then averaged over several layers. 
+The porosities ε of the different electrodes are determined from a 
+representative section of the 1 μm resolution CT image. The histogram of 
+grayvalues within this volume is determined and approximated by three 
+normal distributions. For the cathode, the histogram and the corre-
+sponding distribution approximation can be seen in Fig. B.2 in the 
+supporting information. The integral of these distributions yield the 
+volume fractions of the phases in the electrode, the pore space, the active 
+solid phase, and the passive solid phase, which consists of binder and 
+conductive material. From the distributions, we get a binarization of the 
+electrode volume using k-means clustering. We use a simplified version 
+of the method described in Ref. [41]. Here, we only want to classify the 
+voxels as pore space or solid phase. The classification is assumed suffi-
+cient, when the grayvalue distributions classes have the same integral 
+than the approximated distributions. The binarization is then used to 
+determine the specific surface area Aspec of the electrodes. This is done 
+with the software GeoDict [42]. 
+In the case of the separator, we proceed in the same way. However, 
+here the histogram of the grayvalues is approximated by only two 
+normal distributions. The porosity is then again obtained from the in-
+tegral of the distributions. 
+For the full cell area Acell, the width, length, and number of cell layers 
+are needed. The length is taken from the CT image with 140 μm reso-
+lution, which shows the whole cell. The width and number of layers are 
+taken from the CT image with 24 μm resolution, which shows the upper 
+part of the cell. We get Acell = 0.139 m2. The other identified parameters 
+can be found in Table B.2 in the supporting information. 
+3. Computational model 
+In order to understand and simulate the processes taking place in the 
+cell, a physics-based model for the short-term cycling as well as the long- 
+term degradation behavior of the cells is necessary. The long-term 
+degradation of the cell is mainly determined by capacity fading, which 
+is caused by the loss of Li-ion inventory. To quantify the long-term ca-
+pacity fading under cycling as well as under storage conditions, a new 
+physics-based model has been developed. Von Kolzenberg et al. describe 
+the model in detail in Ref. [30]. Here, we summarize it and embed it into 
+the thermodynamic consistent transport theory for Li-ion batteries of 
+Latz et al. [35]. 
+This theory models transport and reactions of Li-ions in electrolyte 
+and electrode particles on the microstructural scale of batteries. Several 
+equations describe how the inner states, like Li-ion concentration or 
+electrical potential, are distributed in the cell and how they evolve over 
+time. The corresponding equations can be found in the supporting in-
+formation [35]. For the microstructure-resolved simulations, first, the 
+morphology of the electrodes needs to be reconstructed from tomo-
+graphic image data or simulated with given morphology characteristics. 
+For example, this is done with stochastic geometry methods by Hein 
+et al. [43]. In our research group, this 3D representation of the Li-ion cell 
+is then used with the software BEST to perform spatially resolved elec-
+trochemical simulations [33,44]. In Ref. [45] Hein et al. use these 
+simulations to study and analyse the heterogeneous surface effects (see 
+also sec. 5). 
+Using volume averaging techniques the transport theory by Latz 
+et al. can be uspcaled into a pseudo-multidimensional model [46] like 
+the one dimensional P2D model, which is illustrated in Fig. 1. This 
+model has first been described by Doyle et al. [47]. It has since been used 
+a lot to describe Li-ion battery dynamics [37,38,48]. In Fig. 1a the 
+volume-averaged transport of Li-ions in the electrolyte between elec-
+trodes is shown. The interfacial reaction kinetics between electrolyte 
+and electrode is depicted in Fig. 1b. It is modeled by a Butler-Volmer 
+rate, with the overpotential ηs dependent current density jLi+ (ηs) (see 
+eqs. A.5 and A.6 in the supporting information). 
+When a Li-ion cell gets charged for the first time, the electrolyte gets 
+reduced at the anode surface due to the low graphite potential. The 
+products build a passivation layer, the solid-electrolyte interphase (SEI), 
+which prevents the electrolyte from further reduction. However, the SEI 
+continues growing because of a leakage of electrons from the anode 
+through the SEI to the electrolyte, where it reacts with Li-ions and sol-
+vents. This reaction consumes Li-ions irreversibly, which is one of the 
+main reasons for capacity fading. 
+The relation between irreversible capacity loss QSEI,irr, SEI thickness 
+LSEI, and the growth causing flux NSEI is given as 
+∂tQSEI,irr =
+AFsSEI
+VSEI
+⋅∂tLSEI = AF⋅NSEI, (1)  
+where NSEI ≥ 0, A is the surface area of the anode, sSEI is the mean 
+stoichiometric coefficient of Li in the SEI formation reaction, VSEI is the 
+mean partial molar volume of the SEI, and F is the Faraday constant. 
+Single et al. provided evidence that electron diffusion through the 
+SEI is causing calendaric aging [24]. These electrons diffuse through 
+localized state, e.g., neutral Li-interstitials diffusion [49]. The corre-
+sponding flux is deduced from Fick’s law and is given as 
+NSEI,diff = De− ⋅
+ce−
+LSEI
+, (2)  
+where De− is the diffusion coefficient and ce− is the interstitial concen-
+tration at the anode-SEI interface, which is dependent on the electro-
+chemical potential of the anode relative to Li. This process is depicted as 
+process A in Fig. 1c. 
+The capacity loss increases when the cell is cycled. Attia et al. show 
+that the SEI grows almost exclusively during lithiation of the anode [9]. 
+This phenomenon is also modeled by an electron flux, which is influ-
+enced by the Li-ion current through the SEI. This can be seen in Fig. 1c 
+process B. To take the influence of the Li-ion current into account, an 
+electron migration flux is incorporated and the SEI flux is derived from 
+L.J. Bolay et al.                                                                                                                                                                                                                                 
+Journal of Power Sources Advances 14 (2022) 100083
+4
+the Nernst-Planck equation 
+NSEI = De− ⋅
+ce−
+LSEI
+− zFκe−
+SEI∇Φ, (3)  
+with the valence z = − 1, the conductivity of the localized electrons κe−
+SEI, 
+and the potential gradient ∇Φ in the SEI caused by the Li-ion flux. Ac-
+cording to Ref. [24], the electron concentration in the SEI is approxi-
+mated by 
+ce− = ce−
+0 ⋅exp
+(
+−
+F
+RT
+ηSEI
+)
+, (4)  
+with the interstitial concentration ce−
+0 at 0V anode potential, the uni-
+versal gas constant R, and the temperature T. Furthermore, the potential 
+gradient is approximated by 
+∇Φ =
+− USEI
+LSEI
+, (5)  
+where the potential drop is defined as 
+USEI =
+LSEI
+κSEI
+Li+
+⋅jLi+ , (6)  
+with the conductivity κSEI
+Li+ of Li-ions in the SEI. 
+With the help of the Nernst-Einstein equation, the conductivity κe−
+SEI is 
+approximated by the diffusion coefficient 
+De− = RTκe−
+SEI
+/
+ce− ≈ 2RTκe−
+SEI
+/
+ce−
+0 (7)  
+and eq. (3) is rearranged to 
+NSEI =
+De− ⋅ce−
+0
+LSEI
+⋅exp
+(
+−
+F
+RT
+ηSEI
+)
+⋅
+(
+1 −
+F
+2RT
+USEI
+)
+. (8) 
+The overpotential for the reaction is given as 
+ηSEI = Φs − φe − USEI, (9)  
+where Φs is the anode potential and φe is the electrochemical potential of 
+the electrolyte. 
+The growth of the SEI not only affects the cells capacity but also its 
+inner resistance. This is taken into account in the Butler-Volmer rate for 
+the intercalation into graphite, where the overpotential is supplemented 
+by the potential drop in the SEI and becomes 
+η̃s = ηs − USEI. (10)  
+The overpotential of the Butler-Volmer term is given in Ref. [35] (see 
+also eq. A.6 in the supporting information). 
+4. Battery cycling 
+We simulate battery cycling with the volume-averaged P2D model. 
+Several battery parameters are required for this. The parameters 
+describing the microstructure morphologies are extracted from CT data 
+(see sec. 2.2). The concentration-dependent electrolyte parameters are 
+taken from Ref. [50]. The OCV curves are fitted to the measured curves 
+in Ref. [40] (see eq. A.8 and A.9 in the supporting information). The 
+remaining cell parameters are determined with an optimization algo-
+rithm, where experimental data of a fresh cell from Ref. [5] are used. 
+The parameters can be found in Table B.1 and B.2 in the supporting 
+information. 
+4.1. Parameterization 
+The parameters of the cell model, that are not known from literature 
+or measurements, are determined by an optimization, where the devi-
+ation between experiment and simulation, given as an objective func-
+tion, is minimized. 
+Those parameters are the initial SOC on the anode side and for both 
+electrodes the maximal concentration of Li-ions in the active material cs, 
+max, the diffusion coefficient of Li-ions in the active material Ds, and the 
+rate constant k. 
+The optimization algorithm should find the global minimum and 
+preferably it is parallelizable as the evaluation of the time-evolution of 
+our physics-based model is time-consuming. To this aim, Forman et al. 
+[37] used a genetic algorithm to identify the parameters of the P2D 
+model and Rahman et al. [38] used particle swarm optimization. 
+Here, we will use the surrogate optimization, which is a stochastic 
+optimization algorithm. The benefits of this algorithm are that its 
+convergence to the global optimum is proven and that it can run in 
+parallel [51]. To the best of our knowledge, this is the first time that the 
+surrogate optimization has been used to identify the parameters of the 
+P2D model. 
+4.1.1. Surrogate optimization 
+We briefly outline the algorithm for surrogate optimization. For 
+further details, we refer to Refs. [51,52]. In a first phase, the algorithm 
+evaluates the objective function for a given number of points, which are 
+randomly chosen in the given parameter space. These points get inter-
+polated by radial basis functions to build a surrogate function. In the 
+next phase, the point with the smallest value is found. Around this point, 
+Fig. 1. Lithium transport on different scales. a) Li-ion transport in electrolyte 
+between electrode particles. b) Li-ion current at electrode interface. c) SEI 
+growth during calendar aging (A) and during cycling (A + B). 
+L.J. Bolay et al.                                                                                                                                                                                                                                 
+Journal of Power Sources Advances 14 (2022) 100083
+5
+multiple points are sampled and an additional merit function is evalu-
+ated at these points. The merit function consists of the surrogate and a 
+function that describes the distance of sampled points to already eval-
+uated points. This ensures that the surrogate function is minimized while 
+searching in new regions. At the point, where the merit function has its 
+minimal value, the objective function is evaluated and the surrogate 
+function is updated. This procedure is repeated until a stopping criterion 
+is reached. Subsequently, the surrogate gets rejected and a new surro-
+gate is created with new random points, while the best fit of the previous 
+surrogate is kept for comparison. This overall procedure of generating 
+new surrogate functions can be repeated until the global optimum is 
+found. Usually the search for the optimum is stopped after a predefined 
+time. 
+4.1.2. Fitting 
+The objective function for the optimization is a weighted sum of the 
+discharge curve error errV and the EoDV error errEoDV. Here, we chose 
+the L1-Norm to measure the discharge curve error: 
+errV(θ) =
+∫
+T
+|Vexp(t) − Vsim(t; θ)|dt, (11)  
+where Vexp is the experimental voltage and Vsim is the voltage output of 
+the simulation over the discharge time T for a given parameter vector θ. 
+The EoDV error gets measured after a few cycles, since the cycling range 
+has to level off after full discharge in the experiment as well as in the 
+simulation. 
+The parameters are optimized in a reasonable parameter space. The 
+results of the fitting can be found in Table B.2 in the supporting infor-
+mation. As the algorithm stopped due to a time stopping criterion, it 
+cannot be assumed that the resulting parameters are the optimal pa-
+rameters. Also, it has not been shown yet that the parameters of the P2D 
+model are identifiable at all. Bizeray et al. showed the identifiability for 
+the single particle model, which is a reduced version of the P2D model, 
+in Ref. [53]. In Ref. [54], Li et al. analyzed the sensitivity of the P2D 
+model parameters. They showed that only part of the parameters is 
+identifiable. 
+The parameters of the battery cycling and those of the degradation 
+are correlated. Thus, the parameterization of both models needs to be 
+linked to each other. For that purpose, the degradation parameters are 
+taken into account in this section. 
+4.2. Simulation and validation with in-flight data 
+To validate the determined parameters, the satellite in-flight data are 
+used. On orbit, the cells get charged via the solar panels with a CC-CV 
+profile. During the eclipse period, they get discharged to power the 
+cameras for the aurora observation. There are two different discharge 
+profiles, depending on whether the aurora of the north or the south pole 
+is observed. The cycling protocols are described in detail in Ref. [8]. 
+In Fig. 2 the simulation of the in-flight data is depicted. The data 
+were taken from the early life of the battery in 2005. The cycling pro-
+tocol, that has been used during this period of satellite operation, was for 
+north pole observation. It can also be found in Table 1 (P1). In the figure 
+we show the agreement between simulation and experiment over the 
+cause of three cycles. It can be seen that the discharge voltage curve is 
+met by the simulation. 
+5. Battery degradation 
+To determine the parameters of the degradation model, long-term 
+cycling is simulated with the volume-averaged P2D model (see sec. 
+5.1). Subsequently, 3D simulations are performed with the determined 
+parameters. Different cycling protocols are used to examine the influ-
+ence of charge and discharge currents on the SEI growth in the micro-
+structure (see sec. 5.2). 
+The degradation with the P2D model is implemented in MATLAB 
+[55]. The 3D model is implemented with the software BEST [33]. Both 
+kinds of simulations are run on the high performance computer cluster 
+JUSTUS 2, which belongs to the bwHPC. 
+5.1. Parameterization with P2D model 
+We simulate the long-term cycling protocol according to the exper-
+iments of Uno et al. [5]. They cycled the cells about 27,000 times. After 
+around 24,000 cycles, when the EoDV reaches 3.75 V, the charge voltage 
+is changed from 4.1 V to 4.2 V. At 12 different points in time, the cells 
+are fully discharged to 3.0 V to measure the remaining capacity. This can 
+also be seen in Fig. 3. The charge-discharge protocol used here can be 
+found in Table 1 (P2). 
+The parameters, that are examined in this subsection, are the initial 
+SEI thickness LSEI,0, the diffusion coefficient De− of localized electrons in 
+the SEI, and the conductivity κSEI
+Li+ of Li-ions in the SEI. The other pa-
+rameters, like the mean partial molar volume of the SEI, contribute to 
+the model as multiplicative factors and hence are not identifiable. Those 
+parameters are taken from literature. All parameters of the degradation 
+model are given in Table B.4 in the supporting information. 
+The determination of the optimal parameter set is a multi-objective 
+optimization problem, where the capacity fading as well as the EoDV 
+error have to be minimized. As the simulation of around 27,000 cycles is 
+quite expensive in terms of computation time, a sophisticated optimi-
+zation algorithm is inappropriate. For that reason, a fixed parameter 
+space is used, where the parameters are uniformly distributed in a 
+reasonable range. The cycling is then simulated for all combinations of 
+parameters simultaneously on the computer cluster. The optimal 
+parameter set of the fixed parameter space is chosen. 
+In Fig. 3a the capacity fading over around 27,000 cycles is depicted. 
+Fig. 3b shows the corresponding EoDV. At around 24,000 cycles, when 
+the charge voltage is raised from 4.1 V to 4.2 V, the degradation 
+Table 1 
+Cycling protocols used in experiments and simulations.  
+Protocol Charge (CC-CV) Discharge (CC) Temperature 
+P1 1.5 A / 4.1 V 0.88 A 0.74 A 20◦C 
+(in-flight) 63 min 15 min 19 min  
+P2 1.5 A / 4.1 V (4.2 V) 1.0 A 25◦C 
+(P2D) 65 min 35 min  
+P3 1.5 A / 4.1 V 1.0 A 25◦C 
+(3D) 65 min 35 min  
+P4 1.5 A / 4.1 V 2.0 A 25◦C 
+(3D) 65 min 35 min  
+P5 3.0 A / 4.1 V 2.0 A 25◦C 
+(3D) 65 min 35 min   
+Fig. 2. Three cycles of satellite REIMEI’s battery. In-flight data and simulation 
+corresponding to the satellite cycling protocol. 
+L.J. Bolay et al.                                                                                                                                                                                                                                 
+Journal of Power Sources Advances 14 (2022) 100083
+6
+accelerates. For the simulation, we first consider the red lines. In both 
+graphs, we see that the degradation gets overrated at the beginning of 
+the cycling. This can be explained by a not optimal choice of cell pa-
+rameters. As we already described in sec. 4.1.2, the optimization of the 
+parameters is a difficult task due to computation time and the identifi-
+ability of the parameters. After around 2,000 cycles, over a wide range of 
+the cycling, the trend of the simulation corresponds quite well to that of 
+the experiment, especially in the EoDV. At the end, after about 20,000 
+cycles, the simulation underrates the degradation of the experiment. At 
+this late period of cycling, there are probably additional degradation 
+processes taking place in the cell, that are not covered by our SEI growth 
+model. This could be for example the cracking of anode particles as 
+described in Ref. [56] or Li plating. These processes lead, among other 
+things, to a sudden increase of anode surface, which accelerates the SEI 
+growth. Mendoza-Hernandez et al. [36] observe indicators for plating in 
+the satellite in-flight data. These occur more frequently at a later stage of 
+the cycling. Plating is responsible for or accelerates a number of 
+degradation processes. This may be another reason why accelerated 
+aging is observed that cannot be explained by SEI growth. 
+The difference between the new model of von Kolzenberg et al. [30] 
+and the model of Single et al. [24] is the additional consideration of the 
+Li-ion flux through the SEI during charging. This causes the migration of 
+electrons due to an electric potential drop in addition to diffusion. To 
+discuss the influence of the electron migration flux for SEI growth, we 
+perform simulations of the degradation with and without the term that 
+describes the electron migration (zFκe−
+SEI∇Φ= 0) in eq. (3). The simula-
+tion result is depicted in Fig. 3 as the yellow lines. It can be seen that the 
+degradation decreases significantly in that case already after a few 
+thousand cycles. Also the trend of the simulation does not correspond to 
+the experiments in both graphs. 
+5.2. 3D microstructure-resolved simulations 
+The microstructure-resolved SEI growth is simulated in 3D with the 
+same degradation parameters as determined before with the P2D model. 
+The cell and degradation parameters for the 3D simulations can be found 
+in Table B.3 and B.4 in the supporting information. There are three 
+different cycling protocols used for the 3D simulations. They differ in 
+charge and discharge currents to investigate how the current influences 
+the SEI growth behavior. The protocols (P3 – P5) can be found in 
+Table 1. P3 is equivalent to the cycling protocol used with the P2D 
+model (P2). In P4 the discharge current is doubled. This is based on the 
+experiments in Ref. [8]. In P5, both the charge current and the discharge 
+current are twice as large as in P3. The intervals for charging and dis-
+charging are the same in all protocols and correspond to the typical 
+satellite battery cycling protocols. 
+The 3D simulations reveal an inhomogeneous growth of the SEI. In 
+Fig. 4 the results of the simulations with two different cycling protocols 
+at three points in time are shown. We see anode particles connected to a 
+current collector. The color represents the thickness of the SEI after a 
+certain amount of cycles. In the left column the cell is cycled with pro-
+tocol P3, the right one is cycled with P4. Fig. 4a and d show the SEI 
+thickness after 8 cycles, Fig. 4b and e after 136 cycles, and Fig. 4c and f 
+after 672 cycles. 
+For all states shown in Fig. 4, there are coexisting regions with a 
+thicker SEI and regions with a thinner SEI. In Fig. 4a and d we see that, at 
+the beginning of the cycling, the particles near the separator have a 
+thicker SEI than those near the current collector. Fig. 4b, c, e, and f show 
+that after several cycles, the inhomogeneity spreads over the whole 
+anode. When comparing Fig. 4b and e or Fig. 4c and f, we see that this 
+happens sooner for the protocol with the higher discharge current. 
+After many cycles, there are particular domains of the anode, where 
+the SEI is noticeably thicker. In Fig. 4f, we observe that these are the 
+thinner parts of the anode. Especially the peak-like structures have the 
+thickest SEI. 
+The inhomogeneous growth is caused by the varying SOCs through 
+the anode and consequently varying overpotentials at the anode SEI 
+interface. The thinner parts of the particles reach higher SOCs faster, 
+when charging the cell. 
+For a quantitative analysis of the growth and variation of SEI 
+thickness, its mean, minimum, and maximum, throughout the anode, at 
+every computed time step, is depicted in Fig. 5. We investigate here the 
+three cycling protocols P3 – P5 at a short period of 25 cycles, which 
+corresponds to about two days, and a long period of 400–800 cycles, 
+which corresponds to approximately 1–2 months. 
+When regarding the SEI thickness at the short period, as shown in 
+Fig. 5a, we observe a stepwise growth behavior. During charging of the 
+cell or more precisely during lithiation of the anode, the SEI is growing 
+faster than during delithiation. These simulations reflect that the growth 
+rate depends on the current density, which has been observed experi-
+mentally in Ref. [9]. 
+Furthermore, when comparing the cycling protocols in Fig. 5a, we 
+note differences in SEI thickness and its inhomogeneity. This becomes 
+even clearer in the longer period in Fig. 5b. The differences in the total 
+length of the cycling simulations are due to numerical instabilities, when 
+using higher currents. When comparing the mean SEI thickness of the 
+different protocols, we observe that for P3 and P4, which differ in the 
+discharge current, there is no significant difference in the thickness. In 
+contrast, the SEI is growing faster for P5, which has a higher charge 
+current than the other two protocols. This is also in accordance with the 
+growth behavior observed in Ref. [9] and rationalized in Ref. [30]. 
+The relative maximum deviation, i.e. the difference between mini-
+mum and maximum divided by the mean of the thickness, is shown as 
+dashed lines in Fig. 5b. The simulations with doubled currents (P4 and 
+P5) show a significantly larger deviation, i.e. a more inhomogeneous SEI 
+growth. We also see that the deviation is already remarkable for the first 
+few cycles and increases only slightly thereafter. 
+Fig. 3. Two simulations of degradation experiment with satellite cycling pro-
+tocol. Both simulations with equal parameters, one with and the other without 
+electron migration flux. a) Capacity and b) end of discharge voltage (EoDV) of 
+simulation and experiment. 
+L.J. Bolay et al.                                                                                                                                                                                                                                 
+Journal of Power Sources Advances 14 (2022) 100083
+7
+Fig. 4. SEI thickness of anode particles connected to current collector for two cycling protocols at three time points. Left column (a, b, and c) shows cycling protocol 
+P3, right column (d, e and f) shows P4 (cf. Table 1). a) and d) 8 cycles. b) and e) 136 cycles. c) and f) 672 cycles. 
+Fig. 5. Variation of SEI thickness in 3D simulation for three different cycling protocols (cf. Table 1). a) Stepwise growth behavior in each cycle. b) SEI thickness and 
+relative maximum deviation (dashed lines) over a long cycling period. 
+L.J. Bolay et al.                                                                                                                                                                                                                                 
+Journal of Power Sources Advances 14 (2022) 100083
+8
+6. Conclusion 
+In this work, we present models for the short-term cycling and the 
+long-term degradation behavior of a Li-ion cell. The modeling is based 
+on experimental work and in-flight data of the batteries of small scien-
+tific satellite REIMEI, which was developed by JAXA. To describe the 
+cycling behavior of the cell, we determine the parameters of the ther-
+modynamic consistent transport theory of Latz et al. [35], which we 
+incorporate in a P2D model. The parameters are determined with a 
+surrogate optimization, in order to fit cycling experiments of the bat-
+teries. Subsequently, the model is validated by the satellite in-flight 
+data. We could show that the surrogate optimization is appropriate to 
+find parameters to fit simulation and experiments of a few cycles. But 
+this method has the same limitation as other optimization methods, 
+which lies in the unidentifiability of a few parameters of the P2D model. 
+One could use the surrogate optimization to fit a wider range of the 
+experiment, e.g., the first 1000 cycles. This should improve the accuracy 
+of the estimated parameters, and all degradation parameters could also 
+be included in the optimization process. However, this would need 
+significantly longer computation times. 
+Furthermore, we give an overview of a model for the cell degrada-
+tion, caused by SEI growth during storage as well as during cycling. This 
+model describes the increased growth rate during lithiation of the anode. 
+We determine the unknown parameters of the model with the help of 
+long-term satellite battery experiments, where we focus on capacity 
+fading and end-of-discharge voltage of the cells. 
+With the same model and parameters, we simulate cell degradation 
+in 3D. The simulations show an inhomogeneous growth of the SEI, 
+which depends on the cycling currents. This provides a deeper under-
+standing of the processes, which take place in a Li-ion battery. 
+Apart from the capacity fading due to SEI growth, there are more 
+degradation mechanisms, which have not been considered in this work. 
+A degradation mechanism, which can cause severe damages in the cell 
+and also contributes to capacity fading, is the deposition of metallic 
+lithium on the anode surface. It is referred to as Li plating. In Ref. [36], 
+Mendoza et al. analyse the battery in-flight data of satellite REIMEI over 
+an interval of 14 years. They observe a knee in the discharge voltage 
+curves, which they suggest to be due to plating. Hein et al. modeled Li 
+plating and simulated it in a microstructure-resolved framework [45]. 
+In this study we chose physics-based continuum models for our 
+simulations as these are able to reproduce the processes taking place in 
+Li-ion batteries and make them more comprehensible. Apart from that, 
+there are a lot more approaches to model the battery behavior. In 
+Ref. [57] Shi et al. give a comprehensive overview on multi-scale 
+computation methods. Similarly, Wang et al. review multi-scale 
+models of SEI formation [14]. To parameterize our continuum models, 
+we employ experiments, since atomistic models do not yet provide the 
+necessary accuracy. 
+In future work, we will incorporate plating into our model. This work 
+can be the foundation for performing state estimation and reliably 
+predicting the state of health of satellite batteries in orbit. 
+Declaration of competing interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgments 
+This work was supported by the German Aerospace Center (DLR). 
+The authors acknowledge support by the state of Baden-Württemberg 
+through bwHPC and the German Research Foundation (DFG) through 
+grant no INST 40/575-1 FUGG (JUSTUS 2 cluster). This work contrib-
+utes to the research performed at CELEST (Center for Electrochemical 
+Energy Storage Ulm-Karlsruhe).

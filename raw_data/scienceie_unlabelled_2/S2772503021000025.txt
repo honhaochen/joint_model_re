@@ -1,0 +1,557 @@
+We examine to what extent mobile phones and the internet drive emigration to OECD countries. Using a panel 
+of countries from 1990 to 2010 (when these technologies became more prevalent), we regress the stock of immi- 
+grants in OECD countries from source country i on the percentage of i ’s population having access to the internet 
+as well as the percentage of the population having mobile phones. We find that the internet dissuades migration 
+from i to the OECD whereas mobile phones encourage it. We then consider to what extent these technologies 
+substitute or complement other informational linkages by interacting each technology in source country i with 
+the stock of prior immigrants in destination country j . We find substitution effects between these technologies 
+and past migration. 
+Numerous studies have considered push and pull factors affecting
+igration. Mayda [23] , Hatton and Williamson [20] , Berthélemy et al.
+8] , and Beine et al. [7] provide surveys of this literature. This paper
+onsiders technological factors that could drive (push) emigration to
+ECD countries, namely the degree of access to the internet and the
+revalence of mobile phones in migrant-source countries. However, we
+llow effects of these two technologies to differ, especially since our
+ample runs from 1990 to 2010 and so before mobile phones became
+smart phones ”. 
+The internet could allow for greater information flows thereby facil-
+tating migration. Completing online forms could also make migration
+asier. In some cases, however, the internet could lower immigration as
+eople can sell labor services without physically moving as in Agrawal
+t al. [1] . Mobile phones provide another way for people to communi-
+ate but, at least before 2010, were less useful at transmitting documents
+r other large sources of information. They would allow people to re-
+ain connected to family and friends staying in the source country but
+ikely prove less beneficial for conducting business tasks offsite. 
+We find examining the impact of these technologies on emigration
+articularly interesting given their recent emergence. We consider these
+ew technologies as changes in structural characteristics, ones that tran-
+cend fluctuating business cycle conditions or sudden but temporary po-
+itical upheavals. But unlike other persistent factors such as geography,
+ulture, and language, the recent emergence of these technologies al-
+ows one to exploit their increasing prevalence to examine how these
+hanges have impacted emigration to OECD countries. Adoption of these∗ Corresponding author. 
+E-mail address: xux@hsu.edu (Xu Xu). 
+ttps://doi.org/10.1016/j.teler.2021.100002 
+eceived 15 November 2021; Accepted 16 December 2021 
+772-5030/Published by Elsevier B.V. This is an open access article under the CC BYechnologies is not immediate and differences in the speed of adoption
+rovide variation that can be exploited in empirical analyses. There-
+ore, our period of study, 1990 to 2010, provides an insightful window
+o examine the effects of these technologies. When these technologies
+ecome (nearly) ubiquitous in future periods, the lack of variation will
+reclude examining their effects. 
+In a similar paper, Winkler [33] finds that internet adoption is as-
+ociated with less emigration to OECD countries. However, we extend
+his analysis in two important ways. First, to what extent might other
+ypes of technologies in communication such as mobile phones mirror
+hese results? Our initial specification considers how internet accessibil-
+ty and mobile phone prevalence are associated with greater emigration
+o an OECD country regardless of the specific destination country. We
+egress a measure of the total emigrants from country i in any OECD
+ountry upon a measure of internet accessibility and a measure of mo-
+ile phone prevalence in country i . This approach presumes that each of
+hese technologies impacts migratory destination decisions uniformly
+cross countries and so specifying a particular destination is not rele-
+ant. 
+A second specification allows us to examine another issue that Win-
+ler [33] did not explore nor has anyone (to the best of our knowledge).
+e consider to what extent these technologies could each substitute
+or or complement other informational channels that make migration
+asier. For example, suppose a large stock of immigrants from i live in
+ountry j and so can provide a source of information about country j
+egardless of whether inhabitants of i have internet access. If obtain-
+ng information about j is the main benefit of the internet (with regard
+o migration) then the effect of the internet on emigration from i to-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ) 
+X. Xu and K. Sylwester Telematics and Informatics Reports 1–4 (2021) 100002
+1 Researchers have also examined other effects of cell phone adoption. Min 
+et al. [25] examine how the greater prevalence of smart phones in rural China 
+impacted decisions to work off the farm as well as diversify across crops. Sek- 
+abira and Qaim [29] find that cell phone adoption contributes to greater in- 
+come, female empowerment, and better nutrition in Uganda. Klonner and Nolan 
+[22] find that the spread of cell phones increased employment in rural South 
+Africa with greater effects for women. Aker et al. [4] and Aker and Ksoll 
+[2] found that access to mobile phones test scores in Niger. 
+2 Of note is that these studies more than a decade old mostly consider mobile 
+phones before they became “smart ” phones providing easy access to the internet. 
+3 Other studies also allow for separate effects from these two technologies 
+although not on migration. Iqbal et al. [21] consider the effects of each on broad 
+measures of “human development ”. Donou-Odonsou [17] considers their effects 
+on economic growth in Africa. Shabbir et al. [30] examine effects on corruption.  should decline. On the other hand, perhaps the internet could com-
+lement other sources of information. A larger existing stock of immi-
+rants providing some information about a particular destination coun-
+ry could then make it easier to focus subsequent queries. To explore
+hether technologies like the internet and mobile phones substitute
+r complement other information flows, the dependent variable is no
+onger the total number of immigrants from i in OECD countries but the
+umber of immigrants from i in country j . The dependent variable is now
+ocation specific. The key right-hand side variables are the interactive
+erms, TOTAL ij1990 
+∗ INTERNET it and TOTAL ij1990 
+∗ MOBILE it . INTERNET it 
+ MOBILE it ) denotes a measure of internet accessibility (mobile phone
+revalence) in country i at time t and TOTAL ij1990 denotes the total num-
+er of immigrants in 1990 from source country i living in country j and
+aptures, albeit imperfectly, the potential for one to gain and experience
+amiliarity with destination country j . A positive coefficient on this inter-
+ctive term would suggest that the technology complements these other
+ources of information whereas a negative coefficient would suggest a
+ubstitution effect. 
+The specifications we use also allow effects to differ depending on the
+ducation level of the emigrants. Presumably, those with less education
+re more likely to be employed as manual laborers that need to work
+nsite whereas those with more education can perform their duties from
+ distance. To this extent, these technologies would have more negative
+ffects on the emigration of higher educated individuals. However, the
+nternet could also spur migration of all groups to the extent it facilitates
+cquiring general information or applying for visas. One can again con-
+ider these technologies complements or substitutes for other channels
+f information. Presuming that those with higher levels of education are
+ore knowledgeable about conditions and procedures in other coun-
+ries, a more positive effect of these technologies for higher educated
+ndividuals would suggest the internet complements these other sources
+nd channels. If the impact of these technologies is more positive for
+ower educated individuals, however, then such a result would suggest
+hat these technologies are substituting for other sources of information.
+Our results show that the internet dissuades migration from i to the
+ECD whereas mobile phones encourage it. The internet does not affect
+ow skilled migration from low and middle-income countries. However,
+he magnitudes of the effects are not large, suggesting that telecommu-
+ications technologies are not the main driving force of international
+igration. We also find substitution effects between these technologies
+nd past migration. 
+The remainder of the paper is organized as follows. Section 2 pro-
+ides a literature review. Section 3 describes the empirical methodology,
+ncluding the data we use. Section 4 presents results, and Section 5 pro-
+ides concluding discussion. 
+. Literature review 
+Several studies consider the internet’s various effects. Vu [32] , Choi
+nd Hoon Yi [12] , and Czernich et al. [14] find that the internet in-
+reases economic growth. Ackerman et al. [5] find that the internet
+ncreases demand for skilled workers. Freund and Weinhold [19] re-
+ort that the internet boosts trade. Choi [10 , 11] , Fink et al. [18] , and
+arbero and Rodriguez-Crespo [6] consider how the internet promotes
+rade. Choi [10] studies the effects of the internet on inward foreign di-
+ect investment (FDI) using bilateral data, hypothesizing that internet
+sage can lower search costs and improve transparency between coun-
+ries. 
+International migration provides another global link that could have
+een influenced by the increasing use of the internet. Winkler [33] finds
+hat higher internet penetration in source countries decreases emigra-
+ion. More recent studies use survey data to study the impact of internet
+se on migration plans. Pesando et al. [27] report that those who often
+se the internet are more willing to migrate and have more seriously
+onsidered doing so. Merisalo and Jauhiainen [24] report that social
+edia usage affects asylum-related migrants’ location choices and mi-2 ration experience. One possible reason is that social media use could
+orm a type of social tie with similar effects as diasporas [15] . 
+In addition to international migration, other studies consider intra-
+ational migration. Using the Panel Study of Income Dynamics, Cooke
+nd Shuttleworth [13] report that the internet hindered interstate mi-
+ration in the U.S. Vilhelmson and Thulin [31] surveyed young adults
+n Sweden who often stated that considerations regarding the internet
+ot only influenced the decision to move but also the destination. 
+Of course, the internet is not the only technology that has contributed
+o communication and the flow of information. The explosion of mo-
+ile phones provides another potential determinant of migration. 1 Muto
+26] finds that members of Ugandan households with cellphones were
+ore likely to migrate from rural to urban areas. The effect was stronger
+or ethnic minorities that might have had fewer connections away from
+ome, providing evidence that the effect of mobile phones is stronger for
+hose who are otherwise informationally disadvantaged. In this sense,
+obile phones provide a substitute for other types of information gath-
+ring. Aker et al. [3] also find that access to mobile phones increases
+he probability of migrating. Schaub [28] reports that mobile phones
+ncrease migration from Central Africa to Morocco. 2 
+Our study differs in three important ways from those above. First, we
+xamine the association between mobile phones and international migra-
+ion as opposed to within-country-migration although Schaub [28] is an
+xception. Second, we compare how each of these two technologies in-
+uence emigration. 3 Adoption of the two technologies is correlated and
+o not controlling for one when examining the effect of the other could
+ias results. However, since these technologies are not perfect substi-
+utes, effects need not be the same, either. In fact, the above discussion
+nticipates such a result as past studies report a negative association
+etween internet adoption and emigration while other studies find a
+ositive association between mobile phone adoption and emigration.
+f course, the magnitudes of these coefficients could still be skewed by
+he omission of the other variable in the regression model. Finally, we
+onsider to what extent these two technologies could substitute or com-
+lement other linkages. For example, does the effect of these technolo-
+ies become stronger or weaker when a large stock of immigrants from
+he same source country already resides in the destination country? The
+ack of immigrants already living in destination countries could serve as
+n informational disadvantage for potential immigrants in the future.
+o technologies like the internet and mobile phones help to overcome
+hese disadvantages? 
+. Empirical methodology 
+.1. Econometric models 
+Our first specification does not consider the particular destination of
+migrants from country i as long as this destination is an OECD country.
+he empirical model is: 
+4 We use stocks of emigrants instead of flows due to greater data availability. 
+5 An exception to using the IHS transformation is for POL since it is an ordinal 
+variable. Instead, we re-normalize it so that it spans 0-1. 
+6 Results are robust using the log transformation and are available upon re- 
+quest.  𝑖,𝑡 ( 𝑠 ) = 𝛼𝑖 + 𝛿𝑡 + 𝛽 ∗ 𝐼 𝑁 𝑇 𝐸𝑅𝑁 𝐸 𝑇 𝑖,𝑡 −5 + 𝜇 ∗ 𝑀 𝑂𝐵𝐼 𝐿 𝐸 𝑖𝑡 −5 
++ 𝛾 ∗ 𝑋 𝑖,𝑡 −5 + 𝜀 𝑖,𝑡 (1) 
+here M it ( s ) denotes the stock of immigrants in OECD countries from
+ountry i at time t of education level s . INTERNET denotes the fraction of
+he population reporting access to the internet as described above. MO-
+ILE denotes the fraction of the population having a mobile phone. The
+atrix X denotes time-varying country-level characteristics that could
+perate as push factors from country i . These controls include: GDP per
+erson ( GDP ), total population ( POP ), the fraction of the population un-
+er 45 years of age ( YOUNG ), an indicator of political rights ( POL ), and
+he trade share ( TRADE ). GDP accounts for the level of economic de-
+elopment. Not only does income influence the desire to emigrate but
+ncome also matters for technological adoption. More populous coun-
+ries can produce more emigrants and could also be a factor for the
+revalence of the internet or mobile phones, especially since companies
+roviding these services could target larger countries. Younger popu-
+ations are more likely to adopt new technology as well as emigrate.
+olitical rights could again influence the desire or ability to emigrate as
+ell as matter for a government’s encouragement or even allowance of
+ts citizens to use these technologies. Finally, TRADE controls for other
+ypes of openness that could be associated with emigration. Time invari-
+nt push factors are captured by the country fixed effect, 𝛼i . Because the
+pecific destination of emigrants within the OECD is not relevant in this
+rst examination, we do not include destination specific pull factors.
+he time fixed effect, 𝛿t , captures global effects identically impacting
+migration from all countries. 
+A potential concern stems from the possible endogeneity of INTER-
+ET and MOBILE . Ideally, one could instrument for them although we
+o not do so given the difficulty of finding suitable instruments. Nev-
+rtheless, the above specification takes several steps to diminish endo-
+eneity concerns. For one, all right-hand-side variables are lagged one
+ve-year period. Second, the inclusion of country fixed effects elimi-
+ates the potential for time invariant factors to drive both emigration
+nd the adoption of new technology. Finally, the inclusion of economic,
+olitical, and demographic controls covers a wide array of factors that
+ould drive both emigration and technological adoption. Nevertheless,
+e acknowledge that endogeneity concerns remain and so results should
+e tempered accordingly. 
+Our second specification considers source-destination ( i-j ) bilateral
+airs and so can examine to what extent internet accessibility in source
+ountry i has differing effects depending on the country of destination j .
+his specification can address whether these technologies complement
+r substitute for other sources of informational linkages between i and
+ . We consider the following model: 
+𝑀 𝑖,𝑗,𝑡 ( 𝑠 ) 𝑀 𝑖,𝑗,𝑡 ( 𝑠 ) = 𝜃𝑖,𝑡 + 𝜂𝑗,𝑡 + 𝜋𝑖,𝑗 
++ 𝜌 ∗ 𝑇 𝑜𝑡𝑎 𝑙 𝑖,𝑗, 1990 ∗ 𝐼 𝑁 𝑇 𝐸𝑅𝑁 𝐸 𝑇 𝑖,𝑡 
++ 𝜈 ∗ 𝑇 𝑜𝑡𝑎 𝑙 𝑖,𝑗, 1990 ∗ 𝑀 𝑂𝐵𝐼 𝐿 𝐸 𝑖,𝑡 + 𝛾 ∗ 𝑋 𝑖𝑗,𝑡 + 𝜎𝑖,𝑡 (2) 
+here 𝜃i,t captures all push factors in source country i and time t , 𝜂j,t cap-
+ures all pull factors in destination country j at time t , and 𝜋i,j captures
+ll time-invariant characteristics linking i and j . Time-varying charac-
+eristics are included in matrix X and will be discussed below. 
+The key variables are the two interactive terms where Total i,j, 1990 
+enotes the number of immigrants from source-country i in destination-
+ountry j in 1990, the start of the sample period. We focus on a pre-
+etermined stock of immigrants since this parsimoniously controls for
+ther factors such as historical or cultural links between i and j that
+nfluence migration from i to j . That is, we presume that the effects of
+uch links can be captured by a measure of past migration from i to j .
+oreover, the year 1990 mostly predates the internet and mobile phones
+nd so this past migration from i to j is not driven by these technologies.
+inally, a large stock of immigrants from i would likely provide a source
+f information and network for future migrants. In summary, this initial
+tock of immigration from i in j parsimoniously controls for many factors3 hat link i and j , that could matter for subsequent migration, and that
+as not driven by the technologies we consider here. A positive 𝜌 implies
+hat the internet complements this link thereby reinforcing connections
+etween the two and promoting integration whereas a negative 𝜌 implies
+hat the internet substitutes for this other link. The interpretation of 𝜈
+s analogous. 
+The advantage of the specification in (2) is that the 𝜃’s and 𝜂’s capture
+ll country-level push and pull factors. These inclusions are especially
+mportant to the extent that these technologies proxy for the degree of
+conomic and social development that could also influence emigration.
+.2. Data 
+For migration, we take data from Brücker et al . [9] , hereafter re-
+erred to as the IAB data ta from Docquier et al . [16] . IAB data in-
+lude the stock of migrants who are 25 years of age and older, migrat-
+ng from non-OECD countries to an OECD country (as the OECD was
+onstituted in 2000) . 4 Migrant status is defined by birth country in-
+tead of citizenship (whether one is ‘foreign born’.) IAB also provides
+igration data based on educational attainment, classifying those with
+rimary (completed less than upper-secondary education), secondary
+completed upper-secondary education), and tertiary education (com-
+leted a post-secondary education.). The IAB data begins in 1980 al-
+hough we begin our sample in 1990 as public accessibility to the inter-
+et was sparse during the 1980 ′ s. IAB data is not available annually but
+n five-year increments. 
+INTERNET it denotes the number of internet users per 100 people in
+he migrants’ origin country in year t . The data was compiled by the
+nternational Telecommunication Union made available by the World
+ank. “Internet users are individuals who have used the Internet (from
+ny location) in the last 3 months. The Internet can be used via a com-
+uter, mobile phone, personal digital assistant, games machine, digital
+V etc. ” MOBILE it represents mobile cellular subscriptions per 100 peo-
+le in the migrants’ origin country in year t . The data measures “sub-
+criptions to a public mobile telephone service that provide access to the
+STN [public switched telephone network] using cellular technology ”
+nd includes postpaid as well as prepaid accounts. Data on INTERNET it 
+nd MOBILE it was compiled by the International Telecommunication
+nion made available by the World Bank. 
+Instead of taking natural logarithms of the migration variables, we
+se the Inverse Hyperbolic Sine (IHS) transformation since zeros com-
+rise 17% of the bilateral migration data, M ijt . In order to be consistent,
+he same transformation is used for the total migration variable, M it , in
+1) as well as for the right-hand-side variables in (1) and (2) even when
+o cases of a zero arise. 5 , 6 
+Table 1 provides more specifics regarding data sources and Table 2
+rovides summary statistics. 
+. Results 
+.1. Emigration aggregated across all OECD countries 
+Table 3 presents two sets of results. For each set, we consider the total
+umber of emigrants from country i living in any OECD country, the
+umber of low skilled emigrants (primary education), and the number
+f high skilled emigrants (tertiary education). The first set (columns 1–3)
+onsiders all countries as source countries and the second set (columns
+–6) considers only low and middle-income countries (as classified by
+he World Bank) as source countries. 
+X. Xu and K. Sylwester Telematics and Informatics Reports 1–4 (2021) 100002 
+Table 1 
+Data Sources. 
+Variable Definition Source 
+TOTAL i Total stock of emigrants from country i living in an OECD country IAB 
+LOW i Total stock of “low skilled ” emigrants from country i living in an OECD country IAB 
+HIGH i Total stock of “high skilled ” emigrants from country i living in an OECD country IAB 
+INTERNET i Internet users per 100 people in country i World Bank 
+MOBILE i Number of cell phone subscribers per 100 people in country i World Bank 
+GDP i Country i GDP Per Capita, constant 2005 international $ World Bank 
+POP i Total Population of country i Work Bank 
+POL i Political Rights Index for country i Freedom House 
+TRADE i Trade Share in i, sum of imports & exports as share of GDP World Bank 
+Bilateral Data 
+TOTAL ij Total stock of emigrants from country i living in country j IAB 
+LOW ij Total stock of “low skilled ” emigrants from country i living in country j IAB 
+HIGH ij Total stock of “high skilled ” emigrants from country i living in country j IAB 
+LANG ij = 1 if i and j share the same official language, = 0 otherwise CEPII 
+TOTAL ij,1990 Total stock of emigrants from country i living in country j in 1990 IAB 
+Table 2 
+Summary Statistics. 
+count Mean sd min max 
+Summary Statistics before IHS Transformation 
+TOTAL 604 347,140 736,992 144 9,369,078 
+HIGH 604 124,293 237,233 42 1,899,893 
+LOW 604 126,972 378,060 32 5,322,509 
+INTERNET 598 16.41 23.39 0 93.39 
+MOBILE 603 40.12 44.76 0 190.81 
+POP 604 3.90e + 07 1.40e + 08 75,304 1.34e + 09 
+GDP 604 16,441.93 18,145.58 630.70 107,703.5 
+POL 604 0.61 0.35 0 1 
+TRADE 603 83.21 48.52 0.020 420.43 
+YOUNG 604 36.13 4.41 27.59 70.73 
+Summary Statistics after IHS Transformation 
+TOTAL 604 12.08 1.945 5.66 16.75 
+HIGH 604 11.09 1.92 4.43 15.15 
+LOW 604 10.86 1.98 4.16 16.18 
+INTERNET 598 2.24 1.76 0 5.23 
+MOBILE 603 3.12 2.02 0 5.94 
+POP 604 16.49 1.89 11.92 21.71 
+GDP 604 9.77 1.20 7.14 12.28 
+TRADE 603 4.98 0.55 0.02 6.73 
+YOUNG 604 4.27 0.11 4.01 4.95 
+IHS denotes the Inverse Hyperbolic Sine Transformation. 
+Several findings emerge. First, if mobile phones and the internet were
+oth capturing the same general, underlying level of technology of the
+ource country, then collinearity issues would prevent finding strong
+esults. Instead, we find strong coefficients for both types of technol-
+gy in columns (1) – (3). More importantly, the coefficients have op-
+osite signs, coinciding with findings from the aforementioned studies
+hat considered each technology separately. The prevalence of the in-
+ernet is negatively associated with emigration from country i to an
+ECD country whereas the prevalence of mobile phones is positively
+ssociated. Such a finding could arise given that these technologies are
+mperfect substitutes – again, even more so before 2010 – and so cap-
+ure distinct aspects of technology. The positive coefficient for mobile
+hones could indicate that the ability to stay in touch with family and
+riends encourages people to emigrate. However, this finding with mo-
+ile phones is stronger when considering all source countries versus only
+ow and middle-income source countries. This finding suggests a greater
+arginal impact of mobile phones in high-income source countries. This
+ould arise given the greater similarity between high income source and
+estination countries. With more similar characteristics, any difference
+n the prevalence of mobile phones could have a greater marginal im-
+act. 
+More generally, results for both types of technologies are stronger
+or the full set of countries than for those coming from low and middle-4 ncome countries. This is not surprising given that moving to an OECD
+ountry from a poorer country could comprise greater overall benefits
+and perhaps greater costs as well) than does migrating from one OECD
+ountry to another. As before, the relative importance of access to var-
+ous communication technologies in the source country in the decision
+o migrate could be lower in a poor country where many characteristics
+iffer between the low-income country and an OECD one. 
+The smallest (in magnitude) coefficient in columns (4)–(6) is that on
+NTERNET for low-educated emigrants. Such individuals are most likely
+o sell manual labor when emigrating to an OECD country and so their
+obs are less reliant on the internet. 
+But even when statistically significant, coefficient magnitudes are
+ot large. Consider a one-standard deviation increase in INTERNET
+ − 1.7). With the coefficient on INTERNET of about -0.1, this increase
+ssociates with a 0.17 decrease in TOTAL or roughly just 9% of a stan-
+ard deviation of TOTAL . The analogous magnitude for mobile phones is
+ust a 4.8% = (2 × 0.046/1.9) of a standard deviation increase in TOTAL .
+lthough these technologies matter to some extent, they do not appear
+o be the key driving forces of emigration, either. These small magni-
+udes also coincide with previous findings. Winkler [33] found that a
+0% increase in INTERNET leads to about 4.4% decrease in bilateral
+igration stocks. 
+Looking at the control variables, the coefficients on POL and POP
+re not significant. This does not mean that political rights are unimpor-
+ant. The inclusion of country fixed effects means that the coefficients on
+he right-hand-side variables are driven by within-country variation. If
+OL does not change much over time and POP changes at steady rates,
+hen finding smaller coefficients on these variables is not surprising.
+he negative coefficient on GDP indicates that fewer emigrate when in-
+omes are rising. A country opening up as measured by trade sees more
+migrants. Surprisingly, the coefficients on YOUNG for low and middle-
+ncome countries is negative, suggesting that countries with younger
+dults send fewer emigrants to OECD countries. 
+.2. Emigration to specific OECD countries 
+We now consider migration to specific OECD countries as cap-
+ured in (2) and present results in Table 4 . Panel A includes no sepa-
+ate time-varying controls except for the source-year and destination-
+ear dummies. Panel B presents results for TOTAL 1990 
+∗ INTERNET and
+OTAL 1990 
+∗ MOBILE when other interaction terms are included, namely
+hen all the source country characteristics like GDP it in Table 3 are
+lso interacted with TOTAL 1990 . Variables like GDP it are not included
+eparately since they are captured by the i-t fixed effects. The inclu-
+ion of these “extra ” interaction terms help ensure that the coefficients
+n TOTAL 1990 
+∗ INTERNET and TOTAL 1990 
+∗ MOBILE are capturing how
+n initial stock of immigrants in country influences the effects of these
+X. Xu and K. Sylwester Telematics and Informatics Reports 1–4 (2021) 100002 
+Table 3 
+Results aggregating across all OECD countries. 
+Emigrant Source Countries 
+All Low and Middle Income 
+(1) (2) (3) (4) (5) (6) 
+Total High Low Total High Low 
+INTERNET − 0.0985 ∗∗∗ − 0.0986 ∗∗∗ − 0.1132 ∗∗∗ − 0.0484 ∗∗ − 0.0769 ∗∗∗ − 0.0352 
+(0.0172) (0.0158) (0.0204) (0.0201) (0.0204) (0.024) 
+MOBILE .0525 ∗∗ .0378 ∗ .062 ∗∗ .0662 ∗∗ .0491 ∗ .0695 ∗∗ 
+(0.0219) (0.0198) (0.0239) (0.0295) (0.0276) (0.0316) 
+POP .0697 − 0.0416 .0809 − 0.1504 − 0.3066 ∗ .035 
+(0.1961) (0.1834) (0.2128) (0.1866) (0.1762) (0.2369) 
+GDP − 0.2977 ∗∗∗ − 0.247 ∗∗∗ − 0.3041 ∗∗∗ − 0.3359 ∗∗∗ − 0.2747 ∗∗∗ − 0.3585 ∗∗∗ 
+(0.0621) (0.058) (0.0691) (0.0622) (0.0561) (0.0746) 
+POL .0655 .0834 .0524 .0176 .0575 − 0.004 
+(0.0989) (0.0855) (0.1128) (0.0896) (0.0836) (0.1015) 
+TRADE .0671 .0528 .0894 .0969 ∗ .0818 .1128 ∗ 
+(0.0521) (0.0464) (0.062) (0.0577) (0.0544) (0.0649) 
+YOUNG − 0.0371 .2945 .1308 − 1.254 ∗∗∗ − 0.5703 − 1.332 ∗∗∗ 
+(0.3418) (0.3175) (0.3665) (0.4429) (0.4177) (0.4805) 
+# of countries 165 165 165 120 120 120 
+N 604 604 604 438 438 438 
+R 2 .7015 .8433 .365 .7587 .8628 .4849 
+All regressions contain year and country fixed effects. All six right-hand-side variables listed above are lagged. Standard errors in parentheses. ∗ , ∗ ∗ , ∗ ∗ ∗ denotes 
+statistical significance at the 10%, 5%, and 1% levels. # of countries refers to the number of source countries. # of countries denotes the number of source countries. 
+Table 4 
+Results for Source Country – OECD Country Bilateral Pairs. 
+Emigrant Source Countries 
+All Low and Middle Income 
+(1) (2) (3) (4) (5) (6) 
+Total High Low Total High Low 
+Panel A: No Time-Varying Controls 
+INTERNET − 0.0126 ∗∗∗ − 0.0132 ∗∗∗ − 0.0154 ∗∗∗ − 0.0077 − 0.0098 ∗∗ − 0.0089 ∗∗ 
+∗ Total 1990 (0.0036) (0.0034) (0.0032) (0.0047) (0.0045) (0.0042) 
+MOBILE − 0.0338 ∗∗∗ − 0.0265 ∗∗∗ − 0.0148 ∗∗∗ − 0.0388 ∗∗∗ − 0.0312 ∗∗∗ − 0.0205 ∗∗∗ 
+∗ Total 1990 (0.0029) (0.0028) (0.0026) (0.0035) (0.0034) (0.0031) 
+# of countries 186 186 186 136 136 136 
+N 16,188 16,188 16,188 11,623 11,623 11,623 
+R 2 .9708 .9694 .9735 .9677 .9652 .9707 
+Panel B: Inclusion of other interactive terms as controls 
+INTERNET − 0.0274 ∗∗∗ − 0.0233 ∗∗∗ − 0.0258 ∗∗∗ − 0.0241 ∗∗∗ − 0.0207 ∗∗∗ − 0.0189 ∗∗∗ 
+∗ Total 1990 (0.0039) (0.0037) (0.0035) (0.0052) (0.005) (0.0046) 
+MOBILE − 0.0104 ∗∗∗ − 0.0112 ∗∗∗ .0025 − 0.0151 ∗∗∗ − 0.0161 ∗∗∗ − 0.0044 
+∗ Total 1990 (0.0033) (0.0032) (0.003) (0.0041) (0.004) (0.0037) 
+# of countries 166 166 166 120 120 120 
+N 13,794 13,794 13,794 9818 9818 9818 
+R 2 .9745 .9732 .9765 .9725 .97 .9747 
+All regressions contain source-year, destination-year, and source-destination fixed effects. All six right-hand-side variables listed above are lagged. Standard errors in 
+parentheses. ∗ , ∗ ∗ , ∗ ∗ ∗ denotes statistical significance at the 10%, 5%, and 1% levels. # of countries refers to the number of source countries. The five other interactive 
+terms in panel B take the form Z it 
+∗ Total 1990 where the Z it ’s are GDP, POP, POL, TRADE , and YOUNG . The coefficients on these other interaction terms are suppressed 
+to ease presentation but are available on request. 
+technologies on further migration from i to j and not influences from re-
+ated facets of development like income. We focus discussion on panel
+Again, several findings arise. First, coefficients on both interaction
+erms are negative. A large existing population of immigrants in the des-
+ination country lowers the impact of these technologies on subsequent
+migration. In this sense, this large pool of immigrants serves as a substi-
+ute for these technologies either directly because existing immigrants
+rovides a readily available network for one to access or because this
+arge pool proxies for historical factors that already provided important
+inks between i and j . 
+Second, coefficient estimates are smaller in magnitude for mobile
+hones, meaning less substitutability. A possible explanation is that the
+nternet more strongly provides what a large pool of immigrants in the5 estination country could also provide, namely information and access.
+onversely, consider mobile phones. When using a phone, one gener-
+lly knows (or at least intends to contact) a specific person. One does
+ot “surf ” for information. Having a large stock of compatriots in the
+estination country might not lessen a desire to contact those at home.
+n the other hand, if this large stock of compatriots allows for more
+eneral information gathering and networking then it could be more
+reatly substitutable with the services that the internet provides. 
+Third, coefficient estimates for the internet interaction term decrease
+lightly in magnitude when one restricts the sample to low and middle-
+ncome countries. The same does not hold true for mobile phones where
+oefficients slightly increase in magnitude. To the extent that social com-
+unication is the primary benefit (again, before 2010) of mobile phones,
+hat keeping in contact with people back home is more difficult for those
+X. Xu and K. Sylwester Telematics and Informatics Reports 1–4 (2021) 100002 
+rom low-income countries, and that a large pool of compatriots makes
+taying in touch with those back home less important – then the pres-
+nce of prior migrants is more substitutable with mobile phones than
+ith the internet. 
+Finally, the coefficients for the mobile phone interaction term is
+igher for highly educated emigrants than it is for those with low edu-
+ation. To the extent that highly educated are more able to bring loved-
+nes with them or return home to visit, then the degree of substitutabil-
+ty between mobile phones and the stock of immigrants in the destina-
+ion country should matter less.
+Our sample period provides a unique opportunity to examine to what
+xtent two (now) prevalent technologies impact emigration. Both the
+nternet and mobile phones allow for greater degrees of communica-
+ion and information transfer than ever before. Our findings suggest that
+obile phones increase emigration to OECD countries, presumably be-
+ause the ability to leave home while remaining in close contact with
+hose back home encourages people to emigrate. However, the magni-
+udes are not estimated to be large. The increasing prevalence of mobile
+hones does not appear to be a large cause of brain drain. The internet,
+n the other hand, discourages emigration. A priori, this result is not
+bvious. The internet can be used to gain information, process applica-
+ions, find employment, and also remain in contact back home. Offset-
+ing effects include the ability to do work remotely and so remain in
+ne’s home country while still selling labor services abroad. Our find-
+ngs suggest that this latter effect dominates although the magnitudes
+re, once again, not large. They are even smaller for low and middle-
+ncome countries, again suggesting that the growth of these technologies
+s not a driving force for emigration. Such findings lessen concerns of
+rain drain from a policy making perspective. Taken together, our re-
+ults imply that the impacts of technological change that one might see
+s greatly similar could still have different effects on migration. 
+The second part of the analysis considers to what extent these tech-
+ologies could complement or substitute for other types of networking
+r ways to gain information. The influence of these technologies is more
+egative (less strong) in cases where a large stock of immigrants from
+ne’s own country resides. As people from various countries intermix
+n potential destination countries, then the effects of these technolo-
+ies curtail subsequent emigration. If (due perhaps to political tensions)
+igration flows diminish, then the impact of these technologies on emi-
+ration would increase. In both cases, the impacts of these technologies
+o not arise in a vacuum but depend on pre-existing migration stocks,
+mplying that these effects are influenced by the historical and cultural
+inks that have affected past migration patterns. 
+However, further work is warranted. No instruments were used and
+o endogeneity concerns persist. A second avenue would more closely
+xamine what attributes about these technologies are most important
+lthough disentangling effects from separate attributes is also problem-
+tic. Finally, as data become more available, researchers also need to
+xamine the usage of social media impacting global migration on a large
+cale. More generally, future research needs to re-evaluate the relation-
+hips between telecommunications technologies and migration as inno-
+ation evolves.

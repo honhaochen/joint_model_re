@@ -1,0 +1,705 @@
+The Li metal anode possesses the high specific capacity and the min-
+imum reduction potential known as the renaissance of high-energy-
+density battery. However, the security problems brought by uncon-
+trolled Li dendrites have hindered its development. Integrating the
+Li metal anode with non-flammable solid-state electrolytes (SSEs)
+provides a promising approach to solve the problem of Li dendrites
+and achieve safe Li metal batteries. However, recent studies indi-
+cate that Li dendrites still occur in the interior of inorganic SSEs,
+although the high mechanical strength of inorganic SSEs can resist
+dendrite growth in theory. In this review, the main causes of Li den-
+drites within inorganic SSEs are summarized. Combined with
+advanced characterization techniques and theoretical calculations,
+theoretical models of Li dendrite growth within SSEs are clarified.
+Furthermore, various strategies for suppressing Li dendrites are
+comprehensively summarized. Finally, the research prospects of
+dendrite-free all-solid-state Li metal batteries are evaluated.
+A rechargeable liquid Li battery (Li||TiS2) was constructed byWhittingham for the first
+time in 1976, which showed a high energy density of nearly 500 Wh kg-1.1 After
+several years of iteration, Li metal batteries were introduced into the electric vehicle
+industry by Moli Energy.2,3 However, these Li metal batteries were recalled due to
+safety issues.4,5 Soon after, Li-ion battery was invented in 1985, which consisted of
+a LiCoO2 cathode developed by Goodenough and a carbonaceous anode devel-
+oped by Yoshino.6,7 The ‘‘rocking chair’’–type charge and discharge of the Li-ion bat-
+tery exhibited better stability than that of Li metal battery. Taking advantage of the
+long-term cyclic stability of the Li-ion battery, Sony, with its 18650 battery, quickly
+occupied the commercial market.8 Since then, Li-ion batteries based on carbona-
+ceous anodes have been constantly iterated to now. Nevertheless, with rapid
+development of the cathodes (such as LiFePO4
+9, LiNi1-x-yCoxMnyO2
+10,etc.), Li-ion
+batteries with carbonaceous-based anodes gradually approached the upper limit
+of energy density (250 Wh kg-1).11
+Recently, the introduction of Si-based anodes has been found to increase the energy
+density of a battery to more than 300 Wh kg-1, marking a major milestone in the
+development of Li-ion batteries.12 However, once Li metal as the anode (with the
+high theoretical capacity of nearly 3860 mAh g-1 or 2061 mAh cm-3 and the lowest
+electrochemical potential of nearly 3.04 V versus the standard hydrogen elec-
+trode)13,14 paired with the recently developed S-based or O2 cathodes, energyCell Reports Physical Science 3, 100706, January 19, 2022 ª 2021 The Author(s).
+This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+1
+Figure 1. Working mechanisms and evaluation of different Li battery systems
+(A) Working mechanism of Li ion battery. Reproduced with permission from Liu et al.33 Copyright 2016, Elsevier.
+(B) Working mechanism of Li metal battery.
+(C) Working mechanism of solid-state Li metal battery. Reproduced with permission from Miao et al.34 Copyright 2020, The Royal Society of Chemistry.
+(D) Evaluation of different Li battery systems.
+ll
+OPEN ACCESS Reviewdensities of 650 Wh kg-1 and 950 Wh kg-1 can be achieved (Figure 1).11 Unfortu-
+nately, the security problems brought by uncontrolled Li dendrite growth have seri-
+ously hindered the application of the Li metal anode.15 Various strategies (such as
+artificial solid-electrolyte interfaces16–19, structured lithiophilic hosts20–22, liquid
+electrolyte engineering23–28, and solid-state electrolytes29,30) have been developed
+to solve the problem of Li dendrites.31,32
+Among the above-mentioned strategies, although it still falls short in high-rate per-
+formance compared with flammable liquid electrolytes, non-flammable solid-state
+electrolytes (SSEs) are widely expected to solve the security problems brought by
+insufficient thermal stability and the growth of Li dendrites.35–40 Furthermore, SSEs
+also show better electrochemical stability.38,39 Solid polymer electrolytes (SPEs),
+with superior flexibility and favorable membrane-forming capability, have been
+extensively studied.41,42 However, the low ionic conductivity of SPEs and the issue
+of dendrite-penetration through soft SPEs with low shear modulus limit the practical
+application of SPEs.43–46 Inorganic SSEs with high ionic conductivity (Li10GeP2S12
+12 mS cm-1,47 Li7P3S11 17 mS cm-1 48) and high shear modulus (Li3PS412GPa,492 Li7La3Zr2O12100 GPa50) hold great hope to resist dendrite growth and achieve the
+practical application of all-solid-state Li metal batteries.51–55 Nevertheless, with the
+advancement of characterization techniques, Li dendrites are still found in the bulk
+phase of inorganic SSEs, which gradually grow and penetrate through SSEs, finally
+leading to short-circuit and cell failures. Therefore, researchers have conducted in-
+depth research on the Li dendrites in the interior of inorganic SSEs.56,57 It is found
+that the growth of Li dendrites within inorganic SSEs is related to the voids and pores,
+grain boundaries, cracks, electronic conductivity, and critical current density.58
+Moreover, several reviews have rarely involved Li dendrites in the interior of inorganic
+SSEs.46,59,60 Among them, there are two targeted reviewson Li dendriteswithin SSEs,
+which only summarize from the perspective of inorganic and organic SSEs.61–63 How-
+ever, systematic analysis for the causes of Li dendrites growthwithin inorganic SSEs is
+still relatively scarce. Andendless theoreticalmodels and advanced characterizations
+in recent years have emerged to accurately interpret the Li dendrites in the bulk phase
+of inorganic SSEs. Therefore, this review focuses on summarizing the main causes of
+Li dendrite growthwithin inorganic SSEs. Combinedwith theoretical calculations and
+advanced characterizations, mechanistic models of Li dendrite growth within SSEs
+are further clarified. Finally, the corresponding strategies of suppressing Li dendrites
+are comprehensively summarized, and the research prospects of dendrite-free all-
+solid-state Li metal batteries are evaluated (Figure 2).CAUSES OF LI DENDRITES WITHIN INORGANIC SSEs
+Compared to soft polymer electrolytes, inorganic SEEs can better resist Li den-
+drites due to its high shear modulus in theory.70 However, researchers discovered
+a voltage drop during polarization in garnet-based (Li7La3Zr2O12–LLZO) all-solid-
+state batteries as the current density increased, which was attributed to short-cir-
+cuiting of the battery caused by Li dendrites within SSEs.71 Combined with the
+theoretical simulations and advanced characterizations, the growth of Li dendrites
+have also been gradually observed in the bulk phase of other inorganic
+SSEs.67,72,73 Therefore, it is necessary to systematically analyze the causes of the
+Li dendrite growth within inorganic SSEs.74 According to previously reported
+studies, the causes of the growth of Li dendrites within inorganic SSEs can be sum-
+marized into the following categories.Macroscopic defects
+It is well known that the high shear modulus of completely compact inorganic SSEs can
+resist the growth of Li dendrites in theory. However, there are always various defects for
+practical SSEs. Researchers discovered that macroscopic defects including the voids
+and pores promoted the growth of Li dendrites within SSEs.75 Ren et al. 56 found that
+once there are voids and pores, the Li dendrites will penetrate through the intercon-
+nected pores and voids within ceramic electrolyte (Li6.75La3Zr1.75Ta0.25O12–LLZTO)
+and grow along the porous grain boundary (Figures 3A and 3B).
+Furthermore, recent research has shown that the growth of Li dendrites would fill all
+the voids and pores, and then penetrated from the interior of the SSEs to the cath-
+ode, resulting in short-circuit of the battery. Intriguingly, the period before short-cir-
+cuit of the battery occurs is positively correlated with the relative density of SSEs,
+which is estimated based on the ratio of the density calculated from the lattice con-
+stant to the density calculated from the weight and volume. Moreover, the Al2O3-
+doped Li7La3Zr2O12 has shown that a long period before short-circuit of the battery
+occurs is due to the improved relative density.71Cell Reports Physical Science 3, 100706, January 19, 2022 3
+Figure 2. Schematic illustration of the outline for suppressing Li dendrites within inorganic SSEs
+(A) Multilayer ceramic electrolyte increases relative density of SSEs. Reproduced with permission from Zhu et al.64 Copyright 2020, Wiley-VCH.
+(B) Grain boundary modification. Reproduced with permission from Hongahally et al.65 Copyright 2017, Elsevier.
+(C) Interface engineering inhibits Li penetration. Reproduced with permission from Jin et al.66 Copyright 2021, The Royal Society of Chemistry.
+(D) Adding LiF lowers electronic conductivity of SSEs. Reproduced with permission from Mo et al.67 Copyright 2019, Wiley-VCH.
+(E) In situ interface rich in Li3N increases critical current density. Reproduced with permission from Liu et al.68 Copyright 2021, The Royal Society of Chemistry.
+(F) Reversible short-circuit in garnet solid-state batteries. Reproduced with permission from Ping et al.69 Copyright 2020, Wiley-VCH.
+Therefore, there is reason to believe that high shear modulus is not enough to
+completely inhibit Li dendrite growth in the interior of inorganic SSEs. And macro-
+scopic defects including voids and pores should be appropriately suppressed.
+Micro defects
+Nevertheless, the SSEs with high relative density cannot completely inhibit Li
+dendrite penetration through SSEs caused by micro defects such as grain bound-
+aries (GBs) and cracks.82,83 Researchers discovered that Li dendrites nucleated
+and formed at GBs and cracks, and gradually penetrated through inorganic SSEs, re-
+sulting in short-circuit of the battery.844 Cell Reports Physical Science 3, 100706, January 19, 2022
+Figure 3. The causes of Li dendrites growth within inorganic SSEs
+(A) Schematics showing Li deposition of Li6.75La3Zr1.75Ta0.25O12(LLZTO) particles solid state electrolyte. Reproduced with permission from Tian et al.76
+Copyright 2018, Elsevier.
+(B) Cross-sectional SEM micrographs of the short-circuit in garnet solid-state batteries. Reproduced with permission from Ren et al.56 Copyright 2015,
+Elsevier.
+(C) Illustration of Li metal plating based on polycrystalline LLZO solid-state electrolyte. Reproduced with permission from Cheng et al.77 Copyright
+2017, Elsevier.
+(D) In situ X-ray micro imaging of Li/LAGP/Li symmetric batteries. Reproduced with permission from Tippens et al.78 Copyright 2019, American
+Chemical Society.
+(E) Schematic of the cross section in garnet ceramic electrolyte (left). Reproduced with permission from Aguesse et al.73 Copyright 2017, American
+Chemical Society. Schematic illustration of Li propagation along GBs of LLZTO (right). Reproduced with permission from Kim et al.79 Copyright 2020,
+The Royal Society of Chemistry.
+(F) Mechanism of Li filament formation and Li penetration within polycrystalline electrolytes. Reproduced with permission from Liu et al.80 Copyright
+2021, Nature Publishing Group.
+(G) Cyclic performance of Li/LLZO/Li and Li/LATP/Li symmetric batteries. Reproduced with permission from Wu et al.81 Copyright 2018, The Royal
+Society of Chemistry.
+(H) Electrochemical cycling curves of LiBH4 at step-increased current densities. Reproduced with permission from Mo et al.67 Copyright 2020, Wiley-
+VCH.7
+Li dendrites easily nucleate at the defects of GBs and subsequently penetrate the entire
+SSE along the pre-existing defects of GBs, whether it is single crystal or polycrystalline,
+causing a short-circuit of the battery.85–87 Furthermore, the penetrativemode of Li den-
+drites within polycrystalline SSEs is influenced by themechanical properties andmicro-
+structure of the GBs (Figure 3C).72 Due to the softening of the GBs, the compressive
+stress at the interface and the shear modulus at GBs is reduced. Consequently, Li metal
+nucleates atGBand Li/SSEs interface andgradually penetrates throughSSEs.82 In addi-
+tion, excessive trapping of electrons at GBs would trigger the nucleation of Li dendrites
+and increase the penetrating depth of Li dendrites.75,77
+Cracks are another reason to promote Li dendrites penetration in the interior of inor-
+ganic SSEs. Based on the mechanical crack mechanism, once the cracks occur withinCell Reports Physical Science 3, 100706, January 19, 2022 5
+inorganic SSEs, the Li filaments would grow along cracks and gradually penetrate
+SSEs and ultimately leads to short-circuit of the battery (Figure 3D).88
+To conclude, micro defects like GB and cracks contribute to Li dendrite growth and
+penetration in the bulk phase of inorganic SSEs; therefore, they require inhibition as
+well.
+Physical defects
+Ideal SSEs with highmechanical strength and low electrical conductivity could inhibit
+the growth of Li dendrites. However, physical defects such as high local electronic
+conductivity of SSEs could directly reduce Li+ to Li metal in the bulk phase of inor-
+ganic SSEs and gradually form Li dendrites within inorganic SSEs.63
+John A. Kilner et al.73 put forward that partial electronic conductivity of crystalline
+SSEs could provide electronic conductive pathways for Li nucleation within inorganic
+SSEs (Figure 3E). In other words, where there are electrons, there will be continuous
+Li nucleation and deposition. In addition, Wang’s group also proved that the high
+electronic conductivity of Li3PS4 and Li7La3Zr2O12 was mostly responsible for
+dendrite formation in these SSEs.89 Generally, it was assumed that the high elec-
+tronic conductivity of SSEs provided an electronic pathway for the direct reduction
+of Li+ to Li metal at grain boundary/pore of SSEs, and Li dendrites gradually formed
+and permeated through entire SSEs, eventually leading to short-circuit of the battery
+(Figure 3F).67,90
+Therefore, it is necessary to lower the electrical conductivity of SSEs to suppress Li
+dendrites in the bulk phase of inorganic SSEs.
+Physical property
+The formationof Li dendrites is also related tophysical property, such as critical current
+density (CCD). The maximum endurable current density of Li metal batteries cycling
+without cell failures in all-solid-state Li batteries is generally defined as CCD (usually
+reported as less than 1mA cm-2).59,91–93 Once the applied current density is larger
+thanCCD, SSEswill not transport enough Li+ in time for reaction, resulting in large con-
+centration polarization and electron accumulation, and then leading to Li dendrite
+nucleation and penetration and short-circuit of the battery (Figures 3G and 3H).67
+All-solid-state Li batteries with inorganic SSEs show high cyclic stability and high
+coulomb efficiency at low current densities. However, Li dendrite growth still
+occurred in the bulk phase of inorganic SSEs at high current densities, even though
+the high mechanical strength of inorganic SSEs could resist dendrite growth in the-
+ory. Due to the smaller CCD than organic electrolytes, Li dendrites are more likely to
+form within inorganic SSEs, especially at high current densities. For example, the
+CCD values of Li7La3Zr2O12 (0.05 to 0.9 mA cm-2) and Li2S-P2S5 (0.4 to 1 mA cm-2)
+are much lower than that of organic electrolytes (3 to10 mA cm-2).94
+Therefore, other strategies are required to improve the CCD of SSEs and inhibit Li
+dendrite growth within inorganic SSEs.
+ADVANCED CHARACTERIZATION TECHNIQUES AND THEORETICAL
+MODELS
+Different from batteries with liquid electrolytes, initial growth of Li dendrites can
+either happen in the interface of Li/SSEs interface or in the interior of SSEs. With
+the help of advanced characterization techniques and theoretical simulations, the6 Cell Reports Physical Science 3, 100706, January 19, 2022
+theoretical models and the main causes of Li dendrites within SSEs have been grad-
+ually analyzed and clarified.
+Advanced characterization techniques
+Advanced characterization techniques play an important role in the analysis of Li
+dendrites growth within SSEs. The main directions of characterization are: (1)
+observing and confirming Li dendrite growth within SSEs and (2) elucidating the
+causes of Li dendrites within SSEs.
+With the continuous efforts of researchers and the gradual application of advanced
+characterizations, Li dendrites within SSEs have been observed in short-circuited batte-
+ries.95 For the first time, Li dendrites in the interior of polymer electrolytes were
+observed in short-circuited batteries by using in situ scanning electron microscopy
+(SEM) in 2002 (Figure 4A). It was shown that Li dendrite growth at the interface could
+further penetrate through soft polymer electrolytes with insufficient shear modulus.
+Similarly, Nagao et al. 72 directly observed columnar Li deposition in short-circuited
+battery based on Li2S–P2S5 by using SEM in 2013 (Figure 4B). Furthermore, optical mi-
+croscopy and in situmini cell were also used to observe the Li dendrites growth within
+optically SSEs.96,97After that, dual-beam (Focused ionbeam)FIB-SEMrevealed that the
+hard and hollow Li dendrites could penetrate through soft polymer electrolytes in the
+short-circuited battery (Figure 4D).98 Besides, atomic force microscopy (AFM) com-
+binedwith environmental transmission electronmicroscopy (TEM) was used to observe
+the in situ growth of individual Li whiskers in the bulk phase of SSEs, which provides a
+quantitative benchmark for inhibiting Li dendrite growth within SSEs.74
+Although Li dendrites within SSEs have been observed in short-circuited batteries, it
+is necessary to provide the direct evidence by advanced characterizations to prove
+that the growth of dendrites within SSEs is Limetal. High resolution transmission elec-
+tron microscope (TEM) and electron energy loss spectroscopy (EELS) was first be
+used to confirm that Li dendrites growth at GBs of Li6.75La3Zr1.75Ta0.25O12(LLZTO)
+in 2016 (Figure 4C).75 Then, Auger electron spectroscopy (AES) with precise chemical
+sensitivity77 and non-destructive neutron depth profiling (NDP) analysis technology
+were used to prove that Li propagates preferably along the grain boundary of Li7-
+La3Zr2O12(LLZO) during cycling, resulting in the short-circuit of Li/LLZO/Li symmetric
+battery (Figures 4E and 4F).99 Besides, Marbella et al.100 confirmed that short-circuit
+of the battery was obviously related to Li dendrites within LLZTO by using 7Li Nuclear
+magnetic resonance (NMR) chemical shift imaging in 2019 (Figure 4G).103
+Visualizing the process of reaction within SSEs is also helpful to understand the
+growth of Li dendrites within SSEs. In situ X-ray computed tomography in micro
+nanoscale78 and in situ space X-ray diffraction101 were first used to visualize the pro-
+cess of crack evolution in the interior of SSEs, which included Li deposition and Li
+dendrites penetration (Figures 4H and 4I). Besides, in situ microscopic and cryo-
+TEM were reported to provide visual evidence for the dynamic process of Li den-
+drites formation and penetration within SSEs in 2021 (Figure 4J).102
+After the discoveries and confirmations of Li dendrites within SSEs, advanced char-
+acterization techniques have also been used to reveal the causes of this phenome-
+non. Among them, X-ray tomography was first widely used. Synchrotron X-ray micro
+tomography technology was first used in 2014 to prove that the unstable interface of
+Li/polymer electrolytes induced Li dendrite growth at the interface and further pene-
+trated through soft polymer electrolytes with insufficient shear modulus in Fig-
+ure 5A.104 Similarly, synchrotron X-ray tomography was used in 2018 to confirmCell Reports Physical Science 3, 100706, January 19, 2022 7
+Figure 4. Advanced characterization techniques for observing and confirming Li dendrites growth within SSEs
+(A) In situ SEM observing Li dendrites growth through polymer SSEs. Reproduced with permission from Mickal et al.95 Copyright 2002, Electrochemical
+Society Active Member
+(B) SEM showing the columnar Li deposition in Li2S–P2S5. Reproduced with permission from Nagao et al.72 Copyright 2013, The Royal Society of
+Chemistry.
+(C) HRT-TEM and EELS revealing Li dendrites formation at the GBs of LLZTO. Reproduced with permission from Tsai et al.75 Copyright 2016, American
+Chemical Society.
+(D) FIB-SEM confirming the hard and hollow Li dendrites growth in the polymer solid-state electrolyte. Reproduced with permission fromGolozar et al.98
+Copyright 2018, American Chemical Society.
+(E) AES comfirming Li dendrites propagation along GBs in short-circuited Li/LLZO/Li symmetric battery. Reproduced with permission from Cheng
+et al.77 Copyright 2017, Elsevier.
+(F) NDP revealing Li dendrites growth in Li/LLZO/Li symmetric battery. Reproduced with permission from Wang et al.99 Copyright 2017, American
+Chemical Society.
+(G) 7Li NMR chemical shift image confirming Li dendrites growth within LLZTO. Reproduced with permission from Marbella et al.100 Copyright 2019,
+American Chemical Society.
+(H) In situ X-ray computed tomography visualizeing the process of cracks evolution of solid-state Li metal battery. Reproduced with permission from
+Tippens et al.78 Copyright 2019, American Chemical Society.
+(I) Space X-ray diffraction tracking cracks evolution in Li/Li6PS5Cl/Li symmetrical batteris. Reproduced with permission from Ning et al.101 Copyright
+2021, Nature Publishing Group. (J) In situ microscopic showing Li dendrites formation and growth within SSEs. Reproduced with permission from Sun
+et al.102 Copyright 2021, American Chemical Society.
+8 Cell Reports Physical Science 3, 100706, January 19, 2022
+Review
+Figure 5. Advanced characterization techniques for elucidating the causes of Li dendrites within SSEs
+(A) X-ray micro tomography showing that the surface structure induces Li dendrites within solid polymer electrolytes. Reproduced with permission from
+Harry et al.104 Copyright 2014, Nature Publishing Group.
+(B) Synchrotron X-ray tomography revealing that the interconnected pores accelerates Li dendrites within Li7La3Zr2O12. Reproduced with permission
+from Shen et al.105 Copyright 2018, American Chemical Society.
+(C) Time-resolved operational NDP confirming that the high electrical conductivity induces Li dendrites growth within SSEs. Reproduced with
+permission from Han et al.89 Copyright 2019, Nature Publishing Group.
+(D) In situ SEM and elaborate neutron showing that micro dynamics induce Li permeation in inorganic crystalline SSEs. Reproduced with permission
+from Krauskopf et al.107 Copyright 2019, Cell Press.
+(E) c-Aonfirmingmig that GBs and inhomogeneity surface induce Li dendrites growth within ceramic SSEs. Reproduced with permission from Lu et al.108
+Copyright 2021, Wiley-VCH.
+(F) In situ synchronous X-ray computed tomography with high spatial and temporal resolution showing that Li dendrites fill in the cracks within SSEs.
+Reproduced with permission from Hao et al.106 Copyright 2021, Elsevier.
+(G) Cryo-TEM revealing that the presence of P-based and S-based crystalline defects induces the structural cracks and short-circuit of the battery.
+Reproduced with permission from Sun et al.102 Copyright 2021, American Chemical Society.
+(H) Atom probe tomography showing that the softening of GBs promotes the nucleation and subsequent growth of Li dendrites within SSEs.
+Reproduced with permission from Sina et al.109 Copyright 2021, Wiley-VCH.
+(I) Spherical aberration correction electron microscopy revealing that the narrow band gap GBs provides electrons to induce Li dendrites growth within
+SSEs. Reproduced with permission from Liu et al.80 Copyright 2021, Nature Publishing Group.
+that the connective pores could reduce critical current density and accelerate Li
+dendrite growth within Li7La3Zr2O12, as shown in Figure 5B.105 Besides, in situ
+X-ray computed tomography, space X-ray diffraction,101 and in situ synchrotron
+X-ray tomography technology106 were used to demonstrate that Li dendrites grow
+at the crack of Li/SSEs interface and gradually penetrate into SSEs along the entire
+crack, eventually leading to short-circuit of the battery in Figure 5F.
+Furthermore, time-resolved operational NDP was used to visualize the nucleation
+and growth of Li dendrites within SSEs, as shown in Figure 5C.89 The results indicate
+that the high electrical conductivity of Li7La3Zr2O12 and Li3PS4 was the main cause of
+Li dendrite growth within SSEs. Moreover, conductive-atomic force microscopy
+(c-AFM)108 in Figure 5E and atom probe tomography experiments without beam
+damage in Figure 5G102 were used to elucidate the causes of Li dendrites within
+SSEs. It was shown that the GBs and heterogeneous surface of the SSEs were the
+dynamic characteristics and physical origin of Li dendrites growth within SSEs. In
+addition, cryo-transmission electron microscopy (TEM) has shown Li nucleated and
+propagated directly in Li3PS4, which was attributed to P- and S-based crystalline de-
+fects, leading to structural crack and short-circuit of the battery.
+Combining equipment with the advantages of multiple characterizations should be
+adopted to accurately study the causes of Li dendrites within SSEs. In situ SEM electro-
+deposition with elaborate neutron measurements was used to confirm that the micro
+dynamics of SSEs could induce Li penetration through SSEs as shown in Figure 5D.107
+Moreover, in situ high-resolution TEM and spherical aberration correction–electronmi-
+croscopy equipped with valence state electron energy-loss spectroscopy were utilized
+to prove that electrons provided by the narrow band gap of GBs were confirmed to
+easily reduce Li+ to Li dendrites within SSEs, leading to short-circuit of the battery as
+shown in Figure 5H.80
+Theoretical models
+Although SSEs with high shear modulus (at least twice that of Li metal) could resist Li
+dendrite growth according to the Munroe’s linear elastic theory model in Fig-
+ure 6A,70 the short-circuit was still observed in solid-state batteries with high shear
+modulus.110 Subsequently, Monroe et al. proved that the main cause of short-circuit
+of the battery was the internal Li dendrites within SSEs, based on space-charge-layer
+coupling in 2019.111
+As observation has clearly shown and deeper study of Li dendrite growth within SSEs
+according to section 3.1 has revealed, many theoretical models have been gradually
+proposed to theoretically explain Li dendrite growth within SSEs. Various factors
+affecting the Li dendrite growth within SSEs have been studied, including grain
+boundaries, critical current density, pores, cracks, and electronic conductivity.
+According to section 2.2, Li dendrites are easily induced through nucleation and
+penetration along the GBs within SSEs. As shown in Figure 6B, Raj et al. 112,118 first
+proposed an analytical model based on the electrochemical-mechanical potential,
+which showed that the local high resistance of GBs induced the nucleation of Li den-
+drites. Therefore, in consideration of the effects of Li nucleation at GBs and interfa-
+cial resistance, a density-driven stabilization mechanism was developed to better
+predict the Li penetration within inorganic SSEs.119
+Furthermore, Yu and Siegel87 proposed that significant softening in elastic proper-
+ties could reduce shear modulus of SSEs in nanoscale regions near GBs, resulting in10 Cell Reports Physical Science 3, 100706, January 19, 2022
+the penetration of Li dendrites within SSEs (Figure 6E). Similarly, the multiscale
+model was established by Srinivasan to explain that the high concentration of Li+
+and the low elastic modulus in the GBs led to the high current density, resulting in
+Li dendrites formation within SSEs in Figure 6J.92 Moreover, Chen et al.84 con-
+structed an electrochemical mechanical–phase field model, which revealed that
+the softening of GBs and the excess electrons in GBs induced isolated Li metal nucle-
+ation within SSEs and deeper penetration of Li dendrites along the GBs of polycrys-
+talline Li7La3Zr2O12 as shown in Figure 6L.
+Barai et al.93,113 first constructed a phase diagram to describe the relationship between
+the deposition of Li metal and the current density in solid polymer electrolyte in 2017,
+which suggested that the growth of Li dendriteswas determined by critical current den-
+sity (CCD) as shown in Figure 6C. Furthermore, some mechanism models in regard to
+the effects of Li/SSEs interface on CCD were gradually proposed.63 It was manifested
+that the poor wettability, and lithiophobic and uneven contact of the Li/SSEs interface
+greatly lowered the CCD of SSEs and induced the growth of Li dendrites.120
+Cracks played an important role in accelerating the penetration of Li dendrites. A
+model for the internal cracks of SSEs121 and the reaction mechanism at the SSEs/Li
+interface122 were reported, which verified that huge volume expansion and stress
+caused by Li deposition at SSEs/Li interface were the fundamental cause of the crack,
+leading to the Li penetration and short-circuit of the battery. Besides, Swamy et al.123
+constructed an electrochemical mechanical model to explain how the defect of Li/SSEs
+interface induced Li penetration, thus resulting in short-circuit of the battery.
+As shown in Figure 6D, the electrochemical mechanical model of Li-filled cracks was
+first proposed to explain that Li dendrites nucleated and propagated through the
+brittle SSEs via Griffith-like crack extension, resulting in short-circuit of the battery.85
+Similarly, Kazyak et al.88 verified themechanical cracking mechanism that the infiltra-
+tion of Li metal within the ceramic SSEs in 2020, which showed that the penetration
+rate of Li dendrites was proportional to the current density as shown in Figure 6I.
+Furthermore, Yuan et al.117 established an electrochemical-mechanical coupled
+phase field model for the first time by quantitatively investigating the growth and
+the crack propagation of Li dendrites within SSEs, which confirmed that Li dendrites
+tend to grow at crack zones as shown in Figure 6K. Therefore, increasing the fracture
+threshold strain and fracture energy could be helpful to inhibit cracks and suppress Li
+dendrites within SSEs.
+High relative electronic conductivity of SSEs is an important reason leading to Li
+dendrite growth within SSEs. Wang et al.115 first proposed that Li dendrites wereFigure 6. Theoretical models of Li dendrites growth within SSEs
+(A) Munroe’s linear elastic theory model. Reproduced with permission from Monroe et al.70 Copyright 2005, The Electrochemical Society.
+(B) Electrochemical-mechanical potential analytical model. Reproduced with permission from Raj et al.112 Copyright 2017, Elsevier.
+(C) Phase diagrams of current density. Reproduced with permission from Barai et al.113 Copyright 2017, The Royal Society of Chemistry.
+(D) Electrochemical electrochemical mechanical model. Reproduced with permission from Porz et al.85 Copyright 2017, Wiley-VCH.
+(E) Mechanism for softening of GBs induces Li penetration. Reproduced with permission from Yu et al.87 Copyright 2018, American Chemical Society.
+(F) DFT and phase-field model. Reproduced with permission from Tian et al.114 Copyright 2019, American Chemical Society.
+(G) Butler-Volmer model of internal electronic conductivity drop Li potential. Reproduced with permission from Ji et al.115 Copyright 2020, Wiley-VCH.
+(H) Rhase field model. Reproduced with permission from Ren et al.116 Copyright 2020, American Chemical Society.
+(I) Multi-scale model of trapping Li dendrites in GBs. Reproduced with permission from Barai et al.92 Copyright 2020,The Electrochemical Society.
+(J) Mechanism of Li filaments growth along cracks. Reproduced with permission from Kazyak et al.88 Copyright 2020, Cell Press.
+(K) Electrochemical mechanical phase field model. Reproduced with permission from Yuan et al.117 Copyright 2021, Elsevier.
+(L) Electrochemical mechanical phase field model of Li permeation. Reproduced with permission from Tantratian et al.84 Copyright 2021, Wiley-VCH.
+12 Cell Reports Physical Science 3, 100706, January 19, 2022
+ll
+OPEN ACCESSReviewformed within SSEs when the applied potential was greater than the critical overpo-
+tential (h*) based on the Butler-Volmer model as shown in Figure 6G. Once the local
+electronic conductivity of SSEs is high enough, the atomic Li electrochemical poten-
+tial in SSEs will drop to a potential similar to the Li plating on the anode, thus causing
+nucleation and growth of Li dendrites within SSEs. Density functional theory (DFT)
+was also used to simulate the Li nucleation tendency in Li7La3Zr2O12 (LLZO), which
+showed that the trapped excess electrons were distributed around the La atoms
+on the LLZO surface and induced the reduction of Li+ to Li metal.124 Moreover,
+the coupled phase field model in section 3.2.3 also shows that excessive surface
+electrons will affect the initial position of Li dendrites in GBs of the LLZO.
+There are some other factors that could affect the growth of Li dendrites within SSEs.
+Ren et al.116 developed a phase field model to simulate the growth of Li dendrites
+within composite SSEs (Figure 6H), which confirmed that the elastic modulus and
+the width of electrolyte nanochannel were two key factors controlling Li dendrite
+growth within composite SSEs. Nevertheless, Wang et al.125 proved that the stack-
+ing pressure significantly influenced Li dendrite growth, crack propagation, and
+interface stability from the mechanical perspective by describing the Li/SSEs dy-
+namic interface as a function of superimposed pressure and current density. It could
+be concluded that the high yield strength of Li metal at higher current densities
+reduced the initial formation time and increased the growth rate of Li dendrites
+by constructing a multiscale model to capture Li dendrite growth within the
+Li7La3Zr2O12.
+92
+The growth of Li dendrites within SSEs is not controlled by a single factor but a com-
+bination of multiple factors. Qi et al.114 first reported a multiscale model coupled
+density functional theory (DFT) calculation with the phase-field method, confirming
+that the internal defects, pores and GBs junction, and their electronic conducting
+properties could induce Li dendrites growth within SSEs in Figure 6F. Furthermore,
+Yuan et al.126 established an electrochemical coupling mechanism to comprehen-
+sively explain the Li dendrite growth within SSEs. It was indicated that the nucleation
+of Li dendrites started from the initial defects such as pores, voids, cracks, and GBs.
+Moreover, high relative electronic conductivity and insufficient critical current den-
+sity provided a driving force for the growth of Li dendrites within SSEs. Finally, Li
+dendrites further grow and penetrate through entire SSEs, resulting in short-circuit
+of the battery.SUPPRESSING LI DENDRITES WITHIN SSEs
+Based on the abovementioned mechanism and advanced characterizations, various
+strategies have been proposed to suppress Li dendrites within SSEs.Increasing relative density
+Increasing the relative density of SSEs could directly reduce the voids and pores of
+SSEs, thus suppressing Li dendrites within SSEs.
+Adjusting the synthesizing strategies of SSEs was proved to be an effective way to
+improve the relative density of SSEs. Guo et al.127 prepared high relative density
+(96%) of Li6.75La3Zr1.75Ta0.25O12 (LLZTO) by flow oxygen sintering process for the
+first time. The oxygen filling and lattice diffusion could effectively remove the
+pores near the grain boundary via optimization of the sintering atmosphere. Simi-
+larly, Yamada et al.128 obtained 96% of the relative density of LLZTO by using the
+spark plasma technique as shown in Figure 7A. Moreover, the casting–sintering
+technique129, cold isostatic pressing technique130, rapid induction hot pressing
+technique131 and uniaxial hot-pressing sintering technique132 were also confirmed
+to improve relative density by integrating GBs and reducing the pores and voids of
+SSEs.
+Introducing doping elements and oxide into SSEs is another effective way to in-
+crease relative density of SSEs. Murugan et al.137 adopted hot isostatic post-sinter-
+ing technology to prepare Al-doped Li7La3Zr2O12 with a high relative density of 98%,
+by adding 1 wt.% Li4SiO4, which could enhance the integrity of GBs and minimize
+pores. Similarly, Ta-substituted75 and Al2O3-doped Li7La3Zr2O12
+57 also achieved a
+high relative density (more than 99%) by hot press sintering.
+Grain boundary modification
+Previous studies suggested that the short-circuit of the battery is due to Li dendrite
+growth within SSEs brought by Li nucleation and permeation along GBs, so GB
+modification and other strategies were proposed to completely suppress Li
+dendrites.138
+Surface treatments could effectively inhibit Li dendrite growth along GBs and avoid
+the direct contact between Li metal and GBs. Tsai et al.75 polished the surface of
+Li6.75La3Zr1.75Ta0.25O12 and introduced an Au buffer layer, which improved ionic
+conductivity of GBs and adjusted Li/SSEs interface to inhibit Li dendrite growth at
+GBs. Similarly, coating a thin Li+ conducting polymer139 and introducing a Li-Ag
+alloy layer on ceramic SSE interfaces were also used to modify GBs and suppress
+Li dendrites at GBs.140
+Some additives were also helpful to adjust the structure of GBs and inhibit Li
+dendrite growth along, and penetration of GBs. Yamada et al.65 introduced
+Li2CO3 and LiOH in Li6.75La3Zr1.75Ta0.25O12(LLZTO) to modify GBs and inhibit the
+growth of Li dendrites along GBs by improving the interconnection between grains
+in Figure 7B. Furthermore, adding Li6Zr2O7 in LLZTO to decompose into Li2ZrO3
+during the sintering process141 and introducing lithiophilic Li3OCl into the GBs of
+LLZTO were useful to fill in the gap between grains and enhance intergrain bonding,
+thus inhibiting Li dendrites growth along GBs.76
+Besides, the direct reduction of GBs could alleviate Li dendrite growth and delay
+short-circuited time. Kataoka et al. adopted the floating zone method to prepare
+a garnet type Li6.5La3Zr1.5Nb0.5O12 without GBs and pores.142 Moreover, ionic liquid
+with high ionic conductivity was investigated as to its potential to inhibit Li
+dendrite growth along GBs through filling the voids within the Li7La3Zr2O12 and
+coterminous GBs.
+Reducing cracks and defects
+Li dendrites nucleate at the cracks and defects of SSEs, and propagate through
+entire SSEs, resulting in short- circuit of the battery. Therefore, it is necessary toFigure 7. Suppressing Li dendrites within SSEs
+(A) Increasing relative density of SSEs. Reproduced with permission from Yi et al.129 Copyright 2016, The Royal Society of Chemistry.
+(B) Grain boundary modification. Reproduced with permission from Hongahally et al.65 Copyright 2017, Elsevier.
+(C) Reducing cracks and defects to suppress Li penetration. Reproduced with permission from Ruan et al.133 Copyright 2019, The Royal Society of
+Chemistry.
+(D) Lowering electron conductivity of SSEs. Reproduced with permission from Tang et al.134 Copyright 2020, The Royal Society of Chemistry.
+(E) Improving CCD of SSEs. Reproduced with permission from Fu et al.135 Copyright 2019, The Royal Society of Chemistry.
+(F) Self-repairing of Li dendrites within SSEs.
+reduce cracks and defects for inhibiting Li dendrite penetration within SSEs. The
+introduction of artificial interface layer and mechanical filling, and the construction
+of multilayer SSEs are the main strategies.
+Artificial interface layer, with good ionic conductivity, good wettability, electrical in-
+sulation, and highmechanical strengthwas helpful in inhibiting cracks anddefects.143
+Wen et al.133 constructed Li3PO4 layers on the surface of the Li6.75La3Zr1.75Ta0.25O12
+as shown in Figure 7C. It was shown that the Li3PO4 layer not only promoted interfa-
+cial wettability, but also provided robust interfacial phase, thus reducing the cracks
+and defects to inhibit Li penetration. Furthermore, a LiPON,96 ZnO,144 Al2O3 coating
+layer and Li1.3Al0.3Ti1.7(PO4)3 composite polymer coating layer66 on the interface of
+SSEs could also effectively reduce cracks and defects to inhibit Li dendrites
+penetration.145
+Mechanical filling was another effective strategy to inhibit cracks and Li penetration.
+Wang et al.146 filled perfluoromethoxy butane (HFE) into the voids of Li7P3S11. Once
+Li penetrated into Li7P3S11, HFE preferential reacted with Li metal and formed LiF
+interface within SSEs, which consumed Li metal and inhibited Li dendrite penetration
+within SSEs. Moreover, introducing Ti4+ in Li6.75La3Zr1.75Ta0.25O12,
+64 filling garnet
+particles into polymer matrix,53 and adding silicon nanoparticles in the micropores
+of Li7La3Zr2O12 effectively reduced defects and cracks to inhibit Li dendrite
+penetration.81
+Multilayer SSEs could combine the mechanical properties of ceramics with the flex-
+ibility of polymers, thus inhibiting Li penetration. Pervez et al.147 effectively pre-
+vented Li penetration by synthesizing a flexible and mechanically robust polymer
+film, which consisted of Li perchlorate and garnet particles as an intermediate layer.
+In addition, the introduction of sandwich-structured SSEs, such as those produced
+by adding stable Li5.5PS4.5Cl1.5 on both surfaces of unstable Li10Ge1P2S12,
+148 poly-
+mer/ceramic/polymer sandwich electrolytes,149 and sandwich-type composite
+SSEs (ceramic-in-polymer or polymer-in-ceramic)150 could effectively suppress Li
+penetration, thus achieving dendrite-free SSEs.
+Lowering electronic conductivity
+High local electronic conductivity would directly reduce the overpotential of Li
+nucleation within SSEs and induce Li dendrite growth in the interior of SSEs.89 There-
+fore, it is necessary to lower electronic conductivity of SSEs.
+Introducing an electronic insulating layer is effective in lowering the electronic conduc-
+tivity of SSEs, especially at GBs. Based on the insulating property of LiF, Tang et al.134
+prepared ultra-thin LiF layers with controllable thickness by vacuum evaporation
+deposition, which reduced the electrical conductivity on the GBs in Li6.75La3Zr1.75
+Ta0.25O12 (Figure 7D). Moreover, a coating LiAlO2 layer on the GBs of Li7La2.75
+Ca0.25Zr1.75Nb0.25O12 could also effectively lower the electronic conductivity at GBs
+and thus inhibit Li dendrites growth within SSEs.90
+Electronic insulation additives could effectively lower the electronic conductivity of
+SSEs. Sun et al.67 added electrically insulated LiF into the SSEs to prevent contact
+between electrons and Li+, thus inhibiting Li dendrite nucleation within SSEs.
+Although LiF possessed high interfacial energy and low electronic conductivity,
+insufficient ionic conductivity hindered uniform Li+ transport. Therefore, simply
+coating LiF on SSEs could not effectively inhibit Li dendrite growth. Based on this,
+Wang et al.115 inserted Li3N with high ionic conductivity between LiF particles to16 Cell Reports Physical Science 3, 100706, January 19, 2022
+Table 1. Summary of strategies for improving critical current density in the recent literatures
+Electrolyte Modified strategy Intial CCD (mA cm-2) Modified CCD (mA cm-2) Year and Ref.
+Li6.5La3Zr1.5Ta0.5O12 Au buffer layer 0.15 at 25C 0.5 at 25C 2016 and 68
+Li2S-P2S5 Hot-press at 170C 0.5 at 25C 1 at 25C 2017 and 150
+Li6.5La3Zr1.5Ta0.5O12 Li2CO3 and LiOH 0.15 at 25C 0.6 at 25C 2017 and 126
+Li7xLa3Zr2xNbxO12 Floating zone method 0.15 at 25C 0.5 at 25C 2018 and 129
+Li2S-P2S5 Dope LiI 2.4 at 100C 3.9 at 100C 2018 and 146
+Li7La3Zr2O12 Ga-doped 0.15 at 25C 0.3 at 25C 2018 and 151
+LiBH4 Add LiF 2.8 at 125C 6.6 at 125C 2019 and 66
+Li7La3Zr2O12 Coate MoS2 layer 0.7 at 100C 2.2 at 100C 2019 and 152
+Li6.5La3Zr1.5Ta0.5O12 Form Li3PO4 layer 0.15 at 25C 0.8 at 25C 2019 and 131
+Li7La2.75Ca0.25Zr1.75Nb0.25O12 Coate LiAlO2 layer 0.4 at 25C 0.75 at 25C 2019 and 78
+Li6.5La3Zr1.5Ta0.5O12 Add Li4SiO4 and HIP 0.12 at 25C 0.4 at 25C 2020 and 148
+Li7La3Zr2O12 Li3N/Cu layer 0.15 at 25C 1.2 at 25C 2020 and 154
+Li6.5La3Zr1.5Ta0.5O12 Add Li2.3C0.7B0.3O3 0.15 at 25C 0.3 at 25C 2020 and 149
+Li6PS5Cl Li3N replaces Li2 0.89 at 25C 1.52 at 25C 2021 and 147
+Li6.5La3Zr1.5Ta0.5O12 Li2O layer 0.15 at 25C 1.1 at 25C 2021 and 153
+PEO-LiTFSI Mg(ClO4)2 additive 0.3 at 55C 1.6 at 55C 2021 and 39
+PEO Add Li2S6 0.15 at 40C 0.9 at 40C 2021 and 145
+Li6.5La3Zr1.5Ta0.5O12 Add Li6Zr2O7 0.15 at 25C 1.4 at 25C 2021 and 127
+ll
+OPEN ACCESSReviewprepare a composite electrolyte, which inhibited the growth of Li dendrites within
+Li3PS4.
+In addition, blocking electrons from entering SSEs was another useful way to inhibit
+the internal growth of Li dendrites. Tian et al.124 preset an Li2PO2N interlayer on the
+Li/Li7La3Zr2O12 interface, which could cut off the electronic pathway for the forma-
+tion of the Li metal, thus suppressing Li dendrites within SSEs. What is more, laser
+annealing was performed on the surface of Li6.75La3Zr1.75Ta0.25O12(LLZTO) to obtain
+an amorphous LLZTO-Li2O2 composite layer, thus effectively preventing electrons
+flowing into the GBs.79
+Improving critical current density
+According to section 2.4, critical current density (CCD) reflected the ability of SSEs to
+suppress Li dendrites in the interior of SSEs.151 The related methods of improving
+CCD of SSEs are listed in Table 1.67
+Sakamoto et al.131 proposed that interface stability and dynamics are dependent on
+variables of temperature and current density. It was found that increasing working
+temperature of the battery by rapid hot-pressing technique could effectively
+improve CCD (from 0.2 mA cm-2 at 70C to 3.5 mA cm-2 at 160C) of polycrystalline
+Li7La3Zr2O12.
+Dopants played an important role in improving CCD of SSEs. Goodenough et al.152
+used Li2S6 as an additive for polyethylene oxide-based SSEs, and thus formed a sta-
+ble and uniform Li2S/Li2S2 layer that inhibited Li dendrite growth within SSEs. More-
+over, Li+ in Li2S6 strongly interacted with O2- in polyethylene oxide-based SSEs,
+which reduced the formation of microcrystals in SSEs and improved the CCD from
+0.2 to 0.9 mA cm-2. In addition, electronic insulative additives with high ionic con-
+ductivity, such as LiI,153 Li3N,68 and LiF67 could also increase the CCD of SSEs. Be-
+sides, adding Li4SiO4 in Al-doped Li7La3Zr2O12 by hot isostatic pressing,
+154 adding
+Li2.3C0.7B0.3O3 into Li6.75La3Zr1.75Ta0.25O12
+155 and adding Mg(ClO4)2 additive into
+PEO-based SSEs41 could improve the stability of the Li/SSEs interface, thus effec-
+tively increasing the CCD of SSEs.
+Structural optimization is also capable of bettering CCD of SSEs. Sakamoto et al.156
+optimized the atomic/microstructure of SSEs by hot-press at 170C, elevating the
+CCD of Li2S-P2S5 from 0.5 to 1 mA cm-2 at room temperature. Moreover, Ga-doped
+Li7La3Zr2O12(LLZO) was prepared to improve the stability of cubic garnet electro-
+lytes and avoid the initial propagation of Li metal in the GBs, thus increasing the
+CCD of LLZO.157 Effective methods to increase CCD includes increasing the dielec-
+tric constant, reducing the grain size, increasing the surface energy of the Li/SSEs
+interface, reducing the interfacial dynamic resistance, and decreasing the interfacial
+capacitance.111
+In addition, coating mechanically stable layers such as MoS2
+135, Li2CO3, and LiOH65
+could effectively increase the CCD of SSEs by reducing voids and improving the
+interconnection between grains as shown in Figure 7E. Pan et al.158 designed a
+Li2O lithiophilic interface layer on Li6.75La3Zr1.75Ta0.25O12 (LLZTO) surface to
+improve the wettability of LLZTO/Li metal interface, which effectively inhibited Li
+penetration and improved the CCD from 0.5 to 1.1 mA cm-2 at 25C. Besides,
+coating a Li3N/Cu hybrid conductive layer on LLZTO could also effectively improve
+the CCD from 0.1 to 1.2 mA cm-2 at room temperature.159Other means
+In addition to the above strategies, there are many other ways to suppress Li den-
+drites within SSEs. Hu et al.69 adopted in situ neutron depth analysis, and elucidated
+that short-circuit of the battery caused by Li dendrites growth in garnet-based SSEs
+was a reversible condition. It was found that the deposited Li-rich phase was
+consumed by the chemical reaction of the cathode or local garnet matrix, and
+short-circuit of the battery would be completely or partially terminated under rest
+or subjected to a discharge current. Therefore, Amin et al.136 developed an in situ
+electrochemical self-repairing method by introducing a small current, which could
+remove Li dendrites from the bulk phase of Li6.75La3Zr1.75Ta0.25O12 as shown in
+Figure 7F.
+According to previous reported studies, stable solid electrolyte interphase (SEI)
+could effectively inhibit Li dendrite growth at the interface of Li/solid-state electro-
+lytes.16,18 Recent studies start to concentrate on building stable SEI to inhibit Li
+dendrite penetration through SSEs. By comparing the origin and evolution of Li
+dendrite growth within Li6.1Ga0.3La3Zr2O12 (LLZO) and Li2O-Al2O3-P2O5-TiO2-
+GeO2 (LATP).81 Wu et al.160 studied the failure mechanism of solid-state batteries
+and demonstrated the significance of SEI in preventing Li dendrite permeation
+through SSEs. Furthermore, they used Si nanoparticles to fill the surface micropores
+of LLZO and formed a stable SEI to inhibit Li dendrite penetration. Additionally,
+other similar solid electrolyte interphases such as LiI153, Li3N,68 and LiF161 were
+found to be useful in inhibiting Li dendrite penetration through SSEs.
+Moreover, the yield strength of Li metal played an effect on forming time and growth
+rate of Li dendrites.92 Therefore, increasing the yield strength of SSEs could increase
+the elastic modulus, thus inhibiting Li dendrite growth within SSEs.SUMMARY AND OUTLOOK
+Utilizing nonflammable inorganic solid-state electrolytes (SSEs) holds great promise
+for preventing dendrite growth and achieving safe all-solid-state Li metal batteries.
+However, Li dendrites may still exist in the interior of inorganic SSEs and impede
+their practical application. This review provides a systematic understanding of Li18
+Table 2. Brief summary of the causes of Li dendrites within SSEs and corresponding suppression strategies
+Causes of Li dendrites Suppression strategies Specific methods
+Voids and pores Increasing relative density C Adjusting strategies of synthesizing SSEs
+such as spark plasma technique.
+C Introducing doping elements and oxide into
+SSEs such as Ta and Al2O3.
+Grain boundaries Modifying grain boundaries C Surface treatments such as Au buffer layer
+and Li ion conduct polymer.
+C Adding additives such as Li6Zr2O and
+Li3OCl.
+C Directly reduction of GBs such as floating
+zone method.
+Cracks and defects Reducing cracks and defects C Artificial interface layer such as LiPON and
+ZnO.
+C Mechanical filling like Li7P3S11 and Si
+nanoparticles.
+C Multilayer SSEs such as sandwich
+electrolyte.
+High relative electronic conductivity Lowering electronic conductivity C Introducing electronic insulating layer such
+as LiF and LiAlO2.
+C Electronic insulation additives such as Li3N-
+LiF.
+C Blocking electrons from entering SSEs for
+example Li2PO2N interlayer.
+Lower critical current density Improving critical current density C Increasing cycle temperature for example
+rapid induction hot pressing.
+C Adding dopants such as Li2S6 and LiI.
+C Structural optimization such as reduce grain
+size and reduce resistance.
+CCoating a mechanically stable layers such as
+MoS2 and Li4SiO4.
+Other factors Self-repairing C Self-repairing like introduce small current
+repair.
+C Forming stable solid electrolyte interphase.
+C Increasing yield strength.
+ll
+OPEN ACCESSReviewdendrite growth in the interior of inorganic SSEs. Combining with advanced charac-
+terization techniques and theoretical calculations, theoretical models of Li dendrite
+growth within SSEs is elucidated in detail, and themain causes of Li dendrites growth
+within SSEs are further clarified. Furthermore, the corresponding strategies of sup-
+pressing Li dendrites are comprehensively summarized (Table 2).
+Based on the summary above, Li dendrite growth within SSEs is controlled by multi-
+faceted factors. First, the nucleation of Li dendrites started from the initial defects
+such as pores, voids, cracks, and GBs. Moreover, high relative electronic conductiv-
+ity and insufficient critical current density provide a driving force for Li dendrite
+growth within SSEs. Finally, Li dendrites further grow along cracks and penetrate
+through SSEs, resulting in short-circuit of the battery. Accordingly, various strategies
+to suppress Li dendrites mainly include: (1) increasing relative density to reduce
+voids and pores, (2) modifying GBs to inhibit Li dendrites nucleation at GBs, (3)
+reducing cracks and defects to prevent Li penetration, and (4) improving CCD and
+lowering electron conductivity to inhibit Li dendrites formation. Furthermore, self-
+repairing and other strategies are also proven methods to suppress Li dendrites
+within SSEs.
+Although there are numerous strategies for modifying SSEs, there is still no compre-
+hensive strategy to completely suppress Li dendrites. Therefore, we recommend
+that in future research, more accurate theoretical calculations are needed to reveal
+Figure 8. Outlook for future research of suppressing Li dendrites within SSEs
+(A) Theoretical calculation. Reproduced with permission from Lukatskaya et al.162 Copyright 2016, Nature Publishing Group.
+(B) Fundamental understanding. Reproduced with permission from Taylor et al.163 Copyright 2018, Elsevier.
+(C) In situ/operando analytical techniques. Reproduced with permission from Um et al.164 Copyright 2020, Wiley-VCH.
+(D) Visualization of reaction process within SSEs. Reproduced with permission from Ning et al.101 Copyright 2021, Nature Publishing Group. (E) Multi-
+dimensional mixing model. Reproduced with permission from Yuan et al.126 Copyright 2021, Wiley-VCH. (F) Modified strategies considered multiple
+factors. Reproduced with permission from Liu et al.165 Copyright 2021, Wiley-VCH.
+ll
+OPEN ACCESS Reviewthe causes of Li dendrites within SSEs (such as shown in Figure 8). Moreover, deep-
+ening fundamental understanding, using accurate in situ/operational analysis tech-
+niques and constructing multidimensional mixing models combined with multiple
+factors are conducive to study the causes of Li dendrite growth in the interior of
+SSEs, thus providing possible pathways for effectively suppressing Li dendrites.20
+In addition, modified strategies that consider multiple causes of Li dendrites within
+SSEs are urgently needed. Based on the above analysis, we believe that the combi-
+nation of organic SSEs and inorganic SSEs can make use of their respective advan-
+tages. On the one hand, organic SSEs can eliminate pores, voids, cracks and GBs
+of the Li/SSEs interface. On the other hand, inorganic SSEs can effectively improve
+ionic conductivity and reduce electronic conductivity of the composite SSEs.
+Through such combinations, the industrialization of the dendrite-free all-solid-state
+Li metal batteries with high-energy density is just around the corner.
+ACKNOWLEDGMENTS
+This work was supported by the National Natural Science Foundation of China
+(Grant Nos. 51874110 and 51604089), Natural Science Foundation of Heilongjiang
+Province (YQ2021B004), and Open Project of State Key Laboratory of Urban Water
+Resource and Environment (Grant No QA202138).

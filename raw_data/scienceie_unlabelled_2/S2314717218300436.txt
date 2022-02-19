@@ -1,0 +1,232 @@
+The paper investigates single band planar resonant antenna inspired by phi-shaped slotted metamaterial superstrate and a square
+atch antenna is used as a primary radiator. The antenna is modeled using finite difference time domain method and resonates at S
+and. The antenna comprises of single layer symmetrical metamaterial superstrate which is used to suppress surface waves based
+n -negative characteristics. The effective material parameters of the metamaterial structure are extracted from S-parameters using
+icholson–Ross–Weir method. The antenna achieves −28.64 dB reflection coefficient of 2.4 GHz and also maintains good radiation
+haracteristics with a peak measured gain of 7.94 dB at its operating frequency. Due to its advantages, the antenna can be used for
+odern wireless communications.
+ 2018 Electronics Research Institute (ERI). Production and hosting by Elsevier B.V. This is an open access article under the CC
+Y-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+eywords: Patch antenna; Metamaterials; Nicholson–Ross–Weir method; Radiation pattern; Surface waves
+.  Introduction
+In last few decades the growth of photonic crystal plays a major role in the field of microwave circuits and antennas
+ue to their enhanced propagation characteristics and to suppress harmonics frequencies and hence many researchers
+tilize photonic crystal substrate in microwave and antenna applications. Yablonovitch et al. (1989), experimentally
+emonstrates the propagation of electromagnetic waves in the photonic crystals like glass substrate and achieves bandwidth of 2 GHz around 6.5 GHz operating frequency. Horii and Tsutsumi (1999) presented microstrip patch
+ntenna having two-dimensional photonic bandgap (PBG) in the ground plane to suppress harmonic frequencies of
+he antenna. However these glass substrates have high permittivity and permeability compare to traditional substrates
+∗ Corresponding author.
+E-mail address: rs.sm0914@hindustanuniv.ac.in (S. M.).
+Peer review under the responsibility of Electronics Research Institute (ERI).
+https://doi.org/10.1016/j.jesit.2018.04.002
+314-7172/© 2018 Electronics Research Institute (ERI). Production and hosting by Elsevier B.V. This is an open access article under the CC
+Y-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+264 S. M. et al. / Journal of Electrical Systems and Information Technology 5 (2018) 263–270
+and makes the antenna less suitable at higher frequencies. This brings the use of metamaterial inspired glass substrates
+having negative material properties in antenna substrates. This was initially observed by Veselago (1968) and predicted
+that the EM wave in a medium flow directly opposite the direction of energy in the left handed materials having negative
+material properties. This principle was experimentally verified by Smith and Kroll (2000) by placing periodic structures
+of slip ring resonator in a negative refraction material. Nowadays these metamaterial substrates have been utilized by
+many researchers for improving performance of the antenna. Lubkoswski et al. (2009), show the advantages of using
+metamaterials in improving gain and directivity of the antenna and noted that directivity of antenna is improved for
+low dielectric materials especially at high frequencies. Song et al. (2011) proposed L-shaped left handed material for
+enhancing the gain of the patch antenna. The model uses periodic metamaterial structure around the patch in order
+to suppress the surface wave and thereby enhancing gain of the antenna. One more method of improving gain of the
+conventional antenna is by embedding metamaterial inspired 3D resonator structures in the Low Temperature Co-Fired
+Ceramic (LTCC) Substrate (Liu et al., 2013). This achieves a compact structure achieving narrow beamwidth and also
+it increases the fabrication complexity of the antenna. Gao et al. (2016) presented metamaterial inspired dual layer
+rectangular ring structure integrated around the periphery of patch antenna for improving gain and bandwidth of the
+antenna. Pires et al. (2013) presented a metamaterial inspired wired antenna instead of traditional planar structured
+metamaterials discussed above. However these antennas achieve poor gain in the operating frequency. Brown et al.
+(1998) fabricated bowtie antenna on photonic crystal substrate and measured the radiation properties (Brown and
+Parker, 1993). They observed that in planar antenna modeled on conventional silicon substrate, most of the power is
+radiated in to the substrate and hence reduces the gain and directivity of the antenna. The second characteristics is
+that the power radiated in to the substrate at an angle greater than θc =  Sin−1ε
+−1
+2 will get total internally reflected in
+to substrate and gets trapped. However photonic crystal eliminates these problems due to its non-reactive impedance
+properties on homogeneous dielectric substrate. Hence the proposed metamaterial unit cell structure is modelled on
+photonic crystal substrate instead of conventional substrate.
+This paper presents metamaterial inspired phi-shaped slot patch antenna operating at 2.4 GHz. The performance
+of the patch antenna is analyzed by finite difference time domain (FDTD) method using high frequency structure
+simulator. FDTD method is a numerical analysis method for modelling computational electromagnetics. The proposed
+geometry is modelled using Ansys High Frequency Structure Simulator (HFSS) which uses FDTD method of maxwell’s
+equation and forms computational domain and grid materials and determines E and H fields at a point or series of points
+within computational domain. The metamaterial properties are extracted from S parameters using Nicolson–Ross–Weir
+method (NRW) (Ziolkowski, 2003). The metamaterial achieves simultaneous negative permittivity and permeability at
+2.4 GHz and is incorporated with conventional patch antenna to improve its gain performance and reduce the reflection
+coefficient and hence the antenna finds application in modern wireless communications.
+2.  Geometry  of  metamaterial  unit  cell  and  its  performance  characteristics
+Fig. 1(a) shows the geometry of proposed metamaterial unit cell. The geometry consists of phi-shaped slot etched
+in square conductor having a dimension of 35 mm ×  35 mm. Because of its geometry, the electrical length of the
+antenna is much larger than its actual physical size and hence introduce additional phase delays in the surface waves
+propagating over it and thereby stores and re-radiates energy. Thus metamaterials is used to improve antenna radiated
+power with increased directivity. The structure is modeled on photonic crystal substrate having a permittivity (ε) of 5.5
+and permeability (μ) of 1. A thin line strip passes at bottom of the substrate for excitation of metamaterial structure.
+The boundary condition for the metamaterial unit cell is shown in Fig. 1(b). The boundary conditions are set in such
+way that the electric field components propagate normal to the photonic crystal substrate and magnetic field propagates
+parallel to the substrate. The performance of the metamaterial unit cell antenna structure is characterized using FDTD
+method and corresponding S parameters are obtained as shown in Fig. 2.
+It is observed from Fig. 2(a) that S11 and S21 parameters crosses at 1.25 GHz and 2 GHz. This shows that the unit
+cell structure has a bandgap between 1.25 GHz–2 GHz where electromagnetic waves are reflected which makes the
+structure to have negative material properties. Hence the unit cell structure resonates at 1.5 GHz and has a bandgap
+between 1.25 GHz–2 GHz. Fig. 2(b) clearly shows electromagnetic waves propagates in opposite direction of excitation
+input port 1. The permittivity (ε) and permeability (μ) of the proposed metamaterial unit cell is extracted by using
+NRW method (Ziolkowski, 2003) as shown below.
+S. M. et al. / Journal of Electrical Systems and Information Technology 5 (2018) 263–270 265
+Fig. 1. Metamaterial geometry.Fig. 2. S Parameters for the metamaterial unit cell.
+The transmission coefficient (T) and reflection coefficient (¥Ã) is given by
+T = S11 +  S22 −  
+1 −  (S11 +  S21)
+(1)
+ =  X  ±
+√
+X2 −  1 (2)
+Where X  = S11
+2 −  S21
+2 +  1
+2S11
+(3)
+The permeability (μ) is given by
+μ  = 1 +  
+ (1 −  )
+√
+1 − 1
+(4)λ0
+2 λc
+2
+Where
+1
+Λ2 =
+(
+εr ∗  μr
+λ0
+2 − 1
+λc
+2
+)
+= −
+(
+1
+2πL
+ln
+(
+1
+T
+))2
+(5)
+266 S. M. et al. / Journal of Electrical Systems and Information Technology 5 (2018) 263–270Fig. 3. Metamaterial material properties.
+The permittivity (ε) is given by
+ε  = λ0
+2
+μr
+(
+1
+λc
+2 −
+(
+1
+2πL
+ln
+(
+1
+T
+))2
+)
+(6)
+Fig. 3 shows the negative permittivity (ε) and permeability (μ) of the given metamaterial structure extracted from
+S parameters using NRW method.
+3.  Geometry  of  proposed  patch  antenna  and  its  performance  characteristics
+Fig. 4 shows the geometry of the proposed antenna integrated with metamaterial inspired superstrate. The proposed
+antenna is modeled using ansys high frequency structure simulator using FDTD method. The photonic crystal is used
+as a superstrate which has a thickness of 1.6 mm and size of 61.25 mm ×  61.25 mm and is placed at 1.6 mm above
+the patch antenna model. An array of 5 ×  5 metamaterial unit cells is etched on superstrate in order to enhance the
+performance of the patch antenna.
+A square shaped patch antenna of size 40 mm ×  40 mm is used as a primary radiator. The patch is engraved on FR4
+substrate having a thickness of 1.6 mm and a size of 61.25 mm × 61.25 mm. In order to validate the performance of the
+proposed model, the antenna fabricated and are analyzed using agilent network analyzer (N9925A) and antenna test
+systems. Fig. 5(a) shows fabricated model in which metamaterial structure is etched in conventional FR4 superstrate
+placed over rectangular patch radiator. Fig. 5(b) shows proposed fabricated model in which metamaterial structure is
+S. M. et al. / Journal of Electrical Systems and Information Technology 5 (2018) 263–270 267
+e
+a
+a
+m
+a
+m
+o
+F
+d
+a
+m
+A
+a
+Fig. 4. Geometry of patch antenna with metamaterial inspired superstrate.
+tched in photo crystal superstrate placed over rectangular patch radiator. Both the fabricated model are analyzed using
+gilent network analyzer (N9925A) and antenna test systems and the results are compared with conventional patch
+ntenna.
+Fig. 6 depicts the reflection coefficient (S11 (dB)) curve as a function of operating frequency obtained using FDTD
+ethod. The reflection coefficient curve compare proposed model with standard patch without metamaterial superstrate
+nd metamaterial with FR4 superstrate structure operating at same frequency. It is observed that the proposed antenna
+odel integrated with metamaterial photonic crystal superstrate reduces reflection coefficient significantly in the
+perating frequency when compared with other models.
+Radiation characteristics of the proposed antenna model are compared with standard patch antenna and are given in
+ig. 7. It is observed that the proposed model improves the gain of the antenna compared with conventional antenna. It is
+ue to the fact that additions of metamaterial superstrate suppress the surface waves due to its negative μ  characteristics
+nd hence results in significant improvement in gain as shown in Fig. 7.The antenna gives a simulated gain of around 6.96 dB for conventional patch antenna and 7.92 dB for FR4 superstrate
+odel and 9.67 dB for photonic crystal superstrate model. The measured gain is calculated using two antenna method.
+ standard pyramidal horn antenna having a gain of 9 dB is used as a reference antenna. The distance between two
+ntennas (R) is measured and the gain is calculated using Friis transmission equation given below
+268 S. M. et al. / Journal of Electrical Systems and Information Technology 5 (2018) 263–270
+Fig. 5. Fabricated prototype model.
+Fig. 6. Reflection coefficient (dB).
+Table 1
+Performance comparison of proposed model with conventional antenna.
+Antenna Geometry Parameter
+Reflection coefficient (dB) Bandwidth (S11 = −10 dB) Gain (dB)
+Simulated Measured Simulated Measured Simulated Measured
+Conventional Patch Antenna −15.27 dB −20.15 dB 52 MHz 65 MHz 6.96 dB 5.41 dB
+FR4 Superstrate −19.80 dB −24.74 dB 43 MHz 55 MHz 7.92 dB 6.56 dB
+Photonics Superstrate −27.43 dB −28.64 dB 48 MHz 55 MHz 9.67 dB 7.94 dB
+Pr
+Pt
+=
+(
+λ
+4πR
+)2
+GtGr (7)
+From Fig. 7, it is observed that the antenna gives symmetrical radiation pattern and achieved a measured gain
+of 5.41 dB for conventional patch antenna and 6.56 dB for FR4 superstrate model and 7.94 dB for photonic crystal
+superstrate model. Table 1 gives performance comparison of proposed antenna structure with conventional antenna
+structure. It is observed that the proposed model with photonic superstrate structure gives better reflection coefficients
+when compared to conventional and FR4 superstrate structures. In order to improve the gain characteristics of the
+antenna, a metamaterial superstrate is placed over the radiating antenna element which improves directivity (Bait-
+Suwailam et al., 2010) and reducing mutual coupling effect (Yang et al., 2012). However the presence of superstrate
+over the radiating element in the proposed structure has negative effect over operating bandwidth due to its narrowband
+characteristics (Gao et al., 2016) and hence restricts the bandwidth which is observed from Table 1. Though the
+S. M. et al. / Journal of Electrical Systems and Information Technology 5 (2018) 263–270 269
+p
+o
+l
+4
+m
+u
+t
+v
+−
+g
+c
+Fig. 7. Radiation Pattern.
+roposed antenna has narrowband characteristics, the antenna better gain performance and lesser reflection coefficient
+ver operating band when compared to conventional antenna and hence suitable for narrowband high gain applications
+ike radar altimeter and other modern wireless communication.
+.  Conclusion
+In this manuscript metamaterial inspired patch antenna is presented. The proposed model is integrated with meta-
+aterial superstrate in order to improve the gain and reduce the reflection coefficient. The model is characterized
+sing FDTD method and its material parameters are extracted by NRW method using Matlab tool. It is observed
+hat the proposed metamaterial structure achieves negative permeability and permittivity and its integration with con-
+entional patch antenna significantly improves gain and also reduces the reflection coefficient. The antenna achieves
+28.64 dB reflection coefficient of 2.4 GHz and also maintains good radiation characteristics with a peak measuredain of 7.94 dB at its operating frequency. Therefore the proposed antenna model is more suitable for modern wireless
+ommunications.
+270 S. M. et al. / Journal of Electrical Systems and Information Technology 5 (2018) 263–270

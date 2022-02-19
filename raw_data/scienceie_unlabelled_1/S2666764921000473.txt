@@ -1,0 +1,795 @@
+Clinical methods are used for diagnosing COVID-19 infected patients, but reports posit that, several people who
+were initially tested positive of COVID-19, and who had some underlying diseases, turned out having negative
+results after further tests. Therefore, the performance of clinical methods is not always guaranteed. Moreover,
+chest X-ray image data of COVID-19 infected patients are mostly used in the computational models for COVID-19
+diagnosis, while the use of common symptoms such as “fever, cough, fatigue, muscle aches, headache etc.” in
+computational models is not yet reported. In this study, we employ seven classification algorithms to empirically
+test and verify their efficacy when applied to diagnose COVID-19 using the aforementioned symptoms. We
+experimented with Logistic Regression (LR), Support Vector Machine (SVM), Naïve Byes (NB), Decision Tree
+(DT), Multilayer Perceptron (MLP), Fuzzy Cognitive Map (FCM) and Deep Neural Network (DNN) algorithms. The
+techniques were subjected to random undersampling and oversampling. Our results showed that with class
+imbalance, MLP and DNN outperform others. However, without class imbalance, MLP, FCM and DNN outperform
+others with the use of random undersampling, but DNN has the best performance by utilizing random over-
+sampling. This study identified MLP, FCM and DNN as better classifiers over LR, NB, DT and SVM, that healthcare
+software system developers can adopt them to develop intelligence-based expert systems which both medical
+personnel and patients can use for differential diagnosis of COVID-19 based on the aforementioned symptoms.
+However, the test of performance must not be limited to the traditional performance metrics.1. Introduction
+The weekly epidemiological reports on COVID-19 from the World
+Health Organization (WHO) shows that COVID-19's confirmed(B.A. Akinnuwesi), gbengafas
+metfula@uniswa.sz (A.S. Metful
+o.com (M. Okpeku), iamseunamu
+ier on behalf of KeAi
+29 November 2021; Accepted 6
+shing services by Elsevier B.V. oncumulative cases are above 240 million with over 4.9 million deaths, as
+of October 23, 2021, globally (World Health Organization, 2020a). New
+cases are always reported due to the advent of different SARS-CoV-2
+(Severe Acute Respiratory Syndrome Coronavirus 2) variants despiteh2@gmail.com (S.G. Fashoto), mbungeelliot@gmail.com (E. Mbunge),
+a), petros@uniswa.sz (P. Mashwama), uzokafm@yahoo.com (F.-M. Uzoka),
+sa@gmail.com (O.O. Amusa).
+December 2021
+behalf of KeAi Communications Co. Ltd. This is an open access article under the
+B.A. Akinnuwesi et al. Data Science and Management 4 (2021) 10–18the ongoing vaccination programme across several countries.
+SARS-CoV-2 variants such as Cluster 5, SARS-CoV-2 VOC 202012/01,
+501Y.V2, and P.1, have been reported in countries such as Denmark, the
+United Kingdom, Brazil, Nigeria, and South Africa. There are possibilities
+that the variants could weaken the strength of body immune system that
+is built naturally or due to vaccination and hence reduce neutralization of
+the effects of the virus in human (World Health Organization, 2020a,
+2020b).
+The ongoing and prolonged high rates of new infections of SARS-CoV-
+2, vis-a-vis the occurrences of different variants of SARS-CoV-2, has
+continued to strain the government, private organizations and the
+healthcare systems in all countries. SARS-CoV-2 is said to be ranked
+number 11 among the deadliest viruses in the world, with a mortality
+rate of 2.3% (Anne, 2020). These numbers call for serious concerns in the
+tackling of SARS-CoV-2 and its variants. This situation is worrisome to
+medical practitioners and the government. Therefore, several public
+healthcare and social measures are designed to ensure the adequate
+tackling of the disease in the forms of compulsory face masking, social
+distancing, contact tracing, temperature check, minimizing social gath-
+ering and sales/consumption of alcohol, and provision of vaccines.
+However, these measures are negatively influenced by factors such as
+privacy, data security, freedom of movement and socializing, lack of IT
+infrastructure, insufficient IT skill, low literacy, and ease of use (Mbunge
+et al., 2021). These factors influence the decisions of the populace in
+terms of embracing and complying fully with the government regulations
+in the tackling of COVID-19 and further influence the spread of the dis-
+ease, so there is a need to increase the diagnostic capacity and systematic
+sequencing of SARS-CoV-2. As a result, many clinical methods have been
+developed to diagnose SARS-CoV-2. However, there have been reports on
+false-negative rates that ranged from 5% to 40% (Arevalo-Rodriguez
+et al., 2020; Long et al., 2020; Weissleder et al., 2020).
+Studies conducted in China and Singapore reported a few cases of
+false-negative results to the tone of 29% and 11% respectively (Fang
+et al., 2020; Lee et al., 2020). This implies that the clinical methods do
+not guarantee the accurate diagnosis or classification of COVID-19 and it
+could be attributed to the type and quality of the specimen obtained, the
+duration of illness at the time of testing, and the specific assay. Thus, the
+need arises for scientists to complement the clinical diagnostic methods
+with computational intelligence methods in order to ensure near to 100%
+accurate diagnosis and classification.
+In addition, COVID-19 and other diseases such as Malaria, HIV/AIDS,
+Tuberculosis, Flu and Pneumonia have similar symptoms and this make
+differential diagnosis of COVID-19 at the early stage inevitable, partic-
+ularly when the infection is very mild and it cannot be established
+whether the infection is that of Malaria, HIV/AIDS, Tuberculosis, Flu or
+Pneumonia. Few studies have reported the differential diagnosis of
+COVID-19 using chest Computed Tomography chest CT), a medical im-
+aging technique and some of the studies were presented in Long et al.
+(2020), Murthy et al. (2020), Zeng et al. (2020); Zuo (2020). We deduced
+that the computational models presented in the studies focused more on
+the use of chest X-ray images but not on other regular symptoms such as:
+“fever or chills, cough, shortness of breath or difficulty breathing, fatigue,
+muscle or body aches, headache, loss of taste or smell, sore throat,
+congestion or runny nose, nausea or vomiting, and diarrhea”. Moreover,
+the models are not suitable for the early diagnosis when the symptoms
+presented are still very mild and chest CT will not be able to show a
+convincing result in the X-ray images of the lungs and the cardiovascular
+system. No study known to the authors has used the aforementioned
+regular symptoms for the development of intelligence-based systems for
+early differential diagnosis of COVID-19 using classification algorithms
+of soft computing, machine learning, deep learning, expert system, and
+Decision Spport System (DSS) using non-image-based dataset of
+COVID-19 infected patients. However, chest X-ray image data of
+COVID-19 infected patients are mostly used for diagnosis using deep
+learning algorithm such as Convolutional Neural Network (CNN).
+Therefore, we were motivated to carry out an experimental study of11the various intelligence-based classifiers that could be applied in early
+differential diagnosis of COVID-19 disease by considering the afore-
+mentioned regular symptoms and using non-image datasets of the
+symptoms. Our specific objective is to use the available COVID-19 non-
+image diagnostic dataset to test the performance of the intelligence-based
+classifiers (i.e. Fuzzy Cognitive Map (FCM), Support Vector Machine
+(SVM), Logistic Regression (LR), Multilayer Perceptron (MLP), Naïve
+Bayes (NB), Decision Tree (DT) and Deep Neural Network (DNN)) in
+terms of accuracy, F-measure, recall, precision, balanced accuracy,
+Mathews Correlation Coefficient (MCC) and Bookmaker informedness
+(BM). The goal is to identify the classifier(s) with the best performance in
+early differential diagnosis of COVID-19. This paves way for future work
+in this area to develop diagnostic systems that could apply the best
+performing classifier(s) for early differential diagnosis of COVID-19 using
+the aforementioned regular symptoms. In the light of this we have the
+following research questions (RQ):
+a. RQ-1: What are the classifiers that are most appropriate for the dif-
+ferential diagnosis of COVID-19?
+b. RQ-2: What is the performance of each of the classifiers identified in
+(a) above in terms of the accuracy, precision, recall, F-measure,
+Mathews Correlation Cefficient, balanced accuracy, and Bookmaker
+informedness?
+This paper contributes to the existing literature by presenting the
+behaviours of the listed classifiers when applied for COVID-19 diagnosis
+using non-image based COVID-19 datasets on the regular symptoms (e.g.,
+fever, headache, vomiting, diarrhea, etc.) and this is not yet reported in
+literature as at the time of this report. Earlier studies focus more on
+image-based chest X-ray data of COVID-19 patients for diagnosis and the
+most used classifier is DNN.
+The rest of the paper is organized as follows: Section 2 presents the
+overview of clinical methods that have been used for diagnosing COVID-
+19, a detailed discussion on differential diagnosis and a review of related
+works on the differential diagnosis of COVID-19 disease. The strengths
+and weaknesses of the diagnostic methods are presented. Section 3 pre-
+sents materials and methods. Results and discussion are presented in
+section 4 wherein the detailed discussion and analysis of the aforemen-
+tioned intelligence-based techniques are done. The conclusion and
+managerial implication are presented in section 5.
+2. Literature review
+Several clinical diagnostic methods have been developed for COVID-
+19. However, the use of intelligence-based computational methods to
+tackle COVID-19 cannot be underestimated. It will be very helpful to
+complement the clinical diagnostic methods with other intelligence-
+based computational methods in order to increase the balanced accu-
+racy, BM andMCC. This section presents a brief description of differential
+diagnosis and the qualitative features of the clinical and computational
+methods that have been used for COVID-19 diagnosis vis-a-vis their
+limitations in the current time.
+2.1. Differential diagnosis
+Differential diagnosis is the defined process that helps to differentiate
+between diseases with similar symptoms and risk factors. It is a system-
+atic diagnosis process carried out on patients with the view to accurately
+diagnose a disease that shares the same symptoms with other related
+diseases and also survives under the same conditions (Mann, 1990; Sand,
+2015; Uzoka et al., 2016). Differential diagnosis is required because
+rarely do physicians diagnose a disease with certainty, directly from the
+presentation alone, especially in cases where the symptoms presented
+relate to many diseases (Jain, 2017). For example, diseases like
+HIV/AIDS, Malaria, Flu, Tuberculosis, COVID-19, Ebola Virus Disease
+(EVD), Cholera, etc. have some similar symptoms. Thus, when patients
+B.A. Akinnuwesi et al. Data Science and Management 4 (2021) 10–18exhibit one or more of these symptoms, the physicians need to subject
+them to a differential diagnostic process with the view to establishing the
+actual disease in the multiple related diseases.
+The differential diagnosis process entails weighing the probability of
+a disease against the probabilities of other related diseases that possibly
+account for patients’ illness. Differential diagnosis has shown its useful-
+ness in many instances in medicine. It has helped save lives that would
+have been otherwise lost and we have seen many lives nearly lost because
+of the ignorance of differential diagnosis. A notable case of a life almost
+lost due to the ignorance of differential diagnosis is that of a little girl by
+the name of Isabel as reported in Rutledge (2017). The girl who was
+diagnosed with chickenpox was misdiagnosed by her family doctor,
+leading to wrong treatment, having her spend about 60 days in the
+hospital and almost losing her life for multiple organ failures and cardiac
+arrest. All from a misdiagnosis that could have been otherwise avoided
+with differential diagnosis to attain the proper diagnosis at the first time.
+Though differential diagnosis consumes time, its help in making sure
+doctors get the right diagnosis and treatment is undeniable.
+2.2. Clinical methods for COVID-19 diagnosis
+The cause of COVID-19 is attributed to SARS-CoV-2. Many health
+complications that are related to the virus have been established in the
+literature to include the following-failure of respiratory system, compli-
+cations in cardiac and cardiovascular system, inflammatory complica-
+tions, thromboembolic diseases, neurological disorders, and multi-organ
+dysfunctions (Alpdagtas et al., 2020; McIntosh, 2020). Researchers are
+working tirelessly on various clinical methods of diagnosing and treating
+COVID-19, in order to reduce cases of identified health complications.
+Thus, some of the clinical diagnostic methods employed are chest ra-
+diographs, Chest CT, point-of-care lung ultrasonography, clinical suspi-
+cion, Nucleic Aacid Amplification Tests (NAATs), point-of-care NAATs
+(Caliendo and Hanson, 2021).
+CT diagnosis is generally used for auxiliary diagnosis of the SARS-
+CoV-2 and the diagnosis is confirmed by positive results of a nucleic
+acid amplification test (NAAT) of the respiratory tract or blood specimens
+using an rRT-PCR (reverse real-time PCR assay) reaction (Dai et al.,
+2020). However, it was reported that the rRT-PCR method of diagnosis
+has limitations. The implication is that when the viral load is low, the
+detection rate is also low. This consequently leads to the occasional
+occurrence of false results. Similarly, with the use of this method, the
+severity and progression of the virus cannot be known. Despite these
+disadvantages, the rRT-PCR method of diagnosis has been performing
+well since the outbreak of the coronavirus. However, the number of
+people tested is not yet satisfactory. This can be attributed to the fact that
+this method of diagnosis is relatively costly.
+The authors in Lieberman et al. (2020), Nalla et al. (2020) stated that,
+in ideal settings, NAATs have the analytic sensitivity. This implies NAATs
+can accurately detect the low levels of viral RNA in test samples that are
+known to contain viral RNA. However, the authors reported that there
+has not been a systematic evaluation of the accuracy and predictive
+values of SARS-CoV-2 NAATs. A report from the United States (US) Food
+and Drug Administration (FDA) stated that approximately 3% of results
+with BD SARS-CoV-2 Reagents for the BD Max System test, were
+false-positive results (FDA, 2020). Hence clinical laboratory staff and
+health care personnel in the US were cautioned due to the increased risk
+of false-positive results with the test. Therefore, the FDA recommended
+that clinical laboratory staff and the health care personnel should
+consider carrying out an alternate authorized test to confirm any result
+presumed to be positive from tests.
+It was reported that false-negative rates ranged from 5% to 40%
+(Arevalo-Rodriguez et al., 2020; Long et al., 2020; Weissleder et al.,
+2020). Fang et al. (2020) reported cases in China where fifty one patients
+with fever or acute respiratory symptoms, were ultimately tested positive
+using the SARS-CoV-2 RT-PCR test, but in the initial test carried out, 15
+patients (29%) had negative results. Similar study (Lee et al., 2020) in12Singapore, where 70 patients were tested positive, the initial nasopha-
+ryngeal testing was negative in eight patients (11%). These studies
+established that some patients were repeatedly negative in the initial
+testing but they later tested positive after rounds of four or more tests.
+This implies that there are occurrences of false-negative results and
+therefore, some rounds of testing are recommended, in order to confirm
+the accuracy of the results.
+In Alpdagtas et al. (2020), various clinical diagnostic methods for
+COVID-19 were evaluated with emphasis on their pros and cons, vis-a-vis
+their performances. Immunological and RT-PCR testing methods were
+identified as the best diagnostic methods for COVID-19. However, the
+knowledge of these diagnostic methods lies only with professionally
+trained physicians. Non-professional personnel cannot apply it on their
+own. Neither can a patient. Thus, the authors recommended the pro-
+duction of point-of-Care (POC) diagnostic devices that can diagnose with
+little or no support from physicians. In addition, accuracy is not always
+guaranteed using the diagnostic method, hence there is a need for the
+development of better methods with a higher level of practicality, ac-
+curacy and precision. Similarly, in Uygun-Can and Acar-Bolat (2020),
+RT-PCR and CT testing methods were used to detect COVID-19 in preg-
+nant women and it was established by the authors that the combination
+of the two testing tools gave an accurate and safe diagnosis. This implies
+that a combination of two or more clinical methods for COVID-19 diag-
+nosis guarantees better accuracy and precision.
+Other examples of clinical diagnostic methods have been used to di-
+agnose COVID-19 and are reported in literature: Nucleic Acid Test, CT,
+immunological examinations, lung ultrasound, F-FDG PET/CT (Ardakani
+et al., 2020; Mertens et al., 2020; Wan et al., 2020; Xie et al., 2020);
+RT-PCR, POC, Immunoassays for antibody to virus (Giri et al., 2020; He
+et al., 2020; Wu et al., 2020); POC, multiplex assays, CT imaging, genome
+sequencing, Electron Microscopy, and PCR (Luo et al., 2020; Udugama
+et al., 2020); oligonucleotide-based molecular detection, pPOC immu-
+nodiagnostics, radiographical analysis/sensing system, biosensing pro-
+totypes, and RT-PCR (Mahapatra and Chandra, 2020); clinical
+computer-aided diagnosis (CAD) using machine learning algorithms
+(Ardakani et al., 2021); artificial intelligence (AI) enabled medical im-
+aging (Yuan et al., 2020); Molecular-based assay, POC, rRT-PCR (Yang
+et al., 2020).
+Our deductions are as follows:
+a. Most of the studies focused on measuring the accuracy of the clinical
+methods for COVID-19 diagnosis.
+b. The studies provided information that helps to guide health pro-
+fessionals to conduct error-free COVID-19 diagnostic tests. Similarly,
+the information guides the researchers to identify limitations with
+each clinical method and hence develop better clinical methods for
+detecting COVID-19 cases.
+c. The works affirmed that the use of a single clinical method to detect
+COVID-19 does not guarantee accurate results as expected. However
+better performance is always witnessed when two or more of the
+clinical methods are combined in the process of diagnosing COVID-19
+cases. Thus, health personnel are advised to explore the combination
+of methods in the process of COVID-19 diagnosis.
+d. Clinical methods mostly used are RT-PCR, POC, Molecular-based
+assay and Chest CT.
+e. Test sensitivity is likely influenced by specimen quality, illness
+duration and specific assay.
+The limitations that are common to all the clinical methods are as
+follows:
+a. Accuracy is not always guaranteed with the use of one clinical method
+for diagnosis. Therefore, there is a need to carry out an alternate
+authorized test to confirm test the sensitivity and specificity. The
+combination of two or more methods of testing helps to confirm the
+accuracy of the test results.
+B.A. Akinnuwesi et al. Data Science and Management 4 (2021) 10–18b. They are laboratory tests that require well equipped laboratories.
+Hence the establishment of the test laboratories is expensive and the
+test is relatively expensive and it takes some time.
+c. The testing machines are relatively expensive (e.g., PCR machines)
+and few laboratories could afford them.
+d. Physicians/patients need to travel to a competent laboratory to access
+the PCR machine and this may take some hours or days depending on
+the location of the patients and the nearest available COVID-19 test
+laboratory. Hence, results are not received immediately.
+e. The methods require well trainedmedical personnel to run the tests in
+the laboratories; however, there is a dearth of qualified medical
+personnel for the laboratories and the few personnel available are
+overstretched and fatigued due to the increasing number of cases of
+COVID-19. Hence there are possibilities of false-negative results in
+some cases.
+f. Performance is not optimal with the use of the clinical diagnostic
+methods and hence, the need to apply artificial intelligence-based
+systems using computational algorithms, helps to ensure better per-
+formance in terms of balanced accuracy, precision, specificity and
+sensitivity, Bookmaker informedness (BM), and MCC.
+2.3. Computational intelligence-based methods used for diagnosing
+COVID-19
+In this sub-section we did a review of past works that have applied
+computational intelligence-based algorithms for diagnosing COVID-19
+with the view to identify the patients’ symptoms, performances, and
+the metrics used for measuring their performances and limitations.
+Convolutional Neural Network (CNN) was used in Mahmud et al.
+(2020) to develop CovXNet model that was used to detect COVID-19 and
+pneumonia. The model had an accuracy value of 97.4%. Similarly,
+COVIDScreen was developed in Singh et al. (2021) using CNN. The
+model helped to carry out the differential diagnosis of COVID-19 with an
+accuracy of 98.67%. In the same light, SVM was applied in (Jin et al.,
+2021) for examining chest X-ray radiograph with the view to carry out
+the differential diagnosis of COVID-19. The accuracy recorded was
+98.642%. In China, a team of researchers developed LR based model to
+identify the independent predictors of COVID-19 severity in suspected
+cases (Xu et al., 2020); a similar research was also reported in Iwendi
+et al. (2020) where Random Forest (RF) model was used for predicting
+the severity of COVID-19 in infected patients. In the same manner, LR
+was used to predict mortality risk in COVID-19 patients and the accuracy
+was measured at 70% (Bhandari et al., 2020). Also, RF algorithm was
+applied to predict the mortality of COVID-19 patients and the accuracy of
+95% was obtained. Fleitas et al. (2020) also applied multivariate LR to
+identify COVID-19 symptoms and infected cases of COVID-19 were
+detected with the specificity of 46%. In Silahudin and Holidin (2020), an
+expert system was developed for diagnosing COVID-19 using the Naïve
+Bayes (NB) technique. Similarly, Naïve Bayes Decision Support Sstem
+(DSS) was presented in Awwalu et al. (2020) for COVID-19 detection.
+Fuzzy Cognitive Map (FCM) was applied in Groumpos (2020) to examine
+the whole spectrum of COVID-19 by considering the causality factors.
+The authors could not guarantee the performance of the model because
+real-life data required were not available. However, the model was tested
+using data that were generated from the literature. The strength of FCM
+in COVID-19 classification based on causality factors was established and
+this gave the directions for the future research.
+Hybrid models were also developed for COVID-19 detection. For
+example (Sethy et al., 2020), combined SVM and CNN were used to
+develop a model for detection of the COVID-19 patients among patients
+infected with pneumonia and healthy people. Accuracy and specificity
+achieved were 95.33% each. Alakus and Turkoglu (2020) evaluated six
+different clinical predictive models for detecting COVID-19 infection
+using 18 laboratory findings from 600 patients. The techniques consid-
+ered in the models are: CNN, Recurrent Neural Networks (RNN), Artifi-
+cial Neural Network (ANN), Long-Short TermMemory (LSTM), CNNRNN13and CNNLSTM. The evaluation results showed 86.66% accuracy, 91.89%
+F1-score, 86.75% precision, 99.42% recall and 62.50% AUC. Also LR, DT
+(decision tree), SVM, DNN and RF (Random forest) were applied for early
+detection of COVID-19 and the performance results are 0.971 AUC, and
+0.82 sensitivity (Sun et al., 2020). CNN and DNN were used in Hassan-
+tabar et al. (2020) to diagnose COVID-19 patients with CNN having
+93.2% accuracy, and 96.1% sensitivity while DNN has 83.4% accuracy
+and 86% sensitivity.
+Similarly CNN and LR were used to develop CovNet30 system that
+was used to automatically diagnose COVID-19 in Gour and Jain (2020).
+CovNet30 operates with 92.74% classification accuracy and 93.33%
+sensitivity. Decision tree (DT) and CNN were also used to build a clas-
+sifier for detecting COVID-19 in Yoo et al. (2020) and the classifier works
+with an accuracy of 95%. CoroNet was proposed in Khan et al. (2020)
+and Oh et al. (2020). CoroNet is a DCNN basedmodel developed to detect
+COVID-19 infection using chest X-ray images. CoroNet operates at 89.6%
+accuracy, 93% precision and 98.2% recall rate. Classification algorithms
+adopted were deep CNN and DNN. A similar experiment was carried out
+in Mukherjee et al. (2020) using the DNN approach and the classification
+accuracy was 96.28%. Fuzzy logic and DNN were used in Shaban et al.
+(2021) with the performance results of 97.658% accuracy, 96.756%
+precision, 96.55% recall, and 96.615% F-measure.
+MH-COVIDNet was proposed in Canayaz (2021) for diagnosing
+COVID-19. DNN and meta-heuristic-based feature selection techniques
+were adopted to develop MH-COVIDNet. X-ray images were used. The
+authors reported overall classification accuracy of 99.38%. In Mansour
+et al. (2021) Feature Correlated Naïve Bayes (FCNB)model was proposed
+and it achieved 99% detection accuracy. LR and DCNN were used to
+develop a classifier with an accuracy of 98.5%. In Alqudah et al. (2020),
+the classification of COVID-19 cases was done using CNN, SVM and RF
+algorithms with the view to compare their performances. CNN was
+identified with the best performance having a testing accuracy of 95.2%.
+Our deduction is that the computational models focus more on the use
+of chest X-ray image data for diagnosing COVID-19 but not on other
+regular symptoms such as: “fever or chills, cough, shortness of breath or
+difficulty breathing, fatigue, muscle or body aches, headache, loss of taste
+or smell, sore throat, congestion or runny nose, nausea or vomiting, and
+diarrhea”. The models are not useful at the early stage of COVID-19
+infection when the aforementioned regular symptoms are mild and it
+appears that one is infected with flu or malaria. At this stage the chest X-
+ray images may not present the expected results because the respiratory/
+cardiovascular system have not been distorted as expected. As of the time
+of this study, the authors have not found any study that has applied any of
+the classifiers or combination of the classifiers using the aforementioned
+regular symptoms for COVID-19 diagnosis.
+2.4. Quality attributes of the intelligence-based classifiers
+2.4.1. Fuzzy Cognitive Map (FCM)
+FCM is a knowledge representation algorithm that makes use of fuzzy
+graph structure to present the causal relationship between concepts and
+hence present the causal values between the concepts. The relation be-
+tween the concepts helps to calculate the extent to which pairs of con-
+cepts impact each other. COVID-19 is associated with several symptoms
+and risk factors (i.e. concepts) that impact one another. The relationship
+and strength of pairs of symptoms/risk factors are defined based on the
+experiential knowledge of the medical doctors, which is fuzzy in most
+cases. The doctors use their discretion, based on previous experiences.
+FCM can be found useful to solve the fuzziness problem, associated with
+the classification of COVID-19 patients. The signed and weighted arcs of
+the FCM graph depict the causal relationship that exists among the
+symptoms/risk factors and hence illustrate the interconnection between
+the symptoms/risk factor and how the symptoms/risk factors influence
+one another (Kosko, 1986; Papageorgiou and Stylios, 2008).
+The following features of FCM as presented in Papageorgiou and
+Stylios (2008), make it fit for the classification and differential diagnosis
+B.A. Akinnuwesi et al. Data Science and Management 4 (2021) 10–18of COVID-19:
+a. FCM is used for the acquisition and representation of causal knowl-
+edge, together with the causal knowledge reasoning process. This is
+needed to identify the causal strength of each of the COVID-19
+symptoms relative to other symptoms.
+b. It is a neuro-fuzzy algorithm that can help to solve decision making
+problems such as the COVID-19 classification problem. The strength
+of FCM in cognitive decision making during medical diagnosis was
+presented in Chandiok and Chaturvedi (2016). It was noted that FCM
+helps to represent the cognitive knowledge required in expert systems
+that are used for medical diagnosis. This is utilized for rational de-
+cision making and aids prediction.
+c. Similarly, FCM supports the differential diagnosis of diseases. Lopes
+et al. (2013) made use of FCM in the development of a DSS for dif-
+ferential diagnosis of alterations in urinary elimination.
+d. FCM's weights can be trained and updated using learning algorithms.
+Hence, it makes it possible to compute the weights of the relationship
+between all pairs of symptoms of COVID-19.
+2.4.2. Support Vector Machine (SVM)
+SVM is a supervised machine learning (ML) technique that is applied
+in the classification and regression problems. Generally, it is best applied
+in the classification problems (Land and Schaffer, 2020; Pisner and
+Schnyer, 2020). SVM algorithm can process datasets with multiple
+continuous and categorical variables. It labels data (i.e. input and output)
+for classification. It is a non-probabilistic, and binary linear classifier.
+SVM-based models are trained, using labelled data. It is a representation
+of diverse classes in a hyperplane in a multidimensional space. SVM
+generates the hyperplane in an iterative form with the view to minimize
+error. SVM focuses on dividing datasets into different classes in order to
+find a maximum marginal hyperplane (MMH). Thus, classification pro-
+vides the basis to train the system for data processing. The support vec-
+tors are the data points, closest to the hyperplane while the hyperplane is
+a decision space that is divided between a set of objects having different
+classes. The algorithms achieve the best separation of data with the
+boundary around the hyperplane being maximized and even between
+both sides. The SVM classification algorithm is fast and dependable and it
+performs well with a limited amount of data to analyze.
+The following are features of SVM that make it fit for classification
+and differential diagnosis of COVID-19:
+a. SVM is a binary linear classifier (Noble, 2006; Pisner and Schnyer,
+2020) and it is best applied in two-group classification problems. In
+this light, SVM can be used to build learning models that could
+accurately classify COVID-19 patients into two groups (i.e., True
+Positive COVID-19 and True Negative COVID-19 patients) based on
+the COVID-19 dataset available.
+b. SVM is relatively simple and flexible to address classification prob-
+lems (Pisner and Schnyer, 2020).
+c. SVMs distinctly produce the balanced predictive performance in cases
+where the sample data sizes are limited (Pisner and Schnyer, 2020).
+This makes it suitable, even with limited COVID-19 datasets.
+2.4.3. Decision Tree (DT)
+DT is applied in classification and regression problems. It embraces
+supervised learning method. Application of decision tree for the classi-
+fication of COVID-19 cases using X-ray imaging was reported in Yoo et al.
+(2020). Similarly, DT algorithm has been applied in Atieh et al. (2019)
+for predicting peri-implant disease. Also, it has been used for the diag-
+nosis of diabetic patients, as presented in Kamadi et al. (2016). Advan-
+tages of the DT are as follows (Gupta, 2017): it is simple and easy to
+understand, interpret, and visualize; variable screening and feature se-
+lection are implicitly performed; it accommodates numerical and cate-
+gorical data; it solves multi-output problems; relatively little effort is
+required for data preparation and the performance of the tree is not14influenced by nonlinear relationships that are between parameters.
+However, DTs have the following shortcomings (Gupta, 2017): over-
+fitting problem and variance; needs to be lowered using bagging and
+boosting methods; creation of biased trees if some classes dominate; and
+optimal decision tree is not guaranteed in cases of greedy algorithms.
+2.4.4. Naïve Bayes (NB)
+NB is an intuitive classification method that uses Bayes’ theorem and
+assumed independence among predictors. Even though the complete
+independence among predictors is impossible in real-life situations
+(Dinant, 2018; Ray, 2017). It uses supervised learningmethod. NB is used
+with large datasets. It is simple, fast, and easy to implement and the
+classification accuracy is better compared to other classification algo-
+rithms, most especially when the assumption of independence predictor
+holds. There are Gaussian, Multinomial and Bernoulli types of NB. It
+takes less time for training because small training data are required for
+NB to estimate the test data. It linearly scales with the number of pre-
+dictor features and data points. It is applied to binary and multi-class
+classification problems. NB model was used to diagnose COVID-19 pa-
+tients in Mansour et al. (2021). Similarly, Silahudin and Holidin in
+Silahudin and Holidin (2020) modeled expert systems using the NB
+technique to diagnose COVID-19 and Awwalu et al. (2020) developed a
+DSS for COVID-19 diagnosis using a multinomial NB algorithm.
+2.4.5. Multilayer Perceptron (MLP)
+MLP is a feedforward ANN that has a minimum of three layers of
+nodes or neurons (i.e. input layer, hidden layer and output layer). Each
+neuron makes use of non-linear activation function except the input
+neurons. MLP embraces backpropagation algorithm for training. The
+well-arranged network of neurons helps in data modelling with the use of
+machine learning algorithms and hence facilitates accurate processing
+vis-a-vis accurate decision making. MLP is trained to carry out a given
+task and MLP based models help to analyze data and hence recognize
+patterns within the data. The merits of using MLP are as follows: models
+complex and non-linear problems; performs very well with large data; it
+is capable of generalizing; its fault tolerance is high; good for pattern
+recognition. In the light of aforementioned merits, MLP has been adopted
+to develop models for diagnosing COVID-19 with remarkable perfor-
+mance. For example, MLP was applied in Salman et al. (2020) for X-ray
+images classification to detect COVID-19 in patients. Similarly COVID-19
+early vision diagnosis using MLP was proposed in Hammam et al. (2020).
+Also, MLP and LR were combined to develop a hybrid model for
+COVID-19 diagnosis in Mohammadi et al. (2021). The authors estab-
+lished good performance for the MLP based models in terms of accuracy,
+sensitivity and specificity. However, some limitations are attributed to
+MLP, such as computational intensiveness and time consuming, problem
+of scaling, model performance dependence on quality of training. How-
+ever, solution is not always guaranteed.
+2.4.6. Logistic regression (LR)
+LR is the class of supervised learning techniques that is applied in
+classification problems. It is used for predicting the probability of a bi-
+nary based dependent variable. Thus, the dependent variable has data
+coded as either 0 (negative/no) or 1 (positive/yes). An example of lo-
+gistic regression equation is presented in Equation (1) (Brownlee, 2016):
+y ¼ e^(b0 þ b1*x) / (1 þ e^(b0 þ b1*x)) Equation (1)
+where y: predicted output; b0: bias or intercept term; b1: the coefficient
+for the single input value (x). Each column in the input data has an
+associated b coefficient (a constant real value) that must be learned from
+the training data.
+LR is a simple machine learning algorithms and it is well applied in
+medical diagnostic problems for the detection of diseases. Hence makes it
+a good algorithm for classification of the COVID-19 patients. For
+example, LR was applied in several studies (Roland et al., 2020; Shang
+Table 1
+COVID-19 clinical dataset with class imbalance on percentage split (80-20).
+Performance metrics LR SVM NB DT MLP DNN
+Accuracy 86.7 87.5 84.2 82.5 88.3 88.3
+Precision 86.7 87.5 84.2 82.5 88.3 86.0
+Recall 85.8 77.9 85.6 83.0 86.3 88.0
+F-measure 86.2 82.4 84.8 82.8 86.9 87.0
+MCC 31.2 3.3 29.9 17.7 31.9 25.6
+B.A. Akinnuwesi et al. Data Science and Management 4 (2021) 10–18et al., 2020; Song et al., 2020) to predict the severity of COVID-19 in
+infected patients. Also LR based system was proposed in (Fink et al.,
+2020) for the validation of the results of COVID-19 diagnostic prediction
+at the time of admission in the hospital.
+2.4.7. Other deep learning classifiers
+Deep learning classifiers such as Recurrent Neural Networks (RNNs),
+Generative Adversarial Networks (GANs), Radial Basis Function Net-
+works (RBFNs), Self Organizing Maps (SOMs), Deep Belief Networks
+(DBNs), Restricted Boltzmann Machines (RBMs) and Autoencoders are
+other algorithms that could be applied for disease diagnosis but we did
+not consider them in this study because they do not fit for our dataset.
+Rather they are most commonly applied to analyze visual imagery, time
+series data, natural-language processing, and machine translation
+(Biswal, 2021).
+3. Material and methods
+3.1. Data collection and data pre-processing
+The data were obtained from https://github.com/burakalakuss
+/COVID-19-Clinical and contain 600 entries of patient records.
+3.2. Data pre-processing and modeling
+In order to overcome overfitting and outliers, there is need for data
+pre-processing. Data pre-processing were performed using WEKA and
+Python library Scikit-learn (sklearn). In this study, we experimented with
+LR, SVM, NB, DT, MLP, FCM and DNN algorithms by calibrating their
+parameters. The algorithms are applied to the resampled data to elimi-
+nate class imbalance (520 negative cases and 80 positive cases of COVID-
+19) using random undersampling and oversampling approach. The
+COVID-19 clinical dataset was divided into a training dataset (80%) and
+a testing dataset (20%). This study uses the training dataset to train the
+COVID-19 classification model and uses the testing dataset to measure
+model performance and to ensure that the results of the classification
+model is robust. According to Elujide et al. (2021), classification prob-
+lems can be modeled using single-label and multi-label approach. This
+study employed a single-label approach with binary classification prob-
+lem. For the deep neural network model, a two-layer neural network was
+implemented with the two COVID-19 indicators to classify the clinical
+COVID dataset.
+3.3. Measure of performance
+The performance of the classification algorithms is measured based
+on the following performance metrics: accuracy, precision, recall, MCC,
+balanced accuracy and Bookmaker informedness (BM).
+4. Results and discussion
+We did a quantitative analysis of the classifiers. The clinical dataset
+on COVID-19 contains 600 entries of patient records comprising of an ID,
+set of symptoms and status (label) features. This section answers: RQ-1:
+What are the classifiers appropriate for differential diagnosis of COVID-
+19? RQ-2: What is the performance of each of the classifiers in terms
+of accuracy, precision, recall, F-measure, MCC, balanced accuracy, and
+Bookmaker informedness?
+We empirically tested and verified the efficacy of the following
+classification algorithms: LR, SVM, NB, DT, MLP, FCM and DNN. The
+algorithms were subjected to random undersampling and oversampling.
+The classification algorithms were subject to random undersampling in
+order to convert class imbalance to balanced class on the target variable
+(520 negative cases and 80 positive cases of COVID-19). We evaluated
+the performances of the classification algorithms using the following
+metrics: accuracy, precision, recall, F-measure, and MCC while balanced15accuracy, bookmaker informedness (BM), MCC, accuracy, precision,
+recall, F-measure are considered for FCM based on percentage split (80%
+for training and 20% for testing). The COVID-19 dataset experiments
+were performed using python and R.
+According to the Chicco and Jurman (2020), most data scientists and
+machine learning experts use confusion matrix to evaluate binary clas-
+sification. Few studies recently reported that it is not adequate to base the
+performance evaluation results on class imbalance dataset on accuracy
+and F1 score, as well as on MCC result because it puts the ratio between
+the positive and negative into consideration. The closer MCC is toþ1, the
+better the binary classification; the closer MCC is to 1, the worse the
+binary classification. Chicco et al. (2021) claimed that MCC is a more
+reliable performance metric to put into consideration over balanced ac-
+curacy, BM and markedness (MK) in evaluating binary classification.
+We compared the results on the use of random undersampling, inte-
+grated with the classification algorithms based on the use of percentage
+split. As shown in Table 1, with class imbalance, MLP outperforms LR,
+NB, DT and SVM in accuracy, precision, recall, F-measure and MCC.
+Similarly, DNN has the best performance in accuracy, recall and F-mea-
+sure. As shown in Table 2, without class imbalance, MLP outperforms LR,
+NB, DT and SVM in accuracy, precision, recall, F-measure and MCC,
+while DNN performs best with the use of oversampling.
+Furthermore, we compared the results on the dataset with a class
+imbalance on percentage split of 80% for training and 20% for testing
+with dataset without class imbalance (use of random undersampling and
+oversampling are integrated on the classification algorithms to eliminate
+the class imbalance on the percentage split of 80% for training and 20%
+for testing) in python and Deep Neural Network with the following pa-
+rameters: epoch of 150, batch_size of 10, loss ¼ binary_crossentropy, and
+adam optimizer. Two-layer was added to a sequential model from Keras,
+with ReLu and Sigmoid activation functions.
+Comparing Tables 1 and 2, it was discovered that the classification
+algorithms in Table 1 perform better with the traditional performance
+metrics for evaluation (i.e., accuracy, precision, recall, F-measure) but it
+was poor in performance with the MCC performance metric. The per-
+formance in Table 1 is due to overfitting. While on Table 2, their per-
+formances dropped for accuracy, precision, recall and F-measure.
+Therefore, our findings show that without class imbalance, the rate of
+improvement of performance with MCC as a performance metric is very
+high for all the classifiers while there is a drop in performances for other
+metrics. This aligns with the claims of Chicco and Jurman (2020) that
+MCC is the best performance metric to determine the best classifier,
+without class imbalance. We noticed in Table 1, that all the performance
+metrics for machine learning algorithms were higher than 80% in the
+MLP and DNN and this makes them better classifier over others but the
+MCC is very far from 100% while in Table 2, DNN is the best classifier
+even though the MCC value is close to 100%.
+In addition, this report also summarizes the development of a FCM
+model that analyses COVID-19 symptoms and determines status as either
+positive or negative. The FCMmodel was developed with the twenty (20)
+concepts of the COVID-19 dataset. Weights for each relationship between
+concepts were extracted from a weight matrix which was in term
+extracted and trained from the dataset, using a simplified version of the
+Hebbian Learning algorithm given by Equation (2).
+wijðkþ 1Þ¼wijðkÞþ αðyiðkÞ * xjðkÞ
+
+(2)
+Table 2
+COVID19 clinical dataset without class imbalance on percentage split (80-20).
+Performance metrics LR (US) SVM (US) NB (US) DT (US) MLP (US) DNN (US) DNN (OS) LR (OS) SVM (OS) NB (OS) DT (OS) MLP (OS)
+Accuracy 78.1 78.1 81.3 65.6 81.3 84.4 93.8 80.2 79.3 82.45 66.8 81.8
+Precision 78.1 78.1 81.3 65.6 81.3 85.0 94.0 80.2 78.8 83.1 66.7 81.6
+Recall 82.6 82.6 81.1 72.6 84.4 84.0 94.0 83.1 82.9 82.4 73.1 85.2
+F-measure 78.4 78.4 80.8 65.9 81.5 84.0 94.0 79.2 79.8 81.4 66.3 82.2
+MCC 59.8 59.8 59.2 37.8 64.5 69.0 88.0 60.3 61.3 60.1 38.2 65.2
+Legend: undersampling (US); oversampling (OS).
+B.A. Akinnuwesi et al. Data Science and Management 4 (2021) 10–18The weight matrix and imported data frame of the data were then pre-
+processed by scaling column values in the [0, 1] as per the requirement of
+the parameters of the inference function of the FCM model. The dataset
+was split into 80% training set and 20% testing set, i.e., 480 records were
+used in developing and training the weight matrix and 120 were used to
+test the dataset with class imbalance, while another experiment was also
+carried out on the dataset without class imbalance after applying the
+random undersampling to it. The inference results from running the
+fcm.infer function in twenty-five (25) iterations were stored in an array.
+These results were compared with the actual labels of the test data.
+Sigmoid function was used in this study. Table 3 shows the comparative
+summary of the results.
+We compared the results on the Fuzzy Cognitive Map for the dataset
+with class imbalance on percentage split of 80% for training and 20% for
+testing with dataset without class imbalance (use of random under-
+sampling integrated on the classification algorithms to eliminate the class
+imbalance on the percentage split of 80% for training and 20% for
+testing). It was discovered that the FCM without class imbalance out-
+performs the FCM with the class imbalance in all the performance eval-
+uation metrics, except in MCC. Our findings, as presented in Table 3, do
+not support the claims of Chicco et al. (2021) which state that MCC
+performs better than balanced accuracy and Bookmaker informedness.
+Our results in Table 3 reveal that balanced accuracy outperforms BM and
+MCC.
+5. Conclusion and managerial implication
+5.1. Conclusion
+The increasing number of global cases of COVID-19 infection is
+alarming and the large number of infected people that flood the hospitals
+on daily basis has caused an overstretching of the available medical fa-
+cilities as well as the healthcare workers. The patients require reliable
+and accurate diagnosis and treatments. There are reports that with the
+use of the clinical methods for COVID-19 diagnosis, some people who
+were initially tested positive for COVID-19 and who were having some
+underlying diseases, turned out having negative results after series of
+further tests. This implies that true positive and true negative results are
+not always guaranteed.
+In this study, having analyzed the quality attributes of the clinical
+methods for diagnosing COVID-19, we further employed some classifiers
+which constitute intelligence-based methods, which could be applied to
+early diagnosis of COVID-19. The classifiers are considered to comple-
+ment the clinical diagnosis methods. The classifiers employed for theTable 3
+Performance evaluation metrics on FCM.
+Performance metrics FCM with class imbalance FCM without class imbalance
+Accuracy 79.2 87.5
+Precision (PPV) 85.3 87.1
+Recall (TPR) 79.5 100.0
+F-measure 82.3 93.1
+MCC 49.0 42.0
+BM 58.2 87.1
+Balanced accuracy 79.1 93.5
+16experiment are LR, SVM, NB, DT, MP, FCM and DNN. We did experi-
+ments with our data to determine the best classification technique in
+terms of accuracy, precision, recall, F-measure, MCC, balanced accuracy,
+and bookmaker informedness, based on percentage split (80% for
+training and 20% for testing). Our results showed that with class
+imbalance, MLP and DNN outperform LR, NB, DT, SVM and FCM in ac-
+curacy, precision, recall, F-measure and MCC (See Table 1), but without
+class imbalance, MLP, FCM and DNN outperform LR, NB, DT and SVM in
+accuracy, precision, recall, F-measure, MCC, BM, and balanced accuracy
+(See Tables 2 and 3).
+It is worth noting that with class imbalance, their performances are
+poor using the MCC performance metric, but without class imbalance,
+MCC values increase for all the classifiers while there is a drop in per-
+formances for other metrics. This agrees with the claims of Chicco and
+Jurman (2020) that MCC is a good performance metric to determine the
+best classifier without class imbalance. We also discovered that without
+class imbalance, FCM performs better for all the performance metrics,
+compared to the performance with class imbalance. The only exception is
+with MCC, whose value dropped without class imbalance (See Table 3).
+Thus, MCC performs better than balanced accuracy and Bookmaker
+informedness.
+Considering the relatively good performance values of the tested
+classification algorithms (i.e., MLP, LR, NB, DT, SVM, FCM and DNN),
+intelligence-based systems can be developed for COVID-19 diagnosis
+using these algorithms, but our results present MLP, FCM and DNN as
+better algorithms that healthcare system developers should adopt for
+early differential diagnosis of COVI-19. Moreover, the test of perfor-
+mance must not be limited to the classic performance metrics for eval-
+uation (i.e., accuracy, precision, recall, and F-measure), other
+performance metrics such as MCC, balanced accuracy and bookmaker
+informedness must also be considered. In the light of this, our future
+works will be considering the development and implementation of a
+COVID-19 smart medical diagnostic system (i.e., C-19-SmartMed) that
+will be able to differentially diagnose patients for COVID-19 based on the
+common symptom (i.e., fever or chills, cough, shortness of breath or
+difficulty breathing, fatigue, muscle or body aches, headache, loss of taste
+or smell, sore throat, congestion or runny nose, nausea or vomiting, and
+diarrhea) and using classifiers such as MLP, FCM and DNN. The system is
+envisaged to complement the effort of the physician.5.2. Managerial implication
+Automated healthcare systems are required to complement the ser-
+vices of the medical personnel in the present circumstances of COVID-19
+pandemic with rising cases of new variants and infection. This study has
+identified MLP, FCM and DNN as better classifiers over LR, NB, DT and
+SVM, that healthcare software system developers can adopt to develop
+intelligence-based decision support systems and expert systems which
+both medical personnel and patients can use for quick differential diag-
+nosis when the following common symptoms are presented: fever or
+chills, cough, shortness of breath or difficulty breathing, fatigue, muscle
+or body aches, headache, loss of taste or smell, sore throat, congestion or
+runny nose, nausea or vomiting, and diarrhea.
+This study suggests a paradigm shift from the use of chest X-ray image
+data on computational systems that are currently used to diagnose
+B.A. Akinnuwesi et al. Data Science and Management 4 (2021) 10–18COVID-19. Therefore, the management board in the health sector should
+provide supports for the development of the new application software
+that could easily diagnose patients based on the common symptoms
+stated above. This is better than exposing the patients to consistent chest
+X-ray which is not easily accessible, and not economical for the patients,
+and which has side effect at the long run. By doing so, there will be
+increasing access to quick and economical healthcare services when one
+is having a feeling of COVID-19 infection particularly in low-income
+countries of Africa where there is a dearth of medical personnel and
+poor medical facilities.
+Declaration of competing interest
+The authors declare that there are no conflicts of interest.
+Author contributions
+Boluwaji A. Akinnuwesi: Conceptualization, Resources, Literature
+Review, Methodology, Data Curation, Formal Analysis, Validation,
+Visualization,Writing-Original draft preparation,Writing-Reviewing and
+Editing, Project Administration. StephenG. Fashoto: Conceptualization,
+Methodology, Validation, Data Curation, Visualization, Writing-
+Reviewing and Editing. Elliot Mbunge: Conceptualization, Methodol-
+ogy, Writing-Reviewing and Editing. Adedoyin Odumabo: Literature
+Review, Data Curation, Formal Analysis, Writing-Original draft prepa-
+ration. Andile S. Metfula: Literature Review, Data Curation, Formal
+Analysis, Writing-Reviewing and Editing. Petros Mashwama: Literature
+Review, Data Curation, Formal Analysis, Writing-Reviewing and Editing.
+Faith-Michael E. Uzoka: Resources, Methodology, Data Curation,
+Formal Analysis, Investigation, Writing-Reviewing and Editing.Olumide
+Owolabi: Validation, Visualization, Writing-Reviewing and Editing.
+Moses Okpeku: Validation, Data Curation, Writing-Reviewing and
+Editing. Oluwaseun O. Amusa: Data Curation, Formal Analysis, Vali-
+dation, Writing-Reviewing and Editing.
+Acknowledgment
+We acknowledge the contributions of all the medical practitioners
+that supported us in the course of this research. We express our gratitude
+to them.

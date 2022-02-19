@@ -1,0 +1,353 @@
+Nanotechnologies comprise approaches able to synthesize, manipulate and visualize matter at the nanometer 
+scale offering numerous advantages, especially in the biomedical field. In particular, nanoparticles represent a 
+promising tool in the medical field to overcome antimicrobial resistance, which represent current serious 
+problem. Furthermore, nanoparticles use multiple mechanisms to target microorganisms, rendering difficult the 
+development of antimicrobial resistance. In the present, we used a Samarium-Cobalt (SmCo) target, permanent 
+magnet, to synthesize nanoparticles (Nps) by Pulsed Laser Ablation in Liquid (PLAL). To evaluate their possible 
+antimicrobial effect against Staphylococcus aureus, Staphylococcus epidermidis, Enterococcus faecalis and Strepto-
+coccus mutans, we performed minimal inhibitory concentration (MIC) essays. In addition we evaluated their 
+ability to affect human keratinocyte cells viability. By time killing assay, we monitored bacterial growth after 
+exposure to Nps-SmCo. PLAL is an innovative, cheap, fast and safe nanotechnology to allow the synthesis of small 
+nanoparticles that could be exploited for applications as novel antimicrobials.   
+1. Introduction 
+Bacterial infections represent one of the leading causes of death 
+worldwide [1,2]. Currently, antibiotics are considered the main treat-
+ment against bacterial infections, but their excessive use has led to the 
+rapid emergence of multidrug resistant bacteria. Longer periods of 
+hospitalization with increasing health costs and higher mortality rates 
+are a direct consequence of the continuous spreading of antimicrobial 
+resistance [3,4]. It has been estimated that approximately 33.000 and 
+35000 people die yearly in Europe and the United States, respectively, as 
+a direct result of antimicrobial resistance [5]. This scenario led to an 
+increase in public health costs and the drastic reduction of therapeutic 
+treatments, causing high mortality in infected patients [4,6]. The World 
+Health Organization (WHO) anticipates that by 2050 none of the anti-
+biotics currently available will be effective for some bacterial infections 
+treatment [7,8]. Several bacterial species are already resistant to many 
+currently available antibiotics, including the latest generation ones [9, 
+10]. Markwark et al. reported an increased incidence of Staphylococcus 
+aureus and Enterococcus faecium strains resistant to linezolid and dap-
+tomycin. In particular, the linezolid resistance rate between 2014 and 
+2018 was 1.6% and 0.28%, for E. faecium and S. aureus, respectively. 
+While daptomycin resistance was about 1.1 %, for both strains [11]. 
+Cabrera-Contreras et al. monitored multi-resistant S. epidermidis strains 
+for eight years (2006 to 2013) in a children’s health care unit in Mexico 
+City. During the period under observation a large number of 
+S. epidermidis multi-resistant strains with resistance to methicillin, 
+beta-lactam, fluoroquinolones, and macrolides was detected [12]. 
+In addition to antibiotic resistance, also the ability of bacteria to form 
+biofilms has shown to be a limiting factor for use of empirical therapies. 
+The worrying scenario described, highlights the need to search for new 
+antibacterial agents and innovative therapeutic strategies. Contextually, 
+nanotechnologies offer numerous advantages to overcome compliances 
+* Corresponding Author: Antonio Morone, CNR-Istituto di Struttura della Materia U.O. di Tito Scalo, zona industriale di Tito Scalo, 85050 Italy Tel: +39971427111 
+E-mail address: antonio.morone@cnr.it (A. Morone).  
+Contents lists available at ScienceDirect 
+Applied Surface Science Advances 
+journal homepage: www.sciencedirect.com/journal/applied-surface-science-advances 
+https://doi.org/10.1016/j.apsadv.2022.100213 
+Received 12 October 2021; Received in revised form 13 December 2021; Accepted 8 January 2022   
+Applied Surface Science Advances 7 (2022) 100213
+2
+associated with the development of multidrug-resistant pathogens [13, 
+14]. Nanotechnologies are considered a great scientific advance of the 
+21st century, with a deep social and economic impact [15,16]. 
+Antimicrobial properties associated with silver, copper, zinc and 
+gold nanoparticles have been widely described in literature. The 
+mechanisms of action were related to the formation of reactive oxygen 
+species (ROS) [17], enzymatic inhibition [18], protein degradation, 
+DNA damage and bacterial cell wall destruction [19]. In particular, as 
+reported by Pelgrift et al., different types of nanoparticles use multiple 
+and simultaneous mechanisms to combat microbes [20]. An example are 
+nitric oxide-releasing nanoparticles (NO Nps), which exert their anti-
+microbial action through largely reactive nitrogen oxide intermediates 
+(RNOS) that react with amino acid residues, Cys, Met, Tyr, Phe of bac-
+terial proteins. In addition, RNOS causes direct nitrosative damage to 
+DNA including breakage of the filament, formation of abasic sites, and 
+deamination of cytosine, adenine and guanine. RNOS, also, causes 
+increased generation of hydrogen peroxide (H2O2) and alkylating agents 
+that themselves damage bacterial DNA. All these multiple mechanisms 
+exerted by NO Nps make it unlikely the development of resistance, as 
+multiple and simultaneous genetic mutations would be needed in the 
+same bacterial cell. 
+Loo et al. have shown that the synthesis of silver nanoparticles (Ag- 
+Nps) using plant extracts is a green, valid and easy alternative to 
+chemical synthesis; it does not require the use of cell cultures and 
+asepticity, showing advances respect to chemical methods. These suit-
+able nanoparticles synthesized from pu-erh tea leaves extract showed 
+minimum inhibitory concentration (MIC) against Escherichia coli, Kleb-
+siella pneumoniae, Salmonella typhimurium and Salmonella enteritidis of 
+7.8, 3.9, 3.9, 3.9 μg/ml, respectively [21]. Samarium-cobalt (SmCo) is a 
+rare earth magnet [22]. Currently, no knowledge related to SmCo 
+nanoparticles (Nps-SmCo) applied to microbiology has been reported. 
+Therefore, our study described the synthesis and physical-chemical 
+characterization of Nps-SmCo. Pulsed Laser Ablation in Liquid method 
+is considered one of the promising techniques for the production of 
+particles from the nanometric dimension monodisperse. PLAL exhibits 
+several features such as stability of the product, low cost, high purity, 
+simplicity, good control on the size and morphology of the product [23]. 
+The size, shape, and morphology of the nanoparticles produced by laser 
+ablation in liquid depend on several ablation parameters, such as laser 
+fluence, pulse width, repetition rate, temperature, ablation time and 
+wave- length [24]. The PLAL synthesis of SmCo Nps will be discussed 
+using X-Ray Diffraction Data, SEM images, Zeta Potential results and 
+magnetic characterizations (MOKE). Finally, we reported, for the first 
+time, the antimicrobial activity of Nps-SmCo against Staphylococcus 
+aureus, Staphylococcus epidermidis, Enterococcus faecalis and Streptococcus 
+mutans. These findings pay the way for the development of new drugs to 
+counteract Gram-positive bacterial infections. 
+2. Materials and methods 
+2.1. Nps-SmCo synthesis 
+We used to synthesis Nps-SmCo the PLAL method with these exper-
+imental conditions: 
+Laser Nd:Yag operating at λ= 532 nm, 10 ns pulse width, frequency 
+10 Hz, 40 mJ/shot energy and the laser beam is focused on area (3-5) 
+mm2 of the target, the fluence used is 0,8 J/cm2. Geometric set-up: the 
+laser beam impinges on target surface forming an angle of 90̊ with 
+respect to the surface of the SmCo target. The target material is insert in 
+a quartz-cuvette and it is filled with 1 ml Phosphate Buffer Saline (PBS) 
+1x liquid (Gibco-BRL-Thermo Fisher Scientific, Waltham, MA, USA, 
+02451). During PLAL process is used atmospheric pressure, ambient 
+temperature and the duration time is of 30 minutes. 
+The target material to produce Nps is SmCo and the same chemical- 
+physical measurements are reported. 
+2.2. Nps-SmCo characterization 
+In situ measurements with a Total X Ray Fluorescence (TXRF) have 
+been realized to check chemical homogeneity of SmCo Target. The 
+system for the fluorescence measurements is constituted by a X ray Tube, 
+with Ag anode and Be windows with a thickness of 125 μm, operating at 
+30 Kv and 10 A. The X-Ray collimator focuses the beam at 3 mm 
+diameter on the surface sample. The TXRF data are collected on the 
+surface of 3 mm x 3 mm area. Transmission Electron Microscopy (TEM) 
+is used to assess Nps-SmCo morphology (TEM FEI TECNAI G12 TWIN 
+120 kV). Other measurements have been conducted to understand if the 
+Nps-SmCo show magnetic characteristics. Magneto-Optic Kerr Effect 
+(MOKE) system, has been used to control the Nps magnetic properties. 
+MOKE system is based on the Kerr Effect. The polarization plane of 
+linear polarized light rotates after reflection on a magnetized surface as a 
+consequence of the Spin-orbit interaction. MOKE measurement system 
+shows different advantages, such as high sensitivity (up to monolayer 
+resolution), spatial and temporal resolution, straightforward in situ 
+implementation, relatively easy installation and use. MOKE experi-
+mental system is realized with: λ = 635nm, 4.5 mW laser diode, Glan- 
+Fig. 1. Magneto-optic measurement set-up.  
+M.V. Morone et al.                                                                                                                                                                                                                             
+Applied Surface Science Advances 7 (2022) 100213
+3
+Thompson polarizers, Self- made Helmholtz coils (or solenoid), Photo 
+elastic modulator (PEM), fast photo detector and Lock-in amplifier is 
+used to collect the dates. Experimental MOKE setup is reported in Fig. 1. 
+X-Ray Diffraction analysis using a Siemens D5000 with Cu Anode X- 
+Ray tube is reported to control crystallographic structure of the Nps- 
+SmCo. Finally, the charge present on the surface of nanoparticles was 
+determinate using the Zetasizer Nano S Malvern Panalytical instrument. 
+The Zeta Potential analysis was measured at 25◦C. 
+2.3. Quantitation of Nps-SmCo 
+Nps-SmCo were counted by Scanning Electron Microscopy (SEM). 5 
+µL of the PBS 1x solution containing our Nps-SmCo were deposited on 
+several stab for SEM measurements. About 20 SEM images were 
+captured and for each stab, one single drop was deposited on stab sur-
+face using a calibrated micropipette and after that the PBS is removed. 
+This method we can avoid Nps aggregation on SEM stab. The images 
+were processed via Image J. All the nanoparticles present in the images 
+were then counted and the total volume calculated by Image J. Starting 
+by volume of the single nanoparticle we were able to derive the number 
+of nanoparticles in a volume of 5 µL. We have computed that 108 
+nanoparticles are present in the 1 ml volume sample. For experimental 
+test we used a number of nanoparticles reported in Table 1. 
+2.4. Cytotoxicity evaluation 
+Produced Nps-SmCo were sterilized for 30 minutes by UV lamp. As 
+demonstrated by Dutz et al., ultraviolet radiation does not alter the 
+average size of nanoparticles, particle size distribution as well as zeta 
+potential [25]. In the present we tested the Nps-SmCo to evaluate their 
+antimicrobial activity. First of all, their toxicity was assessed by 3-(4, 
+5-dimethylthiazol-2yl)-2,5- diphenyltetrazolium bromide (MTT) assay 
+after 24 hours on Human keratinocyte (HaCaT) cells (American Type 
+Culture Collection, ATCC). Cells were plated in a 96- well flat- bottomed 
+plate (104cells/well) and cultured in Dulbecco’s Modified Eagle Medium 
+(DMEM), supplemented with 10% v/v of Fetal Bovine Serum (FBS), 100 
+U penicillin/100 µg streptomycin, and maintained at 37◦C with 5 % CO2 
+[26]. All reagents were purchased from Gibco-BRL (Thermo Fisher 
+Scientific, Waltham, MA, USA). Then, cells were treated with different 
+number of Nps-SmCo as previously reported in Table 1. Dimethyl sulf-
+oxide (DMSO) was used as a negative control. 
+After 24 h, the MTT was added for 3 h and cells converted it into 
+formazan. Finally, DMSO was used to re-solubilize the formazan and the 
+cell viability was assessed by recording the absorbance at wavelength of 
+570 nm with a Bio-Rad microplate reader (Bio-Rad Laboratories, Her-
+cules, CA, USA). 
+2.5. Bacterial strains 
+The bacteria strains used to evaluate the antibacterial activity were 
+Staphylococcus aureus strain ATCC 6538, Staphylococcus epidermidis 
+strain ATCC 12228, Enterococcus faecalis strain ATCC 29212 and Strep-
+tococcus mutans strain ATCC 35668. Each strain was plated on Brain 
+Heart infusion agar plates (BHI-agar) (Oxoid, Cheshire, UK) and incu-
+bated overnight at 37◦C. 
+2.6. Determination of minimum inhibitory concentration (MIC) 
+Antimicrobial activity assays were performed using the broth 
+Fig. 2. a) Total X-Ray Fluorescence spectra of SmCo target material used to form nanoparticles, the data showed the presence of only SmCo X-ray emission lines from 
+the surface of the target material. b) Theta-2Theta X-Ray diffraction spectra of Nps-SmCo. 
+M.V. Morone et al.                                                                                                                                                                                                                             
+Applied Surface Science Advances 7 (2022) 100213
+4
+microdilution method, in accordance with National Committee on 
+Clinical Laboratory Standards (NCCLS) guidelines, using sterile 96-well 
+plates. Briefly, fresh colonies of each strain grown on BHI-agar plates 
+were inoculated in BHI-broth (Sigma-Aldrich, USA) and incubated at 
+37◦C under orbital shaking (180 rpm) overnight. The following day, 
+bacterial suspension was transferred into fresh BHI-broth and incubated 
+at 37◦C under orbital shaking (180 rpm) up to the OD600 value = 0.5 (1 
+× 108 CFU / mL). Three serial dilutions were performed to determine the 
+final bacteria concentration (1 × 106 CFU / mL). Established number of 
+Nps-SmCo (Table 1) were by inoculation of each dilution into a well with 
+50 µl of bacterial suspension (obtaining a final concentration of 1 × 105 
+CFU / mL). Vancomycin was used as positive controls for Gram-positive 
+bacteria. The antibacterial activity was assessed after 20 hours of incu-
+bation at 37◦C, measuring the optical density at 600 nm [27]. 
+2.7. Time killing 
+In order to monitor bacterial growth over time after exposure to Nps- 
+SmCo, the time-killing assay was performed in accordance with the 
+American Society for Testing and Materials International (ASTM) 
+Standard guidelines. 1×107 (2 × MIC), 5×106 (MIC) and 2.5 × 106 (1/2 
+× MIC) of Nps-SmCo and 1 × 105 CFU/ mL of bacteria were added to BHI 
+broth in a final volume of 1mL/tube. Vancomycin (10 μg/ mL) and 
+untreated bacteria were used as positive and negative controls, respec-
+tively. The bacterial suspension was incubated at 37◦C under orbital 
+shaking (180 rpm). After the incubation period (0, 1, 3, 6 and 20 hours) 
+an aliquot of 50 µL of bacterial suspension was subjected to serial di-
+lutions and plated on BHI-agar. Plates were incubated at 37◦C for 20 
+hours and the following day colonies were counted to define CFU / mL 
+values. 
+2.8. Statistical analysis 
+Statistical analysis was performed by One-way ANOVA followed by 
+Dunnett’s multiple comparisons tests, ad graphs were generated using 
+GraphPad Prism ver. 8.2.1 for macOS (GraphPad Software, San Diego, 
+CA, USA, www.graphpad.com). All tests were performed in triplicate 
+and expressed as ± Standard Deviation (SD). 
+3. Results and discussion 
+3.1. Characterization of Nps-SmCo 
+To assess the chemical properties of the target used to produce Nps- 
+Fig. 3. a). Transmission Electron Microscopy images of SmCo nanoparticles. b) Zeta potenzial analysis of Nps-SmCo.  
+M.V. Morone et al.                                                                                                                                                                                                                             
+Applied Surface Science Advances 7 (2022) 100213
+5
+SmCo, we used Total X- Ray Fluorescence measurements. As reported in 
+Fig. 2 a, X-Ray fluorescence showed that SmCo peaks are emitted by the 
+target material after exposure to X-Ray beam. These characterizations 
+are important to establish absence of other material after laser treat-
+ment. During laser ablation treatment to produce Nps, we used high 
+laser energy and this experimental condition can produce other nano-
+particles inside the cuvette. Total X-Ray Reflection Fluorescence system 
+showed SmCo purity, assessed the presence of only SmCo x-ray beam in 
+the energy range 5 -8 Kev. We collected the spectra in the range 2-20 Kev 
+to control the chemical quality of the target material. The spectra 
+showed only characteristic X-Ray emission peaks of SmCo material. 
+Theta-2Theta spectra reported in Fig. 2 b shows characteristic 
+diffraction peaks and using JCPDS 30-457 and other SmCo peaks appear 
+in literature [28], so we can assign the peaks at SmCo material and we 
+conclude that Nps-SmCo are random orientation with same diffraction 
+peak of monoclinic structure. 
+Size and structural morphology of nanoparticles were characterized 
+by using TEM as shown in Fig. 3 a. Our nanoparticles appeared perfectly 
+spherical with a diameter between 10-60 nm. While in Fig. 3b we report 
+Zeta Potential analysis, the data shown that nanoparticles have a 
+negative charge value of -28.9 mV and we conclude that SmCo nano-
+particles do not form aggregates but are evenly dispersed in liquid. 
+In order to verify magnetic properties of Nps-SmCo, we report the 
+MOKE experimental measurement. The Nps have grown up on thin 
+amorphous film substrate, the spectra showed Nps magnetic character-
+istic correlated with particles dimensions, the magnetic coercive Field is 
+high about 4.5 mT for Nps-SmCo material, as shown in Fig. 4. 
+3.2. Effect of Nps-SmCo on cell viability 
+By MTT assay we assessed the effect of Nps-SmCo on cell viability of 
+HaCaT cells. As reported in Fig. 5, we can confirm that Nps-SmCo are not 
+toxic at lower number of Nps-SmCo tested, showed a percentage of cell 
+viability of 100% between 2.5×106 and 0.78×105 Nps-SmCo. 5×106 
+Nps-SmCo reduced cell viability of 20%, while the highest number of 
+Nps-SmCo tested (1×107) reduced viability of 50% respect to the posi-
+tive control. 
+3.3. Antibacterial properties of Nps-SmCo 
+Antibacterial activity of the Nps-SmCo, against four species of Gram- 
+positive bacteria, was evaluated using plate microdilution method. After 
+20 hours of treatment with 5 × 106 Nps-SmCo, the growth inhibition 
+rate of S. aureus was of 83%, while an inhibition of 70%, 75% and 78% 
+was observed for S. epidermidis, S. mutans and E. faecalis, respectively. At 
+a lower amount (2.5 ×106), 60 and 58% of inhibition was detected 
+against S. epidermidis and E. faecalis, while an inhibition of 37% and 39% 
+was recorded against S. aureus and S. mutans (Figure 6). 
+Obtained results were confirmed by monitoring bacterial growth 
+over time, for 20 hours. Time killing assay showed a similar trend 
+against all analyzed bacterial species. In detail, the curve of untreated 
+bacteria increased exponentially over time. The treatment with 2.5 ×
+106 Nps-SmCo (½ × MIC) did not induce relevant change in bacterial 
+growth, showing viable cell counts comparable to negative control. No 
+increase in bacterial load was recorded at MIC and 2 x MIC value be-
+tween 0 and 20 hours compared to the initial bacterial density, 
+Fig. 4. The graph shows Hysteresis curve of Nps-SmCo, by MOKE measurements.  
+Fig. 5. Effect of Nps-SmCo on cell viability. Statistical significances are referred 
+to the negative control and were determined by analysis of variance (ANOVA). 
+Dunnett’s test was used for multiple comparisons with the control (**** p value 
+< 0.0001; *** p-value < 0.0002; ** p-value < 0.002; ns: not significant). 
+M.V. Morone et al.                                                                                                                                                                                                                             
+Applied Surface Science Advances 7 (2022) 100213
+6
+indicating a bacteriostatic action of the nanoparticles (Fig. 6). A gradual 
+reduction in bacterial load occurred after treatment with vancomycin 
+(positive control) showing a decrease of 1 × 102 times for S. aureus, S. 
+epidermidis, E. faecalis and 1 × 104 for S. mutans, respect to the initial 
+bacterial density (Fig. 7). 
+Our finding highlighted for the first time the role of Nps-SmCo 
+against Gram-positive bacteria. No data are currently available using 
+this nanotechnology, to counteract bacterial infections. The mechanism 
+of action could be due to the interaction of the Nps-SmCo with the cell 
+wall surface, causing a structural damage. Other studies will be neces-
+sary in order to address more precisely the mechanism of action of the 
+Nps-SmCo. 
+4. Conclusion 
+This study demonstrated that PLAL is an innovative and safe method 
+to synthetized Nps from a target of SmCo, permanent magnet. As re-
+ported by R. A. Ismail at al., PLAL is a method that has many advantages 
+over conventional procedures for the synthesis of nanoparticles [29]. It 
+is an economical system, it can produce high purity nanoparticles, it 
+shows a good control of both the size and the morphology of the product, 
+preserving the stoichiometry, all with short reaction times. In recent 
+years, advances in Nanosciences and Nanotechnologies have led to 
+incredible improvements in biology and medicine. Nanoparticles usu-
+ally ranging in size from 1 to 100 nanometers have unique properties 
+compared to their mass equivalent. They are small agents, whose size is 
+similar to that of most biological molecules and structures. And it is 
+precisely this characteristic that makes them excellent candidates for 
+application in biomedical research in vitro and in vivo. In fact, nano-
+particles have different uses mainly in the targeted administration of 
+drugs, in imaging, and in their use as sensors [24]. In our study we 
+decided to use them as an antimicrobic agent in order to target Gram 
+positive bacteria for an innovative alternative therapy to common an-
+tibiotics. Indeed the Nps-SmCo showed significant antibacterial activity 
+against Gram-positive bacteria S. aureus, S. epidermidis, E. faecalis, S. 
+mutans. Through Time Killing experiments we have demonstrated that 
+our nanoparticles are bacteriostatic agents, in fact they block bacterial 
+replication through multiple and simultaneous mechanisms such as DNA 
+Fig. 6. Antibacterial activity of Nps-SmCo against S. aureus, S. epidermidis, E. faecalis and S. mutans. Statistical significances are referred to the negative control and 
+were determined by analysis of variance (ANOVA). Dunnett’s test was used for multiple comparisons with the control (**** p value < 0.0001; *** p-value < 0.0002; 
+** p-value < 0.002; ns: not significant). 
+M.V. Morone et al.                                                                                                                                                                                                                             
+Applied Surface Science Advances 7 (2022) 100213
+7
+damage, the formation of reactive oxygen species (ROS), the degrada-
+tion of essential proteins, and the destruction of the bacterial wall. All 
+these contemporary mechanisms exerted by nanoparticles make it 
+impossible to develop resistance because multiple genetic mutations 
+would be needed in the same bacterial cell [30]. For this reason, 
+nanoparticles could be a valid alternative to common antibiotics, thus 
+solving a worldwide problem such as bacterial resistance. 
+Declaration of interests 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgments 
+The authors would like to thanks Erwin Pavel Lamparelli, Giovanna 
+Della Porta of Department of Medicine, Surgery and Dentistry, Univer-
+sity of Salerno, Via S. Allande, 84081 Baronissi (SA), IT and Mariarosa 
+Scognamiglio of Department of Industrial Engineering, University of 
+Salerno, Via Giovanni Paolo 1,84084 Fisciano (SA),IT for contributing to 
+the study and analysis of the Zeta Potenzial. 

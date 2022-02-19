@@ -1,0 +1,460 @@
+The demand for immersive experience in virtual reality (VR) continues to increase. To move in a virtual
+environment (VE), bipedal human walking offers users the most natural interaction with the VE[1,2]. However,
+users may hit obstacles and become interrupted or even encounter safety issues when exploring a large VE
+within a limited physical space. To solve these problems, various locomotion techniques have been
+proposed, including walking-in-place (WIP) [3,4], joystick-based locomotion[5,6], teleportation[5 7], and redirected
+walking (RDW) [6,8,9]. Other locomotion techniques such as trigger walking[10] and omnidirectional
+treadmills[11 13] are also useful alternatives. Among these, RDW is relatively cheaper than walking on
+omnidirectional treadmills and offers users more natural walking experiences. Some RDW methods delete
+manipulate imperceptibly manipulate users' viewpoints while walking, but these methods require
+estimations of detection thresholds for various gains[14] .
+With the popularity of wearable VR devices, VR locomotion techniques have been applied not only to
+walking, but also during jumping. A novel redirected jumping (RDJ) technique for the one-time two-legged
+takeoff jump in VR has recently been proposed[15] In a jumping procedure, parameters such as horizontal
+distance, height, and rotation angles can be manipulated imperceptibly if the corresponding gains do not
+exceed the detection thresholds.
+According to Kruse et al.[16], users rely heavily on the visual cues of the VE and the modeling of the feet
+to perceive the manipulation of translation gains in the RDW. For jumping motion, we observed that a
+jump in the real world usually starts with a preparation procedure in which users typically observe the
+surrounding environment or swing their bodies to adjust their balance and power. Furthermore, users may
+perceptually measure the jumping distance by determining their position in the environment after landing
+on the ground.
+This paper reports the comprehensive user study we conducted to investigate the effects of VE and self-
+representations (SRs) on the perception and physical performance of RDJs. Visually simple and rich scenes
+were built to test the VE. Meanwhile, with trackers bound to body joints, the virtual body was visualized in
+Figure 1 Illustration of the experimental conditions to study the effects of virtual environment (VE) and self-
+representations (SRs) on redirected jumping. (a) User initiates a one-time two-legged takeoff forward jumping action
+in the real world (b) VE and SR under the HighVisuals and HumanAvatar condition; (c) VE and SR under the
+LowVisuals and Shoes condition; (d) Illustration of ready and landing status of an enhanced jump with translation
+gain gt = 1.4 (under the same condition as in (b)); and (e) illustration of an attenuated jump with translation gain gt =
+0.6 (under the same condition as in (c)). The translucent SRs in (d) and (e) indicate unmodified jumps with gt = 1.0.
+real time as either an invisible body, a pair of shoes, or a human-like avatar.
+This resulted in six conditions under which recruited participants were asked to complete one-time
+forward jumps for a certain distance. Based on objective experimental data and subjective survey results,
+we confirmed that VE and SR can affect the performance and perception in RDJ. The main contributions of
+this work are:
+• We designed VE conditions that offer low-and high-level visual richness and SR conditions with
+different virtual body visualizations, and conducted a within-subject pseudo-two-alternative forced-choice
+(pseudo-2AFC) experiment in RDJ.
+• We report the correlation results in objective and subjective measures and provide new insights into
+future VE and SR design in RDJ.
+Among VR locomotion techniques, real walking has significant advantages in simplicity, straightfor-
+wardness and naturalness over alternatives such as walking in place and flying[17]. Limited physical space
+poses a challenging or even impossible task for a user to walk freely in a large VE without any redirection
+techniques. To make it possible for users to experience a large VE without losing immersion, RDW, a
+common and useful redirection technique, is often applied to manipulate a player's movement[2,8,9,18 21] or the
+VE architecture[22 26]. Some RDW techniques[9,19 21,27,28] are based on imperceptible manipulations of a user's
+point of view (PoV) in a VE while walking in the tracking area, where each manipulation is a scaling ratio
+(i.e., gain) imposed on the attributes of the walking path. In addition, reinforcement learning-based RDW
+methods have been proven to be efficient, even for multiple users[29 31].
+Gains for virtual walking manipulation can be classified into four types: rotation gain manipulates the
+rotation angle of the user, translation gain manipulates the walking distance on a straight line, curvature
+gain bends a straight walking line[9], and bending gain adjusts the curvature of a curved walking
+trajectory[32]. Between the physical and virtual distance manipulated by gains, user studies based on pseudo-
+2AFC tasks and psychometric curve fitting techniques were commonly conducted[9] to test whether
+participants can tell the difference between walking in the real world and walking in a virtual environment
+manipulated by different gains. For instance, Steinicke et al.[9] and Langbehn et al.[32] employed methods to
+estimate the detection thresholds for translation, rotation, curvature, and bending gains. To determine
+whether the richness of the visual stimulus has an influence on the sensitivity to gains, Kruse et al.
+conducted a user study to measure the detection thresholds for translation gains by changing the visibility
+of virtual feet and the visual richness of the VE[16]. They found that the visual richness of the VE had a
+much greater influence on the user's gain perception than the SR visibility of the user's feet. Reimer et al.
+investigated the influence of full-body avatar on translation and curvature gains[33].
+Jumping, an important means of locomotion in daily life, is also common in the VR experience. Bolte et
+al. introduced a jumper metaphor to help users move larger distances in fully immersive virtual
+environments (IVEs) [34]. To use this locomotion method, users specify the target position for landing by
+looking at the target, then move toward the target with acceleration above a given threshold to activate the
+jumping procedure. According to their experiments, this method can provide more effective VE exploration
+Virtual Reality & Intelligent Hardware 2021 Vol 3 Issue 6 451 469
+than real walking but may introduce slight disorientation effects.
+Some studies have investigated virtual jumping in specific VR scenes[35 38]. Kim et al. designed a cable-
+driven system to manipulate the jumping and applied visual gains to simulate an experience of reduced
+gravity on the lunar and Martian surfaces in VR[36]. Kang et al. explored the combined effect of physical
+trajectory and visual gain manipulations, concluding that these manipulations can be applied
+simultaneously to solve the issue of space limitations[37]. To simulate skydiving in an immersive VR
+experience, Sasaki et al. proposed and implemented a system based on virtual super-leaping as a non-
+invasive, low-effect, and safe method[38].
+Recently, redirected and augmented jumping have become hot topics in VR locomotion. The redirected
+jumping technique was first proposed by Hayashi et al. [15], in user studies, they measured thresholds of
+unnoticeable gains for horizontal and vertical translation and rotation. Jung et al.measured the perception
+of curvature gains in jumping by asking the user to jump in a VE with five raised pedestals[39]. The
+detection thresholds of RDJ have wider ranges than those of RDW, which means that an even smaller
+physical space suffices if we apply RDJ techniques instead of RDW. Wolf et al. conducted a study in a
+virtual Parkour scene comparing teleportation with scaled jumping and forward jumping, from which they
+concluded that most scaled jumping conditions could bring the user a higher sense of immersion and
+motivation without increasing simulator sickness[40].
+Presence is the subjective feeling in which participants consider that they are virtually in one place,
+whereas in the real world, they are located in another place[41,42]. In VR, presence is a sense of "being there"
+in the VE instead of the real physical space[43], which means that a highly immersive VE can convince
+participants to believe they are actually located there.
+Questionnaires such as the Witmer and Singer Presence Questionnaire (WS) [41], the Slater Usoh Steed
+(SUS) questionnaire[44], and the Igroup Presence Questionnaire (IPQ) [45] are the most common tools to
+measure presence after users' experiences in IVEs. In this study, we used the IPQ questionnaire to
+investigate the presence felt by participants in RDJ experiences.
+In VR, self-representation is helpful to users' cognitive processes and can alleviate their mental loads in
+tasks[46 50]. On the contrary, the absence of a virtual body may lead to negative effects on perception and the
+disembodied phenomena[51,52]. Maselli et al. concluded that to produce full-body ownership, an avatar
+visualized from the first-person view can be employed to represent the participant's action in real time[53].
+The sense of embodiment is usually measured by subjective questionnaires because of its versatility and
+ease of use. One of the most commonly used questionnaires to measure the sense of embodiment is the
+Gonzalez Franco and Peck (GFP) embodiment questionnaire[49], which contains six main components
+(body ownership, agency and motor control, tactile sensations, location of the body, external appearance,
+and responses to external stimuli). Researchers can select applicable questions based on research
+objectives.
+Peck et al. found that, under the same hand placement setup (proximal or non-proximal), the condition
+with avatar outperformed the one without avatar on GFP embodiment scores in Stroop interference tasks[54].
+Fribourg et al. conducted experiments by asking users to match a given avatar configuration to help
+understand the inter-relations among the factors of avatar appearance, avatar control, and user point of
+view[55]. The experimental results show that setting an optimal avatar configuration was unnecessary.
+Instead, a higher degree of control that provides a satisfying embodiment experience would be preferred.
+Inspired by this, we measured embodiment perception with different SRs in RDJ.
+Hayashi et al. [15] conducted experiments to measure he detection thresholds for translation, height, and
+rotation gains of the one-time two-legged takeoff jump. In this study, we focused mainly on the horizontal
+translation gain gt=dvirtual/dreal, defined by the ratio of the horizontal jumping distance in the VE to its
+counterpart in the real world in a one-time two-legged takeoff jump.
+In our experiment, the value of the translation gain gtwas chosen within a pre-defined range before each
+forward jump, and was applied to manipulate the user's point of view (PoV) during the jump. The virtual
+jumping distance dvirtual=gt×dreal was correspondingly scaled according to the manipulation factor gt.
+Real-time jumping detection is essential for manipulating the jumping parameters in RDJ. According to
+previous RDJ work[15,39], a jumping action can be divided into five phases, namely, standing, ready,
+ascending, descending, and landing.
+• Standing: The user stands upright and remains stationary. The standing phase transition to the ready
+phase if the user lowers his or her head and waist but can also transition from landing phase.
+• Ready: The user bends at their knees with their feet kept on the ground. The user can transition from
+the ready phase back to the standing phase by standing upright, or transition to the ascending phase when
+the positions of the user's head and waist move upward while the feet leave the ground.
+• Ascending: In this phase the positions of the user's head, waist, and feet move upward in the air. This
+phase transitions to descending phase when the corresponding positions start moving downward.
+• Descending: After ascending, the user descends in the air.
+• Landing: The user lands on the ground after descending. If the user stands upright after landing, the
+user transitions to the standing phase.
+Figure 2 illustrates the jumping phases. In our experiment, all jumping trials were limited to one-time
+Figure 2 Illustration of the five jumping phases. From left to right: Standing, Ready, Ascending, Descending, and
+Landing.
+Virtual Reality & Intelligent Hardware 2021 Vol 3 Issue 6 451 469
+two-legged takeoff jumping, and the scaling of virtual jumping distance was applied during the ascending
+and descending phases.
+In this section, we present the details of the experiment for measuring the physical performance and
+perception in RDJ with horizontal translation gains under various VE and SR conditions. We tested VEs of
+two visual richness levels, in which one is a simple scene with low visual richness, and the other is a
+photorerealistic outdoor scene with high visual richness. Three SR conditions were tested: fully transparent
+body, human-like avatar, and a representation that only shows the shoes of the user. In total, six
+combinations of avatar and VE conditions were tested, from which we collected objective data of physical
+performances and the participant's subjective perception of jumping manipulation, feeling of presence,
+intrinsic motivation, and responses to the embodiment questionnaire. Both the VE and SR conditions were
+expected to affect a user's sensitivity to gain manipulations and other perception measures. More precisely,
+a high visual richness VE was anticipated to provide higher enjoyment and a better sensitivity to
+translation gains than a low-visual VE[16]. For SR conditions, the human like avatar was intended to provide
+higher enjoyment and better sensitivity to translation gains than those from shoe representations and
+invisible bodies. This assumption is based on the idea: that the human-like avatar, in providing full-body
+motion visualization, should lead participants to behave and perceive in the same way as if they were
+actually in the physical space. Therefore, we made the following hypotheses:
+• H1: The range of unnoticeable translation gains is smaller for a high visual richness VE than that for a
+low visual richness VE.
+• H2: The range of unnoticeable translation gains is smallest when the participant's body is represented
+as a human-like avatar.
+• H3: The sense of enjoyment is higher in the high visual richness VE than in the low visual richness
+VE, and highest with the human-like avatar among all self-representation types.
+Fifteen participants were recruited to complete the experiment (12 males and 3 females, mean age: 25.73,
+SD=4.79; mean height: 172.53cm, SD=6.29cm). All were researchers or students from a local institute. All
+claimed to have no visual impairment and confirmed having good general physical conditions for
+conducting the study. As for VR experiences, two had no experience, nine had fewer than five experiences,
+and the rest had more than five experiences. Eight participants wore glasses when they took part in the
+experiment.
+The experiment was conducted in a 4m×4m physical tracking space with a height of 2.5m. The
+experimental apparatus consisted of the head-mounted display (HMD) (HTC Vive Pro Eye headset, 1440×
+1600 pixel resolution per eye, 110° diagonal field of view) weighing approximately 0.6kg, two hand-held
+controllers, and three additional trackers bound to the waist and feet. The 6-DoF poses of the HMD,
+controllers, and trackers were recorded by two HTC Vive Base Stations placed at the corners of the
+tracking space and mapped to the positions of the user's head, hands, waist, and feet. A Polar OH1+ optical
+heart rate sensor was used to record the heart rates of the participants.
+The RDJ system was implemented using Unity3D (ver. 2019.3.1f1) and SteamVR running on a PC with
+an Intel Core i7-8700K 3.70GHz CPU, 16GB RAM, and NVIDIA GeForce RTX 2080 GPU. The Final IK
+plugin, an implementation of inverse kinematics, was used to infer the body pose of the human-like avatar
+from the recorded head, waist, hands, and feet poses. The HMD refresh rate was kept at 90Hz. During the
+experiment, a pair of headphones from the HMD was used to reduce the physical environment noise. The
+participants' safety was overseen by a staff person in the lab, and none of the participants fell or slipped
+during the experiment. The participants did not report any distraction from the physical world.
+4.3 Experimental design and conditions
+Following previous RDW and RDJ studies[9,15,16], a pseudo-two-alternative forced-choice (pseudo-2 AFC)
+method was used for the experiment design.The pseudo-2AFC was designed to avoid response bias when
+participants were asked to guess an answer. The two VE conditions tested were:
+• Low Visual Richness (LowVisuals): A simple scene composed of a skybox and a ground plane, similar
+to the setting used by Hayashi et al. [15], and consisting of 5m×5m regular grids painted on the ground, as
+shown in Figure 3a.
+• High Visual Richness (HighVisuals): A scene of a forest with rich visual cues including bridges, trees,
+rocks, grasses, etc. The ground around the jumping area was guaranteed to be horizontally flat as shown in
+Figure 3b. For each VE condition, three SR conditions were tested:
+• Invisible body (InvisibleBody): A fully transparent body.
+• Shoe representation (Shoes): A pair of shoes were visible.
+• Human-like avatar (HumanAvatar): a human-like avatar was chosen from the precreated male and
+female avatars, with the appearance modified based on the participant's size and skin color.
+Based on the results from our pilot study, the 5m×5m regular grids format on the ground for low visual
+richness was chosen because this environment setting provides a few visual cues, and at the same time
+prevents participants from counting the grids to measure their jumping distances. To provide a better sense
+of reality, we set the sun elevation angle to 45° so that the shadow (with Shoes and HumanAvatar) was
+visible. As shown in Figure 4, six conditions were tested with nine discrete translation gains gt controlled
+from 0.6 to 1.4 in 0.1 increments[15,16] and repeated three times in random order. The order of VEs was
+randomized for each participant and counterbalanced across participants using a Latin square design. For
+each VE, three consecutive SR conditions were tested and counterbalanced across participants to mitigate
+possible learning effects. With a within-subject design, each participant finished six trial blocks (two VEs×
+three self-representations) with 27 trials (nine gains×three repetitions) in each block. In line with the
+Figure 3 The two VEs used in our experiment. (a) LowVisuals; (b) HighVisuals. Start and target positions for
+jumping at the training stage are indicated by blue and red circles, respectively.
+Virtual Reality & Intelligent Hardware 2021 Vol 3 Issue 6 451 469
+setting of previous RDJ work[15], participants were asked to jump horizontally 0.8m, which did not incur a
+heavy physical load.
+Both objective physical performance and subjective perception of participants were measured during the
+user study. The measured physical performance included preparation time prior to jumping, actual jumping
+distance, and heart rate intensity. Subjective perception measures were collected using questionnaires.
+Preparation time for jumping. The performance of the user before a jump may also have an effect on the
+perception of jumping manipulation. Therefore, to evaluate whether conditions affect the jumping
+behavior, we recorded the preparation time for each jumping action. Specifically, after the participant
+walked back to the starting point and confirmed the next trial, time recording was begun until the
+participant's feet left the ground. The average preparation time for each condition was computed.
+Actual jumping distance. This metric was used to evaluate the effect of different combinations of
+conditions on the participant's jumping performance. Although the participants were asked to jump a 0.8m
+distance in the virtual world, the actual jumping distance may be affected by the VE and SR conditions.
+The actual jumping distance for each participant was recorded and the average actual jumping distance for
+each condition was computed.
+Heart rate intensity. Heart rate may be an objective metric associated with participant perception
+because the heart rate can reflect the participant's tension level. During the experiment, the heart rate of
+Figure 4 Illustration of combined VE and SR conditions in our experiment. Top: LowVisuals; Bottom: HighVisuals.
+Columns from left to right: InvisibleBody, Shoes and HumanAvatar (female and male).
+each participant was recorded and the heart rate intensity was computed using the Karvonen formula[56]
+given by:
+(1)
+(2)
+where I [0, 1], H is the average heart rate from the confirmation of the next trial to landing on the ground,
+Hmax = 220 a, where a is the participant's age, and Hrest is the participant's resting heart rate.
+4.4.2 Subjective perception measures
+Detection thresholds for gains. As mentioned before, the "longer" and "shorter" responses to the question,
+"Compared to the actual distance you jumped in the real world, was the distance in the virtual environment
+longer or shorter?" were collected. The psychometric function was estimated with an a-b core based on the
+proportion of "longer" responses, a and b are constants to be determined:
+(3)
+Lower detection threshold (LDT), point of subjective equality (PSE), and upper detection threshold (UDT)
+were measured at probability values of 25%, 50% and 75%.
+Presence. The IPQ presence questionnaire[45]was answered by each participant after each trial block to
+evaluate the sense of presence experienced in a VE. The three sub-measures for the participant's feeling of
+presence include attention to the VE (spatial presence), involvement (involvement), and how real the VE
+seems (experienced realism), plus an additional general item (sense of being there) in the subjective
+questionnaire[57]. In total, 14 questions answered by participants were rated on a 7-point Likert scale from 0
+to 6. The total presence score was computed as the average of the 14 scores.
+Embodiment. A subset of questions from the GFP embodiment questionnaire[49] was used to evaluate the
+participant's sense of embodiment for each trial block. Specifically, the questionnaire contained four main
+components to evaluate Ownership, Agency, Location, and Appearance. The total embodiment score was
+computed within the range of [‒3, 3] according to the calculation method suggested in[49] as (Ownership/3)
+× 2 + (Agency/3) × 2 + Location × 2 + (Appearance/2)/7. Please refer to[49] for details.
+Intrinsic motivation. The intrinsic motivation inventory (IMI) scale[58]was conducted after each trial
+block to evaluate participant's intrinsic motivation. The 7-point Enjoyment and Tension Likert scales were
+used to evaluate enjoyment and tension perception.
+Cybersickness. To measure cybersickness, the Simulator Sickness Questionnaire (SSQ)[59] was answered
+before (pre-SSQ) and after (post-SSQ) each trial block.
+The study was approved by the ethics committee of the local institute. Upon arrival at the lab, the
+participants read and signed an informed consent form containing written instructions about the
+experiment. Their height was measured and they were asked to fill out a demographic form, followed by a pre-
+SSQ questionnaire[59].The details of the experiment were clearly explained to the participants. The participants
+were shown all three types of avatars and the gender, skin color, and size of the human-like avatar were set
+according to the participant's characteristics. The participants were then equipped with VR devices, followed by
+a 3-second calibration stage to record the initial positions of their head, waist, hands, and feet.
+As mentioned previously, the order of VE conditions was randomized for each participant and
+counterbalanced across the participants. Under each condition, three blocks of trials corresponding to the
+Virtual Reality & Intelligent Hardware 2021 Vol 3 Issue 6 451 469
+SR conditions were completed by each participant. For each trial block, a training stage was used to help
+the participant perceive the scene and understand how the RDJ functions. In the training stage, participant
+was asked to jump a distance of 0.8m from a blue start circle to the red target circle; both circles had a
+radius of 0.25m (Figure 3). Three training trials with horizontal translation gains gt of 0.6, 1.0, and 1.4
+known by the participant were experienced one by one. After each training trial, the VE and SR were
+temporarily hidden. Then, the participant followed guidance in the VE and walked back to the new starting
+position randomly chosen within a 0.5m range of the initial physical start position along the jumping
+direction. The randomization of the starting position avoids the participant from inferring the previous
+jumping distances by counting the walking steps. The participant then confirmed to start the next training
+trial via a UI. Subsequently, the VE disappeared then reappeared with the virtual starting position in the VE
+randomized around the initial virtual starting position within a 2m×2m area to prevent the participant from
+using fixed references (e.g., grids in LowVisuals condition) in the VE to measure distance among trials.
+The participants were aware of the randomization mechanisms.
+After completing practice trials, a testing trial block containing 27 trials (nine gains × three repetitions)
+was begun without showing the start and target indicators. The participant confirmed ready for the jumping
+by pressing either button on the controllers, and then performed the jumping action. Two seconds after
+landing on the ground, a UI showed up on the HMD with the question: "Compared to the actual distance
+you jumped in the real world, was the distance in the virtual environment longer or shorter?" The choices
+"longer" and "shorter" were assigned to the left or right controllers counter- balanced in random order in
+advance for each participant and kept unchanged, with the aim of alleviating left- and right-handed bias.
+The participant could use the left or right controller to respond to the question. After answering the
+question, the participant walked back to the randomly positioned starting point and then entered the next
+trial. The participants were allowed to pause and break at any time. However, no participant asked for extra
+breaks during the experiment.
+After finishing all trials in a trial block, the participant removed the HMD and filled out the post-SSQ[59]
+IMI[58], GFP[49], and IPQ[45] questionnaires on a PC. The participant took a break of at least 5min to calm
+their heart rate before the next block, then completed another Pre-SSQ questionnaire and started the next
+trial block. After fi lling out the last set of questionnaires, the participant was asked to remove all the
+mounted trackers and encouraged to leave open comments concerning the experiment. The average time
+that a participant spent in the experiment was approximately 100min, including the break time between
+trial blocks. The participants were thanked and paid for their participation.
+In this section, experimental results of objective performance and subjective perception are ana-lyzed. For
+each measure, a repeated measures analysis of variance (RM-ANOVA) at the 5% significance level was
+adopted. Mauchly's test was performed to verify the sphericity of the data and an RM-ANOVA with
+Greenhouse-Geisser correction was used if the sphericity was violated. Pairwise comparisons were
+conducted with Bonferroni adjustment. For cases where the data was not normally distributed (revealed by
+Kolmogorov-Smirnov tests), Friedman tests at the 5% significance level, and post-hoc Wilcoxon signed-
+rank tests were used instead.
+Figure 5 shows the preparation time for jumping, actual jumping distance, and heart rate intensity.
+Preparation time for jumping. A Friedman test revealed a signi fi cant main effect of SR (p=0.015)
+under the HighVisuals condition. The post-hoc analysis indicated significant differences between
+HumanAvatar and Shoes (p=0.008) and between HumanAvatar and InvisibleBody (p=0.023).
+Actual jumping distance. An RM-ANOVA revealed a significant main effect of SRs (F(2, 28)=5.83, p=
+0.008, η2=0.294). Post-hoc comparisons indicated that InvisibleBody had a signi fi cantly longer actual
+jumping distance than Shoes (p=0.028) and HumanAvatar (p=0.007). The actual jumping distances in
+LowVisuals VE were significantly smaller than the expected target distance (0.8m), with InvisibleBody:
+0.113, t(14)= 3.46, p=0.004; Shoes: 0.155, t(14)= 5.02, p<0.001; and HumanAvatar: 0.150, t(14)=
+4.64, p<0.001.
+Heart rate intensity. No significant interaction effect was found between VE and SRs. No significant
+main effect of VE or SR was found, either.
+Detection thresholds for gains. Figure 6 shows the collected responses to translation gains and fitted
+psychometric function curves under the test conditions. The x-axis indicates the translation gain values and
+the y-axis indicates the probability of choosing the answer "longer" in pseudo-2 AFC tasks. For each gain
+value, the dots and corresponding bars indicate the mean values and the standard errors of corresponding
+response possibilities. Detection thresholds are highlighted in each plot. An RM-ANOVA indicated that no
+signifi cant interaction effect was found between VE and SRs on detection thresholds. Pairwise analysis
+Figure 6 Plotted results of discrimination between virtual and physical distances for different conditions. The x-axis
+shows the applied translation gains and the y-axis shows the probability of the participants perception that they
+jumped further than in the real world. Detection thresholds corresponding to response probability of 25%, 50%, and
+75% are highlighted.
+Figure 5 Preparation time for jumping (seconds), actual jumping distance (meters), and heart rate intensity
+measurements in RDJ. The cross, the line across the box, and the dots represent the mean, the median, and the
+outliers, respectively.
+Virtual Reality & Intelligent Hardware 2021 Vol 3 Issue 6 451 469
+revealed significant differences between VE on LDT (p=0.041) and UDT (p=0.020). LDT in LowVisuals
+was significantly smaller than that in HighVisuals, whereas UDT in LowVisuals was significantly larger
+than that in HighVisuals, thus, confirming hypothesis H1. Nevertheless, no significant main effect of VE
+was found on PSE.
+No significant main effect of SRs was found on the detection thresholds. Thus, hypothesis H2 was
+rejected.
+Presence. Figure 7a shows the presence scores collected from the IPQ questionnaire. An RM-ANOVA
+showed that there was a significant main eff ect on IPQ presence between LowVisuals and HighVisuals
+with F(1, 14)=28.92, p<0.001, η2=0.674, where the presence score was significantly higher in HighVisuals
+than LowVisuals. Additionally, a signi fi cant main effect was found among the SRs (F(2, 28) =8.79, p=
+0.001, η2=0.386). Post-hoc comparisons indicated significant differences between InvisibleBody and Shoes
+(p=0.022), InvisibleBody and HumanAvatar (p=0.004), and Shoes and HumanAvatar (p=0.043).
+Embodiment. Figure 7b shows the embodiment responses gathered from the GFP questionnaire. An
+RM-ANOVA revealed a significant main effect between LowVisuals and HighVisuals with F(1, 14)=18.65,
+p=0.001, η2=0.571. A significant main effect was also found among the SRs with F(1.27, 17.75)=26.34,
+p<0.001, η2=0.653. Post-hoc pairwise comparisons revealed significant differences between each pair
+of SR conditions: InvisibleBody and Shoes (p<0.001), InvisibleBody and HumanAvatar (p<0.001),
+and Shoes and HumanAvatar (p=0.006). Embodiment was highest with HumanAvatar and lowest with
+InvisibleBody.
+Intrinsic motivation. Figure 7c and 7d shows the enjoyment and tension responses gathered from the
+IMI questionnaire. An RM-ANOVA indicated that VE (F(1, 14)=10.90, p=0.005, η2=0.483) had a signifi
+cant main effect on IMI Tension. Regarding the responses to IMI enjoyment, significant main effects of VE
+(F(1, 14)=25.34, p<0.001, η2=0.644) and SRs (F(2, 28)=12.54, p<0.001, η2=0.472) were found. Post-hoc
+Figure 7 Subjective measurements of RDJ. (a) Presence[45]; (b) Embodiment[49]; (c) IMI Tension; (d) IMI Enjoyment[58].
+The cross, the line across the box, and the dots represent the mean, the median, and the outliers, respectively.
+pairwise comparisons revealed signifi cant diff erences between InvisibleBody and Shoes (p=0.002), and
+between InvisibleBody and HumanAvatar (p=0.001). These results con fi rmed hypothesis H3: the IMI
+enjoyment score in HighVisuals was significantly higher than in LowVisuals, and was the highest with
+HumanAvatar among SRs. Table 1 lists the RM-ANOVA results of subjective measures.
+Cybersickness. Table 2 lists the average total severity ratings with standard deviations of the SSQ data.
+A Wilcoxon signed-rank test revealed that the SSQ scores were significantly higher after all cases of the
+VR experiences: InvisibleBody under LowVisuals VE (p=0.003), Shoes under LowVisuals VE (p=0.005),
+HumanAvatar under LowVisuals VE (p=0.002), InvisibleBody under HighVisuals VE (p=0.014), Shoes
+under HighVisuals VE (p=0.005), and HumanAvatar under HighVisuals VE (p=0.006).
+5.3 Correlation report
+To find possible correlations between physical performance data and subjective responses to
+questionnaires, Pearson product-moment correlation analysis was conducted. The results revealed a weak
+positive correlation between the preparation time for jumping and ownership (r=0.251, p=0.017). A weak
+positive correlation was found between the actual jumping distance and presence (r=0.281, p=0.007).
+There was also a weak positive correlation between the preparation time for jumping and UDT (r=0.263, p
+=0.012).
+From our observations, the participants usually took some time to look around in
+the environment and prepare before jumping. The actual jumping distance with InvisibleBody was
+significantly longer than those with Shoes (+0.061m) and HumanAvatar (+0.074m) in both LowVisuals
+and HighVisuals VEs. Compared with the target jumping distance (0.8m), the actual jumping distance with
+LowVisuals was significantly shorter ( 0.139m), which could be evidence for the potential use of RDJ.
+Detection thresholds for gains. Considering the effects of VE and SRs on the detection threshold for
+horizontal translation gains in RDJ, the user study results indicated that the LDTs varied from 0.362 to
+0.692, PSEs varied from 0.898 to 0.972, and UDTs varied from 1.212 to 1.590. LDT with LowVisuals was
+significantly smaller than that with HighVisuals, whereas the UDT with LowVisuals was significantly
+larger than that with HighVisuals, regardless of which SR type was used. The results of our experiment
+were consistent with the open comments collected from the participants. Thirteen participants became
+more sensitive to the manipulations in jumping distances, and considered it easier to identify different
+manipulated jumping distances in a VE with HighVisuals than with LowVisuals because the former offered
+more visual cues to infer the jumping distance (texture of the ground, stones, trees, etc.). Similar to the
+findings of Kruse et al. [16], in the detected thresholds of RDW gains, our results confirmed that LDT with
+LowVisuals was significantly smaller than that with HighVisuals. Moreover, our results revealed a larger
+UDT value with LowVisuals than with HighVisuals, which was not established in previous research. This
+result suggests that a larger translation gain can be adopted without users noticing under the condition of
+VE with low visual cues, which is an important factor for designing new redirection VR projects. From the
+user study results, none of the detection thresholds were significantly different under SR conditions. This
+indicated that SR conditions have little impact on VR users' perceptions in RDJ, which means that VR
+designers do not have to spend much effort considering the effect of different SRs on redirection
+techniques. However, studying combined rotation and curvature manipulations in jumping with SR
+conditions is worthwhile to further validate this conclusion. The collected comments on how the SRs
+influenced the participants' choices in the pseudo-2 AFC task were also mixed. Four participants confirmed
+that HumanAvatar was the best because it was more natural to see their full body. Two participants
+commented that HumanAvatar and Shoes were at the same assistance level, both better than InvisibleBody,
+because they relied mainly on the virtual feet model to estimate the landing positions. For participants who
+leveraged the perceived speed of motion as the main cue for distance estimation, although the comments
+on the types of SRs were not significantly different, the HumanAvatar could introduce visual occlusion,
+and the shadow of the body might also have a side eff ect on their perception. Differing from previous
+findings in RDW where the threshold for the range of translation gains is smaller when the user can see his
+or her visual feet[16], our results in RDJ did not reveal such differences among SR types. The possible reason
+was that the walking and one-time two-legged takeoff jumping were two different action modes. Inferring
+translation gains might be easier with gait perception during walking[1] than with two-legged takeoff
+jumping.
+Other subjective measures. According to the user study results, the presence scores with HighVisuals
+were significantly higher (+1.419) than those with LowVisuals for all SRs. Furthermore, the presence score
+with HumanAvatar was the highest among all SRs. The embodiment sense of HumanAvatar was signifi
+cantly higher than that of Invisible Body (+2.527) and Shoes (+1.288). In addition, the embodiment was
+higher with HighVisuals than that with LowVisuals. The perceived tension during jumping was only
+significantly different in VE, where a lower visual richness had a higher tension value. The perceived
+enjoyment scores were significantly different between the two VEs and for different SRs. We observed
+increased enjoyment when more visual cues were presented. These results suggested higher presence,
+enjoyment, and lower tension may be the reasons why it is more difficult for participants to notice jumping
+manipulation in a VE with high visual cues. Significant increases in cybersickness were perceived by
+participants for all the conditions.
+Correlations were found between objective performance and subjective perception measures. First, a
+positive correlation was found between the preparation time and the embodiment ownership. Second, the
+actual jumping distance was positively correlated to the presence. Finally, a positive correlation was found
+between the UDT for gains and the preparation time for jumping. A sound explanation was that if a
+participant made a long preparation for a jump, he or she might expect a good jump performance with a
+longer jumping distance, leading to an increased UDT.
+Open comments. Seven participants commented that larger gains made them feel relaxed whereas
+smaller gains made them feel resistant during jumping. Two participants remembered that when they
+jumped from the grid center in LowVisuals VE, the shadow of HumanAvatar was helpful for jumping
+distance inference by observing the relative position between the shadow and the frontal horizontal line.
+Nine participants complained about the HMD weight and its low air permeability, which affected the
+virtual experience. Nonetheless, it did not influence the distance perception.
+Recommendations. From the results, we deduce design recommendations regarding VEs and SRs for
+RDJ locomotion in VR.
+• R1. To make better use of the physical space, we suggest presenting fewer visual cues to make
+inferring distance manipulation difficult (e.g., the grid scene in our experiment).
+• R2. Increasing the preparation time could be a method to increase the UDT in high-visual-richness
+VEs. One possible solution consists of presenting a full virtual body to users along with the evidence of a
+weak positive correlation between them and the virtual body.
+• R3. Based on the actual jumping distance results, avoid using an invisible body representation in a high
+visual cue VE because this might lead to an actual jumping distance close to the expected one, thus,
+suppressing the effect of RDJ.
+Limitations. We clarified that under epidemic prevention and control regulations, we only recruited 15
+subjects to participate in our experiment, and did not speci fi cally consider the effect of gender[27]. In
+addition, different durations of break time across participants may affect the measurement of heart rates.
+We acknowledge that although the pseudo-2AFC task was designed to reduce bias in participants'
+responses, it still induced bias. For example, although we randomly assigned the "Longer" and "Shorter"
+answers to the left or right controllers counter-balanced in random order, subjects tended to respond to
+"Longer" in the task. Inattention bias could occur as well, considering the long experiment with many trials.
+In this paper, we have presented a 2 (VE: low and high visual richness) × 3 (SR: invisible, shoe, human-
+like avatar) user study to investigate the effects of VEs and SRs on physical performance and subjective
+perception in redirected forward jumping. While our findings in RDJ were partially consistent with
+existing RDW gain threshold estimation work regarding the influence of the visual richness in VE[16], we
+hardly found signi fi cant di ff erences of gain thresholds among di ff erent SRs. These results revealed
+different mechanisms of how SR visualizations affect the distance perception between walking and one-
+time two-legged takeoff jumping. We have also discussed the correlations between the performance and
+perception data, and potential strategies to make more use of the physical space.
+Virtual Reality & Intelligent Hardware 2021 Vol 3 Issue 6 451 469
+Future work could include exploring gains for vertical or rotational jumps, which were not investigated
+in our experiment. In addition, comparisons between the walking- and jumping-based redirection
+techniques could be worth investigating to determine differences in effect. Finally, it might be interesting
+to test more flexible locomotion actions (e.g., multiple jumps) than the one-time two-legged takeoff jump.
+This work likely requires robust jumping phase-detection algorithms.
+Declaration of competing interest
+We declare that we have no conflict of interest.

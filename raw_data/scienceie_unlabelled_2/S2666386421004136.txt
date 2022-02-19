@@ -1,0 +1,512 @@
+Extensive efforts are currently underway to develop safe and cost-
+effective electrolytes for large-scale energy storage. In this regard,
+water-based electrolytes may be an attractive option, but their nar-
+row electrochemical stability window hinders their realization.
+Although highly concentrated fluorinated electrolytes have been
+shown to be highly effective in suppression of water splitting,
+enabling significant widening of the applied potential range, they uti-
+lize expensive salts (e.g., lithium bis(trifluoromethane sulfonyl) imide
+[LiTFSI] or lithium trifluoromethane sulfonate [LiOTf]); hence, they
+cannot be considered for practical applications. Here, we demon-
+strate a cost-effective aqueous electrolyte solution combining 14 M
+LiCl and 4 M CsCl that allows stable operation of a 2.15-V battery
+comprising a TiO2 anode and LiMn2O4 cathode. Addition of CsCl to
+the electrolyte plays a double role in system stabilization: the added
+chloride anions interact with the free water molecules, whereas the
+chaotropic cesium cations adsorb at the electrified interface, prevent-
+ing hydrogen formation.
+INTRODUCTION
+The alarming global warming trends and their negative consequences on the world
+economy and population health require a drastic reduction in CO2 emissions. Being
+one of the major sources of greenhouses gas pollution, fossil fuel-based electricity
+generation technologies have to be replaced with environmentally friendly energy
+sources like sun or wind. Despite the significant improvement in the electricity pro-
+duction efficiency of these systems during the last decade, their intermittent nature,
+resulting in a fluctuating power supply, poses numerous challenges related to their
+integration into the existing grids designed to comply with less or non-variable en-
+ergy sources. In the search for viable and cost-effective solutions for large-scale en-
+ergy storage, effective rechargeable batteries are a natural solution: batteries may
+be relatively cheap, and they can be applied anywhere and can be easily designed
+and adjusted to customers’ needs. Because of their high capacity, energy density,
+and cycle life, lithium (Li)-ion battery systems have become the leading battery tech-
+nology. However, conventional Li-ion batteries are based on highly flammable
+organic solvents such as dimethyl carbonate and diethyl carbonate. Considering
+the massive electrolyte solution quantities required for large-scale energy storage
+by non-aqueous rechargeable batteries, these conventional electrolyte solutions
+pose severe safety concerns. In this context, water-based electrolyte solutions in
+batteries may provide optimal options in terms of safety and cost. For many years,
+aqueous electrolytes were considered impractical for rocking chair-type recharge-
+able batteries because of the limited potential window of water, which ranges
+between 1.23 V (the thermodynamic stability limit) and 1.5 V in dilute electrolyte
+solutions.1 For a decade and a half after commercialization of Li-ion batteries
+(LIBs) in 1990, research activity regarding development of aqueous batteries re-
+mained marginal compared with aprotic Li-ion systems. A substantial breakthrough
+toward practical aqueous LIBs was achieved recently by Suo et al.,2 who demon-
+strated significant expansion of the electrochemical stability window (ESW) of
+aqueous systems to 3.0 V by using a highly concentrated Li bis(trifluoromethane sul-
+fonyl) imide (LiTFSI) electrolyte. The improved ESW was attributed to the reduced
+electrochemical activity of water in such a concentrated electrolyte and formation
+of an effective passivation layer on the negative electrode by TFSI reduction, which
+suppresses hydrogen evolution.3 The increased Li+ concentration and electrochem-
+ical activity resulted in modulation of the cathodic intercalation potential toward
+more positive potential values beyond the hydrogen evolution voltage range.4
+This work paved the way for development of other aqueous systems with various
+saturated or nearly saturated electrolytes, enabling stable operation of LIBs and
+other mono- and multivalent ion batteries.5,6 To date, LiTFSI remains the state-of-
+the-art electrolyte solution for aquoeous lithium batteries (ALBs), providing the high-
+est potential window among several available water-soluble Li salts. A highly
+concentrated (21 M) LiTFSI electrolyte enabled 1.8-V cells based on a Mo6S8 (Cher-
+vel phase) anode and LiMn2O4 (LMO) cathode.
+Higher voltage—2.1-V average potential—was obtained by mixing LiTFSI with 7 M Li
+trifluoromethane sulfonate (LiOTf). This electrolyte, termed ‘‘water in bi-salt,’’ provided
+an additional wideningof the ESW intomore negative potentials, enabling stable oper-
+ation of a full cell with a TiO2 anode and LMO cathode. Although most of the relevant
+LIB cathodes operate within the ESW (0–1.3 V in the Ag/AgCl scale) far below the O2
+formation potential, only a few anodes can work stably in aqueous electrolyte solutions
+because of H2 evolution, which occurs prior to the redox potential of most typical LIB
+anodes. Therefore, increasing the cell voltage requires development of low-voltage an-
+odes. In search of realistic options, the working potential of TiO2 (+1.78 V versus Li, cor-
+responding to 1.54 V in the Ag/AgCl scale) appears to be located at the maximal
+negative vertex of the ESW. Notably, development of aqueous Li4Ti5O12 anodes,
+defined by amore negative operation potential of +1.5 V (versus Li) was enabled by us-
+ing a combined organic and aqueous electrolyte system, comprising LiTFSI salt in
+mixed dimethyl carbonate (DMC):H2O solution.7 Despite the significant progress ob-
+tainedby usinghighly concentratedLiTFSI, its practical application for ALBs is doubtful,
+mostly because of its extremely high production costs. Using such an expensive salt
+cannot be considered a realistic option, particularly for large-scale energy storage
+where huge amounts of materials are required.
+Here we present a practical implementation of a cost-effective mixed electrolyte
+solution containing 14 M LiCl and 4 M CsCl. Apart from the significantly lower
+cost, this solution enables assembly of a 2.15-V cell comprising a TiO2 anode
+and LMO cathode, which showed better performance in terms of energy density,
+efficiency, and cyclability compared with a similar system based on concentrated
+LiTFSI. This improved performance is attributed to reduced hydrogen activity
+because the presence of Cl ions and formation of an electrical double layer con-
+taining hydrophobic Cs+ ions on the anode surface. The stability of the anodes was
+improved further by careful optimization of the cell ingredients, including current
+collector selection, particle size, and electrode wettability. The proposed electro-
+lyte systems open new directions toward formulation of new and cost-effective
+Figure 1. The dependence of the ESW on current collector type and electrolyte solution
+composition
+(A) CVs of TiO2 anodes coated on grafoil collected at a scan rate of 10 mV/s.
+(B) ESW of neat titanium and grafoil current collectors tested by CV at 0.5 mV/s in saturated LiCl solution.
+aqueous electrolyte solutions for safe and sustainable secondary batteries for
+large-scale energy storage.RESULTS AND DISCUSSION
+The influence of current collector and electrolyte composition on the potential
+stability window
+The relatively low operating voltage of the TiO2 anode (about 1.55 V versus Li or
+1.69 V versus Ag/AgCl in electrolytes containing 1 M Li) entails not only utilization
+of a suitable electrolyte solution possessing high water splitting overpotential but
+also careful selection of an appropriate current collector with low catalytic activity to-
+ward the hydrogen evolution reaction (HER). Typically, for aqueous battery applica-
+tions, titanium,8 stainless steel,9 or aluminum10 foils are adopted as current collectors
+because of their good corrosion resistivity and non-catalytic character. However, the
+highly corrosive nature of the concentrated chloride solution limits the available op-
+tions, and among the metal current collectors, only Ti can be used without severe
+corrosion. However, as can be seen in Figure 1A, the cathodic stability of Ti in
+concentrated LiCl electrolyte solution is restricted to 1.0 V, where, below this po-
+tential, a sharp decrease in the reduction current attributed to H2 formation was
+observed. For this reason, it cannot be applied as a current collector for TiO2, which
+has a more negative potential window. In search of an electrochemically stable cur-
+rent collector, the use of graphite foil (grafoil) was evaluated as an electrochemically
+stable current collector in a saturated LiCl solution. As shown in Figure 1A, an
+extended negative range up to 1.3 V versus Ag/AgCl was obtained for neat grafoil
+film. Encouraged by this stability, the electrochemical performance of TiO2-coated
+grafoil films was evaluated in a concentrated LiCl electrolyte solution. Its advantage
+over the dilute (1 M) LiCl and 5 M LiTFSI electrolytes can be seen in Figure 1B. The
+high Li concentration in the 14 M LiCl solution results in a significant positive shift of
+the redox potential by more than 300 mV compared with the 1 M solution and by
+about 100 mV compared with 5 M LiTFSI. The high water activity in the dilute LiCl
+solution led to pronounced hydrogen formation, expressed by a steep decrease in
+the current at the negative vertex. Interestingly, at this low concentration, one can
+observe a second oxidation peak spread over a large potential range (1.1 to
+–0.4 V), which can be ascribed to de-insertion of protons generated in the low-
+voltage regimen.11Cell Reports Physical Science 3, 100688, January 19, 2022 3
+Figure 2. The effect of Cs addition as reflected by CV measurements and Raman spectra
+(A) ESW window tested by CV measurements at 0.5 mV/s for saturated LiCl and mixed Li-Cs
+electrolytes.
+(B) Raman spectra collected for various Cs and Li chloride concentrations.
+The role of CsCl in system stabilization
+Raman OH stretch band spectra collected for 1 M LiCl, 4.5 M CsCl, 14 M LiCl, and
+mixed Li-Cs chloride (14 M + 4 M) electrolytes are shown in Figure 2B. Typically,
+OH Raman spectra of water or dilute aqueous solutions can be deconvoluted into
+five main peaks (Figure S1), where the low-frequency peaks (at approximately
+3,074 and 3,233 cm1) are related to symmetric OH vibrations of tetrahedrally
+arranged water (i.e., double donor-double acceptor configuration). The bands at
+3,430 and 3,565 cm1 are assigned to symmetric OH vibrations arranged in single
+and double donor-single acceptor configurations, respectively. The last peak, posi-
+tioned at 3,633 cm1, is attributed to the OH stretching mode of bulk-like water mol-
+cules.12,13 As can be seen in Figure 2B, a wide OH spectrum containing all of the
+vibrational modes was obtained for the 1 M LiCl solution. A pronounced decrease
+in the symmetric OH vibration peak, expressed by spectral narrowing toward high
+frequencies, was observed for the 4 M CsCl solution because of the increased salt
+concentration, which results in rearrangement of the water and formation of asym-
+metric H/Cl bonds. Further red-shifting was recognized in saturated LiCl andmixed
+LiCl-CsCl solutions; for the latter solution, additional narrowing of the high-fre-
+quency regimen related to the bulk-like water vibrational mode was observed. As
+described earlier, this behavior is ascribed to the increased Cl concentration, which
+results in disruption of the hydrogen bonding network by replacing O-H/O with
+O-H/Cl and formation of ionic clusters.14–16 The dissolution of CsCl into the satu-
+rated LiCl solution increases the amount of hydrogen chloride bonds in the solution
+and further reduces the activity of the water and, hence, the hydrogen evolution.
+The obtained Raman spectra suggest that the major factor contributing to the
+increased HER overpotential is the addition of Cl ions, which interact with the avail-
+able hydrogen in the electrolyte. Nevertheless, it seems that further suppression of
+water splitting is provided by the presence of Cs+ in the electrolyte. Adsorption of
+cesium cations upon negative polarization results in formation of a Cs+-containing
+electrical double layer on the electrode/electrolyte interface, which blocks water ac-
+cess to the electrode surface. As found by Huang et al.,17 adsorption of chaotropic
+ions (i.e., water structure breakers), and particularly Cs+ ions, which are considered
+highly chaotropic cations, on the electrified interface results in expulsion of interfa-
+cial water molecules and reduction of the hydrogen bonding network on the elec-
+trode surface. As is well established, formation of H2 occurs via multiple reaction4 Cell Reports Physical Science 3, 100688, January 19, 2022
+Figure 3. MD simulations of saturated LiCl and mixed LiCl + CsCl solutions
+(A and B) Representative systems configurations from MD simulations of (A) 14 M LiCl and (B) 14 M
+LiCl + 4 M CsCl. The Li+, Cl, and Cs+ ions are colored in red, blue, and yellow, respectively.
+Separation to regions with bulk water and regions with a high density of ions are observed for both
+systems, where Cs+ ions are also present in the bulk water regions.
+(B–E) Average RDFs, g(r), of the water oxygens around Li+ and Cl ions (C and D, respectively) and
+around water oxygens (E).
+RDFs for 14 M LiCl systems are plotted in red, and RDFs for 14 M LiCl + 4 M CsCl systems are plotted
+in blue.
+steps involving electrochemical hydrogen adsorption on the electrode surface
+(Volmer step), followed by interaction of the adsorbed hydrogen with solvated pro-
+ton (Heyrovský reaction). The presence of Cs+ ions on the surface and the lack of
+available protons on the electrode surface increase the energy barrier for the Volmer
+and Heyrovský steps, increasing the overpotential for H2 formation. A similar ten-
+dency was found by Dubois et al.,18 who demonstrated suppressed HER activity
+by addition of chaotropic tetrabutylammonium ions into an aqueous LiCl electrolyte.
+Further understanding of the effect of CsCl on the solution structure and the ESW of
+the electrolyte was obtained in the present work by classical molecular dynamics
+(MD) simulations of 14 M LiCl and 14 M LiCl + 4 M CsCl electrolytes (for more details
+regarding the MD simulations and force field parameterization, see the supple-
+mental information). The MD simulations we performed reveal regions with bulk-
+like water as well as regions with ionic networks in saturated LiCl and saturated
+LiCl + 4 M CsCl (see Figures 3A and 3B, respectively). Adding 4 M CsCl reduces
+the number of bulk-like water molecules. This effect is shown in Figures 3A and
+3B; the LiCl electrolyte system has a greater number of bulk-like water molecules,
+in good agreement with the presented Raman spectra. The bulk-like water mole-
+cules tend to be arranged in partial tetrahedral networks, forming nanometric water
+channels that are kinetically favorable for Li-ion transport.19 Therefore, because
+movement of water through these channels is preferable, the amount of water inCell Reports Physical Science 3, 100688, January 19, 2022 5
+the vicinity of the electrode surface is expected to increase with the channel dimen-
+sions. In contrast, much narrower water channels were observed in simulations when
+CsCl ions were added to the solution. As can be seen in Figure 3B, the existing water
+channels also contain Cs+ ions, which may diffuse through to the electrode surface
+and suppress H adsorption, as discussed earlier.
+The average radial distribution functions (RDFs), g(r), of the water oxygens around
+Li+ ions, around Cl ions, and around water oxygens for 14 M LiCl (red) and 14 M
+LiCl + 4 M CsCl (blue) are presented in Figures 3C–3E, respectively. Inspection of
+the RDFs reveals that there are less ordered solvation shells with less distinct peaks
+in the solutions with CsCl, which can be ascribed to the chaotropic nature of Cs+
+ions. The number of water molecules in the first solvation shell of Li + ions was
+reduced from 2.4 to 1.3 with addition of CsCl to the electrolyte solution. The average
+coordination number of water around Li+ in the electrolyte solution with CsCl is only
+a third of the observed coordination number in diluted LiCl solutions, in which one
+Li+ is coordinated with 4 H2O molecules.20 This implies that the Li+ ions are sur-
+rounded by several ions, mostly Cl, in their first shell because of the high density
+of ions. The number of water molecules is also reduced slightly around Cl ions
+from 4.6 to 4.4, whereas the coordination number of water around water does not
+change significantly. Considering a molar ratio of 2.01 water per Cl in the LiCl-
+CsCl electrolyte solutions versus 2.78 water per Cl in the LiCl solution, one should
+expect a pronounced reduction in Cl-O interactions after CsCl addition, similar to
+Li-O. Nevertheless, much smaller differences were found in the Cl-O RDF, which
+may imply that addition of Cl ions attracts water molecules from the Li+ ion solva-
+tion shells toward the Cl anions.Electrochemical performance of the TiO2 anode in mixed LiCl + CsCl
+electrolyte solution
+Following these conclusions, the electrochemical performance of the TiO2 anode
+was evaluated for the saturated LiCl and mixed Li-Cs electrolyte solutions in half-
+cell configuration using an over-capacitive activated carbon cloth and Ag/AgCl as
+the counter and reference electrode, respectively. As presented in Figure 4, similar
+capacity values of 80 and 68 mAh/g were observed at high charging rates of 3 and 5
+C (1 C corresponds to 335mAh/g, the theoretical capacity of TiO2). A still better fara-
+daic efficiency of 99.4% and 98.8% was obtained in the mixed solution compared
+with 97.9% and 98.4%, which was measured in the neat LiCl electrolyte, as shown
+in Figures 4A and 4C, respectively. The influence of the mixed solution is relatively
+small because the extent of parasitic reactions is expected to decrease at higher
+charging rates because of kinetic limitations on H2 formation. More significant differ-
+ences were found at lower charging rates; greater charging capacities of 109.7 and
+91.6 mAh/g with efficiencies of 97.3% and 99.4% were measured for 1 and 2 C,
+respectively (Figures 4A and 4B). As can be seen in Figures 4C and 4D, lower capac-
+ity and efficiency values of 99.4 mAh/g (94.2%) and 84.4 mAh/g (96.7%) were
+obtained in neat concentrated LiCl solution. Even these relatively low efficiencies
+obtained for LiCl salt (and a fortiori the high values of the mixed solution) are still
+higher than those obtained for the TiO2 anode in TFSI21,22 of acetate-based23 elec-
+trolytes. Moreover, the relatively high conductivity of the LiCl and Li-Cs solution of
+31 mS/cm allows application of relatively high charging rates while maintaining
+high capacity. This conductivity is significantly higher compared with previous wa-
+ter-in-bi-salt electrolytes comprising 21 M LiTFSI + 7 M lithium trifluoromethane sul-
+fonate (LiOTf) or 32 M potassium acetate (KOAc) -8 M lithium acetate (LiOAc), which
+showed 6.5 and 5.3 mS/cm, respectively.6 Cell Reports Physical Science 3, 100688, January 19, 2022
+Figure 4. Electrochemical performance of saturated LiCl and mixed LiCl + CsCl solutions
+(A–D) Capacity and corresponding efficiency values and GCD profiles obtained for the TiO2 anode at different C rates for the (A and B) mixed Li-Cs and
+(C and D) neat LiCl electrolyte solutions.
+After finding an optimized electrolyte solution, the influence of particle size on anode
+performance was evaluated further. For this purpose, nanometric (50-nm average
+size) and micrometric (3-mm average size) TiO2 particles were chosen, as shown in Fig-
+ures 5A and 5B, respectively. As indicated by XRD analyses, presented in Figure S2,
+both TiO2 particles show typical spectra related to pure tetragonal anatase phase
+(JCPDS card number: 00-004-0477). In general, use of nanosized particles is advanta-
+geous for fast kinetics because of their short diffusion length and faster electronic trans-
+port. Nanometric particles are also beneficial for high-strain electrodes such as Si orGa.
+However, the large surface area obtainedby using nanoscaledparticles facilitates para-
+sitic reactions and accelerates undesirable catalytic reactions, such as oxygen or
+hydrogen formation. In addition, the low tap density associated with the nanoparticles
+resulted in a low volumetric energy density, which may be more important than the
+gravimetric energy density in many practical applications.24,25
+A comparison of the cyclic voltammograms (CVs) and galvanostatic charge-
+discharge (GCD) profiles of the nano- and micro-sized TiO2 anodes is presented in
+Figure 6. Similar Li+ insertion/extraction voltages, defined by minimum/maximum
+peak current intensity at 1.3 and 0.9 V, respectively (versus Ag/AgCl), were
+observed at 10 mV/s for both anodes. However, although a stable response duringCell Reports Physical Science 3, 100688, January 19, 2022 7
+Figure 5. SEM images of nano and micro-sized TiO2 particles
+(A and B) SEM images of (A) nano-sized (inset shows an enlarged view of the nanoparticles) and (B)
+micro-sized TiO2-based electrodes.
+the initial cycles was obtained for the micron-sized TiO2 anode, rapid degradation
+was detected for the nano-sized TiO2. This trend is well reflected by the GCD mea-
+surements conducted at a 1 C rate (based on the theoretical capacity of TiO2 of 335
+mAh/g) for both electrodes, as shown in Figures 6C and 6D, respectively. A high-ca-
+pacity value of 110 mAh/g and high Coulombic efficiency of more than 97% without
+any capacity fading were obtained during the initial 10 cycles with the anode with the
+microparticles. In contrast, a lower capacity of 90 mAh/g followed by a quick capac-
+ity loss with lower efficiency (94%) was obtained with the anode with the nanopar-
+ticles. This system presented significantly higher voltage hysteresis than the micro-
+metric anode. Considering the low operation voltage of TiO2, these dramatic
+differences can be attributed to the higher surface area of the nanoparticles, which
+induces nucleation and growth of nanometer-scale hydrogen bubbles that remain
+pinned to the surface of the nanoparticles. Therefore, the connection between the
+adjacent nano-sized particles provides a thermodynamically favorable interface for
+initial bubble nucleation. Such bubble formation blocks ion conduction pathways
+and leads to increased electrode resistance and voltage hysteresis.26 Further optimi-
+zation of the anode performance was obtained by improving the wettability of the
+electrode surface by application of Ar/O2 plasma treatment. As can be seen in Fig-
+ure S3A, poor surface wettability, expressed by the high contact angle of the Li-Cs
+solution on the TiO2 surface, was obtained before the plasma treatment, whereas
+an excellent wettability was maintained for the plasma-treated sample (Figure S3B).
+The effect of the improved surface wettability on the anode performance is pre-
+sented in Figures S3A and S3B, which show the CV responses of plasma-treated
+and untreated TiO2 electrodes, respectively. A maximal capacity value was obtained
+within several cycles for the treated films, whereas a gradual capacity increase was
+recorded for the untreated anodes, which presented lower capacity values even
+after 100 cycles. Such behavior is attributed to the poor surface wettability, which
+prevents effective electrolyte impregnation into the electrode bulk because of the
+hydrophobicity of the particles.27 Because the effect of the trapped nanobubbles
+and the electrode wettability on the performance is not well described in the litera-
+ture, especially for aqueous systems, these findings provide useful information for
+further studies in which aqueous electrodes are developed.
+Electrochemical characterization of full cells comprising an LMO cathode and
+TiO2 anode
+Encouraged by the improved performance of the optimized TiO2 anode in themixed
+Li-Cl solution, we looked for a suitable cathode that can work stably in the potential
+window. There are three practical options for positive electrodes that can be8 Cell Reports Physical Science 3, 100688, January 19, 2022
+Figure 6. The influence of particles size on electrochemical performance of the anode
+(A–D) CVs of (A) nano-TiO2 and (B) micro-TiO2 electrodes collected in mixed Li-Cs electrolyte at 10 mV/s over initial cycles and (C and D) respective GCD
+profiles recorded at a 1 C rate during 10 cycles.
+coupled with the TiO2 anode: V2O5, LiFePO4 (LFP), and LMO. CVs of the three cath-
+odes (measured at 1 mV/s) are shown in Figure 7. For clarification, the CV response
+of TiO2 and the expected full cell voltages are presented as well. The maximal po-
+tential window of 2.2 V was maintained for the LMO|TiO2 system. Because of Cl2
+formation, only the first redox couple of LMO can be obtained. Application of poten-
+tials higher than 1.25 V results in a mixed response involving Li extraction and Cl2
+evolution, as indicated by the dashed orange line in Figure 7. Nevertheless, a stable
+response can be obtained by limiting the potential range below 1.25 V, as demon-
+strated in the following section.
+Focusing on the highest voltage system among the options presented above, the
+performance of the full cell, comprising a TiO2 anode and LMO cathode, was eval-
+uated. The GCD of the full cell is shown in Figure 8. A high capacity value of 97
+mAh/g (based on the anode mass) and an average cell potential of 2.15 V were
+obtained at a 0.5 C rate. Higher charging rates of 1–5 C resulted in lower capacity
+values and higher voltage hysteresis, whereas at 5 C, a capacity of 57 mA/g was
+maintained. However, as shown in Figure 8B, high-efficiency values ranging be-
+tween 96.8% in 0.5 C to 99.3% in 5 C were measured, indicating only minor to
+negligible contribution of the gas evolution reactions (from the negative and pos-
+itive potential vertex) on the capacity. Furthermore, an impressive long-term
+cyclability was maintained over 1,500 GCD cycles conducted at a 5 C rate (Fig-
+ure 8C). More than 87% of the initial capacity was still preserved at the last cycle.
+To the best of our knowledge, such a high cycling number has never been re-
+ported for an aqueous TiO2|LMO system.Cell Reports Physical Science 3, 100688, January 19, 2022 9
+Figure 7. CVs of potential cathodes compatible with the voltage range of the mixed electrolyte
+Shown are CVs recorded at a scan rate of 1 mV/s for the TiO2 anode (green) and various cathodes:
+LiMn2O4 (LMO; orange), LiFePO4 (LFP; pink), and V2O5 (black). The dashed orange line represents
+potential Cl2 evolution with LMO.
+Because these measurements were conducted in the T cell configuration, which is
+suitable for lab-level applications, a pouch cell comprising LMO|TiO2 in LiCl-CsCl
+electrolyte was assembled. As shown in Figure S4A, similar capacity values were
+observed from the GCD profiles collected at various C rates. The long-term stability
+performance of the pouch cells recorded at 1 C is presented in Figure S4B. After 500
+cycles, a high capacity value of 80 mAh/g was still maintained.
+The self-discharge performance of the assembled pouch cells is presented in Fig-
+ure S5. After 12 h at open-circuit voltage, a capacity retention of 66% was obtained.
+Although this behavior is far from being satisfactory for practical applications, further
+optimization of the system, including electrolyte systems optimization, cell engi-
+neering, and electrode modifications, may dramatically suppress this spontaneous
+current leakage.28
+A comparison of the performance of the presented system with other reported ALBs
+is given in Table S1. Our system provided a performance higher than or comparable
+with other ALB systems in terms of capacity and efficiency values and superior long-
+term stability.
+This work presents a new cost-effective aqueous electrolyte solution comprising 14M
+LiCl + 4 M CsCl. This solution provides stable behavior of a TiO2 anode without any
+significant parasitic contributions. Because costly LiTFSI-based electrolytes are typi-
+cally considered the preferable solution for ALBs, our findings propose an alternative
+practical option that shows superior electrochemical performance of a TiO2 anode
+and a full TiO2|LMO cell as well. Although a commonly accepted reason for the
+improved stability in highly concentrated aqueous electrolytes relates to formation
+of anodic passivation films,29 which increases the water splitting overpotential, the
+lack of organic SEI-forming species in the Li-Cs electrolyte demand an alternative
+explanation for the superior system stability. Based on the presented results it is
+possible to ascribe this behavior to three major factors. First, the high Li concentra-
+tion in the LiCl electrolyte (more than 2.5 times over the commonly used LiTFSI) shifts
+the Li+ insertion potential to more positive values, away from the HER. Second, addi-
+tion of Cl ions to the electrolyte results in an increase in the number of Cl/Hbonds,10 Cell Reports Physical Science 3, 100688, January 19, 2022
+Figure 8. The electrochemical performance of the TiO2|LMO cell in the mixed Li-Cs electrolyte solution
+(A) GCD profiles of TiO2|LMO at different C rates.
+(B) Capacity and efficiency values recorded for each charging rate.
+(C) Full cell cycling performance recorded over 1,500 cycles.
+which further reduces the hydrogen activity. Third, the presence of Cs+ ions in the so-
+lution acts as a protective double layer that blocks interactions between the water
+and the anode surface. In this context, the use of chaotropic ions/molecules for
+HER suppression may be an interesting direction for further development of
+advanced aqueous batteries.
+A major drawback of our developed electrolyte solution is the high Cl concentration,
+which results in a limited positive potential. Nevertheless, several cathodes can be
+stably applied as positive electrodes, and a high-voltage TiO2|LMO cell showing
+high capacity and impressive cyclability was demonstrated successfully. The work pre-
+sented here provides a highly effective strategy that combines development of new
+electrolyte solutions and optimization of electrode/electrolyte interfaces. These ap-
+proaches can be utilized for further development of cost-effective and sustainable
+aqueous batteries.
+EXPERIMENTAL PROCEDURES
+Resource availability
+Lead contact
+Further information and requests for resources should be directed to and will be ful-
+filled by the lead contact, Netanel Shpigel (nshpigel@gmail.com).Cell Reports Physical Science 3, 100688, January 19, 2022 11
+Materials availability
+Nano-sized TiO2 particles, LiCl and CsCl salts, and LFP and V2O5 powders were pur-
+chased from Sigma-Aldrich.
+Data and code availability
+All data generated and analyzed during this study are included in this article and the
+supplemental information. The paper does not report any original code.
+Electrode preparation
+Micro-sized TiO2 powder was synthesized according to the following procedure. The
+spherical micro-sized TiO2 particles were synthesized through combination of the
+modified sol-gel and solvothermal method.1 In a typical synthesis, 1 mL TiCl4
+(Sigma-Aldrich) was added dropwise to a mixed solution containing 35 mL isopropa-
+nol and 12 mL acetone (v/v) in a beaker. The mixed solution was stirred at room tem-
+perature for an additional 30 min in the beaker. This experiment was carried out in an
+argon-filled glove box. After vigorous stirring, the obtained light-yellow transparent
+reaction mixture (sol) was further transferred to a 100-mL Teflon-lined still autoclave
+and heated at 200C for 12 h. The obtained white precipitate was collected and
+washed several times with deionized water followed by ethanol to remove impurities
+and dried in a vacuum at 80C for 24 h. Finally, the white powder was calcined in air at
+400C for 4 h (2/min ramping), and crystalline spherical TiO2 particles were
+obtained.
+The electrodes were prepared bymixing the active-material particles with carbon su-
+per-p and polyvinylidene fluoride (PVDF) (mass ratio of 80:10:10) in an NMP solution.
+The homogenized slurry was coated on grafoil current collectors (0.02-mm thickness)
+and dried overnight at 80C.
+LMO particles (MTI, USA) were mixed with carbon super-p and PVDF in an NMP
+solution to obtain a mass ratio of 80:10:10. The homogenized slurry was coated
+on grafoil film and dried overnight at 80C.
+Electrochemical measurements
+All electrochemical tests were carried out using a SP-300 potentiostat/galvanostat
+(Bio-Logic, France). Three electrode cell measurements were conducted in home-
+made T cells using excessive carbon cloth and Ag/AgCl as a counter and reference
+electrode, respectively.
+Full cell assembly was done in T cell configuration and repeated in pouch cell
+configuration. Because of the limited positive working potential of the cathode,
+the electrodes were balanced at a mass ratio of 1:2.5 TiO2:LMO.
+Physical and morphological characterization
+Raman measurements were performed on HOPG electrodes using an integrated
+laser and a three-VHG-filter system (ONDAX, XLF-MICRO, 532 nm) with 50 mW of
+optical power at an excitation wavelength of lex = 532 nm. The laser output was
+routed into a lab-built microscope, and the Raman signal was fiber-coupled into
+an imaging spectrometer (Princeton Instruments, SP-2500i) with an electron micro-
+scope charge-coupled device (CCD) camera (Princeton Instruments, Pro-EM
+1600).2 The acquisition duration was around 100 s per measurement, and a grating
+with a groove density of 600 g/mm was used. At least 10 different spots were
+measured from each electrode. The baselines of the spectra were shifted for presen-
+tation purposes.12 Cell Reports Physical Science 3, 100688, January 19, 2022
+HR-scanning electron microscopy (SEM) imaging was performed using a Magellan
+XHR 400L FE scanning electron microscope (FEI) equipped with an EDS detector
+(Oxford Instruments).
+MD simulations were performed using the CHARMM1,2 and NAMD3,4 programs. Initial
+system construction, heating, and equilibration were performed using CHARMM,
+whereas NAMD was used for production runs. The initial force field parameters were
+based on standard values for Li+ ions,5 Cl ions, and Cs+ ions.6,7 To be able to treat
+the highly concentrated water-in-salt solutions, the force field parameters were fine-
+tuned by comparison with PBE0 with the aug-cc-pVTZ basis set for all atoms (except
+def2-TZVPPD for Cs+)8–13 and use of the NBFIX option in CHARMM.14
+Reference energies for ionic interactions
+The initial vdWparameters for Cs+, Li+, andCl and for the TIP3P5,15 water model were
+taken from theCHARMMtoppar_ion_waterparameter file.6Asdetailedbelow, someof
+the ion vdW parameters were modified in this work using the NBFIX strategy.14 Using
+this approach, we recalibrated the interactions of ions with their coordinating chemical
+groups without affecting the interaction of the ions with other chemical groups. The
+changes were made specifically for the systems we examined in this study, and further
+work needs to be done to examine transferability to other systems.
+The MD simulations of ‘‘water in salt’’ systems were performed with a classical force
+field (FF). These systems are highly charged; therefore, we ensured that the lack of
+polarizability terms in the FF did not affect the accuracy of the many-body binding
+interactions of ion-water clusters. The binding interactions of ionic clusters were
+tested against quantum chemistry data calculated at PBE08 with Grimme’s D3 semi-
+empirical dispersion corrections10 with basis sets of aug-cc-pVTZ for all atoms
+besides Cs+, which used the def2-TZVPPD basis set. Previous works12,13,16 bench-
+marked ionic interactions for clusters calculated at PBE0-TS11against the ‘‘gold
+standard’’ of LNO-CCSD(T). These studies showed that this DFT method is a valid
+reference for ionic interactions and that the energy difference relative to LNO-
+CCSD(T) is less than 1 kcal/mol. Comparing the binding energies of Li+ water clusters
+with 1–4 water molecules, calculated at PBE0-D3 (this work) with the corresponding
+PBE0-TS energies, presents good consistency between the methods, where the
+energetic difference is below 1 kcal/mol.
+Comparing the binding energies for theQM reference with the classical model
+results
+In this work, we chose the CHARMM36 FF for calculating the binding energies for
+Cs+-water clusters, Cl-water clusters, and Li+-water clusters.
+The cluster formation is given by the equation
+Ion + nðwaterÞ/IonðwaterÞn
+where n is the number of water molecules in the cluster. n values were changed from
+one to six for the Cs+ and Cl clusters, whereas the Li+ clusters included one to four
+water molecules. The binding energy is defined as
+EBinding = EIonðwaterÞn-- EIon-- n  Ewater
+The clusters with Cs+ ions and the clusters with Cl ions gave good accuracy
+compared with the quantum chemistry reference, with root mean square (RMS)
+errors of 1.1 kcal/mol and 2.5 kcal/mol, respectively. On the other hand, the clusters
+with Li+ with water yielded a too high error of 15.1 kcal/mol. The pairwise vdWCell Reports Physical Science 3, 100688, January 19, 2022 13
+interaction between Li+ and water oxygen was recalibrated using the NBFIX strategy
+and reduced the RMS error to 5.7 kcal/mol. We noticed that the error grows with
+cluster size, which may be related to many-body interactions.
+Because electrostatics are long-range interactions, the binding energies of ion-ion
+interaction as a function of the distance between the ions were compared with the
+quantum chemistry reference. The repulsive interactions of Cs+-Cs+, Li+-Li+, and
+Cl-Cl were checked at distances ranging between 3–15 Å and presented good ac-
+curacy compared with the quantum chemistry baseline. The attractive interactions of
+Cs+ with Cl and of Li+ with Cl were also computed at distances ranging from
+3–15 Å. Here we found that the parameters of the model underbind for the Li+-Cl
+interaction and overbind for the Cs+Cl interaction compared with the PBE0-D3
+values. Modifying the vdW pairwise interactions between Cs+ with Cl and between
+Li+ and Cl using NBFIX reduced the error at the minima from 8.9 kcal/mol to
+0.2 kcal/mol for Cs+-Cl and from 25.5 kcal/mol to 3.5 kcal/mol for Li+-Cl.MD simulation protocol
+MD simulations of three replicas of 14 M LiCl and three replicas of 14 M LiCl + 4 M
+CsCl were performed in the NPT ensemble using NAMD package 17 and the
+CHARMM36 FF.14,18,20 The parameters for the ions and water were taken from the
+toppar_ion_water parameter file, with some modifications for the pairwise vdW
+interactions, as discussed above.
+The energy of each model was minimized using ABNR, and the ions were explicitly
+solvated in a TIP3P water box with a size of 303 303 30 Å3. The three duplications of
+the two system configurations were done for statistical purposes. Specifically, the
+three replicas for each system were obtained from extensive Monte Carlo (MC) sim-
+ulations that were initiated from random ‘‘water in salt’’ configurations. All setup,
+MC, and MD stages of heating and equilibration used the CHARMM program, fol-
+lowed by 200 ns of MD simulations using the NAMD package. All models ran under
+the same conditions: a constant pressure of 1 atm and a constant temperature of 298
+K, which was controlled by a Langevin thermostat.22 The MD simulations ran under
+periodic boundary conditions with Ewald summation for the electrostatic interac-
+tions24 with a cutoff of 14.0 Å. The short-range van der Waals interactions were
+computed within a cutoff of 12.0 Å and switched off smoothly via a switching function
+in the range of 10.0–12.0 Å.SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j.xcrp.
+2021.100688.ACKNOWLEDGMENTS
+N.S. acknowledges the Israel Academy of Sciences and Humanities for financial sup-
+port. The research presented in this paper was partially funded by the Israeli Smart
+Transportation Research Center (ISTRC).

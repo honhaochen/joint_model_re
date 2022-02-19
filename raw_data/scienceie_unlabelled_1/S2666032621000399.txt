@@ -1,0 +1,1451 @@
+We consider quantum transition amplitudes, partition functions and observables for 3D spin foam models
+within 𝑆𝑈 (2) quantum group deformation symmetry, where the deformation parameter is postulated to be a
+complex fifth root of unity. By considering fermionic cycles through the foam, we couple this 𝑆𝑈 (2) quantum
+group with the same deformation of 𝑆𝑈 (3) so that we have quantum numbers linked with spacetime symmetry
+and charge gauge symmetry in the computation of observables. In this case, the amplitudes have a polytope
+interpretation. The generalization to higher-dimensional Lie groups 𝑆𝑈 (𝑁), 𝐺2 and 𝐸8 is suggested.1. Introduction
+Quantum gravity and unification physics programs, in the absence
+of more concrete experimental results, rely much on rigorous mathe-
+matical results to make progress. The well established quantum gravity
+programs of loop quantum gravity (LQG) [1] and string theory [2,3] are
+good examples of this new paradigm to find clues about the underlying
+physics at the Planck scale. For a review of the motivations and main
+results of LQG and spin foam models we recommend the book [1].
+We also recommend a review of the main elements of the higher
+dimensional Lie algebra unification program [4–8], which is closely
+related to string theory. With these results as guides, this paper will
+construct a model where quantum numbers associated to quantum
+geometry or spacetime symmetry in usual 𝑆𝑈 (2) spin foam models in
+3D are coupled with eigenvalues of operators from higher dimensional
+Lie algebras, which can be associated to ‘‘charge’’ quantum numbers.
+This is done by defining 3D topological observables.
+It is interesting to point out that LQG starts from general relativity
+and provides its quantization, which leads to the quantization of the
+geometry itself; lengths, areas and volumes, in operator form, have dis-
+crete spectra; they have minimum quanta. But it does not incorporate
+matter and the quantum fields — the charge space symmetries. On the
+other side, string theory starts from the quantum fields and implements
+the generalization from point particles to extended particles, like a one
+dimensional string or the higher dimensional branes. This also leads
+to discrete spectra, and a more complete description of unification
+physics. But this unification picture is more complicated because the
+strings are defined over a spacetime manifold, which leads to funda-
+mental problems and the search for a more fundamental (𝑀−)theory,
+∗ Corresponding author.
+E-mail address: Marcelo@QuantumGravityResearch.org (M. Amaral).
+1 Note that the 𝑆𝑈 (3) group can be connected both with gauge field as with fermions. The gauge fields are usually modeled in the adjoint representation and
+the fermions in the fundamental representation. In our case one can expect that if we go back from the spin foam state sum transition amplitudes to the action
+level, we should get actions for both the gauge fields and fermions.
+where ‘‘one hopes to understand the existence of a spacetime manifold
+itself as the emergent property of a specific vacuum rather than an
+identifiable feature of the underlying theory’’ [3]. A partner approach
+of string theory, but less ambitious, is the Lie algebraic unification
+program, as in 𝐸8 unification [9,10]. This makes use of the gen-
+eralization of the simplest non-abelian gauge symmetry, 𝑆𝑈 (2), to
+higher-dimensional ones, ending with a complete unification of the
+charge Lie group symmetries of the standard model in the largest
+exceptional Lie algebra 𝐸8, making heavy use of the representation
+theory of these algebras. Our aim is to use this unification aspect of
+the representation theory of Lie algebras in connection to the spin foam
+approach of LQG. We can say that spin foam partition functions or
+transition amplitudes are about the interaction of representations of
+spacetime symmetry, and so, ultimately, 𝐸8 can provide the network
+of interaction representations incorporating the usual charge symme-
+tries — but here we focus on the first step in 3 dimensions where
+spacetime symmetry is just 𝑆𝑈 (2) and internal charge symmetry is
+chosen to be 𝑆𝑈 (3). We also provide a polytope interpretation for the
+representations of charge symmetry in the spin foam network1.
+Both the LQG and string/M-theory programs lead to the idea of
+building blocks for all the fields that constitute our classical and quan-
+tum worlds, from which the question arises of how to ‘‘glue’’ these
+fundamental blocks together in an elementary and first-principles way.
+There have been recent efforts to use the idea of entanglement in both
+approaches [11,12].
+In the model we develop here, the building blocks are very con-
+strained where there is a small set of Lie algebra representations that
+interact, and the syntax of its fusion rules works as a glue, indicating
+topological order [13,14]. With a tetrahedron building block the prob-
+lem is translated to an issue of how to tile the space, where we will
+be mainly concerned with 3-dimensional space, which can be linked
+with the Fibonacci anyonic fusion Hilbert space, which is one of our
+motivations to choose the specific fifth root of unity deformation of Lie
+algebras. In this way we propose the fifth root of unity deformation as
+our postulate for quantization of geometry in 3D, which also simplifies
+the computation of transition amplitudes and observables.
+This paper is organized as follows: in Section 2 we present the
+fifth root of unity quantization postulate for geometry in 3D and its
+associated Fibonacci fusion Hilbert space interpretation. In Section 3
+we discuss the coupling of the model with internal 𝑆𝑈 (3) symmetries
+and suggest a natural extension to the larger 𝑆𝑈 (𝑁), 𝐺2, and 𝐸8, with
+the same fifth root of unity deformation. In this constrained framework,
+we are able to explicitly calculate some observables and the amplitudes
+— our main result. We also discuss the polytope interpretation of the
+amplitudes. We present our conclusions in Section 4. In Appendix A we
+review the usual concept of 3D spin foam quantum gravity, and present
+its modified topological regularized version based on the Turaev and
+Viro model. In Appendix B we present a review of the grand unification
+physics program.
+2. 3D Spin foam and quantum groups at the fifth root of unity
+We review the usual spin foam models and its q-deformation regu-
+larization in Appendix A. Here we propose to derive the large spin tran-
+sition amplitude discussed in the appendix from the direct quantization
+of geometry, in particular a quantum building block, a tetrahedron,
+following the notion of quantum tetrahedrons [15] as a quantization
+postulate for geometry. It is well known that in 3D gravity only has
+topological degrees of freedom. We postulate the topological fifth root
+of unity symmetry, to be discussed below, as the quantization postulate
+in 3D and discuss that it implies a topological quantum computer
+picture of pre-spacetime.
+2.1. The quantum tetrahedron with topological symmetry
+The quantization of one tetrahedron allows us to define and ad-
+dress the quantization of geometric quantities like lengths, areas and
+volumes. Yet the usual quantization with 𝑆𝑈 (2) symmetry is much
+too general, allowing divergences for these geometric quantities. A
+kind of regularization can be done by implementing restrictions on the
+representation theory of Lie algebras — the usual deformation of the
+classical algebra with a complex root of unity parameter.
+Let us discuss a specific model implementation. Most of the geo-
+metric quantities of interest such as lengths, areas and volumes can
+be described in a simple, unifying form from the geometry of the 3-
+simplex, the tetrahedron. The tetrahedron can be described by its 4
+(outgoing) normals, vectors 𝐋𝑎 in its four triangular faces, 𝑎 = 1, 2, 3, 4,
+ubject to the closure constraint
+=
+4
+∑
+𝑎=1
+𝐋𝑎 = 0. (1)
+ll geometric properties of the tetrahedron can be derived from the
+ormals and must be invariant under a common 𝑆𝑂(3) rotation of the
+etrahedron. For example, the area of face 𝑎 is given by 𝐴𝑎 = |𝐋𝑎|
+nd the volume is defined by 𝑉 2 = 2
+9
+(
+𝐋1 × 𝐋2
+)
+⋅ 𝐋3. The proposed
+uantizing postulate is a quantum deformation of Eq. (A.2). Eq. (A.2) is
+he 𝑆𝑈 (2) algebra implied by the 3 dimensional rotational symmetry,
+here the normals are promoted to operators 𝐿𝑎 and identified with
+he generators of the algebra 𝐿𝑖
+𝑎 (𝑖 = 1, 2, 3). We first write the classical
+lgebra in terms of Cartan generators and root vectors, which are the2
+sual ladder operators of 𝑆𝑈 (2), then choose the Cartan generator𝑎 = 𝐿3
+𝑎 and the root vectors 𝐿±𝛼
+𝑎 = 𝐿1
+𝑎 ± 𝛼𝑖𝐿2
+𝑎, where for 𝑆𝑈 (2), 𝛼 = 1,
+and we have
+[
+ℎ𝑎, 𝐿
+±
+𝑏
+]
+= ±𝛽𝛿𝑎𝑏𝐿±
+𝑎
+[
+𝐿+
+𝑎 , 𝐿
+−
+𝑏
+]
+= 2𝛽𝛿𝑎𝑏ℎ𝑎, (2)
+here 𝛽 has the dimension of area. The usual Casimir invariant is
+𝑖
+𝑎𝐿
+𝑖
+𝑎 = 𝐿+
+𝑎𝐿
+−
+𝑎 + ℎ𝑎
+(
+ℎ𝑎 + 𝛽
+)
+, commuting with each element of the
+lgebra, and has eigenvalues2 𝛽2𝑗𝑎(𝑗𝑎 + 1), 𝑗𝑎 ∈ 0, 12 , 1,
+3
+2 , 2,…, which
+ives a quantization of area 𝐴𝑎 = 𝛽
+√
+𝑗𝑎(𝑗𝑎 + 1) for a triangular face
+r 𝐴𝑗𝑎𝑛 = 𝛽
+∑
+𝑛
+√
+𝑗𝑎𝑛(𝑗𝑎𝑛 + 1) for an arbitrary surface punctured by
+𝑁 punctures 𝑛1,… , 𝑁 . As discussed in the Appendix A, there are no
+restrictions on the flow of spin representations in this case, suggesting
+we should implement a more fundamental topological symmetry. So
+we apply the 𝑆𝑈 (2)𝑞 deformation at the fifth root of unity 𝑞 = 𝑒
+2𝜋𝑖
+𝑟 ,
+with 𝑟 = 5 (from now on let us call it 𝑆𝑈 (2)5𝑞), which affects the Cartan
+generator in the second term and constitutes essentially a quantization
+postulate for geometry (see [16] for additional motivation):
+[
+ℎ𝑎, 𝐿
+±
+𝑏
+]
+= ±𝛿𝑎𝑏𝐿±
+𝑎
+𝐿+
+𝑎 , 𝐿
+−
+𝑏
+]
+= 2𝛿𝑎𝑏
+[
+2ℎ𝑎
+]
+𝑞 , (3)
+ith the q number [𝑥]𝑞 defined by
+𝑥]𝑞 =
+𝑞
+𝑥
+2 − 𝑞−
+𝑥
+2
+𝑞
+1
+2 − 𝑞−
+1
+2
+=
+𝑠𝑖𝑛
+(
+𝜋
+5 𝑥
+)
+𝑠𝑖𝑛
+(
+𝜋
+5
+) (4)
+or writing the Cartan generator, 𝑎 = 𝑞ℎ𝑎 :
+𝑎𝐿
+±
+𝑏 
+−1
+𝑎 = 𝑞±1𝐿±
+𝑏
+[
+𝐿+
+𝑎 , 𝐿
+−
+𝑏
+]
+= 2𝛿𝑎𝑏
+𝑎 −  −1
+𝑎
+𝑞 − 𝑞−1
+(5)
+For this deformation to be dimensionally consistent, we start with
+everything adimensional and there is no need a priori for 𝛽. There is a
+notion of scale incorporated in the deformation parameter, 𝑟 = 𝑙𝑐
+𝑙𝑝
+, with
+𝑟 an integer and the large scale 𝑙𝑐 given in units of the underlying scale
+𝑙𝑝. This representation theory is as well understood as that of 𝑆𝑈 (2).
+There are 3 independent Casimir invariants for each face 𝐶𝑎𝑞 = 𝐿+
+𝑎𝐿
+−
+𝑎 +
+[
+ℎ𝑎
+]
+𝑞
+[
+ℎ𝑎 + 1
+]
+𝑞 , 𝑋𝑎 = (𝐿+
+𝑎 )
+5 and 𝑌𝑎 = (𝐿−
+𝑎 )
+5. When 𝑋𝑎 and 𝑌𝑎 have
+zero eigenvalues for all vectors in the linear vector space carrying the
+irreducible representation, the representations have classical analogs,
+and can be constructed by specializing from the general values of 𝑞 to
+the specific root of unity. In this case the spin quantum numbers that
+label the representations of 𝑆𝑈 (2)𝑞 are constrained to 𝑗𝑎 ≤ 3
+2 , and are
+related to the Casimir 𝐶𝑎𝑞 of eigenvalues [𝑗𝑎]𝑞[(𝑗𝑎+1)]𝑞 . In this way the
+area spectrum interpretation
+𝐴𝑎 =
+√
+[𝑗𝑎]𝑞[(𝑗𝑎 + 1)]𝑞 (6)
+is not immediate and a scale should emerge in an appropriate limit.
+The vertex amplitude is naturally given by the specialization of
+Eq. (A.6) to 𝑆𝑈 (2)5𝑞 symmetry defined by the Hilbert space of the tensor
+roduct of 4 representations at the vertex 𝐻𝑗𝑞1 ×𝐻𝑗𝑞2 ×𝐻𝑗𝑞3 ×𝐻𝑗𝑞4 , and
+it is a function of the representations on the 6 boundary faces defined
+by this vertex
+𝑊 5
+△1
+(𝑗𝑙𝑣) = (−1)𝑗𝑣
+{
+𝑗1 𝑗2 𝑗3
+𝑗4 𝑗5 𝑗6
+}
+5
+, (7)
+with 𝑗𝑙𝑣 = 𝑗1,… , 𝑗6 and the index 5 representing the 𝑆𝑈 (2)5𝑞 deforma-
+tion. The q-deformed 6-j symbols, {6𝑗}5, for the 4096 combinations of
+𝑗’s in 0, 1∕2, 1, 3∕2, are all null except for a small set of combinations,
+which can be computed from Eq. (18) restricted to the 𝑆𝑈 (2) case and
+takes on only seven values: {0,±1,±𝜑,±
+√
+𝜑}, where 𝜑 =
+√
+5−1
+2 = 𝜙−1,
+with 𝜙 =
+√
+5+1
+2 = 1.618..., the golden ratio.
+2 Splitting the constant with dimension of area 𝑗 → 𝛽𝑗 .𝑎 𝑎
+More generally, this kind of amplitude is independent of the trian-
+gulation, and gives a topological invariant as described in the Turaev
+and Viro model [17], which means that it does not depend on the
+triangulation inside the 3 manifold, but depends only on the edge
+values and on the topology of the triangulated 3 manifold (the number
+of punctures on the boundary 2-sphere). Exploiting the possibility to
+build invariants by fixing the representations labels on the edges we
+can consider networks of these topological amplitudes, which act as
+building blocks for decomposing a higher dimensional tensor product
+space, which we will motivate more in the next section. For example,
+we can consider amplitudes, functions of representations on boundary
+faces of edges for closed loops along the 3 dimensional spin foam
+𝑊𝑐 (𝑗𝑙𝑐 ) = 𝑞
+∑
+𝑗𝑓 |𝑗𝑙𝑐
+∏
+𝑓
+(−1)𝑗𝑓 𝑑𝑞(𝑗𝑓 )
+∏
+𝑣
+𝑊 5
+△1
+(𝑗𝑙𝑣), (8)
+where 𝑐 is a closed loop across the 3 dimensional triangulation and
+𝑗𝑙𝑐 = 𝑗1,… , 𝑗𝑛 are the representations on the boundary faces of the 𝑛
+edges contained in 𝑐. The sum ∑
+𝑗𝑓 |𝑗𝑙𝑐
+is taken while maintaining those
+boundary faces of the edges of 𝑐 fixed. The notation with the sum and
+roducts in Eq. (8) is to indicate that one needs to use all possible
+onfigurations allowed.
+.2. Motivation for the fifth root: Fibonacci fusion Hilbert space
+We now consider the topological data of 𝑆𝑈 (2)5𝑞 . The admissible
+pin representations are 𝑗 = 0, 12 , 1,
+3
+2 , and their quantum dimension are
+given by
+𝑑𝑞𝑗 = 𝑠𝑖𝑛
+(
+𝜋(2𝑗 + 1)
+5
+)
+∕𝑠𝑖𝑛
+(𝜋
+5
+)
+. (9)
+he composition of representations follows the following fusion rules:
+0⊗ 𝑗 = 𝑗
+3
+2
+⊗ 𝑗 = 3
+2
+− 𝑗
+1
+2
+⊗ 1
+2
+= 0⊕ 1
+1
+2
+⊗ 1 = 1
+2
+⊕ 3
+2
+1⊗ 1 = 0⊕ 1. (10)
+Remember that a segment of the triangulation is dual to a face on the
+dual 2-complex where there is attached a representation of 𝑆𝑈 (2)5𝑞 .
+Fundamentally there are 2 states on the segments, one with quantum
+dimension 1 and one with quantum dimension 𝜙, and we have a notion
+of a 2-dimensional fusion Hilbert space [13,14] as the superposition
+of these 2 states. The space 𝐻𝑗𝑞1 × 𝐻𝑗𝑞2 × 𝐻𝑗𝑞3 is in this way 3-
+dimensional and is related to the triangular faces. The tetrahedron
+𝐻𝑗𝑞1 × 𝐻𝑗𝑞2 × 𝐻𝑗𝑞3 × 𝐻𝑗𝑞4 is 5 dimensional. The dimensions grow with
+the increasing number of representations, following the well known
+Fibonacci sequence, which gives the name of Fibonacci anyons for
+the representations of the 𝑆𝑈 (2)5𝑞 symmetry in context of topological
+phases of matter and quantum computing fields of researches. In this
+language the 𝐴𝑣 = 𝑊 5
+△1
+(𝑗𝑙𝑣) building block amplitude is just the known
+F symbol that appears in those anyonic models [13,14]. The partition
+function is about gluing these 𝐴𝑣 amplitudes, which makes sense from
+the point of view of quantum computation. An important result in
+the field of quantum computation is that a higher dimensional Hilbert
+space can be decomposed into a network of qubits and 2-level quantum
+gates [18], and that with at least 3 Fibonacci anyon representations,
+one can implement the qubits, where the braids of these anyons can
+approximate any 2-level quantum gate, making Fibonacci anyons a
+sufficient substrate for universal quantum computation [13]. It has
+been shown that anyons described by Chern–Simons theory at some
+root of unity 𝑟 can give rise to universal quantum computation for 𝑟 = 5
+or 𝑟 > 7 [13,19]. So 𝑍𝑞(𝑛𝑗) of 𝑛 ‘‘anyon states’’, for large 𝑛, can be
+understood as a topological quantum computer but described by the3
+Table 1
+Fusion rules of 𝑆𝑈 (3)5𝑞 .
+⊗ (10) (01) (20) (02) (11)
+(10) (01)⊕ (20)
+(01) (00)⊕ (11) (10)⊕ (02)
+(20) (11) (10) (02)
+(02) (01) (11) (00) (20)
+(11) (01)⊕ (02) (01)⊕ (20) (01) (10) (00)⊕ (11)
+network of the building block amplitudes 𝐴𝑣 = 𝑊 5
+△1
+(𝑗𝑙𝑣). The dual 2-
+omplex of the quantum tetrahedron is made of one vertex in the bulk
+nd 4 nodes on the triangular boundary faces of the triangulation. The
+uantum tetrahedron carries 4 anyonic charges, the 4-tensor product
+f the 𝐻𝑗𝑞𝑖 above, implemented by 𝐴𝑣. The extension of the topological
+ata from 𝑆𝑈 (2)5𝑞 to 𝑆𝑈 (𝑁)𝑟𝑞 is presented in the next section.
+. Fermionic cycles and gauge symmetry unification
+The natural symmetry for the quantum tetrahedron, as discussed
+n Section 2.1, is the spatial rotations 𝑆𝑂(3) in 3D, implemented by
+he covering group 𝑆𝑈 (2), and hence its fifth-root-of-unity deforma-
+ion. But the generalization of 𝑆𝑈 (2) = 𝐴1 in the Weyl–Cartan or
+hevalley basis to the higher dimensional simple Lie algebras, Eq. (B.6),
+ndicates that we can incorporate the so called internal symmetry or
+harge space in the same way. The simplest way is to consider the
+ymmetry 𝑆𝑈 (2) × 𝐺, with 𝐺 one of the higher dimensional simple
+ie algebras [20]. Because of the importance of 𝐴1 the natural first
+andidate is 𝐺 = 𝐴2 = 𝑆𝑈 (3). Following this, we will also define an
+xtension of the topological data from 𝑆𝑈 (2)5𝑞 to 𝑆𝑈 (𝑁)𝑟𝑞 . To get onto
+ulti-dimensional Fibonacci-like anyonic representations and fulfill the
+uantizing postulate Eq. (3), we will further restrict 𝑟 to be a multiple
+f 5 larger than 𝑁 . Examples useful for gauge unification that have the
+ibonacci fusion Hilbert space structure are 𝑆𝑈 (3)5𝑞 , 𝑆𝑈 (4)5𝑞 , 𝑆𝑈 (5)10𝑞 ,
+𝑈 (8)10𝑞 and 𝑆𝑈 (9)10𝑞 . This allows us to address the higher dimensional
+4, whose Coxeter—Dynkin diagram splits into two copies of 𝐴2, and
+𝐸8, the largest exceptional Lie algebra, which has four 𝐴2 building
+blocks as shown in Fig. B.3. As is well known, 𝐴4 = 𝑆𝑈 (5) and 𝐸8
+are very important for unification physics. We will also discuss the
+exceptional Lie algebra 𝐺2, which contains 𝑆𝑈 (3) and has a fifth-root
+deformation with Fibonacci fusion rules.
+3.1. Spin foam at the fifth root of unity with fermionic cycles and gauge
+symmetry
+Following [21,22], the deformation of the 𝑆𝑈 (3) algebra (𝑆𝑈 (𝑁) in
+general) Eq. (B.6) at the fifth root of unity is given by:
+[
+ℎ𝑖, ℎ𝑗
+]
+= 0
+[
+ℎ𝑖, 𝐿
+±
+𝑗
+]
+= ±𝐶𝑖𝑗𝐿
+±
+𝑗
+[
+𝐿+
+𝑖 , 𝐿
+−
+𝑗
+]
+= 𝛿𝑖𝑗
+[
+2ℎ𝑖
+]
+𝑞 ,
+𝐿±
+𝑖
+)2 𝐿±
+𝑗 − [2]𝑞 𝐿
+±
+𝑖 𝐿
+±
+𝑗 𝐿
+±
+𝑖 + 𝐿±
+𝑗
+(
+𝐿±
+𝑖
+)2 = 0, 𝑖 ≠ 𝑗 (11)
+hich reduces to Eq. (B.6) when 𝑞 goes to 1. From Eq. (4), [2]𝑞 = 𝜙 in
+ur case.
+𝑆𝑈 (3) has two Cartan generators and as in the case of 𝑆𝑈 (2) we
+abel its representations by the eigenvalues of the Cartan generators.
+o the representations are labeled by 2 Dynkin labels 𝑔 = (𝑝1𝑝2) in
+he notation introduced above for their associated ‘‘polytopes’’, or in
+more compact form by its classical dimension 1, 3, 3̄, 6, 6̄, 8 and so
+n. For 𝑆𝑈 (3)5𝑞 the fusion rules are limited to the lower dimensional
+epresentations 1 = (00), 3 = (10), 3̄ = (01), 6 = (20), 6̄ = (02) and
+= (11). The fusion rules are given by (00)⊗(𝑝1𝑝2) = (𝑝1𝑝2) and Table 1.
+To compute for general 𝑆𝑈 (𝑁)𝑞 the quantum dimensions 𝑑𝑞(𝑔),
+hich will be the edge amplitudes, the spin number 𝑗 of Eq. (9), for
+specific representation, is extended to a Dynkin label (𝑝1,… , 𝑝𝑁−1)
+describing the highest weight of the representation. For general 𝑁 ,
+𝑑𝑞(𝑝1,… , 𝑝𝑁−1) will be computed by the following algorithm: a Young
+diagram is drawn for the Dynkin label as a set of 𝑁 left-justified rows
+of 𝑝1, 𝑝2, . . . 𝑝𝑁−1 cells, from top to bottom. If 𝑝𝑁−1 > 0 there exists
+a minimal 𝑀 index, 0 < 𝑀 < 𝑁 such that 𝑝𝑀+1 = 0, and we draw
+only 𝑀 rows, otherwise we set 𝑀 = 𝑁 − 1. Accumulating its value
+from the right to the left, we create a partition numbering the length
+of successive rows in the Young diagram. The Young diagram can
+be filled by numbers beginning at the top-left by an integer between
+1 and 𝑁 , non increasing from left to right and strictly decreasing
+from top to bottom, which enable to compute the number of elements
+corresponding to different Young tableaux. This is the dimension of the
+representation. It can be expressed by the Weyl dimension formula as
+the ratio: the numerator is the product of the number in each box of
+a tableau beginning with 𝑁 at the top-left, strictly increasing to the
+left and strictly decreasing to the bottom, while the denominator is the
+product of the hook number of each box, where the hook number of
+any box is the number of boxes met by a hook beginning at the right of
+the row, tracing horizontally to the box, then tracing vertically to the
+bottom. Because the numerator will vanish if there are more than 𝑁−1
+rows, the number of rows is limited. For the quantum deformation,
+the same Weyl formula is applied but the integers in each box are
+now quantum integers defined by Eq. (4), where [𝑟]𝑞 = 0. Therefore
+the Young diagram cannot have more than 𝑟 −𝑁 columns, which sets
+a cut-off for the number of representations. For 𝑁 = 3 the quantum
+dimension is given by
+𝑑𝑞(𝑝1, 𝑝2) = [𝑝1 + 1]𝑞[𝑝2 + 1]𝑞[𝑝1 + 𝑝2 + 2]𝑞∕[2]𝑞 . (12)
+The quantum dimension 𝑑𝑞(𝑔) for 𝑔 = (00), (20), (02) is 𝑑𝑞(𝑔) = 1 and for
+𝑔 = (10), (01), (11) is 𝑑𝑞(𝑔) = 𝜙. For general 𝑁 the quantum dimension
+is given by [21]
+𝑑𝑞(𝑝1, 𝑝2, .., 𝑝𝑁−1) =
+𝑁−1
+∏
+𝑗=1
+𝑁−1−𝑗
+∏
+𝑘=0
+[
+∑𝑗
+𝑙=1 1 + 𝑝𝑘+𝑙]𝑞
+[𝑗]𝑞
+(13)
+Alternatively, we can use the general formula from which Eq. (9) is
+derived, a deformation of the Weyl dimension formula to
+𝑑𝑞(𝑔) =
+∏
+𝛼
+[
+(𝜔𝑔 + 𝜌, 𝛼)
+]
+𝑞
+[(𝜌, 𝛼)]𝑞
+, (14)
+where 𝜔𝑔 = (𝑝1,… , 𝑝𝑁−1), the highest weight describing the irreducible
+representation, is given by Eq. (B.3). The vector 𝜌 is half the sum of
+positive roots 𝜌 = 1
+2
+∑
+𝛼 𝛼 and 𝛼 represent the positive roots. For 𝑆𝑈 (2)
+there are only one positive root 𝛼1 = (1,−1) and the fundamental weight
+is given by 𝜔1 = (1∕2,−1∕2), so 𝜌 = (1∕2,−1∕2) and 𝜔𝑔 = 𝑝1𝜔1 = 2𝑗𝜔1
+and Eq. (14) reduces to Eq. (9). For 𝑁 = 3, from Eq. (B.5), the third
+positive root is 𝛼3 = (1, 0,−1), 𝜌 = (1, 0,−1) and 𝜔𝑔 = 𝑝1𝜔1 + 𝑝2𝜔2. Thus
+the quantum dimension reduces to Eq. (12).
+We now compute the {6𝑔}5 symbols associated with a tetrahedron
+edge decoration by representations of the 𝑔 = 𝑆𝑈 (3)5𝑞 algebra, which
+can be generalized to 𝑔 = 𝑆𝑈 (𝑁)𝑟𝑞 . The computation of the amplitudes
+{6𝑔}5 for 𝑆𝑈 (𝑁)𝑞 can always be done case by case as in [22] but we
+have adapted the formulas from [23], replacing spins by a suitable
+projection of the highest weight vectors in the case of multiplicity-free
+quantum {6𝑔}-symbols, where we will deal with representations (10),
+(01) and (00) for 𝑔 = 𝑆𝑈 (3)5𝑞 . On the decomposition of (11) ⊗ (11), we
+already have to deal with multiplicities [22]. This projection operator
+depends on the algebra:
+(𝑤1𝑤2...𝑤𝑁−1)′ = 𝑃𝑟(𝑁, (𝑤1𝑤2...𝑤𝑁−1)) (15)
+and in our multiplicity-free case is given by
+(𝑤𝑔)′ =
+1 ∑
+(𝜔𝑔 , 𝛼), (16)4
+2 𝛼
+t
+where again 𝜔𝑔 = (𝑝1,… , 𝑝𝑁−1), the highest weight describing the
+irreducible representation, and 𝛼 represent the positive roots. In the
+case of 𝑆𝑈 (2) it gives the usual half integers 𝑗 and in the case of 𝑆𝑈 (3)
+it gives 𝑝1 + 𝑝2. So we have
+𝛥′(𝑎𝑏𝑐) = ([(−𝑎 + 𝑏 + 𝑐)′]![(𝑎 − 𝑏 + 𝑐)′]![(𝑎 + 𝑏 − 𝑐)′]!)1∕2
+× ([(𝑎 + 𝑏 + 𝑐)′ + 1]!)−1∕2 (17)
+here [𝑚]𝑞! =
+∏𝑚
+𝑛=1[𝑛]𝑞 and
+6𝑔}5(𝑎𝑏𝑐𝑑𝑒𝑓 ) =
+{
+𝑎 𝑏 𝑒
+𝑑 𝑐 𝑓
+}
+𝑞
+=
+= 𝛥′(𝑎𝑏𝑒)𝛥′(𝑎𝑐𝑓 )𝛥′(𝑐𝑒𝑑)𝛥′(𝑑𝑏𝑓 )
+∑
+𝑧
+𝜈
+𝛿
+, (18)
+here 𝑧 is an integer vector of N(𝑁−1) inside the polytope where the
+xpression is not null, and 𝜈 and 𝛿 are
+= (−1)𝑧
+′
+[(𝑧)′ + 1]!{[(𝑧 − 𝑎 − 𝑏 − 𝑒)′]![(𝑧 − 𝑎 − 𝑐 − 𝑓 )′]!
+× [(𝑧 − 𝑏 − 𝑑 − 𝑓 )′]![(𝑧 − 𝑑 − 𝑐 − 𝑒)′]!}−1 (19)
+= [(𝑎 + 𝑏 + 𝑐 + 𝑑 − 𝑧)′]![(𝑎 + 𝑒 + 𝑓 + 𝑑 − 𝑧)′]![(𝑒 + 𝑏 + 𝑐 + 𝑓 − 𝑧)′]!. (20)
+inally, the F-symbol ((𝐹 𝑎𝑏𝑑
+𝑐 )𝑒𝑓 ) is given from:
+𝑎 𝑏 𝑒
+𝑑 𝑐 𝑓
+}
+𝑞
+= (−1)(𝑎+𝑏+𝑐+𝑑+𝑒+𝑓 )
+′
+(𝑑𝑒
+′
+𝑞 𝑑𝑓
+′
+𝑞 )−1∕2(𝐹 𝑎𝑏𝑑
+𝑐 )𝑒𝑓 , (21)
+here 𝑑𝑒′𝑞 is the quantum dimension of the representation of highest
+eight 𝑒. The fusion matrix (
+[
+𝑎 𝑏
+𝑑 𝑐
+]
+) is obtained from:
+𝐹 𝑎𝑏𝑑
+𝑐 )𝑒𝑓 = 𝑎𝑒𝑓
+[
+𝑎 𝑏
+𝑑 𝑐
+]
+. (22)
+For 𝑁 = 3, we can use either the 𝐹 -symbols from [22] or the
+usion matrix from [24]. The following are two examples showing the
+oherence of our formulas (21) and (22) with (18) and with some
+esults given in [21–24]:
+01 10 00
+01 01 00
+}
+𝑞
+= (−1)4(𝑑00
+′
+𝑞 𝑑00
+′
+𝑞 )−1∕2(𝐹 01 10 01
+01 )00 00
+= (1)−1∕2(𝐹 3̄ 3 3̄
+3̄
+)1 1 = (𝐹 3 3̄ 3
+3 )1 1
+= 𝑎00 00
+[
+01 10
+01 01
+]
+= [3]−1𝑞 (23)
+nd
+10 01 00
+01 01 10
+}
+𝑞
+= (−1)5(𝑑00
+′
+𝑞 𝑑10
+′
+𝑞 )−1∕2(𝐹 10 01 01
+01 )00 10
+= (−1)(𝜙)−1∕2(𝐹 3 3̄ 3̄
+3̄
+)1 1 = −(𝜙)−1∕2(𝐹 3̄ 3 3
+3 )1 3
+= −(𝜙)−1∕2𝑎00 10
+[
+10 01
+01 01
+]
+= −[3]−1𝑞 . (24)
+A complete algorithm to compute 𝑆𝑈 (4) Clebsch–Gordan coeffi-
+ients is available in [25]; it can be extended to compute the 6j-symbols
+f 𝑆𝑈 (4) for all representations. The algorithm may be extended to
+igher dimensions and deformed by a procedure replacing factorials by
+uantum factorials and using projected weights. The Fibonacci anyons
+n 𝑔 = 𝑆𝑈 (4)5𝑞 will be restricted to only 4 representations, the fun-
+amental (000), the symmetric (100), its conjugate antisymmetric (001)
+nd the antisymmetric (010). Their respective quantum dimensions are
+1]𝑞 , [1]𝑞 , [4]𝑞 and [4]𝑞[3]𝑞/[2]𝑞 . For 𝑟 = 5 these quantum numbers are
+ll equal to 1, therefore this is adapted to decorate a graph with only
+ne edge length, while 𝑆𝑈 (2)5𝑞 and 𝑆𝑈 (3)5𝑞 decorate graphs with two
+dge lengths. The cut-off in the number of representations comes from
+he fact that 𝑟 −𝑁 is small. The next representations, which would be
+f interest for a higher 𝑟, are the symmetric (200), cut-off at 𝑟 = 5, and
+he symmetric (300), cut-off at 𝑟 = 6. The Young tableau of (200) is a
+row with two boxes. In the dimension formula, the numerator is the
+product of the two boxes, where the leftmost has the quantum integer
+[𝑁] and each one at its right increases by one, so the right one is
+[𝑁 + 1] = [𝑟] = 0, which cancels this representation.
+There is no representation in 𝑆𝑈 (5)5𝑞 , so we study 𝑆𝑈 (5)10𝑞 , which
+is quite rich. When 𝑁 increases to meet 𝑟 − 1, the structure simpli-
+fies and there are only 9 antisymmetric representations in 𝑆𝑈 (9)10𝑞 :
+(08), (1 07), (01 1 06), (02 1 05)...(06 1 01) and (07 1). They will be the bricks
+for the branching of 𝐸10
+8𝑞 to 𝐴10
+8𝑞 , which is a subject of our ongoing work.
+3.2. Observables
+The observables of interest, to be motivated with explicit examples
+below, can be calculated from the generalization of Eq. (8) to include
+fermions, which are defined as closed oriented cycles on the dual 2-
+complex △∗, with 𝑆𝑈 (3)5𝑞 representations on its edges. These fixed
+states can be interpreted as observables [26]. The observable of interest
+is
+𝑂△4𝑙
+(𝑔𝑐 , 𝑗𝑙𝑐 ) = 𝑞
+∑
+{𝑐}
+∑
+𝑗𝑓 |𝑗𝑙𝑐
+∏
+𝑓
+(−1)𝑗𝑓 𝑑𝑞(𝑗𝑓 )
+∏
+𝑣
+𝑊 5
+△1
+(𝑗𝑙𝑣)
+∏
+𝑐
+(
+∏
+𝑒∈𝑐
+(−1)𝑜𝑑𝑞(𝑔𝑒)
+)
+{6𝑔}5 (25)
+where 𝑜 gives a sign due to the match or mismatch of the orientations
+of △∗ and the cycles {𝑐}. In this sense the cycles are fermionic — there
+cannot be more than one cycle on one edge with the same orientation
+relative to the orientation of △∗. The maximum is two cycles on one
+edge with opposite orientation, which constrains the possible cycles.
+Each edge on a cycle 𝑐 has one amplitude given by the quantum
+dimension 𝑑𝑞(𝑔𝑒) of the 𝑆𝑈 (3)5𝑞 representation 𝑔 on it. The △4𝑙 is a
+triangulation at level 𝑙, which we can explain with examples:
+• The level 𝑙 = 0 triangulation is just one tetrahedron in △ and one
+vertex inside the boundary tetrahedron.
+• At the level 𝑙 = 1 triangulation we start with one tetrahedron
+and connect its center with its 4 points, making four new tetra-
+hedrons. Then we take the dual 2-complex in the usual way by
+inserting a vertex inside each tetrahedron and connecting them.
+(See Fig. A.2).
+• At the level 𝑙 = 2 triangulation, our space is divided into 16
+tetrahedrons. The dual 2-complex in the bulk has 16 vertices at
+their centers. (See Fig. 1). And so on.
+The observables 𝑂△4𝑙
+(𝑔𝑐 , 𝑗𝑙𝑐 ) are functions of the 𝑆𝑈 (2)5𝑞 𝑗𝑙𝑐 repre-
+sentations on the boundary faces of △∗ and 𝑆𝑈 (3)5𝑞 𝑔𝑐 on the edges
+of the closed cycles. To correctly assign the {6𝑔}5 on the network, we
+need to consistently choose the cycles and give consideration on how
+to constraint our cycles of interest. Let us discuss this level by level.
+The level 𝑙 = 0 observables:
+The level 𝑙 = 0 has no bulk edges and so there are only pure
+topological (gravitational) observables, Eq. (7).
+The level 𝑙 = 1 observables and its {6𝑔}5:
+We note that the usual observables at 𝑙 = 0 above, 𝑊 5
+△1
+(𝑗𝑙𝑣), are
+functions of the six representations on the six boundary faces of the 2-
+complex, or equivalently on the segments (edges of the tetrahedron) of
+the triangulation. We can then associate a ‘‘polytope’’ of 𝑆𝑈 (2) to these
+representations; they are the edges of the tetrahedron, and the building
+block is the Delone polytope, the edge of 𝑝 = 1 of the (1) representation.
+The only representation that does not have this interpretation is the
+scalar (0), which can work as ‘‘dummy’’ indices in the 𝑊 5
+△1
+(𝑗𝑙𝑣). This
+suggests that the observables of interest for 𝑆𝑈 (3)5𝑞 are the ones that
+have a ‘‘polytope’’ interpretation in 𝑆𝑈 (3)5𝑞 so that the {6𝑔}5 would be a5
+function of these ‘‘polytopes’’. In particular, these would be the Delonepolytopes, (10) or (01), and, when necessary, a ‘‘dummy’’ index with
+the (00) representation to complete the {6𝑔}5 input representations.
+Immediately we note that, consistently, each edge of a cycle on
+△∗ is dual to a triangle of the △ and so it can have a representation
+𝑔 = (10), (01) or 𝑔 = (00) sitting on it. From Fig. A.2 let us label the
+representations:
+• 𝑆𝑈 (2)5𝑞 on the faces of △∗, using the numbers labeling the
+vertices: 𝑗1 = 𝑗12, 𝑗2 = 𝑗13, 𝑗3 = 𝑗14, 𝑗4 = 𝑗23, 𝑗5 = 𝑗24, 𝑗6 = 𝑗34,
+𝑗7 = 𝑗123, 𝑗8 = 𝑗124, 𝑗9 = 𝑗134, 𝑗10 = 𝑗234.
+• And for 𝑆𝑈 (3)5𝑞 on the edges from the 4 internal vertices: 𝑔1 = 𝑔12,
+𝑔2 = 𝑔13, 𝑔3 = 𝑔14, 𝑔4 = 𝑔23, 𝑔5 = 𝑔24, 𝑔6 = 𝑔34.
+So, for the observable 𝑂△4
+(𝑔1...6, 𝑗1...6) the {6𝑔}5 is naturally associated
+with the bulk tetrahedron with vertices 1,2,3,4, coupling six 𝑔 repre-
+sentations on its six edges. So the set of allowed cycles {𝑐} are the
+ones covering this tetrahedron, and this can be done with 4 triangular
+cycles. Note that any configuration with all (01) or (10), e.g. 𝑔1...6 =
+((10), (01), (10), (10), (10), (01)), gives {6𝑔}5 = 0. But by inserting the rep-
+resentation (00) we can have non-zero {6𝑔}5 and the observables can
+be computed, as for example for 𝑔1...6 = ((01), (10), (01), (01), (00), (00)),
+which gives, from Eq. (23), {6𝑔}5 = 𝜙−1. In this case, for the amplitude
+{6𝑔}5 we are using the fundamental (10) and anti-fundamental (01)
+representations which compose the Voronoi polytope of 𝑆𝑈 (3).
+One example of an interesting observable, which can be interpreted
+as a coupling interaction of the 𝑆𝑈 (2)5𝑞 and 𝑆𝑈 (3)5𝑞 representations,
+is defined in the following way. First we choose an orientation on
+△∗ to be given by one incoming edge from the boundary to vertex
+4, then to vertices 1, 2 and 3. From 3, the oriented edges go to 1,
+2 and from 1, 2 they go out (see Fig. A.2). The cycle 𝑐1 is 123, 𝑐2
+is 142, 𝑐3 is 134 and 𝑐4 is 243. There is only one other option of
+cycles, which is the one with the inversion of orientation of all 4
+cycles. For 𝑔1...6 = ((10), (01), (01), (01), (00), (10)) fixed, from Eq. (24),
+{6𝑔}5 = −𝜙−1, imposing consistency of both representations on △
+(where, for example, a 𝑔1 = (01) fixes 𝑗1 = 1∕2 (𝑝 = 1, 𝑗 = 2𝑝)) leads to
+𝑗1...10 = ( 12 ,
+1
+2 ,
+1
+2 , 0, 0, 0, 0,
+1
+2 , 0,
+1
+2 ). Thus, working with the unnormalized
+amplitudes, we have
+𝑂△4
+(𝑔1...6, 𝑗1...10) = (−1)𝑗1 ...(−1)𝑗10𝑑𝑞(𝑗1)...𝑑𝑞(𝑗10)𝑊 5
+△1
+(𝑗𝑣1 )...𝑊
+5
+△1
+(𝑗𝑣4 )
+(
+−𝑑𝑞(𝑔1)𝑑𝑞(𝑔2)𝑑𝑞(𝑔4)
+) (
+𝑑𝑞(𝑔1)𝑑𝑞(𝑔3)𝑑𝑞(𝑔5)
+)
+(
+𝑑𝑞(𝑔2)𝑑𝑞(𝑔6)𝑑𝑞(𝑔3)
+) (
+−𝑑𝑞(𝑔6)𝑑𝑞(𝑔4)𝑑𝑞(𝑔5)
+)
+{𝑔1...𝑔6}5. (26)
+ote that in this example all internal 𝑗’s are fixed by fixing the 𝑔’s, and
+o we could first have fixed all the 10 𝑗’s, which gives a topological
+nvariant observable of 𝑆𝑈 (2)5𝑞 [26], and the 𝑔’s can be interpreted as
+mergent properties of the network.
+he level 𝑙 = 2 observables and its {6𝑔}5:
+Now we have 4 tetrahedrons similar to the ones on 𝑙 = 1. They
+re connected to form 4 hexagonal cycles (see Fig. 1, where internal
+ertices are labeled with positive integers and external points with
+egative integers): 𝑐1 = {7, 14, 15, 11, 10, 6}, 𝑐2 = {6, 10, 12, 19,
+8, 8}, 𝑐3 = {8, 18, 20, 16, 14, 7}, 𝑐4 = {11, 15, 16, 20, 19, 12}, where
+𝑛 is a hexagonal face (an irregular hexagon alternating short and long
+inks), viewed from an outside point −𝑛. Along each of these cycles,
+he 3 long edges are shared with short cycles completed by a vertex
+aking a dual tetrahedron. For 𝑐1: 𝑐1.2 = {15, 14, 16 or 13}, 𝑐1.3 = {10,
+1, 12 or 9}, 𝑐1.4 = {7, 6, 8 or 5}. The link 𝑐1.2 is shared between 𝑐1,
+3 and 𝑐4, therefore 𝑐1.2 = 𝑐3.2 = 𝑐4.2. The link 𝑐1.3 is shared between 𝑐1,
+2 and 𝑐4, so 𝑐1.3 = 𝑐2.3 = 𝑐4.3. The link 𝑐1.4 is shared between 𝑐1, 𝑐2 and
+3, so 𝑐1.4 = 𝑐2.4 = 𝑐3.4. The last short cycles are 𝑐2.1 = 𝑐3.1 = 𝑐4.1 = {18,
+9, 20 or 17}. All four short cycles extended as tetrahedrons cover all
+he 16 level 𝑙 = 2 vertices (centers dual to the 𝑙 = 2 tetrahedrons), here
+ndexed from 5 to 20.
+Emerging {6𝑔}5 symbols:
+Physics Open 10 (2022) 100098M. Amaral et al.Fig. 1. This figure shows the hexagonal cycle 𝑐1 in white and the triangular cycle 𝑐1.2
+in black. They share the link l(14–15).
+• for a tetrahedron {6𝑔}5(𝑐1.2) =
+{
+𝑔15−14 𝑔14−16 𝑔16−15
+𝑔15−13 𝑔14−13 𝑔16−13
+}
+𝑞
+;
+• for a hexagon {6𝑔}5(𝑐1) =
+{
+𝑔7−14 𝑔14−15 𝑔15−11
+𝑔11−10 𝑔10−6 𝑔6−7
+}
+𝑞
+.
+(See Fig. 1).
+3.3. Unification physics from the exceptional Lie algebras
+Let us consider the lowest dimensional exceptional Lie algebra, 𝐺2,
+at the fifth root of unity - 𝐺5
+2𝑞
+. 𝐺2, like 𝑆𝑈 (3), is of rank 2, and is
+the only exceptional one for which a fifth-root quantum deformation is
+possible. The generalization of Eq. (11) to the exceptional Lie algebras
+has only 2 equations changed, namely [21,22],
+[
+𝐿+
+𝑖 , 𝐿
+−
+𝑗
+]
+= 𝛿𝑖𝑗
+[
+2ℎ𝑖
+]
+𝑞𝑖
+,
+1−𝐶𝑖𝑗
+∑
+𝑠=0
+(−1)𝑠
+(
+1 − 𝐶𝑖𝑗
+𝑠
+)
+𝑞𝑖
+(
+𝐿±
+𝑖
+)1−𝐶𝑖𝑗−𝑠 𝐿±
+𝑗
+(
+𝐿±
+𝑖
+)𝑠 = 0, 𝑖 ≠ 𝑗 (27)
+where 𝐶 =
+(
+2 −3
+−1 2
+)
+and 𝑞𝑖 = 𝑞
+1
+𝑡𝑖 , with 𝑡𝑖 =
+2
+(𝛼𝑖 ,𝛼𝑖)
+, which gives for
+𝐺5
+2𝑞
+, 𝑡1 = 1 and 𝑡2 = 3. The 𝑞𝑖 binomials are
+(
+𝑚
+𝑛
+)
+𝑞𝑖
+=
+[𝑚]𝑞𝑖 !
+[𝑛]𝑞𝑖 ![𝑚−𝑛]𝑞𝑖 !
+,
+with [𝑚]𝑞𝑖 ! =
+∏𝑚
+𝑛=1[𝑛]𝑞𝑖 and [𝑛]𝑞𝑖 given by Eq. (4) using 𝑞𝑖. There are
+only 2 representations in the fusion rules, the 1 dimensional 1 = (00)
+and the 7 dimensional, 7 = (01)3. The only non trivial fusion rule is
+(01)⊗ (01) = (00)⊕ (01), (28)
+which is the well known Fibonacci (anyon) fusion rule. The quantum
+dimensions, which are the amplitudes on the edges of the △*, are
+𝑑(00)𝑞 = 1 and 𝑑(01)𝑞 = 𝜙. For the {6𝑔}5 amplitudes for 𝐺5
+2𝑞
+there are 64
+possibles ones but only 15 are not null, which constrains the available
+observables. They are given in [22]. It is therefore easy to compute
+observables for 𝐺5
+2𝑞
+using Eq. (25) and following the procedure of
+previous sections. In the first levels of the triangulation, however, we
+find no polytope interpretation, which would be a hexagon with a point
+in the center, on the triangulation. This leads us to suggest that the
+exceptional Lie algebras work as a container for the lower dimensional
+3 Note that we are using the same notation used for 𝑆𝑈 (3) in previous
+sections, but the convex polytope possessing the symmetry of the Coxeter–
+Weyl group, as the orbit of its highest weight vector, by acting with 𝑊 (𝐺2), is
+a different polytope, a hexagon made of the two triangles of 𝑆𝑈 (3), (10) and
+(01), and a point in the center, the (00) representation.6
+Lie algebras, 𝑆𝑈 (2) and 𝑆𝑈 (3), which are in fact the gauge symmetries.
+Note that the fusion rule of {6𝑔}5 contains only the representations that
+appear in the observable Eq. (26), because the 7 of 𝐺2 contains the (10),
+(01) and (00) of 𝑆𝑈 (3). This gives a role to 𝐺2 as the one that unifies
+those lower dimensional gauge symmetries.
+With 𝐺5
+2𝑞
+having only one non-trivial fusion rule, the generalization
+to higher dimensional Lie algebras may best be done with the tenth
+root of unity. Another option is that our observables already capture
+information of higher dimension through projection. This can be seen
+from the Coxeter—Dynkin diagram of 𝑆𝑈 (5) and 𝐸8. See for example
+the magic star projection of 𝐸8 to 2D [27].
+4. Conclusions
+In this paper we have presented quantum gravity observables cou-
+pling internal gauge symmetry with spacetime symmetry in a spin foam
+model. We note that in usual spin foam or state sum models in 3D, there
+are 2D states, whose evolution is described by 3D transition amplitudes.
+In this paper we presented a Wilson lattice gauge theory perspective
+where fermionic observables are cycles that go through the 3D foam.
+This fixes a notion of 3D states for the 3D theory. Thus the whole
+discussion of transition amplitudes in 3D, which one might ordinarily
+think of as being about dynamics, is in fact more about the kinematics
+of quantum gravity. Note that the kinematical space of 3D spin foam
+theory is the same as for 4D, i.e., the 3D spin network states are the
+same as in 4D — they are 𝑆𝑈 (2) spin networks. The difference is that in
+3D they are made of trivalent graphs and in 4D with graphs with higher
+valence. Our discussion in the 3D model suggests that the topological
+observables can have similar role in 4D. The evolution of these 3D
+observables is expected to give the true dynamics in the full 4D theory.
+This can give an alternative route to explicit computations of the full
+spin foam amplitudes, which are a subject of recent interest [28,29].
+It is also well known that the {6𝑗}𝑞 symbols for 𝑆𝑈 (2)𝑞 give the
+exponential of the Einstein–Hilbert action in the limit of large spin
+quantum numbers, indicating a good semi-classical limit. In our case
+it will be interesting to investigate the limit with large cycles through
+the spin foam as well as the semi classical limit of the symbols from
+𝑆𝑈 (3)𝑞 and 𝑆𝑈 (𝑁)𝑞 in general.
+We also presented a Lie algebra polytope interpretation of the
+transition amplitudes and observables, a ‘‘gravitahedra’’ [30] for spin
+foam quantum gravity. The representation theory polytopes emerge
+from the spin foam. This work opens up new questions for subsequent
+research such as questions on (1) phase transition and confinement
+within the anyonic code, (2) direct connection with particle physics
+observables and the notion of extended particle observables, (3) the
+complete formulation with larger Lie algebra amplitudes. The fifth root
+of unity also has limits on the large dimensional algebras which can be
+addressed — it stops at 𝑆𝑈 (5) = 𝐴4 in the 𝐴𝑛 series, for example. It will
+be interesting to investigate the tenth root of unity to incorporate larger
+Lie algebras as it also has a Fibonacci fusion Hilbert space structure.
+The transition amplitudes, partition functions and observables dis-
+cussed in this paper are all finite, which is supported by the tetrahedron
+quantization postulate to impose the fifth root of unity quantization.
+This quantization allows us to explicitly compute the amplitudes with
+some examples as well as to interpretate the pre-spacetime frame-
+work as a topological quantum computer. The universality of the sim-
+plest non-abelian (Fibonacci) anyon for quantum computation and its
+usefulness for explicitly computations of quantum gravity amplitudes
+motivates it as a start point postulate.
+Declaration of competing interest
+The authors declare that they have no known competing finan-
+cial interests or personal relationships that could have appeared to
+influence the work reported in this paper.
+Physics Open 10 (2022) 100098M. Amaral et al.
+t
+o
+𝑆
+q
+K
+S
+a
+t
+a
+1
+Appendix A. Review of spin foam models and its q-deformation
+regularization
+Following [1], mainly chapters 5 and 6, we consider a discretization
+of spacetime in terms of a triangulation (△) and its dual 2-complex
+(△*). A three-dimensional triangulation is given by tetrahedrons, tri-
+angles, segments and points. For a four-dimensional triangulation, we
+include the 4-simplex. The dual 2-complex in three-dimensional (3D)
+bulk is made by associating a tetrahedron with a vertex, a triangle
+with an edge, and a segment with a face. On the boundary, the dual of
+triangles are nodes and segments are links. In four dimensions (4D), the
+dual of a 4-simplex is a vertex, the dual of a tetrahedron is an edge and
+the dual of a triangle is a face. The boundary graph and terminology are
+equal to 3D. The gauge group of symmetry is 𝑆𝑈 (2) in 3D, the covering
+group of the rotation group 𝑆𝑂(3), and 𝑆𝐿(2, 𝐶) or 𝑆𝑈 (2) × 𝑆𝑈 (2)
+in 4d, the respective covering groups of the Lorentz group and the
+4D rotation group 𝑆𝑂(4). The variables are 𝑆𝑈 (2) group elements 𝑈𝑒
+associated to edges 𝑒 in the bulk of △* or 𝑈𝑙 associated to links 𝑙 on
+he boundary, and algebra elements 𝐿𝑓 = 𝐿𝑖
+𝑓𝐽𝑖 associated to faces 𝑓
+f △* or 𝐿𝑙 = 𝐿𝑖
+𝑙𝐽𝑖 associated to links on the boundary. 𝐽𝑖 are the
+𝑈 (2) generators, 𝐽𝑖 =
+𝑖
+2𝜎𝑖, where 𝜎𝑖 are the usual Pauli matrices. The
+uantization involves operators 𝑈𝑙 and 𝐿𝑙 on the boundary realizing a
+commutation relation on a Hilbert space,
+[
+𝑈𝑙 , 𝐿
+𝑖
+𝑙′
+]
+= 𝑖𝛽𝛿𝑙𝑙′𝑈𝑙𝐽
+𝑖 (A.1)
+and
+[
+𝐿𝑖
+𝑙 , 𝐿
+𝑗
+𝑙′
+]
+= 𝑖𝛽𝛿𝑙𝑙′𝜀
+𝑖𝑗
+𝑘 𝐿
+𝑘
+𝑙 , (A.2)
+where 𝛽 is a constant related to the gravitational constant, 𝛿𝑙𝑙′ is the
+ronecker-delta and 𝜀𝑖𝑗𝑘 is the totally antisymmetric Levi-Civita symbol.
+tates are wavefunctions 𝛹 (𝑈𝑙) or 𝛹 (𝐿𝑙) of 𝐿 group/algebra elements
+on 𝐿 links of the boundary graph modulo the 𝑆𝑈 (2) gauge symmetry
+implemented on the nodes. The Hilbert space is the space of square
+integrable functions of these coordinates:
+𝛤 = 𝐿2
+[
+𝑆𝑈 (2)𝐿∕𝑆𝑈 (2)𝑁
+]
+𝛤 (A.3)
+where 𝛤 is the boundary graph. The gauge invariant states must satisfy
+𝛹 (𝑈𝑙) = 𝛹
+(
+𝜆𝑠𝑙𝑈𝑙𝜆−1𝑡𝑙
+)
+for every node 𝑛 of the boundary graph. One
+major realization of loop quantum gravity is that the kinematics are
+the same in 3D and 4D — the Hilbert space and commutation relations
+are in both cases the ones for the 𝑆𝑈 (2) group. The distinction from
+3D to 4D arises only in the dynamics, with the 4D gauge symmetry
+𝑆𝐿(2, 𝐶) or 𝑆𝑈 (2) × 𝑆𝑈 (2) implemented on the bulk of the spin foam.
+The dynamics are implemented in the form of a state sum model
+with quantum transition amplitudes or partition functions. Let us con-
+sider first the transition amplitude. It is a function of the states defined
+on 𝛤 = (𝜕△)∗, the boundary graph. This can be defined in the group
+representation 𝑊△(𝑈𝑙) or in the so called spin representation 𝑊△(𝑗𝑓 ),
+where the △ indicates that the amplitude is computed in a discretiza-
+tion △ of the bulk that matches the boundary graph. In 𝑊△(𝑗𝑓 ), a
+basis on the gauge invariant Hilbert space is given by the normalized
+eigenvectors of the operator 𝐿𝑙, indicated by |𝑗𝑓 ⟩. An element of this
+basis is determined by assigning a spin 𝑗𝑙 of a representation of 𝑆𝑈 (2)
+to each link 𝑙 of the graph. A graph with a spin assigned to each link
+is called a spin network. So the spin network states |𝑗𝑓 ⟩ form a basis
+of the gauge invariant Hilbert space of quantum gravity, i.e. they span
+the quantum states of the geometry. The quantum transition amplitude
+is given by
+𝑊△(𝑗𝑙) = △
+∑
+𝑗𝑓
+∏
+𝑓
+𝐴𝑗𝑓
+∏
+𝑣
+𝐴𝑣(𝑗𝑓 ), (A.4)
+where △ is a normalization constant that can depend on the dis-
+cretization, and there is an amplitude 𝐴𝑗𝑓 for each face of △* and
+an amplitude 𝐴𝑣(𝑗𝑓 ) for each vertex, both in 3D and 4D. Equivalently,7
+in 3D, the amplitude 𝐴𝑗𝑓 can be defined on the segments of △ and𝐴𝑣(𝑗𝑓 ) on the tetrahedrons4. Similarly, in 4D the amplitude 𝐴𝑗𝑓 can
+be defined on the triangles of △ and 𝐴𝑣(𝑗𝑓 ) on the 4-simplexes5. The
+partition function (𝑍△) in the situation with the triangulation without
+boundaries is the same as Eq. (A.4) but summing also over the boundary
+representations.
+From now on we will consider the 3-dimensional spin foam model,
+but it was necessary to point out in the preceding review that the step
+from 3D to 4D is not a big one. In the spin network basis we have that
+the amplitudes 𝐴𝑗𝑓 are given by the dimension of the representation,
+𝑑𝑗 , and the vertex amplitude 𝐴𝑣(𝑗𝑓 ), which implements the 𝑆𝑈 (2)
+symmetry, is a function that takes the 6 spin quantum numbers of the
+representations on the 6 edges of the tetrahedron around a vertex and
+returns a complex number. The vertex amplitude in this case is given
+mainly by the Wigner 6j-symbol {6𝑗} =
+{
+𝑗1 𝑗2 𝑗3
+𝑗4 𝑗5 𝑗6
+}
+,6 and the
+transition amplitude is
+𝑊△(𝑗𝑙) = △
+∑
+𝑗𝑓
+∏
+𝑓
+(−1)𝑗𝑓 𝑑(𝑗𝑓 )
+∏
+𝑣
+(−1)𝑗𝑣{6𝑗}, (A.5)
+where 𝑗𝑣 =
+∑6
+𝑎=1 𝑗𝑎.
+Note that even with the definition of this object on a truncation
+of the triangulation, still there are non-physical divergences. We see
+this by first writing explicitly Eq. (A.5) for a triangulation made of
+1 tetrahedron. The dual is made of a vertex inside the tetrahedron
+connected to a node on each of the 4 triangular faces. The dual
+has 6 boundary faces that we label with 6 𝑆𝑈 (2) representations (or
+equivalently there is a dual tetrahedron and the representations are
+living on its edges) and the transition amplitude is immediately
+𝑊△1
+(𝑗𝑙) = (−1)𝑗𝑣
+{
+𝑗1 𝑗2 𝑗3
+𝑗4 𝑗5 𝑗6
+}
+(A.6)
+and is well defined, although for the partition function one should sum
+over the infinite number of 𝑆𝑈 (2), 𝑗𝑓 , representations. The problem
+for transition amplitudes already occurs for the triangulation with only
+four tetrahedrons, made by inserting a point inside the initial large
+one and connecting it with the 4 tetrahedron points. The dual is made
+of four vertices inside the 4 tetrahedrons connected with each other
+and the boundary faces. Now there are the 6 boundary faces with
+representations labeled 𝑗1...𝑗6, plus 4 internal faces, 𝑗7...𝑗10, of the dual,
+(see Fig. A.2). What happens is that even with the 6 boundary spin
+representations fixed, the classical 𝑆𝑈 (2) fusion rules do not give a
+constraint on the spin representations on these internal faces, and the
+amplitude can diverge
+𝑊△4
+(𝑗1,… , 𝑗6) =
+∑
+𝑗𝑓
+10
+∏
+𝑓=1
+(−1)𝑗𝑓 𝑑(𝑗𝑓 )
+4
+∏
+𝑣=1
+(−1)𝑗𝑣{6𝑗}, (A.7)
+where each {6𝑗} now has 3 boundary spin representations and 3 inter-
+nal ones. These internal spins are not fixed by triangular inequalities.
+All the four internal spins form an internal tetrahedron where the spins
+can flow without restriction — the tetrahedron with the vertices 1, 2,
+3 and 4 in Fig. A.2. From results of LQG, the spin quantum numbers
+correspond to eigenvalues of geometrical operators such as lengths and
+areas, and so there is a divergence when the scale of the geometry
+becomes large, a kind of infrared divergence. This is possible because in
+Riemannian geometry the space can be strongly curved. The 4 internal
+faces form what is called a bubble in LQG, and the divergence for a
+large spin sitting on an internal triangular face is called a spike.
+4 The input for 𝐴𝑣(𝑗𝑓 ) are the representations on each one of the 6 faces
+djacent to the vertex or the representations on the 6 segments that form the
+etrahedron. We can note that 𝐴𝑣(𝑗𝑓 ) comes from a path integral quantization
+nd gives the weighted value of the field at one point of the discretization.
+5 The 4-simplex has 10 edges and 10 triangles, so the input for 𝐴𝑣(𝑗𝑓 ) are
+0 representations. The boundary graph of the amplitude is a pentagram.
+6 See [1] for explicit definitions.
+Physics Open 10 (2022) 100098M. Amaral et al.Fig. A.2. The dual 2-complex for the triangulation level 1 with four tetrahedrons,
+highlighting the external faces.
+The transition amplitudes can be made well defined and explicitly
+independent of the triangulation by a deformation of the 𝑆𝑈 (2) sym-
+metry, using quantum 𝑆𝑈 (2)𝑞 with a deformation parameter 𝑞 defined
+as a complex root of unity 𝑞 = 𝑒
+2𝜋𝑖
+𝑟 , with 𝑟 an integer.7. The transition
+amplitudes is given by
+𝑊𝑞(𝑗𝑙) = 𝑞
+∑
+𝑗𝑓
+∏
+𝑓
+(−1)𝑗𝑓 𝑑𝑞(𝑗𝑓 )
+∏
+𝑣
+(−1)𝑗𝑣{6𝑗}𝑞 , (A.8)
+where we have now, as the quantum-deformed analogues of the objects
+that appear in the transition amplitude, the quantum dimension 𝑑𝑞(𝑗𝑓 )
+and the quantum Wigner 6j-symbol {6𝑗}𝑞 =
+{
+𝑗1 𝑗2 𝑗3
+𝑗4 𝑗5 𝑗6
+}
+𝑞
+. From
+the representation theory of quantum groups [31] we know that the
+spin quantum numbers of 𝑆𝑈 (2)𝑞 are constrained to 𝑗 ≤ 𝑟−2
+2 , working
+as a cut off for the flow of spin on the bubbles. The usual trian-
+gular inequalities are modified and supplemented by the conditions
+2𝑗1, 2𝑗2, 2𝑗3 ≤ 𝑗1+ 𝑗2+ 𝑗3 ≤ 𝑟−2, which are the triangular inequalities of
+a triangle on a sphere with a radius determined by 𝑟. The geometry of
+𝑞-deformed spin networks is therefore consistent with the geometry of
+constant curvature space, with the curvature determined by the specific
+root of unity.
+Our particular synthesis of this result is that a general large spin
+transition amplitude should be built from ‘‘gluing’’ quantum building
+blocks 𝑊△1
+given by {6𝑗}𝑞 with a specific 𝑞 that fixes 𝑊△1
+to low spin
+representations, and we discussed and justified the choice of 𝑞 = 𝑒
+2𝜋
+5 𝑖
+in the main text.
+Appendix B. Gauge grand unification physics review
+Let us provide a short review of the Lie algebra unification physics
+program closely following the Refs. [4–6]. The well known representa-
+tion theory of 𝑆𝑈 (2) can be extended to higher dimensional Lie groups
+and algebras. The structure of a simple Lie algebra is described by its
+root and weight systems. The classification of simple Lie algebras is an
+extensive subject on which we recommend the Refs. [4,7,8]. Here we
+collect and review just the elements necessary for our discussion. For
+7 See chapter 6 of [1].8
+Fig. B.3. Coxeter—Dynkin diagrams of 𝐴𝑛, 𝐷𝑛 and 𝐸8.
+example we have that the root system 𝐴𝑛 describes 𝑆𝑈 (𝑛 + 1), while
+𝐷𝑛, with 𝑛 ≥ 3, describes the Lie algebra of 𝑆𝑂(2𝑛). The exceptional Lie
+algebras 𝐺2, 𝐹4, 𝐸6, 𝐸7 and 𝐸8 have their root systems with the same
+respective names. For our discussion we will focus on 𝐴𝑛, in particular
+𝐴2, and 𝐸8, whose importance for coupling the charge space with spin
+foam was pointed out in [32], and which contains the other exceptional
+Lie algebras as well the 𝐴𝑛 for lower 𝑛.
+Let us consider a Euclidean space 𝑉 of dimension 𝑛. One can
+introduce an orthonormal basis, 𝑙𝑖 (𝑖 = 1, 2,… , 𝑛), in 𝑉 so that the
+Euclidean scalar product (𝑢, 𝑣) of 𝑢 =
+∑
+𝑖 𝜆𝑖𝑙𝑖 and 𝑣 =
+∑
+𝑖 𝜇𝑖𝑙𝑖 is (𝑢, 𝑣) =
+∑
+𝑖 𝜆𝑖𝜇𝑖. The Coxeter—Dynkin diagrams of 𝐴𝑛, 𝐷𝑛 and 𝐸8 are shown
+in Fig. B.3. The nodes on the Coxeter—Dynkin diagram represent the
+simple roots 𝛼𝑖, (𝑖 = 1, 2,… , 𝑛), of the associated Lie algebra of rank
+𝑛8 and two dots linked by an edge correspond to two roots whose
+scalar product is −1. The other pairs of nodes, which are not connected,
+correspond to vectors that are orthogonal. The Cartan matrix elements
+are
+𝐶𝑖𝑗 =
+2(𝛼𝑖, 𝛼𝑗 )
+(𝛼𝑗 , 𝛼𝑗 )
+. (B.1)
+Complementary to the simple roots, there are the fundamental weight
+vectors 𝜔𝑖, which are defined by the relation with the simple roots
+(𝜔𝑖, 𝛼𝑗 ) = 𝛿𝑖𝑗 and are related to each other by (𝜔𝑖, 𝜔𝑗 ) = (𝐶−1)𝑖𝑗 . The
+root lattice 𝛬 is the set of vectors 𝑝 =
+∑𝑛
+𝑖 𝑏𝑖𝛼𝑖, 𝑏𝑖 ∈ Z. Similarly the
+weight lattice 𝛬∗ is the set of vectors 𝑞 =
+∑𝑛
+𝑖 𝑝𝑖𝜔𝑖, 𝑝𝑖 ∈ Z. The reflection
+generator with respect to the hyperplane orthogonal to the simple root
+𝛼𝑖 is 𝑟𝑖, (𝑖 = 1,… , 𝑛), which operates on an arbitrary vector 𝜆 as
+𝑟𝑖𝜆 = 𝜆 −
+2(𝜆, 𝛼𝑖)
+(𝛼𝑖, 𝛼𝑖)
+𝛼𝑖. (B.2)
+It transforms a fundamental weight vector as 𝑟𝑖𝜔𝑗 = 𝜔𝑗 − 𝛼𝑖𝛿𝑖𝑗 . These
+generators form the Coxeter reflection group (Weyl group) acting on the
+root system 𝐺 defined by the presentation 𝑊 (𝐺) = ⟨𝑟1,… , 𝑟𝑛|(𝑟𝑖𝑟𝑗 )
+𝑚𝑖𝑗 =
+1⟩. When they act on one of the simple roots of a simple Lie algebra
+they generate the root system 𝑊 (𝐺)𝛼𝑖.
+The concept of polytopes is important to our discussion. The root
+polytope is a convex polytope whose vertices are vectors of the root
+system. The highest weight vector for an irreducible representation of
+the Lie algebra is defined as the weight vector 𝜔𝑟𝑒𝑝 = (𝑝1,… , 𝑝𝑛), where
+𝑝𝑖 are positive integers called Dynkin labels. The highest weight of any
+irreducible representation decomposes on fundamental weights, and its
+components are its Dynkin labels
+𝜔𝑟𝑒𝑝 =
+∑
+𝑖
+𝑝𝑖𝜔𝑖. (B.3)
+The highest weight vector has an associated polytope, which is the con-
+vex polytope possessing the symmetry of the Coxeter–Weyl group as the
+orbit of this highest weight vector 𝑊 (𝐺)(𝑝1,… , 𝑝𝑛) = (𝑝1,… , 𝑝𝑛)𝑔 . With
+this notation the root polytope of 𝑊 (𝐴𝑛) is given, in a simplified form,
+as (10...01)𝐴𝑛
+. For 𝐴2, for example, (11) describes the root polytope,
+the hexagon with 2 points in the middle in Fig. B.4, and each point
+8 An 𝑁 dimensional Lie algebra is a vector space which contains an 𝑛
+dimensional subspace, the so called Cartan subalgebra, spanned by a maximal
+set of 𝑛 inter-commuting generators, 𝐻 ,
+[
+𝐻 ,𝐻
+]
+= 0 ∀ 1 ≤ 𝑎, 𝑏 ≤ 𝑛.𝑎 𝑎 𝑏
+Physics Open 10 (2022) 100098M. Amaral et al.Fig. B.4. 𝐴2 ‘‘polytopes’’.
+corresponds to one of the 8 states of the adjoint representation, so (11)
+can refer also to the whole adjoint representation. The fundamental
+simplex of the lattice 𝐴𝑛 is a convex polytope with 𝑛 + 1 vertices
+given by 𝜔1,… , 𝜔𝑛 and the origin (0). The Voronoi polytope 𝑉 (0)
+centered at the origin of the lattice 𝛬 is the set of points 𝑉 (0) =
+{
+𝑥 ∈ R𝑛,∀𝑝, (𝑥, 𝑝) ≤ 1
+2 (𝑝, 𝑝)
+}
+. Let 𝑣 ∈ R𝑛 be a vertex of an arbitrary
+Voronoi polytope 𝑉 (𝑝). The convex hull of the lattice points closest to
+𝑣 is called the Delone polytope containing 𝑣. Vertices of the Voronoi
+cell 𝑉 (0) of the root lattices of the 𝐴𝑛 series consist of the vertices of
+the Delone cells centered at the origin.
+Let us show the analogue of these polytopes in lower dimension for
+𝐴1 = 𝑆𝑈 (2). First we will write the eigenvalues in integer form, 𝑝 = 2𝑗
+and then:
+• 𝑝 = 1 is the highest weight of the fundamental representation with
+one reflection that sends it to the state 𝑝 = −1. The edge from the
+𝑝 = −1 to 𝑝 = 1 is the Voronoi polytope, written (1) in the notation
+above.
+• With 𝑝 = 2, operating with the 𝑊 (𝐴1) one gets the other 2 states
+of the adjoint representation, 𝑝 = 0 and 𝑝 = −2. The edge from
+𝑝 = −2 to 𝑝 = 2 forms the root polytope which is the dual of the
+Voronoi polytope, and is represented as (2), which also indicates
+the adjoint representation.
+• Note that the building block is the Delone polytope which is an
+edge of length 1.
+For 𝐴2 we present the representations of interest in Fig. B.4, and
+note that the Voronoi cell is the hexagon made of the 2 triangles (10)
+and (01), while the Delone cell’s building blocks are the triangles whose
+centers are the vertices of the Voronoi cell. Each one is equivalent to
+one of the triangles (10) and (01) - and six of them make the hexagon
+root polytope.
+It is not necessary to introduce the polytopes of the exceptional Lie
+algebras because we will work with 𝐺2 and 𝐸8 only as a container
+for the interaction between its 𝐴2 subalgebras, which will be our main
+objects.
+To present a general representation of the roots and the weights
+of 𝐴𝑛 we add one vector to our orthonormal set of vectors, 𝑙𝑖 (𝑖 =
+1, 2,… , 𝑛 + 1), (𝑙𝑖, 𝑙𝑗 ) = 𝛿𝑖𝑗 . We define the simple roots as linear
+combinations of orthonormal vectors 𝛼𝑖 = 𝑙𝑖 − 𝑙𝑖+1, (𝑖 = 1, 2,… , 𝑛).
+The group generators 𝑟𝑖 permute the set of orthonormal vectors as
+𝑟𝑖 ∶ 𝑙𝑖 ↔ 𝑙𝑖+1. When we define the vectors in terms of their components
+in the 𝑛 + 1 dimensional Euclidean space the simple roots and the
+fundamental weights read
+𝛼1 = (1,−1, 0,… , 0); ...; 𝛼𝑛 = (0, 0,… , 1,−1);
+𝜔1 = 1
+𝑛 + 1
+(𝑛,−1,… ,−1);𝜔2 =
+1
+𝑛 + 1
+(𝑛 − 1, 𝑛 − 1,−2,… ,−2);
+...; 𝜔𝑛 =
+1
+𝑛 + 1
+(1, 1,… , 1,−𝑛). (B.4)
+For 𝑆𝑈 (3) we have the simple roots and weights
+𝛼 = (1,−1, 0),9
+1
+𝛼2 = (0, 1,−1),
+𝜔1 = (2∕3,−1∕3,−1∕3),
+𝜔2 = (1∕3, 1∕3,−2∕3). (B.5)
+They can be used to compute the scalar products on the amplitudes
+discussed below.
+The derivation of the Lie algebra from its root system is standard.
+Let us consider the generalization of Eq. (2) for 𝑆𝑈 (2) to 𝑆𝑈 (3). To
+each of the 2 simple roots 𝛼𝑖 we associate three generators ℎ𝑖, 𝐿+
+𝑖 and
+𝐿−
+𝑖 . These generate the 𝑆𝑈 (3) algebra subject to the relations
+[
+ℎ𝑖, ℎ𝑗
+]
+= 0
+[
+ℎ𝑖, 𝐿
+±
+𝑗
+]
+= ±𝐶𝑖𝑗𝐿
+±
+𝑗
+[
+𝐿+
+𝑖 , 𝐿
+−
+𝑗
+]
+= 𝛿𝑖𝑗ℎ𝑗 ,
+[
+𝐿±
+𝑖 ,
+[
+𝐿±
+𝑖 , 𝐿
+±
+𝑗
+]]
+= 0, 𝑖 ≠ 𝑗 (B.6)
+where, from Eq. (B.1), 𝐶𝑖𝑗 = −1+3𝛿𝑖𝑗 . The Cartan–Weyl basis, or in this
+situation the Chevalley basis, allows us to write the large dimensional
+Lie algebra in terms of the relationship between its building block
+𝑆𝑈 (2) subalgebras.

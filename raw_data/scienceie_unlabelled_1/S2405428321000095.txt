@@ -1,0 +1,1624 @@
+1.1. Background
+Over forty quadrillion proton–proton collisions were produced by the CERN Large Hadron Collider (LHC) [1] at the centre of
+he ATLAS [2] and CMS [3] detectors since the start of LHC operations in 2009. The data samples produced by the reconstruction
+f the resulting detector readouts allowed those two experiments to vastly expand our knowledge of matter and interactions at the
+hortest distance scales. Besides delivering a much awaited discovery of the Higgs boson in 2012 [4,5], the two giant multi-purpose
+xperiments published hundreds of precision measurements of fundamental physics constants and searches for new phenomena
+hich previous experiments could not be sensitive to [6,7].
+The intrinsic complexity of the collected data and the intent to fully exploit the information they yielded on subnuclear
+henomena significantly increased the need of experimentalists to optimize their information extraction procedures by employing the
+ost performant multivariate analysis methods. A concurrent rise in the development of modern machine learning (ML) techniques
+nd the increasing degree of their application to scientific research enabled the LHC experiments to achieve that goal, by squeezing
+ore information from their datasets and improving the quality of their scientific output.
+In the above context are set the activities of AMVA4NewPhysics, an Innovative Training Network funded through the Marie-
+kłodowska Curie Actions of the European Union Horizon 2020 program. The network, which operated from September 2015 to
+ugust 2019, saw the participation of about fifty researchers and students from nine beneficiary nodes among European research
+nstitutes and universities,1 in addition to nine academic and non-academic partners in Europe and the United States.2 The network,
+while keeping as its primary goal excellence in training of a cohort of Ph.D. students, conducted cutting-edge research and fostered
+the use of advanced multivariate analysis methods in physics data analysis for the ATLAS and CMS experiments at the CERN LHC [8].
+The four main pillars, upon which most of the studies performed within AMVA4NewPhysics were based, comprise:
+1. The customization and optimization of advanced Statistical Learning tools for the precise measurement of Higgs boson
+properties;
+2. The development of new Statistical Learning algorithms to increase the sensitivity of physics analyses targeting model-specific
+and aspecific searches for new physics;
+3. The improvement of the Matrix Element Method through the addition of new tools that extend its applications;
+4. The development of new Statistical Learning algorithms for use in high-energy physics (HEP) analyses, ranging from data
+modelling methods to anomaly detection methods in model-independent searches.
+In this paper we summarize some of the research outcomes that resulted from work performed by AMVA4NewPhysics members
+in the four pillars defined above, highlighting the importance of the results for future studies at the LHC and beyond.
+1.2. Plan of this document
+The structure of this document follows loosely the order of the four pillars defined above; however, new tools belonging to the
+fourth one are in some cases described earlier, where they find their most relevant research application. We start in Section 2 where
+we describe a detailed study of the performance of deep neural networks applied to the complex task of distinguishing a signal
+of Higgs boson decays to tau lepton pairs from competing backgrounds; the study focuses on the most performant strategies by
+leveraging information from a competitive effort (the Kaggle ‘HiggsMLChallenge’). This is followed in Section 3 by a description
+of multivariate methods applied to the extraction of the Higgs pair-production signal: an innovative technique for the precise
+data-driven modelling of multi-jet backgrounds in the search of the 𝐻𝐻 → 𝑏?̄?𝑏?̄? process performed by CMS on Run 2 data, and
+neural-network studies for the extraction of the 𝐻𝐻 → 𝑏?̄?𝜏𝜏 signal in future high-luminosity LHC running conditions.
+In Section 4 we describe the development of a high-performance method for identifying the flavour of the parton originating a
+hadronic jet in CMS data; the resulting algorithms are now among the crucial ingredients for a wide class of analysis tasks, ranging
+from high-sensitivity measurements of Higgs boson properties, to top quark precision measurements, and to wide-reach searches
+for new physics signatures in collider data. Section 5 is then devoted to describing improvements achieved on the Matrix-Element
+Method, which is a complex multi-dimensional calculation that approximates the likelihood function to extract SM parameters from
+the observed data, and resulting applications to Higgs boson searches in ATLAS and CMS data.
+Section 6 focuses on the new methods we designed to search for new physics in LHC data in model-aspecific ways through the
+identification of anomalous regions of the feature space of the observed datasets; the section also includes description of a technique
+developed to improve inference on the presence of new physics signals in invariant mass distributions, and its expected performance
+in searches for high-mass resonances decaying to jet pairs. Section 7 describes an innovative study of particle showers in the ATLAS
+forward electromagnetic calorimeter, aimed at the production of a fast simulation of the complex physics processes detected by
+that instrument. In Section 8 we offer an outlook of future studies targeting the end-to-end optimization of data analyses aimed at
+1 The involved beneficiary nodes were the Italian Institute for Nuclear Physics and the University of Padova (Italy), the University of Oxford (England), the
+niversité catholique de Louvain (Belgium), the Université Clermont Auvergne (France), the Laboratório de Instrumentação e Física Experimental de Partículas,
+isbon (Portugal), the CERN laboratories, the Technische Universitat Munchen (Germany), and the Institute for Accelerating Systems and Applications (Greece).
+2 The network included as academic partners the Universidad de Oviedo (Spain), the University of California Irvine (USA), the École Polytechnique Fédérale
+e Lausanne (Switzerland), the University of British Columbia (Canada), the National and Kapodistrian University of Athens (Greece); and as non-academic2
+artners the Mathworks Company (Massachusetts, USA), SDG group Milano (Italy), B12 (Belgium), and YANDEX (Russia).
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+the loss-less extraction of information from multi-dimensional datasets such as those common in HEP problems, and describe an
+algorithm we developed for that task. We finally offer some concluding remarks and summary of our review of AMVA4NewPhysics
+contributions to LHC data analysis in Section 9.
+2. Supervised Classification Methods for the Search of Higgs Boson Decays to Tau Lepton Pairs
+2.1. Background
+The groundbreaking discovery of the Higgs boson in 2012 by the ATLAS and CERN experiments at the LHC [4,5] led to the award
+f the 2013 Nobel Prize in Physics to P.W. Higgs and F. Englert; the Scottish and Dutch awardees must indeed be commended for
+heir visionary theoretical predictions, which had to wait for almost five decades to be experimentally confirmed. While concluding
+long quest for the origin of electroweak symmetry breaking, that scientific milestone initiated a new era of large-scale precision
+easurement studies and new physics searches related to the Higgs boson and its properties. Curiously, the year 2012 also marks
+n important milestone for machine learning, as in that year deep neural networks reached paradigm-changing performance in the
+enchmark problem of image classification [9]. It is thus not a surprise to observe that, from that year onwards, HEP data analysis
+ithstood a boom of applications of ML-based techniques, aimed at optimizing the experimental output of their measurements and
+earches.
+A particularly significant activity in that context was represented by the ‘HiggsMLChallenge’ competition on Kaggle [10]. That
+ompetition, held in 2014, brought together thousands of participants, both belonging to the HEP collaborations most interested in
+he specific application object of the challenge, as well as academic and non academic participants with background in computer
+cience. Besides that success, the challenge managed to achieve the set goal of understanding which were the most performant
+achine learning techniques in discriminating the Higgs boson decay to a pair of tau leptons from the various background processes,
+nd at the same time allowed to introduce new promising methods and tools to HEP research and to the broader scientific
+ommunity. The complexity of the classification task, combined with the high expertise behind the best proposed solutions, made
+he HiggsMLChallenge competition a benchmark against which to evaluate and compare different ML approaches for supervised
+lassification, as well as to gauge their applicability on HEP datasets. Triggered by the interest of the challenge and the derived
+onclusions, we conducted a thorough study published in Ref. [11], whose results are summarized infra. In parallel, the new
+Lumin [12] software package was developed to provide implementations of the investigated methods, using PyTorch [13] as the
+nderlying tensor library.
+.2. Challenge details and datasets
+The data used in the competition were constituted by information on all particles produced in proton–proton collisions simulated
+nder the 2012 LHC run conditions (a centre-of-mass energy of 8 TeV and a typical instantaneous luminosity of 1034 cm−2 s−1),
+which was fed through a simulation of the ATLAS detector, and from which, after applying state-of-the-art reconstruction algorithms,
+a set of 30 high-level physics observables were derived per simulated collision. The signal was constituted by direct production of
+a Higgs boson followed by its decay into a pair of 𝜏 leptons, 𝑝𝑝 → 𝐻 +𝑋 → 𝜏+𝜏− +𝑋 (where 𝑋 denotes any additional produced
+particles) with the subsequent mixed decay of the 𝜏 lepton pair, 𝜏+𝜏− → 𝑒+(𝜇+)𝜈𝑒(𝜇)𝜈𝜏 + 𝜏−ℎ 𝜈𝜏 (or to the charge-conjugate final state),
+here 𝜏ℎ denotes the hadronic decay products of one of the tau leptons. These simulated collision events thus contained a semi-
+adronically decaying tau lepton and in addition a reconstructed muon or electron, plus at least three unobserved neutrinos. The
+ackground sample consists of three major processes: 𝑍 → 𝜏++𝜏−, 𝑡𝑡, and 𝑊 + jets. The simulated samples include labels identifying
+he originating process-class (signal or background) of each event, as well as weights normalizing the various contributing processes
+o the target integrated luminosity.
+.2.1. Data preprocessing
+The training and testing datasets [14] consist of 250,000 and 550,000 events, respectively, each a mixture of signal and
+ackgrounds. At the time of the competition, process-identifying labels were only supplied for the training dataset, and the testing
+ataset was split into two parts: the public test set, for which scores (see Section 2.2.2, infra) were supplied to the participant after
+very submission; and the private test set, for which scores were supplied for the solution selected by the participant once the
+ompetition ended, and on which the competition was judged. The analysis discussed infra attempted to reproduce the challenge
+onditions, by developing the model based on scores on the public dataset, and then checking the performance of the final model
+n the private dataset.
+Dataset features consist of low-level information and high-level information, the latter calculated via (non)-linear combinations
+f the low-level features or from hypothesis-based fitting procedures. Additionally, events carry a weight to normalize the datasets
+o a fixed integrated luminosity. Since this weight carries information about the event process (signal or background), weights were
+ot publicly available for the testing datasets, and they cannot be used as an input feature in developing the models. Ref. [14]
+rovides a compact summary of the dataset features.3
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+s
+a
+2.2.2. Scoring metric
+The performance of a solution classifying testing data as belonging to the signal or background classes is measured using the
+o-called ‘approximate median significance’ (AMS) [15,16]:
+𝐴𝑀𝑆 =
+√
+2
+(
+(𝑠 + 𝑏 + 𝑏𝑟𝑒𝑔) ln
+(
+1 + 𝑠
+𝑏+𝑏𝑟𝑒𝑔
+)
+− 𝑠
+)
+, where 𝑠 is the sum of weights of true positive events (signal events determined
+as signal events by the solution), and 𝑏 is the sum of weights of false positive events (background events determined as signal events
+by the solution); 𝑏𝑟𝑒𝑔 is a regularization term set to a constant value of 10 for the competition. The AMS provides an approximation
+of the expected statistical significance of the number of data events selected by the classification procedure, which could be obtained
+from the 𝑝-value of observing at least the selected amount of data (signal plus background) under an expectation provided by the
+background contribution alone in the null hypothesis.
+2.3. Deep Neural Network overview
+The model architecture used for the reported study is based on an artificial Deep Neural Network (DNN). A Neural Network
+(NN) attempts to learn a mathematical function that maps a selection of input features to a target function. This is accomplished
+by a series of matrix operations involving learned weights, i.e. parameters that are adjusted throughout the training, and non-linear
+transformations on the inputs. The NN may be visualized as a set of layers of neurons, each of which receives inputs from the
+neurons of the previous layer. Layers between the input and output ones are referred to as hidden, and the more hidden layers a
+NN contains, the ‘deeper’ it is considered to be. The main choices to be made when constructing a NN, including the ones taken
+into account and tested in the study described here, are:
+• The activation function, which provides a (non)-linear response of each neuron based on the weighted sum of their inputs, in
+order to provide the neuron output;
+• The weight initialization, on the basis of which weights are sampled randomly from a (non-uniform) distribution;
+• The loss function, which quantifies the performance of the NN,
+• The learning rate (LR), which corresponds to the step size the NN makes over the loss surface at each update point;
+• The optimization algorithm used for the learning rate adaptation following changes in the loss function;
+• the pre-processing step, which refers to the appropriate transformation of the input features towards improving the weight
+initialization and decreasing the convergence time;
+• The cross-validation (k-fold), related to splitting the training sample into k equally sized portions, and repeating the training
+and testing procedure k times by training each time the NN on all the portions except the one to be eventually used for the
+NN’s respective testing;
+• The ensemble approach, according to which multiple ML algorithms are combined in the direction of improving the
+performance for a larger range of inputs, and the constituent NN are weighted based on their performance on separate testing
+sets, for the degree of their respective influence on the output to be regulated.
+2.4. Baseline model and alternative techniques
+The baseline model in the study reported here is a fully connected, feed-forward DNN, with 4 hidden layers of 100 neurons
+each. The activation function used is ReLU (Rectified Linear Unit), and the weight initialization relies on He’s prescription [17].
+The NN output is a single sigmoid neuron with Glorot initialization [18]. The optimization is done via the Stochastic Gradient
+Descent algorithm with the Adam extension, and the mini-batch size is set to 256 events.
+An 80:20 random split is performed on the original training data into training and validation sets, which are then split into ten
+folds via random stratified splitting on the event class. The testing data is split into ten folds as well, but via simple random splitting.
+During training, each fold is loaded sequentially.
+The tests performed in this study—with a view to comparing different machine learning techniques as to their effect on the
+performance achieved through the ‘HiggsMLChallenge’ winning solutions—lie on several levels including the following:
+• Combining many models in an ensemble by averaging the predictions of each model, which improves the generalization of
+the final prediction to unseen data;
+• Learning rich, compact, embedding matrices for categorical features [19], as opposed to 1-hit encoding the categories and
+thereby increasing the number of inputs to the model;
+• Choosing a better internal activation function; whilst ReLU is the standard, issues such as ‘‘dead ReLU’’,3 non-zero-centred
+outputs, and saturated gradient for negative outputs mean that newer activation functions which aim to solve these issues can
+be beneficial, such as: ReLU, PReLU (Parameterized ReLU) [17], SELU (Scaled Exponential LU) [20] and Swish [21], the latter
+defined as Swish(x) = 𝑥⋅ Sigmoid(x);
+• Using learning rate and momentum scheduling to improve both performance and convergence time, e.g. cosine-annealed
+LR [22] and 1-cycle annealing of LR and momentum [23];
+3 Random weight initialization, or updates during training push the activation into the far-negative region, meaning that the output (and incoming gradient)4
+re consistently zero and the neuron becomes unusable.
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+Comparison between our solution (‘‘This Work") and the top three solutions during the HiggsML Challenge. Performance is
+measured in AMS (see Section 2.2.2). We report the average performance of our model (evaluated via repeated trainings), but
+for the challenge entrants’ solutions we report the AMS of their submitted predictions. The inference times are the recorded time
+taken to evaluate every event in the full testing dataset (public and private). Accounting for the differences in precision and
+throughput between the Nvidia Titan and 1080 Ti GPUs, it is estimated that the 1st-place solution may be trained in 100 min
+and applied to the full testing set in 8.5 min on a 1080 Ti machine. The developed solution therefore provides an effective
+speedup of: 92% on GPU or 86% on CPU, for training; and 97% on GPU or 65% on CPU, for inference.
+This work 1st 2nd 3rd
+Method 10 DNNs 70 DNNs Many BDTs 108 DNNs
+Train time (GPU) 8 min 12 h Unknown Unknown
+Train time (CPU) 14 min 35 h 46 h 3 h
+Inference time (GPU) 15 s 1 h Unknown Unknown
+Inference time (CPU) 3 min Unknown Unknown 20 min
+Private AMS 3.806 ± 0.005 3.806 3.789 3.787
+• Employing domain-specific data-augmentation techniques (see e.g. [24]) to improve the performance and generalization of the
+model; for LHC collisions in symmetrical detectors like ATLAS and CMS, events can be rotated in azimuth and flipped in the
+transverse and longitudinal plane to create new, valid inputs without affecting the class of the events. This may be applied
+during training time to artificially increase the available training data and during testing time to reduce residual biases in
+predictions by averaging over a set of augmented inputs;
+• Performing advanced ensembling via: Snapshot Ensembling (SSE) [25], Fast Geometric Ensembling (FGE) [26,27], and
+Stochastic Weight Averaging (SWA) [28]; These methods can either reduce the time required to train and apply ensembles,
+or allow a larger ensemble to be trained in a similar time as traditional ensembling;
+• Using densely connected hidden layers [11]; similar to DenseNet [29], each hidden layer receives as input the output of all
+previous layers, meaning that prior representations of the data are never lost (thereby protecting against over-parameterization
+of the model), and parameters have a more direct connection to the output and subsequent back-propagated gradient.
+Based on the above options, which are studied separately, this investigation manages to carry out several comparisons with the
+aseline model, and in so doing reaches important conclusions on the set of choices that is found to benefit the performance most.
+.5. Performance tests
+After evaluating the proposed changes (some of them being mutually exclusive), the final model was decided upon. This consists
+f an ensemble of 10 DNNs, in which predictions are weighted according to their performance on validation data during training
+the reciprocal of their loss). The use of ensembling resulted in the largest improvement in performance that was seen in the study.
+he single categorical feature of the data was passed through an embedding matrix, which offered a minor performance boost. The
+NNs were trained using HEP-specific data augmentation, in which the final state particles measured in an event were randomly
+lipped and rotated in a class-preserving and physics-invariant manner.4 This was also applied at testing time by computing the
+verage prediction on a set of data transformations. This procedure resulted in the second largest improvement observed in the
+coring metric.
+Among the activation functions tested, Swish offered the largest improvement in performance. 1-cycle scheduling of the LR and
+omentum of the optimizer were found to allow DNNs to be trained to a higher level of performance in half of the required time.
+inally, by changing the DNNs to be thinner and deeper (six layers of 33 neurons each), and then passing all the outputs of previous
+ayers to the inputs of subsequent layers (dense connections for non-convolutional layers), a moderate improvement in performance
+as found (along with potential resilience to the exact settings of architecture hyper-parameters).
+.6. Solutions comparison and outlook
+Considering the set of choices regarding the model structure and characteristics that gives the most performant outcome, the
+tudy proceeds to a comparison with the winning solution. As shown in Table 1, the model proposed by the study can match the score
+f the winning solution of the HiggsML Challenge, whilst being more lightweight, allowing it to be trained and applied much more
+uickly, even on a typical laptop. The relative contributions to overall improvement in metric score of each of the changes included
+n the final model are illustrated in Table 2. Similar to the other solutions, ensembling was found to provide a large improvement,
+owever we can see that domain-specific data augmentation also provides a significant benefit. Whilst smaller in terms of score
+mprovement, the 1-cycle training schedule allows to halve the required training time, and the dense connections provide some
+esilience to poor choices of network hyper-parameters. An illustration of the final model is shown in Fig. 1.
+4 For example, all particles pseudo-rapidities may be simultaneously changed of sign, given the symmetry in the initial state of the collision; similarly, if one
+bserved particle is taken as a reference, all others may be subjected to a mirroring of their azimuthal angles about the axis of the reference particle, 𝜙𝑟𝑒𝑓 as
+′
+5
+𝜙𝑖 = 2𝜙𝑟𝑒𝑓 − 𝜙𝑖
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Table 2
+Breakdown of sources of improvement in metric
+score for the final ensembled model compared
+to the starting baseline model.
+Technique Improvement
+contribution
+Ensembling 61.3%
+Data augmentation 32.1%
+Dense connections 3.6%
+Swish + 1cycle 3.0%
+Entity embedding 0.1%
+Fig. 1. Illustration of the layout of the network used to build the final model. ⊕ indicates a feature-wise concatenation, providing dense skip-connections to
+the hidden layers. Six hidden layers (each with 33 neurons) are used in total. The single categorical feature is encoded via an embedding matrix prior to
+concatenation with the continuous features. The final model consists of 10 such networks in a weighted ensemble.
+Source: Image source [11].
+Code and hardware details of the HiggsML solutions may be found below:
+• This Work (https://github.com/GilesStrong/HiggsML_Lumin):
+– GPU: NVidia 1080 Ti, <1 GB VRAM, <1 GB RAM
+– CPU (2018 MacBook Pro): Intel i7-6500U 4-core CPU, <1 GB RAM;
+• 1st place: Melis (https://github.com/melisgl/higgsml)
+– GPU: NVidia Titan, <24 GB RAM
+– CPU (AWS m2.4.xlarge): 8vCPU, <24 GB RAM;
+• 2nd place: Salimans (https://github.com/TimSalimans/HiggsML), 8-core CPU, 64 GB RAM;
+• 3rd place: Pierre (https://www.kaggle.com/c/higgs-boson/discussion/10481), 4-core CPU (2012 laptop).
+This result highlights the need of optimizing the architecture and training of the ML algorithms, as this has been shown to lead to
+significant improvement over common default choices for both classification and regression problems. The improvement in timing6
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+C
+t
+s
+3
+3
+i
+l
+o
+Q
+𝐻
+and hardware requirements are also of great importance, given that most analysers at the LHC do not have on-demand access to
+high-performance GPUs and must rely solely on their laptops and CPU farms.
+The results of this study were verified in a partially independent study of the projected sensitivity to Higgs pair production of the
+MS experiment in the High-Luminosity LHC (HL-LHC) scenario [30,31], discussed further in Section 3.3, in which using some of
+he solution developments discussed above resulted in a 30% improvement in AMS, compared to a baseline DNN under otherwise
+imilar circumstances. This investigation is briefly summarized in the following section.
+. Multi-Variate Techniques for Higgs Pair Production Studies
+.1. Introduction
+With the mass of the Higgs boson (𝑚𝐻 ) now experimentally measured with sub-GeV precision [32], the structure of the
+Higgs scalar field potential and the intensity of the Higgs boson self-couplings are precisely predicted in the SM. While measured
+properties are so far consistent with the expectations from the SM predictions, measuring the Higgs boson self-couplings provides an
+independent test of the SM and allows a direct measurement of the scalar sector properties. In particular its self-coupling strength
+𝜆ℎℎℎ, can directly be measured through the study of particle collisions in which two Higgs bosons are produced by the same hard
+subprocess. In LHC proton–proton collisions this process occurs mainly via gluon fusion (ggF) and it involves either couplings to
+a loop of virtual fermions, or the 𝜆ℎℎℎ coupling itself. The SM prediction for the double Higgs production cross section is small,
+.e. approximately 𝜎(ggF) = 31 fb at NNLO for a Higgs boson mass 𝑚𝐻 = 125 GeV at 13 TeV [33]. Beyond Standard Model (BSM)
+physics effects in the non-resonant case may appear via anomalous couplings of the Higgs boson; the experimental signature of
+those effects would be a modification of the Higgs boson pair production cross section and of the event kinematics.
+If the value of the Higgs self-coupling were significantly different from the value predicted by the SM, it could well be an
+indication of new physics. Possible scenarios that might give rise to such a deviation include resonant production via a ‘heavy
+Higgs’ such as those predicted by BSM theories like the Minimal Super-Symmetric Standard Model, and BSM particles being produced
+virtually within the coupling loops [34–36]. Unfortunately, the expected cross-section for Higgs pair production is several orders of
+magnitude below other particle processes that form an irreducible background. Because of this, detecting a statistically significant
+presence of Higgs pair production events at the LHC requires a much larger number of recorded collisions than the LHC in its current
+form is expected to produce.
+Higgs bosons have a wide range of possible decay channels [37]. The most probable decay for a Higgs boson is to a pair of
+b quarks, but this decay mode incurs in a large background from Quantum Chromo-Dynamics (QCD) processes yielding multiple
+hadronic jets. Decay to a pair of 𝜏 leptons is the next most probable fermionic decay mode, where 𝜏 leptons can decay to light
+eptons (electrons and muons, with a branching ratio BR of approximately 35%) or hadronically (with a few charged particles in 1-
+r 3-prongs, with a BR of approximately 65%) in their secondary decays; these decay modes offer a powerful handle on suppressing
+CD backgrounds. The 𝐻𝐻 → 𝜏𝜏𝑏𝑏 decay mode therefore offers a favourable compromise due to the high branching ratio of
+→ 𝑏𝑏 and a source of high-purity leptons from the 𝐻 → 𝜏𝜏 decay. On the other hand, the 𝑏?̄?𝑏?̄? final state of 𝐻𝐻 pairs is the most
+frequent one, yet it has to fight a very large background of QCD production of multiple b-quark pairs. In the following we describe
+a multivariate study aimed at modelling with high precision the QCD background in the four-b-quark final state, and a study of the
+potential of the 𝑏?̄?𝜏𝜏 final state in the HL-LHC data-taking scenario.
+3.2. Modelling QCD backgrounds for the 𝐻𝐻 → 𝑏?̄?𝑏?̄? search
+The QCD background is the omnipresent problem of searches for rare processes in hadron collisions. While Monte Carlo
+generators can today accurately model processes with several hadronic jets in the final state, their reliability remains limited in
+regions of phase space populated by a large number of energetic jets, which are contributed by radiative sub-leading processes that
+MC generators can only handle with limited precision. In addition, the computational requirements of a thorough simulation of
+events with a large number of jets makes reliance on MC simulation not always easily practicable. Finally, in specific applications
+where one needs a precise modelling of not just one single variable, but of the full multi-dimensional density of the multi-jet
+kinematics, the problem becomes intractable by parametrizations.
+Having in mind an application to the search of Higgs boson pair production in CMS data using the four b-jets final state, we
+devised a precise modelling of the QCD background employing exclusively experimental data. The novel technique we designed,
+called ‘hemisphere mixing’, allows for the generation of a high-statistics, multi-dimensional model of QCD events, such that we can
+base on its properties the training of a multivariate classifier capable of effectively discriminating the Higgs pair production signal.
+Event mixing techniques are not a novelty in HEP applications; they have been used extensively in electron–positron collider
+experiments. Applications to hadron collider physics analysis also exist [38–42], but they are limited to the mixing of individual
+particles or jets, while our technique for the first time employs hemispheres of jets as the individual objects subjected to a mixing
+procedure. As jets are direct messengers of the hard subprocess, the creation of artificial events through the mixing of entire jet
+collections is considerably more complex than the mixing of single particles or jets.7
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 2. Size of the bias B, in percentage, on the signal fraction extracted by a fit to the reconstructed Higgs boson mass distribution in data containing a small
+𝐻𝐻 → 𝑏?̄?𝑏?̄? signal and a majority of QCD background events, as a function of the signal fraction 𝑓𝑠. The green band shows the level of bias considered acceptable
+in searches of new signals in hadron collider data. The upper-right inset shows the distribution of the reconstructed Higgs boson mass (𝑀12) for simulations of
+QCD (black), HH signal (red), and sum of the two components (blue), with overlaid the fit results (point with uncertainty bars) for a 5% signal contamination,
+which is close to the maximum contamination that still allows a successful modelling of the multi-dimensional distributions [43]. (For interpretation of the
+references to colour in this figure legend, the reader is referred to the web version of this article.)
+3.2.1. The hemisphere mixing technique
+The idea on which hemisphere mixing is based stems from the observation that QCD events, while extremely complex to model
+and interpret from the final state point of view, may be thought to originate from a simple tree-level two-body reaction, whereby two
+partons scatter off one another. The reaction then produces the complex kinematics of a multi-jet event by means of the intervention
+of second-order effects involving initial and final state QCD radiation, in addition to pile-up collisions in the same proton–proton
+bunch crossing or even multiple parton scattering of the same colliding protons. Still, the kinematics of the two leading partons
+emitted in the final state of the hard subprocess offers itself, if properly estimated, as a basis of a similarity measure, which can be
+exploited to create artificial events based on the individual parton properties.
+We consider a dataset of QCD events that feature at least four jets in the final state, and construct in each event a ‘transverse
+thrust axis’ using the transverse momentum of the jets. This axis can be defined by the azimuthal angle 𝜙𝑇 such that
+𝜙𝑇 = 𝑎𝑟𝑔 𝑚𝑎𝑥𝜙𝑇 ′
+[
+∑
+𝑗
+𝑝𝑇 ,𝑗 | cos(𝜙𝑗 − 𝜙𝑇 ′ )|
+]
+, (1)
+where the sum runs over all observed jets 𝑗; alongside with 𝑇 we may define the related variable 𝑇𝑎 =
+∑
+𝑗 𝑝𝑇 ,𝑗 | sin(𝜙𝑗 − 𝜙𝑇 )|. Once
+𝑇 is defined, the event can be ideally split in two hemispheres by the plane orthogonal to 𝑇 . The two hemispheres contain two sub-
+lists of the jets, characterized by the different signs of cos(𝜙𝑗 − 𝜙𝑇 ). We may describe each hemisphere by a number of observable
+features, ℎ(𝑁𝑗 , 𝑁𝑏, 𝑇 ,𝑀, 𝑇𝑎, 𝑃𝑧). In this expression 𝑁𝑗 is the number of contained jets, 𝑁𝑏 is the number of b-tagged jets, 𝑇 (𝑇𝑎) is
+their transverse momentum sum along the thrust axis (orthogonal to it), 𝑀 is their combined invariant mass, and 𝑃𝑧 is the sum
+of longitudinal components of the jets. Using the 2𝑁 hemispheres that can be obtained from 𝑁 observed data events in the same
+sample where we wish to search for a small signal we may build a library ℎ𝑖 (𝑖 = 1,… , 2𝑁), which is the basis of the construction
+of synthetic events. If ℎ𝑙 and ℎ𝑚 are the hemispheres obtained from the splitting of a real event, we may construct an artificial
+replica of that event by identifying the two hemispheres ℎ𝑝, ℎ𝑞 in the library that are the most similar to ℎ𝑙 and ℎ𝑚 (subjected to
+the condition that none of the indices 𝑙, 𝑚, 𝑝, 𝑞 are identical). Similarity is defined within the sub-classes of hemispheres with the
+same value of 𝑁𝑗 and 𝑁𝑏 by a normalized Euclidean distance in the space of continuous parameters (𝑇 ,𝑀, 𝑇𝑎, 𝑃𝑧) describing the
+hemispheres. More detail on the procedure is available in [43].
+3.2.2. Results
+Multi-dimensional statistical tests that employ a complete set of kinematic variables describing the event features prove that the
+produced artificial events model the multi-dimensional distribution of the original features to sub-percent accuracy, if the dataset is
+constituted by QCD events. Furthermore, when the data contain a small fraction of events originated by Higgs pair production events
+the mixing procedure washes out the features of that minority class, such that the artificial data sample still retains accuracy in
+modelling the QCD properties (see Fig. 2, which shows the effect of different signal fractions in the modelling). This happens because
+the probability that two hemispheres in the library, chosen to model a signal event, be both originated from other signal events (and
+thus retain memory of the peculiarities of the multi-dimensional density of signal in the event feature space) scales with the square
+of the signal fraction in the original data. Hence a small signal contamination present in the dataset will not impair the validity of
+the model. This property makes the hemisphere mixing method an attractive option for the search of rare signals in QCD-dominated8
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 3. Two-dimensional distributions of the invariant masses of the reconstructed Higgs bosons (ℎ𝜏𝜏 and ℎ𝑏𝑏) in signal (left) and background processes (right).
+One-dimensional invariant-mass distributions are projected on the corresponding axes; Bottom: One-dimensional distribution of the ℎ𝜏𝜏 (left) and ℎ𝑏𝑏 (right)
+invariant masses for signal and background process for all final states together. Distributions of signal and background are separately normalized to unit area.
+Images source [45] (supplementary material).
+datasets. It is of special interest the fact that the user does not need to identify a control sample of data where to perform modelling
+studies: the method can be directly applied to the same sample where the signal is sought for. This is a considerable simplification
+of the experimental analysis, which also reduces modelling systematics. Finally, by searching for multiple similar hemispheres to
+the two that make up the event to be modelled, one may construct a synthetic dataset much larger than the original one, reducing
+the statistical uncertainties without introducing appreciable systematic biases.
+The hemisphere mixing procedure has been successfully used for the first search of Higgs pair production in the four b-jets final
+state performed by the CMS experiment [44]. In that analysis the technique enabled the training of a multivariate classifier on a
+large synthetic dataset of hemisphere-mixed events, as well as provided the background model from which a limit on the Higgs pair
+production signal was extracted.
+3.3. Prospects of the 𝐻𝐻 → 𝑏?̄?𝜏𝜏 channel at the HL-LHC
+A study of the sensitivity of the HL-LHC to the Higgs self-coupling using advanced analysis techniques was performed by
+considering SM Higgs pair production in proton–proton collisions at
+√
+𝑠 = 14 TeV. DNNs were trained for the task of separating the
+signal from background contributions. Details can be found in [30,31]. The study was pursued on the 𝐻𝐻 → 𝜏𝜏𝑏𝑏 decay mode.
+The decay of a Higgs boson to 𝜏𝜏 pairs gives rise to six possible combinations of final state signatures for the signal: 𝑒𝜏ℎ, 𝜇𝜏ℎ, 𝜏ℎ𝜏ℎ,
+𝑒𝑒, 𝜇𝜇, and 𝑒𝜇, where 𝜏ℎ indicates a hadronically decaying 𝜏 lepton. For this investigation, we only consider the three most frequent
+final states, i.e. those involving at least one 𝜏ℎ. From the event selection, a total of 52 features are used in the study. They are split
+into ‘‘basic’’ (27), ‘‘high-level/reconstructed’’ (21), and ‘‘high-level/global’’ (4) features. These proved to give the best performance.
+From each selected event the two Higgs bosons are reconstructed making use of the considered final states. Distributions of the
+invariant masses of the reconstructed Higgs bosons used as inputs for the DNN are shown in Fig. 3.
+Simulated data were pre-processed with a 50–50 split into training and testing sets, and were used to train a DNN with several
+optimizations. Models were compared using the Approximate Median Significance [15,16], however in order to include the presence
+of uncertainties on the background, an extended version is used, compared to Section 2.2.2:
+AMS =
+√
+√
+√
+√2 (𝑠 + 𝑏) ln
+(
+(𝑠 + 𝑏)
+(
+𝑏 + 𝜎2𝑏
+)
+2 2
+)
+− 𝑏2
+2
+ln
+(
+1 +
+𝜎2𝑏 𝑠
+( 2)
+)
+, (2)9
+𝑏 + (𝑠 + 𝑏) 𝜎𝑏 𝜎𝑏 𝑏 𝑏 + 𝜎𝑏
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 4. Predictions of the classifier evaluated on the test dataset for the 𝜇𝜏ℎ𝑏𝑏 final state. Both signal and background are normalized to the expected yields.
+Images source [45] (supplementary material).
+where 𝜎𝑏 is the uncertainty on the number of expected background events. For model development, a 10% systematic uncertainty on
+the background normalization was assumed, in addition to statistical uncertainties. The final computation of the analysis sensitivity
+used appropriately estimated systematic uncertainties from a variety of contributions, accounting for their correlations.
+We studied the performance of NN classifiers in terms of how well they can classify signal and background events. This involved
+reconfirming the benefits of several of the techniques already studied in the work summarized in Section 2. The final ensembled
+model uses SELU activation [20], a cosine-annealed learning rate [22], and the data augmentation described in Section 2. These
+techniques resulted in a 30% improvement in AMS over the performance of a baseline ReLU model.
+Signal and background events are binned in the distributions of the classifier prediction for signal and background in each
+channel (Fig. 4). A simultaneous fit is performed on the expected event distributions for the three final states considered. Including
+systematic uncertainties, an upper limit on the HH cross section times branching fraction of 1.4 times the SM prediction is obtained,
+corresponding to a significance of 1.4 𝜎 in this final state alone. When results are combined with the other final states, a significance
+of 2.6 𝜎 is achieved, and 4 𝜎 when combining the two experiments, ATLAS and CMS.
+The precise characterization of the Higgs boson will be one of the highest priorities of the HL-LHC physics program. The MIP
+Timing Detector (MTD) [46] is a new detector planned for the CMS experiment during the HL-LHC era and it will enhance the
+physics reach capabilities. In this context, the improved object reconstruction and the related effects were quantified. In particular,
+the HH study discussed supra was repeated to account for the new MTD showing a further improvement. For details see [47].
+4. Jet Flavour Classification
+4.1. Overview
+The correct reconstruction and identification of all particles interacting with the different types of detector material constitutes
+a fundamental prerequisite to extract information from detected particle collisions at the LHC experiments. Here we focus on the
+reconstruction of hadronic jets, which is more challenging than that of other measurable physics objects because of the complexity
+of the physics processes of relevance, and which is an important ingredient to the vast majority of measurements and searches
+carried out with the ATLAS and CMS experiments.
+Hadronic jets can be defined as collimated sprays of particles emerging during the hadronisation process of a parton (quark
+or gluon) emitted with high energy from the collision point. Jets may originate from b quarks, c quarks, so-called ‘light quarks’
+(u, d, s), and gluons. Due to their larger mass than all other partons, and to other specific properties of the hadrons they produce
+in their hadronisation, b and c quarks (usually denoted as ‘heavy flavour’ quarks) yield jets that may be distinguished from the
+rest. The identification of the type/flavour of the initial parton that is associated with the jet, referred to as jet tagging, constitutes
+an essential stage of the jet reconstruction process. In particular, the efficient identification of heavy flavour jets is a subject of
+paramount importance for a number of measurements and searches, due to the possible connection of their production with physics
+processes preferentially coupling to the second and third generation of matter fermions – as is the case for the search in [48], while
+it is also critical for Higgs boson measurements because of the large branching fraction of the Higgs to 𝑏?̄? and 𝑐𝑐 quark pairs.
+The potential of new ML tools for heavy-flavour tagging must therefore be investigated thoroughly by HEP experiments. In this
+context, the degree to which the use of novel deep learning techniques may improve heavy flavour jet identification in CMS has been
+clarified by developing the DeepCSV, DeepFlavour, and DeepJet taggers [49–51], a task that received a significant contribution by
+AMVA4NewPhysics members. Extension of the applicability of the above mentioned taggers for the distinctive case of quark/gluon
+discrimination has also been examined within this study. On top of the development and evaluation of the jet tagging models,
+AMVA4NewPhysics researchers have also considerably contributed to the integration of these taggers into the CMS reconstruction
+software [52,53], meeting the strict computational and performance requirements set out by this particular task. The architectures
+developed have been the first advanced deep-learning architectures to be integrated within the CMS reconstruction pipeline, and
+the core integration implemented for this purpose has been re-used for additional models and tasks thereafter.10
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+u
+a
+f
+s
+t
+c
+d
+c
+o
+o
+w
+s
+4
+i
+c
+t
+t
+a
+w
+e
+b
+‘
+(
+a
+N
+4
+r
+a
+s
+m
+t
+i
+n
+4.2. Particle-flow jets and B hadrons identification
+The so-called ‘particle-flow’ jets consist of a list of particles reconstructed via the particle-flow algorithm [54], which is commonly
+sed in CMS reconstruction, and clustered with the anti-𝑘𝑇 clustering algorithm [55]. The particle-flow algorithm aims at identifying
+ll observable particles in the event by combining information from all CMS sub-detectors. What distinguishes a b-quark-initiated jet
+rom other jets at reconstruction level are several detectable particularities stemming from its typical features. At the jet-formation
+tage, while light quarks and gluons hadronize by predominantly producing short-lived hadrons whose decay products yield tracks
+hat originate directly at the collision point (primary vertex), the B hadron created by the hadronisation of the b-quark has a
+omparatively long lifetime (of the order of a picosecond), which leads to the creation of a secondary vertex at the point of their
+ecay, significantly displaced from the primary vertex; the secondary vertex can be reconstructed from the measured trajectories of
+harged tracks possessing a significant impact parameter5 with respect to the primary event vertex. Other detectable characteristics
+f the b-jets include a relatively large opening angle of decay products of the heavy B hadron, the possible presence of an electron
+r muon produced by the semi-leptonic B hadron decay, and a different track multiplicity distribution and fragmentation function
+ith respect to those of jets originated by other partons. All the above information is used by the b-jet taggers in CMS and ATLAS,
+o as to identify b-quark-originated jets with the best possible accuracy.
+.3. The DeepCSV tagger
+The DeepCSV algorithm [56], compared to the previously-standard b-tag classifier CSVv2,CMS-PAS-BTV-15-001, has the same
+nput in terms of observable event features, but processes a larger number of charged tracks. DeepCSV is also a deeper NN, and it
+is trained for multi-class classification. More specifically, the network is composed of five dense layers of 100 nodes each, and its
+input can be in total of around 70 variables. After selecting charged tracks passing quality criteria, eight features are used from up
+to six tracks with the highest impact parameter as part of the input set. Eight additional features summarize information from the
+most displaced secondary vertex, and finally, 12 features are constructed with jet-related observables (global variables). In general,
+the features used in DeepCSV are similar to the ones traditionally used in CMS for b-tagging [57]. The multi-class classification
+property of DeepCSV allows the use of four output classes instead of two of binary classifiers. The classes include the following cases
+describing the originating parton: a b-quark, a c-quark, a light quark (u/d/s), or a gluon. Also, the case that two B hadrons happen
+to co-exist inside the same jet is studied through a separate class.
+4.4. The DeepFlavour and DeepJet taggers
+DeepFlavour [58], compared to DeepCSV, has a much larger input (around 700 variables at most), is a deeper NN (eight fully
+onnected layers, the first one being of 350 nodes, while the rest of 100 nodes each), and it includes convolutional layers. Besides
+he charged jet constituents, whose number is now increased (up to 25), along with the number (16) of features extracted from
+heir kinematical properties, the input includes also information from identified neutral jet constituents (up to 25), with which six
+dditional features are constructed. Moreover, there are now up to four secondary vertices considered as additional input, upon
+hich 12 features are used. Finally, the input information includes six global variables describing the jet. In order to extract and
+ngineer features per object, particle or vertex, several 1 × 1 convolutional layers are used on the input lists of objects. For charged
+particles and secondary vertices, four layers of 64, 32, 32, and 8 filters are applied. For the neutral particles, which carry considerably
+less information, only three layers are used, with 32, 16, and 4 filters.
+The DeepJet tagger [59] was introduced as an updated version of DeepFlavour intended for additional discrimination power
+etween jets originating from gluons and jets originating from light quarks: both categories were expected to fall into the same
+udsg’ output class in the case of DeepFlavour. In DeepJet the output of the convolutional layers is given to Long Short-Term Memory
+LSTM) [60] recurrent layers of 150, 50, and 50 nodes, which respectively correspond to the charged particles, the neutral particles,
+nd the secondary vertices. These intermediate features are concatenated with the six global features, and then given to the dense
+N, whose first layer has 200 nodes for DeepJet instead of the 350 nodes of DeepFlavour [61–63].
+.5. Performance comparison
+Fig. 5(a) shows a significant improvement in performance between DeepCSV and CSVv2. For example, for the same true positive
+ate (b-jet efficiency) of 65%, DeepCSV offers a 40% reduction in false positive rate (misidentification probability) for light jets (uds-
+nd gluon-jets). The 1% false positive rate is a typical working point used for the classification. This result refers to simulated event
+amples of top quark pair production; however, this gain in the performance has been validated in real collision data. The latter was
+ade possible via the comparison of the data-to-simulation scale factors—that refer to the b-tagging efficiency measurement with
+he use of several different methods—between DeepCSV and CSVv2, which shows agreement [56], thus implying that the observed
+mprovement in performance in simulation is additionally reflected on the data part.
+Fig. 5(b) demonstrates the further significant gain in the performance of DeepFlavour with respect to DeepCSV. For example, for
+the same true positive rate of 78%, DeepFlavour offers an almost 40% reduction in false positive rate for light jets. We also see that
+oConv, which is an algorithm with the same structure and input as DeepFlavour, but trained without the convolutional layers (only
+5 Impact parameter is the distance of closest approach of the back-extrapolated particle trajectory to the primary vertex.11
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 5. b-jet identification: True positive rate (b-jet efficiency) versus false positive rate (misidentification probability) for c-jets, and uds- and gluon-jets of
+simulated events of top quark pair production, requiring a minimal transverse momentum of 30 GeV to the considered jets.
+Fig. 6. Comparison of the performance of different algorithms for b-jet identification and quark/gluon discrimination.
+for comparison), provides an even worse result than DeepCSV. This indicates that a larger input set of features alone is not able to
+increase the performance of the NN; on the contrary, it can even degrade the overall discrimination. The choice of a sophisticated
+architecture, i.e. the addition of convolutional layers in this case, which help exploiting the structure of the input (jet), is what
+provides sufficient information for the NN to perform as expected, when combined with a larger number of input variables.
+Fig. 6(a) shows the gain in performance of DeepFlavour over DeepCSV at very high values of transverse momentum of the b-jets,
+which implies a major gain in the sensitivity of physics analyses targeting highly energetic b-jets in the final state. For example, for
+a true positive rate of 37%, there is an almost 90% reduction in false positive rate when using the DeepFlavour tagger.
+Finally, as part of the investigation of DeepJet’s capability to perform quark/gluon discrimination, Fig. 6(b) shows the comparison
+between DeepJet and each one of two reference approaches, namely the ‘convolutional’ and the ‘recurrent’ one. The ‘convolutional’
+approach, which involves the use of 2D convolutional layers working on ‘jet images’, as in [64], stems from the idea of considering
+the calorimeter cells as image pixels so as to be able to apply techniques already implemented within research in computer vision.
+More specifically, the jet is treated as an image in the 𝜂 − 𝜙 plane of the detector; the continuous particle positions are pixelised,
+and for each pixel the intensity is provided by the corresponding energy deposits in the calorimeter; additionally, the RGB colour is
+determined by the relative transverse momenta of the charged and neutral jet constituents and by the charged particle multiplicity.
+The ‘recurrent’ approach, inspired by [65], is a slimmed-down version of DeepJet, given that for light quark/gluon discrimination
+only a fraction of the initial input is relevant. Therefore only four features are used per particle (relative transverse momentum, 𝜂,
+𝜙, and the so-called ‘pile-up per particle identification’ weight [66]); secondary vertex information is removed, and there are no
+1 × 1 convolutional layers. After training all three NN with the same samples, we observe that DeepJet and recurrent NN perform
+similarly well and marginally better than the convolutional NN. The convolutional NN is already expected to be performant in12
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+i
+p
+f
+w
+t
+i
+m
+e
+m
+r
+a
+5
+p
+f
+f
+T
+r
+a
+N
+5
+f
+c
+p
+r
+f
+I
+m
+n
+u
+a
+w
+i
+t
+f
+this case, as this kind of discrimination mostly relies on particle and energy densities, which may be well represented through
+an image related approach, in contrast to the significantly more complex case of heavy flavour tagging. DeepJet’s capability to
+achieve quark/gluon discrimination is further established by the considerable gain in performance it offers when compared to the
+‘‘quark/gluon likelihood’’ discriminator [67], a binary quark/gluon classifier that is included in the CMS reconstruction framework,
+as described in [49].
+4.6. Summary
+The above-described taggers DeepCSV and DeepFlavour/DeepJet significantly outperform the standard b-jet tagger previously used
+n CMS, thus offering a major gain in the sensitivity for physics analyses involving b-quark jets, including new physics searches and
+recision measurements. At the same time, their ability to implement multi-class classification extends their use to generic heavy-
+lavour (b- or c-quark jet) tagging, and also to quark/gluon discrimination, in which regard DeepJet exhibits satisfying performance
+hen compared to approaches sharing the same goal. Broadening the feature selection by increasing the number of input variables
+hat describe the jet constituents, applying a new machine learning algorithm with a deeper NN that also exploits the jet structure as
+t being an image, and using a larger and more diverse training sample that prevents building a process-specific tagger, constitute the
+ain factors responsible for the observed advantage in performance. This result was validated on real collision data, indicating an
+quivalent gain in performance to the one estimated in the simulated samples. These taggers are the currently recommended ones for
+ultiple studies carried out within the CMS Collaboration, and have already been used to produce a number of competitive physics
+esults. CMS analyses that made use of the DeepCSV and DeepJet taggers include not only ones involving new physics searches, but
+lso ones performing precision measurements, with [48,68–73] and [74–80], respectively, serving as a few such examples.
+. Improvements and Applications of the Matrix Element Method
+Machine learning techniques employed at the LHC typically rely on the presence of large sets of training data for optimization
+urposes. The Matrix Element Method (MEM) takes a different approach, and provides a way to approximate the likelihood function
+or parameters in the SM given observed data. This calculation is performed from first principles, without the need for training. It was
+irst used by the D0 Collaboration for a top quark measurement [81], with the original proposal provided by Kunitaka Kondo [82].
+he method can also be used to discriminate between different collision processes by providing powerful observables in searches for
+are signals. Ratios of likelihoods describing the probabilities that observed events be consistent with signal or background processes
+re used in this context. The MoMEMta software package [83–86] was developed with contributions from the AMVA4NewPhysics
+etwork to provide a convenient framework for calculating MEM likelihoods for LHC applications.
+.1. The Matrix Element Method
+Let 𝑞1, 𝑞2 be the momentum fractions of the initial state partons, and 𝑦 the kinematics of the partonic final state. The differential
+cross-section d𝜎𝛼(𝑦), a function of the parton configuration 𝑦, is obtained by integrating the differential cross-section d𝜎𝛼(𝑞1, 𝑞2, 𝑦)
+or the process 𝛼 over the possible initial state parton configurations, weighted by the parton distribution functions (PDFs) of the
+olliding partons. The so-called transfer function 𝑇 (𝑥|𝑦) is the probability density for reconstructed event kinematics 𝑥, given a
+arton configuration 𝑦. It provides an approximate expression to capture effects from parton shower, hadronization, and detector
+econstruction. Reconstruction efficiency effects can also be modelled with an appropriate efficiency 𝜖(𝑦). The probability density
+or observing an event 𝑥, given a hypothesis with parameters 𝛼, is given by
+𝑃 (𝑥|𝛼) = 1
+𝜎vis
+𝛼
+∫𝑞1 ,𝑞2
+∑
+𝑎1 ,𝑎2
+∫𝑦
+d𝛷(𝑦) d𝑞1 d𝑞2 𝑇 (𝑥|𝑦) 𝜖(𝑦) 𝑓𝑎1 (𝑞1) 𝑓𝑎2 (𝑞2) |𝑀𝛼(𝑞1, 𝑞2, 𝑦)|
+2 . (3)
+n the above expression 𝑓𝑎𝑖 (𝑞𝑖) are the PDFs for a given flavour 𝑎𝑖 and momentum fraction 𝑞𝑖, 𝑖 = 1, 2, |𝑀𝛼(𝑞1, 𝑞2, 𝑦)|
+2 is the squared
+atrix element for the process 𝛼, d𝛷(𝑦) the n-body phase space of 𝑦, and 𝜎vis
+𝛼 is a normalization factor. The integral result alone,
+amely the above quantity without the normalization factor, is referred to as the matrix element weight, 𝑊 (𝑥|𝛼). It is also commonly
+sed.
+Eq. (3), from which the most probable value of theory parameters can be estimated through likelihood maximization, involves
+n integration typically performed with Monte Carlo methods. This requires the evaluation of the matrix element |𝑀𝛼(𝑞1, 𝑞2, 𝑦)|
+2,
+hich contains the (theoretical) information on the hard scattering, and can be computationally expensive to evaluate. The
+ntegrand can vary by many orders of magnitude in different regions of the phase space, necessitating appropriate choices for
+he parameterization of the integral to ensure computational efficiency. The design of the MoMEMta framework makes it easy to13
+ind suitable parameterizations, which can help overcome the computational hurdle traditionally associated with the MEM.
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+s
+o
+d
+u
+5
+f
+i
+s
+t
+v
+b
+o
+c
+r
+o
+t
+o
+w
+5
+d
+a
+i
+n
+b
+p
+d
+a
+5
+o
+o
+p
+𝑐
+t
+f
+e
+w
+t
+b
+W
+5.2. MoMEMta Framework
+5.2.1. Main implementation aspects
+The MadWeight package [87] introduced a general way to approach the problem of finding an efficient phase space parameteriza-
+tion for integration purposes. This includes the removal of sharp peaks in the integrand, for example due to resonances. MadWeight
+is no longer supported, and its lack of flexibility hinders its application. MoMEMta [83] has been designed to build upon the ideas
+of MadWeight. It is a modular C++ software package, introduced to compute the convolution integrals at the core of the method.
+Its particular modular structure provides the required flexibility, allowing it not only to extend its applicability beyond its use in
+smaller programs so as to cover the needs of the complex LHC analysis workflows that handle large amounts of data, but also
+to be open to specific optimizations in the integration structure or engine. At the same time, since the MEM may be used in both
+theoretical and experimental high-energy physics problems, with different purposes and use cases in each field, MoMEMta’s modular
+tructure constitutes a significant advancement. In terms of accuracy and CPU time, the performance of MoMEMta is similar to that
+f MadWeight, because they rely on the same algorithmic approach of phase-space parameterization. MoMEMta is however further
+esigned to adapt to any process and allows for implementation in any C++ or Python environment, offering more freedom to the
+ser, who can therefore wrap new modules that handle specific tasks, while benefiting from the existing features of the framework.
+.2.2. Modules and blocks
+The functionality of modules provided in MoMEMta include representing and evaluating the matrix element and parton density
+unctions, as well as the transfer functions, performing changes of variables, and handling the combinatorics of the final state. This
+mplies that when calculating the probability to be assigned to the experimental events, every term in Eq. (3) may be treated as a
+eparate, user-configured module within this framework. The weights for a given process 𝑊 (𝑥|𝛼) are computed by calling and linking
+he proper set of modules in a configuration file. This computation usually requires the evaluation of multi-dimensional integrals
+ia adaptive Monte Carlo techniques, whose efficiency depends on the phase-space mapping that is used. Such parameterization can
+e optimized by using a finite number of analytic transformations over subsets of the integration variables, called ‘blocks’. Some
+f these blocks are also responsible for removing degrees of freedom by imposing momentum conservation, while the rest merely
+onstitute the corresponding change of variables. Due to the potentially large combinatorial ambiguity in the assignment between
+econstructed objects and partons, there exists a dedicated module that provides for the averaging over all possible permutations
+f a given set of particles. The functionality of this module, as opposed to a simple averaging over the possible assignments, allows
+he adaptive integration algorithms to focus on the assignments contributing most to the final result, thus increasing the precision
+f the result. This novel feature can potentially significantly speed up the computation, as the evaluation of the matrix element is
+hat actually dominates the computation time.
+.3. MEM use cases and MoMEMta application
+The MEM has proven to be an excellent technique to address two of today’s main tasks in HEP analysis: signal-background
+iscrimination and parameter estimate. In the former, the weights 𝑊 (𝑥|𝛼) computed under different hypotheses are used to build
+discriminating variable; in the latter, the MEM weights are instead used to build a likelihood function, which is then maximized
+n order to estimate the parameters of interest. Given its ability to efficiently compute the integral in Eq. (3), MoMEMta meets the
+eeds for both these MEM use-case categories. Examples of signal-background discrimination using the MoMEMta framework can
+e found in [83], ranging from cases with low level of complexity (where the final state is precisely reconstructed with detectable
+articles) to cases with a high-multiplicity final state containing unobserved objects, where a careful consideration of the several
+egrees of freedom involved is required. In this section, a proof of principle for performing parameter estimation using MoMEMta
+nd an example of signal extraction with the MEM in a LHC analysis are reported.
+.3.1. Statistical inference in SMEFT using MoMEMta
+In the Standard Model Effective Field Theory (SMEFT) [88,89], the effects of new heavy particles with typical mass scale 𝑀 ≈ 𝛬
+n SM fields can be parameterized at a lower energy 𝐸 ≪ 𝛬 in a model-independent way in terms of a basis of higher-dimensional
+perators. In this work, we consider the operator 11
+𝑄𝑞 , which modifies the coupling between top quarks and light quark–antiquark
+air in top quark pair (𝑡𝑡) production, as displayed in Fig. 7 (left). The MoMEMta framework is used to estimate the quantity
+11
+𝑄𝑞∕𝛬
+2 in a 𝑡𝑡 simulation sample, with 𝑐11𝑄𝑞 (referred to as 𝑐 in the following for shortness) being the degree of freedom associated
+o the 11
+𝑄𝑞 operator. A fully-leptonic 𝑡𝑡 simulation sample is produced with MadGraph_aMC@NLO version 2.6.5 [90] in the di-muon
+inal state at LO in QCD precision and with corrections up to 1∕𝛬2 at the amplitude level, with the quantity 𝛬 set to 1 TeV. The
+vents are then showered with Pythia 8.212 [91] and the simulation of particle interactions with the CMS detector is performed
+ith Delphes 3.4.1 [92]. The contribution of the SMEFT term to the matrix element 𝑀 of the process can be broken down into
+hree parts: a SM contribution (𝐴𝑆𝑀 ), a quadratic contribution for the dimension-6 operator only (𝐴𝑞𝑢𝑎𝑑), and an interference term
+etween the two (𝐴𝑖𝑛𝑡). This translates into:
+|𝑀𝑆𝑀𝐸𝐹𝑇 |
+2 = |𝑀𝑆𝑀 + 𝑐𝑀𝑁𝑃 |
+2 = 𝐴𝑆𝑀 + 𝑐𝐴𝑖𝑛𝑡 + 𝑐2𝐴𝑞𝑢𝑎𝑑 . (4)
+ith this parameterization, the integral in Eq. (3) can be written, for a given 𝑐, as the sum of three separate integrals:
+𝑃 (𝑥|𝑐) = 1 (𝑊𝑆𝑀 + 𝑐𝑊𝑖𝑛𝑡 + 𝑐2𝑊𝑞𝑢𝑎𝑑 ) , (5)14
+𝜎𝑐
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 7. Left: Example of 𝑡𝑡 process production at LO, where the vertex between the quark–antiquark pair and the top pair is described by a dimension-6 effective
+operator. Right: Negative log-likelihood as a function of 𝑐∕𝛬2 built on generator-level (orange line) and detector-level (blue line) events. The black lines define
+the 1𝜎 and 2𝜎 confidence intervals. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+with 𝜎𝑐 being the visible cross section of the process, in turn similarly parameterized as a function of 𝑐. The three ME weights are
+computed with MoMEMta using Gaussian transfer functions on the energies of the visible particles with a standard deviation of 5%
+for leptons and 10% for jets. An additional dimension of integration is introduced in order to handle the combinatorial ambiguity
+in the assignment between reconstructed final-state b jets and b quarks in the matrix element.
+A negative log-likelihood function is then built from 𝑃 (𝑥|𝑐) while performing a scan over 𝑐. The resulting function is shown in
+Fig. 7 (right) in blue. The same function excluding the detector effects is also computed and represented in orange. The estimated
+quantity 𝑐
+𝛬2 on events including detector effects is measured to be −0.013 TeV−2 with a 2𝜎 confidence interval [-0.233, 0.210] TeV−2.
+It is to be noted that in a complete study one would have to take into account also systematic uncertainties that have been neglected
+here, where only the statistical effect plays a role.
+Finally, two main considerations can be drawn. The two curves in Fig. 7 show very similar width of the likelihood profiles,
+proving the strength of the MEM where detector effects are encoded in the computation of the ME weight. Moreover, this method
+represents a valid alternative to cases where the SMEFT coefficients are estimated one at a time, since in the MEM the maximization
+of the likelihood can easily be multi-dimensional. More detail on this study is available in [93].
+5.3.2. 𝑡𝑡𝐻 production
+The search for Higgs production in association with top quark pairs, 𝑡𝑡𝐻 with 𝐻 → 𝑏?̄?, is a particularly interesting application
+for the MEM. It was first studied in [94], and since then has been used extensively by the ATLAS and CMS experiments [95–99].
+The 𝑡𝑡𝐻(𝑏?̄?) process has many partons in the final state. Its main background in final states with at least one charged lepton is
+𝑡𝑡 + 𝑏?̄?, which features identical final state partons to the signal. Discrimination between these processes relies on small differences
+in kinematics.
+ATLAS combines the MEM with additional multivariate techniques in a search for 𝑡𝑡𝐻(𝑏?̄?) with 36 fb−1 of data [96]. Details of
+the MEM implementation developed for this analysis and studies of its performance can be found in [100]. The following provides
+a brief summary of the approach chosen for this analysis. A discriminant, MEM𝐷1, is calculated as the logarithm of the ratio of
+signal and background likelihoods, where the signal is 𝑡𝑡𝐻(𝑏?̄?) and the background is 𝑡𝑡 + 𝑏?̄?: MEM𝐷1 = log10(𝐿𝑆∕𝐿𝐵). The 𝑡𝑡 + 𝑏?̄?
+contribution to the background is dominant in the phase space where the discriminant is used. Matrix elements are calculated with
+MadGraph5_aMC@NLO [90] at leading order; the lack of higher order corrections can at most decrease the performance of the
+method, but it does not bias the physics. Only gluon-induced Feynman diagrams are considered, which reduces computational time
+without a significant impact on discrimination power.
+The MEM is used for final states with one charged lepton, where six final state quarks are expected at leading order, alongside the
+one charged lepton and a neutrino. Directions of all visible partons are assumed to be measured exactly by the ATLAS detector, so
+the associated transfer function components are 𝛿-distributions. After imposing transverse momentum conservation, seven degrees
+of freedom remain for the integration. The integration variables are chosen to be the energies of all six final state quarks and
+the neutrino momentum along the beam direction. The integration itself is performed with VEGAS [101], based on an framework
+described in [102].
+Fig. 8 visualizes the MEM𝐷1 discriminant, using a sigmoid to map the values into the [0, 1] interval. The data are found in
+good agreement with the expected distribution, and the discrimination power of the method is seen by comparing the normalized
+distribution of 𝑡𝑡𝐻 (dashed line) to the background contributions.
+5.4. Summary
+The MEM provides a method for evaluating the likelihood of collision events under different hypotheses from first principles. It
+has applications in parameter measurements and searches for specific collision processes. The MoMEMta software package provides
+a flexible implementation of the calculations required. It offers flexibility with its modular structure, and enables use of the MEM
+for a wide range of applications at the LHC. The modularity also allows for extensions to handle novel applications, while taking
+advantage of the optimizations and convenience features provided by MoMEMta.15
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 8. MEM-based discriminant used by ATLAS in the search for 𝑡𝑡𝐻(𝑏?̄?). The red dashed histogram shows the normalized density expected from ttH events
+alone; black points represent ATLAS data, and full histograms the various signal (red) and background contributions [96]. (For interpretation of the references
+to colour in this figure legend, the reader is referred to the web version of this article.)
+6. New Statistical Learning Tools for Anomaly Detection
+6.1. Overview
+Searches for new physics at the LHC proceed by comparing the data collected by the detectors with simulated data sets obtained
+from software simulations of the underlying physics process, interfaced with a simulation of the detector response. The simulated
+data describe either the processes predicted by the standard model (background processes) or the processes postulated by the particular
+theoretical extension of the SM under study (signal processes). These searches may be broadly categorized into model-dependent
+searches, where the data are compared to both the SM and new physics predictions, and model-independent searches, where the
+data are compared only to the SM in order to search for unexplained deviations from it: these deviations (anomalies) may then be
+attributed to new physics and investigated further. In this context, the term model-independent refers to independence with respect
+to a new physics signal model: the SM background model is always assumed.
+Model-dependent searches are typically approached by producing simulated events for both SM and new physics processes, and
+hypothesis tests are devised to find which model is favoured by the data.
+In case of model-independent searches, no particular model for the signal processes is assumed: a simulated dataset describing
+the signal processes cannot therefore be produced. These searches can be approached as anomaly detection problems, where the
+data are combed to find any observation that is not consistent with the background model. This setting is an example of semi-
+supervised learning, given that the two data categories involved are a ‘simulated’ dataset, generated by Monte Carlo techniques
+to represent the known background process and therefore considered as ‘labelled’, and the ‘experimental’ data sample, which is
+generated by an a-priori unknown mechanism—possibly comprising contributions from both background and signal processes—and
+therefore considered as ‘unlabelled’. The presence of a signal in the experimental data is generally inferred through the observation
+of a significant deviation from the predictions for the background process.
+Let 𝑌 = (𝐲1,… , 𝐲𝑚)′, 𝐲𝑙 ∈ R𝑃 , 𝑙 = 1,… , 𝑚, be the experimental data, with 𝐲𝑙 independent and identically distributed realizations
+of the random vector with unknown probability density function 𝑓𝐵𝑆 ∶ R𝑃 → R. In addition to the experimental data 𝑌 , it is
+possible to generate with the use of Monte Carlo simulations a large sample 𝑋 = (𝐱1,… , 𝐱𝑛)′, 𝐱𝑖 ∈ R𝑃 , 𝑖 = 1,… , 𝑛. While Monte
+Carlo simulations in HEP are computationally taxing, a simulated sample of SM events is employed in so many different analyses
+that the experiments can afford to simulate tens or hundreds of millions of events for SM scenarios: the sample 𝑋 can therefore be
+considered arbitrarily large to all practical extents. We assume that the simulated data, as well as the majority of the experimental
+data, which are known to have been generated by a background process, follow a distribution described by the probability density
+function 𝑓𝐵 ∶ R𝑃 → R. The remaining experimental data have been possibly generated by an unknown signal process described by
+𝑓𝑆 ∶ R𝑃 → R. In absence of quantum mechanical interference between the signal and the background, the generating mechanism
+of the experimental data 𝑓𝐵𝑆 may be thus specified as a mixture model:
+𝑓𝐵𝑆 (𝐲) = (1 − 𝜆)𝑓𝐵(𝐲) + 𝜆𝑓𝑆 (𝐲), 𝜆 ∈ [0, 1) , (6)
+and the problem may be cast in terms of either parameter estimation, where inference is sought on the value of 𝜆, or of hypothesis
+testing, where a simple null hypothesis 𝜆 = 0 is tested against a composite alternative 𝜆 ≠ 0.16
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 9. Left: Purity of the discriminators as a function of their efficiency. The simulated data sample is composed by a 96% background and 4% signal. Right: The
+values of the test statistic (score) for the background-only sets and for the mixed signal+background sets [103]. The performance is calculated on the HEPMASS
+dataset [107] as described in the text.
+6.2. Detecting anomalies via hypothesis testing: The Inverse Bagging algorithm
+The Inverse Bagging (IB) algorithm [103–105], developed within the fourth pillar of the AMVA4NewPhysics research program,
+addresses the problem of anomaly detection by means of hypothesis testing. We formulate the null hypothesis that the processes
+having generated the experimental data follow the same distribution as the ones corresponding to the simulated data. We then
+perform a statistical test to quantify how likely it is that the unlabelled data have been indeed generated by the background processes
+alone. This algorithm combines hypothesis testing with multiple data sampling, as a means of iterative tests of the properties of the
+data and the possible presence of unknown signals.
+6.2.1. Hypothesis testing and multiple sampling
+Once the null hypothesis is defined as 𝐻0 ∶ 𝑓𝐵𝑆 (⋅) = 𝑓𝐵(⋅) ⇐ 𝜆 = 0 and the alternative as 𝐻1 ∶ 𝑓𝐵𝑆 (⋅) ≠ 𝑓𝐵(⋅) ⇐ 𝜆 ≠ 0, the
+IB algorithm proceeds by performing a two-sample test on each of 𝐵 pairs of bootstrap replicas 𝑋*
+𝑏 and 𝑌 *
+𝑏 , 𝑏 = {1, 2,… , 𝐵}, taken
+from the data samples 𝑋 and 𝑌 , respectively. The size 𝑄 of the bootstrap replicas is set to be significantly smaller than the size of
+the experimental sample under study. The results of the tests are used to classify how anomalous are the individual observations,
+improving on the insights that may be offered by a standard hypothesis test performed on the original data sets 𝑋 and 𝑌 .
+The test statistic associated to the pair of 𝑋*
+𝑏 and 𝑌 *
+𝑏 , 𝐓𝑙 =
+(
+𝑇𝑙1,… , 𝑇𝑙𝐵𝑙
+)′
+, 𝑙 = 1,… , 𝑚, is considered as part of the useful
+information associated with each of the observations that are contained in 𝑌 *
+𝑏 . The set of test statistics that concern the same
+observation, regardless of the specific bootstrap samples they have been computed in, is summarized into an observation score
+(anomaly detection metric) summarizing how anomalous are the properties of the particular observation. The details of the
+computation of the anomaly detection metric from the set of test statistic values for each event are given in Section 6.2.2. The
+underlying rationale is that if an observation 𝐲𝑙 has been generated by 𝑓𝑆 , then the bootstrap samples that include 𝐲𝑙 will lead
+to reject 𝐻0 more often compared to the samples not including it, if the size 𝑄 of the sample is small enough. Using small sizes
+𝑄 would result in samples where an anomaly results more easily in a sizeable deviation from the background distribution. The
+anomaly detection metric therefore reflects how likely it is for each observation to have been generated by a signal process, and
+can be hence used for further classification purposes, with observations carrying the most extreme score becoming candidates
+to be classified as a signal. By defining a sliding-window threshold on the value of the anomaly detection metric for classifying
+an observation as signal, we obtain a Receiver Operating Characteristic (ROC) curve [106], which describes the purity of the
+classifier as a function of its efficiency. In Refs. [103–105], the IB algorithm was applied to the HEPMASS dataset [107], available
+at http://archive.ics.uci.edu/ml/datasets/HEPMASS: the dataset consists in a background composed by standard model top quark
+production and a signal composed by a heavy resonance that decays into a top quark pair that would result in a spectrum different
+from the SM for any observable involving the full final state (e.g. the reconstructed visible mass of the top pair decay products).
+Ref. [103–105] contain the details on the input features that were used. Fig. 9 (left) shows a purity versus efficiency curve for
+the IB algorithm, as well as for two reference classifiers (relative likelihood, and 𝑘-nearest neighbours) that use only event-based
+information to classify events. In the considered application, the IB classifier outperforms both. The test statistic used by the IB
+algorithm has a different distribution for a background-only set of events and for a mixed signal+background set of events (𝜆 = 0.04),
+as illustrated in Fig. 9 (right).
+6.2.2. Validation of the algorithm and research questions
+We took into account the following research questions in order to further validate the algorithm with respect to its original
+publication:
+Choice of anomaly detection metric A key step in the IB algorithm is the score computation, which is our anomaly detection
+metric. A meaningful metric is crucial for inferring the likelihood for each observation to belong to a hypothetical signal.
+Different metrics may naturally rank each observation in a different way, leading to a different classification as signal- or
+background-like. Here we consider three methods for anomaly detection metric computation: (a) ‘Test statistic score’, given17
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+P
+6
+b
+o
+p
+p
+s
+i
+t
+b
+s
+u
+v
+c
+t
+s
+k
+by the mean of the test statistics 𝐓𝑙 =
+(
+𝑇𝑙1,… , 𝑇𝑙𝐵𝑙
+)′
+based on the bootstrap samples including 𝐲𝑙: 𝑅𝑇 𝑙 = 1
+𝐵𝑙
+∑𝐵𝑙
+𝑘=1 𝑇𝑙𝑘 ,
+(b) ‘P-value score’, given by the mean of the p-values 𝐏𝑙 =
+(
+𝑝𝑙1,… , 𝑝𝑙𝐵𝑙
+)′
+, connected with the test statistics based on the
+bootstrap samples including 𝐲𝑙: 𝑅𝑃 𝑙 =
+1
+𝐵𝑙
+∑𝐵𝑙
+𝑘=1 𝑝𝑙𝑘 , (c) ‘Ok score’, given by the proportion of tests based on the bootstrap
+samples including 𝐲𝑙 and rejected at a given significance level 𝛼 : 𝑅𝑂𝑘;𝑙 =
+1
+𝐵𝑙
+∑𝐵𝑙
+𝑘=1 1{𝑝𝑙𝑘<𝑎} .
+Parameters Q and B When deploying the IB algorithm, the choice of 𝑄 and 𝐵 is also important. The original formulation of the
+algorithm requires 𝑄 < 𝑚, as this may imply that a number of bootstrap samples 𝑌 * will include larger proportion of signal
+observations than 𝜆, thus increasing the power of the test and making the detection of an hypothetical signal simpler. The
+choice of 𝐵 is not independent of 𝑄, because the expected number of times each observation 𝐲𝑙 is sampled is 𝐸(𝐵𝑙) =
+𝐵𝑄
+𝑚 .
+For a fair comparison, the observation scores are computed based on the same number of tests, i.e. 𝑄 and 𝐵 may vary among
+the different study cases but should be adjusted accordingly for 𝐸(𝐵𝑙) to be kept fixed. Moreover, the larger the 𝐵 values,
+the more stable the results are expected to be.
+erformance comparison A third significant aspect to take into account is the comparative evaluation of the IB algorithm. For
+this purpose, we consider an adjustment of the Linear Discriminant Analysis (LDA) [108], referred to in the following as
+‘LDA score’, suitable for the semi-supervised nature of the problem under study [109]. The performance of LDA is further
+compared with that of IB in various scenarios in the context of an improvement of the method [110].
+.2.3. Simulation settings and results
+The research questions described in Section 6.2.2 are explored using either a univariate or multivariate normal distribution for
+oth signal and background, or a multivariate normal distribution for the background and a uniform distribution across a sphere
+r a hemisphere for the signal. Early results [109] suggest that, in the case of univariate and multivariate normal data, a better
+erformance may be achieved when using the test statistic as a score in conjunction with subsampling the data (i.e. 𝑄 < 𝑚): in
+articular, the regime 𝑄 ≪ 𝑚 seems to be associated with a lower variability of the score, in agreement with the intuition and the
+tudies of Ref. [103]. For large numbers of bootstrap iterations, 𝐵, the preliminary results suggest that the classification performance
+s comparable among different values of 𝑄, possibly because by increasing 𝐵 the variance of the scores converges to some value
+hat does not depend on 𝑄. A small value of 𝑄, however, implies lower variability of the scores. A good performance may therefore
+e obtained without having to resort to a large number of bootstrap samples; early studies seem to confirm this intuition. The LDA
+eems favoured against the IB when both signal and background are normally distributed, in line with the assumptions LDA relies
+pon. However, the preliminary tests suggest that the performance of IB may still be comparable to that of LDA when using small
+alues of 𝑄 and selecting the test statistic score: the performance may be even less affected when the normality assumption for each
+lass is removed. Additional tests that use a uniform signal distribution on a sphere and on a hemisphere lead us to conjecture that
+he IB may have the ability of recognizing both local and global properties of the signal process.
+An extensive test [110] is performed comparing the IB algorithm to several scenarios, as illustrated in Fig. 10. The case where the
+ignal density is known is represented by two scenarios: a classical likelihood ratio test based on the Neyman–Pearson lemma, and a
+ernel density estimation performed on the original datasets 𝑋 and 𝑌 . A semi-supervised approach—the most realistic competitor to
+IB—is represented by a semi-supervised LDA. The IB algorithm is represented by several settings, corresponding to different choices
+of test statistic (Kolmogorov–Smirnov test [111], Mann–Whitney test [112]) and of score aggregation (minimum, maximum, mode,
+or median of the set of test statistics). The best setting for the Gaussian mixture in exam (𝜆 = 0.06) appears to be the expected value
+(mean) of the test statistic. For reference, the performance of a random choice is also shown.
+6.2.4. Possible improvements
+Possible improvements to the original IB algorithm include exploring not only additional anomaly detection metric computation
+methods, using the simple multivariate Gaussian scenarios described supra, but also a dimensionality reduction approach, which
+could address the issue of the high-dimensional data with a large number of redundant features that is common in high-energy
+physics applications. For this approach, standard and more advanced methods of variable sub-sampling (‘max-G-sampling’) are
+proposed [104] (similarly to [113]), as well as methods for adjusting the sampling weights in such a way as to obtain samples
+more enriched in signal, and to perform tests on the likely more informative variables. ‘G’ in max-G-sampling stands for the number
+of test results from which the maximum is taken, and a moderately high G parameter can result to only the highest test statistic
+values—likely obtained via a feature set rich in informative variables—being saved. Moreover, given that for the study described
+supra uncorrelated generated data were considered, and since it is essential to also validate the IB algorithm performance in presence
+of correlations affecting the outcome of the dimensionality reduction technique, a particular transformation of the data intended
+for its decorrelation is suggested [104].
+6.2.5. Applications
+A preliminary validation of the IB performance on a non-physics-related data set was performed on the well-known spam
+data [114], which are transformed to fit the semi-supervised context of the above described study for anomaly detection; early
+tests [109] suggest that the proposed algorithm improvements may have a comparable performance with that of the standard
+algorithm setting. When applied to a common high-energy physics problem so as to be validated on Monte Carlo simulated collision
+data (which constitutes the main objective of its development) the IB algorithm was found to perform at a similar level as the LDA
+score. Also, the performance including the proposed variable max-10-sampling method was comparable with that of the standard
+approach, and for some scenarios presented a slight improvement.18
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 10. The ROC curve (true positive rate versus false positive rate) for a comparison of different settings of the IB algorithm with several scenarios: the
+classical likelihood ratio (labelled true likelihood ratio) and its KDE approximation (labelled KDE likelihood ratio) represent idealized situations where the signal
+model is known; a realistic competitor is represented by a semi-supervised LDA approach. The IB algorithm performance is shown for several choices of IB test
+statistic and of summary statistic for the score, detailed in the text [110].
+6.2.6. Summary
+Taking everything into consideration, the IB algorithm exhibits a satisfying performance, achieving its best performance when
+the distribution of the signal and background deviates from Gaussianity. The performance of the IB algorithm is particularly good
+when using small-sized bootstrap samples, both in terms of mean and variance. Different score computation methods have also
+been tested, with the test statistic appearing as the most effective one for this purpose. At the same time, a reduction of the data
+dimensionality seems to have the potential to improve the performance of the algorithm; however, further studies are needed on
+this aspect. Depending on all these factors and on a chosen amount of false-positive-rate, we have observed that the IB algorithm
+can provide improvements in the true positive rate ranging from 1 to 10% in some of the considered problems. The improvement
+is nevertheless problem-dependent, suggesting that the algorithm may be suitable only for a certain class of problems; studies are
+ongoing to more precisely identify the characteristics of the problems that the IB algorithm can tackle with profit.
+6.3. Detecting anomalies via clustering semi-supervision
+With the Inverse Bagging algorithm described supra, the degree of compatibility between experimental and simulated data is
+evaluated by means of hypothesis testing. Another approach to anomaly detection, based on a markedly different rationale, consists
+in semi-supervising learning methods, either by relaxing the assumptions of supervised methods, or by strengthening unsupervised
+structures via the inclusion of additional available information from simulated data. The latter route has been followed in [109,113]
+where a parametric and, respectively, a non-parametric approach are adopted. Both are summarized infra.
+6.3.1. The parametric approach
+The idea of addressing anomaly detection by semi-supervising parametric clustering was first explored, in the context of new
+physics searches, in [115,116] under the name of fixed background model (FBM). The authors proposed to specify the distributions 𝑓𝐵
+and 𝑓𝑆 themselves in Eq. (6) within the family of Gaussian mixture models. Parameter estimation was then conducted via maximum
+likelihood in two steps. First, the background model 𝑓𝐵 was obtained based on the background data 𝑋. Afterwards, keeping the
+parameters of 𝑓𝐵 fixed, the weight 𝜆 in Eq. (6) and the parameters characterizing the new possible component 𝑓𝑆 were estimated
+using experimental data 𝑌 . Maximization of the likelihood function was conducted via a suitable adjustment of the Expectation–
+Maximization (EM) algorithm [117]. A goodness-of-fit test served to discard insignificant components and to assure that the whole
+estimated density was equal to the background component when no signal was detected.19
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+e
+p
+w
+e
+c
+T
+c
+s
+a
+c
+t
+s
+y
+a
+a
+G
+i
+m
+t
+6
+F
+a
+o
+a
+Table 3
+Summary of the anomaly detection results performed by the PAD and the FBM
+for MC data with different signal proportions 𝜆. For each scenario, 50 datasets
+are generated to obtain a mean result with the respective standard deviations
+presented in brackets.
+Method 𝜆 Average ?̂? Average AUC
+PAD 0.05 0.040(0.012) 0.725(0.109)
+PAD 0.10 0.057(0.013) 0.818(0.078)
+PAD 0.15 0.086(0.006) 0.876(0.017)
+PAD 0.20 0.112(0.006) 0.882(0.012)
+FBM 0.05 0.025(0.009) 0.708(0.118)
+FBM 0.10 0.046(0.008) 0.764(0.078)
+FBM 0.15 0.070(0.006) 0.771(0.073)
+FBM 0.20 0.096(0.012) 0.780(0.054)
+Due to the curse of dimensionality or numerical issues, in fact, the approach described supra was found to be sub-optimal or
+ven not liable to be carried out on high-dimensional data. To reduce the data dimensionality while preserving relevant information,
+enalized methods for variable selection were introduced in the unsupervised framework of mixture modelling in [118,119], yet
+ith a strong reliance on restrictive assumptions on the clusters shapes. Within the AMVA4NewPhysics program [109,120] we have
+xtended the penalized approach to the FBM to allow for a more flexible modelling without constraining the mixture component
+ovariance matrices, as well as to account for the semi-supervised nature of the anomaly detection problem for new physics searches.
+he proposed penalized anomaly detection (PAD) method builds on a variant of the EM algorithm, derived in the semi-supervised
+ontext to estimate the parameters of a mixture model via the maximization of the penalized likelihood function.
+The PAD methodology was validated both in the unsupervised setting (i.e. to estimate the background distribution) and in the
+emi-supervised anomaly detection setting (to estimate the whole process density) via simulations designed to account for different
+spects of the analysis: different implementations for handling variable selection; performance of competing methods; varying
+onfigurations of the background and possible signal. The study highlighted a general improvement with respect to the state of
+he art (see [109] for details).
+In the specific context of LHC physics research, the PAD was applied on Monte Carlo data produced to study the experimental
+ignature of processes yielding two energetic jets in the final state. The background data were generated including QCD processes
+ielding two energetic jets in the final state; these arise when the hard subprocess generates two gluons, two quarks, or a gluon and
+quark with large momentum, which then hadronize into the observable pair of energetic jets. The signal data were produced from
+heavy resonance (stop quark) postulated in an extension of the Standard Model known as RPV-MSSM [121] with a mass of 1000
+eV, that also leads to two jets in the final state. Results are presented in Table 3 for varying proportion 𝜆 of signal events. Since
+n the presence of imbalanced processes (such as the considered one of signal versus background classification based on mixture
+odels) requires a threshold adjustment that can influence the evaluation, the performance of the method has been measured in
+erms of Area under the ROC curve (AUC). In terms of AUC, the PAD compares favourably with the FBM model.
+.3.2. The nonparametric approach
+As an alternative to the parametric approach illustrated supra, we explored the non-parametric approach to unsupervised learning.
+rom one side, this relies on a more flexible modelling of the processes under analysis, without constraints or specific assumptions
+bout their shape. On the other side, by drawing a correspondence between groups and the modal peaks of the density underlying the
+bserved data, the non-parametric formulation appears particularly consistent with the physical notion of signal, as it is commonly
+ssumed that deviations from the background process manifest themselves as significant peaks in 𝑓𝑏𝑠, not previously seen in 𝑓𝑏.
+As discussed in detail in [113], two main contributions can be highlighted. Under the assumption that a signal does exist, the
+main idea is to tune a non-parametric estimate of the density 𝑓𝑏𝑠, assumed to generate the unlabelled data. This tuning is obtained
+by selecting the smoothing amount so that the induced partition, where the signal is forced to emerge as a bump in the density
+distribution, classifies the labelled background data as accurately as possible. The relevance of the forced bump is afterwards tested
+via the suitable application of a statistical test: if it is deemed to be significant this would provide empirical evidence of a signal, and
+should then represent the stepping-stone for the possible claim of new physics discovery. As a second side contribution, a variable
+selection procedure, specifically conceived for the considered framework, is proposed. Here a variable is assumed to be relevant
+if its empirical distribution shows a changed behaviour in the simulated data with respect to the one in the experimental data, as
+this difference shall be only due to the presence of a signal, not previously seen in the background density. This idea is pursued by
+repeatedly comparing the estimated densities on distinct and randomly sampled subsets of variables. Eventually the variables that
+are more often responsible for a different behaviour of the two marginal distributions are selected.
+The procedure is compared with the Fixed Background Model [115,116] and tested on signal data simulated from a new particle
+𝑋 of unknown mass that decays to a top quark pair 𝑋 → 𝑡𝑡 and a background from Standard Model top pair production, identical in
+its final state to the signal but distinct in the kinematic characteristics because of the lack of an intermediate resonance (see [107]
+for a detailed description of the data and their characteristics). A visual glance to the results and the classification accuracy, as20
+measured by the Fowlkes–Mallows index (FMI) [122, Ch. 27] and the true positive rate (TPR), are provided in Fig. 11.
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 11. Results of the application of the nonparametric (NP) method for anomaly detection [113] discussed in Section 6.3.2: in the top-left panel, accuracy
+of classification of signal and background as measured by FMI and TPR, and compared to the parametric competitor Fixed Background Model (FBM) applied
+to the first 6 principal components the of the data (PC) and to the same 2 variables selected by the nonparametric procedure. In the top right panel relative
+informativeness of the whole set of variables, as labelled in [107]. The resulting most relevant variables, in orange, are the combined mass of two bottom quarks
+with two W-bosons, and the transverse momentum of the leading jet. Bottom panels: contour plot of the density estimate of the two selected variables in the
+background (left) and overall data including the signal (right), which exhibits as a new peak arising from the background. A subsample of data from background
+(blue) and signal (orange) has been overimposed. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version
+of this article.)
+6.4. Gaussian processes for modelling invariant mass spectra
+As already noted supra, model-independent searches for new physics at the LHC provide a ground for applying semi-supervised
+methods. One of the most relevant features used in the quest for discovering new physics in a given experimental signature is the
+invariant mass of the set (or a subset) of objects reconstructed as products of the collision events. The distribution of invariant mass
+values can be modelled from a Monte Carlo simulation (a labelled dataset) of the Standard Model processes that correspond to the
+background, and compared with the data obtained at the experiment, which could potentially contain (usually few) signal events
+among a large amount of background events. Gaussian processes (GP) are a useful tool for regressing the shape of invariant mass
+spectra and they can be used to disentangle potential signals from the background in a semi-supervised manner.
+6.4.1. Generalities on Gaussian processes
+Gaussian processes are a Bayesian inference method in a function space, defined as ‘‘a collection of random variables, a finite
+collection of which have a joint Gaussian distribution’’ [123]. Given a prior distribution over the parameters of a set of functions in
+the function space and using the likelihood of the observations, we can obtain a posterior distribution over such parameters through
+Bayes’ rule.
+Let 𝑓 be the function that is regressed and 𝑥 and 𝑥′ arbitrary points in the input space  . The prior on the regression can be
+noted as
+𝑓 (𝑥) ∼ (𝜇(𝑥), 𝛴(𝑥, 𝑥′)) , (7)
+where  is the infinite-dimensional function space associated with the joint Gaussian distribution, from which 𝑓 is sampled. Thus,
+there are two functions that are defined to specify a GP: the mean and the covariance or kernel, respectively,
+𝜇(𝑥) = E[𝑓 (𝑥)] , (8)
+𝛴(𝑥, 𝑥′) = E[(𝑓 (𝑥) − 𝜇(𝑥))(𝑓 (𝑥′) − 𝜇(𝑥′))] . (9)
+The mean and covariance functions above, as their names indicate, dictate the mean value and the covariance of the GP distribution
+for points in the input space.
+For a finite set of points, the prior and posterior are joint Gaussian distributions with as many dimensions as observations, and
+there is a formalism that allows to predict new output values for arbitrary inputs. In [124], GPs are used to model the Poisson process21
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+(
+a
+a
+w
+d
+corresponding to a binned distribution of events, i.e. the spectrum. Let the bin centres be denoted by the vector 𝒙 = (𝑥1,… , 𝑥𝑁 ), and
+the corresponding observed responses 𝒚 = (𝑦1,… , 𝑦𝑁 ), the function 𝑓 is then averaged within the corresponding bin to produce a
+set of expected counts ?̄? (𝒙) = (𝑓 (𝑥1),… , 𝑓 (𝑥𝑁 )). The spectrum is approximated via the product of two multidimensional Gaussians
+by the probability model:
+𝑝(𝒚(𝒙)) =  (𝒚|?̄? (𝒙),𝝈𝟐(𝒙)) (?̄? (𝒙)|𝝁,𝜮) , (10)
+where 𝝈 are the uncertainties in the values of ?̄? , which constitutes a Gaussian approximation of the Poisson noise. The second factor
+is an 𝑁-dimensional Gaussian distribution. Note that we use the vector 𝝁 = (𝜇(𝑥1),… , 𝜇(𝑥𝑁 )) and the matrix 𝜮 with 𝛴𝑖𝑗 = 𝛴(𝑥𝑖, 𝑥𝑗 ),
+constructed from the mean and covariance functions respectively.
+After some standard algebraic manipulation it is possible to obtain explicit expressions to infer the response of the function 𝑓 at
+a new arbitrary input values 𝒙⋆, given 𝒙 and 𝒚:
+𝐦𝐞𝐚𝐧(𝒇⋆) = 𝝁⋆ +𝜮⋆[𝜮 + 𝝈𝟐(𝒙)1]−1(𝒚 − 𝝁), (11)
+𝐜𝐨𝐯(𝒇⋆) = 𝜮⋆⋆ −𝜮⋆[𝜮 + 𝝈𝟐(𝒙)1]−1𝜮⋆ , (12)
+where 𝒇⋆ = 𝒇 (𝒙⋆), 𝜮⋆ = 𝜮(𝒙,𝒙⋆), and 𝜮⋆⋆ = 𝜮(𝒙⋆,𝒙⋆); 𝝁⋆ is the mean prior corresponding to 𝒙⋆. Note that the dimension of
+the GP multivariate Gaussian is extended by the dimension of 𝒙⋆.
+It is possible to initialize the prior mean 𝝁 with a function from domain knowledge but setting it equal to zero is common practice
+and does not necessarily pose a limitation when using GPs. The most important ingredient to be specified is then the kernel, for
+which there exist several common choices in the literature (e.g. the exponential squared or other radial kernels) [123,125]; a new
+kernel could also be crafted for a particular application.6 The hyper-parameters in the kernel need to be adjusted as well, which is
+usually done by finding the maximum log marginal likelihood of the GP:
+log = −1
+2
+log |𝜮| − (𝐲 − 𝝁)𝑇𝜮−1(𝐲 − 𝝁) − 𝑁
+2
+log 2𝜋 . (13)
+The standard algorithm to obtain the value 𝒇⋆, its variance and the likelihood involves solving triangular systems and matrix
+inversion, as it is implied in the expression for the kernel detailed in Eq. (12). Details of the algorithm and some optimizations are
+provided in [123].
+6.4.2. Method overview
+Gaussian processes have been used in several contexts in HEP research. Our work is based on the application in [124], which
+presents a study on background and signal distributions modelling in the dijet mass spectrum. The goal of the method is to
+accommodate the background and identify a signal component on the data, if present.
+We start with the following prescriptions for the mean and kernel functions:
+𝜇(𝑥) = 0 , (14)
+𝛴𝐵
+(
+𝑥, 𝑥′
+)
+= 𝐴 exp
+(
+𝑑 −
+(
+𝑥 + 𝑥′
+)
+2𝑎
+)√
+2𝑙(𝑥)𝑙 (𝑥′)
+𝑙(𝑥)2 + 𝑙 (𝑥′)2
+exp
+(
+−
+(
+𝑥 − 𝑥′
+)2
+𝑙(𝑥)2 + 𝑙 (𝑥′)2
+)
+, (15)
+𝛴𝑆 (𝑥, 𝑥′) = 𝐶 exp
+(
+−1
+2
+(
+𝑥 − 𝑥′
+)2 ∕𝑘2
+)
+exp
+(
+−1
+2
+(
+(𝑥 − 𝑚)2 +
+(
+𝑥′ − 𝑚
+)2
+)
+∕𝑡2
+)
+, (16)
+where 𝑙(𝑥) = 𝑏𝑥 + 𝑐 is a linear function. For a description of all kernel hyper-parameters in Eqs. (15) and (16), and a motivation
+for their functional forms, see the cited study. We refer to the kernel hyper-parameters collectively as 𝜃𝐵 = {𝐴, 𝑎, 𝑏, 𝑐, 𝑑} and
+𝜃𝑆 = {𝐶,𝑚, 𝑡, 𝑘}, respectively.
+We present procedures that can operate using two or three steps as follows:
+First step. A GP fit is performed on a pure background distribution (i.e. from simulation) using the background kernel 𝛴1 = 𝛴𝐵 . We
+obtain a model for the background distribution and find the corresponding hyper-parameters of the first kernel, 𝜃1.
+Second step. The optimized hyper-parameters of the background fit are kept fixed and used in performing another fit using the
+kernel 𝛴12 = 𝛴1 + 𝛴2, where the second component in the sum is of the signal kind 𝛴2 = 𝛴𝑆 (Eq. (16)); thus a new GP model is
+obtained, including the parameters corresponding to the new component, 𝜃2.
+Third step. A further optimization is performed where a new signal kernel 𝛴𝑆 is added, 𝛴123 = 𝛴12 +𝛴3, and the parameters of 𝛴12
+i.e. 𝜃12 = 𝜃1 ∪ 𝜃2) are kept fixed. From this, the parameters of the last component (𝜃3) can be extracted.
+In the case of the two-step procedure, the background kernel is used in a first step; then, in a second step, a signal kernel identifies
+concentrated excess or deficit centred at 𝑚 with width 𝑡. For the three-step procedure, the first two steps are used to accommodate
+background with a turn-on; then a third step performs the signal detection. This procedure can be considered as semi-supervised:
+e first model the background-only invariant mass distribution, i.e. the labelled dataset, and then find a model for the unlabelled
+ata distribution where signal could appear.
+6 A set of example kernels, how to compose them, and an explanation on how they can express the structure can be found in [125] (chapter 2).22
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Table 4
+Number of injected signal events within a window for values of R, for a signal
+of 3 TeV mass and 150 GeV width. The values and errors obtained are the mean
+and standard deviation of the distribution of values obtained after repeating the
+injection in 100 background toys.
+𝑅 0.1 0.2 0.3 0.4
+# injected events 460 ± 30 920 ± 40 1380 ± 50 1840 ± 70
+Fig. 12. Top panel: invariant mass spectrum showing a GP fit for the background. Bottom panel: per-bin significance of the deviation between the number of
+events and the fit.
+6.4.3. Modelling the dijet invariant mass: QCD background and artificial signal
+For testing the two-step procedure, we used as toy dataset a simulated dijet invariant mass spectrum following the event selections
+described in [126].
+Before reporting the results of the GP optimization, we describe the injection of signal in the invariant mass spectrum. The starting
+point is the simulated background dataset we generate pseudo-data from, where the signal can be injected. Since the spectrum ranges
+over several orders of magnitude in the number of events, we prescribe the amplitude of the injected signal via a quantity defined
+from a signal-over-background ratio (𝑅). We calculate the amplitude of the Gaussian signal from the mean and width: 𝑅 is the ratio
+of signal to background events that should be in a window constructed from the interval given by the mean and width. The number
+of events taken into account in a given window is given by the bin counts of the distribution contained in the window; bins whose
+centres are outside the range (mean ± width/2) are not counted:
+𝑅 =
+Injected signal events in the window
+Background events in the window . (17)
+Analogously, the extraction of the 𝑅 (and hence the amplitude) of the signal comes from the same ratio within a window defined
+by the mean and width of the extracted signal from the parameters of the signal kernel. We inject signals with different possible
+combinations of values for a Gaussian distribution, namely the mass (3, 3.5, 4, 4.5, and 5 TeV), the width (150, 300, and 450 GeV),
+and the 𝑅 ratio (0.1, 0.2, 0.3, and 0.4), totalling 60 values. The values were chosen to cover a wide range of the spectrum and
+different intensities of the signal hypotheses.
+In Table 4 we provide the number of events injected that correspond to different values of the ratio 𝑅, to give a sense of the
+mapping between the two quantities.
+We present in Fig. 12 a first fit (first step) performed on the pure background simulated data.7 The posterior GP background
+mean, the data and their respective errors are displayed. We can observe that the GP fit is able to accommodate the distribution with
+a smooth model whose bin-wise discrepancies with data are small. To measure such discrepancies, the 𝜒2 divided by the number
+of degrees of freedom is calculated.
+7 In this and subsequent plots of this section, the displayed significances correspond to ‘‘signed z-values only if 𝑝-value < 0.5’’, as defined in [127], where
+the 𝑝-value is calculated assuming that each bin count follows a Poisson distribution.23
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 13. Top panel: invariant mass spectrum displaying a GP background fit, with event counts for a background toy with signal injected centred at 3.5 TeV
+with a width of 150 GeV and R of 0.1, and a signal plus background fit. Solid coloured lines represent the GP fit components. Middle and bottom panels: per-bin
+significance of the discrepancy between the event counts and indicated fits. (For interpretation of the references to colour in this figure legend, the reader is
+referred to the web version of this article.)
+Fig. 13 shows a similar plot for the second step in the presence of an injected signal. By observing the residuals we verify that
+the GP can identify the injected signal: the middle panel clearly reveals a localized set of discrepant bins in the region of the injected
+signal that the background-only component of the fit does not capture; whereas the bottom panel shows that the injected signal has
+been incorporated in the full fit.
+A corresponding graph where signal identification becomes more evident is presented in Fig. 14. In the case shown, the GP signal
+component correctly locates the injected signal and is able to recover relevant parameters (strength, width, mean). However, when
+we approach the faintest or widest signals, the method becomes prone to mis-identification. The method is also used in the absence
+of the signal when performing the second step, in order to observe to which extent spurious signals are detected.
+Good agreement is generally found when checking the linearity between injected and extracted 𝑅 values in Fig. 15. For every
+signal hypothesis, a sampling of the Gaussian signal is performed and injected 100 times on different background pseudo-data,
+allowing the extraction of a distribution of 100 values for each signal parameter and for each hypothesis. Despite the good agreement,
+we observe that the higher mass hypotheses tend to be poorly identified; this is due to the specific binning of this spectrum, where
+bin widths increase approximately from 90 GeV at lower masses to 360 GeV at the right-end of the spectrum. Even if 𝑅 is by
+construction a more consistent parameter to prescribe signal strengths in different regions of the spectrum than, for example, a
+fixed number of events, it still can lead to undesirably faint signals at high mass values, where the event counts are small.
+The value presented as the upper error (mean+rms) of the spurious signal detection (𝑅 = 0.25) serves as an indication of the
+ability of the method to detect genuine signals. As we stated before, GPs are in general tools flexible enough to model the distribution
+without prescribing a mean function, and in terms of signal extraction they do not yield a significant gain in the extraction power.
+6.4.4. Further studies
+An application of the three-step procedure described supra was used to accommodate backgrounds with turn-ons (first two steps)
+and signals (last step). Here we give a general outline on this use case; further detail can be found in [128].
+The motivation for using a three-step procedure arose in an attempt of modelling the invariant mass spectrum of top quark pairs
+(𝑡𝑡) to search for a 𝑍′-boson decaying to 𝑡𝑡. That spectrum covers a mass range from 0.5 to 2 TeV with a turn-on for lower values
+(roughly below 0.8 TeV) followed by a decay, the latter being somewhat similar to the dijet spectrum. In an effort to use the two-step
+procedure in this case, we observed that the signal kernel was not able to identify injected signals in the second step, but always
+captured the turn-on part instead. Thus, the first and second step (with 𝛴1 and 𝛴12 respectively) were used on the background-only
+sample, successfully accommodating the background spectrum; a third step (using 𝛴123) was then applied for signal extraction.
+The testing of the method was similar to that performed in the dijet case. After fitting the background spectrum, we generate
+and use background pseudo-data to inject 𝑍′ signals corresponding to simulated resonance hypotheses at two mass points, i.e. 750
+GeV and 1250 GeV. The last step of the procedure is then applied 100 times, where we obtain the signal parameters (𝜃 ).24
+3
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 14. Residual plot corresponding to Fig. 13. The GP signal component (solid magenta) and the signal injected (dashed black line) are displayed as well as a
+subtraction of the toy data set with a signal injected minus the background GP fit (black dots with error bars). Injected and extracted signal values are shown.
+Fig. 15. Linearity plots for the R values of the signal injected in the dijet spectrum; each plot corresponds to indicated mass M and width W (both in GeV).
+The values of the width are the same for each plot column, and those of the mass are fixed through each plot row. Points and error bars (means and rms) are
+calculated from the distribution of extracted width values. A dashed red 𝑥 = 𝑦 line is plotted for reference.
+As reported in [128], signal extraction is achieved with moderate success. Two main limiting factors are the faintness of the
+nominal simulated signals used, and in some cases an observed shift of the GP signal component towards the turn-on point.
+Concerning the first issue, we tested the extraction where the nominal simulated signal was amplified by different factors. For
+the shift in the signal component, we instead limited the 𝜃 parameters in the optimization to lay outside the turn-on region, a25
+3
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+t
+p
+m
+s
+t
+s
+7
+7
+c
+p
+w
+c
+t
+7
+t
+l
+e
+e
+t
+c
+r
+a
+p
+a
+o
+t
+a
+e
+r
+e
+m
+i
+𝑝
+G
+o
+r
+a
+o
+procedure that helps overcome the issue; still, in the case of spurious detection (no signal injected), the signal component would
+mostly tend to find spurious signals near the lower bound allowed for the location (i.e. 𝑚 in 𝜃3). This and other limitations reported in
+the study need further work in order to enable the described method to be applicable to resonance searches in the 𝑡𝑡 mass spectrum.
+6.4.5. Conclusions
+We explored different aspects of GP approaches that are able to perform background modelling and signal detection, without any
+prior information on the mean, i.e. 𝜇(𝑥) = 0. The two-step procedure was able to detect signals with different widths, intensities, and
+locations in the dijet invariant mass spectrum. We use 𝑅, a ratio of events defined within a window to measure the intensity of the
+signal; since the spurious detection leads to identifying signals up to 0.25, we use this value as an indication of the faintest signal
+that the method is capable to identify. We also described the application of the GP method in three steps in the more challenging
+scenario of the search for a resonant signal in the 𝑡𝑡 invariant mass spectrum: the first two steps model the background, including
+he turn-on region, and the third step is used for extracting the signal.
+The GP methods that we used provide a way towards alternative background modelling and signal identification techniques. The
+rocedures presented here lend themselves to further improvement: in particular the performance of the method applied to the dijet
+ass spectrum could be further improved with a better definition of the injected amplitude and, in the case of the top quark pair
+pectrum, the three-step procedure showed some limitations in modelling the background turn-on and capturing the signal. Finally,
+he application of the method to model-independent searches could be better served by more versatile methods, which could be
+tudied by exploring other kernels and by avoiding reliance on a complex iterative fitting procedure.
+. Similarity Search for the Fast Simulation of the ATLAS Forward Calorimeter
+.1. Overview
+The physics measurements of the experiments at the LHC strongly rely on detailed and precise simulations to predict the
+omplex response of the detectors. These simulations are essential for the comparison between experimental results and theoretical
+redictions. The detailed simulation of the interaction and propagation of the particles through the detector is typically performed
+ith the Geant4 [129] simulation toolkit, and it demands very large computing resources. The development of innovative
+omputational and algorithmic techniques is fundamental to cope with the complexity of the simulation, which is further expected
+o increase in the next decade, with the increment of the volume of data collected at the LHC.
+.2. Fast simulation with frozen showers
+In the ATLAS experiment, the simulation chain is managed by Athena [130,131], an open software used for the simulation of
+he particle interaction and propagation in the detector, as well as the physics object reconstruction. The ATLAS experiment makes
+arge use of fast simulation techniques to reduce the computational resources required by the entire simulation chain. A prominent
+xample is the FastCaloSim module [132] in Athena, which uses a parameterized model of the calorimeter response in the barrel.
+When it comes to simulating the response of a calorimeter, specifically built with very dense material to entirely absorb the
+nergy of the particles that traverse it, the requirements of computational resources could increase exponentially, up to ∼ 70% of
+he total CPU time dedicated to the entire simulation process. This is especially relevant for the simulation of the ATLAS forward
+alorimeter (FCal) [133,134]. The FCal is a sampling calorimeter that covers the most forward region of the ATLAS detector, in the
+ange of pseudo-rapidity 3.1 < |𝜂| < 4.9. Due to the close position to the beamline, energy and density of particles reaching the FCal
+re very high. The harsh environment is reproduced by Monte Carlo simulations, responsible for the propagation of high-energy
+articles that enter the calorimeter and form showers of secondary particles inside it. The FCal consists of three consecutive modules
+long the beamline. The first module, the closest to the interaction point, is made of copper and is designed to absorb the majority
+f the electromagnetic showers. The following modules, made with tungsten, are designed to absorb the hadronic contribution to
+he particle showers. Since the total energy of a showering particle is predominantly deposited in the sampling calorimeter through
+large number of soft electrons and photons, the work presented here focuses on the fast simulation of the FCal response in the
+lectromagnetic module.
+In ATLAS, the simulation of the FCal detector already makes use of fast techniques aimed at reducing the complexity of the
+esponse. The FCal fast simulation is based on a frozen shower library approach [135], which consists of storing pre-simulated
+lectromagnetic showers initiated by high-energy particles entering the front face of the calorimeter, subsequently used to quickly
+odel the detector response. The frozen shower substitution is illustrated in Fig. 16.
+The generation of the frozen library requires a preliminary simulation of the low-energy particles obtained with the propagation
+n the FCal of the particles arising from simulated collision events. In the work presented here, LHC-produced top quark pair events
+𝑝 → 𝑡𝑡+𝑋 have been used. When secondary particles with energy below a given threshold are produced, typically electrons below 1
+eV and photons below 10 MeV, the corresponding kinematic information is saved in the frozen library, together with the collection
+f hits corresponding to the subsequent shower produced by them. The frozen shower is then used in the fast simulation of the FCal
+esponse. When a low-energy particle is produced in the FCal, the simulation (performed with Geant4) is suspended, the particle is
+ssociated to one entry in the library and the corresponding electromagnetic shower, whose energy is scaled to match the energy26
+f the particle produced, is sampled.
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 16. Sketch of the particle showers. A shower collected in the frozen library (left) is used to replace a low-energy particle produced in the simulation (right).
+The ATLAS FCal calorimeter consists of an absorber matrix (made with copper, in the case of the electromagnetic module)
+instrumented with cylindrical electrodes parallel to the beamline. Each electrode is composed by a rod (anode) placed inside a tube
+(cathode). The small gap in between is filled with liquid argon, used as the active material of the sampling calorimeter. The distance
+of the particle to the active material is an important parameter to determine the characteristics of the originated shower.
+The frozen library currently used by ATLAS for the FCal fast simulation contains pre-simulated showers parameterized in bins
+of pseudorapidity 𝜂 and 𝑑, the distance of the low-energy particle to the centre of the closest rod. The energy of the particle is also
+stored. During the simulation, the matching between the simulated particle and one entry of the library is performed by selecting
+the closest 𝑑 and 𝜂 bin and then finding the closest energy available within the bin.
+The energy resolution of the detector response obtained with the fast simulation should always be able to reproduce the result
+obtained with a standard simulation (full simulation). The fast simulation approach currently used in ATLAS strongly reduces the
+computational requirements of the simulation. However, it does not reproduce well the energy resolution provided by the full
+simulation, thus requiring some tuning of the parameters in the library prior to its usage.
+7.3. Similarity search
+The new proposed strategy [136] employs similarity search techniques to select the most suitable particle–shower pair in the
+library. Such techniques constitute a branch of machine learning and include clustering and indexing methods that enable quick and
+efficient searches for vectors similar to each other [137]. These methods are usually employed in applications such as image features
+search and document retrieval in large scale databases, for example in search engines. A new version of the library is also used.
+The stored showers are keyed by 6-dimensional parameter vectors containing the angular and spatial information of the low-energy
+particles, as well as their energy.
+Similarity search techniques can be described as approximate nearest neighbour searches to find similar vectors. A prediction
+for a query vector is made from data, by measuring the distance with the instances in the dataset and selecting the most similar
+ones. The similarity can be defined using different metrics, one of the most common being the Euclidean distance 𝐷(𝐩,𝐪) between
+two vectors 𝐩 and 𝐪, defined as
+𝐷(𝐩,𝐪) =
+√
+(𝑞1 − 𝑝1)2 + (𝑞2 − 𝑝2)2 +⋯ + (𝑞𝑑 − 𝑝𝑑 )2 =
+√
+√
+√
+√
+𝑑
+∑
+𝑖=1
+(𝑞𝑖 − 𝑝𝑖)2 . (18)
+In the frozen library context, given a query vector containing the kinematic information related to the simulated low-energy
+particle, the search is performed to find the most similar vector of kinematic variables collected in the library. The search is
+not performed exhaustively in the whole dataset, but is based on approximation methods that often involve the use of clustering
+algorithms to limit the portion of the dataset considered in the search. This involves pre-processing the dataset with an indexing
+procedure, which learns a data structure from the dataset.
+In this work, the Facebook AI Similarity Search (Faiss) [138] package, developed by the Facebook Artificial Intelligence researchers
+to efficiently retrieve multimedia documents, has been used to construct the index and perform the search within the frozen library.
+Several indexing options to build a structure from the dataset are available with Faiss. One of the most common structures is
+called inverted index [139] and is based on the space partition into Voronoi regions defined by a K -means clustering algorithm.
+Each vector is encoded into the corresponding region (code) and saved in an array (the inverted index). Given a query vector, the
+search is then performed on the indexed dataset, based on the similarity with the centroids of the clusters. The vectors contained in
+each queried cluster are decoded sequentially and compared to the query. The Faiss package also provides a method called Product
+Quantizer [140] to compress the vectors and perform a faster search at the cost of accuracy. The Product Quantizer is particularly
+useful when dealing with high-dimensional vectors and very large datasets (> 106 elements). Another interesting method is the so-
+called Hierarchical Navigable Small World graphs (HNSW) [141]. The HNSW consists of a multi-layer structure built from the dataset,
+where the vectors are connected through links, based on the similarity metric, and organized over different layers according to the
+length of the links. Then the search is performed across the layers, starting from the region characterized by the longest links. The
+HNSW is considered state-of-the-art among similarity search algorithms and provides a good trade-off between speed and accuracy
+both in high- and low-dimensional data.27
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 17. Distribution of the energy deposited by the showers originated by the low-energy electrons in the FCal calorimeter. (For interpretation of the references
+to colour in this figure legend, the reader is referred to the web version of this article.)
+Fig. 18. Resolution response obtained with the new (dashed lines) and the old (full lines) libraries. (For interpretation of the references to colour in this figure
+legend, the reader is referred to the web version of this article.)
+7.4. Validation and results
+To validate the new approach, a library containing ∼ 105 showers has been generated with electrons of energy below 1 GeV. Then,
+high-energy electrons are generated at the interaction point with discrete energies of [100, 200, 300, 400, 500] GeV and pseudorapidity
+in the range 3.35 < |𝜂| < 4.60, and propagated using the fast simulation with the new implementation.
+The processing time is evaluated as the average of the CPU time spent executing the propagation of a high-energy electron of
+fixed initial energy. This time includes the fast simulation of ∼ 104 low-energy showers produced in the propagation. The detector
+resolution is measured as the ratio 𝜎𝐸∕𝐸 between the standard deviation and the mean of the distribution of the energy deposited
+by the low-energy electrons. This distribution is shown in Fig. 17 for the fully Geant4-based simulation (blue), the default library
+(red), and the new library (green).
+Different indexing methods have been tested and compared on the basis of CPU time and resolution response. On the frozen
+shower library, all the tested methods show optimal results in terms of resolution response. The method based on the HNSW structure
+has been chosen as a benchmark, based on a slightly better performance in terms of CPU requirements.
+A specific library has to be generated for all the particles that require a fast simulation. During simulation, the different libraries
+can either be used individually or in combination. For comparison, a library containing showers originated from photons with an
+energy threshold of 10 MeV was also produced. Fig. 18 shows the final comparison of the detector resolution response obtained
+with different versions of the default libraries (continuous curves) and the new libraries (dashed curves).
+The electron and photon libraries have been tested both individually and in combination in the default and new implementations.
+The resolution obtained with the full simulation (blue) is in general well reproduced, except for the default electron library (green)
+that presents some discrepancies. Also, for the default library, a previous tuning of the library parameters was needed. The new
+approach provides optimal results in terms of detector resolution response.28
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 19. CPU response obtained with the new (dashed lines) and the old (full lines) libraries.
+Fig. 20. Faiss search in batches: total CPU vs batch size.
+Fig. 19 shows the final comparison of the CPU response. The electron libraries (green) provide a significant gain (up to ∼ 50%)
+with respect to the full simulation, with comparable results for the two different implementations. The photon library used in the
+new implementation appears to be less efficient than the default one. In general, the photon library provides a smaller gain to the
+simulation than the electron library. This is due to the smaller threshold used for the generation of the photon libraries. When the
+electron and photon libraries are used in combination, the simulation is significantly accelerated (up to ∼ 70%), and again provides
+results comparable between the two approaches, as shown by the yellow curves. The fact that the different performance obtained
+with the photon libraries is not reflected in the combined results can be related again to the different thresholds used for the library
+generation, which makes the electron library much more likely to be used during simulation.
+7.5. Conclusions and prospects
+The proposed approach for a new fast simulation of the ATLAS FCal was fully implemented within the ATLAS simulation
+framework. The new method based on similarity search techniques provides optimal results in terms of detector resolution response,
+outperforming the default approach, which needs to be adjusted before usage. A significant gain in CPU requirements with respect
+to the full simulation, amounting to an improvement of about 70%, is also obtained as a comparable result to what obtained with
+the default approach. CPU acceleration could be further enhanced with a library sampling performed in batches. When this work
+was performed, the batching functionality could not be enabled, as a multi-threading processing model was not supported by the
+ATLAS simulation framework. However, the Faiss implementation is optimized for batch searches.
+The potential improvement due to batch searches was tested in a standalone mode, using two separate datasets, one as the
+library, and the other as a collection of query vectors. Fig. 20 shows that the CPU time decreases significantly as the batch size
+increases. This suggests that the fast simulation implemented in ATLAS would greatly benefit from batch searches.29
+Reviews in Physics 7 (2021) 100063A. Stakia et al.
+A
+t
+c
+a
+f
+r
+8
+c
+d
+h
+p
+r
+t
+t
+w
+s
+r
+o
+p
+p
+8. Towards the Full Optimization of Physics Measurements
+8.1. Introduction
+In the previous sections we have described a number of applications to LHC research of advanced multivariate methods, to which
+MVA4NewPhysics provided a significant contribution. The produced examples provide a clear indication of the true revolution
+hat the process of inference extraction from complex collider data withstood in the course of the past decade. In a situation where
+omputer science is moving forward very quickly towards artificial intelligence applications in all domains of science and technology,
+s well as elsewhere, one is bound to ask what may the next step be in HEP research.
+We offer a partial answer to the above question in this section, where we summarize the result of studies aimed at achieving the
+ull end-to-end optimization of physics measurements based on injecting information on the final analysis goal in the dimensionality
+eduction procedures applied to collider data through supervised classification.
+.2. The misalignment problem
+The typical workflow of the measurement of a physical quantity from data collected by particle collisions at the LHC involves the
+onstruction of an informative summary statistic—usually one-dimensional—from multidimensional high-level features of observed
+ata events, and the extraction of inference on the parameter(s) of interest by a likelihood fit or some other statistical procedure. The
+igh-level features, usually individual four-momenta of identified relevant particles, are themselves the result of a large compression
+rocedure that starts with millions of digital readouts of as many electronic channels; this procedure is generically addressed as event
+econstruction.
+Event reconstruction, of which we have discussed some aspects in the previous Sections (Section 4, Section 7) is a very complex
+ask, and in ATLAS and CMS the development of the relevant software requires an investment of hundreds of person-years; it involves
+horough calibrations, tunings of data collection procedures, modelling of detector response, and a number of related studies. We
+ill not consider these procedures further in this section, other than noting that they necessarily target, as their optimization goal,
+uitable simplified surrogates of the true goals of the experiment. The complexity of the whole set of procedures that convert a
+aw dataset of digitized detector readouts into the measurement of a fundamental physical quantity prevent a direct optimization
+f the ultimate goal of experimentalists, which is usually the minimization of the total uncertainty on the measurement of a set of
+arameters of interest. For example, the electromagnetic calorimeter of an LHC experiment is naturally built to improve as much as
+ossible the energy resolution and identification capabilities of energetic, isolated photons (see supra, Section 7). Those figures of
+merit are manageable optimization proxies for the discovery reach of the experiment to high-mass resonances decaying into pairs
+of photons, which is much harder to study and maximize directly, but in general they are not monotonous functions of the latter
+quantity, which is dependent on additional parameters and conditions.
+The above mismatch between desirable goals and optimization proxies constitute what could be called a misalignment problem.
+Realigning our construction and reconstruction strategies to our experimental goals is a topic that will require our attention in the
+forthcoming years, leveraging differentiable programming tools that already enable the investigation of full end-to-end optimization
+strategies for particle reconstruction. A few efforts have started to consider the design of experiments as the subject of a full
+optimization [142–145], and there is hope that even full-blown particle detectors of the scale of ATLAS or CMS, which are among
+the most complex instruments ever built by human beings, may one day be assisted in their design by artificial intelligent tools
+leveraging automatic differentiation.
+A misalignment problem of smaller scale, yet by itself often one of quite large impact, exists also in the smaller-scale data
+compression step that starts from the 𝑂(50) high-level event features resulting from event reconstruction, and ends in a one-
+dimensional summary statistic on which experimental physicists base the extraction of information on the quantity (or quantities)
+of interest. The latter is usually the mass of a particle, or the cross section of an interesting phenomenon, and/or some other
+fundamental parameter of the underlying theory. Whatever the measurement goal may be, the workflow of the final inference
+step often involves the use of supervised classification to construct a discriminating variable that effectively separates the wanted
+signal from all competing backgrounds. The classification task may be performed by training a neural network, as exemplified
+in Section 2, supra; the network learns from simulated samples of signal and background processes, and produces an effective
+summary which, in absence of systematic effects, is often close to optimal in performance. In this context, an optimal classifier is
+one monotonous with the likelihood ratio, which by the Neyman–Pearson’s lemma is the most powerful test statistic to separate
+two simple hypotheses [146]. The produced summary statistic is optimal in the absence of systematic effects, but it is in general not
+optimal when model uncertainties or other biases have to be taken into account. The neural network, oblivious of those systematic
+uncertainties, produces a summary that does not guarantee the optimality of the final inference. In statistical terms, the summary
+is not sufficient : it does not make optimal use of the input information in the task of estimating the parameter of interest.
+8.3. INFERNO
+Recognizing the misalignment problem typically encountered in data analyses that perform a dimensionality reduction step from
+high-level features to a neural network classifier output, we designed an algorithm that promises full end-to-end optimality and
+approximate sufficiency of the constructed summary statistic. The algorithm, called INFERNO [147] (an acronym of Inference-Aware30
+Neural Optimization), exploits TensorFlow libraries to construct a fully differentiable pipeline that includes a neural network (used
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Fig. 21. Pipeline of INFERNO. Data produced by a simulator (left box) is fed to a neural network (second box from left). The network output is processed
+through a softmax operator to make it differentiable, and constitutes the summary statistic (third box from left) employed by a likelihood maximization (right
+box) to perform inference on the parameter of interest and related nuisances 𝜃, and obtain an estimate of the associated variance. The variance is fed back
+into the loop such that the network is capable of optimizing its parameters 𝜙 to produce the smallest uncertainty on the parameter of interest given nuisance
+parameters [147].
+for the dimensionality-reduction step) as well as a model of the inference-extraction procedure (a binned likelihood fit to the network
+outputs). In INFERNO, nuisance parameters affecting the background shape are introduced in the model, and the loss function of
+the neural network is retro-fitted with knowledge of the size of the full uncertainty expected on the final parameter of interest. The
+latter results from the inclusion in the model of all statistical as well as systematic effects, and is estimated from the inverse of the
+Hessian matrix of the likelihood fit employed for the parameter estimation step. Stochastic gradient descent then allows the network
+to learn a data representation that minimizes the variance of the parameter of interest.
+The algorithm was originally implemented with TensorFlow 1.0 [148] and is freely available [149]; it has also recently
+implemented within TF2.0 [150] and PyTorch [151]. A sketch of the software pipeline which INFERNO is based on is shown in
+Fig. 21.
+8.4. Outlook
+INFERNO is innovative and powerful, but its application is not always straightforward as it expects the user to produce a suitable
+differentiable model of the effect of nuisance parameters; so far the algorithm has only been proven to work—quite effectively—when
+applied to synthetic datasets. Its application to a full-blown LHC data analysis is in progress at the time of writing; we fully expect
+that the solution of the misalignment problem discussed supra, provided by INFERNO, will yield much higher sensitivity to physics
+analyses. Following INFERNO, a few similar attempts have recently been published, see e.g. [152]. We direct readers interested
+in more detail on this area of research to a recent review of methods that address the incorporation of nuisance parameters in
+supervised classification for HEP research [153].
+9. Concluding Remarks
+The present document summarizes the most significant studies carried out by members of the AMVA4NewPhysics ITN in the years
+2015–2019 within the context of searches and measurements of the Higgs boson and of LHC searches for new physics phenomena
+in datasets collected during Run 1 and Run 2 by the ATLAS and CMS experiments at the CERN LHC. The common denominator
+of the reported studies is the attempt to go beyond current data analysis practice in HEP experiments, exploiting state-of-the-art
+techniques from computer science and developing entirely new methods to extract the maximum amount of information from the
+invaluable datasets of proton–proton collisions.
+The effort that brought these studies to the fore could not have been undertaken without the resources made available by the
+European Union, as highlighted infra. However, the breadth of results and the significant stride they provide in the direction of more
+effective data analysis in fundamental physics research would have been impossible without the cohesive motivation of the young
+participants of the AMVA4NewPhysics training network. For that reason, it is necessary to stress here that an additional untold
+success of the network’s action has been to provide the spark for that collaborative effort.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared
+to influence the work reported in this paper.31
+Reviews in Physics 7 (2021) 100063A. Stakia et al.Acknowledgement
+This work is part of a project that has received funding from the European Union’s Horizon 2020 research and innovation
+programme under grant agreement No 675440.

@@ -1,0 +1,496 @@
+Among the emerging research topics, photocatalysis has been
+influential and popular due to its promisingmulti-adaptation in the
+energy and environment fields. Numerous visible light-induced
+photocatalysts, such as SnO2, CdS, WO3, MoS2, WS2, and graphitic
+carbon nitride (g-C3N4), have been investigated to promote pho-
+tocatalytic activities. Among them, g-C3N4, a famous metal-free
+polymeric semiconductor catalyst, is the most preferred because
+of its beneficial properties, including high physical and chemical
+stability, moderate bandgap energy (2.7 eV), and distinct electronic
+structure [1]. However, g-C3N4 insufficiently utilizes light, has a
+limited surface area, and yields a quick photoexcited electronehole
+recombination rate, so it is limited by its poor photocatalytic ability
+[2]. To address these weaknesses, researchers applied some critical
+scientific solutions, such as element doping into g-C3N4 [3] and
+preparing g-C3N4 composites with other semiconductors (metal
+sulfide [4], metallic oxide [5], and graphene category [6]).onal University, Hanoi.
+y Elsevier B.V. on behalf of Vietnam
+d/4.0/).Tin disulfide (SnS2) is a transition metal dichalcogenide semi-
+conductor with a conventional two-dimensional (2D) layered
+structure; it has been extensively investigated because of its low
+price, nontoxicity, and unique physicochemical characteristics [1,7].
+It also has a narrow bandgap of 1.89e2.35 eV, which provides a
+relatively strong visible light absorption ability [8]. However, single
+SnS2 is limited by the severe recombination of photoexcited car-
+riers, thereby impeding its widespread application in photo-
+catalytic processes. To overcome this problem, researchers
+developedmany SnS2 modificationmethods; for example, coupling
+SnS2 and g-C3N4 for constructing heterojunction photocatalysts is
+an efficient strategy to promote charge separation based on the
+photosynergistic effect and unique structural superiority [7,9,10].
+To our knowledge, SnS2/g-C3N4 composites have been designed
+and constructed using several methods, including ultrasonic
+dispersion [9], in situ hydrothermal method [8], and wet precipi-
+tation [7]. However, these synthesis routes are relatively complex,
+costly, and time-consuming. As such, a green, cost-effective, and
+convenient strategy for creating novel SnS2/g-C3N4 heterojunctions
+with excellent performance is highly desirable. In this study, a new
+synthesis of SnS2/g-C3N4 composites was developed using a one-
+pot calcination process in air atmosphere from a reaction mixture
+of tin (IV) chloride and thiourea. During the synthesis, g-C3N4 acted
+as a buffer to exfoliate SnS2, whereas SnS2 speeds up theNational University, Hanoi. This is an open access article under the CC BY-NC-ND
+T.H. Nguyen Thi, H.T. Huu, H.N. Phi et al. Journal of Science: Advanced Materials and Devices 7 (2022) 100402breakdown of g-C3N4 at high temperatures, resulting in an N-
+deficiency form with improved charge transport. The photo-
+catalytic activities of the obtained materials were examined by the
+degradation of Rhodamine B (RhB) dye under visible-light irradi-
+ation. Although RhB is widely applied for many industrial appli-
+cations such as textiles, paper, and food, it has high toxicity and
+chemical stability, making it difficult to completely decompose by
+the traditional biochemical and physical-chemical methods [11].
+This work proposes a promising strategy of employing SnS2/g-C3N4
+photocatalysts to eliminate RhB organic pollutant from dye-
+containing wastewater.
+2. Experimental
+2.1. Photocatalyst synthesis
+SnS2/g-C3N4 composites were fabricated via a simple calcination
+method from a precursor mixture of tin (IV) chloride (SnCl4$2H2O,
+99%, Merck, Germany), and thiourea (CH4N2S, 99.5%, Merck,
+Germany). In a typical process, a mixture containing different
+weight ratios of tin (IV) chloride to thiourea (1:25, 1:30, and 1:35)
+was heated to 500 C for 4 h. The obtained samples were labeled
+SCNx, where x ¼ 25, 30, and 35, corresponding to the weight ratios
+of tin (IV) chloride to thiourea of 1:25, 1:30, and 1:35.
+Pure SnS2 (labeled SNS) was synthesized through the post-
+calcination of SCN30 at 650 C in Ar gas for 2 h. Pure g-C3N4
+(denoted as CN) was fabricated by directly annealing thiourea at
+500 C for 4 h at an increasing rate of 10 C min1.
+2.2. Physicochemical characterization
+The crystalline structure of the as-prepared photocatalysts was
+examined through powder X-ray diffraction (XRD) using a D8
+Advance X-ray diffractometer (Bruker AXS company, Germany)
+with a Cu-Ka (1.5406 A) as the referring source operated at 30 kV
+and 10 mA. The XRD scans were recorded in the 2q range of 10e80
+with a scanning rate of 7 min1 and a step size of 0.01 (0.5s/step).
+The morphological characteristics of the as-synthesized materials
+were investigated using a scanning electronmicroscope (SEM, Nova
+Nano SEM 450), and a high-resolution transmission electron mi-
+croscope (HR-TEM) was performed on a JEOL JEM-2100 F (JEOL,
+Japan) operating at 200 kV. The materials were coated with gold to
+prevent charge build-up during SEM examinations. The Fourier
+transform infrared (FTIR) spectra of the samples in the
+400e4000 cm1 range with a resolution of 4 cm1 were obtained
+on an IR Prestige-21 spectrophotometer (Shimadzu) using KBr
+pellets containing a 1% weight sample. Thermogravimetric analysis
+(TGA) was conducted using a SETRAM LABSYS TG system with
+airflow and heating rate of 10 C min1. X-ray photoelectron
+spectroscopy (XPS) data were obtained with a K-Alpha þ Thermo
+Scientific system. A Shimadzu UV-2600 spectrophotometer with a
+spherical diffuse reflectance accessory was used to determine the
+bandgap energy of catalysts using UVevis diffuse reflectance
+spectroscopy (DRS). The photoluminescence (PL) spectra of the
+synthesized samples were obtained using an iHR-550 fluorescence
+spectrophotometer stimulated at 355 nm.
+2.3. Photocatalytic activity evaluation
+The photocatalytic performance of the obtained samples was
+assessed on the basis of RhB photodegradation in an aqueous so-
+lution under visible light exposure. A typical experiment was
+conducted with a catalyst dose of 20 mg dispersed in 80 mL of RhB
+solution with a concentration of 20 mg/L. The obtained dispersion
+was continually stirred for 1.5 h in the dark to achieve the2
+adsorptionedesorption equilibrium. The mixed solution was then
+illuminated with a 60 We220 V lamp with a UV cutoff filter
+(200e400 nm). At predefined intervals, an aliquot of the reaction
+solution was obtained and promptly centrifuged at 5000 rpm for
+10 min to remove the catalyst. The residual concentration of RhB
+dye was determined with a UVevis spectrophotometer at
+lmax ¼ 553 nm.
+The photocatalytic mechanism was investigated via trapping
+experiments of the main active species. Various scavengers,
+namely, benzoquinone (BQ, 10 mM), tert-butyl alcohol (TBA,
+10 mM), and ammonium oxalate (AO, 10 mM), were added to the
+aqueous RhB solution containing the catalyst to trap radical anions
+(O2
+), hydroxyl radicals (OH), and holes (hþ), respectively.
+3. Results and discussion
+3.1. Characterization of materials
+The crystalline structures of CN, SNS, and SCNx composites
+subjected to XRD analysis are shown in Fig. 1a. The XRD pattern of
+CN shows two distinct prominent peaks around 13.1 and 27.4,
+corresponding to the (100) and (002) diffraction crystal planes of
+graphite-like materials, respectively [2]. Particularly, the broad and
+weak peak at 2q ¼ 13.1 corresponds to an in-plane structural
+packing motif, and the sharp and intense peak at 27.4 originates
+from the interplanar stacking of p-conjugated aromatic segments
+[12]. The 2 T-type hexagonal-phase SnS2 (PDF#23-0677) may be
+indexed to all the major diffraction peaks in the XRD pattern of SNS.
+However, the characteristic peaks of the g-C3N4 phase are absent in
+the XRD pattern of SNS, indicating that g-C3N4 in SCN30 is
+completely decomposed at 650 C. The main peaks of g-C3N4 and
+SnS2 are observed in all SnS2/g-C3N4 composites, and no other
+impurity peaks are detected, demonstrating that their crystal
+structures are retained after hybridization. The intensity of the
+(002) peak of g-C3N4 steadily increases as the amount of thiourea
+added to the precursormixtures increases, indicating the content of
+this component in the composites is higher than that of the other
+components. In general, the XRD results demonstrate that com-
+posites with coexisting SnS2 and g-C3N4 are successfully con-
+structed using facile and economic calcination.
+The bonding characteristics of the synthesized materials were
+investigated through FTIR spectroscopy. In Fig. 1b, the FTIR spec-
+trum of CN presents a series of peaks with a strong intensity in the
+range of 1238e1640 cm1, which is assigned to the feature
+stretching vibrations of the CeN and C]N bonds in g-C3N4 het-
+erocycles [13]. Moreover, the typical sharp peaks at 802 and
+891 cm1 are involved with bending modes and NeH stretching
+modes in heptazine units, respectively [19]. The FTIR spectrum of
+CN also exhibits a wide absorption band at 3000e3300 cm1,
+belonging to the NeH stretching vibration modes of the terminal
+amino groups or OeH bonds of surface-adsorbed water molecules
+[1]. Notably, the appearance of all the feature peaks of g-C3N4 in
+SnS2/g-C3N4 composites confirms the absence of the influence of
+SnS2 introduction on the g-C3N4 structure. The intensity of g-C3N4
+peaks in the composite gradually increases from SCN25 to SCN30
+and SCN35, implying an increase in the g-C3N4 content in the
+composite materials. This finding is consistent with the previous
+XRD discussion. For SNS, a signal with a modest absorption peak is
+detected at 552 cm1, corresponding to the characteristic mode of
+the SneS bond. However, this featured signal of SnS2 is invisible in
+the IR spectra of the composites because of the low relative content
+of SnS2 [10]. Furthermore, the absorption peaks centered at
+2300 cm1 belonging to the stretching vibration of the physically
+adsorptive CO2 in the atmosphere are recorded in the spectra of the
+SCNx composites [3,14].
+Fig. 1. (a) XRD patterns, (b) FTIR spectra, and (c) TGA of CN, SNS, and SCNx (x ¼ 25, 30 and 35).
+T.H. Nguyen Thi, H.T. Huu, H.N. Phi et al. Journal of Science: Advanced Materials and Devices 7 (2022) 100402The thermostability of CN, SNS, and SCNx samples investigated
+through TGA analysis is illustrated in Fig. 1c. Two main steps of a
+total weight loss process are observable in the TGA curves of all the
+samples. In the first step (from room temperature to 150 C),
+physically adsorbed water on a material surface and volatile im-
+purities evaporate. In the second step, SnS2 oxidizes to SnO2 (from
+350 C to 540 C) [15], and g-C3N4 thermally decomposes (about
+550 C) [16], thereby causing a considerable weight loss (between
+350 C and 600 C). The TGA profile of CN shows its intrinsic
+thermal instability at above 400 C, and decomposition is
+completed at 620 C. In comparisonwith CN, the second step of the
+composites occurs at a lower temperature. This result indicates that
+the thermal stability of g-C3N4 in the composite structure likely
+decreases mainly because of the influence of SnS2 crystallization on
+the in-plane structural stacking motif of the g-C3N4 phase and the
+catalytic role of SnS2 on the partial oxidation of the g-C3N4 sup-
+porting under air atmosphere. This phenomenon has also been
+observed in other materials, such as g-C3N4/ZnO [17], MoS2/g-C3N4
+[18], and In2O3/g-C3N4 [19]. No remarkable weight loss is observed
+in the TGA curve of SNS and the composites above 550 C, con-
+firming that SnS2 is completely converted to SnO2. Based on the
+TGA results, the estimated relative weights of SnS2 in SNS, SCN25,
+SCN30, and SCN35 are 98.93 wt%, 43.04 wt%, 18.43 wt%, and
+13.34 wt%, respectively (The detailed calculation was shown in
+Supplementary Information). This finding is consistent with the
+obtained IR and XRD results, implying that the loading of SnS2
+decreases when the added amount of the g-C3N4 (thiourea) source
+in the as-prepared composites increases.
+Fig. 2 illustrates the morphological characteristics and
+elemental composition of CN and SCN30. In Fig. 2a, a typical SEM
+image of CN presents bulk morphology of nonuniform layers with a
+fairly smooth surface stacking them together. This 2D sheet-like
+structure tends to agglomerate under the given preparation con-
+dition. The magnified SEM image of SCN30 (Fig. 2b) shows folded
+SnS2 nanoflakes, which grow in stacks with a layer-by-layer
+structure after they are grafted onto g-C3N4. The appearance of
+SnS2 nanosheets prevents the aggregation of the g-C3N4 substrate,3
+resulting in an enlarged specific surface on the composite.
+Accordingly, the pathways of the transport and separation of
+photoinduced charges between semiconductors may be enhanced.
+Furthermore, the TEM image of the composite in Fig. 2c reveals that
+the as-synthesized few-layered SnS2 nanosheets are less agglom-
+erated and well distributed in the porous g-C3N4 matrix. The
+concentric bright rings of small diffraction spots are visible in the
+selected area electron diffraction results, corresponding to the
+(002), (100), (101) (102), and (110) lattice planes and indicating the
+polynanocrystalline feature of SCN30. The HR-TEM image at a
+higher magnification of SCN30 (Fig. 2d) presents the lattice fringes
+of SnS2 nanosheets with an interlayer spacing of (d(002)) plane
+ranging from 0.59 nm to 0.65 nm. This finding can be attributed to
+the formation of a large amount of gases emitted during thiourea
+decomposition, leading to the increased exfoliation and expansion
+of SnS2 nanosheets [20]. Elemental mapping was performed to
+demonstrate SnS2 dispersion on g-C3N4 in the composites. In
+Fig. 2e2-4, the elemental mapping images confirm that S, Sn, and N
+are homogeneously distributed in the as-prepared composite.
+Overall, these results indicate that the unique nanostructure of the
+SnS2/g-C3N4 coupled material, which is composed of evenly
+dispersed SnS2 nanosheets on the g-C3N4 supporting, can signifi-
+cantly enhance the generation and separation of photoexcited
+charges during photocatalysis.
+XPS technique was implemented to determine surface binding
+properties of CN, SNS, and SCN30 (representative composite). The
+high-resolution C1s spectrum (Fig. 3a) can be deconvoluted into
+three characteristic peak components of the carbon atom of g-C3N4.
+The first component with a binding energy of 284.5 eV is attributed
+to the C]C bonding of the graphitic structure, the second
+component at 286.2 eV is related to C]N species, and the last
+component at 288.0 eV corresponds to C sp2 of N]CeN within the
+tri-s-triazine ring moieties [20]. Remarkably, these signals also
+appear in the C1s spectrum of SCN30. The N1s spectrum of CN
+possesses three contributions (Fig. 3b). In particular, the peak at a
+binding energy of 398.6 eV corresponds to sp2-hybridized N (C]
+NeC) [21], and the peaks at 399.8 and 401.3 eV belong to pyrrolic N
+Fig. 2. (a) SEM image of CN. (b) SEM and (c, d) HR-TEM images of SCN30 (inset displaying SAED of c). EDS mapping images of (e1) mapping region (e2) S, (e3) Sn and (e4) N.
+Fig. 3. (a) C1s and (b) N1s XPS spectra of CN, SNS, and SCN30. (c) S2p and (d) Sn3d XPS spectra of SNS and SCN30.
+T.H. Nguyen Thi, H.T. Huu, H.N. Phi et al. Journal of Science: Advanced Materials and Devices 7 (2022) 100402and graphitic tertiary N groups (Ne(C)3, HeNe(C)2) or amino
+functional groups (CeNeH), respectively [22]. The S2p XPS signals
+(Fig. 3c) are fitted into the peaks centered at 161.8 eV (S2p3/2) and
+163.1 eV (S2p1/2), which are associated with S2 chemical states in
+the SnS2 lattice [15]. Fig. 3d illustrates the high-resolution spectrum
+of Sn3d with peaks at 486.7 and 495.1 eV, indicating the Sn3d5/2
+and Sn3d3/2 core levels, respectively; thus, these findings confirm
+the existence of the Sn4þ valence state in SNS [23]. Interestingly, the
+binding energy of Sn3d and S2p of SCN30 negatively shifts
+compared with that of SNS, suggesting that electrons migrate be-
+tween g-C3N4 and SnS2 at their heterojunction interface [24]. This
+may contribute to charge separation in photocatalytic reactions.
+Thus, the XPS data strongly support the results obtained through
+XRD and FTIR, which provide clear evidence of the coexistence of
+two components (SnS2 and g-C3N4) in the composite. Additionally,
+stability of the composites was studied. Accordingly, the SCN30
+sample stored in a vial with closed cover for 5 months was char-
+acterized using XRD. The simultaneous presence of the two distinct
+diffraction peak systems corresponding to the two components of
+SnS2 and g-C3N4 can be observed in Fig. S1. This result shows no4
+significant change in the crystal structure compared to the initial
+SCN30 composite, confirming the stability of SnS2/g-C3N4.
+3.2. Photocatalytic activities
+In this study, the photocatalytic performance of all the samples
+was evaluated through RhB photodegradation under visible light
+irradiation. In Fig. 4a, 37.01% and 45.70% of RhB are decomposed
+after 6 h of irradiation of SNS and CN, respectively. The RhB
+degradation percentages of all SnS2/g-C3N4 composites are superior
+to those of the separated components. Among these photocatalysts,
+SCN30 exhibits the highest RhB degradation efficiency of 92.22%.
+For comparison, two controlled experiments were carried out: one
+without visible light irradiation and the other without photo-
+catalyst addition. The results reveal that RhB can be negligibly
+degraded in the two cases, suggesting that the degradation effi-
+ciency of RhB is attributed to the photocatalytic reaction in the
+presence of coexisting photocatalyst and light photon. Tradition-
+ally, a LangmuireHinshelwood model is used to assess the kinetics
+of photocatalytic progress. A linear relationship between ln (Co/C)
+Fig. 4. (a) Photocatalytic degradation of RhB for CN, SNS, SCNx (x ¼ 25, 30 and 35), without (A) photocatalyst and (B) irradiation. (b) The RhB degradation kinetics plots of different
+catalysts. (c) The PL spectra of CN and SCN30. (d) Photocatalytic degradation of RhB for SCN30 in air, N2 and O2 purge. (e) The impact of various scavengers on the RhB degradation
+activity of SCN30. (f) UV-vis diffuse reflectance spectra of CN, SNS and SCN30.
+T.H. Nguyen Thi, H.T. Huu, H.N. Phi et al. Journal of Science: Advanced Materials and Devices 7 (2022) 100402and the irradiation time t of the samples is shown in Fig. 4b.
+Accordingly, the obtained data arewell fittedwith the pseudo-first-
+order kinetic reaction shown in the following equation: ln (Co/
+C) ¼ k$t, where Co and C refer to the initial and measured con-
+centrations of RhB after irradiation time t, respectively, and k is the
+rate constant. k of all the composites is much greater than that of
+any single component, confirming the outstanding photocatalytic
+capability of SnS2/g-C3N4 heterogeneous semiconductors. Among
+the composites, SCN30 has the highest reaction rate constant
+(0.44402 h1), which is about 1.57 and 2.20 times higher than those
+of SCN25 (0.28279 h1) and SCN35 (0.20179 h1), respectively
+(Table S1). This phenomenon suggests that a reasonable amount of
+the g-C3N4 supporting enhances the transfer and separation
+channels of photoinduced carriers, thereby improving photo-
+catalytic behavior. However, the overuse of the g-C3N4 substrate in
+the composite can diminish the photocatalytic activity of RhB
+removal because its properties are similar to those of bare g-C3N4
+[25]. Another reason is that excessive g-C3N4 loading can trigger the
+shielding effect of g-C3N4 on SnS2, leading to decreased light ab-
+sorption and limited contact between SnS2 and oxidative species
+[7]. The effect of pH on the photocatalytic activity of a represen-
+tative sample, SCN30 was investigated, indicating that the
+maximum degradation of RhB was obtained at pH of about 3.8
+closing to the pH of RhB solution. A decrease in degradation effi-
+ciency was observed when increasing pH (Fig. S2). To enable the
+degradation of RhB on the catalysts under visible-light irradiation
+only due to photocatalytic reaction, the adsorption on the photo-
+catalysts was demonstrated (Fig. S3).
+The steady-state photoluminescence (PL) spectra of CN and
+SCN30 were obtained under an excitation wavelength of 355 nm to
+further demonstrate the extension in the lifetime of charge carriers.
+In Fig. S4, the PL spectrum of CN can be deconvoluted into four
+symmetric Gaussian peaks centered at A (433.8 nm, 2.86 eV), B
+(455.9 nm, 2.72 eV), C (488.5 nm, 2.54 eV), and D (523.6 nm,
+2.37 eV). Previous studies showed that the electronic band states of
+g-C3N4 consist of the s band (sp3 CeN bond), p band (sp2 CeN
+bond), and lone-pair (LP) electrons of bridge N atoms [26]. The
+four emission peaks (in the order fromA to D) of CN reflect different
+transitions, namely, s* conduction band (CB)/s valence band5
+(VB), s*/LP, p*/PL, and p*/p, respectively [27,28]. The
+measured emission energy of the B peak is 2.72 eV, which is similar
+to the bandgap energy of CN from its UVevis DRS spectrum. The
+energy to form the PL emission of g-C3N4 can be released by the
+recombination of photogenerated charges as a result of C vacancies
+and unpaired lone electrons [7]. In Fig. 4c, CN has a strong emission
+peak at around 450 nm, suggesting its serious electronehole
+recombination rate [23]. However, the intensity of this featured
+emission peak decreases significantly after the SCN30 composite is
+constructed. This finding confirms that the presence of SnS2 in the
+composite efficiently reduces the recombination of excited
+electronehole pairs, thus improving the performance of the pho-
+tocatalytic system.
+The role of dissolved oxygen in the removal efficiency of RhBwas
+evaluated using SCN30 as a representative sample. The solutionwas
+purged continuously with nitrogen or oxygen before and after
+irradiation. Fig. 4d shows that the RhB degradation rate on SCN30 in
+air reaches around 92.22% and increases significantly to 98.02%with
+O2 purging. Only 74.86% of RhB is degraded in the presence of N2
+stream after 6 h of irradiation. In addition, the experimental results
+fitted with the pseudo-first-order kinetics reveal the highest value
+of constant rate in the experimentwith O2 (k¼ 0.65055 h1), which
+is around 1.47 and 2.88 times higher than those in air (0.44402 h1)
+and N2 (0.22589 h1), respectively (Fig. S5a). This result confirms
+that O2 contributes to photocatalytic RhB degradation, which can
+simply capture excited electrons on the CB of semiconductors, thus
+inhibiting the electronehole recombination probability. Further-
+more, the effects of primary reactive species on the photocatalysis of
+SCN30 under visible light irradiation were studied. Herein, three
+chemicals, i.e., BQ, TBA, and AO, were added as quenchers of O2
+,
+OH, and hþ, respectively. The results shown in Fig. 4e demonstrate
+that the photodegradation efficiency of RhB decreases in the pres-
+ence of scavengers. Remarkably, after 6 h of irradiation, the degra-
+dation efficiency decreases considerably to 48.55% with the added
+BQ, and the photocatalytic efficiency decreases to 70.81% in the
+presence of TBA. By contrast, the RhB degradation percentage does
+not significantly change when AO is used. In Fig. S5b, the reaction
+rate constants show the following trend: AO (0.41022 h1) > TBA
+(0.21330 h1) > BQ (0.11185 h1). These results determine that O2
+
+T.H. Nguyen Thi, H.T. Huu, H.N. Phi et al. Journal of Science: Advanced Materials and Devices 7 (2022) 100402and OH are the dominant reactive species, whereas hþ negligibly
+influences RhB photodegradation.
+The optical properties of the materials were examined through
+UVevis DRS spectroscopy (Fig. 4f) to further understand the
+enhancement in the photocatalytic properties of the obtained
+heterojunction system. CN displays a strong absorption edge at a
+wavelength of approximately 450 nm, which corresponds to an
+intrinsic bandgap energy of about 2.72 eV. The value of the bandgap
+of CN is consistent with the previously reported results [7,9]. By
+contrast, SNS has a broad absorption edge of up to 650 nm because
+of its narrow bandgap (about 1.89 eV). The absorption curves of the
+composites are similar to those of CN (Fig. S6) because of the
+coating of the g-C3N4 supporting on SnS2. The bandgap energy of
+semiconductors can be calculated on the basis of the
+KubelkaeMunk function equation S1 and is listed in Table S2,
+indicating that the obtained materials can be activated under
+visible light condition. The obtained data on the flat band potentials
+of g-C3N4 and SnS2 are calculated using equations S2 and S3 and
+presented in Table S3. The CB and VB positions of the two semi-
+conductors are illustrated in Fig. 5.
+A photocatalytic mechanism can be proposed on the basis of the
+aforementioned studies on radical species trapping and bandgapFig. 5. The schematic diagrams of (a) type-II and (c) S-scheme photocatalytic mechanisms o
+between two semiconductors.
+6
+energy. In Fig. 5, two coupled semiconductors present staggered
+band structures. Their charge transfer behavior is discussed in
+detail in two ways. The first system is a conventional type-II charge
+transfer mode (Fig. 5a). In this case, both semiconductors are
+simultaneously excited to create photoinduced electrons and holes
+under light irradiation. Then, the CB excited-state electrons of g-
+C3N4 can transport to the CB of SnS2, whereas the VB photoinduced
+holes from SnS2 can migrate to the VB of g-C3N4. Accordingly,
+photogenerated electrons likely accumulate on the CB of SnS2 with
+a low reduction potential, whereas photogenerated holes tend to
+accumulate on the VB of g-C3N4 with a low oxidation potential. This
+transfermode reduces the redox ability of the composite, leading to
+a low driving force toward specific photocatalytic reactions.
+Therefore, the electrons on the CB of the SnS2 semiconductor with a
+more positive reduction potential than the standard reduction
+potential of E(O2
+/O2) ¼ 0.33 eV (vs. NHE) [10] cannot directly
+interact with O2 to produce O2
+ radicals. In comparison with the
+experimental results on radical suppression, the traditional type-II
+model is inconsistent because the signal of the main active species
+(O2
+) is not found. The charge transfer mechanism in a hetero-
+structure system operating in this mode is also problematic from a
+dynamic perspective because of the significant electrostaticn the SnS2/g-C3N4 composite. (b) Electron transformation due to different Fermi levels
+T.H. Nguyen Thi, H.T. Huu, H.N. Phi et al. Journal of Science: Advanced Materials and Devices 7 (2022) 100402repulsion between electrons and holes [29]. In the second system,
+the S-scheme mechanism is analogous to the type-II system but
+involves an entirely different charge migration pathway (Fig. 5b,c).
+According to density functional theory calculations, the Fermi en-
+ergy (Ef) of SnS2 with awork function of 6.0 eV is higher than that of
+g-C3N4 with a work function of 4.3 eV [30]. Therefore, after g-C3N4
+combines with SnS2, electrons tend to accumulate on the SnS2 site,
+leading to a depleted region on g-C3N4 at their heterojunction
+interface to accomplish Ef balance (Fig. 5b). Consequently, the g-
+C3N4 surface is positively charged, whereas the SnS2 surface is
+negatively charged at their interface. This charge redistribution
+results in the formation of an internal electric field (IEF) at the
+heterostructure interface in the geC3N4eto-SnS2 direction. The IEF
+can promote interfacial charge transfer, so their separation is
+greatly enhanced. As a result of charge redistribution, g-C3N4 and
+SnS2 exhibit upward and downward band bending, respectively.
+Photoexcited electrons and holes are produced in both semi-
+conductors under visible irradiation. The photoinduced electrons
+from the CB of SnS2 can easily transport to the VB of g-C3N4 and
+quickly and strongly recombine with the photoinduced holes
+because of all the driving forces, including electric field, Coulomb
+attraction, and force synergistic influence of band bending at the
+interface. Ultimately, the CB electrons in g-C3N4 with a stronger
+reduction ability and the VB holes in SnS2 with a greater oxidation
+ability are preserved. Therefore, the accumulated electrons on the
+CB of g-C3N4 with more negative potential than the standard redox
+value of E(O2
+/O2) ¼ 0.33 eV (vs. NHE) can reduce adsorbed O2
+molecules to O2
+. Afterward, O2
+ radicals are protonated to create
+hydroperoxy radicals (OH2) and then generate OH hydroxyl rad-
+icals, which are strong oxidative agents in organic dye degradation
+[9]. Unfortunately, the positive holes in the VB of SnS2 and g-C3N4,
+which have a greater negative VB potential than the standard redox
+potential of E(OH/H2O) ¼ 2.27 eV (vs. NHE) [31], cannot oxidize
+H2O to OH. However, the photoinduced holes on the VB of SnS2
+have a minor role in the direct oxidation of RhB. Clearly, the S-
+scheme separation mechanism of photoexcited charges is consis-
+tent with the trapping tests, indicating that O2
+ and OH radicals
+remarkably contribute to the photocatalytic degradation of RhB.
+This process is illustrated in the following reactions:
+g-C3N4 þ hn / g-C3N4 (e/hþ), (1)
+SnS2 þ hn / SnS2 (e/hþ), (2)
+e (g-C3N4) þ O2 / O2
+, (3)
+O2
+ þ Hþ / OOH, (4)
+OOH þ Hþ þ 2e / OH þ OH, (5)
+O2
+, OH, hþ þ RhB /degradation products. (6)
+The constructed SnS2/g-C3N4 heterogeneous system with a
+beneficial synergistic and integrative influence of the two compo-
+nents follows the S-scheme charge transport mechanism instead of
+the conventional type-II heterojunction structure. Thus, the sepa-
+ration and movement of photogenerated electronehole pairs
+improve, thereby enhancing the photocatalytic performance of the
+composite compared with that of the bare photocatalysts (SnS2 and
+g-C3N4).
+4. Conclusion
+We proposed a facile one-pot strategy for fabricating SnS2/g-
+C3N4 semiconductorswith various content loadings containing SnS27
+nanosheets distributed on a g-C3N4 matrix. The RhB removal effi-
+ciency of all the composites was higher than that of bare g-C3N4 and
+SnS2. Among resultant photocatalysts, the composite, which was
+prepared with a tin (IV) chloride/thiourea mass ratio of 1:30,
+exhibited the best performance of 92.22% of RhB photodegradation
+with a reaction rate constant of 0.44402 h1 in 6 h of irradiation. The
+effective transfer and separation of photoinduced charges between
+SnS2 and g-C3N4 in S-scheme heterojunctions is primarily respon-
+sible for the increased photocatalytic activity. Therefore, the SnS2/g-
+C3N4 system is a potential candidate for application in organic
+pollutant photodegradation.
+Declaration of competing interest
+The authors declare that they have no known competing
+financial interests or personal relationships that could have
+appeared to influence the work reported in this paper.
+Acknowledgments
+Thanh Huong Nguyen Thi was funded by Vingroup Joint Stock
+Company and supported by the Domestic Master/PhD Scholarship
+Program of Vingroup Innovation Foundation (VINIF), Vingroup Big
+Data Institute (VINBIGDATA; code VINIF 2020.TS.61).
+Quoc Dat Le was funded by Vingroup Joint Stock Company and
+supported by the domesticmaster and doctoral training scholarship
+program of the Vingroup Innovation Fundation (VINIF), Big Data
+Research Institute (VinBigdata) under grant VINIF.2020.ThS.92.

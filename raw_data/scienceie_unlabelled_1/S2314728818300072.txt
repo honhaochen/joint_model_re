@@ -1,0 +1,361 @@
+“Software testing is used as a procedure to ensure that the
+programs are free from bugs and to improve their function
+performance. In other words, it is used to determine and
+improve the quality of the software”. Before starting the
+testing process, it is necessary to choose a test adequacy cri-
+terion to evaluate whether a suite is adequate concerning the
+test goals [1]. A test adequacy criterion defines properties that
+must be observed by the test suite (e.g., code coverage,
+functional requirements’ coverage, among others).* Corresponding author.
+E-mail addresses: samarel-agouz@student.aast.edu (S.A. Abdallah),
+ramdan.mowad@fue.edu.eg (R. Moawad), essam.elfakharany@aast.ed (E.E.
+Fawzy).
+Peer review under responsibility of Faculty of Computers and Information
+Technology, Future University in Egypt.
+https://doi.org/10.1016/j.fcij.2018.02.004
+2314-7288/Copyright © 2018 Faculty of Computers and Information Technology, F
+open access article under the CC BY-NC-ND license (http://creativecommons.org/Code coverage [9] is considered a way to guarantee that
+tests are testing the code. When testers run those tests, they are
+presumably checking that the expected results obtained.
+Coverage measurement is useful in many ways; it improves
+the testing process, gives the information to the user about the
+status of the verification process, and helps to find areas that
+are not covered. Several tools are ranging from manual and
+automated generation test cases to facilitate the software
+testing process. The future lies in the automated approach to
+generate test cases; however, it is prone to errors and is time-
+consuming. This entails a rise in the cost of the testing process.
+We introduce, in our research paper, a new approach to
+optimize the test cases generation process to decrease the cost
+of running the unit tests. This process eliminates redundancies;
+thus, it increases efficiency. As a result, code coverage is
+maximized. We have incorporated four MEOA algorithms.
+MOEA is a significant topic that requires careful heed when
+addressing real-world problems. Most real-world MOPs
+(Multi-Objective Problems) have constraints that need to beuture University in Egypt. Production and hosting by Elsevier B.V. This is an
+licenses/by-nc-nd/4.0/).
+179S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190incorporated into our search engine to avoid convergence
+towards infeasible solutions. Constraints can be “hard” (i.e.,
+they must be satisfied) or “soft” (i.e., they can be relaxed), and
+addressing them properly has been a matter of research within
+single-objective EAs [2,3].
+MOEA is particularly effective at finding solutions to
+elusive problems while another MOEA is effective at solving
+non-uniform Pareto fronts. If one does not know the phenotype
+space of the problem, using multiple MOEAs with distinctive
+strengths may prove better than using just one. The MOEAs
+could then coevolve in such a way that individuals pass from
+one algorithm to another in an attempt to seed the algorithms
+with good solutions [2].
+In our research paper, we select four different algorithms:
+NSGAII, Random, SMSEMOA, and ε-MOEA from different
+libraries with different behavior to provide efficient solutions.
+The paper is organized as follows. The next section, some
+of the related work to our research. In Section 3, we pro-
+pose the approach to select test cases for automated test
+cases Generation tools. In Section 4, the different used
+datasets are presented. In section 5 the brief different al-
+gorithms are used in our research. Finally, the experiments
+and results are discussed in section 6.2. Related work
+Luciano S. de Souza, Pericles B. C. de Miranda, Ricardo B. C.
+Prudencio and Flavia de A. Barros presented in Ref. [3] a method
+that uses Particle Swarm Optimization (PSO) to solve multi-
+objective Test Case selection problems. In contrast to single-
+objective difficulties, Multi-Objective Optimization (MOO) opti-
+mize more than one objective at the same time. They developed a
+mechanism for functional Test Case selectionwhich considers two
+objectives simultaneously: maximize code coverage while mini-
+mizing cost in of Test Case execution effort based on Particle
+SwarmOptimization (PSO). They implement twomulti-objective
+versions of PSO (BMOPSO and BMOPSO-CDR). During this
+work developed aBinaryMulti-Objective PSO (BMOPSO), as theFig. 1. Proposedsolutions of the TC selection problemwhich represented as binary
+vectors; and (2) the MOPSO algorithm to work with multi-
+objective problems. Also, implemented the BMOPSO-CDR al-
+gorithm by adding the Crowding Distance and Roulette Wheel
+mechanism to the BMOPSO to select functional tests.
+Luciano S. de Souza, Pericles B. C. de Miranda, Ricardo B.
+C. Prudencio and Flavia de A. Barros presented enhancement
+to previous work in Ref. [4] added the so-called catfish effect
+into the multi-objective selection algorithms to enhance their
+results. The use of the so-called “catfish” effect, for instance,
+has shown to improve the performance of the single objective
+version of the binary PSO. The catfish effect derives its name
+from an effect that Norwegian fishermen observed when they
+introduced catfish into a holding tank for caught sardines. The
+introduction of a catfish, which is different from sardines, into
+the tank resulted in the stimulation of sardine movement, so
+keeping the sardines alive and therefore fresh for a longer
+time. Similarly, the catfish effect was developed to the PSO
+algorithm in such way that we introduce “catfish particles” to
+stimulate a renewed search by the rest of the swarm's particles.
+Hence, these catfish particles help to guide the particles, which
+can be trapped in a local optimum, to new regions of the
+search space and thus leading to possible better areas.
+Chandraprakash Patidar presented in Ref. [5] approach for
+test case generation algorithms using Sequence Diagram
+Based Testing with discrete particle swarm optimization al-
+gorithm. The approach presented automated test case gener-
+ation from UML sequence diagram using discrete Particle
+Swarm Optimization Algorithm. In his approach introduced an
+algorithm that automatically creates a dependency then it
+generated a dependency graph from which test cases can
+generated test cases. Also, generating dynamic test cases by
+using sequence diagram as a base element for generating test
+cases using sequence diagram dynamic actions like interaction
+among objects can be taken into consideration when gener-
+ating test cases. Finally, present optimization using discrete
+particle swarm optimization algorithm. Apply on the test cases
+generated by dependency graph generated by extracted in-
+formation from sequence diagram.approach.
+180 S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e1903. Proposed approach
+In this paper, we proposed a new approach that adopts four
+different algorithms and three fitness functions to solve multi-
+objective test cases selection problems in many automated test
+cases generation tools. Which is facing the challenge of
+generating duplicated test cases and ineffective within the cost
+of execution time furthermore give lower coverage percentage
+also the redundancy among test cases. Where customers
+search for high-quality products, the software testing activity
+has grown in importance, aiming to assure quality and reli-
+ability to the product under development. Also generating a
+massive number of test cases is costly, reaching up to 40% of
+final software development cost. Thus, it is of central impor-
+tance to improve the efficiency and effectiveness of the whole
+testing process.
+In the testing process, it is necessary to choose a test ade-
+quacy criterion defines properties that must be observed by the
+test suit. The most important metrics we must concern about itFig. 2. ε-MOEA Coverage and Redundancy Rel. for Dataset #1.
+Fig. 3. ε-MOEA Coverage and Cost Rel. for Dataset #1.
+181S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190is the critical objective which is Code Coverage and the
+constraints which are the cost of execution time and redun-
+dancy between generated test cases. The cost and redundancy
+are the critical constraints to cut down these suits, to fit the
+available resources, without severely settling the coverage of
+the test fitness criterion signifying recognized. Reduce the
+generated test suite based on some selection criterion is known
+as “Test Case Selection” process.3.1. Proposed structureOur approach as in Fig. 1 we use two different datasets of
+test suits which have a different number of test cases to cover
+the same program and the number of requirements. Each test
+suit has different behavior in the total cost and redundancy
+between test cases. We develop encoder by java programming
+language to encode the different metrics in each dataset
+(coverage, cost, and redundancy) for each test case. As said,
+three fitness functions were adopted. The requirements
+coverage objective (to be maximized) represents the amount
+(in percentage) of requirements covered by a solution d in
+comparison to the number of requirements present in D which
+is the selected test case from the dataset. Formally, let
+X ¼ {X1, …, Xr} be a given set of X requirements of the
+original suite D. Let F(Dj) be a function that returns the subsetFig. 4. NSGAII coverage and redundancy Rel. for dataset #1.
+Fig. 5. NSGAII coverage and cost Rel. for dataset #1.
+182 S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190of requirements in X covered by the individual test case: Dj for
+each one.
+Then, the requirements coverage of a solution d as given:
+CoverageðdÞ ¼ 100  jUd¼1fDigj
+x
+Unit : ð%Þ
+The Cost fitness function calculated as the summation of
+run time in milliseconds of each test cases selected in provided
+solution d from dataset D as given:
+CostðdÞ ¼
+Xi
+i¼0
+Ci Unit : ðmsÞ
+Redundancy fitness function which is more complicated
+because of redundancy indicator that retrieves the test cases
+with redundant coverage of requirements. The fitness function
+is the total number of redundant test cases divided by the total
+number of test cases selected in provided solution d.
+RedðdÞ ¼
+P
+RðDiÞ
+d
+Unit : ð%Þ
+After that, the evaluation functions run with the multi-
+objective algorithms to find an efficient Preto front regarding
+the fitness functions Coverage, Cost, and Red.3.2. Proposed preprocessesIn this section, we will provide our standard tuning to all
+selected algorithms that are running the above fitness functionsFig. 6. SMSEMOA coverage and redundancy Rel. for dataset #1.
+Fig. 7. SMSEMOA coverage and cost Rel. for dataset #1.
+183S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190
+Fig. 8. Random coverage and redundancy Rel. for dataset #1.
+Fig. 9. Random coverage and cost Rel. for dataset #1.
+Fig. 10. Code coverage of all algorithms for dataset #1.
+184 S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190on our two datasets. Each algorithm has parameters include
+the population size, the simulated binary crossover (SBX) rate
+and distribution index, and the polynomial mutation (PM) rate
+and distribution index and Max Evaluations. We are tuning
+each algorithm by the same value to all parameters So that we
+can measure the efficiency of each algorithm. The tuning pa-
+rameters values as following:
+1) populationSize ¼ 1000
+2) sbx.rate ¼ 0.9
+Table 5 (continued )
+Redundancy Coverage Cost
+Sol #64 23% 89.52% 195.4
+Sol #65 23% 91.61% 205.1
+Sol #66 23% 86.01% 195.1
+Sol #67 24% 91.06% 202.4
+Sol #68 21% 86.16% 190.6
+Fig. 11. ε-MOEA Coverage and Redundancy Rel. for Dataset #2.
+Fig. 12. ε-MOEA Coverage and Cost Rel. for Dataset #2.
+185S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e1903) sbx.distributionIndex ¼ 15.0
+4) pm.rate ¼ 0.1
+5) pm.distributionIndex ¼ 20.0
+6) MaxEvaluations ¼ 1000
+4. Data selection
+We have two different datasets for implemented program
+with 745 line of code which is mean we have 745 re-
+quirements to covered by our datasets of test cases. The
+first dataset has 83 test cases with total code coverage 100%
+and total run time cost 337.6 ms, and total redundancy 40
+between test cases. The second dataset have 70 test cases
+with total code 100% and total run time cost 299.9 ms,
+and total redundancy 25 between test cases. We select that
+Fig. 13. NSGAII coverage and redundancy Rel. for dataset #2.
+Fig. 14. NSGAII coverage and cost Rel. for dataset #2.
+186 S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190two datasets to prove our concept of select efficient test
+cases with high code coverage and minimum cost and
+redundancy.
+5. Algorithms selection
+Our selected algorithms are implemented within the MOEA
+Framework and thus support all functionality provided by the
+MOEA. The four algorithms selected from two different li-
+brary Native Algorithms and JMetal Algorithms. The NSGAII,
+ε-MOEA and Random Search are from Native Algorithms
+library. SMSEMOA from JMetal Algorithms library. Each
+algorithm of them has different behavior to generate many
+solutions. We will provide a brief about each of them as
+follows:Sol #53 23% 90.32% 201.0
+Sol #54 23% 88.44% 191.55.1. ε-MOEA
+Sol #55 23% 87.79% 191.9
+Sol #56 21% 87.12% 193.7
+Sol #57 23% 85.01% 184.8
+Sol #58 24% 91.06% 206.9
+Sol #59 23% 87.88% 193.8
+Sol #60 21% 85.83% 190.6
+Sol #61 23% 88.62% 201.7
+Sol #62 21% 88.48% 192.0
+Sol #63 23% 90.53% 203.4ε-MOEA is a steady-state MOEA that uses ε-dominance
+archiving to record a diverse set of Pareto optimal solutions
+[6]. ε-MOEA algorithm the search space is divided into a
+number of hyper-boxes or grid and the diversity is maintained
+by ensuring that a hyper-box occupied by only one solution.
+There are two co-evolving populations: (i) an EA population
+P(t) and (ii) an archive population E(t) where t is the iteration
+Fig. 15. SMSEMOA coverage and redundancy Rel. for dataset #2.
+Fig. 16. SMSEMOA coverage and cost Rel. for dataset #2.
+188 S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190established NSGA-II and archiving strategies. It is a steady-
+state algorithm founded on two pillars: (1) non-dominated
+sorting is used as a ranking criterion and (2) the hyper-
+volume is applied as a selection criterion to discard that in-
+dividual, which contributes the least hypervolume to the
+worst-ranked front [8].5.4. RandomThe random search algorithm randomly generates new
+uniform solutions throughout the search space. It is not an
+optimization algorithm but is a way to compare the perfor-
+mance of other MOEAs against random search. If an opti-
+mization algorithm cannot beat random search, then
+continued use of that optimization algorithm should be que-
+stioned [6].
+6. Results and analysis
+Multiple experiments are performed to improve code
+coverage and reduce the cost and redundancy of the selected
+program that has 745 lines of code for each dataset. Our pri-
+mary objective to maximize the coverage of 745 line of code
+we have with a concern about the runtime cost of running the
+test cases of each dataset we have. In this section, we will
+present the results of our experiments for each dataset running
+with the selected four algorithms (ε-MOEA, NSGAII,
+SMSEMOA, and Random) using our approach and fitness
+function. We will provide the tables all solutions generated
+from each algorithm with each dataset. Also, we present a
+Scatter Chart to show the relation between Coverage and
+Redundancy, and Coverage and Cost to all provided solutions.
+In Scatter Char each point in the chart represents a suite of test
+cases presented in each solution. The Final chart is to show the
+coverage of best solution for each algorithm per dataset.
+In Table 1: we present all results generated from ε-MOEA
+running on dataset #1 which has 83 test cases. ε-MOEA
+generates 66 different solutions with the best coverage 84%.
+In Fig. 2 and Fig. 3 the Scatter Charts shows the relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from the ε-MOEA algorithm.
+In Table 2: we present all results generated from NSGAII
+running on dataset #1. NSGAII generate 57 different solutions
+with the best coverage 83.13%.
+In Fig. 4 and Fig. 5 the Scatter Charts shows the relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from NSGAII algorithm.
+Fig. 17. Random coverage and redundancy Rel. for dataset #2.
+Fig. 18. Random coverage and cost Rel. for dataset #2.
+Fig. 19. Code coverage of all algorithms for dataset #2.
+189S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e190In Table 3: we present all results generated from SMSE-
+MOA running on dataset #1. SMSEMOA generate 58 different
+solutions with the best coverage 83.08%.
+In Fig. 6 and Fig. 7 the Scatter Charts shows the relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from SMSEMOA algorithm.
+In Table 4: we present all results generated from Random
+running on dataset #1. Random algorithm generates massive
+number of solution which is 130 solutions with the best
+coverage 66.96%.
+In Fig. 8 and Fig. 9 the Scatter Charts shows the relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from the Random algorithm.
+Finally, in Fig. 10. The comparison code coverage chart
+between the four algorithms. Here we notice that small dif-
+ferences between the first three algorithms ε-MOEA, NSGAII,
+and SMSEMOA and the worst coverage from the Random
+algorithm. The random algorithm is the indicator for selection
+algorithms which is mean if you choose an algorithm and his
+results are worse than the effects of Random algorithms you
+should exclude it. The best code coverage is provided by
+ε-MOEA algorithm with 84%.
+In Table 5: we present all results generated from ε-MOEA
+running on dataset #2 which have 70 test cases. ε-MOEA
+generates 68 different solutions with the best coverage 92.08%.
+In Fig. 11 and Fig. 12 the Scatter Charts shows the relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from the ε-MOEA algorithm.
+In Table 6: we present all results generated from NSGAII
+running on dataset #2. NSGAII generate 74 different solutions
+with the best coverage 91.99%.
+In Fig. 13 and Fig. 14 the Scatter Charts shows relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from NSGAII algorithm.
+In Table 7: we present all results generated from SMSE-
+MOA running on dataset #2. SMSEMOA generate 63 different
+solutions with the best coverage 92.61%.
+In Fig. 15 and Fig. 16 the Scatter Charts shows the relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from SMSEMOA algorithm.
+In Table 8: we present all results generated from Random
+running on dataset #2. Random algorithm generates a huge
+number of solution which is 129 solutions with the best
+coverage 69.43%.
+In Fig. 17 and Fig. 18 the Scatter Charts shows relation
+between the Code Coverage and Redundancy and Cost for
+solutions that generated from the Random algorithm.
+Finally, in Fig. 19. The comparison code coverage chart
+between the four algorithms for dataset #2. Also, here we
+notice that small differences between the first three algorithms
+ε-MOEA, NSGAII, and SMSEMOA and the worst coverage
+from the Random algorithm. The best code coverage is pro-
+vided by ε-MOEA algorithm with 92.61%. In the second
+dataset, we notice the better solution of code coverage from
+the first dataset that's because of the second dataset despite
+having the less number of test case but with less than runtime
+cost and redundancy between the test cases.7. Conclusion
+An efficient approach is proposed and applied to different
+four algorithms from MOEA Frame from the separate library
+with three fitness functions for Coverage, Cost, and Redun-
+dancy. Our Solution provides an efficient selection of test
+case for automated test cases generation tools that are
+suffering from low code coverage and the massive cost of the
+runtime of test cases cost. The experimental results demon-
+strate the accurate and efficient selection of test suits pro-
+vided in each dataset with high code coverage percentage of
+190 S.A. Abdallah et al. / Future Computing and Informatics Journal 3 (2018) 178e19092.61%. We apply two different datasets of a different
+number of test cases to prove our concept of efficient se-
+lection of test cases considering the three objectives of
+maximizing Code Coverage and reducing the Cost and
+Redundancy.

@@ -1,0 +1,338 @@
+Background: Modern day’s society is engaged in commitment-based and time-bound jobs. This invites 
+tension and mental depression among many people who are not able to cope up with this type of work-
+ing environment. Cases of mental depression are increasing day by day all over the world. Recently, the 
+onset of the COVID-19 pandemic has added further fuel to the fire. In many countries, the ratio between 
+patients with mental depression and psychiatrists or psychologists is remarkably poor. Under such a sit-
+uation, the design, and development of an expert system by exploiting the hidden power of various deep 
+learning (DL) and machine learning (ML) techniques can solve the problem up to a greater extent.
+Methodology: Each deep learning and machine learning technique has got its advantages and disadvan-
+tages to handle different classification problems. In this article four neural network-based deep learning 
+architectures namely MLP, CNN, RNN, RNN with LSTM, and two Supervised Machine Learning Techniques 
+such as SVM and LR are implemented to investigate and compare their suitability to track the mental 
+depression from EEG Data.
+Result: Among Neural Network-Based Deep Learning techniques RNN model has achieved the highest 
+accuracy with 97.50% in Training Set and 96.50% in the Testing set respectively. It has been followed 
+with RNN with LSTM model when there were 40% data in the Testing Set. Whereas both the Supervised 
+Machine Learning Models namely SVM and LR have outperformed with 100.00% accuracies in Training 
+Phase and approximately 97.25% accuracies in Testing Phase respectively.
+Conclusion: This investigation and comparison-oriented study establish the suitability of RNN, RNN with 
+LSTM, SVM and LR model to track mental depression from EEG data. This type of comparative research 
+using Machine Learning and Deep learning architectures must be framed out on this topic to finalize the 
+design and development of an expert system for the automatic detection of depression from EEG data.
+In modern society, many people must take the challenges to 
+fulfil the objective of their jobs in the stipulated time. As a result, 
+cases of mental depression are rising rapidly all over the globe [1]. 
+In many developed and developing countries, a very large pop-
+ulation is experiencing deterioration in mental health conditions 
+[2]. The onset of the COVID-19 Pandemic has added further fuel 
+to the fire [3]. Subsequently, the ratio between the mental pa-
+tients and the psychiatrist or psychologist has gone down further. 
+Keeping this crisis in mind, scientists, and researchers from all 
+over the world have engaged themselves in finding alternative and 
+automatic techniques to track mental depression, especially from 
+* Corresponding author.
+E-mail address: aviksarkar43@gmail.com (A. Sarkar).https://doi.org/10.1016/j.neuri.2022.100039
+2772-5286/© 2022 The Author(s). Published by Elsevier Masson SAS. This is an open acc
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).EEG data. Different machine learning and deep learning techniques 
+along with different feature selection methods are getting popular-
+ity in this domain.
+Wajid Mumtaz and Abdul Qayyum suggested that for auto-
+matic detection of unipolar depression, the application of one-
+dimensional CNN and long and short-term memory (LSTM) can 
+yield an accuracy of 98.32% and 95.97% respectively [4]. Hanshu 
+Cai et al. have implemented 4 basic deep and machine learning 
+techniques (KNN, SVM, CT, and ANN, with 10-fold cross-validation) 
+and claimed that KNN performed best in all datasets with an ac-
+curacy of 79.27% [5]. Ayan Seal et al. executed two experiments 
+namely the record-wise split and the subject-wise split and used 
+a DL-based convolutional neural network to track depression using 
+EEG data. They reported a recognition rate of 99.37% and 91.4% re-
+spectively [6]. Jing Zhu et al. applied the content-based ensemble 
+method (CBEM) on two different datasets and finally achieved ac-ess article under the CC BY-NC-ND license 
+A. Sarkar, A. Singh and R. Chakraborty Neuroscience Informatics 2 (2022) 100039curacies of 82.5% and 92.65% respectively [7]. Xiao-Wei Wang, et 
+al. adapted different feature selection methods such as wavelet, 
+power spectrum, nonlinear dynamical analysis and fed the ex-
+tracted features as the input to the SVM classifier. They observed 
+that an accuracy rate as high as 91.77% can be achieved using Lin-
+ear Discriminant Analysis (LDA) [8]. Xiaowei Li et al. proposed an 
+innovative approach to track depression from EEG data. Original 
+features were converted into new features by applying the deep 
+forest method and used as input to the SVM classifier. They con-
+verted the features into image form by introducing special infor-
+mation of EEG caps to both original and converted features. Finally, 
+the data in image form has been introduced as an input to the 
+CNN classifier. The best recognition rate thus obtained on the en-
+semble model and power spectral density is 89.02%. CNN is one 
+of the prominent models of deep learning exhibited an accuracy 
+of 84.75% [9]. Natasha P. et al. introduced two different methods 
+of feature extraction namely Discrete Cosine Transformation and 
+Discrete Wave Transformation. Extracted features were treated as 
+input to implement SVM, LDA, KNN, ANN, Naïve Bayes classifier 
+to detect mental stress from EEG data in a better way [10]. Linear 
+features, non-linear features, and power spectral features, etc. were 
+extricated by Ran Bai, et al. to implement six different machine 
+learning techniques such as SVM, KNN, decision tree, Naïve Bayes, 
+random forest, and Logistic Regression. Their outcome showed a 
+higher rate of recall than accuracy [11]. An amalgamated model 
+constructed from CNN and LSTM was used by Betul Ay et al. to 
+obtain better accuracy to track depression from EEG data [12]. El-
+ham S. Salama et al. reported that the 3D CNN model can serve 
+as one of the suitable methods to track emotion from EEG data 
+[13]. A Neural Network-based architecture was implemented by 
+Sana Yasina et al. for the identification of two different types of 
+mental disease from EEG data namely Major Depressive disorder 
+and bipolar disorder. They formulated a review-type research pa-
+per by introducing an elaborated discussion on different types of 
+EEG-based protocols, biomarkers, and public datasets for efficient 
+capturing of mental problems. Lastly, some know-how to increase 
+the reliability and performance of proposed methods had been ex-
+plained in detail [14].
+In this article, we have undertaken a comparative study not 
+only to investigate the suitability of different deep learning tech-
+niques namely MLP, CNN (MLP has been used as a classifier, but for 
+the sake of brevity only the term CNN will be used throughout the 
+article), RNN, RNN with LSTM, and supervised machine learning al-
+gorithms such as SVM and logistic regression to track the mental 
+depression from EEG data but also wish to convey an important 
+message to the world scientists to accelerate and finalize the de-
+sign and development of expert system (by encouraging more and 
+more this type of comparative studies in this domain which is hav-
+ing societal benefits) that will detect the mental depression of a 
+large population of patients within small span of time. Section 2
+will deal with the description of the EEG data set used to un-
+dertake this study. A brief discussion on basic methodologies of 
+deep and machine learning will be presented in section 3. Re-
+sults obtained from the implementation of different classifiers (to 
+undertake an investigation and comparisons) will be presented in 
+section 4. Conclusion and application emerged out from this com-
+parative study will be highlighted in section 5. Conflict of interest 
+is mentioned before Acknowledgments section. Acknowledgments 
+section will acknowledge the assistance so far obtained to carry on 
+this research work. Relevant references consulted during the liter-
+ature survey of this work will be depicted in References section.
+2. Data description
+In this research work, we have used the data set named emo-
+tions.csv available on the Kaggle website: [21]. This 48.83 MB data 2
+contains 2132 rows and 2549 columns. The first 2548 columns 
+contain independent attributes such as mean, standard deviation, 
+Fast Fourier transformation, min and max values, Eigenvalues, en-
+tropy, etc. extracted from the EEG brainwave data. The last column 
+represents the dependent attribute named label contains three 
+classes namely positive, negative, and neutral. There are 716 neu-
+tral values whereas positive and negative classes each contain 708 
+values.
+3. Methodologies
+This section will discuss the six different ML and DL method-
+ologies namely MLP, CNN, RNN, RNN with LSTM, SVM, and LR 
+which are being used successfully as classifiers to solve many real-
+life problems. A brief discussion on these basic ML and DL method-
+ologies is as follows:
+MLP: A multilayer perceptron (MLP) belongs to a class of a feed 
+forward Artificial Neural Network (ANN). A basic MLP architecture 
+is composed of at least three basic layers. 1. the input layer 2. a 
+hidden layer and 3. an output layer. In this architecture, each node 
+uses a non-linear activation function excepting the nodes in the 
+input layer. The data or the inputs are fed to the input layer. The 
+neurons in the input layer propagate the weighted inputs and a 
+randomly selected bias through the hidden layers. Afterwards, a 
+net sum of hidden nodes is estimated to obtain an output response 
+by using a transfer function. In the training phase, the MLP adopts 
+a supervised learning technique termed as back propagation. The 
+multiple layers along with non-linear activation function differen-
+tiate the MLP from linear perceptron. As a result, it can handle a 
+data which is not linearly separable [15][17].
+CNN: The CNN or ConvNets architecture consists of two main 
+parts feature extraction part and the classification part. Feature 
+extraction is done with the help of convolution layers, and pool-
+ing layers to extract relevant features. Feature map thus obtained 
+that provides information about the image such as the corners and 
+edges. There are several types of Pooling operations namely av-
+erage pooling, max pooling, sum pooling, etc. Features extracted 
+from the pooling layer are flattened and fed to the fully connected 
+layer. Finally, the activation function, such as the ReLU, Softmax, 
+tanH, and the Sigmoid functions are introduced. The activation 
+function is chosen depending upon the specific usage [16,17].
+RNN: Recurrent neural network (RNN) is most appropriate for a 
+dataset that carries information represented in terms of time-series 
+or it is sequential nature. This Architecture finds its application 
+in Language Interpreter, Natural Language Processing (NLP), Voice 
+Recognition and Image Captioning, etc. RNN can pull the informa-
+tion from inputs of previous stages and assimilate their impact on 
+the input of the current stage as well as on the output of the 
+present stage. The output of recurrent neural networks depends 
+on information carried by the elements within the sequence. The 
+connection between different nodes forms a directed graph to give 
+a temporal dynamic behavior. This assists to model sequential data 
+which are derived from feedforward networks. It can reduce the 
+complexity of increasing parameters and able to memorize each 
+previous output by introducing each output as input to the next 
+hidden layer. Finally, all the layers are clubbed together to form a 
+single recurrent layer [17].
+RNN with LSTM: LSTM is a successor of RNN. RNNs are un-
+able to handle long-term dependencies. Exploding and vanishing 
+of gradients are few other demerits of RNN. Thus, Long- Short-
+Term-Memory (LSTM) emerged to rectify the deficiencies of RNN. 
+This architecture can deal with continuous and discrete values. The 
+complexity per weight update is O (1) with LSTM. Some funda-
+mental applications of LSTM are namely Time series prediction, 
+Voice recognition, Rhythm Learning, Song Composition, Handwrit-
+ing Recognition, Human Action Recognition, etc. [18].
+A. Sarkar, A. Singh and R. Chakraborty Neuroscience Informatics 2 (2022) 100039
+The main objective of the SVM algorithm is to generate 
+the best line also called decision boundary which can segregate n-
+dimensional space into different classes so the new data point can 
+be put in its appropriate class in the future. There can be multiple 
+lines/decision boundaries to segregate the classes in n-dimensional 
+space, but the objective is to find out the best decision boundary 
+that helps to classify the data points. This best boundary is known 
+as the hyperplane of SVM features. It can be applied for both linear 
+classes by using single straight as well as for nonlinear data sets. 
+The data points lie nearest to the hyperplane are called Support 
+Vectors [19].
+LR: Logistic Regression falls under the supervised machine-
+learning technique which outperforms when output features are 
+binary or categorical. It can also be applied successfully when the 
+dependent variable contains more than two categories. It estimates 
+the probabilistic values lying between ‘0’ and ‘1’ by use of a lo-
+gistic function. Logistic Regression is best suited for the problem 
+of classification, it exploits the concept of probability. Logistic Re-
+gression generally uses Sigmoid Function. This algorithm finds its 
+abrupt use in medicine, social science, etc. [20].
+4. Results and discussions
+We have applied four different deep learning architectures 
+namely MLP, CNN, RNN, RNN with LSTM and two supervised ma-
+chine learning techniques namely SVM, and LR on the same data 
+set, to investigate and compare the performance of these mod-
+els to track mental depression from EEG brain wave data. Python 
+programming has been adopted to implement different architec-
+tures. Before the implementation of architecture, appropriate codes 
+are used to split the data into training and testing sets. Perfor-
+mance and suitability of these models have investigated by keeping 
+20%, 30%, and 40% data in the testing sets. Table 1 represent the 
+training data recognition rate in percentage (%) obtained by imple-
+mentation of these models with keeping 20%, 30% and 40% data 
+in the testing set. Performance of these models further checked 
+also on testing data set and recognition rate thus obtained are de-
+picted in Table 2. It can be noticed from Table 1 that the training 
+set recognition rates of MLP architecture are 83.20%, 84.28%, and 
+84.77% respectively with keeping 20%, 30%, and 40% data in the 
+testing set. On the other hand, corresponding training set recog-
+nition rates (with 20%, 30%, and 40% data in the testing set) for 3
+CNN architecture are 97.36%, 97.36%, and 97.27% respectively. Fur-
+ther scrutinization of this table reveals that RNN and RNN with 
+LSTM architectures are also performed well when implemented 
+with 20%, 30%, and 40% data in the testing set. The corresponding 
+training set recognition for these two neural networks-based deep 
+learning architectures are 97.95%, 97.32%, 97.27% (for RNN) and 
+97.95%, 93.13%, 96.97% (for RNN with LSTM) respectively. Finally, 
+it is really, appreciable to notice that the training set recognition 
+rate is 100% for both the machine learning techniques namely SVM 
+and LR. It remained invariant (100%) for all three combinations of 
+the percentage of data in the testing set i.e., with 20%, 30%, and 
+40% data in the testing sets.
+Now, the test dataset is used to provide an unbiased evaluation 
+of these models fitted on the training dataset. It can be noticed 
+from Table 2, the testing set recognition rates are 77.37%, 75.93%, 
+and 76.43% respectively for MLP architecture. So, it can be con-
+cluded that MLP architecture has shown satisfactory performance 
+during its implementation (both in training and testing phases). 
+CNN architecture has shown a noticeable fall in its recognition rate 
+when tested on testing data sets. Here, the testing set recognition 
+rates are 59.25%, 56.40%, and 49.82% respectively. Demonstrates
+that CNN architecture has performed noticeably well in its training 
+phase whereas underperformed in its testing phase. CNN architec-
+ture is not suitable for sequential time series data.
+The testing set recognition (with 20%, 30% and 40% data in the 
+testing set) for RNN and RNN with LSTM architectures are 97.95%, 
+96.40%, 97.65% and 87.58%, 90.13%, 97.65% respectively. Both these 
+neural network-based deep learning architectures have performed 
+remarkably well in their training and testing phases. It is to be 
+noted that in comparison to RNN model, the RNN with LSTM ar-
+chitecture (in testing phase) has experienced about 10% and 6% 
+drop-in recognition rate when there were 20% and 30% data in the 
+testing set respectively whereas the recognition rate (about 97%) is 
+nearly equal both in the cases of RNN and RNN with LSTM model 
+when there were 40% data in testing set. Finally, among neural 
+networks-based deep learning architectures, the RNN model has 
+been found as most suitable to track mental depression from EEG 
+brain wave data. It has been followed with RNN with LSTM model 
+when there were 40% data in the testing set.
+The supervised machine learning architectures namely SVM and 
+LR have outperformed both in training and testing phases when 
+implemented to track the mental depression from EEG brain wave 
+A. Sarkar, A. Singh and R. Chakraborty Neuroscience Informatics 2 (2022) 100039
+Fig. 1. Performance of Different Neural Networks and Supervised Machine Learning architectures with 20% data in the Testing Set.
+Fig. 2. Performance of Different Neural Networks and Supervised Machine Learning architectures with 30% data in the Testing Set.data. The relative testing recognition rate for SVM (with 20%, 30% 
+and 40% data in the testing set) and LR (with 20%, 30% and 40% 
+data in the testing set) are 97.65%, 97.18%, 95.89% and 97.18%, 
+96.87%, 96.60% respectively. SVM and LR models are best suited 
+for sequential and time-series data. Finally, it is to be concluded 
+that SVM and LR architectures have been found most suitable to 
+track mental depression from EEG brain wave data.
+From the obtained results, Fig. 1, Fig. 2, and Fig. 3 (bar dia-
+grams) are drawn further to undertake a more clear-cut compar-
+ison in the performance of different Deep Learning (Neural Net-
+work) and Supervised Machine Learning architectures. Fig. 1 de-
+picts both training and testing recognition rates of MLP, CNN, RNN, 
+RNN with LSTM, SVM, and LR with 20% of the data in the test-
+ing set. Similarly, Fig. 2 and Fig. 3 reflect both training and testing 
+recognition rates of MLP, CNN, RNN, RNN with LSTM, SVM, and LR 
+with 30% and 40% of data in the testing set respectively. Scruti-4
+nization of these figures once again establishes that among Neural 
+Network-based Deep Learning architectures, the RNN model has 
+been emerged out as the most suitable model to track mental de-
+pression from EEG brain wave data as it has performed best both 
+in training and testing phases. It has been followed with RNN with 
+LSTM when there were 40% data in the testing set. Further inves-
+tigation of these figures reveals that both the Supervised Machine 
+learning techniques (SVM and LR) have performed exceptionally 
+well in both training and testing phases finally proven their suit-
+ability to track the mental depression from EEG brain wave data.
+5. Conclusion and applications
+Considering a leaps and bound rise in the cases of mental 
+depression all over the world the authors have formulated this 
+research article to capture the suitability and unsuitability of dif-
+A. Sarkar, A. Singh and R. Chakraborty Neuroscience Informatics 2 (2022) 100039
+Fig. 3. Performance of Different Neural Networks and Supervised Machine Learning architectures with 40% data in the Testing Set.ferent neural networks and Supervised Machine learning architec-
+tures (MLP, CNN, RNN, RNN with LSTM, SVM, and LR) to detect 
+mental depression from EEG brain wave data. This meaningful ap-
+plication of ML and DL architectures has got tremendous societal 
+benefits. It carries an important message for the researchers and 
+scientists all over the world. They must encourage this type of 
+comparison-based studies on a larger scale to accelerate and then 
+finalize the design and development of an expert system which 
+will detect the depression automatically from the EEG Brainwave 
+data. By doing so a large population of the patients will be able 
+to know on a preliminary basis whether they are suffering from 
+mental depression or not within a very short span of time. It has 
+been concluded that among neural network-based deep learning 
+techniques, the RNN and RNN with LSTM (especially when there 
+were 40% data in testing set) architectures have yield better results 
+(both for the training and testing phases) in comparison to MLP 
+and CNN architectures. This establishes the suitability of RNN and 
+RNN with LSTM architectures when implemented in the case of se-
+quential and time-series data and the EEG brain wave data inherit 
+these properties. Results obtained by the implementation of MLP 
+architecture are moderate (both in training and testing phases) in 
+nature whereas CNN architecture has under-performed especially 
+during the testing phase of the implementation. The CNN archi-
+tecture is best suited for image data. Generally, the Supervised 
+Machine learning models work well in the case of sequential, lin-
+early separable, and time-series data. This characteristic has been 
+reflected in the result obtained from the implementation of SVM 
+and LR architectures. Both SVM and LR have outperformed (both 
+in training and testing phases) when implemented to track the 
+mental depression from EEG brain wave data. Finally, it can be 
+concluded that RNN, RNN with LSTM (for 40% data in testing set), 
+SVM, and LR can be considered as suitable architectures to track 
+mental depression from EEG brain wave data. Finally, the conclu-
+sion is, this type of deep-learning-based automatic depression de-
+tection system may be proved extremely useful in tracking mental 
+depression at various psychiatry departments, medical and diag-
+nostic centres, and in different hospitals also.
+Information on funding
+This research did not receive any specific grant from funding 
+agencies in the public, commercial, or not-for-profit sectors.5
+Declaration of competing interest
+The authors declare they have no conflict of interest for this 
+study.

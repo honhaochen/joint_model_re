@@ -1,0 +1,818 @@
+In this study, inactivation kinetics of Geobacillus stearothermophilus spores were evaluated in different sterilization 
+environments. The kinetics were analysed and mathematically modelled based on experimental data collected. 
+The inactivation kinetics were measured precisely in moist heat environments using different sterilization 
+temperatures and holding times. All measured inactivation times were shorter than the inactivation time indi-
+cated by the Biological Indicator (BI) manufacturer. Increasing sterilization efficiency was found in the following 
+environments: air, saturated steam, wet steam, liquid water, dialysis solutions. Applying first- and second-order 
+reaction kinetics approaches, formulas were derived from measured data that enabled bacterial inactivation to be 
+modelled. A mathematical first-order reaction kinetic modelling approach could be taken to effectively predict 
+inactivation kinetics for G. stearothermophilus spores based on the experimentally measured data collected in wet 
+steam and air environments. A second-order reaction kinetics approach could be taken, however, to model 
+measured data more accurately in liquid water and dialysis-solution environments. The mathematical models 
+presented here can be applied to describe inactivation kinetics for G. stearothermophilus spores in different 
+sterilization test environments or for any given sterilization temperature profile. These findings can be used to 
+improve the quality of sterilization processes.   
+1. Introduction 
+Medical devices and pharmaceuticals are typically subjected to 
+sterilization processes to ensure patient safety [1–4]. A Sterility Assur-
+ance Level (SAL) of 10− 6 is currently required for these processes, 
+meaning that the device or product can contain no more than one viable 
+microorganism per one million sterilized items, before these can come in 
+contact with patients in order to ensure that the products are safe [5]. 
+The term ‘sterilization processes’ refers to procedures used to inactivate 
+microorganisms on both the surfaces and inside these items. 
+Sterilization processes performed with moist heat (e.g. steam steril-
+ization) are often used to sterilize medical devices and pharmaceuticals. 
+Many studies have been carried out to investigate how efficiently these 
+moist heat sterilization processes inactivate bacteria [6–9], while others 
+have been performed to examine how effectively they sterilize specific 
+products [10–14]. 
+Specific investigations have been carried out under particular con-
+ditions or on specific aspects of the sterilization process. For example, 
+Mazzola et al. [15] determined the decimal reduction time (D-value) for 
+chemical agents used in hospitals for disinfection purposes. Rodriguez 
+et al. [16] developed a model that could be applied to predict bacterial 
+inactivation under conditions of moist heat and high pressures and 
+Geeraerd et al. [17] developed a free-ware tool that could be used to 
+assess non-log-linear microbial survival curves. Van Doornmalen and 
+Kopinga [18] investigated the temperature dependence of F-, D- and 
+z-values in steam sterilization processes, while Hossain et al. [19] 
+measured the inactivation of different types of bacteria in clinical solid 
+waste using these same processes. Other authors studied the kinetics of 
+bacterial spore inactivation at elevated temperatures [20–22]. 
+All of these studies were performed to study bacterial inactivation 
+processes under laboratory conditions, following special sterilization 
+protocols in which the samples were heated and cooled occurred rapidly 
+* Corresponding author. 
+E-mail address: manuel.feurhuber@fmc-ag.com (M. Feurhuber).  
+Contents lists available at ScienceDirect 
+Physics in Medicine 
+journal homepage: www.elsevier.com/locate/physmed 
+https://doi.org/10.1016/j.phmed.2021.100046 
+Received 2 August 2021; Received in revised form 15 October 2021; Accepted 16 December 2021   
+Physics in Medicine 13 (2022) 100046
+2
+(i.e. using resistometer vessels). According to ISO 11 138–3:2017 [23], 
+the heating and cooling time in a resistometer should not exceed 10 s, 
+but the heating and cooling times used in steam sterilizers in the in-
+dustry are much longer (i.e. from several minutes up to a half hour). 
+Another difference is that the steam in a resistometer is saturated. Steam 
+saturation in other autoclaves can not be guaranteed by only measuring 
+pressure and temperature [24,25]. Furthermore, in nearly all of these 
+studies, bacterial inactivation was investigated with linear inactivation 
+curves (e.g. first-order reaction kinetics) for one specific sterilization 
+environment (e.g. saturated steam). The literature review conducted for 
+the current study revealed two interesting gaps in knowledge: Although 
+environments with dialysis solutions, liquid water, or wet steam are 
+often used for sterilization purposes, little is known about the influence 
+of these environments on bacterial inactivation. Furthermore, the 
+inactivation curves that occur during the sterilization process in these 
+environments are not precisely known. 
+For this reason, the aim of this study was to determine the inacti-
+vation curves for spores of the gram-positive bacterium 
+G. stearothermophilus under real moist heat sterilization cycle conditions 
+and in different sterilization environments. This organism was used 
+because it is extremely resistant to moist sterilization processes [26,27] 
+and, for that reason, it is commonly used in sterilization validation 
+studies. However, the experimental values and inactivation kinetics 
+cited in the literature [15,28–30] do not allow researchers to model the 
+real inactivation kinetics for this organism, because measurements were 
+usually made with resistometers under conditions of nearly saturated 
+steam. Moreover, second-order reaction kinetics have apparently rarely 
+ever been applied to model the inactivation kinetics. To address these 
+gaps, in this work, we measured the inactivation of G. stearothermophilus 
+in all sterilization environments that can be present inside a peritoneal 
+dialysis bag system (PDBS) (steam, liquid water and different dialysis 
+solutions) as well as in air. 
+To investigate the inactivation kinetics, we used a commercially 
+available steam autoclave to guarantee that all measurements were 
+performed using typical scenarios and conditions for real-world sterili-
+zation processes. These experimental measurements were used to 
+mathematically model the bacterial inactivation processes based on the 
+current norms and standards. To ensure significance of the modelling, 
+the coefficient of determination (r2) must be 0.8 or higher (according to 
+the ISO 11 138–7:2019 [31]). Therefore, the inactivation curves were 
+not only modelled using first-order reaction kinetics – as has commonly 
+been done [32] – but also using second-order reaction kinetics [33]. In 
+this paper, we present and explain the complex mathematical models 
+developed in this study. These enable other researchers to accurately 
+model the inactivation of G. stearothermophilus spores in the investigated 
+sterilization environments as well as for any sterilization temperature 
+profile. In addition, the study findings provide us with a more thorough 
+and clearer understanding of real bacterial spore inactivation kinetics 
+that occur during sterilization processes. The presented kinetics can be 
+applied by other researchers to further validate and optimize sterilizers 
+and sterilization cycles. The authors of this study for example, imple-
+mented the developed inactivation kinetics models to simulate the 
+inactivation of G. stearothermophilus spores using Computational Fluid 
+Dynamics (CFD) [13]. 
+2. Methods 
+2.1. Steam sterilizer 
+All experiments in this study were performed with a commercially 
+available steam sterilizer from Systec® with a volume of 162 L (Systec 
+HX-150 [34], schematic sketch shown in Fig. 1), a sterilizer that is 
+typically used in real-world laboratories. It has a cylindrical chamber 
+(diameter: 500 mm, length: 750 mm) with two steam inlets which are 
+located on the top of the chamber and the outlet, which is located on the 
+bottom, near the door. The cooling water inlets are located between the 
+two steam inlets. 
+In all steam sterilization cycles carried out in this study, at least one 
+external laboratory sensor (independent of the sterilizer’s pre-installed 
+sensors) was fitted inside the chamber near the front (see Fig. 1). The 
+fluid temperature inside the steam autoclave was measured with at least 
+with two thermocouples, located at the top of the sterilization chamber 
+and near the outlet (Fig. 1: T1 and T2). To measure the bacterial inac-
+tivation kinetics in different sterilization environments, more pressure 
+and temperature loggers were added to the measurement set-up. 
+2.2. Modelling the bacterial inactivation based on sterilization parameters 
+The inactivation of bacteria by steam sterilization follows an 
+exponential decrease curve, which can be expressed using first-order 
+inactivation kinetics [35]. Thus, the number of bacteria at any given 
+time can be calculated as follows: 
+N(t) = N0⋅e− kd(T)⋅t (1)  
+where N(t) represents the number of currently active bacteria and kd(T), 
+the inactivation rate of the bacteria, which is a function of the temper-
+ature (T) and the sterilization environment. The temperature depen-
+dence of the inactivation rate kd(T) is usually modelled using the 
+Arrhenius equation (see Eq. (2)) [20]: 
+kd(T) = kd0⋅e
+− Ea
+R⋅T(t) (2)  
+Fig. 1. Schematic sketch of the steam autoclave with the locations of the steam and cooling water inlets, the outlet and the positions of the pressure sensor and the 
+two thermocouples (T1 and T2) are shown. 
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+3
+where kd0 is a pre-exponential factor, Ed is the activation energy of the 
+bacteria, R is the universal gas constant, and T(t) is the temperature at a 
+given time t. 
+Furthermore, the inactivation kinetics were also studied by taking a 
+second-order reaction kinetic approach. The derived number of live or 
+dead bacteria, depending on the time, is expressed as follows [36]: 
+dN
+dt
+= kd(T)⋅N2 (3) 
+Integrating Eq. (3) with N = N0 at t = t0 leads to: 
+N(t) =
+1
+kd(T)⋅t + 1
+N0
+(4)  
+where again N(t) represents the number of currently active bacteria and 
+kd(T), the bacterial inactivation rate. The bacterial inactivation rate was 
+also modelled here using the Arrhenius equation (see Eq. (2)). The kd(T) 
+values used in the first-order reaction kinetic approach (see Eq. (1)) and 
+the second-order reaction kinetic approach (see Eq. (4)) differ. 
+2.3. D- and z-value 
+To describe the temperature resistance of bacteria, the D- and 
+z-values can be used. The D-value represents the time (in minutes) it 
+takes to inactivate 90% of the bacteria at a given temperature (T) [15]. 
+The higher the D-value, the higher the temperature resistance of the 
+bacteria. The z-value describes the temperature dependence of the 
+D-value; namely, it represents the temperature increase (in ◦C) which is 
+needed to reduce the D-value by a factor of 10. 
+To calculate the bacterial inactivation using a first-order reaction 
+kinetics approach (see Eq. (1)), the inactivation rate kd(T) is needed. 
+With Eq. (5), the inactivation rate for the Arrhenius equation can be 
+calculated from the D-value of the bacteria. Jones [37] and Mann et al. 
+[38] provide more detailed information about this equation. 
+The kinetics of the inactivation shown in Eq. (5) are considered to be 
+valid in any situation in which these kinetics follow the pattern of first- 
+order kinetics (e.g. saturated steam sterilization). 
+D(T) =
+2.303
+kd(T)
+(5) 
+In this study, we investigated bacterial inactivation kinetics in 
+different sterilization environments that represent real operational 
+conditions present in steam sterilizers. Therefore, the inactivation ki-
+netics in liquid water and two dialysis solutions were also modelled 
+using a second-order reactions kinetic approach (see Eq. (4)). With the 
+inactivation kinetics based on first order (see Eq. (1)) or second order 
+(see Eq. (4)) the number of the active bacteria can be calculated as a 
+function of the sterilization time (N(t)). Due to comparison of the 
+calculated time-dependent number of active bacteria (N(t)) with the 
+measured number of active bacteria at given times (t), the coefficient of 
+determination of the inactivation kinetics models can be calculated. 
+It should be mentioned that Eq. (5), however, is not valid for use with 
+the second-order reaction kinetics approach, because the D-value is 
+based on first-order reaction kinetics. In the case of second-order re-
+actions kinetics, the inactivation rate (kd(T)) has to be obtained using 
+other methods. 
+2.4. Description of the lethality of a steam sterilization process 
+The FPhys value is used to describe the efficiency of a steam sterili-
+zation process. This value is defined as the equivalent number of minutes 
+that a device or product is exposed to a steam sterilization process 
+(assuming saturated steam conditions), as compared to its exposure to a 
+steam sterilization process at a constant reference temperature Tref. The 
+higher the FPhys value, the higher the theoretical bacterial inactivation 
+rate [28,39]. Eq. (6) is used to calculate the FPhys value for a given 
+sterilization process (generally with saturated steam): 
+FPhys =
+∫ tn
+t0
+10
+T(t)− Tref
+z dt (6)  
+where T(t) is the temperature at the time t, z is the z-value, and t0 and tn 
+are the respective start and times for the sterilization process. Since all 
+the bioindicators (BIs) used in this study were defined using a D-value at 
+121.1 ◦C (established by the manufacturer), all FPhys values were 
+calculated with reference to this temperature. The z-values used to 
+calculate the FPhys values were set according to the z-value of the BIs. The 
+authors are aware that the changes in the z-value during the sterilization 
+process in different sterilization environments (e.g. liquid water, dialysis 
+solutions, air) would have to be assumed. Nevertheless, the authors 
+calculated the FPhys values for all the sterilization cycles performed in 
+this study using the z-value provided by the BI’s manufacturer and the 
+established manufacturer’s reference temperature of 121.1 ◦C. This 
+assumption serves as base for the further development of inactivation 
+kinetics. 
+For reasons of comparability, the F0 value is also given for elected 
+cycles in this study. The F0 value is a special form of the FPhys value and 
+can also be used to describe the lethality of the investigated steam 
+sterilization processes. The F0 value is calculated using a reference 
+temperature of 121.1 ◦C and a z-value of 10 ◦C (Eq. (7)) [40]. 
+F0 =
+∫ tn
+t0
+10
+T(t)− 121.1◦C
+10 dt (7) 
+A detailed description about the investigated sterilization cycles in 
+this study can be found in Section 3.1. 
+2.5. Biological Indicators 
+Biological Indicators (BIs or spore strips) of G. stearothermophilus 
+ATCC 7593 were obtained from SIMICON GmbH [41] and were in 
+compliance with ISO 11 138–1:2017 [23] and ISO 11 138–3:2017 [42]. 
+Each BI had a starting population of 2 ⋅ 106. All measurements in this 
+study were performed using BIs from three different batches. The 
+D-values and z-values of the spores differed between the batches. Table 1 
+shows the D-value and the z-value of the different batches for the BIs 
+used to obtain measurements in this study. The respective D-values and 
+the z-values were taken from the manufacturer’s certificate and used as a 
+basis for the comparison and evaluation of the results of the performed 
+measurements. BIs from the three batches (see Table 1) were randomly 
+used for all these measurements to investigate the inactivation kinetics 
+in all specific sterilization environments. 
+2.6. Preparation of the BIs for the measurements 
+To evaluate the reaction kinetics in liquid water and the different 
+dialysis solutions, the BIs were prepared for the test runs as follows: 
+The BI strips were removed from the paper slips and placed in a semi- 
+permeable cuprophane tube, which then was knotted on the two open 
+sides to ensure that the solution could reach the BIs through the 
+cuprophane membrane and, at the same time, that the BIs could not 
+diffuse into the surrounding liquids. 
+For the tests carried out in wet steam and air, the BI paper slips were 
+placed directly into the sterilization environment. 
+Table 1 
+D- and z-values for the three batches of G. stearothermophilus BIs used for the 
+measurements in this study.   
+D-value at 121.1 ◦C [min] z-value [◦C] 
+Batch 1 2.4 7 
+Batch 2 2.3 8.1 
+Batch 3 2.5 8.5  
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+4
+2.7. Counting the active bacteria on the BIs 
+When counting colonies on plates, only values between 30 and 300 
+colonies per plate are usually considered as statistically valid (in 
+compliance with ISO 11 138–1:2017 [23]). The detailed counting pro-
+cess of the active bacteria on the BIs is described in the supplementary 
+material. Because the experiments were designed to show the inactiva-
+tion kinetics of commercially available BIs, small CFU numbers – as low 
+as 1 – also had to be assessed. The focus of the study was not to deter-
+mine the influence of any carrier material of the bacterial spores on the 
+inactivation kinetics. We evaluated smaller values than 30 colonies and 
+added the corresponding error bars, enabling us to show the variation in 
+the numbers of counted colonies and, therefore, the method’s level of 
+inaccuracy. 
+In this study, 5 up to 10 BIs were used for each measurement to 
+investigate the inactivation kinetics of G. stearothermophilus. Error bars 
+represent the maximum and minimum measured population numbers on 
+the BIs used for the respective measurement. Therefore, the variation in 
+the measured results is represented by the error bars; however, when the 
+counts approached 0, the error bars enter far into the negative range due 
+to the logarithmic scale used. For this reason, we chose not to display 
+error bars below 10− 2. Conversely, the logarithmic representation of the 
+Fig. 2. Measured temperature and calculated FPhys and F0 minutes of two investigated sterilization cycles with a FPhys minutes of (a) approximately 12.3 and (b) 
+approximately 4.2. 
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+5
+error bars makes its upper end appear lower. 
+The measured population values shown in the diagrams represent 
+the mean value of the counted surviving bacteria on all BIs used in the 
+respective measurement. Naturally, this included the possibility of a 
+measured value below 1 (e.g. 8 BIs with 1 surviving bacteria and 2 BIs 
+with 0 surviving bacteria). 
+3. Measurement set-up 
+3.1. Investigated steam sterilization cycles 
+Different steam sterilization cycles were investigated to characterize 
+the bacterial inactivation kinetics under real sterilization conditions. 
+The following parameters were varied: the sterilization temperature, 
+holding time of the sterilization temperature and environments (fluid). 
+The goal was to measure the number of surviving bacteria for different 
+FPhys minutes. To calculate the number of FPhys minutes, we considered 
+the complete temperature profile, including the heating and the cooling 
+phases of the sterilization cycles. Overall, 100 different steam steriliza-
+tion cycles were investigated, with the FPhys minutes ranging from 0.01 
+to over 500. This corresponded to a range from 0.01 to over 400 in F0 
+minutes. Fig. 2 shows two examples of the investigated sterilization 
+cycles. In the first sterilization example, a maximum sterilization tem-
+perature of approximately 124 ◦C was reached, and a holding time of 
+approximately 90 s was used. This sterilization cycle resulted in an FPhys 
+of approximately 12.3 min (see Fig. 2(a)). The second sterilization 
+example had a maximum sterilization temperature of approximately 
+119 ◦C and a holding time of approximately 360 s. This sterilization 
+cycle resulted in an FPhys of approximately 4.2 min (see Fig. 2(b)). All 
+steam sterilization cycles were measured at least twice. The results of all 
+measurements performed showed high reproducibility. 
+3.2. Inactivation of bacteria in steam 
+To measure the BI inactivation kinetics under real steam sterilization 
+conditions (wet steam), the BIs were placed directly into the steam 
+autoclave chamber. Eleven BIs were used for each measurement: Ten BI 
+strips were placed into the steam autoclave, and one was taken as an 
+untreated positive control. The pressure and temperature inside the 
+autoclave were measured with external loggers in close proximity to the 
+BIs. The loggers measured the pressure to an accuracy of ±30 mbar and 
+the temperature to an accuracy of ±0.5 K. Due to the fact that only the 
+pressure and the temperature of the steam was measured, it is possible 
+that a very small amount of air is present as well [24]. 
+The F0 minutes and the FPhys minutes of the steam sterilization cycle 
+were calculated from the measured temperatures. The numbers of 
+remaining viable bacteria were counted on all eleven BIs and then 
+plotted against the FPhys minutes. The F0 minutes were used to provide 
+an overview of the sterilization cycles investigated. 
+3.3. Inactivation of bacteria in water 
+To investigate the inactivation of the bacteria in water, a dialysis bag 
+(Stay safe Balance®) with two compartments was filled with WFI. A 
+schematic sketch of the measurement set-up is shown in Fig. 3. Each 
+compartment had a volume of 1000 ml and the following dimensions: 
+length = 240 mm, width = 80 mm and height = 55 mm. Five BIs were 
+put into each compartment so that they were surrounded by water. Two 
+temperature loggers were put into each compartment to measure the 
+water temperature. One temperature logger measured the temperature 
+in the compartment’s centre, and the other measured the temperature 
+on the compartment’s outer surface (see green text and arrows in Fig. 3). 
+After the sterilization process, the F0 minutes and the FPhys minutes were 
+Fig. 3. Schematic sketch of (a) the top view and (b) the cross-section of dialysis bag system (Stay safe®) with the positions of the temperature loggers and the 
+position of the BIs (spore strips) within the two compartments shown. This measurement set-up was used for liquid water as well as dialysis solution. 
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+6
+calculated using the average of the temperatures measured by these two 
+loggers in each compartment. Differences between the temperatures 
+measured by these two loggers were found to be below 0.5 K during the 
+sterilization process. The number of surviving bacteria on each of the 
+five BIs was counted. This measurement was later repeated with another 
+sterilization cycle with different F0 minutes and FPhys minutes. 
+3.4. Inactivation of bacteria in dialysis solution 
+The inactivation rate of bacteria in the dialysis solution was assessed 
+using a similar set-up as used for inactivation in water (see Fig. 3), but 
+the compartments of the dialysis bag were filled with two different 
+dialysis solutions instead of water. Compartment A was filled with so-
+lution A, whereas compartment B was filled with solution B; these so-
+lutions had different chemical properties. Solution A contained glucose 
+and, therefore, possessed an acidic pH value of approximately 3, 
+whereas solution B included lactate and had a basic pH value of 
+approximately 8.5. Detailed information about the chemical composi-
+tions of the two dialysis solutions is shown in Table 2. 
+The bacterial inactivation in the dialysis solution was also measured 
+for different sterilization cycles with different F0 and the FPhys minutes. 
+After each sterilization cycle, the numbers of surviving bacteria on the 
+BIs were measured, and, once again, the number of the surviving bac-
+teria was plotted against the F0 and the FPhys minutes of the corre-
+sponding sterilization cycle. 
+3.5. Set-up to measure the bacterial inactivation in air 
+The bacterial inactivation in air was measured using a metal 
+container with a lid that could be opened to put in the measurement 
+equipment (inner dimensions: 75 mm × 75 mm × 140 mm, inner vol-
+ume: approx. 0.6 L). Before the sterilization process, the opened metal 
+container was dried for 1 h in an oven at 105 ◦C to remove any surface 
+moisture. Temperature and pressure loggers were placed inside the 
+metal container (see Fig. 4). 
+The ten BIs were hung with tape at regular intervals in the middle of 
+the metal container. Afterwards, the gas-tight container was placed in-
+side the steam sterilizer. Since no humidity was present inside the metal 
+container at the beginning of the sterilization cycle, the pressure inside 
+the container can be directly calculated from the measured temperature 
+(isochoric change of state). Again, the measured temperature inside the 
+metal container was used to calculate both the F0 minutes and the FPhys 
+minutes of each investigated sterilization. 
+4. Results 
+4.1. Measured bacterial inactivation in steam 
+Plotting the measurements taken to record the inactivation of 
+G. stearothermophilus during different steam sterilization cycles yielded 
+an exponential inactivation curve (see Fig. 5). Each measured point in 
+Fig. 5 represents the mean number of viable bacteria after the sterili-
+zation of 10 BIs. As already mentioned, the measured point could have a 
+value of less than 1 (e.g. 5 BIs with 1 surviving bacteria and 5 BIs with 
+0 surviving bacteria). The error bars in Fig. 5 represent the minimum 
+and maximum numbers of surviving bacteria on the BIs used for this 
+measurement. Overall, more than 200 BIs and 15 different sterilization 
+cycles were measured, and the measurements were plotted to create this 
+inactivation curve. Besides demonstrating that the inactivation follows 
+an exponential decrease curve, the results show that a FPhys value of only 
+approximately 10 min is needed to inactivate the initial number of 2 ⋅ 
+106 bacteria. The black line in Fig. 5 represents the theoretically 
+calculated bacterial inactivation, based on the average D-values and z- 
+values of the BIs provided by the manufacturer (see Table 3). These 
+results indicate that an FPhys value of approximately 15 min is needed to 
+inactivate 2 ⋅ 106 bacteria. 
+An inactivation curve based on a first-order reaction kinetic 
+approach was obtained using the measured data for the bacterial inac-
+tivation in wet steam (see dark green line in Fig. 5). The coefficient of 
+determination (r2) exceeded 0.95. The obtained values from the 
+measured inactivation curve for the pre-exponential factor (kd0), acti-
+vation energy (Ea), as well as the inactivation rates at 100 ◦C and 121 ◦C 
+(kd (100 ◦C)) and kd (100 ◦C)) are shown in Table 3. By entering the pre- 
+exponential factor (kd0) and activation energy (Ea) into the Arrhenius 
+equation (see Eq. (2) and then applying a first-order reaction kinetics 
+approach (see Eq. (1), it is possible to accurately mathematically model 
+the inactivation of G. stearothermophilus spores during the sterilization 
+process in wet steam. Due to the high coefficient of determination using 
+first-order reaction kinetics, we conclude that this approach is the most 
+appropriate one. 
+4.2. Measured bacterial inactivation in liquid water 
+To measure the bacterial inactivation in liquid water, each 
+compartment of the dialysis bag was filled with liquid water, five BIs and 
+two temperature loggers (see Fig. 3). Each measured point shown in 
+Fig. 6 represents the mean value of 5 BIs of active bacteria for one 
+specific sterilization cycle. Again, the error bars represent the maximum 
+and the minimum numbers of surviving bacteria found on these five BIs. 
+Fig. 6 shows the measured inactivation of G. stearothermophilus by 
+sterilization in liquid water, as well as the inactivation curves con-
+structed based on first- and second-order reaction kinetics approaches, 
+based on these measured data. The measured values show that the 
+bacterial inactivation is strongly under-predicted in liquid water. In 
+contrast to the manufacturer’s information, which indicates that 15 FPhys 
+minutes are needed for inactivation (as measured in saturated steam), 
+our experimental results indicate that only approximately 5 FPhys mi-
+nutes are needed to inactivate 2 ⋅ 106 bacteria in liquid water. Fig. 6 
+shows that the fit of the modelled first-order inactivation curve (depic-
+ted as a dark blue line) is not as close to the measured data as the fit seen 
+in the steam environment (see Fig. 5). The coefficient of determination 
+(r2) of the first-order reaction kinetics was approximately 0.3. These 
+results may be due to the fact that bacteria are inactivated at much lower 
+temperatures in water environments than in wet and saturated steam 
+environments. Measurements showed that approximately 1 log-ratio of 
+bacteria can be inactivated merely by heating up the water to approxi-
+mately 90 ◦C. At such low temperatures, hardly any FPhys minutes are 
+generated. We also modelled the bacterial inactivation in liquid water 
+by taking a second-order reaction kinetics approach (see light blue line 
+in Fig. 5), since this approach is used to model many other chemical 
+reactions in liquids [36]. The modelled second-order inactivation curve 
+shows a much better coefficient of determination (r2 > 0.85) and, thus a 
+better fit, to the measured points as compared to the fit achieved when 
+modelling the inactivation using a first-order reaction kinetics curve. 
+Therefore, the second-order reaction kinetics approach is considered the 
+most appropriate and is in accordance with ISO 11 138–7:2019 [31], 
+where an r2 > 0.8 for a reaction kinetic curve was applied. The pa-
+rameters set to model the inactivation of G. stearothermophilus during the 
+sterilization in a liquid water environment and using first-order reaction 
+Table 2 
+Chemical composition of the two investigated dialysis solutions (Solution A and 
+Solution B).   
+Solution A Solution B 
+Na+ 195 mM 75 mM 
+Lactate – 70 mM 
+HCO−
+3  – 5.0 mM 
+Ca2+ 2.5 mM – 
+Mg2+ 1.0 mM – 
+Cl− 201 mM – 
+Glucose 45.46 mM – 
+pH value 2.8–3.1 8–8.8  
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+7
+Fig. 4. Schematic sketch of the metal box with the BIs (spore strips) and the pressure and temperature loggers used to measure the inactivation of the bacteria in 
+air shown. 
+Fig. 5. Measured populations, indicating the inactivation of G. stearothermophilus spores during steam sterilization, based on the number of bacteria calculated using 
+a first-order reaction kinetic approach and the number of bacteria calculated according to the values provided by of the manufacturer. 
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+8
+kinetics (dark blue line in Fig. 6) are shown in Table 3, whereas the 
+parameters set to model this inactivation using second-order reaction 
+kinetics (see light blue line in Fig. 6) are shown in Table 4. 
+4.3. Measured bacterial inactivation in dialysis solutions 
+The inactivation of G. stearothermophilus in two different kinds of 
+dialysis solutions was measured using the same procedure as described 
+in previous sections. The two different dialysis solutions differed in their 
+pH values and their chemical compositions (see Table 2). Results of the 
+measured number of viable bacteria for dialysis solution A (pH value 
+approximately 3) are shown in Fig. 7(a). At an FPhys value of approxi-
+mately 3 min, 2 ⋅ 106 bacteria could already be inactivated. In this case, 
+an FPhys of 3 min corresponds to an F0 of approximately 3.5 min. As in the 
+case mentioned previously, the exponential inactivation curve (first- 
+order reaction kinetics curve) (dark red line in Fig. 7(a)) does not fit the 
+measured inactivation values for G. stearothermophilus adequately (r2 ≈
+0.2). Therefore, the bacterial inactivation was again modelled using a 
+second-order reaction kinetic approach (see orange line in Fig. 7(a)). 
+This second-order reaction kinetic curve again showed a better fit with 
+respect to the measured data (r2 ≈ 0.86). The parameter values used in 
+the Arrhenius equations to calculate the bacterial inactivation in dialysis 
+solution A, taking the first- and second-order approaches, can be found 
+in Tables 3 and 4, respectively. 
+Fig. 7(b) shows the measured and simulated numbers of viable 
+bacteria in the sterilization experiments with dialysis solution B (pH 
+value 8.5). The bacterial inactivation in this environment was faster 
+than that seen with dialysis solution A. At an FPhys value of approxi-
+mately 2.5 min (F0 value of approximately 3 min), 2 ⋅ 106 bacteria were 
+inactivated. Again, the inactivation curve created by taking a second- 
+order reaction kinetics approach (see yellow line in Fig. 7(b), r2 ≈
+0.88) shows a better fit to the measured data, as compared to the fit seen 
+when taking a first-order reaction kinetics approach (see dark yellow 
+line in Fig. 7(b), r2 ≈ 0.15). The parameters used for the Arrhenius 
+equations for the investigated inactivation kinetics in dialysis solution B 
+are shown in Table 3 (first-order reaction kinetics) and Table 4 (second- 
+order reaction kinetics). 
+To calculate the number of active bacteria during the sterilization 
+process in the two investigated dialysis solution environments by taking 
+first-order or second-order reaction kinetics approaches, the pre- 
+exponential factor (kd0), activation energy (Ea) shown in Tables 3 and 
+4 must be substituted into the Arrhenius equation (Eq. (2))). Afterwards, 
+the calculated inactivation rate (kd) must be substituted in Eq. (1) to 
+calculate the inactivation based on first-order reaction kinetics and 
+Table 3 
+Obtained pre-exponential factor (kd0), activation energy (Ea) as well as the 
+inactivation rates at 100 ◦C and 121 ◦C (kd (100 ◦C) and kd (121 ◦C)) to model the 
+inactivation of G. stearothermophilus spores during the sterilization process in 
+wet steam, liquid water and two dialysis solutions using a first-order reaction 
+kinetics approach.   
+kd0 [s− 1] Ea [J ⋅ 
+mol− 1] 
+kd (100 ◦C) 
+[s− 1] 
+kd (121 ◦C) 
+[s− 1] 
+Wet steam 1.018 42 ⋅ 
+1048 
+3.744 07 ⋅ 
+105 
+3.966 21 ⋅ 
+10− 5 
+2.458 74 ⋅ 
+10− 2 
+Liquid water 2.855 48 ⋅ 
+1043 
+3.375 94 ⋅ 
+105 
+1.486 05 ⋅ 
+10− 4 
+4.912 06 ⋅ 
+10− 2 
+Dialysis 
+solution A 
+(pH-value 3) 
+5.170 04 ⋅ 
+1043 
+3.377 88 ⋅ 
+105 
+2.690 97 ⋅ 
+10− 4 
+8.889 49 ⋅ 
+10− 2 
+Dialysis 
+solution B 
+(pH-value 
+8.5) 
+6.831 82 ⋅ 
+1043 
+3.377 88 ⋅ 
+105 
+3.555 92 ⋅ 
+10− 4 
+1.175 39 ⋅ 
+10− 1  
+Fig. 6. Measured populations, indicating the inactivation of G. stearothermophilus spores during the sterilization in water, based on the number of bacteria calculated 
+using a first-order reaction kinetic approach and the number of bacteria calculated using a second-order reaction kinetic approach. 
+Table 4 
+Obtained pre-exponential factor (kd0), activation energy (Ea) as well as the 
+inactivation rates at 100 ◦C and 121 ◦C (kd (100 ◦C) and kd (121 ◦C)) to model the 
+inactivation of G. stearothermophilus spores during the sterilization process in 
+liquid water and two dialysis solutions using a second-order reaction kinetics 
+approach.   
+kd0 [s− 1] Ea [J ⋅ 
+mol− 1] 
+kd (100 ◦C) 
+[s− 1] 
+kd (121 ◦C) 
+[s− 1] 
+Liquid water 7.312 93 ⋅ 10 
+166 
+1.272 86 ⋅ 
+106 
+7.922 79 ⋅ 
+10− 12 
+2.402 78 ⋅ 
+10− 2 
+Dialysis 
+solution A 
+(pH-value 3) 
+2.246 71 ⋅ 10 
+154 
+1.173 06 ⋅ 
+106 
+1.401 01 ⋅ 
+10− 10 
+7.855 09 ⋅ 
+10− 2 
+Dialysis 
+solution B 
+(pH-value 
+8.5) 
+1.368 54 ⋅ 10 
+154 
+1.168 67 ⋅ 
+106 
+3.518 87 ⋅ 
+10− 10 
+1.829 50 ⋅ 
+10− 1  
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+9
+respectively in Eq. (4) to calculate it using second-order reaction 
+kinetics. 
+4.4. Measured bacterial inactivation in air 
+Inactivation of G. stearothermophilus in air was measured in a metal 
+container (see Fig. 4). Fig. 8(b) shows the exponential decrease curve 
+(first-order reaction kinetics) of the bacteria for the sterilization exper-
+iments in air. The modelled first-order reaction kinetic curve fit closely 
+with the measured values (r2 > 0.95). As one can see, very high FPhys 
+values are needed to inactivate all 2 ⋅ 106 bacteria spores of 
+G. stearothermophilus in the air environment. 
+4.5. Comparison of the measured inactivation kinetics 
+In Fig. 8, we compare all the first-order inactivation curves created 
+from measurements taken in the different sterilization environments. 
+The inactivation of 2 ⋅ 106 G. stearothermophilus spores took 2.5 FPhys 
+minutes in solution B, 3 FPhys minutes in solution A, 5 FPhys minutes in 
+liquid water, 10 FPhys minutes in the measured wet steam and 15 FPhys 
+minutes according to the BI manufacturer (as measured in saturated 
+steam, see Fig. 8(b)). The inactivation rate of G. stearothermophilus 
+measured in air is completely different from the rate measured in wet 
+environments, as is commonly known. At the investigated temperature 
+levels (approx. 115–130 ◦C), it is hardly impossible to inactivate a suf-
+ficiently large number of G. stearothermophilus spores within a few hours. 
+Fig. 7. Measured populations, indicating the inactivation of G. stearothermophilus spores during the sterilization process in (a) dialysis solution A (pH value 3) and (b) 
+dialysis solution A (pH value 8.5), based on the number of active bacteria calculated using a first-order reaction kinetic approach and the number of active bacteria 
+calculated using a second-order reaction kinetic approach. 
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+10
+To inactivate Geobacillus stearothermophilus spores in air, temperatures 
+of over 160 ◦C are needed to achieve the same number of viable bacteria 
+achieved when using steam sterilization at approximately 121 ◦C [29, 
+43]. 
+5. Discussion and conclusion 
+In this study, we assessed the inactivation kinetics of 
+G. stearothermophilus spores in environments containing wet steam, air, 
+liquid water and dialysis solutions. We mathematically described the 
+inactivation kinetics by taking first- and second-order reaction kinetics 
+approaches. If we carefully examine the sterilization process, the reason 
+taking these approaches to analyse these inactivation kinetics becomes 
+clearer. 
+Our results show that maintaining wet conditions during the steril-
+ization process inside a real steam sterilizer more efficiently inactivates 
+bacteria than sterilizing the samples in a resistometer and exposing them 
+to a saturated steam environment. Steam saturation inside a resis-
+tometer can be verified by additional measurements, but not only by 
+measuring pressure and temperate [24]. In our experimental set-up, we 
+observed a large amount of condensation on all the inner walls and trays 
+in the steam sterilizer. In a resistometer, the amount of condensation is 
+significantly lower. In our set-up, some of this condensation was partly 
+absorbed by the BIs and led to more rapid inactivation. Similar results 
+were found in previous studies [13,44,45]. Consequently, the amount of 
+moisture absorbed by the BIs is primarily responsible for the differences 
+seen between the inactivation curve constructed on the basis of the 
+manufacturer’s information and the curve based on values measured in 
+this study (10 measured FPhys minutes found in our experiments as 
+compared to 15 FPhys minutes according to the manufacturer’s infor-
+mation, see Fig. 5). A minor part of this difference is caused by the fact 
+that we calculated an equivalent sterilization time (FPhys minutes) as 
+compared to the real sterilization time measured in a resistometer. 
+Overall, our results show that wet steam reduces the D-value to 
+approximately 1.6 min, which is nearly 0.8 min less than the D-value 
+measured by the BI’s manufacturer (saturated steam in a resistometer). 
+Furthermore, applying the developed formula (based on first-order re-
+action kinetics), we can mathematically model the bacterial inactivation 
+during the sterilization in wet steam with a high accuracy (r2 ≈ 0.95). 
+Square values of more than 0.8 show sufficient accuracy to be consid-
+ered valid (according to the ISO 11 138–7:2019 [31]). Similar results 
+were cited by Brown [46] and Z. Tang [47]. 
+Our experimental series in liquid water showed that this environ-
+ment is highly effective for bacterial inactivation. Only 5 FPhys minutes 
+Fig. 8. Measured inactivation of Geobacillus stearothermophilus during the sterilization in (a) all atmospheres except air and (b) in all atmospheres including air.  
+M. Feurhuber et al.                                                                                                                                                                                                                             
+Physics in Medicine 13 (2022) 100046
+11
+were required to inactivate 2 ⋅ 106 bacterial spores of 
+G. stearothermophilus in liquid water. This is at least 3 times faster than 
+the period indicated by the manufacturer (as measured in a resistometer 
+under nearly saturated steam conditions). The authors are aware that, in 
+this case, steam sterilization by direct contact [48] was compared with 
+the indirect sterilization of liquids [27]. It was necessary to assume that 
+the z-values remain the same in all investigated sterilization environ-
+ments in order to mathematically model the inactivation curves, and it is 
+clear that the sterilization environment influences the z-value. For 
+example, increasing the z-value results in shorter inactivation times (i.e. 
+FPhys minutes) at temperatures above 121.1 ◦C and to longer inactivation 
+times (i.e. higher FPhys minutes) at temperatures below 121.1 ◦C. 
+Decreasing the z-value has the opposite influence on the FPhys minutes. 
+Nevertheless, without making this assumption, it would not have been 
+possible to directly compare the inactivation curves based on measure-
+ments made in different sterilization environments. We took additional 
+measurements to confirm our initial observations and could show that 
+the bacterial inactivation in liquid water also begins to take place at 
+lower temperatures (approximately 90 ◦C) where hardly any FPhys mi-
+nutes are generated. We expect that the bacterial strain used on the BIs 
+in a validated test has a widely homogenous heat susceptibility. 
+Therefore, these additional results underline and support the results 
+presented in this study, i.e. that the use of a liquid water environment 
+(liquid fluids) in the sterilization process is highly efficient for bacterial 
+inactivation. In any case, the results presented in Fig. 6 show that the 
+measured inactivation curve follows a second-order reaction kinetics for 
+the inactivation of G. stearothermophilus in liquid water (r2 > 0.85). A 
+non-linear bacterial inactivation curve was also found in the in-
+vestigations of Hiatt [49] and Xiao et al. [50] for different sterilization 
+environments. These results lead us to generally conclude that the 
+inactivation curve created by taking a second-order reaction kinetics 
+approach describes the sterilization process accurately. Nevertheless, 
+due to the asymptotic course of the curve, over 530 FPhys minutes would 
+be needed to reach a Sterility Assurance Level (SAL) of 10− 6. This 
+exorbitantly high number of FPhys minutes can obviously not describe the 
+real behaviour during the sterilization process. According to the 
+first-order reaction kinetics curve, approximately 9 FPhys minutes would 
+be needed to reach an SAL of 10− 6. All measurements made in this study 
+indicate that this value is much more accurate. To investigate the phe-
+nomena of the asymptotic course of the curve in more detail, it would be 
+necessary to make many additional measurements, since microbiolog-
+ical evaluations of colonies below 30 CFU are not considered statistically 
+valid. Therefore, this topic exceeds the scope of the current study but 
+could be addressed in a future study. 
+Overall, the sterilization process in a dialysis solution represents a 
+‘best case’ scenario for bacterial inactivation. Sterilization in dialysis 
+solution was significantly faster as compared to water (3 FPhys minutes 
+for solution A and 2.5 FPhys minutes for solution B vs. 5 FPhys minutes in 
+water, see Fig. 7 vs Fig. 6). We assume that the pH value is the most 
+important factor, ensuring the more rapid inactivation of the bacterial 
+spores in the dialysis solution [51,52]. In addition, it may be that the ion 
+concentration is crucial for a more rapid inactivation of bacterial spores 
+[53]. The underlying mechanism is outside the scope of our study. 
+As in water, the inactivation curves modelled with the second-order 
+reaction kinetics approach fit the measured points more accurately than 
+the exponential decrease curve (first-order reaction kinetics approach). 
+We also found that the reaction kinetics curves created by taking the 
+second-order kinetics approach more accurately reflect the curves based 
+on the measured values for the two investigated dialysis solutions. 
+Nevertheless, exorbitantly high values (over 130) of FPhys minutes would 
+also be needed in the dialysis solutions to achieve a SAL of 10− 6. The 
+same problem occurs: The decease curve can no longer be adequately 
+measured in the asymptotic region. This practice was justified because 
+no active bacteria were found in the dialysis solutions during the study 
+of PDBS. After a sterilization with 30 FPhys minutes no viable bacteria 
+were ever found. This suggests that the inactivation curve in the 
+asymptotic region has a completely different cause and, therefore, must 
+be further investigated in the future. 
+Sterilization in air took much longer than sterilization in all other 
+investigated fluids. As a result, the sterilization in air represents the 
+‘worst case‘ scenario due to the significantly slower bacterial inactiva-
+tion in the air as compared to the measured bacterial inactivation in the 
+wet steam environment (see the more than 600 FPhys minutes shown in 
+Fig. 8(b) for air vs. the 10 FPhys minutes shown in Fig. 5 for wet steam). 
+Our findings re-emphasize the well-known fact that sterilization in pure 
+air (i.e. without any moisture) is not successful. Nevertheless, the 
+modelled inactivation curve (first-order) can be used to predict the 
+inactivation of G. stearothermophilus during sterilization in air with high 
+accuracy. 
+The results presented in this study allow us to reach several con-
+clusions. It is possible to mathematically model the inactivation of 
+G. stearothermophilus during the sterilization process in different envi-
+ronments (steam, liquid water, dialysis solution and air) with high ac-
+curacy. Researchers and developers of sterilization processes can use the 
+information presented in this paper to model the inactivation of 
+G. stearothermophilus for any temperature profile for a sterilization 
+process using the investigated sterilization environments. Furthermore, 
+these results may help to improve the overall efficiency of the sterili-
+zation processes. 
+Further studies on the inactivation of G. stearothermophilus spores 
+could include making additional measurements with more measured 
+data and in other sterilization environments. The inactivation kinetics 
+presented here may be fruitfully applied to numerically simulate the 
+inactivation of G. stearothermophilus spores as a function of the local 
+temperature and the local sterilization environment using CFD [54–58]. 
+Declaration of competing interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgements 
+The authors want to thank the microbiological department of Fre-
+senius Medical Care in St. Wendel for all the support during the mea-
+surements of the inactivation of Geobacillus stearothermophilus. 
+Appendix A. Supplementary data 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.phmed.2021.100046.

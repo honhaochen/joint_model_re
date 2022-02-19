@@ -1,0 +1,439 @@
+Anyone involved in designing or finding molecules in the life sciences over the past few years has witnessed a 
+dramatic change in how we now work due to the COVID-19 pandemic. Computational technologies like artificial 
+intelligence (AI) seemed to become ubiquitous in 2020 and have been increasingly applied as scientists worked 
+from home and were separated from the laboratory and their colleagues. This shift may be more permanent as the 
+future of molecule design across different industries will increasingly require machine learning models for design 
+and optimization of molecules as they become “designed by AI ”. AI and machine learning has essentially become 
+a commodity within the pharmaceutical industry. This perspective will briefly describe our personal opinions 
+of how machine learning has evolved and is being applied to model different molecule properties that crosses 
+industries in their utility and ultimately suggests the potential for tight integration of AI into equipment and 
+automated experimental pipelines. It will also describe how many groups have implemented generative models 
+covering different architectures, for de novo design of molecules. We also highlight some of the companies at the 
+forefront of using AI to demonstrate how machine learning has impacted and influenced our work. Finally, we 
+will peer into the future and suggest some of the areas that represent the most interesting technologies that may 
+shape the future of molecule design, highlighting how we can help increase the efficiency of the design-make-test 
+cycle which is currently a major focus across industries. 
+Like most other scientists, those involved in designing or finding
+olecules for commercial applications in the life sciences (including
+n human healthcare, animal health, agrochemicals, consumer products
+nd beyond) have witnessed a dramatic change in how we now work due
+o the COVID-19 pandemic in 2020. During the pandemic, non-essential
+esearch was halted, and scientists were sent home in many countries.
+his led to a noticeable work divide, as those scientists that could use
+ computer for their research were able to work remotely, while other
+ypes of research ceased entirely. What does this tell us about how scien-
+ific research will change if this pandemic continues for years to come
+r if we are faced with other barriers to physical lab access? If scien-
+ists must work remotely, could they still do their lab experiments re-
+otely? Perhaps we will see more purpose built “remote-controlled ” lab-
+ratories that provide this as a service. In the chemical synthesis arena,
+ome groups have already experimented with partial or completely au-
+onomous synthesis [1–6] , while in pharmaceutical screening this has
+een essentially fully automated for decades with minimal human input.
+espite these different types of automation, the presence of a scientist
+or manual lab-work is still needed. However, if we put these elementsR&D, Research and development; AI, Artificial intelligence; GCNN, Graph convolut
+emory. 
+∗ Corresponding author. 
+E-mail address: sean@collaborationspharma.com (S. Ekins). 
+w  
+ttps://doi.org/10.1016/j.ailsci.2022.100031 
+eceived 24 December 2021; Received in revised form 21 January 2022; Accepted 2
+vailable online 24 January 2022 
+667-3185/© 2022 The Authors. Published by Elsevier B.V. This is an open access ar
+ http://creativecommons.org/licenses/by-nc-nd/4.0/ ) ogether, we can automate the complete process and run it remotely
+uch that the design-make-test cycle ( Fig. 1 A, B) is fully autonomous
+cross industries. Would this approach eventually become the norm for
+esearch and development (R&D) labs? Perhaps, in the same way that
+e see many laboratories have automated liquid dispensers or robots
+oday for repetitive tasks. If so, where does that leave basic research
+n other scientific domains which are less able to be automated or do
+ot have the financial resources? These groups may be left behind. Au-
+omation of the design-make-test cycle in chemistry is a rapidly evolving
+rea that could benefit from its own focused review. In addition, the re-
+ource limitations during the pandemic should also make us consider
+he importance of each experiment and how to do research more fru-
+ally if consumables such as pipette tips or other essential items are in
+hort supply. We need to rethink what experiments are the most criti-
+al and how we can recycle and reuse data that already exists to ensure
+xperiments are not repeated unnecessarily if the original resource data
+as yet to be utilized. There is a continually growing and already im-
+ense amount of biological data in the public domain. Some of it is
+eadily accessible in databases such as PubChem, ChEMBL etc. [ 7 , 8 ] or
+ncreasingly other repositories like FigShare, GitHub etc., while some of
+t resides in less accessible areas like publications which may be pay-
+alled or on individual laboratory websites. There is also considerableional neural network; RNN, Recurrent Neural Networks; LSTM, Long short-term 
+3 January 2022 
+ticle under the CC BY-NC-ND license 
+F. Urbina and S. Ekins Artificial Intelligence in the Life Sciences 2 (2022) 100031 
+Fig. 1. A. The design-make-test cycle. B. A hypothetical example of how a Re- 
+current Neural Network can be combined with the machine learning models and 
+feedback from scientists to optimize the kinase inhibitor lapatinib.
+What the pandemic also did was accelerate bringing these various
+spects of research to a head at the same time to demonstrate the need
+or tighter integration between research areas and specialties. It has also
+ighlighted how we look at artificial intelligence (AI) and, the area of
+achine learning as a fundamental technology for molecule design [9–
+1] which we will explore further herein. 
+he next commodity 
+Commodities are often considered as the basics in life which we hapen to take for granted, not only food stuffs, but materials (ores), chemt 2 cals and computer memory. When they are in short supply, like the
+upply chain issues we are seeing during the current pandemic, they
+an have dramatic effects. While AI is not a new technology to the drug
+iscovery space, in less than a decade, machine learning has been revoutionized with the addition of new architectures such as attention-base
+odels, increased dataset availability, and improved hardware, reducng or removing barriers to machine learning applications [12–14] . In
+esponse to this, in recent years we have seen AI and specifically machine learning methods [ 11 , 15 , 16 ] applied in many industries to the point where we would posit it could also now be considered a scienific commodity. Like many other groups, we are interested in applying computational algorithms to drug discovery and over the last decade
+have noticed how AI has become ubiquitous as it has been applied to
+any areas of pharmaceutical research. This is by no means new as
+I and machine learning or computational approaches in general have
+een applied in the pharmaceutical industry for many decades. Machine
+earning has now become a frequent topic of discussion at conferences,
+ith an exploding number of papers describing applications of AI, even
+rossing over into the popular press. This has implications for the phar-
+aceutical industry if AI is seen as an essential component of the R&D
+rocess in the same way that we have synthesis, in vitro and in vivo, clin-
+cal testing etc. This may also change the perception of computational
+pproaches as having at least equal importance in the R&D process. This
+as also made us consider what may be the near and distant future of
+pplying machine learning in drug discovery if it becomes important
+nough to be now considered a commodity. 
+Perhaps driving this new-found interest of AI is that over the last few
+ears we have seen companies focusing on AI obtain very significant
+mounts of funding and sign massive deals with major pharmaceutical
+ompanies (Table S1). Several of these companies have used machine
+earning in different contexts but all have applied their software to drug
+iscovery projects ( Table 1 ). Obviously, not all companies publish on
+heir technologies to the same extent which can lead to a degree of
+pacity as to how they use AI. It may not be necessary to raise such
+ums of money in order to compete with this success on an admittedly
+maller scale. There has been recognition of the increasing generation
+nd use of open source machine learning and cheminformatics software
+hich has impacted the status quo of commercial cheminformatics soft-
+are [17] and can be used as a starting point for a new generation of
+maller drug discovery companies. For example, it is possible to build
+n such open-source software to develop machine learning tools and
+odels to assist in drug discovery and toxicology internal projects [18–
+1] as well as share such technologies with academic collaborators so
+hey can benefit from it. At the same time there are many industries
+uch as consumer product and smaller pharmaceutical companies that
+o not have such cheminformatics expertise and these efforts could be
+ useful template for them to license or emulate. To illustrate the po-
+ential of this approach of developing and applying machine learning
+or drug discovery with minimal funding we use our own experiences
+hich have used public data for projects either alone or in conjunc-
+ion with additional private data (Table S2). While these examples are
+redominantly for drug discovery they could be extended to other in-
+ustries or applications. Such models can increasingly leverage public
+nowledge to enable selection of compounds to test against targets for
+oth rare, neglected and common diseases [ 22 , 23 ] ( Table 1 , Table S2).
+ence with modest funding it is feasible to perform the computational
+lement of this work and build up wet lab capabilities to facilitate the in
+itro work to validate such models. At small drug discovery companies,
+he pandemic shutdown demonstrated the importance of having ma-
+hine learning in house and how companies in collaboration with others
+eeded to be more agile in applying such technologies [ 22 , 24 , 25 ]. 
+Table 1 
+Examples of drug discovery applications of various machine learning to targets and diseases from AI companies. 
+Area of 
+research / 
+Disease 
+Target/ 
+property 
+Outcome Company References 
+Canavan disease aspartate N - 
+acetyltransferase 
+AtomNet deep neural network for structure-based drug discovery uses a 
+model trained on bioactivity data and protein structures. They scored 10 M 
+molecules and 60 were tested in vitro with 5 compounds having low or sub 
+𝜇M activity. 
+Atomwise [62] 
+Infectious 
+disease 
+COVID-19 Workflow used knowledge graph information from recent literature using 
+machine learning based extraction to identify baricitinib. This molecule 
+progressed from a clinical trial to emergency FDA approval. 
+BenevolentAI [63] 
+Various Various drug 
+rediscovery 
+examples 
+de novo generative design benchmarking study used rediscovery of various 
+drugs with different algorithms. 
+BenevolentAI [64] 
+Rare disease Fragile X Disease-Gene Expression Matching approach to repurposing identified 
+sulindac which rescued the phenotype in the Fmr1 knock outknoc mouse. 
+Healx [65] 
+Fibrosis DDR1 kinase Generative machine learning to discover novel compounds validated in vivo In silico 
+Medicine 
+[52] 
+Infectious 
+disease 
+Antibacterials 
+against E. coli 
+Machine learning, virtual screening and in vitro testing In silico 
+Medicine 
+[66] 
+Various Various Different generative approaches were used and evaluated including 
+entangled conditional adversarial autoencoder, reinforced adversarial 
+neural computer, and Adversarial threshold neural computer. They either 
+purchased compounds similar to those proposed and then tested them in 
+vitro against various kinases or alternatively they synthesized proposed 
+compounds and tested them 
+In silico 
+Medicine 
+[67] 
+[68] 
+[69] 
+Various sEH, ERa and 
+c-KIT 
+Applied machine learning algorithms (random forest or graph convolutional 
+neural network (GCNN)) to DNA encoded libraries then validated the 
+predictions in vitro . GCNN models had higher hit rates and potencies. 
+X-Chem [56] 
+Various IMPDH, JNK3 
+etc. 
+Graph based deep generative model to create linkers for combining two 
+fragments for scaffold hopping and PROTACS using a gated graph neural 
+network incorporating 3D information. Molecules were assessed with a 
+range of 2D and 3D metrics and outperformed a baseline. 
+ExScientia Ltd [70] 
+Various Various Multiple machine learning approaches applied to searching commercial and 
+proprietary libraries, lead optimization and repurposing. 
+Yet it is widely accepted that prior paradigms such as random
+igh-throughput screening has a success-rate (hit-rate) of 0.01–0.14%
+26] and in some cases fails completely. While there are many caveats
+hich must be taken into consideration, we can consider our own pre-
+icted vs . verified hit-rates using machine learning, were we often see
+ncreases in the success-rate by 10–100 fold, and in some cases even
+000 fold. Again, for illustration purposes, several cases from our own
+ork suggests in vitro hit rates of: 100% (3/3, Ebola) [27] , 11% (11/97
+hagas) [28] , 25% (1/5, Yellow Fever) [29] . Some of these projects were
+lso validated using in vivo testing (Chagas, 5/97 = 5.2% in vivo hit rate
+28] ). Combined, these examples demonstrate how companies can use
+achine learning technologies to create many molecule assets, and that
+achine learning has proven to be successfully predict molecular hits
+ Table 1 , and Table S2) that a much larger company (not using such
+pproaches) would have only been able to generate with many more
+mployees and a much larger financial investment. While this point is
+ot new, when considered with the advent of generative models, dis-
+ussed below, it suggests than an accelerated early-stage drug discovery
+ipeline is just around the corner: Using machine learning models to
+uide generative models for new molecular IP, we can reasonably ex-
+ect machine learning to find/generate many more molecules than have
+een virtually screened in the past. It is likely that while this technol-
+gy has yet to replace scientists that do this drug discovery research,
+e would argue it has already augmented those using it with the intel-
+igence of many more experienced scientists. In this context, applying
+achine learning allows these scientists to identify and generate “inven-
+ions ” as well as determine which may be worthy of patenting and/or
+ublishing with commercial applications. 
+It was clear to us that 2020 demonstrated that the pathway from
+ideas to molecules to treatments ” can be increasingly aided by ma-
+hine learning algorithms, to the point where they become relatively
+ransparent because they are accepted as part of the drug discovery or
+esign process like other types of tools. While this software is freely
+vailable through open-source projects, replacing what was previously
+nly commercially available and used by experts, how they are applied
+nd integrated makes the difference to their likely success or failure. This
+an also be considered as one definition of what is termed end-to-end
+achine learning [11] . It is also likely that what will ultimately differ-
+ntiate such companies in this space from competitors (Table S1) are the
+uration of the available underlying experimental data and ensuring the
+uality and validity of the machine learning models that form the ba-
+is for each companies differentiating technology. Continual curation of
+ata in larger companies may allow them to capture the decades of drug
+iscovery and toxicology domain knowledge of employees which they
+ave considerably more of compared with newer companies. Knowing
+hat are the ‘pros and cons’ of the different machine learning algorithms
+s also important, as no single algorithm or resulting model is likely to
+e the best for all prediction tasks [30] (Table S2, S3). Drug discovery
+s challenging and not an area to embark upon if you have no concept
+f what the application domain is. There is still a need for a scientist
+n the loop for most drug discovery machine learning models, however
+his does not mean we are far from their autonomous use. 
+he future of molecules designed by AI 
+The future of molecule design across multiple industries (pharma-
+euticals, agrochemicals, consumer products etc.) will require machine
+earning models for the design and optimization of molecules and their
+roperties through the complete design-make-test cycle ( Fig. 1 ). “De-
+igned by AI ” is not the end for machine learning. While machine learn-
+ng can be used to model and predict most types of data that are gen-
+rated in the research and development process [11] , this is certainly
+ot limited to predicting a bioactivity or toxicity endpoints. Machine
+earning models may also help at different stages of research to aid in
+olecule purification, identification or quantification where perhaps a
+olecule has never been synthesized and no reference data is avail-4 ble. For example, modeling outputs of analytical data such as spec-
+ra (MS, FT-IR, UV–Vis [31] ) or more complex in vivo data all the
+ay to more abstract predictions, such as potential success of commer-
+ialization [ 32 , 33 ] are possible with machine learning. While learning
+rom known molecule related data is potentially valuable, going be-
+ond what is currently known or state-of-the-art and proposing new
+olecules to synthesize based on the machine learning models, a physic-
+chemical property, or other data is an area of major interest. There has
+een substantial activity in recent years with small molecules designed
+nd generated by generative models using many different architectures
+uch as Variational Autoencoder [34] , Generative Adversarial Networks
+35] and Recurrent Neural Networks [36] (RNN, Fig. 1 , Table 1 )) [36–
+1] to produce molecules de novo [ 10 , 36 , 42-48 ]. For further detail the
+eader is pointed to the multiple reviews on this area [49–51] . Prospec-
+ive testing of the proposed molecules using these methods is generally
+are [52] and many prefer to skip the synthesis and find compounds that
+re structurally similar but commercially available from vendors. When
+uch generative machine learning model derived molecules are even-
+ually synthesized this is usually not done in an automated or tightly
+ntegrated fashion but handed over to a contract research organization,
+ollaborator or perhaps left for other researchers to follow up. The appli-
+ation of generative approaches for de novo design of larger molecules is
+lso relatively unexplored (although other approaches have been devel-
+ped for macrolide library enumeration [53] ) and yet there are certainly
+any large biotech companies focused on biologics whose patents will
+ventually expire too. One would assume that such companies are also
+xploring how such machine learning methods could help them design
+ew biologics or optimize their current products [54] . As a test case ex-
+mple for this perspective, we have used a generative long short-term
+emory (LSTM) algorithm to generate novel peptides with predicted
+lucagon-like peptide-1 (GLP-1) agonist activity ( Fig. 2 ) using publicly
+vailable data for the machine learning model. This illustrated that the
+e novo proposed molecules from the algorithm are in very close struc-
+ural and predicted bioactivity proximity to known commercial GLP-1
+gonists, which would provide some confidence of their utility. Clearly,
+he ultimate proof of this will require synthesis and testing of these pro-
+osed molecules, but this is just one such additional area of use for gen-
+rative models and there are many therapeutic modalities where they
+ould help us explore chemical and property space. This is scalable such
+hat computationally one could generate many such examples for differ-
+nt targets, diseases, structural scaffolds or molecular entities and then
+rioritize the targets or diseases to pursue. 
+Generative approaches are certainly not the only way to produce or
+ptimize molecules and there is a long history of technologies (fragment-
+ased drug discovery [55] , structure-based design, computer-aided de-
+ign etc.). Other technologies such as DNA encoded libraries can rapidly
+enerate billions of potential structures which may need to be scored by
+achine learning models [56] . A bottleneck for scoring such libraries (or
+assive numbers of virtual molecules in general) may be in the genera-
+ion of fingerprints (such as ECFP6) and their storage before processing.
+ne solution is to use the structure encoded as SMILES (or other struc-
+ural representations such as SELFIES [57] ) as the input for modeling
+sing an end-to-end convolution-LSTM model [58] . These types of ma-
+hine learning algorithms are likely comparable to several others when
+heir statistics are compared, suggesting again that there may be several
+ifferent machine learning algorithms that can be applied (Table S3).
+sing convolution-LSTM models for predictions for a billion molecules
+n a DNA-encoded library, such that calculations take place on the GPU
+llowing parallel model prediction and pre-processing, produces an ap-
+roximate 50-fold speed up on prediction generation over models built
+ith ECFP6 fingerprints alone on our in house 10 GPU servers. While
+his is rather limited example, these types of end-to end machine learn-
+ng models using SMILES have also been demonstrated in recent com-
+arisons with ECFP6 for prediction of UV–Vis spectra [31] and may be
+tilized for other types of datasets as well. 
+F. Urbina and S. Ekins Artificial Intelligence in the Life Sciences 2 (2022) 100031 
+Fig. 2. A case study of generative peptide design for GLP-1. A. An RNN-LSTM was trained on a dataset of 1554 antimicrobial peptides and generated peptides were 
+scored with a GLP-1 agonist model generated from data in ChEMBL. B. dimensionality reduction using a t-SNE plot and nearest neighbor distance of generated 
+proposed GLP-1 agonists. C. visualizing de novo generated GLP-1 agonists alongside commercial GLP-1 drugs to illustrate they are close in chemical property space. 
+As has happened previously, we can see a time when the machine
+earning algorithms we take for granted now (such as: deep learning,
+raph-based methods, LSTM, transformers etc.) will be more widely
+nown and used. We envisage we will also see such models integrated
+nto future generations of laboratory equipment. This will enable such
+ardware and software combinations to aid in molecule design whilst
+lso proposing and making the molecules based on the computational
+redictions [1–6] . This would also facilitate tightly integrated “design-
+ake-test ” cycles to be repeated until a desired end point was reached
+such as a measurable bioactivity, a molecular property, or multiple ac-
+ivities or properties are met). Certainly, the need to integrate these
+echnologies will require working with cheminformatics software and
+ardware standards to help this come to fruition. These developments
+hen combined may suggest that we are not too far away from the com-
+lete design, synthesis and testing in real time guided by AI (if we are
+ot there already by the time this is published!). In the past the larger
+harmaceutical companies applied machine learning within relatively
+mall groups and hence it had little impact. In contrast, smaller, newer,
+harmaceutical companies are applying machine learning across their
+ompanies and are focused on the testing of new molecules as we have
+ighlighted with public or private data (Supplemental references) which
+s already showing an impact based on the valuation of such compa-
+ies and deals (Table S1). Machine learning has been broadly applied
+o tackle hit discovery, lead optimization or beyond ( Table 1 and S2).
+erhaps the biggest impact of such a technology will be on overall pro-
+uctivity to those industries like animal health or agrochemicals which
+re facing patent cliffs and have lost their historic connection to phar-
+aceutical companies as their engine of molecule design and are now
+equiring new molecules. It has also been widely noted that only a small
+raction (a few hundred) of the ∼7000 rare diseases have treatments or
+re even undergoing research [11] . While there are very few applica-
+ions of AI technologies to rare diseases this could change this dynamic,
+nabling companies to work on the research and discovery of treatments
+here there is limited funding, the population may be seen as too small,
+r there is little return on investment. Similarly, tropical neglected dis-
+ases could also benefit, especially as there is growing quantity of in
+itro data for these diseases after decades of research, thus providing a
+aluable starting point for machine learning to aid future drug discovery
+fforts [ 59 , 60 ] ( Table 1 and Table S2). 
+Thinking about the bigger picture, machine learning may also be a
+eans to an end, and that end is the molecule that has a desired ac-
+ivity which is ultimately patented to create intellectual property that a
+ompany then monetizes. Machine learning models applied to the con-
+inuum of drug discovery could be readily used to develop a pipeline
+f small or large molecules for future licensing or to serve as a start-
+ng point for venture capital investors to found new companies. If mul-
+iple companies take a similar approach, then it could create a mar-
+et around AI-designed molecule assets for their industry segment. At
+he same time, such AI-based molecule design companies could offer
+his expertise and capabilities to others to create a new service industry
+contract AI organization). This sharing of expertise and cross fertiliza-
+ion of data and technologies across molecule-related industries may be
+nevitable, blurring the boundaries between chemical industries. Such
+ompanies can ultimately improve the design and selection of molecules
+hat avoid likely predictable failures associated with undesirable toxicity
+hich is also an area that crosses industries (e.g human, animal health,
+grochemical and consumer products) and which is already possible us-
+ng the knowledge captured by AI. As a perhaps over-used example, the
+ommercial interest and investment in kinase inhibitors is at an all-time
+igh (US$66.7Bn by the year 2025) but the companies in this area are
+et to capitalize on the many afore-mentioned AI technologies like gen-
+rative de novo approaches to developing compounds that target specific
+inases or multiple kinases and avoid others. To date, only a few kinases
+ave been used as examples for generative approaches [52] ( Table 1 )
+ut they could be used for the hundreds of kinases to identify the most
+hemically tractable, that would never be possible experimentally. We6 ave yet, to see kinase focused companies using such AI approaches,
+nstead they rely on tried and tested structure-based design and medic-
+nal chemistry. Perhaps we will see them shift to AI approaches as their
+enefits continue to be described. 
+onclusion 
+In summary, we have highlighted several examples that illustrate
+ow AI applied to molecule design may impact several related indus-
+ries involved in molecule design including the pharmaceutical industry
+nd others. The increased visibility and awareness of the potential of AI
+s applied to drug discovery for COVID-19 [61] has been one of the few
+ood things to have come out of the pandemic, even if it has delivered
+ew notable successes to date ( Table 1 ). What will be interesting to see
+s whether AI technology does indeed increase the long-term productiv-
+ty and success of the new pharmaceutical companies that are attracting
+o much recent interest. We are cautiously optimistic that the time for
+I in the pharmaceutical industry is here and that it will have a lasting
+mpact. While we do not have all the answers to the questions raised in
+his perspective, our goal was to illustrate a recent observation that we
+re currently treating these AI technologies like a commodity. There are
+learly still significant challenges and opportunities to applying them,
+eaving plenty of scope for future research and reviews. There are also
+thical issues that have not been addressed, as these generative machine
+earning technologies are so readily accessible that they could be eas-
+ly misused without the need for too much underlying knowledge. We
+ook forward to discussing these and other topics with the community
+f scientists that are involved in this field. 
+unding 
+This work was supported by NIH funding: R44GM122196-02A1 and
+R41GM131433-01A1 from NIGMS, 3R43AT010585-01S1 from NC-
+AM and 1R43ES031038-01 from NIEHS (PI – Sean Ekins). “Research
+eported in this publication was supported by the National Institute of
+nvironmental Health Sciences of the National Institutes of Health under
+ward Number R43ES031038. The content is solely the responsibility
+f the authors and does not necessarily represent the official views of
+he National Institutes of Health. ”
+eclaration of Competing Interest 
+S.E. is owner, and F.U. is an employee of Collaborations Pharmaceu-
+icals, Inc. 
+cknowledgments 
+Dr. Thomas R. Lane, Ana C. Puhl and Maggie A.Z. Hupcey are grate-
+ully acknowledged for their many contributions and discussions. 
+upplementary materials 
+Supplementary material associated with this article can be found, in
+he online version, at doi: 10.1016/j.ailsci.2022.100031.
